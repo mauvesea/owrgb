@@ -60,9 +60,14 @@ Route22Gate_TextPointers:
 
 Route22GateGuardText:
 	text_asm
-	ld a, [wObtainedBadges]
-	bit BIT_BOULDERBADGE, a
-	jr nz, .has_boulderbadge
+	push hl
+	ld hl, wObtainedBadges
+	ld b, $1
+	call CountSetBits
+	pop hl
+	ld a, [wNumSetBits]
+	cp 1
+	jr nc, .has_boulderbadge
 	ld hl, Route22GateGuardNoBoulderbadgeText
 	call PrintText
 	call Route22GateMovePlayerDownScript
