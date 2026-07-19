@@ -230,6 +230,11 @@ SilphCo11FGiovanniAfterBattleScript:
 	call UpdateSprites
 	call Delay3
 	call GBFadeInFromBlack
+	; Increase Level Scaling
+	ld a, [wLevelScaling]
+	inc a
+	ld [wLevelScaling], a
+
 	SetEvent EVENT_BEAT_SILPH_CO_GIOVANNI
 	xor a
 	ld [wJoyIgnore], a

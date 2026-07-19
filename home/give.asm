@@ -21,6 +21,28 @@ GivePokemon::
 	ld [wCurPartySpecies], a
 	ld a, c
 	ld [wCurEnemyLevel], a
+	ld a, [wLevelScaling]
+	cp 0
+	jr z, .FinishLevelScaling
+	push de
+	push bc
+	ld a, [wCurEnemyLevel]
+	ld e, a
+	ld a, [wLevelScaling]
+	ld c, a
+	ld a, e
+.scaleLoop
+	ld d, 5
+.addFive
+	inc a
+	dec d
+	jr nz, .addFive
+	dec c
+	jr nz, .scaleLoop
+	pop bc
+	pop de
+.FinishLevelScaling
+	ld [wCurEnemyLevel], a
 	xor a ; PLAYER_PARTY_DATA
 	ld [wMonDataLocation], a
 	farjp _GivePokemon

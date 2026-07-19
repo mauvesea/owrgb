@@ -32,8 +32,33 @@ Route12DefaultScript:
 	call DisplayTextID
 	ld a, SNORLAX
 	ld [wCurOpponent], a
-	ld a, 30
+	ld a, 7
 	ld [wCurEnemyLevel], a
+	ld a, [wLevelScaling]
+	cp 0
+	jr z, .SkipLevelScaling
+	push de
+	push bc
+	ld a, [wCurEnemyLevel]
+	ld e, a
+	ld a, [wLevelScaling]
+	ld c, a
+	ld a, e
+.scaleLoop
+	ld d, 5
+.addFive
+	inc a
+	dec d
+	jr nz, .addFive
+	dec c
+	jr nz, .scaleLoop
+	pop bc
+	pop de
+	jr .FinishLevelScaling
+.SkipLevelScaling
+	ld a, [wCurEnemyLevel]
+.FinishLevelScaling
+
 	ld a, TOGGLE_ROUTE_12_SNORLAX
 	ld [wToggleableObjectIndex], a
 	predef HideObject

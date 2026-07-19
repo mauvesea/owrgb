@@ -56,9 +56,13 @@ Route22RivalMovementData:
 	db -1 ; end
 
 Route22DefaultScript:
+	ld b,b
+	CheckEvent EVENT_BEAT_CERULEAN_RIVAL
+	jr nz, .HideFirstEncounter
 	ld a, [wLevelScaling]
 	cp 1
 	jr c, .SecondFight
+.HideFirstEncounter
 	ResetEvents EVENT_1ST_ROUTE22_RIVAL_BATTLE, EVENT_ROUTE22_RIVAL_WANTS_BATTLE
 	ld a, TOGGLE_ROUTE_22_RIVAL_1
 	ld [wToggleableObjectIndex], a

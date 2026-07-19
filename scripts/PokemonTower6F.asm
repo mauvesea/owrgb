@@ -35,8 +35,32 @@ PokemonTower6FDefaultScript:
 	call DisplayTextID
 	ld a, RESTLESS_SOUL
 	ld [wCurOpponent], a
-	ld a, 30
+	ld a, 7
 	ld [wCurEnemyLevel], a
+	ld a, [wLevelScaling]
+	cp 0
+	jr z, .SkipLevelScaling
+	push de
+	push bc
+	ld a, [wCurEnemyLevel]
+	ld e, a
+	ld a, [wLevelScaling]
+	ld c, a
+	ld a, e
+.scaleLoop
+	ld d, 5
+.addFive
+	inc a
+	dec d
+	jr nz, .addFive
+	dec c
+	jr nz, .scaleLoop
+	pop bc
+	pop de
+	jr .FinishLevelScaling
+.SkipLevelScaling
+	ld a, [wCurEnemyLevel]
+.FinishLevelScaling
 	ld a, SCRIPT_POKEMONTOWER6F_MAROWAK_BATTLE
 	ld [wPokemonTower6FCurScript], a
 	ld [wCurMapScript], a

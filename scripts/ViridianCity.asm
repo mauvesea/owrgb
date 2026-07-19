@@ -18,9 +18,8 @@ ViridianCityDefaultScript:
 ViridianCityCheckGymOpenScript:
 	CheckEvent EVENT_VIRIDIAN_GYM_OPEN
 	ret nz
-	ld a, [wObtainedBadges]
-	cp ~(1 << BIT_EARTHBADGE)
-	jr nz, .gym_closed
+	CheckEvent EVENT_BEAT_SILPH_CO_GIOVANNI
+	jr z, .gym_closed
 	SetEvent EVENT_VIRIDIAN_GYM_OPEN
 	ret
 .gym_closed
@@ -149,12 +148,13 @@ ViridianCityYoungster1Text:
 
 ViridianCityGambler1Text:
 	text_asm
-	ld a, [wObtainedBadges]
-	cp ~(1 << BIT_EARTHBADGE)
+	CheckEvent EVENT_VIRIDIAN_GYM_OPEN
+	jr z, .GymClosedText
 	ld hl, .GymLeaderReturnedText
 	jr z, .print_text
-	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI
+	CheckEvent EVENT_BEAT_SILPH_CO_GIOVANNI
 	jr nz, .print_text
+.GymClosedText
 	ld hl, .GymAlwaysClosedText
 .print_text
 	call PrintText

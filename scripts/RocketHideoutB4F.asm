@@ -64,6 +64,12 @@ RocketHideoutB4FBeatGiovanniScript:
 	predef ShowObject
 	call UpdateSprites
 	call GBFadeInFromBlack
+
+	; Increase Level Scaling
+	ld a, [wLevelScaling]
+	inc a
+	ld [wLevelScaling], a
+
 	xor a
 	ld [wJoyIgnore], a
 	ld hl, wCurrentMapScriptFlags
