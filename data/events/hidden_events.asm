@@ -299,7 +299,6 @@ DEF ANY_FACING EQU $d0
 	db -1 ; end
 
 	hidden_events_for CELADON_HOTEL
-	hidden_event 13,  3, OpenPokemonCenterPC, SPRITE_FACING_UP
 	hidden_event  0,  4, PrintBenchGuyText, SPRITE_FACING_LEFT
 	db -1 ; end
 
@@ -493,18 +492,12 @@ DEF ANY_FACING EQU $d0
 	db -1 ; end
 
 	hidden_events_for SAFARI_ZONE_WEST_REST_HOUSE
-	hidden_event  0,  4, PrintBenchGuyText, SPRITE_FACING_LEFT
-	hidden_event 13,  3, OpenPokemonCenterPC, SPRITE_FACING_UP
 	db -1 ; end
 
 	hidden_events_for SAFARI_ZONE_EAST_REST_HOUSE
-	hidden_event  0,  4, PrintBenchGuyText, SPRITE_FACING_LEFT
-	hidden_event 13,  3, OpenPokemonCenterPC, SPRITE_FACING_UP
 	db -1 ; end
 
 	hidden_events_for SAFARI_ZONE_NORTH_REST_HOUSE
-	hidden_event  0,  4, PrintBenchGuyText, SPRITE_FACING_LEFT
-	hidden_event 13,  3, OpenPokemonCenterPC, SPRITE_FACING_UP
 	db -1 ; end
 
 	hidden_events_for ROUTE_15_GATE_2F
