@@ -420,6 +420,14 @@ GameCornerGentlemanText:
 
 GameCornerRocketText:
 	text_asm
+	ld b,b
+	ld a, [wRocketDefeated]
+	cp 5
+	jr nc, .FreedMtMoon
+	ld hl, GameCornerRocketMtMoonText
+	call PrintText
+	jr .done
+.FreedMtMoon
 	ld hl, .ImGuardingThisPosterText
 	call PrintText
 	ld hl, wStatusFlags3
@@ -438,6 +446,7 @@ GameCornerRocketText:
 	ldh [hJoyReleased], a
 	ld a, SCRIPT_GAMECORNER_ROCKET_BATTLE
 	ld [wGameCornerCurScript], a
+.done
 	jp TextScriptEnd
 
 .ImGuardingThisPosterText:
@@ -450,6 +459,10 @@ GameCornerRocketText:
 
 GameCornerRocketAfterBattleText:
 	text_far _GameCornerRocketAfterBattleText
+	text_end
+
+GameCornerRocketMtMoonText:
+	text_far _GameCornerRocketMtMoonText
 	text_end
 
 GameCornerPosterText:

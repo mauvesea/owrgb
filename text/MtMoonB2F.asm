@@ -68,6 +68,7 @@ _MtMoonB2FRocket1EndBattleText::
 	prompt
 
 _MtMoonB2FRocket1AfterBattleText::
+
 	text "You made me mad!"
 	line "TEAM ROCKET will"
 	cont "blacklist you!"

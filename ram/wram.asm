@@ -1887,9 +1887,10 @@ wTilesetCollisionPtr:: dw
 wTilesetTalkingOverTiles:: ds 3
 
 wGrassTile:: db
-ds 2
+	ds 1
 
 wLevelScaling:: db
+wRocketDefeated:: db
 	ds 1
 
 wNumBoxItems:: db

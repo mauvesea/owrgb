@@ -230,6 +230,10 @@ ToggleableObjectStates:
 	toggle_object_state MTMOONB2F_HELIX_FOSSIL,  ON
 	toggle_object_state MTMOONB2F_HP_UP,         ON
 	toggle_object_state MTMOONB2F_TM_MEGA_PUNCH, ON
+	toggle_object_state MTMOONB2F_ROCKET1,       ON
+	toggle_object_state MTMOONB2F_ROCKET2,       ON
+	toggle_object_state MTMOONB2F_ROCKET3,       ON
+	toggle_object_state MTMOONB2F_ROCKET4,       ON
 
 	toggleable_objects_for SS_ANNE_2F
 	toggle_object_state SSANNE2F_RIVAL, OFF

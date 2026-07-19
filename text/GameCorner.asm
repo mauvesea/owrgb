@@ -176,6 +176,16 @@ _GameCornerRocketAfterBattleText::
 	cont "better tell BOSS!"
 	done
 
+_GameCornerRocketMtMoonText::
+	text "What is taking"
+	line "them so long!?"
+
+	para "They should've"
+	line "brought those"
+	cont "fossils from"
+	cont "MT.MOON already!"
+	done
+
 _GameCornerPosterSwitchBehindPosterText::
 	text "Hey!"
 

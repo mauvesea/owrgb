@@ -59,7 +59,21 @@ _CeruleanCityRivalIWentToBillsText::
 	done
 
 _CeruleanCityRocketText::
-	text "Hey! Stay out!"
+	text "Can't believe I"
+	line "got lost..."
+
+	para "Where in the"
+	line "world is that"
+	cont "MT.MOON!?"
+
+	para "Well, at least"
+	line "this TM I got"
+	line "will make the"
+	line "BOSS happy!"
+
+	para "..."
+
+	para "Hey! Stay out!"
 	line "It's not your"
 	cont "yard! Huh? Me?"
 
