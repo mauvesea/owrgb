@@ -120,10 +120,14 @@ PewterGymBrockText:
 	ld hl, PewterGymBrockReceivedBoulderBadgeText
 	ld de, PewterGymBrockReceivedBoulderBadgeText
 	call SaveEndBattleTextPointers
-	ldh a, [hSpriteIndex]
-	ld [wSpriteIndex], a
-	call EngageMapTrainer
-	call InitBattleEnemyParameters
+;	ldh a, [hSpriteIndex]
+;	ld [wSpriteIndex], a
+;	call EngageMapTrainer
+;	call InitBattleEnemyParameters
+	ld a, OPP_BROCK
+	ld [wCurOpponent], a
+	ld a, 1
+	ld [wTrainerNo], a
 	ld a, $1
 	ld [wGymLeaderNo], a
 	xor a

@@ -1887,9 +1887,10 @@ wTilesetCollisionPtr:: dw
 wTilesetTalkingOverTiles:: ds 3
 
 wGrassTile:: db
+ds 2
 
 wLevelScaling:: db
-	ds 3
+	ds 1
 
 wNumBoxItems:: db
 ; item, quantity

@@ -6020,9 +6020,6 @@ LoadEnemyMonData:
 	ld de, wEnemyMonLevel
 ;	ld a, [wCurEnemyLevel] ; This is where levels are stored, will use wLevelScaling
 
-	ld a, 3
-	ld [wLevelScaling], a
-
 	ld a, [wLevelScaling]
 	cp 0
 	jr z, .SkipLevelScaling
