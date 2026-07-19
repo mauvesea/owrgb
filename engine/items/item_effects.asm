@@ -100,6 +100,11 @@ ItemUsePtrTable:
 	dw ItemUsePPRestore  ; MAX_ETHER
 	dw ItemUsePPRestore  ; ELIXER
 	dw ItemUsePPRestore  ; MAX_ELIXER
+	dw ItemUseShears
+	dw ItemUseParaglider
+	dw ItemUseFloaties
+	dw ItemUseCrowbar
+	dw ItemUseFlashlight
 
 ItemUseBall:
 
@@ -667,6 +672,9 @@ ItemUseBicycle:
 
 ; indirectly used by SURF in StartMenu_Pokemon.surf
 ItemUseSurfboard:
+	ld a, [wIsInBattle]
+	and a
+	jp nz, ItemUseNotTime
 	ld a, [wWalkBikeSurfState]
 	ld [wWalkBikeSurfStateCopy], a
 	cp 2 ; is the player already surfing?
@@ -677,7 +685,35 @@ ItemUseSurfboard:
 	ld hl, TilePairCollisionsWater
 	call CheckForTilePairCollisions
 	jp c, SurfingAttemptFailed
-; surfing
+	; Check if Player is on Cycling Road
+	ld hl, wStatusFlags1
+	set BIT_SURF_ALLOWED, [hl]
+	ld a, [wStatusFlags6]
+	bit BIT_ALWAYS_ON_BIKE, a
+	jr nz, .forcedToRideBike
+	jr .Surfing
+	; Check if Player is in Seafoam Island
+	ld a, [wCurMap]
+	cp SEAFOAM_ISLANDS_B4F
+	jr nz, .Surfing
+	CheckBothEventsSet EVENT_SEAFOAM4_BOULDER1_DOWN_HOLE, EVENT_SEAFOAM4_BOULDER2_DOWN_HOLE
+	jr z, .Surfing
+	ld hl, SeafoamIslandsB4FStairsCoords
+	call ArePlayerCoordsInArray
+	jr nc, .Surfing
+	ld hl, wStatusFlags1
+	res BIT_SURF_ALLOWED, [hl]
+	ld hl, CurrentTooFastText
+	jp ItemUseFailed
+.forcedToRideBike
+	ld hl, wStatusFlags1
+	res BIT_SURF_ALLOWED, [hl]
+	ld hl, CyclingIsFunText
+	jp ItemUseFailed
+
+
+.Surfing
+	call ItemUseReloadOverworldData
 	call .makePlayerMoveForward
 	ld hl, wStatusFlags5
 	set BIT_SCRIPTED_MOVEMENT_STATE, [hl]
@@ -744,6 +780,18 @@ ItemUseSurfboard:
 	inc a
 	ld [wSimulatedJoypadStatesIndex], a
 	ret
+
+SeafoamIslandsB4FStairsCoords:
+	dbmapcoord  7, 11
+	db -1 ; end
+
+CurrentTooFastText:
+	text_far _CurrentTooFastText
+	text_end
+
+CyclingIsFunText:
+	text_far _CyclingIsFunText
+	text_end
 
 SurfingGotOnText:
 	text_far _SurfingGotOnText
@@ -2953,3 +3001,65 @@ CheckMapForMon:
 	jr nz, .loop
 	dec hl
 	ret
+
+ItemUseShears:
+
+ItemUseParaglider:
+	ld a, [wIsInBattle]
+	and a
+	jp nz, ItemUseNotTime
+	call CheckIfInOutsideMap
+	jr z, .canFly
+	ld hl, CannotFlyHereText
+	jp ItemUseFailed
+.canFly
+	ld hl, UsedParagliderText
+	call PrintText
+	call ChooseFlyDestination
+	ld a, [wStatusFlags6]
+	bit BIT_FLY_WARP, a
+	jp nz, .goBackToMap
+	ld hl, wStatusFlags4
+	set BIT_UNKNOWN_4_1, [hl]
+.goBackToMap
+	call GBPalWhiteOut
+	call ClearScreen
+	call ClearSprites
+	call LoadPlayerSpriteGraphics
+	call LoadFontTilePatterns
+	call UpdateSprites
+	call RunDefaultPaletteCommand
+	ret
+
+UsedParagliderText:
+	text_far _UsedParagliderText
+	text_end
+
+CannotFlyHereText:
+	text_far _CannotFlyHereText
+	text_end
+
+ItemUseFloaties:
+	jp ItemUseSurfboard
+
+ItemUseCrowbar:
+	ld a, [wIsInBattle]
+	and a
+	jp nz, ItemUseNotTime
+	predef PrintStrengthText
+	ret
+ItemUseFlashlight:
+	ld a, [wIsInBattle]
+	and a
+	jp nz, ItemUseNotTime
+	xor a
+	ld [wMapPalOffset], a
+	ld hl, .flashLightsAreaText
+	call PrintText
+	call GBPalWhiteOutWithDelay3
+	ret
+.flashLightsAreaText
+	text_far _FlashLightsAreaText
+	text_end
+
+

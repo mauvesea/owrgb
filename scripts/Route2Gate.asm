@@ -12,7 +12,7 @@ Route2GateOaksAideText:
 	jr nz, .got_item
 	ld a, 10
 	ldh [hOaksAideRequirement], a
-	ld a, HM_FLASH
+	ld a, FLASHLIGHT
 	ldh [hOaksAideRewardItem], a
 	ld [wNamedObjectIndex], a
 	call GetItemName

@@ -6,4 +6,9 @@ UsableItems_CloseMenu:
 	db OLD_ROD
 	db GOOD_ROD
 	db SUPER_ROD
+	db SHEARS
+	db PARAGLIDER
+	db FLOATIES
+	db CROWBAR
+	db FLASHLIGHT
 	db -1 ; end

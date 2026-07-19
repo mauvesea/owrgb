@@ -9,30 +9,38 @@ _CableClubNPCMakingPreparationsText::
 	done
 
 _UsedStrengthText::
-	text_ram wNameBuffer
-	text " used"
-	line "STRENGTH.@"
+	text "<PLAYER> used the"
+	line "CROWBAR!@"
+	text_end
+
+_UsedFlyText::
+	text "<PLAYER> put on"
+	line "the PARAGLIDER!@"
 	text_end
 
 _CanMoveBouldersText::
-	text_ram wNameBuffer
-	text " can"
+	text "<PLAYER> can now"
 	line "move boulders."
 	prompt
 
 _CurrentTooFastText::
 	text "The current is"
 	line "much too fast!"
+
+	para "Swimming here"
+	line "would be dan-"
+	cont "gerous!"
 	prompt
 
 _CyclingIsFunText::
 	text "Cycling is fun!"
-	line "Forget SURFing!"
+	line "Forget swimming!"
 	prompt
 
 _FlashLightsAreaText::
-	text "A blinding FLASH"
-	line "lights the area!"
+	text "<PLAYER> turned"
+	line "the FLASHLIGHT"
+	cont "on!"
 	prompt
 
 _WarpToLastPokemonCenterText::
@@ -47,9 +55,14 @@ _CannotUseTeleportNowText::
 	prompt
 
 _CannotFlyHereText::
-	text_ram wNameBuffer
-	text " can't"
-	line "FLY here."
+	text "It's dangerous to"
+	line "use the"
+	cont "PARAGLIDER here!"
+	prompt
+
+_UsedParagliderText::
+	text "<PLAYER> put on"
+	line "the PARAGLIDER!"
 	prompt
 
 _NotHealthyEnoughText::

@@ -57,8 +57,8 @@ _ItemUseBallText06::
 	text_end
 
 _SurfingGotOnText::
-	text "<PLAYER> got on"
-	line "@"
+	text "<PLAYER> put on"
+	line "the @"
 	text_ram wNameBuffer
 	text "!"
 	prompt
@@ -218,10 +218,8 @@ _NoCyclingAllowedHereText::
 	prompt
 
 _NoSurfingHereText::
-	text "No SURFing on"
-	line "@"
-	text_ram wNameBuffer
-	text " here!"
+	text "You can't swim"
+	line "here!"
 	prompt
 
 _BoxFullCannotThrowBallText::

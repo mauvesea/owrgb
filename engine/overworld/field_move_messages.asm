@@ -44,15 +44,3 @@ IsSurfingAllowed:
 	res BIT_SURF_ALLOWED, [hl]
 	ld hl, CyclingIsFunText
 	jp PrintText
-
-SeafoamIslandsB4FStairsCoords:
-	dbmapcoord  7, 11
-	db -1 ; end
-
-CurrentTooFastText:
-	text_far _CurrentTooFastText
-	text_end
-
-CyclingIsFunText:
-	text_far _CyclingIsFunText
-	text_end

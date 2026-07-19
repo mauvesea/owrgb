@@ -13,7 +13,7 @@ Route16FlyHouseBrunetteGirlText:
 	jr nz, .got_item
 	ld hl, .Text
 	call PrintText
-	lb bc, HM_FLY, 1
+	lb bc, PARAGLIDER, 1
 	call GiveItem
 	jr nc, .bag_full
 	SetEvent EVENT_GOT_HM02

@@ -83,6 +83,11 @@ ItemPrices::
 	bcd3 0     ; MAX_ETHER
 	bcd3 0     ; ELIXER
 	bcd3 0     ; MAX_ELIXER
+	bcd3 0     ; SHEARS
+	bcd3 0     ; PARAGLIDER
+	bcd3 0     ; FLOATIES
+	bcd3 0     ; CROWBAR
+	bcd3 0     ; FLASHLIGHT
 	assert_table_length NUM_ITEMS
 	bcd3 0     ; FLOOR_B2F
 	bcd3 0     ; FLOOR_B1F

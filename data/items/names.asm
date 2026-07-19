@@ -83,6 +83,11 @@ ItemNames::
 	li "MAX ETHER"
 	li "ELIXER"
 	li "MAX ELIXER"
+	li "SHEARS"
+	li "PARAGLIDER"
+	li "FLOATIES"
+	li "CROWBAR"
+	li "FLASHLIGHT"
 	assert_list_length NUM_ITEMS
 	li "B2F"
 	li "B1F"
