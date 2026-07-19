@@ -1888,7 +1888,8 @@ wTilesetTalkingOverTiles:: ds 3
 
 wGrassTile:: db
 
-	ds 4
+wLevelScaling:: db
+	ds 3
 
 wNumBoxItems:: db
 ; item, quantity

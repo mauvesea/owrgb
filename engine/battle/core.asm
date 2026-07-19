@@ -6018,7 +6018,38 @@ LoadEnemyMonData:
 	ld [hli], a
 	ld [hl], b
 	ld de, wEnemyMonLevel
+;	ld a, [wCurEnemyLevel] ; This is where levels are stored, will use wLevelScaling
+
+	ld a, 3
+	ld [wLevelScaling], a
+
+	ld a, [wLevelScaling]
+	cp 0
+	jr z, .SkipLevelScaling
+	push de
+	push bc
 	ld a, [wCurEnemyLevel]
+	ld e, a
+	ld a, [wLevelScaling]
+	ld c, a
+	ld a, e
+.scaleLoop
+	ld d, 5
+.addFive
+	inc a
+	dec d
+	jr nz, .addFive
+	dec c
+	jr nz, .scaleLoop
+	pop bc
+	pop de
+	jr .FinishLevelScaling
+
+
+
+.SkipLevelScaling
+	ld a, [wCurEnemyLevel]
+.FinishLevelScaling
 	ld [de], a
 	inc de
 	ld b, $0

@@ -61,6 +61,9 @@ PewterGymScriptReceiveTM34:
 	ldh [hTextID], a
 	call DisplayTextID
 .gymVictory
+	ld a, [wLevelScaling]
+	inc a
+	ld [wLevelScaling], a
 	ld hl, wObtainedBadges
 	set BIT_BOULDERBADGE, [hl]
 	ld hl, wBeatGymFlags
