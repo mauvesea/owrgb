@@ -1,4 +1,4 @@
-# Pokémon O.W. RGB [![Build Status][ci-badge]][ci]
+# Pokémon O.W. RGB
 
 This is a fangame based on the disassemblies of Pokémon Red and Blue.
 
