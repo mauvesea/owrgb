@@ -61,6 +61,11 @@ CeladonGymReceiveTM21:
 	ldh [hTextID], a
 	call DisplayTextID
 .gymVictory
+	; Increase Level Scaling
+	ld a, [wLevelScaling]
+	inc a
+	ld [wLevelScaling], a
+
 	ld hl, wObtainedBadges
 	set BIT_RAINBOWBADGE, [hl]
 	ld hl, wBeatGymFlags
@@ -125,10 +130,28 @@ CeladonGymErikaText:
 	ld hl, .ReceivedRainbowBadgeText
 	ld de, .ReceivedRainbowBadgeText
 	call SaveEndBattleTextPointers
-	ldh a, [hSpriteIndex]
-	ld [wSpriteIndex], a
-	call EngageMapTrainer
-	call InitBattleEnemyParameters
+
+	ld a, OPP_ERIKA
+	ld [wCurOpponent], a
+	ld a, [wLevelScaling]
+	cp 2
+	jr c, .2mons      ; 0~1
+	cp 4
+	jr c, .3mons      ; 2~3
+	cp 6
+	jr c, .4mons      ; 4~5
+	ld a, $4
+	jr .LoadLeaderParty
+.2mons
+	ld a, $1
+	jr .LoadLeaderParty
+.3mons
+	ld a, $2
+	jr .LoadLeaderParty
+.4mons
+	ld a, $3
+.LoadLeaderParty
+	ld [wTrainerNo], a
 	ld a, $4
 	ld [wGymLeaderNo], a
 	ld a, SCRIPT_CELADONGYM_ERIKA_POST_BATTLE

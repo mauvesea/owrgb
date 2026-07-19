@@ -153,6 +153,11 @@ ViridianGymReceiveTM27:
 	ldh [hTextID], a
 	call DisplayTextID
 .gym_victory
+	; Increase Level Scaling
+	ld a, [wLevelScaling]
+	inc a
+	ld [wLevelScaling], a
+
 	ld hl, wObtainedBadges
 	set BIT_EARTHBADGE, [hl]
 	ld hl, wBeatGymFlags

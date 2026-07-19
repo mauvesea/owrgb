@@ -138,6 +138,7 @@ CeruleanGymMistyText:
 	ld a, $3
 .LoadLeaderParty
 	ld [wTrainerNo], a
+
 	ld a, $2
 	ld [wGymLeaderNo], a
 	xor a

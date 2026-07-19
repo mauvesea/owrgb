@@ -161,6 +161,11 @@ CinnabarGymReceiveTM38:
 	ldh [hTextID], a
 	call DisplayTextID
 .gymVictory
+	; Increase Level Scaling
+	ld a, [wLevelScaling]
+	inc a
+	ld [wLevelScaling], a
+
 	ld hl, wObtainedBadges
 	set BIT_VOLCANOBADGE, [hl]
 	ld hl, wBeatGymFlags
@@ -217,20 +222,49 @@ CinnabarGymBlaineText:
 	jr nz, .afterBeat
 	call z, CinnabarGymReceiveTM38
 	call DisableWaitingAfterTextDisplay
-	jp TextScriptEnd
+	jr .done
 .afterBeat
 	ld hl, .PostBattleAdviceText
 	call PrintText
-	jp TextScriptEnd
+	jr .done
 .beforeBeat
-	ld hl, .PreBattleText
+	ld hl, .Text
 	call PrintText
+	ld hl, wStatusFlags3
+	set BIT_TALKED_TO_TRAINER, [hl]
+	set BIT_PRINT_END_BATTLE_TEXT, [hl]
 	ld hl, .ReceivedVolcanoBadgeText
 	ld de, .ReceivedVolcanoBadgeText
 	call SaveEndBattleTextPointers
+
+	ld a, OPP_BLAINE
+	ld [wCurOpponent], a
+	ld a, [wLevelScaling]
+	cp 2
+	jr c, .2mons      ; 0~1
+	cp 4
+	jr c, .3mons      ; 2~3
+	cp 6
+	jr c, .4mons      ; 4~5
+	ld a, $4
+	jr .LoadLeaderParty
+.2mons
+	ld a, $1
+	jr .LoadLeaderParty
+.3mons
+	ld a, $2
+	jr .LoadLeaderParty
+.4mons
+	ld a, $3
+.LoadLeaderParty
+	ld [wTrainerNo], a
 	ld a, $7
 	ld [wGymLeaderNo], a
-	jp CinnabarGymStartBattleScript
+	ld a, SCRIPT_CINNABARGYM_BLAINE_POST_BATTLE
+	ld [wCinnabarGymCurScript], a
+	ld [wCurMapScript], a
+.done
+	jp TextScriptEnd
 
 .PreBattleText:
 	text_far _CinnabarGymBlainePreBattleText
