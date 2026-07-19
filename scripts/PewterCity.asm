@@ -10,39 +10,12 @@ PewterCity_ScriptPointers:
 	dw_const PewterCitySuperNerd1ShowsPlayerMuseumScript, SCRIPT_PEWTERCITY_SUPER_NERD1_SHOWS_PLAYER_MUSEUM
 	dw_const PewterCityHideSuperNerd1Script,              SCRIPT_PEWTERCITY_HIDE_SUPER_NERD1
 	dw_const PewterCityResetSuperNerd1Script,             SCRIPT_PEWTERCITY_RESET_SUPER_NERD1
-	dw_const PewterCityYoungsterShowsPlayerGymScript,     SCRIPT_PEWTERCITY_YOUNGSTER_SHOWS_PLAYER_GYM
-	dw_const PewterCityHideYoungsterScript,               SCRIPT_PEWTERCITY_HIDE_YOUNGSTER
-	dw_const PewterCityResetYoungsterScript,              SCRIPT_PEWTERCITY_RESET_YOUNGSTER
 
 PewterCityDefaultScript:
 	xor a
 	ld [wMuseum1FCurScript], a
 	ResetEvent EVENT_BOUGHT_MUSEUM_TICKET
-	call PewterCityCheckPlayerLeavingEastScript
 	ret
-
-PewterCityCheckPlayerLeavingEastScript:
-	CheckEvent EVENT_BEAT_BROCK
-	ret nz
-IF DEF(_DEBUG)
-	call DebugPressedOrHeldB
-	ret nz
-ENDC
-	ld hl, PewterCityPlayerLeavingEastCoords
-	call ArePlayerCoordsInArray
-	ret nc
-	ld a, PAD_CTRL_PAD
-	ld [wJoyIgnore], a
-	ld a, TEXT_PEWTERCITY_YOUNGSTER
-	ldh [hTextID], a
-	jp DisplayTextID
-
-PewterCityPlayerLeavingEastCoords:
-	dbmapcoord 35, 17
-	dbmapcoord 36, 17
-	dbmapcoord 37, 18
-	dbmapcoord 37, 19
-	db -1 ; end
 
 PewterCitySuperNerd1ShowsPlayerMuseumScript:
 	ld a, [wNPCMovementScriptPointerTableNum]
@@ -112,75 +85,6 @@ PewterCityResetSuperNerd1Script:
 	ld [wPewterCityCurScript], a
 	ret
 
-PewterCityYoungsterShowsPlayerGymScript:
-	ld a, [wNPCMovementScriptPointerTableNum]
-	and a
-	ret nz
-	ld a, PEWTERCITY_YOUNGSTER
-	ldh [hSpriteIndex], a
-	ld a, SPRITE_FACING_LEFT
-	ldh [hSpriteFacingDirection], a
-	call SetSpriteFacingDirectionAndDelay
-	ld a, ($1 << 4) | SPRITE_FACING_LEFT
-	ldh [hSpriteImageIndex], a
-	call SetSpriteImageIndexAfterSettingFacingDirection
-	call PlayDefaultMusic
-	ld hl, wMiscFlags
-	set BIT_NO_SPRITE_UPDATES, [hl]
-	ld a, TEXT_PEWTERCITY_YOUNGSTER_GO_TAKE_ON_BROCK
-	ldh [hTextID], a
-	call DisplayTextID
-	ld a, $3c
-	ldh [hSpriteScreenYCoord], a
-	ld a, $40 ; BUG: should load $50, using $40 causes sprite misalignment
-	ldh [hSpriteScreenXCoord], a
-	ld a, 22
-	ldh [hSpriteMapYCoord], a
-	ld a, 16
-	ldh [hSpriteMapXCoord], a
-	ld a, PEWTERCITY_YOUNGSTER
-	ld [wSpriteIndex], a
-	call SetSpritePosition1
-	ld a, PEWTERCITY_YOUNGSTER
-	ldh [hSpriteIndex], a
-	ld de, MovementData_PewterGymGuyExit
-	call MoveSprite
-	ld a, SCRIPT_PEWTERCITY_HIDE_YOUNGSTER
-	ld [wPewterCityCurScript], a
-	ret
-
-MovementData_PewterGymGuyExit:
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db -1 ; end
-
-PewterCityHideYoungsterScript:
-	ld a, [wStatusFlags5]
-	bit BIT_SCRIPTED_NPC_MOVEMENT, a
-	ret nz
-	ld a, TOGGLE_GYM_GUY
-	ld [wToggleableObjectIndex], a
-	predef HideObject
-	ld a, SCRIPT_PEWTERCITY_RESET_YOUNGSTER
-	ld [wPewterCityCurScript], a
-	ret
-
-PewterCityResetYoungsterScript:
-	ld a, PEWTERCITY_YOUNGSTER
-	ld [wSpriteIndex], a
-	call SetSpritePosition2
-	ld a, TOGGLE_GYM_GUY
-	ld [wToggleableObjectIndex], a
-	predef ShowObject
-	xor a
-	ld [wJoyIgnore], a
-	ld a, SCRIPT_PEWTERCITY_DEFAULT
-	ld [wPewterCityCurScript], a
-	ret
-
 PewterCity_TextPointers:
 	def_text_pointers
 	dw_const PewterCityCooltrainerFText,           TEXT_PEWTERCITY_COOLTRAINER_F
@@ -196,7 +100,6 @@ PewterCity_TextPointers:
 	dw_const PewterCityGymSignText,                TEXT_PEWTERCITY_GYM_SIGN
 	dw_const PewterCitySignText,                   TEXT_PEWTERCITY_SIGN
 	dw_const PewterCitySuperNerd1ItsRightHereText, TEXT_PEWTERCITY_SUPER_NERD1_ITS_RIGHT_HERE
-	dw_const PewterCityYoungsterGoTakeOnBrockText, TEXT_PEWTERCITY_YOUNGSTER_GO_TAKE_ON_BROCK
 
 PewterCityCooltrainerFText:
 	text_far _PewterCityCooltrainerFText
@@ -282,29 +185,7 @@ PewterCitySuperNerd2Text:
 	text_end
 
 PewterCityYoungsterText:
-	text_asm
-	ld hl, .YoureATrainerFollowMeText
-	call PrintText
-	xor a
-	ldh [hJoyHeld], a
-	ld [wNPCMovementScriptFunctionNum], a
-	ld a, $3
-	ld [wNPCMovementScriptPointerTableNum], a
-	ldh a, [hLoadedROMBank]
-	ld [wNPCMovementScriptBank], a
-	ld a, PEWTERCITY_YOUNGSTER
-	ld [wSpriteIndex], a
-	call GetSpritePosition2
-	ld a, SCRIPT_PEWTERCITY_YOUNGSTER_SHOWS_PLAYER_GYM
-	ld [wPewterCityCurScript], a
-	jp TextScriptEnd
-
-.YoureATrainerFollowMeText:
-	text_far _PewterCityYoungsterYoureATrainerFollowMeText
-	text_end
-
-PewterCityYoungsterGoTakeOnBrockText:
-	text_far _PewterCityYoungsterGoTakeOnBrockText
+	text_far _PewterCityYoungsterText
 	text_end
 
 PewterCityTrainerTipsText:

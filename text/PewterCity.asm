@@ -115,3 +115,12 @@ _PewterCitySignText::
 	line "A Stone Gray"
 	cont "City"
 	done
+
+_PewterCityYoungsterText::
+	text "Did you know?"
+	para "GYM LEADERs use"
+	line "different teams"
+	cont "depending on the"
+	cont "challenger's"
+	cont "expertise!"
+	done
