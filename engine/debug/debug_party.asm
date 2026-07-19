@@ -140,6 +140,7 @@ ENDC
 	ret
 
 DebugNewGameItemsList:
+	db POKE_DOLL, 1
 	db BICYCLE, 1
 	db SHEARS, 1
 	db PARAGLIDER, 1

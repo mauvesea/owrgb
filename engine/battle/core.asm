@@ -773,6 +773,10 @@ FaintEnemyPokemon:
 	hlcoord 0, 0
 	lb bc, 4, 11
 	call ClearScreenArea
+	call AnyPartyAlive
+	ld a, d
+	and a
+	push af
 	ld a, [wIsInBattle]
 	dec a
 	jr z, .wild_win
@@ -791,11 +795,11 @@ FaintEnemyPokemon:
 	jr .sfxplayed
 .wild_win
 	call EndLowHealthAlarm
+	pop af
+	push af
 	ld a, MUSIC_DEFEATED_WILD_MON
-	call PlayBattleVictoryMusic
+	call nz, PlayBattleVictoryMusic
 .sfxplayed
-; bug: win sfx is played for wild battles before checking for player mon HP
-; this can lead to odd scenarios where both player and enemy faint, as the win sfx plays yet the player never won the battle
 	ld hl, wBattleMonHP
 	ld a, [hli]
 	or [hl]
@@ -805,9 +809,7 @@ FaintEnemyPokemon:
 	jr nz, .playermonnotfaint ; if so, don't call RemoveFaintedPlayerMon twice
 	call RemoveFaintedPlayerMon
 .playermonnotfaint
-	call AnyPartyAlive
-	ld a, d
-	and a
+	pop af
 	ret z
 	ld hl, EnemyMonFaintedText
 	call PrintText
@@ -1189,6 +1191,8 @@ SlideDownFaintedMonPic:
 	push de
 	push hl
 	ld b, PIC_HEIGHT - 1 ; number of rows
+	xor a
+	ld [hAutoBGTransferEnabled], a
 .rowLoop
 	push bc
 	push hl
@@ -1213,6 +1217,8 @@ SlideDownFaintedMonPic:
 	add hl, bc
 	ld de, SevenSpacesText
 	call PlaceString
+	ld a, 1
+	ld [hAutoBGTransferEnabled], a
 	ld c, 2
 	call DelayFrames
 	pop hl
@@ -1239,6 +1245,8 @@ SlideTrainerPicOffScreen:
 	push bc
 	push hl
 	ld b, PIC_HEIGHT ; number of rows
+	xor a
+	ld [hAutoBGTransferEnabled], a
 .rowLoop
 	push hl
 	ldh a, [hSlideAmount]
@@ -1264,6 +1272,8 @@ SlideTrainerPicOffScreen:
 	add hl, de
 	dec b
 	jr nz, .rowLoop
+	ld a, 1
+	ld [hAutoBGTransferEnabled], a
 	ld c, 2
 	call DelayFrames
 	pop hl
@@ -2371,6 +2381,8 @@ PartyMenuOrRockOrRun:
 	predef StatusScreen
 	predef StatusScreen2
 ; now we need to reload the enemy mon pic
+	ld a, 1
+	ldh [hWhoseTurn], a
 	ld a, [wEnemyBattleStatus2]
 	bit HAS_SUBSTITUTE_UP, a ; does the enemy mon have a substitute?
 	ld hl, AnimationSubstitute
