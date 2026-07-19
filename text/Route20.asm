@@ -99,7 +99,7 @@ _Route20CooltrainerMEndBattleText::
 
 _Route20CooltrainerMAfterBattleText::
 	text "My birds can't"
-	line "FLY me back!"
+	line "fly me back!"
 	done
 
 _Route20Swimmer7BattleText::

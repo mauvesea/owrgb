@@ -108,7 +108,8 @@ _SSAnneB1FRoomsSuperNerdText::
 	text "My buddy, MACHOKE,"
 	line "is super strong!"
 
-	para "He has enough"
-	line "STRENGTH to move"
+	para "However, I still"
+	line "use my good old"
+	cont "CROWBAR to move"
 	cont "big rocks!"
 	done

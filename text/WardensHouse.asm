@@ -44,30 +44,31 @@ _WardensHouseWardenThanksText::
 	prompt
 
 _WardensHouseWardenReceivedHM04Text::
-	text "<PLAYER> received"
+	text "<PLAYER> got the"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
 _WardensHouseWardenHM04ExplanationText::
-	text "WARDEN: HM04"
-	line "teaches STRENGTH!"
+	text "WARDEN: that's"
+	line "my one and only"
+	cont "CROWBAR!"
 
-	para "It lets #MON"
+	para "It'll help you"
 	line "move boulders"
-	cont "when you're out-"
-	cont "side of battle."
+	cont "when you spot"
+	cont "them in"
+	cont "dungeons."
 
 	para "Oh yes, did you"
-	line "find SECRET HOUSE"
-	cont "in SAFARI ZONE?"
+	line "find the SECRET"
+	cont "HOUSE in SAFARI"
+	cont "ZONE?"
 
-	para "If you do, you"
-	line "win an HM!"
-
-	para "I hear it's the"
-	line "rare SURF HM."
+	para "I heard you can"
+	line "get a special"
+	cont "prize there!"
 	done
 
 _WardensHouseWardenHM04NoRoomText::

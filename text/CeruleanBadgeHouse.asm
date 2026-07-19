@@ -27,10 +27,6 @@ _CeruleanBadgeHouseBoulderBadgeText::
 	text "The ATTACK of all"
 	line "#MON increases"
 	cont "a little bit."
-
-	para "It also lets you"
-	line "use FLASH any"
-	cont "time you desire."
 	prompt
 
 _CeruleanBadgeHouseCascadeBadgeText::
@@ -39,20 +35,12 @@ _CeruleanBadgeHouseCascadeBadgeText::
 
 	para "Any higher, they"
 	line "become unruly!"
-
-	para "It also lets you"
-	line "use CUT outside"
-	cont "of battle."
 	prompt
 
 _CeruleanBadgeHouseThunderBadgeText::
 	text "The SPEED of all"
 	line "#MON increases"
 	cont "a little bit."
-
-	para "It also lets you"
-	line "use FLY outside"
-	cont "of battle."
 	prompt
 
 _CeruleanBadgeHouseRainbowBadgeText::
@@ -61,20 +49,12 @@ _CeruleanBadgeHouseRainbowBadgeText::
 
 	para "Any higher, they"
 	line "become unruly!"
-
-	para "It also lets you"
-	line "use STRENGTH out-"
-	cont "side of battle."
 	prompt
 
 _CeruleanBadgeHouseSoulBadgeText::
 	text "The DEFENSE of all"
 	line "#MON increases"
 	cont "a little bit."
-
-	para "It also lets you"
-	line "use SURF outside"
-	cont "of battle."
 	prompt
 
 _CeruleanBadgeHouseMarshBadgeText::

@@ -14,6 +14,7 @@ _ViridianForestNorthGateGrampsText::
 	cont "roadside?"
 
 	para "They can be cut"
-	line "down by a special"
-	cont "#MON move."
+	line "down by using"
+	cont "specialized"
+	cont "SHEARS."
 	done

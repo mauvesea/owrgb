@@ -17,7 +17,8 @@ _SSAnneCaptainsRoomCaptainIFeelMuchBetterText::
 	cont "feel much better!"
 
 	para "You want to see"
-	line "my CUT technique?"
+	line "my IKEBANA"
+	cont "technique?"
 
 	para "I could show you"
 	line "if I wasn't ill..."
@@ -25,14 +26,25 @@ _SSAnneCaptainsRoomCaptainIFeelMuchBetterText::
 	para "I know! You can"
 	line "have this!"
 
-	para "Teach it to your"
-	line "#MON and you"
-	cont "can see it CUT"
-	cont "any time!"
+	para "I sense you have"
+	line "what it takes"
+	cont "to become an"
+	cont "IKEBANA master"
+	cont "just like me!"
+
+	para "...But you being"
+	line "a #MON trainer"
+	cont "makes me think"
+	cont "it will be more"
+	cont "useful to you"
+	cont "to use them to"
+	cont "cut away those"
+	cont "bushes you see"
+	cont "everywhere..."
 	prompt
 
 _SSAnneCaptainsRoomCaptainReceivedHM01Text::
-	text "<PLAYER> got"
+	text "<PLAYER> got the"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"

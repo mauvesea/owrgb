@@ -91,7 +91,7 @@ _Route13CooltrainerM2EndBattleText::
 
 _Route13CooltrainerM2AfterBattleText::
 	text "I'm beat. I guess"
-	line "I'll FLY home."
+	line "I'll go home..."
 	done
 
 _Route13Beauty1BattleText::

@@ -3,7 +3,7 @@ _DiglettsCaveRoute2FishingGuruText::
 	line "TUNNEL, but it's"
 	cont "dark and scary."
 
-	para "If a #MON's"
-	line "FLASH could light"
-	cont "it up..."
+	para "If only I had"
+	line "a FLASHLIGHT"
+	cont "with me..."
 	done

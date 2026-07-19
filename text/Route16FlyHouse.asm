@@ -9,14 +9,22 @@ _Route16FlyHouseBrunetteGirlText::
 	prompt
 
 _Route16FlyHouseBrunetteGirlReceivedHM02Text::
-	text "<PLAYER> received"
-	line "HM02!@"
+	text "<PLAYER> got the"
+	line "PARAGLIDER!@"
 	text_end
 
 _Route16FlyHouseBrunetteGirlHM02ExplanationText::
-	text "HM02 is FLY."
-	line "It will take you"
-	cont "back to any town."
+	text "You can use that"
+	line "PARAGLIDER to"
+	cont "fly in the sky"
+	cont "just like a"
+	cont "FEAROW!"
+
+	para "I bet you could"
+	line "easily find your"
+	cont "way to places"
+	cont "you have already"
+	cont "visited."
 
 	para "Put it to good"
 	line "use!"

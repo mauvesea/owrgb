@@ -96,7 +96,7 @@ _PokemonFanClubExplainBikeVoucherText::
 	line "a BICYCLE!"
 
 	para "Don't worry, my"
-	line "FEAROW will FLY"
+	line "FEAROW will take"
 	cont "me anywhere!"
 
 	para "So, I don't need a"

@@ -15,10 +15,6 @@ _VermilionGymLTSurgeThunderBadgeInfoText::
 	line "cranks up your"
 	cont "#MON's SPEED!"
 
-	para "It also lets your"
-	line "#MON FLY any"
-	cont "time, kid!"
-
 	para "You're special,"
 	line "kid! Take this!"
 	done

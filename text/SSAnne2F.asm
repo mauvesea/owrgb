@@ -49,14 +49,18 @@ _SSAnne2FRivalVictoryText::
 
 _SSAnne2FRivalCutMasterText::
 	text "<RIVAL>: I heard"
-	line "there was a CUT"
-	cont "master on board."
+	line "there was a"
+	cont "IKEBANA master on"
+	cont "board."
 
 	para "But, he was just a"
 	line "seasick, old man!"
 
-	para "But, CUT itself is"
-	line "really useful!"
+	para "Well, at least"
+	line "having SHEARS"
+	cont "like that could"
+	cont "be really"
+	cont "useful!"
 
 	para "You should go see"
 	line "him! Smell ya!"

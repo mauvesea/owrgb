@@ -1,12 +1,12 @@
 _Route2GateOaksAideFlashExplanationText::
-	text "The HM FLASH"
-	line "lights even the"
-	cont "darkest dungeons."
+	text "Using the"
+	line "FLASHLIGHT, you"
+	cont "can light even"
+	cont "the darkest"
+	cont "dungeons."
 	done
 
 _Route2GateYoungsterText::
-	text "Once a #MON"
-	line "learns FLASH, you"
-	cont "can get through"
-	cont "ROCK TUNNEL."
+	text "ROCK TUNNEL is"
+	line "so dark..."
 	done

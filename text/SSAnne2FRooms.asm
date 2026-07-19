@@ -16,8 +16,14 @@ _SSAnne2FRoomsGentleman4Text::
 	done
 
 _SSAnne2FRoomsGrampsText::
-	text "#MON can CUT"
-	line "down small bushes."
+	text "The CAPTAIN used"
+	line "to be an IKEBANA"
+	cont "master."
+
+	para "Once I saw him"
+	line "using his SHEARS"
+	cont "to cut down small"
+	cont "bushes."
 	done
 
 _SSAnne2FRoomsGentleman5Text::

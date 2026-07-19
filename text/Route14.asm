@@ -52,9 +52,11 @@ _Route14CooltrainerM3AfterBattleText::
 	done
 
 _Route14CooltrainerM4BattleText::
-	text "Have you taught"
-	line "your bird #MON"
-	cont "how to FLY?"
+	text "Did you know that"
+	line "by using a"
+	cont "PARAGLIDER, you"
+	cont "can fly just like"
+	cont "a #MON?"
 	done
 
 _Route14CooltrainerM4EndBattleText::
