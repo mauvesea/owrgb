@@ -56,6 +56,24 @@ Route22RivalMovementData:
 	db -1 ; end
 
 Route22DefaultScript:
+
+
+	ld a, [wLevelScaling]
+	cp 1
+	jr c, .SecondFight
+	ResetEvents EVENT_1ST_ROUTE22_RIVAL_BATTLE, EVENT_ROUTE22_RIVAL_WANTS_BATTLE
+	ld a, TOGGLE_ROUTE_22_RIVAL_1
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+.SecondFight
+	ld a, [wLevelScaling]
+	cp 10
+	jr c, .Continue
+	SetEvents EVENT_2ND_ROUTE22_RIVAL_BATTLE, EVENT_ROUTE22_RIVAL_WANTS_BATTLE
+	ld a, TOGGLE_ROUTE_22_RIVAL_2
+	ld [wToggleableObjectIndex], a
+	predef ShowObject
+.Continue
 	CheckEvent EVENT_ROUTE22_RIVAL_WANTS_BATTLE
 	ret z
 	ld hl, .Route22RivalBattleCoords

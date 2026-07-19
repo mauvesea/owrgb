@@ -61,9 +61,11 @@ PewterGymScriptReceiveTM34:
 	ldh [hTextID], a
 	call DisplayTextID
 .gymVictory
+	; Increase Level Scaling
 	ld a, [wLevelScaling]
 	inc a
 	ld [wLevelScaling], a
+
 	ld hl, wObtainedBadges
 	set BIT_BOULDERBADGE, [hl]
 	ld hl, wBeatGymFlags
@@ -75,8 +77,6 @@ PewterGymScriptReceiveTM34:
 	ld a, TOGGLE_ROUTE_22_RIVAL_1
 	ld [wToggleableObjectIndex], a
 	predef HideObject
-
-	ResetEvents EVENT_1ST_ROUTE22_RIVAL_BATTLE, EVENT_ROUTE22_RIVAL_WANTS_BATTLE
 
 	; deactivate gym trainers
 	SetEvent EVENT_BEAT_PEWTER_GYM_TRAINER_0
