@@ -228,7 +228,7 @@ CinnabarGymBlaineText:
 	call PrintText
 	jr .done
 .beforeBeat
-	ld hl, .Text
+	ld hl, .PreBattleText
 	call PrintText
 	ld hl, wStatusFlags3
 	set BIT_TALKED_TO_TRAINER, [hl]

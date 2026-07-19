@@ -1,15 +1,15 @@
 CeruleanCave2FWildMons:
 	def_grass_wildmons 15 ; encounter rate
-	db 51, DODRIO
-	db 51, VENOMOTH
-	db 51, KADABRA
-	db 52, RHYDON
-	db 52, MAROWAK
-	db 52, ELECTRODE
-	db 56, CHANSEY
-	db 54, WIGGLYTUFF
-	db 55, DITTO
-	db 60, DITTO
+	db 2, DODRIO
+	db 2, VENOMOTH
+	db 3, KADABRA
+	db 3, RHYDON
+	db 3, MAROWAK
+	db 3, ELECTRODE
+	db 7, CHANSEY
+	db 4, WIGGLYTUFF
+	db 4, DITTO
+	db 5, DITTO
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

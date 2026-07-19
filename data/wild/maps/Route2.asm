@@ -6,7 +6,7 @@ Route2WildMons:
 	db  3, RATTATA
 	db  3, CATERPIE
 	db  3, WEEDLE
-	db  3, RATTATA
+	db  4, RATTATA
 	db  4, RATTATA
 	db  4, RATTATA
 	db  5, RATTATA
