@@ -1,31 +1,30 @@
-# Pokémon Red and Blue [![Build Status][ci-badge]][ci]
+# Pokémon O.W. RGB [![Build Status][ci-badge]][ci]
 
-This is a disassembly of Pokémon Red and Blue.
-
-It builds the following ROMs:
-
-- Pokemon Red (UE) [S][!].gb `sha1: ea9bcae617fdf159b045185467ae58b2e4a48b9a`
-- Pokemon Blue (UE) [S][!].gb `sha1: d7037c83e1ae5b39bde3c30787637ba1d4c48ce2`
-- BLUEMONS.GB (debug build) `sha1: 5b1456177671b79b263c614ea0e7cc9ac542e9c4`
-- dmgapae0.e69.patch `sha1: 0fb5f743696adfe1dbb2e062111f08f9bc5a293a`
-- dmgapee0.e68.patch `sha1: ed4be94dc29c64271942c87f2157bca9ca1019c7`
+This is a fangame based on the disassemblies of Pokémon Red and Blue.
 
 To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
+## Features
 
-## See also
+- The game is fully open world, allowing players to tackle Gyms in any order. Although it still start in Pallet Town, you can ignore Brock's Gym and just go directly to Cerulean City.
+- It contains level scaling. After defeating each gym leader, as well as Giovanni's encounters, levels for wild Pokémon, gift Pokémon and Trainers will go up.
+- HMs were replaced by items. They're obtainable in the same way as the HMs were in the original games.
+- All Pokémon are available to be caught (currently, there's no way to capture Mew, and the trade evolutions still require trading).
 
-- [**Wiki**][wiki] (includes [tutorials][tutorials])
-- [**Symbols**][symbols]
-- [**Tools**][tools]
 
-You can find us on [Discord (pret, #pokered)](https://discord.gg/d5dubZ3).
+## TO-DO
+- Restore Moltres' dungeon.
+- Restore Prof. Oak's battle.
+- Add a post-game dungeon to rematch gym leaders (inspired by Stadium's Gym Leader Castle)
+- Add post-game teams for the Elite Four.
+- Add an event and area to catch Mew.
+- Add an event related to GF Employees.
+- Make some visual changes to some maps and tilesets.
+- Fix some more glitches (such as the Exp. All glitch).
 
-For other pret projects, see [pret.github.io](https://pret.github.io/).
 
-[wiki]: https://github.com/pret/pokered/wiki
-[tutorials]: https://github.com/pret/pokered/wiki/Tutorials
-[symbols]: https://github.com/pret/pokered/tree/symbols
-[tools]: https://github.com/pret/gb-asm-tools
-[ci]: https://github.com/pret/pokered/actions
-[ci-badge]: https://github.com/pret/pokered/actions/workflows/main.yml/badge.svg
+## Special Thanks
+- [pret][https://github.com/pret/], which is a community, for the disassembly project, tutorials and bug fixes.
+- [Sylvie][https://github.com/Rangi42], for the font used in the logo. 
+
+
