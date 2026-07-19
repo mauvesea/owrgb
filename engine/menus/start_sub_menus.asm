@@ -120,78 +120,10 @@ StartMenu_Pokemon::
 	ld a, [wObtainedBadges]
 	jp hl
 .outOfBattleMovePointers
-	dw .cut
-	dw .fly
-	dw .surf
-	dw .surf
-	dw .strength
-	dw .flash
 	dw .dig
 	dw .teleport
 	dw .softboiled
-.fly
-	bit BIT_THUNDERBADGE, a
-	jp z, .newBadgeRequired
-	call CheckIfInOutsideMap
-	jr z, .canFly
-	ld a, [wWhichPokemon]
-	ld hl, wPartyMonNicks
-	call GetPartyMonName
-	ld hl, .cannotFlyHereText
-	call PrintText
-	jp .loop
-.canFly
-	call ChooseFlyDestination
-	ld a, [wStatusFlags6]
-	bit BIT_FLY_WARP, a
-	jp nz, .goBackToMap
-	call LoadFontTilePatterns
-	ld hl, wStatusFlags4
-	set BIT_UNKNOWN_4_1, [hl]
-	jp StartMenu_Pokemon
-.cut
-	bit BIT_CASCADEBADGE, a
-	jp z, .newBadgeRequired
-	predef UsedCut
-	ld a, [wActionResultOrTookBattleTurn]
-	and a
-	jp z, .loop
-	jp CloseTextDisplay
-.surf
-	bit BIT_SOULBADGE, a
-	jp z, .newBadgeRequired
-	farcall IsSurfingAllowed
-	ld hl, wStatusFlags1
-	bit BIT_SURF_ALLOWED, [hl]
-	res BIT_SURF_ALLOWED, [hl]
-	jp z, .loop
-	ld a, SURFBOARD
-	ld [wCurItem], a
-	ld [wPseudoItemID], a
-	call UseItem
-	ld a, [wActionResultOrTookBattleTurn]
-	and a
-	jp z, .loop
-	call GBPalWhiteOutWithDelay3
-	jp .goBackToMap
-.strength
-	bit BIT_RAINBOWBADGE, a
-	jp z, .newBadgeRequired
-	predef PrintStrengthText
-	call GBPalWhiteOutWithDelay3
-	jp .goBackToMap
-.flash
-	bit BIT_BOULDERBADGE, a
-	jp z, .newBadgeRequired
-	xor a
-	ld [wMapPalOffset], a
-	ld hl, .flashLightsAreaText
-	call PrintText
-	call GBPalWhiteOutWithDelay3
-	jp .goBackToMap
-.flashLightsAreaText
-	text_far _FlashLightsAreaText
-	text_end
+
 .dig
 	ld a, ESCAPE_ROPE
 	ld [wCurItem], a
@@ -230,9 +162,7 @@ StartMenu_Pokemon::
 .cannotUseTeleportNowText
 	text_far _CannotUseTeleportNowText
 	text_end
-.cannotFlyHereText
-	text_far _CannotFlyHereText
-	text_end
+
 .softboiled
 	ld hl, wPartyMon1MaxHP
 	ld a, [wWhichPokemon]
@@ -275,13 +205,6 @@ StartMenu_Pokemon::
 .goBackToMap
 	call RestoreScreenTilesAndReloadTilePatterns
 	jp CloseTextDisplay
-.newBadgeRequired
-	ld hl, .newBadgeRequiredText
-	call PrintText
-	jp .loop
-.newBadgeRequiredText
-	text_far _NewBadgeRequiredText
-	text_end
 
 ; writes a blank tile to all possible menu cursor positions on the party menu
 ErasePartyMenuCursors::

@@ -3003,6 +3003,11 @@ CheckMapForMon:
 	ret
 
 ItemUseShears:
+	ld a, [wIsInBattle]
+	and a
+	jp nz, ItemUseNotTime
+	predef UsedCut
+	ret
 
 ItemUseParaglider:
 	ld a, [wIsInBattle]

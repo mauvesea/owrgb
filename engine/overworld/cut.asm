@@ -29,14 +29,8 @@ UsedCut:
 	ld [wCutTile], a
 	ld a, 1
 	ld [wActionResultOrTookBattleTurn], a ; used cut
-	ld a, [wWhichPokemon]
-	ld hl, wPartyMonNicks
-	call GetPartyMonName
 	ld hl, wStatusFlags5
 	set BIT_NO_TEXT_DELAY, [hl]
-	call GBPalWhiteOutWithDelay3
-	call ClearSprites
-	call RestoreScreenTilesAndReloadTilePatterns
 	ld a, SCREEN_HEIGHT_PX
 	ldh [hWY], a
 	call Delay3

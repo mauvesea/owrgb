@@ -190,11 +190,10 @@ _AfterTrade3Text::
 
 _NothingToCutText::
 	text "There isn't"
-	line "anything to CUT!"
+	line "anything to cut!"
 	prompt
 
 _UsedCutText::
-	text_ram wNameBuffer
-	text " hacked"
-	line "away with CUT!"
+	text "<PLAYER> cut away"
+	line "using SHEARS!"
 	prompt
