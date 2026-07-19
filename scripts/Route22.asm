@@ -56,8 +56,6 @@ Route22RivalMovementData:
 	db -1 ; end
 
 Route22DefaultScript:
-
-
 	ld a, [wLevelScaling]
 	cp 1
 	jr c, .SecondFight
