@@ -115,3 +115,51 @@ _DexRatingText_Own150To151::
 	line "entirely complete!"
 	cont "Congratulations!"
 	done
+
+_OakPreBattleText1::
+	text "I'm proud of you,"
+	line "<PLAYER>!"
+
+	para "Seeing how far"
+	line "you've come as a"
+	cont "trainer makes me"
+	cont "excited!"
+
+	para "Back then, I was"
+	line "a trainer too."
+
+	para "Perhaps my"
+	line "partners still"
+	cont "have what it"
+	cont "takes for a"
+	cont "great fight!"
+
+	para "What do you say?"
+	line "Wanna fight?"
+	done
+
+_OakPreBattleText2::
+	text "Alright!"
+	line "Bring it on,"
+	cont "CHAMPION!"
+	done
+
+_OakRefusedBattleText::
+	text "I see..."
+
+	para "I'll be here"
+	line "if you change"
+	cont "your mind!"
+	done
+
+_OakPostBattleText::
+	text "I have"
+	line "no words."
+
+	para "You really are"
+	line "the authority"
+	cont "now!"
+
+	para "Congratulations,"
+	line "CHAMPION <PLAYER>!@"
+	text_end

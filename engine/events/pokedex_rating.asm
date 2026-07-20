@@ -30,7 +30,12 @@ DisplayDexRating:
 	call PrintText
 	pop hl
 	call PrintText
+	CheckEvent EVENT_OAK_FIGHT_1
+	jr nz, .SkipSound
 	farcall PlayPokedexRatingSfx
+	jp WaitForTextScrollButtonPress
+.SkipSound
+	ResetEvent EVENT_OAK_FIGHT_1
 	jp WaitForTextScrollButtonPress
 .hallOfFame
 	ld de, wDexRatingNumMonsSeen
@@ -134,5 +139,88 @@ DexRatingText_Own140To149:
 	text_end
 
 DexRatingText_Own150To151:
+	text_asm
+	ld a, [wCurMap]
+	cp OAKS_LAB
+	jr nz, .RegularText
+	CheckEvent EVENT_OAK_FIGHT_2
+	jr nz, .RegularText
+
+	SetEvent EVENT_OAK_FIGHT_1
+	ld hl, OakPreBattleText1
+	call PrintText
+
+	call YesNoChoice
+	ld a, [wCurrentMenuItem]
+	and a
+	jr nz, .answered_no
+
+	ld hl, OakPreBattleText2
+	call PrintText
+
+	ld hl, wStatusFlags3
+	set BIT_TALKED_TO_TRAINER, [hl]
+	set BIT_PRINT_END_BATTLE_TEXT, [hl]
+	ld hl, OakPostBattleText
+	ld de, OakPostBattleText
+	call SaveEndBattleTextPointers
+
+	ld a, OPP_PROF_OAK
+	ld [wCurOpponent], a
+	; Check Starter
+	ld a, 1
+	ld [wTrainerNo], a
+
+	xor a
+	ld [wJoyIgnore], a
+
+	ld a, [wIsInBattle]
+	cp $ff
+	jp z, .ResetLabEvent
+
+	SetEvent EVENT_OAK_FIGHT_2
+	ResetEvent EVENT_OAK_FIGHT_1
+	jr .done
+.ResetLabEvent
+	xor a
+	ld [wJoyIgnore], a
+	ld [wOaksLabCurScript], a
+	ld [wCurMapScript], a
+	ret
+.Finish
+	xor a
+	ld [wJoyIgnore], a
+	jr .done
+.answered_no
+	ld hl, OakRefusedBattleText
+	call PrintText
+.done
+	jp TextScriptEnd
+
+
+.RegularText
+	ld hl, Regular150Text
+	call PrintText
+	jp TextScriptEnd
+
+Regular150Text:
 	text_far _DexRatingText_Own150To151
 	text_end
+
+OakPreBattleText1:
+	text_far _OakPreBattleText1
+	text_end
+
+OakPreBattleText2:
+	text_far _OakPreBattleText2
+	text_end
+
+OakPostBattleText:
+	text_far _OakPostBattleText
+	text_end
+
+OakRefusedBattleText:
+	text_far _OakRefusedBattleText
+	text_end
+
+
