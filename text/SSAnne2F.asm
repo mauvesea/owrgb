@@ -59,8 +59,7 @@ _SSAnne2FRivalCutMasterText::
 	para "Well, at least"
 	line "having SHEARS"
 	cont "like that could"
-	cont "be really"
-	cont "useful!"
+	cont "be really useful!"
 
 	para "You should go see"
 	line "him! Smell ya!"

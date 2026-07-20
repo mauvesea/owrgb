@@ -23,7 +23,7 @@ GivePokemon::
 	ld [wCurEnemyLevel], a
 	ld a, [wLevelScaling]
 	cp 0
-	jr z, .FinishLevelScaling
+	jr z, .NoScaling
 	push de
 	push bc
 	ld a, [wCurEnemyLevel]
@@ -41,6 +41,9 @@ GivePokemon::
 	jr nz, .scaleLoop
 	pop bc
 	pop de
+	jr .FinishLevelScaling
+.NoScaling
+	ld a, c
 .FinishLevelScaling
 	ld [wCurEnemyLevel], a
 	xor a ; PLAYER_PARTY_DATA

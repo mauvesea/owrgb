@@ -35,6 +35,7 @@ MtMoonPokecenterMagikarpSalesmanText:
 	ld a, [wCurrentMenuItem]
 	and a
 	jp nz, .choseNo
+	ld b,b
 	ldh [hMoney], a
 	ldh [hMoney + 2], a
 	ld a, $5

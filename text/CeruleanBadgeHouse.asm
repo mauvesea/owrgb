@@ -3,9 +3,6 @@ _CeruleanBadgeHouseMiddleAgedManText::
 	line "are owned only by"
 	cont "skilled trainers."
 
-	para "I see you have"
-	line "at least one."
-
 	para "Those BADGEs have"
 	line "amazing secrets!"
 	prompt

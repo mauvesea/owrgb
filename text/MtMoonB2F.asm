@@ -103,9 +103,11 @@ _MtMoonB2FRocket3EndBattleText::
 	prompt
 
 _MtMoonB2FRocket3AfterBattleText::
-	text "If you find a"
-	line "fossil, give it"
-	cont "to me and scram!"
+	text "I was about to"
+	line "find a fossil,"
+	cont "until you came"
+	cont "and ruined my"
+	cont "day!"
 	done
 
 _MtMoonB2FRocket4BattleText::

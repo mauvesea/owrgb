@@ -68,8 +68,8 @@ _CeruleanCityRocketText::
 
 	para "Well, at least"
 	line "this TM I got"
-	line "will make the"
-	line "BOSS happy!"
+	cont "will make the"
+	cont "BOSS happy!"
 
 	para "..."
 
