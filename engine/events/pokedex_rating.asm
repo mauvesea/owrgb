@@ -140,6 +140,7 @@ DexRatingText_Own140To149:
 
 DexRatingText_Own150To151:
 	text_asm
+	jr .RegularText
 	ld a, [wCurMap]
 	cp OAKS_LAB
 	jr nz, .RegularText

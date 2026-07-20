@@ -3873,19 +3873,25 @@ CheckForDisobedience:
 ; it was traded
 .monIsTraded
 ; what level might disobey?
+	push hl
 	ld hl, wObtainedBadges
-	bit BIT_EARTHBADGE, [hl]
+	ld b, $1
+	call CountSetBits
+	pop hl
+	ld a, [wNumSetBits]
+
+	cp 8
 	ld a, 101
-	jr nz, .next
-	bit BIT_MARSHBADGE, [hl]
+	jr nc, .next
+	cp 6
 	ld a, 70
-	jr nz, .next
-	bit BIT_RAINBOWBADGE, [hl]
+	jr nc, .next
+	cp 4
 	ld a, 50
-	jr nz, .next
-	bit BIT_CASCADEBADGE, [hl]
+	jr nc, .next
+	cp 2
 	ld a, 30
-	jr nz, .next
+	jr nc, .next
 	ld a, 10
 .next
 	ld b, a
@@ -6507,24 +6513,56 @@ ApplyBadgeStatBoosts:
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
 	ret z ; return if link battle
-	ld a, [wObtainedBadges]
+
+	push hl
+	ld hl, wObtainedBadges
+	ld b, $1
+	call CountSetBits
+	pop hl
+	ld a, [wNumSetBits]
 	ld b, a
+
 	ld hl, wBattleMonAttack
-	ld c, $4
-; the boost is applied for badges whose bit position is even
-; the order of boosts matches the order they are laid out in RAM
-; Boulder (bit 0) - attack
-; Thunder (bit 2) - defense
-; Soul (bit 4) - speed
-; Volcano (bit 6) - special
-.loop
-	srl b
-	call c, .applyBoostToStat
+
+	; Attack (1 Badge)
+	ld a, b
+	cp 1
+	jr c, .next1
+	call .applyBoostToStat
+
+.next1
 	inc hl
 	inc hl
-	srl b
-	dec c
-	jr nz, .loop
+
+	; Defense (3 Badges)
+	ld a, b
+	cp 3
+	jr c, .next2
+	call .applyBoostToStat
+
+.next2
+	inc hl
+	inc hl
+
+	; Speed (5 Badges)
+	ld a, b
+	cp 5
+	jr c, .next3
+	call .applyBoostToStat
+
+.next3
+	inc hl
+	inc hl
+
+	; Special (7 Badges)
+	ld a, b
+	cp 7
+	jr c, .done
+	call .applyBoostToStat
+
+.done
+	xor a
+	ld b, a
 	ret
 
 ; multiply stat at hl by 1.125
