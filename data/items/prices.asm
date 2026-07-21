@@ -88,6 +88,7 @@ ItemPrices::
 	bcd3 0     ; FLOATIES
 	bcd3 0     ; CROWBAR
 	bcd3 0     ; FLASHLIGHT
+	bcd3 0     ; OMAMORI
 	assert_table_length NUM_ITEMS
 	bcd3 0     ; FLOOR_B2F
 	bcd3 0     ; FLOOR_B1F

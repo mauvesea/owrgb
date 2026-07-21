@@ -77,10 +77,28 @@ GainExperience:
 	ld a, [wPlayerID + 1]
 	cp b
 	ld a, 0
-	jr z, .next
+	jr z, .CheckForLuckyCharm
 .tradedMon
 	call BoostExp ; traded mon exp boost
 	ld a, 1
+	jr .next
+.CheckForLuckyCharm
+	push hl
+	ld a, b
+	ld c, a
+	ld b, OMAMORI
+	call IsItemInBag
+	pop hl
+	jr z, .LuckyCharmNotInBag ; Lucky Charm not in Bag
+	call BoostExp
+	ld a, c
+	ld b, a
+	ld a, 1
+	jr .next
+.LuckyCharmNotInBag
+	ld a, c
+	ld b, a
+	ld a,0
 .next
 	ld [wGainBoostedExp], a
 	ld a, [wIsInBattle]

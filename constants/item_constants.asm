@@ -98,6 +98,7 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const FLOATIES
 	const CROWBAR
 	const FLASHLIGHT
+	const OMAMORI
 DEF NUM_ITEMS EQU const_value - 1
 
 ; elevator floors use item IDs (see scripts/CeladonMartElevator.asm and scripts/SilphCoElevator.asm)

@@ -88,4 +88,5 @@ KeyItemFlags:
 	dbit TRUE  ; FLOATIES
 	dbit TRUE  ; CROWBAR
 	dbit TRUE  ; FLASHLIGHT
+	dbit TRUE  ; OMAMORI
 	end_bit_array NUM_ITEMS

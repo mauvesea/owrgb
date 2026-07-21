@@ -218,6 +218,40 @@ ItemUseBall:
 	cp b
 	jr c, .loop
 
+; Less than or equal to 150 is good enough for a Great Ball.
+	ld a, [hl]
+	cp ULTRA_BALL
+	jr z, .checkForAilments
+
+; Safari Ball uses 150 or 100 depending whether Lucky Charm is currently held or not.
+	ld a, b
+	ld d, a
+
+	ld b, OMAMORI
+	call IsItemInBag
+	jr z, .LuckyCharmNotInBag1
+
+	ld a, d
+	ld b, a
+	ld a, 100
+	cp b
+	jr c, .loop
+
+	ld a, [hl]
+	cp SAFARI_BALL
+	jr z, .checkForAilments
+
+.LuckyCharmNotInBag1
+	ld a, d
+	ld b, a
+	ld a, 150
+	cp b
+	jr c, .loop
+
+	ld a, [hl]
+	cp SAFARI_BALL
+	jr z, .checkForAilments
+
 .checkForAilments
 ; Pokémon can be caught more easily with a status ailment.
 ; Depending on the status ailment, a certain value will be subtracted from
@@ -257,9 +291,23 @@ ItemUseBall:
 
 ; Determine BallFactor. It's 8 for Great Balls and 12 for the others.
 	ld a, [wCurItem]
-	cp GREAT_BALL
+	cp ULTRA_BALL
+	jr z, .UltraBallSelected
+	ld a, [wCurItem]
+	cp SAFARI_BALL
+	jr z, .SafariBallSelected
 	ld a, 12
-	jr nz, .skip1
+	jr .skip1
+.UltraBallSelected
+	ld a, 8
+	jr .skip1
+.SafariBallSelected
+	ld b, OMAMORI
+	call IsItemInBag
+	jr z, .LuckyCharmNotInBag2
+	ld a, 4
+	jr .skip1
+.LuckyCharmNotInBag2
 	ld a, 8
 
 .skip1
