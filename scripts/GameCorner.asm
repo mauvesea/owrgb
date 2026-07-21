@@ -420,7 +420,6 @@ GameCornerGentlemanText:
 
 GameCornerRocketText:
 	text_asm
-	ld b,b
 	ld a, [wRocketDefeated]
 	cp 5
 	jr nc, .FreedMtMoon

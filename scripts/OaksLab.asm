@@ -29,7 +29,28 @@ OaksLab_ScriptPointers:
 	dw_const OaksLabRivalArrivesAtOaksRequestScript, SCRIPT_OAKSLAB_RIVAL_ARRIVES_AT_OAKS_REQUEST
 	dw_const OaksLabOakGivesPokedexScript,           SCRIPT_OAKSLAB_OAK_GIVES_POKEDEX
 	dw_const OaksLabRivalLeavesWithPokedexScript,    SCRIPT_OAKSLAB_RIVAL_LEAVES_WITH_POKEDEX
+	dw_const OaksLabOakBattleEndScript,              SCRIPT_OAK_FIGHT_END
 	dw_const OaksLabNoopScript,                      SCRIPT_OAKSLAB_NOOP
+
+OaksLabOakBattleEndScript:
+	ld a, [wIsInBattle]
+	cp $ff
+	jp nz, .ResetLabEvent
+	xor a
+	ld [wJoyIgnore], a
+	ld a, SCRIPT_OAKSLAB_NOOP
+	ld [wOaksLabCurScript], a
+	ld [wCurMapScript], a
+	ret
+
+.ResetLabEvent
+	SetEvent EVENT_OAK_FIGHT_2
+	ResetEvent EVENT_OAK_FIGHT_1
+	xor a
+	ld [wJoyIgnore], a
+	ld a, SCRIPT_OAKSLAB_NOOP
+	ld [wOaksLabCurScript], a
+	ret
 
 OaksLabDefaultScript:
 	CheckEvent EVENT_OAK_APPEARED_IN_PALLET

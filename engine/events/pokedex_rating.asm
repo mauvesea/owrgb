@@ -140,7 +140,6 @@ DexRatingText_Own140To149:
 
 DexRatingText_Own150To151:
 	text_asm
-	jr .RegularText
 	ld a, [wCurMap]
 	cp OAKS_LAB
 	jr nz, .RegularText
@@ -173,25 +172,12 @@ DexRatingText_Own150To151:
 	ld [wTrainerNo], a
 
 	xor a
-	ld [wJoyIgnore], a
-
-	ld a, [wIsInBattle]
-	cp $ff
-	jp z, .ResetLabEvent
-
-	SetEvent EVENT_OAK_FIGHT_2
-	ResetEvent EVENT_OAK_FIGHT_1
-	jr .done
-.ResetLabEvent
-	xor a
-	ld [wJoyIgnore], a
+	ldh [hJoyHeld], a
+	ld a, 18 ; SCRIPT_OAK_FIGHT_END
 	ld [wOaksLabCurScript], a
 	ld [wCurMapScript], a
-	ret
-.Finish
-	xor a
-	ld [wJoyIgnore], a
 	jr .done
+
 .answered_no
 	ld hl, OakRefusedBattleText
 	call PrintText
