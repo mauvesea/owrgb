@@ -822,10 +822,11 @@ FaintEnemyPokemon:
 	push af
 	jr z, .giveExpToMonsThatFought ; if no exp all, then jump
 
-; the player has exp all
-; first, we halve the values that determine exp gain
-; the enemy mon base stats are added to stat exp, so they are halved
-; the base exp (which determines normal exp) is also halved
+; Save the original participants
+	ld a, [wPartyGainExpFlags]
+	ld [wOriginalPartyGainExpFlags], a
+
+; Halve stat exp/base exp data
 	ld hl, wEnemyMonBaseStats
 	ld b, NUM_STATS + 2
 .halveExpDataLoop
@@ -834,29 +835,52 @@ FaintEnemyPokemon:
 	dec b
 	jr nz, .halveExpDataLoop
 
-; give exp (divided evenly) to the mons that actually fought in battle against the enemy mon that has fainted
-; if exp all is in the bag, this will be only be half of the stat exp and normal exp, due to the above loop
+; Save the halved values, since GainExperience will divide them
+	ld hl, wEnemyMonBaseStats
+	ld de, wSavedEnemyExpData
+	ld bc, NUM_STATS + 2
+	call CopyData
+
 .giveExpToMonsThatFought
 	xor a
 	ld [wBoostExpByExpAll], a
 	callfar GainExperience
-	pop af
-	ret z ; return if no exp all
 
-; the player has exp all
-; now, set the gain exp flag for every party member
-; half of the total stat exp and normal exp will divided evenly amongst every party member
+	pop af
+	ret z ; No Exp. All
+
 	ld a, TRUE
 	ld [wBoostExpByExpAll], a
+
+; Restore the original halved EXP/stat data
+	ld hl, wSavedEnemyExpData
+	ld de, wEnemyMonBaseStats
+	ld bc, NUM_STATS + 2
+	call CopyData
+
+; Build mask containing every party member
 	ld a, [wPartyCount]
 	ld b, 0
-.gainExpFlagsLoop
+.buildAllMask
 	scf
 	rl b
 	dec a
-	jr nz, .gainExpFlagsLoop
+	jr nz, .buildAllMask
+
+; Remove participants from the mask
 	ld a, b
+	ld c, a
+
+	ld a, [wOriginalPartyGainExpFlags]
+	cpl
+	and c
+
 	ld [wPartyGainExpFlags], a
+
+; If everyone participated, nobody receives the Exp. All share.
+	and a
+	ret z
+
 	jpfar GainExperience
 
 EnemyMonFaintedText:

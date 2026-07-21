@@ -875,7 +875,9 @@ wRightGBMonSpecies:: db
 
 wMiscFlags:: db
 
-	ds 9
+wSavedEnemyExpData:: ds NUM_STATS + 2
+
+	ds 2
 
 ; This has overlapping related uses.
 ; When the player tries to use an item or use certain field moves, 0 is stored
@@ -1228,7 +1230,7 @@ wTrainerBaseMoney:: dw ; BCD
 
 wToggleableObjectCounter:: db
 
-	ds 1
+wOriginalPartyGainExpFlags:: flag_array PARTY_LENGTH
 
 ; 13 bytes for the letters of the opposing trainer
 ; the name is terminated with $50 with possible
