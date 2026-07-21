@@ -19,6 +19,12 @@ Route18Gate1FDefaultScript:
 	ld hl, .StopsPlayerCoords
 	call ArePlayerCoordsInArray
 	ret nc
+
+	ld a, PAD_CTRL_PAD
+	ld [wJoyIgnore], a
+	xor a
+	ldh [hJoyHeld], a
+
 	ld a, TEXT_ROUTE18GATE1F_GUARD_EXCUSE_ME
 	ldh [hTextID], a
 	call DisplayTextID
