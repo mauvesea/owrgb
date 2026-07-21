@@ -161,5 +161,5 @@ _OakPostBattleText::
 	cont "now!"
 
 	para "Congratulations,"
-	line "CHAMPION <PLAYER>!@"
-	text_end
+	line "CHAMPION <PLAYER>!"
+	prompt
