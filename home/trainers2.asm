@@ -17,32 +17,6 @@ GetTrainerInformation::
 	ld a, [hli]
 	ld [de], a
 
-
-	; Load base money, double it, then store it
-	push hl
-	ld b, OMAMORI
-	call IsItemInBag
-	pop hl
-	jr z, .LuckyCharmNotInBag ; Lucky Charm not in Bag
-
-
-	ld c, [hl]      ; Low byte
-	inc hl
-	ld b, [hl]      ; High byte
-	inc hl
-
-	sla c           ; BC *= 2
-	rl b
-
-	ld de, wTrainerBaseMoney
-	ld a, c
-	ld [de], a
-	inc de
-	ld a, b
-	ld [de], a
-	jr .LuckyCharmDone
-
-.LuckyCharmNotInBag
 	ld de, wTrainerBaseMoney
 	ld a, [hli]
 	ld [de], a

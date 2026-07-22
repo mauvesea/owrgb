@@ -1170,7 +1170,6 @@ HandlePlayerBlackOut:
 	call DelayFrames
 	ld hl, Rival1WinText
 	call PrintText
-	jr nz, .notRival1Battle
 	ld a, [wCurMap]
 	cp OAKS_LAB
 	ret z            ; starter battle in oak's lab: don't black out

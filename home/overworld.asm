@@ -340,13 +340,25 @@ OverworldLoopLessDelay::
 .notCinnabarGym
 	ld hl, wStatusFlags4
 	set BIT_BATTLE_OVER_OR_BLACKOUT, [hl]
+
 ; Oak Battle Check 1
 	CheckEvent EVENT_OAK_FIGHT_1
-	jr nz, .NoOakBattle
+	jr z, .CheckOakBattleScript ; event is set, continue checking
+	jr .NoOakBattle
+
+.CheckOakBattleScript
 ; Oak Battle Check 2
 	ld a, [wOaksLabCurScript]
-	cp 19
-	jr z, .allPokemonFainted
+	cp 18
+	jr nz, .NoOakBattle
+
+; Oak Battle Check 3
+	ld a, [wCurMap]
+	cp OAKS_LAB
+	jr nz, .NoOakBattle
+
+; All conditions met
+	jr .allPokemonFainted
 
 .NoOakBattle
 	ld a, [wCurMap]

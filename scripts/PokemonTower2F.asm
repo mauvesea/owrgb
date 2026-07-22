@@ -69,6 +69,11 @@ PokemonTower2FDefeatedRivalScript:
 	jp z, PokemonTower2FResetRivalEncounter
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
+
+	ld a, [wRivalDefeated]
+	inc a
+	ld [wRivalDefeated], a
+
 	SetEvent EVENT_BEAT_POKEMON_TOWER_RIVAL
 	ld a, TEXT_POKEMONTOWER2F_RIVAL
 	ldh [hTextID], a
@@ -138,7 +143,7 @@ PokemonTower2FRivalText:
 	jr z, .do_battle
 	ld hl, .HowsYourDexText
 	call PrintText
-	jr .text_script_end
+	jp .text_script_end
 .do_battle
 	ld hl, .WhatBringsYouHereText
 	call PrintText
@@ -148,22 +153,96 @@ PokemonTower2FRivalText:
 	ld hl, .DefeatedText
 	ld de, .VictoryText
 	call SaveEndBattleTextPointers
+	ld a, [wRivalDefeated]
+	cp 0
+	jp z, .LoadRival1 ; jump if = 1 -> Cerulean
+	cp 1
+	jr z, .LoadRival2_1 ; SS Anne
+	cp 2
+	jr z, .LoadRival2_2 ; Pokemon Tower
+	; Fallthrough Rival2 3 -> Silph Co
+
 	ld a, OPP_RIVAL2
 	ld [wCurOpponent], a
 
 	; select which team to use during the encounter
 	ld a, [wRivalStarter]
-	cp STARTER2
-	jr nz, .NotSquirtle
-	ld a, $4
+	cp STARTER2 ; SQUIRTLE
+	jr nz, .NotSquirtle_Battle4
+	ld a, 7
 	jr .done
-.NotSquirtle
-	cp STARTER3
-	jr nz, .Charmander
-	ld a, $5
+.NotSquirtle_Battle4
+	cp STARTER3 ; BULBASAUR
+	jr nz, .Charmander_Battle4
+	ld a, 8
 	jr .done
-.Charmander
-	ld a, $6
+.Charmander_Battle4
+	ld a, 9
+	jr .done
+
+
+
+.LoadRival2_1
+	ld a, OPP_RIVAL2
+	ld [wCurOpponent], a
+
+	; select which team to use during the encounter
+	ld a, [wRivalStarter]
+	cp STARTER2 ; SQUIRTLE
+	jr nz, .NotSquirtle_Battle2
+	ld a, 1
+	jr .done
+.NotSquirtle_Battle2
+	cp STARTER3 ; BULBASAUR
+	jr nz, .Charmander_Battle2
+	ld a, 2
+	jr .done
+.Charmander_Battle2
+	ld a, 3
+	jr .done
+
+.LoadRival2_2
+	ld a, OPP_RIVAL2
+	ld [wCurOpponent], a
+
+	; select which team to use during the encounter
+	ld a, [wRivalStarter]
+	cp STARTER2 ; SQUIRTLE
+	jr nz, .NotSquirtle_Battle3
+	ld a, 4
+	jr .done
+.NotSquirtle_Battle3
+	cp STARTER3 ; BULBASAUR
+	jr nz, .Charmander_Battle3
+	ld a, 5
+	jr .done
+.Charmander_Battle3
+	ld a, 6
+	jr .done
+
+
+
+
+.LoadRival1
+	ld a, OPP_RIVAL1
+	ld [wCurOpponent], a
+
+	; select which team to use during the encounter
+	ld a, [wRivalStarter]
+	cp STARTER2 ; SQUIRTLE
+	jr nz, .NotSquirtle_Battle1
+	ld a, 7
+	jr .done
+.NotSquirtle_Battle1
+	cp STARTER3 ; BULBASAUR
+	jr nz, .Charmander_Battle1
+	ld a, 8
+	jr .done
+.Charmander_Battle1
+	ld a, 9
+
+
+
 .done
 	ld [wTrainerNo], a
 

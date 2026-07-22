@@ -152,6 +152,23 @@ ReadTrainer:
 	ld [de], a
 	ld a, [wCurEnemyLevel]
 	ld b, a
+
+	ld a, [wLevelScaling]
+	and a
+	jr z, .LevelScalingDone ; no scaling
+
+; Add 5 for each level of scaling
+ld c, a
+.AddScaling
+	ld a, b
+	add 5
+	ld b, a
+	dec c
+	jr nz, .AddScaling
+
+.LevelScalingDone
+; b now contains the adjusted level
+
 .LastLoop
 ; update wAmountMoneyWon addresses (money to win) based on enemy's level
 	ld hl, wTrainerBaseMoney + 1
@@ -163,4 +180,33 @@ ReadTrainer:
 	inc de
 	dec b
 	jr nz, .LastLoop ; repeat wCurEnemyLevel times
+
+; Check for Omamori
+	ld b, OMAMORI
+	call IsItemInBag
+	jr z, .OmamoriNotInBag
+
+; Double wAmountMoneyWon
+	ld hl, wAmountMoneyWon
+	ld de, wAmountMoneyWon
+	ld c, 3
+
+	ld a, [de]
+	add a
+	daa
+	ld [de], a
+
+	inc de
+	ld a, [de]
+	adc a
+	daa
+	ld [de], a
+
+	inc de
+	ld a, [de]
+	adc a
+	daa
+	ld [de], a
+
+.OmamoriNotInBag
 	ret
