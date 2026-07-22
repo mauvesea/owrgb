@@ -70,4 +70,9 @@ FairySprite::            INCBIN "gfx/sprites/fairy.2bpp"
 AgathaSprite::           INCBIN "gfx/sprites/agatha.2bpp"
 BrunoSprite::            INCBIN "gfx/sprites/bruno.2bpp"
 LoreleiSprite::          INCBIN "gfx/sprites/lorelei.2bpp"
+RedSwimSprite::           INCBIN "gfx/sprites/red_swim.2bpp"
+
+
+SECTION "NPC Sprites 3", ROMX
 SeelSprite::             INCBIN "gfx/sprites/seel.2bpp"
+
