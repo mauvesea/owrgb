@@ -420,9 +420,8 @@ GameCornerGentlemanText:
 
 GameCornerRocketText:
 	text_asm
-	ld a, [wRocketDefeated]
-	cp 5
-	jr nc, .FreedMtMoon
+	CheckEvent EVENT_DEFEATED_ALL_ROCKETS_MT_MOON
+	jr nz, .FreedMtMoon
 	ld hl, GameCornerRocketMtMoonText
 	call PrintText
 	jr .done

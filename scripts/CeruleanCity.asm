@@ -399,11 +399,6 @@ CeruleanCityRocketText:
 	ld hl, .ReceivedTM28Text
 	call PrintText
 	farcall CeruleanHideRocket
-
-	ld a, [wRocketDefeated]
-	inc a
-	ld [wRocketDefeated], a
-
 .Done
 	jp TextScriptEnd
 

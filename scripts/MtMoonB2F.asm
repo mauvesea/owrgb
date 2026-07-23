@@ -2,6 +2,7 @@ MtMoonB2F_Script:
 	call EnableAutoTextBoxDrawing
 	ld hl, MtMoon3TrainerHeaders
 	ld de, MtMoonB2F_ScriptPointers
+	call MtMoonCheckDefeatedRockets
 	ld a, [wMtMoonB2FCurScript]
 	call ExecuteCurMapScriptInTable
 	ld [wMtMoonB2FCurScript], a
@@ -21,6 +22,51 @@ MtMoonB2F_Script:
 	ld hl, wStatusFlags4
 	res BIT_NO_BATTLES, [hl]
 	ret
+
+MtMoonCheckDefeatedRockets:
+	CheckEvent EVENT_DEFEATED_ALL_ROCKETS_MT_MOON
+	ret nz
+
+	CheckEvent EVENT_BEAT_MT_MOON_3_TRAINER_0
+	ret z
+
+	CheckEvent EVENT_BEAT_MT_MOON_3_TRAINER_1
+	ret z
+
+	CheckEvent EVENT_BEAT_MT_MOON_3_TRAINER_2
+	ret z
+
+	CheckEvent EVENT_BEAT_MT_MOON_3_TRAINER_3
+	ret z
+
+	call GBFadeOutToBlack
+	ld a, TOGGLE_MT_MOON_ROCKET_4
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+	ld a, TOGGLE_MT_MOON_ROCKET_3
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+	ld a, TOGGLE_MT_MOON_ROCKET_2
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+	ld a, TOGGLE_MT_MOON_ROCKET_1
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+	call UpdateSprites
+	call Delay3
+	call GBFadeInFromBlack
+
+	ld a, TEXT_MTMOONB2F_ROCKETS_HAVE_LEFT
+	ldh [hTextID], a
+	call DisplayTextID
+
+	SetEvent EVENT_DEFEATED_ALL_ROCKETS_MT_MOON
+	ret
+
 
 MtMoonB2FFossilAreaCoords:
 	dbmapcoord 11,  5
@@ -171,6 +217,7 @@ MtMoonB2F_TextPointers:
 	dw_const PickUpItemText,                       TEXT_MTMOONB2F_HP_UP
 	dw_const PickUpItemText,                       TEXT_MTMOONB2F_TM_MEGA_PUNCH
 	dw_const MtMoonB2FSuperNerdThenThisIsMineText, TEXT_MTMOONB2F_SUPER_NERD_THEN_THIS_IS_MINE
+	dw_const MtMoonRocketsHaveLeftText,            TEXT_MTMOONB2F_ROCKETS_HAVE_LEFT
 
 MtMoon3TrainerHeaders:
 	def_trainers 2
@@ -346,28 +393,7 @@ MtMoonB2FRocket1EndBattleText:
 	text_end
 
 MtMoonB2FRocket1AfterBattleText:
-	text_asm
-	ld a, $1
-	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
-	ld hl, .MtMoonB2FRocket1AfterBattleText1
-	call PrintText
-	call GBFadeOutToBlack
-	ld a, TOGGLE_MT_MOON_ROCKET_1
-	ld [wToggleableObjectIndex], a
-	predef HideObject
-	call UpdateSprites
-	call Delay3
-	call GBFadeInFromBlack
-
-	ld a, [wRocketDefeated]
-	inc a
-	ld [wRocketDefeated], a
-
-	jp TextScriptEnd
-
-.MtMoonB2FRocket1AfterBattleText1:
 	text_far _MtMoonB2FRocket1AfterBattleText
-	text_waitbutton
 	text_end
 
 MtMoonB2FRocket2BattleText:
@@ -379,27 +405,7 @@ MtMoonB2FRocket2EndBattleText:
 	text_end
 
 MtMoonB2FRocket2AfterBattleText:
-	text_asm
-	ld a, $1
-	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
-	ld hl, .MtMoonB2FRocket2AfterBattleText1
-	call PrintText
-	call GBFadeOutToBlack
-	ld a, TOGGLE_MT_MOON_ROCKET_2
-	ld [wToggleableObjectIndex], a
-	predef HideObject
-	call UpdateSprites
-	call Delay3
-	call GBFadeInFromBlack
-
-	ld a, [wRocketDefeated]
-	inc a
-	ld [wRocketDefeated], a
-
-	jp TextScriptEnd
-.MtMoonB2FRocket2AfterBattleText1
 	text_far _MtMoonB2FRocket2AfterBattleText
-	text_waitbutton
 	text_end
 
 MtMoonB2FRocket3BattleText:
@@ -411,27 +417,7 @@ MtMoonB2FRocket3EndBattleText:
 	text_end
 
 MtMoonB2FRocket3AfterBattleText:
-	text_asm
-	ld a, $1
-	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
-	ld hl, .MtMoonB2FRocket3AfterBattleText1
-	call PrintText
-	call GBFadeOutToBlack
-	ld a, TOGGLE_MT_MOON_ROCKET_3
-	ld [wToggleableObjectIndex], a
-	predef HideObject
-	call UpdateSprites
-	call Delay3
-	call GBFadeInFromBlack
-
-	ld a, [wRocketDefeated]
-	inc a
-	ld [wRocketDefeated], a
-
-	jp TextScriptEnd
-.MtMoonB2FRocket3AfterBattleText1
 	text_far _MtMoonB2FRocket3AfterBattleText
-	text_waitbutton
 	text_end
 
 MtMoonB2FRocket4BattleText:
@@ -443,25 +429,9 @@ MtMoonB2FRocket4EndBattleText:
 	text_end
 
 MtMoonB2FRocket4AfterBattleText:
-	text_asm
-	ld a, $1
-	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
-	ld hl, .MtMoonB2FRocket4AfterBattleText1
-	call PrintText
-	call GBFadeOutToBlack
-	ld a, TOGGLE_MT_MOON_ROCKET_4
-	ld [wToggleableObjectIndex], a
-	predef HideObject
-	call UpdateSprites
-	call Delay3
-	call GBFadeInFromBlack
-
-	ld a, [wRocketDefeated]
-	inc a
-	ld [wRocketDefeated], a
-
-	jp TextScriptEnd
-.MtMoonB2FRocket4AfterBattleText1
 	text_far _MtMoonB2FRocket4AfterBattleText
-	text_waitbutton
+	text_end
+
+MtMoonRocketsHaveLeftText:
+	text_far _MtMoonRocketsHaveLeftText
 	text_end

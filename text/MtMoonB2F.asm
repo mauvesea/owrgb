@@ -68,7 +68,6 @@ _MtMoonB2FRocket1EndBattleText::
 	prompt
 
 _MtMoonB2FRocket1AfterBattleText::
-
 	text "You made me mad!"
 	line "TEAM ROCKET will"
 	cont "blacklist you!"
@@ -103,11 +102,9 @@ _MtMoonB2FRocket3EndBattleText::
 	prompt
 
 _MtMoonB2FRocket3AfterBattleText::
-	text "I was about to"
-	line "find a fossil,"
-	cont "until you came"
-	cont "and ruined my"
-	cont "day!"
+	text "If you find a"
+	line "fossil, give it"
+	cont "to me and scram!"
 	done
 
 _MtMoonB2FRocket4BattleText::
@@ -125,4 +122,9 @@ _MtMoonB2FRocket4AfterBattleText::
 	text "#MON lived"
 	line "here long before"
 	cont "people came."
+	done
+
+_MtMoonRocketsHaveLeftText::
+	text "TEAM ROCKET"
+	line "scattered away!"
 	done

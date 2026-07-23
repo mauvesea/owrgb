@@ -1894,7 +1894,7 @@ wGrassTile:: db
 	ds 1
 
 wLevelScaling:: db
-wRocketDefeated:: db
+	ds 1
 wRivalDefeated:: db
 
 wNumBoxItems:: db
