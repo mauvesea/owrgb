@@ -49,11 +49,40 @@ ReadTrainer:
 	ld a, [hli]
 	cp $FF ; is the trainer special?
 	jr z, .SpecialTrainer ; if so, check for special moves
+
 	ld [wCurEnemyLevel], a
+
+	ld a, [wLevelScaling]
+	cp 0
+	jr z, .SkipLevelScaling
+	push de
+	push bc
+	ld a, [wCurEnemyLevel]
+	ld e, a
+	ld a, [wLevelScaling]
+	ld c, a
+	ld a, e
+.scaleLoop
+	ld d, 5
+.addFive
+	inc a
+	dec d
+	jr nz, .addFive
+	dec c
+	jr nz, .scaleLoop
+	pop bc
+	pop de
+	jr .FinishLevelScaling
+
+.SkipLevelScaling
+	ld a, [wCurEnemyLevel]
+.FinishLevelScaling
+	ld [wCurEnemyLevel], a
+
 .LoopTrainerData
 	ld a, [hli]
 	and a ; have we reached the end of the trainer data?
-	jr z, .FinishUp
+	jp z, .FinishUp
 	ld [wCurPartySpecies], a
 	ld a, ENEMY_PARTY_DATA
 	ld [wMonDataLocation], a
@@ -69,7 +98,36 @@ ReadTrainer:
 	ld a, [hli]
 	and a ; have we reached the end of the trainer data?
 	jr z, .AddLoneMove
+
 	ld [wCurEnemyLevel], a
+
+	ld a, [wLevelScaling]
+	cp 0
+	jr z, .SkipLevelScaling2
+	push de
+	push bc
+	ld a, [wCurEnemyLevel]
+	ld e, a
+	ld a, [wLevelScaling]
+	ld c, a
+	ld a, e
+.scaleLoop2
+	ld d, 5
+.addFive2
+	inc a
+	dec d
+	jr nz, .addFive2
+	dec c
+	jr nz, .scaleLoop2
+	pop bc
+	pop de
+	jr .FinishLevelScaling2
+
+.SkipLevelScaling2
+	ld a, [wCurEnemyLevel]
+.FinishLevelScaling2
+	ld [wCurEnemyLevel], a
+
 	ld a, [hli]
 	ld [wCurPartySpecies], a
 	ld a, ENEMY_PARTY_DATA
@@ -95,7 +153,7 @@ ReadTrainer:
 	ld bc, PARTYMON_STRUCT_LENGTH
 	call AddNTimes
 	ld [hl], d
-	jr .FinishUp
+	jp .FinishUp
 .AddTeamMove
 ; check if our trainer's team has special moves
 
@@ -152,23 +210,6 @@ ReadTrainer:
 	ld [de], a
 	ld a, [wCurEnemyLevel]
 	ld b, a
-
-	ld a, [wLevelScaling]
-	and a
-	jr z, .LevelScalingDone ; no scaling
-
-; Add 5 for each level of scaling
-ld c, a
-.AddScaling
-	ld a, b
-	add 5
-	ld b, a
-	dec c
-	jr nz, .AddScaling
-
-.LevelScalingDone
-; b now contains the adjusted level
-
 .LastLoop
 ; update wAmountMoneyWon addresses (money to win) based on enemy's level
 	ld hl, wTrainerBaseMoney + 1
@@ -186,27 +227,10 @@ ld c, a
 	call IsItemInBag
 	jr z, .OmamoriNotInBag
 
-; Double wAmountMoneyWon
-	ld hl, wAmountMoneyWon
-	ld de, wAmountMoneyWon
+	ld hl, wAmountMoneyWon + 2
+	ld de, wAmountMoneyWon + 2
 	ld c, 3
-
-	ld a, [de]
-	add a
-	daa
-	ld [de], a
-
-	inc de
-	ld a, [de]
-	adc a
-	daa
-	ld [de], a
-
-	inc de
-	ld a, [de]
-	adc a
-	daa
-	ld [de], a
+	predef AddBCDPredef
 
 .OmamoriNotInBag
 	ret

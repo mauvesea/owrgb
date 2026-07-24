@@ -6067,7 +6067,21 @@ LoadEnemyMonData:
 	ld [hli], a
 	ld [hl], b
 	ld de, wEnemyMonLevel
-;	ld a, [wCurEnemyLevel] ; This is where levels are stored, will use wLevelScaling
+	ld a, [wCurEnemyLevel]
+	ld [de], a
+	inc de
+	ld b, $0
+	ld hl, wEnemyMonHP
+	push hl
+	call CalcStats
+	pop hl
+	ld a, [wIsInBattle]
+	cp $2 ; is it a trainer battle?
+	jr z, .copyHPAndStatusFromPartyData
+
+
+	ld de, wEnemyMonLevel
+	ld a, [wCurEnemyLevel]
 
 	ld a, [wLevelScaling]
 	cp 0
@@ -6091,21 +6105,19 @@ LoadEnemyMonData:
 	pop de
 	jr .FinishLevelScaling
 
-
-
 .SkipLevelScaling
 	ld a, [wCurEnemyLevel]
 .FinishLevelScaling
+	ld [wCurEnemyLevel], a
+
 	ld [de], a
 	inc de
 	ld b, $0
 	ld hl, wEnemyMonHP
 	push hl
-	call CalcStats
+	call CalcStats ; Recalculate everything for wild encounters
 	pop hl
-	ld a, [wIsInBattle]
-	cp $2 ; is it a trainer battle?
-	jr z, .copyHPAndStatusFromPartyData
+
 	ld a, [wEnemyBattleStatus3]
 	bit TRANSFORMED, a ; is enemy mon transformed?
 	jr nz, .copyTypes ; if transformed, jump
