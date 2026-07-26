@@ -20,7 +20,7 @@ Route8_Object:
 	warp_event 13,  3, UNDERGROUND_PATH_ROUTE_8, 1
 
 	def_bg_events
-	bg_event 17,  3, TEXT_ROUTE8_UNDERGROUND_SIGN
+	bg_event 12,  4, TEXT_ROUTE8_UNDERGROUND_SIGN
 
 	def_object_events
 	object_event  8,  5, SPRITE_SUPER_NERD, STAY, RIGHT, TEXT_ROUTE8_SUPER_NERD1, OPP_SUPER_NERD, 3

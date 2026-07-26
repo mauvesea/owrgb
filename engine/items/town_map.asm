@@ -222,6 +222,7 @@ LoadTownMap_Fly::
 	pop hl
 	pop af
 	ld [hl], a
+	call ReloadMapData
 	ret
 .pressedUp
 	decoord 18, 0
@@ -341,6 +342,7 @@ ExitTownMap:
 	call ClearSprites
 	call LoadPlayerSpriteGraphics
 	call LoadFontTilePatterns
+	call ReloadMapData
 	call UpdateSprites
 	jp RunDefaultPaletteCommand
 

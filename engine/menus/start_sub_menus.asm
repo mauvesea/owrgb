@@ -27,6 +27,7 @@ StartMenu_Pokemon::
 	call GBPalWhiteOutWithDelay3
 	call RestoreScreenTilesAndReloadTilePatterns
 	call LoadGBPal
+	call ReloadMapData
 	jp RedisplayStartMenu
 .chosePokemon
 	call SaveScreenTilesToBuffer1
@@ -204,6 +205,7 @@ StartMenu_Pokemon::
 	text_end
 .goBackToMap
 	call RestoreScreenTilesAndReloadTilePatterns
+	call ReloadMapData
 	jp CloseTextDisplay
 
 ; writes a blank tile to all possible menu cursor positions on the party menu
@@ -337,6 +339,7 @@ StartMenu_Item::
 	jp z, .partyMenuNotDisplayed
 	call GBPalWhiteOutWithDelay3
 	call RestoreScreenTilesAndReloadTilePatterns
+	call ReloadMapData
 	pop af
 	ld [wUpdateSpritesEnabled], a
 	jp StartMenu_Item
@@ -487,7 +490,7 @@ DrawTrainerInfo:
 	ld de, wPlayTimeHours
 	lb bc, LEFT_ALIGN | 1, 3
 	call PrintNumber
-	ld [hl], $d6 ; colon tile ID
+	ld [hl], "<COLON>" ; colon tile ID
 	inc hl
 	ld de, wPlayTimeMinutes
 	lb bc, LEADING_ZEROES | 1, 2

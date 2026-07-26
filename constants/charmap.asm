@@ -28,20 +28,7 @@
 
 ; Actual characters (from gfx/font/font_extra.png)
 
-	charmap "<BOLD_A>",  $60 ; unused
-	charmap "<BOLD_B>",  $61 ; unused
-	charmap "<BOLD_C>",  $62 ; unused
-	charmap "<BOLD_D>",  $63 ; unused
-	charmap "<BOLD_E>",  $64 ; unused
-	charmap "<BOLD_F>",  $65 ; unused
-	charmap "<BOLD_G>",  $66 ; unused
-	charmap "<BOLD_H>",  $67 ; unused
-	charmap "<BOLD_I>",  $68 ; unused
-	charmap "<BOLD_V>",  $69
-	charmap "<BOLD_S>",  $6a
-	charmap "<BOLD_L>",  $6b ; unused
-	charmap "<BOLD_M>",  $6c ; unused
-	charmap "<COLON>",   $6d ; colon with tinier dots than ":"
+	charmap "<COLON>",   $9c
 	charmap "ぃ",         $6e ; hiragana small i, unused
 	charmap "ぅ",         $6f ; hiragana small u, unused
 	charmap "‘",         $70 ; opening single quote
@@ -157,6 +144,34 @@
 	charmap "'t",        $be
 	charmap "'v",        $bf
 
+	charmap "<BOLD_A>",  $c0
+	charmap "<BOLD_B>",  $c1
+	charmap "<BOLD_C>",  $c2
+	charmap "<BOLD_D>",  $c3
+	charmap "<BOLD_E>",  $c4
+	charmap "<BOLD_F>",  $c5
+	charmap "<BOLD_G>",  $c6
+	charmap "<BOLD_H>",  $c7
+	charmap "<BOLD_I>",  $c8
+	charmap "<BOLD_V>",  $c9
+	charmap "<BOLD_S>",  $ca
+	charmap "<BOLD_L>",  $cb
+	charmap "<BOLD_M>",  $cc
+
+	charmap "<BOLD_N>",  $cd
+	charmap "<BOLD_O>",  $ce
+	charmap "<BOLD_P>",  $cf
+	charmap "<BOLD_Q>",  $d0
+	charmap "<BOLD_R>",  $d1
+	charmap "<BOLD_S>",  $d2
+	charmap "<BOLD_T>",  $d3
+	charmap "<BOLD_U>",  $d4
+	charmap "<BOLD_V>",  $d5
+	charmap "<BOLD_W>",  $d6
+	charmap "<BOLD_X>",  $d7
+	charmap "<BOLD_Y>",  $d8
+	charmap "<BOLD_Z>",  $d9
+
 	charmap "'",         $e0
 	charmap "<PK>",      $e1
 	charmap "<MN>",      $e2
@@ -179,7 +194,7 @@
 	charmap "♂",         $ef
 	charmap "¥",         $f0
 	charmap "×",         $f1
-	charmap "<DOT>",     $f2 ; decimal point; same as "." in English
+	charmap "<DOT>",     $e8 ; decimal point; same as "." in English
 	charmap "/",         $f3
 	charmap ",",         $f4
 	charmap "♀",         $f5

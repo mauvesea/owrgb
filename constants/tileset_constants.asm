@@ -1,4 +1,4 @@
-DEF MAP_TILESET_SIZE EQU $60 ; tiles
+DEF MAP_TILESET_SIZE EQU $79 ; tiles
 
 ; tileset ids
 ; Tilesets indexes (see data/tilesets/tileset_headers.asm)

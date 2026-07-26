@@ -23,7 +23,7 @@ Route16_Object:
 
 	def_bg_events
 	bg_event 27, 29, TEXT_ROUTE16_CYCLING_ROAD_SIGN
-	bg_event  5, 35, TEXT_ROUTE16_SIGN
+	bg_event  9, 33, TEXT_ROUTE16_SIGN
 
 	def_object_events
 	object_event 17, 30, SPRITE_BIKER, STAY, LEFT, TEXT_ROUTE16_BIKER1, OPP_BIKER, 5

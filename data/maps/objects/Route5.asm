@@ -9,7 +9,7 @@ Route5_Object:
 	warp_event 10, 21, DAYCARE, 1
 
 	def_bg_events
-	bg_event 17, 29, TEXT_ROUTE5_UNDERGROUND_PATH_SIGN
+	bg_event 15, 27, TEXT_ROUTE5_UNDERGROUND_PATH_SIGN
 
 	def_object_events
 
