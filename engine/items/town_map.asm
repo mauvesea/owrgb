@@ -143,10 +143,10 @@ LoadTownMap_Fly::
 	call LoadTownMap
 	call LoadPlayerSpriteGraphics
 	call LoadFontTilePatterns
-	ld de, BirdSprite
 	ld hl, vSprites tile BIRD_BASE_TILE
-	lb bc, BANK(BirdSprite), 12
-	call CopyVideoData
+	ld de, TownMapCursor
+	lb bc, BANK(TownMapCursor), (TownMapCursorEnd - TownMapCursor) / TILE_1BPP_SIZE
+	call CopyVideoDataDouble
 	ld de, TownMapUpArrow
 	ld hl, vChars1 tile $6d
 	lb bc, BANK(TownMapUpArrow), (TownMapUpArrowEnd - TownMapUpArrow) / TILE_1BPP_SIZE

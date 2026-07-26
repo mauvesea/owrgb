@@ -45,9 +45,9 @@ EnterMapAnim::
 	jr .done
 .flyAnimation
 	pop hl
-	ld de, BirdSprite
+	ld de, RedFlySprite
 	ld hl, vNPCSprites
-	lb bc, BANK(BirdSprite), $0c
+	lb bc, BANK(RedFlySprite), $0c
 	call CopyVideoData
 	call LoadBirdSpriteGraphics
 	ld a, SFX_FLY
@@ -253,13 +253,13 @@ DoFlyAnimation:
 	ret
 
 LoadBirdSpriteGraphics:
-	ld de, BirdSprite
+	ld de, RedFlySprite
 	ld hl, vNPCSprites
-	lb bc, BANK(BirdSprite), 12
+	lb bc, BANK(RedFlySprite), 12
 	call CopyVideoData
-	ld de, BirdSprite tile 12 ; moving animation sprite
+	ld de, RedFlySprite tile 12 ; moving animation sprite
 	ld hl, vNPCSprites2
-	lb bc, BANK(BirdSprite), 12
+	lb bc, BANK(RedFlySprite), 12
 	jp CopyVideoData
 
 InitFacingDirectionList:
