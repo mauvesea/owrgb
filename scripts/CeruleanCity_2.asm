@@ -12,5 +12,8 @@ CeruleanHideRocket:
 	ld a, TOGGLE_CERULEAN_ROCKET
 	ld [wToggleableObjectIndex], a
 	predef HideObject
+	ld a, TOGGLE_CERULEAN_TM28
+	ld [wToggleableObjectIndex], a
+	predef ShowObject
 	call GBFadeInFromBlack
 	ret

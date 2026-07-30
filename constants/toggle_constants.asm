@@ -32,6 +32,7 @@ ENDM
 	const TOGGLE_CERULEAN_GUARD_1              ; 07
 	const TOGGLE_CERULEAN_CAVE_GUY             ; 08
 	const TOGGLE_CERULEAN_GUARD_2              ; 09
+	const TOGGLE_CERULEAN_TM28
 
 	toggle_consts_for SAFFRON_CITY
 	const TOGGLE_SAFFRON_CITY_1                ; 0A
