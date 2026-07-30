@@ -544,6 +544,8 @@ ItemUseBall:
 	ld [wCurPartySpecies], a
 	ld a, [wEnemyMonLevel]
 	ld [wCurEnemyLevel], a
+	ld a, 1
+	ld [wEnemyLevelAlreadyScaled], a
 	callfar LoadEnemyMonData
 	pop af
 	ld [wCurPartySpecies], a

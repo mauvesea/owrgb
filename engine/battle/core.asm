@@ -6078,8 +6078,11 @@ LoadEnemyMonData:
 	ld a, [wIsInBattle]
 	cp $2 ; is it a trainer battle?
 	jr z, .copyHPAndStatusFromPartyData
+	ld a, [wEnemyLevelAlreadyScaled]
+	cp 1
+	jr z, .LevelAlreadyScaled
 
-
+; Calculate Enemy Level Again during battle intro
 	ld de, wEnemyMonLevel
 	ld a, [wCurEnemyLevel]
 
@@ -6118,6 +6121,9 @@ LoadEnemyMonData:
 	call CalcStats ; Recalculate everything for wild encounters
 	pop hl
 
+.LevelAlreadyScaled
+	xor a
+	ld [wEnemyLevelAlreadyScaled], a
 	ld a, [wEnemyBattleStatus3]
 	bit TRANSFORMED, a ; is enemy mon transformed?
 	jr nz, .copyTypes ; if transformed, jump

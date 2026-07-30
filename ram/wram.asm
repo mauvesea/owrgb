@@ -1613,7 +1613,7 @@ wEvolutionOccurred:: db
 
 wVBlankSavedROMBank:: db
 
-	ds 1
+wEnemyLevelAlreadyScaled:: db
 
 wIsKeyItem:: db
 
