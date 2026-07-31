@@ -99,6 +99,8 @@ _Route22Rival2VictoryText::
 	prompt
 
 _Route22PokemonLeagueSignText::
-	text "#MON LEAGUE"
-	line "Front Gate"
+	text "You're in..."
+	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 22"
+	para "▲ #MON LEAGUE"
+	line "▶ VIRIDIAN CITY"
 	done

@@ -10,6 +10,7 @@ Route7_Object:
 
 	def_bg_events
 	bg_event  3, 13, TEXT_ROUTE7_UNDERGROUND_PATH_SIGN
+	bg_event  9,  9, TEXT_ROUTE7_SIGN
 
 	def_object_events
 

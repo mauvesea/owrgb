@@ -106,3 +106,10 @@ _Route10RockTunnelSignText::
 _Route10PowerPlantSignText::
 	text "POWER PLANT"
 	done
+
+_Route10SignText::
+	text "You're in..."
+	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 10"
+	para "▲ ROCK TUNNEL"
+	line "▼ LAVENDER TOWN"
+	done

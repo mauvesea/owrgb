@@ -153,8 +153,8 @@
 	charmap "<BOLD_G>",  $c6
 	charmap "<BOLD_H>",  $c7
 	charmap "<BOLD_I>",  $c8
-	charmap "<BOLD_V>",  $c9
-	charmap "<BOLD_S>",  $ca
+	charmap "<BOLD_J>",  $c9
+	charmap "<BOLD_K>",  $ca
 	charmap "<BOLD_L>",  $cb
 	charmap "<BOLD_M>",  $cc
 
@@ -171,6 +171,9 @@
 	charmap "<BOLD_X>",  $d7
 	charmap "<BOLD_Y>",  $d8
 	charmap "<BOLD_Z>",  $d9
+	charmap "©",         $da
+	charmap "▲",         $db
+	charmap "◀",         $dc
 
 	charmap "'",         $e0
 	charmap "<PK>",      $e1

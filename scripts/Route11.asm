@@ -26,6 +26,7 @@ Route11_TextPointers:
 	dw_const Route11SuperNerd2Text,       TEXT_ROUTE11_SUPER_NERD2
 	dw_const Route11Youngster4Text,       TEXT_ROUTE11_YOUNGSTER4
 	dw_const Route11DiglettsCaveSignText, TEXT_ROUTE11_DIGLETTSCAVE_SIGN
+	dw_const Route11SignText,             TEXT_ROUTE11_SIGN
 
 Route11TrainerHeaders:
 	def_trainers
@@ -234,3 +235,8 @@ Route11Youngster4AfterBattleText:
 Route11DiglettsCaveSignText:
 	text_far _Route11DiglettsCaveSignText
 	text_end
+
+Route11SignText:
+	text_far _Route11SignText
+	text_end
+

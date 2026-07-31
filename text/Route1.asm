@@ -44,7 +44,8 @@ _Route1Youngster2Text::
 	done
 
 _Route1SignText::
-	text "ROUTE 1"
-	line "PALLET TOWN -"
-	cont "VIRIDIAN CITY"
+	text "You're in..."
+	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 1"
+	para "▲ VIRIDIAN CITY"
+	line "▼ PALLET TOWN"
 	done

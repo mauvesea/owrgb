@@ -16,7 +16,7 @@ Route13_Object:
 	def_warp_events
 
 	def_bg_events
-	bg_event 15, 13, TEXT_ROUTE13_TRAINER_TIPS1
+	bg_event  9,  9, TEXT_ROUTE13_TRAINER_TIPS1
 	bg_event 33,  5, TEXT_ROUTE13_TRAINER_TIPS2
 	bg_event 31, 11, TEXT_ROUTE13_SIGN
 

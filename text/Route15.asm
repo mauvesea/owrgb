@@ -166,7 +166,8 @@ _Route15CooltrainerF4AfterBattleText::
 	text_end
 
 _Route15SignText::
-	text "ROUTE 15"
-	line "West to FUCHSIA"
-	cont "CITY"
+	text "You're in..."
+	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 15"
+	para "▲ SILENCE BRIDGE"
+	line "◀ FUCHSIA CITY"
 	done

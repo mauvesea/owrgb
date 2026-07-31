@@ -16,7 +16,7 @@ Route14_Object:
 	def_warp_events
 
 	def_bg_events
-	bg_event 17, 13, TEXT_ROUTE14_SIGN
+	bg_event  9, 13, TEXT_ROUTE14_SIGN
 
 	def_object_events
 	object_event  4,  4, SPRITE_COOLTRAINER_M, STAY, DOWN, TEXT_ROUTE14_COOLTRAINER_M1, OPP_BIRD_KEEPER, 14

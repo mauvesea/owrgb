@@ -25,6 +25,7 @@ Route10_TextPointers:
 	dw_const PokeCenterSignText,        TEXT_ROUTE10_POKECENTER_SIGN
 	dw_const Route10RockTunnelSignText, TEXT_ROUTE10_ROCKTUNNEL_SOUTH_SIGN
 	dw_const Route10PowerPlantSignText, TEXT_ROUTE10_POWERPLANT_SIGN
+	dw_const Route10SignText,           TEXT_ROUTE10_SIGN
 
 Route10TrainerHeaders:
 	def_trainers
@@ -156,4 +157,8 @@ Route10RockTunnelSignText:
 
 Route10PowerPlantSignText:
 	text_far _Route10PowerPlantSignText
+	text_end
+
+Route10SignText:
+	text_far _Route10SignText
 	text_end

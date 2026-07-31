@@ -76,6 +76,7 @@ Route20_TextPointers:
 	dw_const Route20Swimmer9Text,           TEXT_ROUTE20_SWIMMER9
 	dw_const Route20SeafoamIslandsSignText, TEXT_ROUTE20_SEAFOAM_ISLANDS_WEST_SIGN
 	dw_const Route20SeafoamIslandsSignText, TEXT_ROUTE20_SEAFOAM_ISLANDS_EAST_SIGN
+	dw_const Route20SignText,               TEXT_ROUTE20_SIGN
 
 Route20TrainerHeaders:
 	def_trainers
@@ -283,4 +284,8 @@ Route20Swimmer9AfterBattleText:
 
 Route20SeafoamIslandsSignText:
 	text_far _Route20SeafoamIslandsSignText
+	text_end
+
+Route20SignText:
+	text_far _Route20SignText
 	text_end

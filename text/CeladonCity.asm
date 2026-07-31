@@ -118,7 +118,9 @@ _CeladonCityGymSignText::
 	done
 
 _CeladonCityMansionSignText::
-	text "CELADON MANSION"
+	text "CARROT TOWER"
+	line "Come visit our"
+	cont "office! - GF"
 	done
 
 _CeladonCityDeptStoreSignText::

@@ -22,6 +22,7 @@ Route6_TextPointers:
 	dw_const Route6CooltrainerF2Text,       TEXT_ROUTE6_COOLTRAINER_F2
 	dw_const Route6Youngster2Text,          TEXT_ROUTE6_YOUNGSTER2
 	dw_const Route6UndergroundPathSignText, TEXT_ROUTE6_UNDERGROUND_PATH_SIGN
+	dw_const Route6SignText,                TEXT_ROUTE6_SIGN
 
 Route6TrainerHeaders:
 	def_trainers
@@ -146,3 +147,8 @@ Route6Youngster2AfterBattleText:
 Route6UndergroundPathSignText:
 	text_far _Route6UndergroundPathSignText
 	text_end
+
+Route6SignText:
+	text_far _Route6SignText
+	text_end
+

@@ -92,6 +92,12 @@ _Route6Youngster2AfterBattleText::
 
 _Route6UndergroundPathSignText::
 	text "UNDERGROUND PATH"
-	line "CERULEAN CITY -"
-	cont "VERMILION CITY"
+	para "ROUTE 6 - ROUTE 5"
+	done
+
+_Route6SignText::
+	text "You're in..."
+	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 6"
+	para "▲ SAFFRON CITY -"
+	line "▼ VERMILION CITY"
 	done

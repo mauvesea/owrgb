@@ -9,7 +9,7 @@ Route22_Object:
 	warp_event  8,  5, ROUTE_22_GATE, 1
 
 	def_bg_events
-	bg_event  7, 11, TEXT_ROUTE22_POKEMON_LEAGUE_SIGN
+	bg_event  9, 11, TEXT_ROUTE22_POKEMON_LEAGUE_SIGN
 
 	def_object_events
 	object_event 25,  5, SPRITE_BLUE, STAY, NONE, TEXT_ROUTE22_RIVAL1

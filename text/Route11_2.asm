@@ -26,3 +26,10 @@ _Route11Youngster4AfterBattleText::
 _Route11DiglettsCaveSignText::
 	text "DIGLETT's CAVE"
 	done
+
+_Route11SignText::
+	text "You're in..."
+	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 11"
+	para "◀ VERMILLION CITY"
+	line "▶ SILENCE BRIDGE"
+	done

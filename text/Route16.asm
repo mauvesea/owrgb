@@ -114,7 +114,8 @@ _Route16CyclingRoadSignText::
 	done
 
 _Route16SignText::
-	text "ROUTE 16"
-	line "CELADON CITY -"
-	cont "FUCHSIA CITY"
+	text "You're in..."
+	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 16"
+	para "▶ CELADON CITY"
+	line "▼ FUCHSIA CITY"
 	done

@@ -90,6 +90,7 @@ _Route24Youngster2AfterBattleText::
 	done
 
 _Route24SignText::
-	text "ROUTE 24"
-	line "NUGGET BRIDGE"
+	text "You're in..."
+	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 24"
+	para "▼ CERULEAN CITY"
 	done
