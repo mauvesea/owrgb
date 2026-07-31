@@ -26,15 +26,11 @@ _CeruleanGymMistyTM11ExplanationText::
 	done
 
 _CeruleanGymMistyCascadeBadgeInfoText::
-	text "The CASCADEBADGE"
-	line "makes all #MON"
-	cont "up to L30 obey!"
+	text "Hey! You were"
+	line "great!"
 
-	para "That includes"
-	line "even outsiders!"
-
-	para "You can also have"
-	line "my favorite TM!"
+	para "You can have my"
+	line "favorite TM!"
 	done
 
 _CeruleanGymMistyReceivedTM11Text::

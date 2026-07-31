@@ -7,8 +7,8 @@ _PewterGymBrockPostBattleAdviceText::
 	line "very gifted as a"
 	cont "#MON trainer!"
 
-	para "Go to the GYM in"
-	line "CERULEAN and test"
+	para "Keep challenging"
+	line "yourself to test"
 	cont "your abilities!"
 	done
 
@@ -69,10 +69,6 @@ _PewterGymBrockBoulderBadgeInfoText::
 	para "That's an official"
 	line "#MON LEAGUE"
 	cont "BADGE!"
-
-	para "Its bearer's"
-	line "#MON become"
-	cont "more powerful!"
 	prompt
 
 _PewterGymCooltrainerMBattleText::

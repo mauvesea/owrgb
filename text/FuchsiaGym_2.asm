@@ -10,14 +10,7 @@ _FuchsiaGymKogaPostBattleAdviceText::
 	done
 
 _FuchsiaGymKogaSoulBadgeInfoText::
-	text "Now that you have"
-	line "the SOULBADGE,"
-	cont "the DEFENSE of"
-	cont "your #MON"
-	cont "increases!"
-
-	para "Ah! Take this"
-	line "too!"
+	text "Ah! Take this!"
 	done
 
 _FuchsiaGymKogaReceivedTM06Text::

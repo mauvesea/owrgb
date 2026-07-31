@@ -48,12 +48,8 @@ _CeladonGymErikaPostBattleAdviceText::
 	done
 
 _CeladonGymRainbowBadgeInfoText::
-	text "The RAINBOWBADGE"
-	line "will make #MON"
-	cont "up to L50 obey."
-
-	para "Please also take"
-	line "this with you."
+	text "Please take this"
+	line "with you."
 	done
 
 _CeladonGymReceivedTM21Text::
