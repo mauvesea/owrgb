@@ -117,6 +117,10 @@ Route24CooltrainerM1Text:
 	SetEvent EVENT_GOT_NUGGET
 	ld hl, .ReceivedNuggetText
 	call PrintText
+
+	CheckEvent EVENT_TEAM_ROCKET_CLEAR
+	jr nz, .NotARocketAnymore1
+
 	ld hl, .JoinTeamRocketText
 	call PrintText
 	ld hl, wStatusFlags3
@@ -136,19 +140,30 @@ Route24CooltrainerM1Text:
 	ld [wCurMapScript], a
 	jp TextScriptEnd
 .got_item
+	CheckEvent EVENT_TEAM_ROCKET_CLEAR
+	jr nz, .NotARocketAnymore2
 	ld hl, .YouCouldBecomeATopLeaderText
+	call PrintText
+	jp TextScriptEnd
+.NotARocketAnymore2
+	ld hl, .Route24RocketDoneText
 	call PrintText
 	jp TextScriptEnd
 .bag_full
 	ld hl, .NoRoomText
 	call PrintText
 	SetEvent EVENT_NUGGET_REWARD_AVAILABLE
+.NotARocketAnymore1
 	jp TextScriptEnd
 
 .YouBeatOurContestText:
 	text_far _Route24CooltrainerM1YouBeatOurContestText
 	sound_get_item_1
 	text_far _Route24CooltrainerM1YouJustEarnedAPrizeText
+	text_end
+
+.Route24RocketDoneText:
+	text_far _Route24RocketDoneText
 	text_end
 
 .ReceivedNuggetText:

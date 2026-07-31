@@ -140,6 +140,10 @@ ViridianGymReceiveTM27:
 	ldh [hTextID], a
 	call DisplayTextID
 	SetEvent EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI
+
+	; deactivate gym trainers
+	SetEventRange EVENT_BEAT_VIRIDIAN_GYM_TRAINER_0, EVENT_BEAT_VIRIDIAN_GYM_TRAINER_7
+
 	lb bc, TM_FISSURE, 1
 	call GiveItem
 	jr nc, .bag_full
@@ -152,6 +156,7 @@ ViridianGymReceiveTM27:
 	ld a, TEXT_VIRIDIANGYM_GIOVANNI_TM27_NO_ROOM
 	ldh [hTextID], a
 	call DisplayTextID
+	jr .FinishBagFull
 .gym_victory
 	; Increase Level Scaling
 	ld a, [wLevelScaling]
@@ -163,10 +168,20 @@ ViridianGymReceiveTM27:
 	ld hl, wBeatGymFlags
 	set BIT_EARTHBADGE, [hl]
 
-	; deactivate gym trainers
-	SetEventRange EVENT_BEAT_VIRIDIAN_GYM_TRAINER_0, EVENT_BEAT_VIRIDIAN_GYM_TRAINER_7
-
+	ld a, TEXT_VIRIDIANGYM_POSTBATTLE_TEXT
+	ldh [hTextID], a
+	call DisplayTextID
+	call GBFadeOutToBlack
+	ld a, TOGGLE_VIRIDIAN_GYM_GIOVANNI
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+	call UpdateSprites
+	call Delay3
+	call GBFadeInFromBlack
+	SetEvent EVENT_TEAM_ROCKET_CLEAR
+.FinishBagFull
 	jp ViridianGymResetScripts
+
 
 ViridianGym_TextPointers:
 	def_text_pointers
@@ -184,6 +199,7 @@ ViridianGym_TextPointers:
 	dw_const ViridianGymGiovanniEarthBadgeInfoText, TEXT_VIRIDIANGYM_GIOVANNI_EARTH_BADGE_INFO
 	dw_const ViridianGymGiovanniReceivedTM27Text,   TEXT_VIRIDIANGYM_GIOVANNI_RECEIVED_TM27
 	dw_const ViridianGymGiovanniTM27NoRoomText,     TEXT_VIRIDIANGYM_GIOVANNI_TM27_NO_ROOM
+	dw_const ViridianGymPostBattleAdviceText,       TEXT_VIRIDIANGYM_POSTBATTLE_TEXT
 
 ViridianGymTrainerHeaders:
 	def_trainers 2
@@ -217,7 +233,7 @@ ViridianGymGiovanniText:
 .afterBeat
 	ld a, $1
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
-	ld hl, .PostBattleAdviceText
+	ld hl, ViridianGymPostBattleAdviceText
 	call PrintText
 	call GBFadeOutToBlack
 	ld a, TOGGLE_VIRIDIAN_GYM_GIOVANNI
@@ -256,7 +272,7 @@ ViridianGymGiovanniText:
 	sound_level_up ; probably supposed to play SFX_GET_ITEM_1 but the wrong music bank is loaded
 	text_end
 
-.PostBattleAdviceText:
+ViridianGymPostBattleAdviceText:
 	text_far _ViridianGymGiovanniPostBattleAdviceText
 	text_waitbutton
 	text_end

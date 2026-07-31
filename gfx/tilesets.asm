@@ -1,6 +1,6 @@
 SECTION "Tilesets 1", ROMX
 
-Overworld_GFX::     INCBIN "gfx/tilesets/tilesets_rg/overworld.2bpp"
+Overworld_GFX::     INCBIN "gfx/tilesets/overworld.2bpp"
 Overworld_Block::   INCBIN "gfx/blocksets/overworld.bst"
 
 House_GFX::         INCBIN "gfx/tilesets/house.2bpp"

@@ -258,6 +258,11 @@ SECTION "Diploma", ROMX
 INCLUDE "engine/events/diploma.asm"
 
 
+SECTION "Route Signs", ROMX
+
+INCLUDE "data/tilesets/route_signs.asm"
+
+
 SECTION "Trainer Sight", ROMX
 
 INCLUDE "engine/overworld/trainer_sight.asm"

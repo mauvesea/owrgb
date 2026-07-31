@@ -23,6 +23,17 @@ _Route24CooltrainerM1NoRoomText::
 	line "any room!"
 	done
 
+_Route24RocketDoneText::
+	text "I used to work for"
+	line "TEAM ROCKET..."
+
+	para "Not anymore!"
+
+	para "I wonder where"
+	line "GIOVANNI went to"
+	cont "though..."
+	done
+
 _Route24CooltrainerM1JoinTeamRocketText::
 	text "By the way, would"
 	line "you like to join"

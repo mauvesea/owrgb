@@ -414,6 +414,7 @@ CeruleanCityRocketText:
 
 .IllReturnTheTMText:
 	text_far _CeruleanCityRocketIllReturnTheTMText
+	text_waitbutton
 	text_end
 
 CeruleanCityCooltrainerMText:

@@ -23,6 +23,10 @@ ViridianCityCheckGymOpenScript:
 	SetEvent EVENT_VIRIDIAN_GYM_OPEN
 	ret
 .gym_closed
+IF DEF(_DEBUG)
+;	call DebugPressedOrHeldB
+	ret
+ENDC
 	ld a, [wYCoord]
 	cp 8
 	ret nz
