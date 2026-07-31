@@ -64,7 +64,7 @@ ToggleableObjectStates:
 	toggleable_objects_for SAFFRON_CITY
 	toggle_object_state SAFFRONCITY_ROCKET1,        ON
 	toggle_object_state SAFFRONCITY_ROCKET2,        ON
-	toggle_object_state SAFFRONCITY_ROCKET3,        ON
+	toggle_object_state SAFFRONCITY_ROCKET3,        OFF
 	toggle_object_state SAFFRONCITY_ROCKET4,        ON
 	toggle_object_state SAFFRONCITY_ROCKET5,        ON
 	toggle_object_state SAFFRONCITY_ROCKET6,        ON
