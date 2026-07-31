@@ -156,7 +156,6 @@ _Route25BillSignText::
 	done
 
 _Route25SignText::
-	text "You're in..."
-	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 25"
-	para "◀ CERULEAN CITY"
+	text "ROUTE 25"
+	line "◀ CERULEAN CITY"
 	done

@@ -151,8 +151,7 @@ _Route19Swimmer8AfterBattleText::
 	done
 
 _Route19SignText::
-	text "You're in..."
-	line "<BOLD_S><BOLD_E><BOLD_A> <BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 19"
-	para "▲ FUCHSIA CITY"
-	line "◀ SEAFOAM ISLANDS"
+	text "SEA ROUTE 19"
+	line "▲ FUCHSIA CITY"
+	cont "◀ SEAFOAM ISLANDS"
 	done

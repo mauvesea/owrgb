@@ -4,8 +4,7 @@ _Route5UndergroundPathSignText::
 	done
 
 _Route5SignText::
-	text "You're in..."
-	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 5"
-	para "▲ CERULEAN CITY"
-	line "▼ SAFFRON CITY"
+	text "ROUTE 5"
+	line "▲ CERULEAN CITY"
+	cont "▼ SAFFRON CITY"
 	done

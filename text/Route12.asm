@@ -130,10 +130,9 @@ _Route12Fisher5AfterBattleText::
 	done
 
 _Route12SignText::
-	text "You're in..."
-	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 12"
-	para "▲ LAVENDER TOWN"
-	line "▼ SILENCE BRIDGE"
+	text "ROUTE 12"
+	line "▲ LAVENDER TOWN"
+	cont "▼ SILENCE BRIDGE"
 	done
 
 _Route12SportFishingSignText::

@@ -28,8 +28,7 @@ _Route11DiglettsCaveSignText::
 	done
 
 _Route11SignText::
-	text "You're in..."
-	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 11"
-	para "◀ VERMILLION CITY"
-	line "▶ SILENCE BRIDGE"
+	text "ROUTE 11"
+	line "◀ VERMILLION CITY"
+	cont "▶ SILENCE BRIDGE"
 	done

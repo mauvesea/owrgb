@@ -96,8 +96,7 @@ _Route6UndergroundPathSignText::
 	done
 
 _Route6SignText::
-	text "You're in..."
-	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 6"
-	para "▲ SAFFRON CITY -"
-	line "▼ VERMILION CITY"
+	text "ROUTE 6"
+	line "▲ SAFFRON CITY -"
+	cont "▼ VERMILION CITY"
 	done

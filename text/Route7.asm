@@ -4,8 +4,7 @@ _Route7UndergroundPathSignText::
 	done
 
 _Route7SignText::
-	text "You're in..."
-	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 7"
-	para "◀ CELADON CITY"
-	line "▶ SAFFRON CITY"
+	text "ROUTE 7"
+	line "◀ CELADON CITY"
+	cont "▶ SAFFRON CITY"
 	done

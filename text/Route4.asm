@@ -29,8 +29,7 @@ _Route4MtMoonSignText::
 	done
 
 _Route4SignText::
-	text "You're in..."
-	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 4"
-	para "◀ MT.MOON"
-	line "▶ CERULEAN CITY"
+	text "ROUTE 4"
+	line "◀ MT.MOON"
+	cont "▶ CERULEAN CITY"
 	done

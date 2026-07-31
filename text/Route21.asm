@@ -137,8 +137,7 @@ _Route21Fisher4AfterBattleText::
 	done
 
 _Route21SignText::
-	text "You're in..."
-	line "<BOLD_S><BOLD_E><BOLD_A> <BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 21"
-	para "▲ PALLET TOWN"
-	line "▼ CINNABAR ISLAND"
+	text "SEA ROUTE 21"
+	line "▲ PALLET TOWN"
+	cont "▼ CINNABAR ISLAND"
 	done

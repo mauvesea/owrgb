@@ -140,8 +140,7 @@ _Route3CooltrainerF3AfterBattleText::
 	done
 
 _Route3SignText::
-	text "You're in..."
-	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 3"
-	para "▲ MT.MOON"
-	line "◀ PEWTER CITY"
+	text "ROUTE 3"
+	line "▲ MT.MOON"
+	cont "◀ PEWTER CITY"
 	done

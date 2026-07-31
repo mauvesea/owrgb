@@ -176,10 +176,9 @@ _Route17TrainerTips2Text::
 	done
 
 _Route17SignText::
-	text "You're in..."
-	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 17"
-	para "▲ CELADON CITY"
-	line "▼ FUCHSIA CITY"
+	text "ROUTE 17"
+	line "▲ CELADON CITY"
+	cont "▼ FUCHSIA CITY"
 	done
 
 _Route17NoticeSign2Text::

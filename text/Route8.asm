@@ -153,8 +153,7 @@ _Route8UndergroundSignText::
 	done
 
 _Route8SignText::
-	text "You're in..."
-	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 8"
-	para "◀ SAFFRON CITY"
-	line "▶ LAVENDER TOWN"
+	text "ROUTE 8"
+	line "◀ SAFFRON CITY"
+	cont "▶ LAVENDER TOWN"
 	done

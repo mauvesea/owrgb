@@ -155,9 +155,8 @@ _Route20SeafoamIslandsSignText::
 	done
 
 _Route20SignText::
-	text "You're in..."
-	line "<BOLD_S><BOLD_E><BOLD_A> <BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 20"
-	para "▶ SEAFOAM ISLANDS"
-	line "◀ CINNABAR ISLAND"
+	text "SEA ROUTE 20"
+	line "▶ SEAFOAM ISLANDS"
+	cont "◀ CINNABAR ISLAND"
 	done
 

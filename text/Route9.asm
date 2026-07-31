@@ -151,8 +151,7 @@ _Route9Youngster2AfterBattleText::
 	done
 
 _Route9SignText::
-	text "You're in..."
-	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 9"
-	para "◀ CERULEAN CITY"
-	line "▶ ROCK TUNNEL"
+	text "ROUTE 9"
+	line "◀ CERULEAN CITY"
+	cont "▶ ROCK TUNNEL"
 	done

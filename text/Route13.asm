@@ -158,7 +158,7 @@ _Route13CooltrainerM3AfterBattleText::
 	done
 
 _Route13TrainerTips1Text::
-	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> <BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
+	text "TRAINER TIPS"
 
 	para "Look to the left"
 	line "of that post!"
@@ -173,8 +173,7 @@ _Route13TrainerTips2Text::
 	done
 
 _Route13SignText::
-	text "You're in..."
-	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 13"
-	para "▶ SILENCE BRIDGE"
-	line "▼ FUCHSIA CITY"
+	text "ROUTE 13"
+	line "▶ SILENCE BRIDGE"
+	cont "▼ FUCHSIA CITY"
 	done

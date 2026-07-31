@@ -169,8 +169,7 @@ _Route14Biker4AfterBattleText::
 	done
 
 _Route14SignText::
-	text "You're in..."
-	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 14"
-	para "▶ SILENCE BRIDGE"
-	line "▼ FUCHSIA CITY"
+	text "ROUTE 14"
+	line "▶ SILENCE BRIDGE"
+	cont "▼ FUCHSIA CITY"
 	done

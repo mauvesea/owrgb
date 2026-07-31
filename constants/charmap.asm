@@ -174,6 +174,7 @@
 	charmap "©",         $da
 	charmap "▲",         $db
 	charmap "◀",         $dc
+	charmap "<BOLD_é>",  $de
 
 	charmap "'",         $e0
 	charmap "<PK>",      $e1
