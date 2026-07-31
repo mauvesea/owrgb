@@ -154,3 +154,8 @@ _Route25BillSignText::
 	text "SEA COTTAGE"
 	line "BILL lives here!"
 	done
+
+_Route25SignText::
+	text "ROUTE 25"
+	line "CERULEAN CAPE"
+	done

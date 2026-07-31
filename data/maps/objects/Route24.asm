@@ -14,6 +14,7 @@ Route24_Object:
 	def_warp_events
 
 	def_bg_events
+	bg_event 11,  9, TEXT_ROUTE24_SIGN
 
 	def_object_events
 	object_event 11, 15, SPRITE_COOLTRAINER_M, STAY, LEFT, TEXT_ROUTE24_COOLTRAINER_M1, OPP_ROCKET, 6

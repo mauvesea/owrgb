@@ -10,6 +10,7 @@ Route5_Object:
 
 	def_bg_events
 	bg_event 15, 27, TEXT_ROUTE5_UNDERGROUND_PATH_SIGN
+	bg_event  5, 25, TEXT_ROUTE5_SIGN
 
 	def_object_events
 

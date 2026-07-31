@@ -54,6 +54,7 @@ Route25_TextPointers:
 	dw_const Route25Hiker3Text,        TEXT_ROUTE25_HIKER3
 	dw_const PickUpItemText,           TEXT_ROUTE25_TM_SEISMIC_TOSS
 	dw_const Route25BillSignText,      TEXT_ROUTE25_BILL_SIGN
+	dw_const Route25SignText,          TEXT_ROUTE25_SIGN
 
 Route25TrainerHeaders:
 	def_trainers
@@ -241,4 +242,8 @@ Route25Hiker3AfterBattleText:
 
 Route25BillSignText:
 	text_far _Route25BillSignText
+	text_end
+
+Route25SignText:
+	text_far _Route25SignText
 	text_end

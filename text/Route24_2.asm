@@ -88,3 +88,8 @@ _Route24Youngster2AfterBattleText::
 	text "I did my best, I"
 	line "have no regrets!"
 	done
+
+_Route24SignText::
+	text "ROUTE 24"
+	line "NUGGET BRIDGE"
+	done

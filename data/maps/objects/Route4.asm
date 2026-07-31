@@ -14,7 +14,9 @@ Route4_Object:
 	def_bg_events
 	bg_event 12,  5, TEXT_ROUTE4_POKECENTER_SIGN
 	bg_event 17,  7, TEXT_ROUTE4_MT_MOON_SIGN
-	bg_event 27,  7, TEXT_ROUTE4_SIGN
+	bg_event 27,  7, TEXT_ROUTE4_MT_MOON_SIGN
+	bg_event 11, 13, TEXT_ROUTE4_SIGN
+	bg_event 33,  7, TEXT_ROUTE4_SIGN
 
 	def_object_events
 	object_event  9,  8, SPRITE_COOLTRAINER_F, WALK, ANY_DIR, TEXT_ROUTE4_COOLTRAINER_F1
