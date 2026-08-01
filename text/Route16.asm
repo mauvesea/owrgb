@@ -118,3 +118,7 @@ _Route16SignText::
 	line "▶ CELADON CITY"
 	cont "▼ FUCHSIA CITY"
 	done
+
+_MoltresDungeon3SignText::
+	text "DANGER AHEAD"
+	done

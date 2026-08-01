@@ -18,7 +18,7 @@ MoltresDungeon2_TextPointers:
 	def_text_pointers
 	dw_const MoltresDungeonMoltresText, TEXT_MOLTRESDUNGEON2_MOLTRES
 ;	dw_const PickUpItemText,            TEXT_MOLTRESDUNGEON2_RARE_CANDY
-;	dw_const PickUpItemText,            TEXT_MOLTRESDUNGEON2_TM_FIRE_BLAST
+	dw_const PickUpItemText,            TEXT_MOLTRESDUNGEON2_TM_FIRE_BLAST
 
 MoltresDungeon2TrainerHeaders:
 	def_trainers

@@ -3,6 +3,8 @@ MoltresDungeon3_Script:
 
 MoltresDungeon3_TextPointers:
 	def_text_pointers
-;	dw_const Route7UndergroundPathSignText, TEXT_ROUTE7_UNDERGROUND_PATH_SIGN
-;	dw_const Route7SignText,                TEXT_ROUTE7_SIGN
+	dw_const MoltresDungeon3SignText,       TEXT_MOLTRESDUNGEON3_SIGN
 
+MoltresDungeon3SignText:
+	text_far _MoltresDungeon3SignText
+	text_end

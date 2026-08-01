@@ -7,8 +7,7 @@ MoltresDungeon3_Object:
 	warp_event 24, 24, MOLTRES_DUNGEON_2, 6
 
 	def_bg_events
-;	bg_event  3, 13, TEXT_ROUTE7_UNDERGROUND_PATH_SIGN
-;	bg_event 11,  9, TEXT_ROUTE7_SIGN
+	bg_event 26, 20, TEXT_MOLTRESDUNGEON3_SIGN
 
 	def_object_events
 

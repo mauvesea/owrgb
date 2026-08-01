@@ -445,6 +445,7 @@ ToggleableObjectStates:
 
 	toggleable_objects_for MOLTRES_DUNGEON_2
 	toggle_object_state MOLTRESDUNGEON2_MOLTRES, ON
+	toggle_object_state MOLTRESDUNGEON2_TM_FIREBLAST, ON
 
 	assert_table_length NUM_TOGGLEABLE_OBJECTS
 
