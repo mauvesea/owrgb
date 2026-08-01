@@ -3,6 +3,10 @@ _SaffronGateGuardGeeImThirstyText::
 	line "Gee, I'm thirsty,"
 	cont "though!"
 
+	para "If only I could"
+	line "go get a drink"
+	cont "at a #MART..."
+
 	para "Oh wait there,"
 	line "the road's closed."
 	done
