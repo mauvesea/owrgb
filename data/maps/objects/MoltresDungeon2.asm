@@ -1,3 +1,6 @@
+	object_const_def
+	const_export MOLTRESDUNGEON2_MOLTRES
+
 MoltresDungeon2_Object:
 	db $3 ; border block
 
@@ -14,5 +17,6 @@ MoltresDungeon2_Object:
 ;	bg_event 11,  9, TEXT_ROUTE7_SIGN
 
 	def_object_events
+	object_event  3, 24, SPRITE_BIRD, STAY, UP, TEXT_MOLTRESDUNGEON2_MOLTRES, MOLTRES, 10
 
 	def_warps_to MOLTRES_DUNGEON_2

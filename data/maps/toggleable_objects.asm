@@ -443,8 +443,8 @@ ToggleableObjectStates:
 	toggle_object_state CELADONCITY_ROCKET1, ON
 	toggle_object_state CELADONCITY_ROCKET2, ON
 
-;	toggleable_objects_for MOLTRES_DUNGEON_3
-;	toggle_object_state MOLTRESDUNGEON3_MOLTRES, ON
+	toggleable_objects_for MOLTRES_DUNGEON_2
+	toggle_object_state MOLTRESDUNGEON2_MOLTRES, ON
 
 	assert_table_length NUM_TOGGLEABLE_OBJECTS
 
