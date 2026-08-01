@@ -1,15 +1,15 @@
 PokemonMansionB1FWildMons:
 	def_grass_wildmons 10 ; encounter rate
-	db 2, GROWLITHE
-	db 2, VULPIX
-	db 3, PONYTA
-	db 3, GRIMER
-	db 3, KOFFING
-	db 3, PONYTA
+	db 2, KOFFING
+	db 2, GRIMER
+	db 3, RATICATE
+	db 3, VENONAT
+	db 3, DROWZEE
+	db 3, HYPNO
 	db 4, WEEZING
 	db 4, MUK
-	db 4, MAGMAR
-	db 5, MAGMAR
+	db 4, DITTO
+	db 5, DITTO
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate
