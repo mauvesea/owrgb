@@ -248,9 +248,9 @@ WildDataPointers:
 	dw NothingWildMons
 	dw NothingWildMons
 	dw NothingWildMons
-	dw NothingWildMons
-	dw NothingWildMons
-	dw NothingWildMons
+	dw MoltresDungeon1WildMons
+	dw MoltresDungeon2WildMons
+	dw MoltresDungeon3WildMons
 	assert_table_length NUM_MAPS
 	dw -1 ; end
 
@@ -324,3 +324,6 @@ INCLUDE "data/wild/maps/VictoryRoad2F.asm"
 INCLUDE "data/wild/maps/VictoryRoad3F.asm"
 INCLUDE "data/wild/maps/VictoryRoad1F.asm"
 INCLUDE "data/wild/maps/DiglettsCave.asm"
+INCLUDE "data/wild/maps/MoltresDungeon1.asm"
+INCLUDE "data/wild/maps/MoltresDungeon2.asm"
+INCLUDE "data/wild/maps/MoltresDungeon3.asm"
