@@ -105,6 +105,8 @@ ItemUsePtrTable:
 	dw ItemUseFloaties
 	dw ItemUseCrowbar
 	dw ItemUseFlashlight
+	dw UnusableItem
+	dw ItemUseEvoStone
 
 ItemUseBall:
 
@@ -850,6 +852,7 @@ ItemUsePokedex:
 	predef_jump ShowPokedexMenu
 
 ItemUseEvoStone:
+	ld b,b
 	ld a, [wIsInBattle]
 	and a
 	jp nz, ItemUseNotTime

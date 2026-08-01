@@ -48,3 +48,6 @@ SaffronMartClerkText::
 
 IndigoPlateauLobbyClerkText::
 	script_mart ULTRA_BALL, GREAT_BALL, FULL_RESTORE, MAX_POTION, FULL_HEAL, REVIVE, MAX_REPEL
+
+SilphCoClerkText::
+	script_mart LINK_CABLE_ITEM, TM_CUT, TM_FLY, TM_SURF, TM_STRENGTH, TM_FLASH

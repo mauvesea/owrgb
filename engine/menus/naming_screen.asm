@@ -468,6 +468,8 @@ PrintNamingText:
 	call GetMonName
 	hlcoord 4, 1
 	call PlaceString
+	ld hl, 0
+	add hl, bc
 	ld [hl], "'s"
 	hlcoord 1, 3
 	ld de, NicknameTextString

@@ -6,11 +6,15 @@ SilphCo1F_Script:
 	ret nz
 	ld a, TOGGLE_SILPH_CO_1F_RECEPTIONIST
 	ld [wToggleableObjectIndex], a
+	predef ShowObject
+	ld a, TOGGLE_SILPH_CO_1F_RECEPTIONIST2
+	ld [wToggleableObjectIndex], a
 	predef_jump ShowObject
 
 SilphCo1F_TextPointers:
 	def_text_pointers
 	dw_const SilphCo1FLinkReceptionistText, TEXT_SILPHCO1F_LINK_RECEPTIONIST
+	dw_const SilphCoClerkText,          TEXT_SILPHCO1F_LINK_RECEPTIONIST2
 
 SilphCo1FLinkReceptionistText:
 	text_far _SilphCo1FLinkReceptionistText

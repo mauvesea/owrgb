@@ -416,7 +416,7 @@
 
 ; Route 18 events
 	const_next $4E0
-	const_skip
+	const EVENT_GOT_OMAMORI
 	const EVENT_BEAT_ROUTE_18_TRAINER_0
 	const EVENT_BEAT_ROUTE_18_TRAINER_1
 	const EVENT_BEAT_ROUTE_18_TRAINER_2

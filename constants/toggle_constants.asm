@@ -156,6 +156,7 @@ ENDM
 
 	toggle_consts_for SILPH_CO_1F
 	const TOGGLE_SILPH_CO_1F_RECEPTIONIST      ; 4C
+	const TOGGLE_SILPH_CO_1F_RECEPTIONIST2
 
 	toggle_consts_for POWER_PLANT
 	const TOGGLE_VOLTORB_1                     ; 4D X

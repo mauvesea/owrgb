@@ -89,6 +89,7 @@ ItemNames::
 	li "CROWBAR"
 	li "FLASHLIGHT"
 	li "OMAMORI"
+	li "LINK CABLE"
 	assert_list_length NUM_ITEMS
 	li "B2F"
 	li "B1F"

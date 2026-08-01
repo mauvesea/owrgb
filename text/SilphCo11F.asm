@@ -56,6 +56,11 @@ _SilphCo11FBeautyText::
 
 	para "We admire your"
 	line "courage."
+
+	para "Feel free to shop"
+	line "for the rare"
+	cont "items we sell on"
+	cont "the first floor."
 	done
 
 _SilphCo11FGiovanniText::

@@ -23,7 +23,7 @@ IF DEF(_DEBUG)
 ELSE
 	db MEW, 20
 ENDC
-	db JOLTEON, 56
+	db HAUNTER, 56
 	db DUGTRIO, 56
 	db ARTICUNO, 57
 IF DEF(_DEBUG)
@@ -55,7 +55,7 @@ IF DEF(_DEBUG)
 	ld [hli], a
 	ld a, SURF
 	ld [hli], a
-	ld a, STRENGTH
+	ld a, FLASH
 	ld [hl], a
 	ld hl, wPartyMon1PP
 	ld a, 15
@@ -140,7 +140,7 @@ ENDC
 	ret
 
 DebugNewGameItemsList:
-	db POKE_DOLL, 1
+	db LINK_CABLE_ITEM, 1
 	db BICYCLE, 1
 	db SHEARS, 1
 	db PARAGLIDER, 1

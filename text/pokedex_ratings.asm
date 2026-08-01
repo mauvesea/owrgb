@@ -61,9 +61,12 @@ _DexRatingText_Own60To69::
 	done
 
 _DexRatingText_Own70To79::
-	text "Very good!"
-	line "Go fish for some"
-	cont "marine #MON!"
+	text "You got 70"
+	line "species already?"
+	cont "Impressive!"
+	cont "Look for my AIDE"
+	cont "to claim an"
+	cont "OMAMORI!"
 	done
 
 _DexRatingText_Own80To89::

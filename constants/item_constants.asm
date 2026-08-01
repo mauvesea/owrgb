@@ -99,6 +99,7 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const CROWBAR
 	const FLASHLIGHT
 	const OMAMORI
+	const LINK_CABLE_ITEM
 DEF NUM_ITEMS EQU const_value - 1
 
 ; elevator floors use item IDs (see scripts/CeladonMartElevator.asm and scripts/SilphCoElevator.asm)
@@ -123,7 +124,7 @@ DEF NUM_FLOORS EQU const_value - 1 - NUM_ITEMS
 ; HMs are defined before TMs, so the actual number of TM definitions
 ; is not yet available. The TM quantity is hard-coded here and must
 ; match the actual number below.
-DEF NUM_TMS EQU 50
+DEF NUM_TMS EQU 55
 
 DEF __tmhm_value__ = NUM_TMS + 1
 
@@ -144,11 +145,6 @@ MACRO add_hm
 ENDM
 
 DEF HM01 EQU const_value
-	add_hm CUT          ; $C4
-	add_hm FLY          ; $C5
-	add_hm SURF         ; $C6
-	add_hm STRENGTH     ; $C7
-	add_hm FLASH        ; $C8
 DEF NUM_HMS EQU const_value - HM01
 
 DEF __tmhm_value__ = 1
@@ -214,6 +210,11 @@ DEF TM01 EQU const_value
 	add_tm ROCK_SLIDE   ; $F8
 	add_tm TRI_ATTACK   ; $F9
 	add_tm SUBSTITUTE   ; $FA
+	add_tm CUT
+	add_tm FLY
+	add_tm SURF
+	add_tm STRENGTH
+	add_tm FLASH
 ASSERT NUM_TMS == const_value - TM01, "NUM_TMS ({d:NUM_TMS}) does not match the number of add_tm definitions"
 
 DEF NUM_TM_HM EQU NUM_TMS + NUM_HMS

@@ -89,4 +89,5 @@ KeyItemFlags:
 	dbit TRUE  ; CROWBAR
 	dbit TRUE  ; FLASHLIGHT
 	dbit TRUE  ; OMAMORI
+	dbit FALSE ; LINK CABLE
 	end_bit_array NUM_ITEMS

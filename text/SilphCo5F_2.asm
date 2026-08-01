@@ -51,5 +51,8 @@ _SilphCo5FPokemonReport3Text::
 
 	para "4 #MON evolve"
 	line "only when traded"
-	cont "by link-cable."
+	cont "by link-cable,"
+	cont "or when coming in"
+	cont "contact with a"
+	cont "LINK CABLE!"
 	done

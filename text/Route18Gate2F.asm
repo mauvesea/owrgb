@@ -13,3 +13,15 @@ _Route18Gate2FRightBinocularsText::
 	para "There are people"
 	line "swimming!"
 	done
+
+_Route18Gate2FOaksAideOmamoriText::
+	text "This OMAMORI is"
+	line "a lucky charm."
+
+	para "Expect better"
+	line "profits and an"
+	cont "easier time"
+	cont "raising and"
+	cont "catching #-"
+	cont "MON!"
+	done
