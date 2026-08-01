@@ -257,21 +257,34 @@ ToggleableObjectStates:
 	toggle_object_state VICTORYROAD3F_BOULDER4,     ON
 
 	toggleable_objects_for ROCKET_HIDEOUT_B1F
+	toggle_object_state ROCKETHIDEOUTB1F_ROCKET1,  ON
+	toggle_object_state ROCKETHIDEOUTB1F_ROCKET2,  ON
+	toggle_object_state ROCKETHIDEOUTB1F_ROCKET3,  ON
+	toggle_object_state ROCKETHIDEOUTB1F_ROCKET4,  ON
+	toggle_object_state ROCKETHIDEOUTB1F_ROCKET5,  ON
 	toggle_object_state ROCKETHIDEOUTB1F_ESCAPE_ROPE,  ON
 	toggle_object_state ROCKETHIDEOUTB1F_HYPER_POTION, ON
 
 	toggleable_objects_for ROCKET_HIDEOUT_B2F
+	toggle_object_state ROCKETHIDEOUTB2F_ROCKET,        ON
 	toggle_object_state ROCKETHIDEOUTB2F_MOON_STONE,    ON
 	toggle_object_state ROCKETHIDEOUTB2F_NUGGET,        ON
 	toggle_object_state ROCKETHIDEOUTB2F_TM_HORN_DRILL, ON
 	toggle_object_state ROCKETHIDEOUTB2F_SUPER_POTION,  ON
 
 	toggleable_objects_for ROCKET_HIDEOUT_B3F
+	toggle_object_state ROCKETHIDEOUTB3F_ROCKET1, ON
+	toggle_object_state ROCKETHIDEOUTB3F_ROCKET2,     ON
 	toggle_object_state ROCKETHIDEOUTB3F_TM_DOUBLE_EDGE, ON
 	toggle_object_state ROCKETHIDEOUTB3F_RARE_CANDY,     ON
 
 	toggleable_objects_for ROCKET_HIDEOUT_B4F
 	toggle_object_state ROCKETHIDEOUTB4F_GIOVANNI,      ON
+
+	toggle_object_state ROCKETHIDEOUTB4F_ROCKET1,      ON
+	toggle_object_state ROCKETHIDEOUTB4F_ROCKET2,      ON
+	toggle_object_state ROCKETHIDEOUTB4F_ROCKET3,      ON
+
 	toggle_object_state ROCKETHIDEOUTB4F_HP_UP,         ON
 	toggle_object_state ROCKETHIDEOUTB4F_TM_RAZOR_WIND, ON
 	toggle_object_state ROCKETHIDEOUTB4F_IRON,          ON
@@ -422,6 +435,13 @@ ToggleableObjectStates:
 	toggle_object_state SEAFOAMISLANDSB4F_BOULDER1, OFF
 	toggle_object_state SEAFOAMISLANDSB4F_BOULDER2, OFF
 	toggle_object_state SEAFOAMISLANDSB4F_ARTICUNO, ON
+
+	toggleable_objects_for CELADON_CHIEF_HOUSE
+	toggle_object_state CELADONCHIEFHOUSE_ROCKET, ON
+
+	toggleable_objects_for CELADON_CITY
+	toggle_object_state CELADONCITY_ROCKET1, ON
+	toggle_object_state CELADONCITY_ROCKET2, ON
 
 	assert_table_length NUM_TOGGLEABLE_OBJECTS
 

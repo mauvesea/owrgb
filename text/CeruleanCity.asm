@@ -192,15 +192,18 @@ _CeruleanCityCooltrainerF2Text::
 	done
 
 _CeruleanCitySuperNerd3Text::
-	text "This is CERULEAN"
-	line "CAVE! Horribly"
+	text "We got intel"
+	line "about a horribly"
 	cont "strong #MON"
-	cont "live in there!"
+	cont "living here!"
 
-	para "The #MON LEAGUE"
-	line "champion is the"
-	cont "only person who"
-	cont "is allowed in!"
+	para "Go away! I won't"
+	line "move, no matter"
+	cont "what!"
+
+	para "This #MON"
+	line "belongs to TEAM"
+	cont "ROCKET!"
 	done
 
 _CeruleanCitySignText::

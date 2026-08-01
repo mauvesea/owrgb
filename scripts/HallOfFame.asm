@@ -96,9 +96,6 @@ HallOfFameOakCongratulationsScript:
 	call DisplayTextID
 	ld a, PAD_BUTTONS | PAD_CTRL_PAD
 	ld [wJoyIgnore], a
-	ld a, TOGGLE_CERULEAN_CAVE_GUY
-	ld [wToggleableObjectIndex], a
-	predef HideObject
 	ld a, SCRIPT_HALLOFFAME_RESET_EVENTS_AND_SAVE
 	ld [wHallOfFameCurScript], a
 	ret

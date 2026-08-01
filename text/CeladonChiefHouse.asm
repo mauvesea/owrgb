@@ -4,6 +4,17 @@ _CeladonChiefHouseChiefText::
 	cont "dough, big time!"
 	done
 
+_CeladonChiefHouseChiefText2::
+	text "TEAM ROCKET is"
+	line "gone...?"
+
+	para "I don't care!"
+
+	para "The slots will"
+	line "keep reeling in"
+	cont "the dough!"
+	done
+
 _CeladonChiefHouseRocketText::
 	text "CHIEF!"
 
@@ -20,3 +31,10 @@ _CeladonChiefHouseSailorText::
 	para "There's no secret"
 	line "switch behind it!"
 	done
+
+_CeladonChiefHouseSailorText2::
+	text "Guess I have the"
+	line "HIDEOUT all to"
+	cont "myself now!"
+	done
+

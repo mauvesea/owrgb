@@ -156,7 +156,7 @@ ViridianGymReceiveTM27:
 	ld a, TEXT_VIRIDIANGYM_GIOVANNI_TM27_NO_ROOM
 	ldh [hTextID], a
 	call DisplayTextID
-	jr .FinishBagFull
+	jp .FinishBagFull
 .gym_victory
 	; Increase Level Scaling
 	ld a, [wLevelScaling]
@@ -175,6 +175,52 @@ ViridianGymReceiveTM27:
 	ld a, TOGGLE_VIRIDIAN_GYM_GIOVANNI
 	ld [wToggleableObjectIndex], a
 	predef HideObject
+
+	ld a, TOGGLE_CELADONCHIEFHOUSE_ROCKET
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+	ld a, TOGGLE_CELADONCITY_ROCKET1
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+	ld a, TOGGLE_CELADONCITY_ROCKET2
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+	ld a, TOGGLE_ROCKETHIDEOUTB1F_ROCKET1
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+	ld a, TOGGLE_ROCKETHIDEOUTB1F_ROCKET2
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+	ld a, TOGGLE_ROCKETHIDEOUTB1F_ROCKET3
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+	ld a, TOGGLE_ROCKETHIDEOUTB1F_ROCKET4
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+	ld a, TOGGLE_ROCKETHIDEOUTB2F_ROCKET
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+	ld a, TOGGLE_ROCKETHIDEOUTB3F_ROCKET1
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+	ld a, TOGGLE_ROCKETHIDEOUTB3F_ROCKET2
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+	ld a, TOGGLE_ROCKETHIDEOUTB4F_ROCKET1
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+	ld a, TOGGLE_ROCKETHIDEOUTB4F_ROCKET2
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+	ld a, TOGGLE_ROCKETHIDEOUTB4F_ROCKET3
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+	ld a, TOGGLE_CERULEAN_CAVE_GUY
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
 	call UpdateSprites
 	call Delay3
 	call GBFadeInFromBlack
