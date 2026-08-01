@@ -32,6 +32,7 @@ TownMapOrder:
 	db ROUTE_14
 	db ROUTE_15
 	db ROUTE_16
+	db MOLTRES_DUNGEON_1
 	db ROUTE_17
 	db ROUTE_18
 	db FUCHSIA_CITY

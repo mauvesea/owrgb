@@ -201,7 +201,7 @@ ToggleableObjectStates:
 	toggle_object_state POWERPLANT_TM_REFLECT, ON
 
 	toggleable_objects_for VICTORY_ROAD_2F
-	toggle_object_state VICTORYROAD2F_MOLTRES,       ON
+	toggle_object_state VICTORYROAD2F_MOLTRES,       OFF
 	toggle_object_state VICTORYROAD2F_TM_SUBMISSION, ON
 	toggle_object_state VICTORYROAD2F_FULL_HEAL,     ON
 	toggle_object_state VICTORYROAD2F_TM_MEGA_KICK,  ON
@@ -442,6 +442,9 @@ ToggleableObjectStates:
 	toggleable_objects_for CELADON_CITY
 	toggle_object_state CELADONCITY_ROCKET1, ON
 	toggle_object_state CELADONCITY_ROCKET2, ON
+
+;	toggleable_objects_for MOLTRES_DUNGEON_3
+;	toggle_object_state MOLTRESDUNGEON3_MOLTRES, ON
 
 	assert_table_length NUM_TOGGLEABLE_OBJECTS
 

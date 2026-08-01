@@ -396,6 +396,11 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const BRUNOS_ROOM,                    5,  6 ; $F6
 	map_const AGATHAS_ROOM,                   5,  6 ; $F7
 	end_indoor_group POKEMON_LEAGUE_3
+
+	map_const MOLTRES_DUNGEON_1,             10, 14
+	map_const MOLTRES_DUNGEON_2,             15, 14
+	map_const MOLTRES_DUNGEON_3,             15, 14
+	end_indoor_group MOLTRES_DUNGEON
 DEF NUM_MAPS EQU const_value
 
 ; Indoor maps, such as houses, use this as the Map ID in their exit warps

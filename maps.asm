@@ -1219,3 +1219,22 @@ INCLUDE "data/maps/headers/AgathasRoom.asm"
 INCLUDE "scripts/AgathasRoom.asm"
 INCLUDE "data/maps/objects/AgathasRoom.asm"
 AgathasRoom_Blocks: INCBIN "maps/AgathasRoom.blk"
+
+
+SECTION "Maps 22", ROMX
+
+MoltresDungeon1_Blocks: INCBIN "maps/MoltresDungeon1.blk"
+MoltresDungeon2_Blocks: INCBIN "maps/MoltresDungeon2.blk"
+MoltresDungeon3_Blocks: INCBIN "maps/MoltresDungeon3.blk"
+
+INCLUDE "data/maps/headers/MoltresDungeon1.asm"
+INCLUDE "data/maps/headers/MoltresDungeon2.asm"
+INCLUDE "data/maps/headers/MoltresDungeon3.asm"
+
+INCLUDE "data/maps/objects/MoltresDungeon1.asm"
+INCLUDE "data/maps/objects/MoltresDungeon2.asm"
+INCLUDE "data/maps/objects/MoltresDungeon3.asm"
+
+INCLUDE "scripts/MoltresDungeon1.asm"
+INCLUDE "scripts/MoltresDungeon2.asm"
+INCLUDE "scripts/MoltresDungeon3.asm"

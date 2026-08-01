@@ -20,6 +20,7 @@ Route16_Object:
 	warp_event 24, 22, ROUTE_16_GATE_1F, 7
 	warp_event 24, 23, ROUTE_16_GATE_1F, 8
 	warp_event  7, 23, ROUTE_16_FLY_HOUSE, 1
+	warp_event 30, 13, MOLTRES_DUNGEON_1, 4
 
 	def_bg_events
 	bg_event 27, 29, TEXT_ROUTE16_CYCLING_ROAD_SIGN

@@ -249,4 +249,7 @@ MapHeaderBanks::
 	db BANK(LoreleisRoom_h)
 	db BANK(BrunosRoom_h)
 	db BANK(AgathasRoom_h)
+	db BANK(MoltresDungeon1_h)
+	db BANK(MoltresDungeon2_h)
+	db BANK(MoltresDungeon3_h)
 	assert_table_length NUM_MAPS
