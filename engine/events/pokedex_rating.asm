@@ -168,7 +168,22 @@ DexRatingText_Own150To151:
 	ld a, OPP_PROF_OAK
 	ld [wCurOpponent], a
 	; Check Starter
+
+	ld a, [wRivalStarter]
+	cp STARTER2 ; SQUIRTLE
+	jr nz, .NotSquirtle_Battle
+	ld a, 2
+	jr .GotStarter
+.NotSquirtle_Battle
+	cp STARTER3 ; BULBASAUR
+	jr nz, .Charmander_Battle
 	ld a, 1
+	jr .GotStarter
+.Charmander_Battle
+	ld a, 3
+	jr .GotStarter
+
+.GotStarter
 	ld [wTrainerNo], a
 
 	xor a

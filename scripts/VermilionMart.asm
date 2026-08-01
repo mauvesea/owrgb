@@ -6,6 +6,10 @@ VermilionMart_TextPointers:
 	dw_const VermilionMartClerkText,        TEXT_VERMILIONMART_CLERK
 	dw_const VermilionMartCooltrainerMText, TEXT_VERMILIONMART_COOLTRAINER_M
 	dw_const VermilionMartCooltrainerFText, TEXT_VERMILIONMART_COOLTRAINER_F
+	dw_const VermilionVendingMachineText,   TEXT_VERMILION_VENDING_MACHINE
+
+VermilionVendingMachineText:
+	script_vending_machine
 
 VermilionMartCooltrainerMText:
 	text_far _VermilionMartCooltrainerMText

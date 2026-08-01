@@ -11,6 +11,7 @@ CinnabarMart_Object:
 	warp_event  4,  7, LAST_MAP, 5
 
 	def_bg_events
+	bg_event  2,  1, TEXT_CINNABAR_VENDING_MACHINE
 
 	def_object_events
 	object_event  0,  5, SPRITE_CLERK, STAY, RIGHT, TEXT_CINNABARMART_CLERK

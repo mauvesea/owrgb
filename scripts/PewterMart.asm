@@ -9,6 +9,10 @@ PewterMart_TextPointers:
 	dw_const PewterMartClerkText,     TEXT_PEWTERMART_CLERK
 	dw_const PewterMartYoungsterText, TEXT_PEWTERMART_YOUNGSTER
 	dw_const PewterMartSuperNerdText, TEXT_PEWTERMART_SUPER_NERD
+	dw_const PewterVendingMachineText,   TEXT_PEWTER_VENDING_MACHINE
+
+PewterVendingMachineText:
+	script_vending_machine
 
 PewterMartYoungsterText:
 	text_asm

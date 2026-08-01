@@ -34,8 +34,6 @@ Gate_Block::        INCBIN "gfx/blocksets/gate.bst"
 
 Forest_GFX::        INCBIN "gfx/tilesets/tilesets_rg/forest.2bpp"
 Forest_Block::      INCBIN "gfx/blocksets/forest.bst"
-Facility_GFX::      INCBIN "gfx/tilesets/facility.2bpp"
-Facility_Block::    INCBIN "gfx/blocksets/facility.bst"
 
 
 SECTION "Tilesets 3", ROMX
@@ -64,3 +62,5 @@ Lobby_GFX::         INCBIN "gfx/tilesets/lobby.2bpp"
 Lobby_Block::       INCBIN "gfx/blocksets/lobby.bst"
 Interior_GFX::      INCBIN "gfx/tilesets/interior.2bpp"
 Interior_Block::    INCBIN "gfx/blocksets/interior.bst"
+Facility_GFX::      INCBIN "gfx/tilesets/facility.2bpp"
+Facility_Block::    INCBIN "gfx/blocksets/facility.bst"

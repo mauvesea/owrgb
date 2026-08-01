@@ -6,6 +6,10 @@ LavenderMart_TextPointers:
 	dw_const LavenderMartClerkText,        TEXT_LAVENDERMART_CLERK
 	dw_const LavenderMartBaldingGuyText,   TEXT_LAVENDERMART_BALDING_GUY
 	dw_const LavenderMartCooltrainerMText, TEXT_LAVENDERMART_COOLTRAINER_M
+	dw_const LavenderVendingMachineText,   TEXT_LAVENDER_VENDING_MACHINE
+
+LavenderVendingMachineText:
+	script_vending_machine
 
 LavenderMartBaldingGuyText:
 	text_far _LavenderMartBaldingGuyText
