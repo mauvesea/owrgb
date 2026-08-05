@@ -132,6 +132,7 @@ GameCorner_TextPointers:
 	dw_const GameCornerRocketText,            TEXT_GAMECORNER_ROCKET
 	dw_const GameCornerPosterText,            TEXT_GAMECORNER_POSTER
 	dw_const GameCornerRocketAfterBattleText, TEXT_GAMECORNER_ROCKET_AFTER_BATTLE
+	dw_const GashaponMachine,                 TEXT_GAMERCORNER_GASHAPON_MACHINE
 
 GameCornerBeauty1Text:
 	text_far _GameCornerBeauty1Text
@@ -546,3 +547,263 @@ Has9990Coins:
 	ld a, $90
 	ldh [hCoins + 1], a
 	jp HasEnoughCoins
+
+
+
+
+GashaponMachine:
+	text_asm
+
+	ld a, [wSpritePlayerStateData1FacingDirection]
+	cp SPRITE_FACING_UP
+	jr z, .CorrectSide
+	ld hl, GameCornerWrongSideText
+	call PrintText
+	jp .Finish
+.CorrectSide
+	ld a, MONEY_BOX
+	ld [wTextBoxID], a
+	call DisplayTextBoxID
+	xor a
+	ldh [hJoyHeld], a
+
+	ld hl, GashaponMachineTextIntro
+	call PrintText
+
+	call YesNoChoice
+	ld a, [wCurrentMenuItem]
+	and a
+
+	jp nz, .Finish
+
+	ld a, [wNumBagItems]
+	cp 40
+	jr c, .HasEnoughBagSpace
+	ld hl, GashaponMachineNotEnoughRoom
+	call PrintText
+	jp .Finish
+
+
+.HasEnoughBagSpace
+	xor a
+	ldh [hMoney], a
+	ld a, $02
+	ldh [hMoney + 1], a
+	ld a, $00
+	ldh [hMoney + 2], a
+
+	call HasEnoughMoney
+
+	jr nc, .GashaponStart
+	ld hl, GashaponMachineTextNotEnoughMoney
+	call PrintText
+
+	jp .Finish
+
+.GashaponStart
+	xor a
+	ld [wPriceTemp], a
+	ld a, $02
+	ld [wPriceTemp + 1], a
+	ld a, $00
+	ld [wPriceTemp + 2], a
+	ld hl, wPriceTemp + 2
+	ld de, wPlayerMoney + 2
+	ld c, 3
+	predef SubBCDPredef
+	ld a, MONEY_BOX
+	ld [wTextBoxID], a
+	call DisplayTextBoxID
+	ld a, SFX_PURCHASE
+	call PlaySoundWaitForCurrent
+	call WaitForSoundToFinish
+
+	ld b, 60 ; number of times to play the "brrrrr" sound
+.playDeliverySound
+	ld c, 2
+	call DelayFrames
+	push bc
+	ld a, SFX_59
+	call PlaySound
+	pop bc
+	dec b
+	jr nz, .playDeliverySound
+
+	call Random
+	cp 224
+	jr c, .Continue
+	ld hl, TooBadText
+	call PrintText
+	jr .Finish
+
+.Continue
+	call Random
+
+	cp 128
+	jr c, .Quality1
+	cp 192
+	jr c, .Quality2
+	cp 224
+	jr c, .Quality3
+	cp 248
+	jr c, .Quality4
+	jr .Quality5
+
+
+.Quality1
+	call Random
+	and 7
+
+	cp 5
+	jr c, .Q1Index
+	sub 5
+
+.Q1Index
+	ld hl, Quality1Table
+	jr .Lookup
+
+.Quality2
+	call Random
+	and 31
+
+	cp 18
+	jr c, .Q2Index
+	sub 18
+
+.Q2Index
+	ld hl, Quality2Table
+	jr .Lookup
+
+.Quality3
+	call Random
+	and 7
+
+	cp 5
+	jr c, .Q3Index
+	sub 5
+
+.Q3Index
+	ld hl, Quality3Table
+	jr .Lookup
+
+.Quality4
+	call Random
+	and 15
+
+	cp 12
+	jr c, .Q4Index
+	sub 12
+
+.Q4Index
+	ld hl, Quality4Table
+	jr .Lookup
+
+.Quality5
+	call Random
+	and 15
+
+	cp 10
+	jr c, .Q5Index
+	sub 10
+
+.Q5Index
+	ld hl, Quality5Table
+
+.Lookup
+	ld c, a
+	ld b, 0
+	add hl, bc
+	ld a, [hl]
+	scf
+	ld b, a
+	ld c, 1
+	call GiveItem
+	ld hl, GashaponItemText
+	call PrintText
+.Finish
+	jp TextScriptEnd
+
+Quality1Table:
+	db TM_WHIRLWIND
+	db TM_WATER_GUN
+	db TM_TELEPORT
+	db TM_DOUBLE_TEAM
+	db TM_REFLECT
+
+Quality2Table:
+	db TM_RAZOR_WIND
+	db TM_SWORDS_DANCE
+	db TM_HORN_DRILL
+	db TM_BUBBLEBEAM
+	db TM_COUNTER
+	db TM_RAGE
+	db TM_THUNDERBOLT
+	db TM_DIG
+	db TM_MIMIC
+	db TM_BIDE
+	db TM_SELFDESTRUCT
+	db TM_EGG_BOMB
+	db TM_SWIFT
+	db TM_SOFTBOILED
+	db TM_DREAM_EATER
+	db TM_REST
+	db TM_THUNDER_WAVE
+	db TM_SUBSTITUTE
+
+Quality3Table:
+	db TM_MEGA_PUNCH
+	db TM_MEGA_KICK
+	db TM_TAKE_DOWN
+	db TM_SUBMISSION
+	db TM_SEISMIC_TOSS
+
+Quality4Table:
+	db TM_EXPLOSION
+	db TM_TOXIC
+	db TM_BODY_SLAM
+	db TM_DOUBLE_EDGE
+	db TM_ICE_BEAM
+	db TM_EARTHQUAKE
+	db TM_PSYCHIC_M
+	db TM_METRONOME
+	db TM_SKULL_BASH
+	db TM_PSYWAVE
+	db TM_ROCK_SLIDE
+	db TM_TRI_ATTACK
+
+Quality5Table:
+	db TM_BLIZZARD
+	db TM_HYPER_BEAM
+	db TM_PAY_DAY
+	db TM_MEGA_DRAIN
+	db TM_SOLARBEAM
+	db TM_DRAGON_RAGE
+	db TM_THUNDER
+	db TM_FISSURE
+	db TM_FIRE_BLAST
+	db TM_SKY_ATTACK
+
+GashaponItemText:
+	text_far _GashaponItemText
+	sound_get_item_1
+	text_end
+
+GashaponMachineTextNotEnoughMoney:
+	text_far _GashaponMachineTextNotEnoughMoney
+	text_end
+
+GashaponMachineTextIntro:
+	text_far _GashaponMachineTextIntro
+	text_end
+
+TooBadText::
+	text_far _TooBadText
+	text_end
+
+GameCornerWrongSideText::
+	text_far _RedsHouse1FTVWrongSideText
+	text_end
+
+GashaponMachineNotEnoughRoom::
+	text_far _GashaponMachineNotEnoughRoomText
+	text_end

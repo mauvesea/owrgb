@@ -21,6 +21,8 @@ GameCorner_Object:
 
 	def_bg_events
 	bg_event  9,  4, TEXT_GAMECORNER_POSTER
+	bg_event 12, 16, TEXT_GAMERCORNER_GASHAPON_MACHINE
+	bg_event  0, 16, TEXT_GAMERCORNER_GASHAPON_MACHINE
 
 	def_object_events
 	object_event  2,  6, SPRITE_BEAUTY, STAY, DOWN, TEXT_GAMECORNER_BEAUTY1

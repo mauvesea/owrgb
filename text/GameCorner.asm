@@ -198,3 +198,38 @@ _GameCornerOopsForgotCoinCaseText::
 	text "Oops! Forgot the"
 	line "COIN CASE!"
 	done
+
+_GashaponMachineTextNotEnoughMoney::
+	text "You don't have"
+	line "enough money!"
+	done
+
+_GashaponMachineTextIntro::
+	text "It's a Gashapon"
+	line "Machine!"
+
+	para "Play it for"
+	line "¥200?"
+	done
+
+_TooBadText::
+	text "You didn't get"
+	line "anything."
+	cont "Too bad!"
+	done
+
+_GashaponMachineNotEnoughRoomText::
+	text "You have no room"
+	line "for a prize!"
+
+	para "Make some room"
+	line "before playing"
+	cont "the machine."
+	done
+
+_GashaponItemText::
+	text "<PLAYER> got"
+	line "@"
+	text_ram wNameBuffer
+	text "!@"
+	text_end

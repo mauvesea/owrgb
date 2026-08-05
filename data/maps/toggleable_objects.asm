@@ -183,7 +183,7 @@ ToggleableObjectStates:
 
 	toggleable_objects_for SILPH_CO_1F
 	toggle_object_state SILPHCO1F_LINK_RECEPTIONIST, OFF
-	toggle_object_state SILPHCO1F_LINK_RECEPTIONIST2, ON
+	toggle_object_state SILPHCO1F_LINK_RECEPTIONIST2, OFF
 
 	toggleable_objects_for POWER_PLANT
 	toggle_object_state POWERPLANT_VOLTORB1,   ON

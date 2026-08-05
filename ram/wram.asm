@@ -1835,7 +1835,7 @@ wWarpEntries:: ds MAX_WARP_EVENTS * 4 ; Y, X, warp ID, map ID
 ; if $ff, the player's coordinates are not updated when entering the map
 wDestinationWarpID:: db
 
-	ds 128
+	ds 47
 
 ; number of signs in the current map (up to MAX_BG_EVENTS)
 wNumSigns:: db
