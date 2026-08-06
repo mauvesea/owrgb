@@ -22,7 +22,7 @@ KabutopsFossilText::
 	text_far _KabutopsFossilText
 	text_end
 
-DisplayMonFrontSpriteInBox:
+DisplayMonFrontSpriteInBox::
 ; Displays a pokemon's front sprite in a pop-up window.
 	ld a, 1
 	ldh [hAutoBGTransferEnabled], a
@@ -47,6 +47,8 @@ DisplayMonFrontSpriteInBox:
 	cp FOSSIL_KABUTOPS
 	jr z, .skipCry
 	cp FOSSIL_AERODACTYL
+	jr z, .skipCry
+	cp PIKACHU
 	jr z, .skipCry
 	call PlayCry
 .skipCry

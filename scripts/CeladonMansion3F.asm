@@ -1,5 +1,24 @@
 CeladonMansion3F_Script:
-	jp EnableAutoTextBoxDrawing
+	call EnableAutoTextBoxDrawing
+	ld hl, CeladonMansion3F_ScriptPointers
+	ld a, [wGameFreakRoomCurScript]
+	jp CallFunctionInTable
+
+CeladonMansion3F_ScriptPointers:
+	def_script_pointers
+	dw_const CeladonMansion3FDefaultScript, SCRIPT_GF_ROOM_DEFAULT
+	dw_const GFRoomNishidaScript,    SCRIPT_GF_ROOM_NISHIDA
+
+CeladonMansion3FDefaultScript:
+	ret
+
+GFRoomNishidaScript:
+	ld a, PIKACHU
+	ld [wCurPartySpecies], a
+	farcall DisplayMonFrontSpriteInBox
+	xor a
+	ld [wGameFreakRoomCurScript], a
+	ret
 
 CeladonMansion3F_TextPointers:
 	def_text_pointers
@@ -45,47 +64,13 @@ GFRoomPCMasudaScript:
 
 GFRoomPCNishidaScript:
 	text_asm
-
 ;	ld a, TRUE
 ;	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
-
-
-	call SaveScreenTilesToBuffer1
-
-
-
-
-	ld a, PIKACHU
-	ld [wCurPartySpecies], a
-
-	call Delay3
-;	xor a
-;	ldh [hWY], a
-	ld a, MON_SPRITE_POPUP
-	ld [wTextBoxID], a
-	call DisplayTextBoxID
-	call UpdateSprites
-	ld a, [wCurPartySpecies]
-	ld [wCurSpecies], a
-	call GetMonHeader
-	ld de, vChars1 tile $31
-	call LoadMonFrontSprite
-	ld a, $80
-	ldh [hStartTileID], a
-	hlcoord 10, 11
-	predef AnimateSendingOutMon
-	call WaitForTextScrollButtonPress
-	call LoadScreenTilesFromBuffer1
-	call Delay3
-;	ld a, $90
-;	ldh [hWY], a
 	ld hl, GFRoomPCNishidaScript1
 	call PrintText
-
-
+	ld a, SCRIPT_GF_ROOM_NISHIDA
+	ld [wGameFreakRoomCurScript], a
 	jp TextScriptEnd
-
-
 
 
 GFRoomDeskMorimotoScript:
