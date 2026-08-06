@@ -39,3 +39,8 @@ _Route23VictoryRoadGateSignText::
 	text "VICTORY ROAD GATE"
 	line "- #MON LEAGUE"
 	done
+
+_Route23SignText::
+	text "ROUTE 23"
+	line "▲ #MON LEAGUE"
+	done

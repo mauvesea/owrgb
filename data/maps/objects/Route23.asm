@@ -18,6 +18,7 @@ Route23_Object:
 
 	def_bg_events
 	bg_event  3, 33, TEXT_ROUTE23_VICTORY_ROAD_GATE_SIGN
+	bg_event 13, 107, TEXT_ROUTE_23_SIGN
 
 	def_object_events
 	object_event  4, 35, SPRITE_GUARD, STAY, DOWN, TEXT_ROUTE23_GUARD1

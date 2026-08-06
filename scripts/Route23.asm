@@ -149,6 +149,7 @@ Route23_TextPointers:
 	dw_const Route23Guard4Text,              TEXT_ROUTE23_GUARD4
 	dw_const Route23Guard5Text,              TEXT_ROUTE23_GUARD5
 	dw_const Route23VictoryRoadGateSignText, TEXT_ROUTE23_VICTORY_ROAD_GATE_SIGN
+	dw_const Route23SignText, TEXT_ROUTE_23_SIGN
 
 Route23Guard1Text:
 	text_asm
@@ -242,4 +243,8 @@ Route23OhThatIsTheBadgeText:
 
 Route23VictoryRoadGateSignText:
 	text_far _Route23VictoryRoadGateSignText
+	text_end
+
+Route23SignText:
+	text_far _Route23SignText
 	text_end

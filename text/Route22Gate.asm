@@ -3,8 +3,8 @@ _Route22GateGuardNoBoulderbadgeText::
 	line "trainers are"
 	cont "allowed through."
 
-	para "You don't have any"
-	line "BADGEs yet!@"
+	para "You don't have the"
+	line "BOULDERBADGE yet!@"
 	text_end
 
 _Route22GateGuardICantLetYouPassText::
@@ -16,7 +16,7 @@ _Route22GateGuardICantLetYouPassText::
 	done
 
 _Route22GateGuardGoRightAheadText::
-	text "Oh! I see you have"
-	line "a BADGE!"
+	text "Oh! That is the"
+	line "BOULDERBADGE!"
 	cont "Go right ahead!@"
 	text_end
