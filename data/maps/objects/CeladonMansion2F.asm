@@ -9,6 +9,8 @@ CeladonMansion2F_Object:
 
 	def_bg_events
 	bg_event  4,  9, TEXT_CELADONMANSION2F_MEETING_ROOM_SIGN
+	bg_event  0,  5, TEXT_CELADONMANSION2F_COMPUTER_TEXT
+	bg_event  1,  5, TEXT_CELADONMANSION2F_COMPUTER_TEXT
 
 	def_object_events
 

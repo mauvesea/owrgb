@@ -233,7 +233,6 @@ DEF ANY_FACING EQU $d0
 	db -1 ; end
 
 	hidden_events_for CELADON_MANSION_2F
-	hidden_event  0,  5, OpenPokemonCenterPC, SPRITE_FACING_UP
 	db -1 ; end
 
 	hidden_events_for CELADON_POKECENTER

@@ -5,7 +5,12 @@ CeladonMansion2F_Script:
 CeladonMansion2F_TextPointers:
 	def_text_pointers
 	dw_const CeladonMansion2FMeetingRoomSignText, TEXT_CELADONMANSION2F_MEETING_ROOM_SIGN
+	dw_const CeladonMansion2FMeetingRoomComputerText, TEXT_CELADONMANSION2F_COMPUTER_TEXT
 
 CeladonMansion2FMeetingRoomSignText:
 	text_far _CeladonMansion2FMeetingRoomSignText
+	text_end
+
+CeladonMansion2FMeetingRoomComputerText:
+	text_far _CeladonMansion2FMeetingRoomComputerText
 	text_end
