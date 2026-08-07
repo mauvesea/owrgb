@@ -21,7 +21,7 @@ Moves:
 	move ICE_PUNCH,    FREEZE_SIDE_EFFECT1,         75, ICE,          100, 15
 	move THUNDERPUNCH, PARALYZE_SIDE_EFFECT1,       75, ELECTRIC,     100, 15
 	move SCRATCH,      NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 35
-	move VICEGRIP,     NO_ADDITIONAL_EFFECT,        55, NORMAL,       100, 30
+	move VICEGRIP,     NO_ADDITIONAL_EFFECT,        55, BUG,          100, 30
 	move GUILLOTINE,   OHKO_EFFECT,                  1, NORMAL,        30,  5
 	move RAZOR_WIND,   CHARGE_EFFECT,               80, NORMAL,        75, 10
 	move SWORDS_DANCE, ATTACK_UP2_EFFECT,            0, NORMAL,       100, 30
@@ -150,7 +150,7 @@ Moves:
 	move GLARE,        PARALYZE_EFFECT,              0, NORMAL,        75, 30
 	move DREAM_EATER,  DREAM_EATER_EFFECT,         100, PSYCHIC_TYPE, 100, 15
 	move POISON_GAS,   POISON_EFFECT,                0, POISON,        55, 40
-	move BARRAGE,      TWO_TO_FIVE_ATTACKS_EFFECT,  15, NORMAL,        85, 20
+	move BARRAGE,      TWO_TO_FIVE_ATTACKS_EFFECT,  20, GRASS,         95, 20
 	move LEECH_LIFE,   DRAIN_HP_EFFECT,             20, BUG,          100, 15
 	move LOVELY_KISS,  SLEEP_EFFECT,                 0, NORMAL,        75, 10
 	move SKY_ATTACK,   CHARGE_EFFECT,              140, FLYING,        90,  5
@@ -162,7 +162,7 @@ Moves:
 	move PSYWAVE,      SPECIAL_DAMAGE_EFFECT,        1, PSYCHIC_TYPE,  80, 15
 	move SPLASH,       SPLASH_EFFECT,                0, NORMAL,       100, 40
 	move ACID_ARMOR,   DEFENSE_UP2_EFFECT,           0, POISON,       100, 40
-	move CRABHAMMER,   NO_ADDITIONAL_EFFECT,        90, WATER,         85, 10
+	move CRABHAMMER,   NO_ADDITIONAL_EFFECT,       120, WATER,         90, 10
 	move EXPLOSION,    EXPLODE_EFFECT,             170, NORMAL,       100,  5
 	move FURY_SWIPES,  TWO_TO_FIVE_ATTACKS_EFFECT,  18, NORMAL,        80, 15
 	move BONEMERANG,   ATTACK_TWICE_EFFECT,         50, GROUND,        90, 10
