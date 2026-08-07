@@ -103,18 +103,24 @@ _SilphCo11FGiovanniYouRuinedOurPlansText::
 	done
 
 _SilphCo11FRocket1BattleText::
-	text "Stop right there!"
-	line "Don't you move!"
+	text "It's you again!"
+
+	para "You won't be so"
+	line "lucky this time"
+	cont "around."
+
+	para "Prepare yourself!"
 	done
 
 _SilphCo11FRocket1EndBattleText::
-	text "Don't..."
-	line "Please!"
+	text "What!?"
+	line "That's impossible!"
 	prompt
 
 _SilphCo11FRocket1AfterBattleText::
-	text "So, you want to"
-	line "see my BOSS?"
+	text "I have never been"
+	line "so humiliated in"
+	cont "my life..."
 	done
 
 _SilphCo11FRocket2BattleText::

@@ -504,7 +504,9 @@ ProfOakData:
 	db $FF, 26, TAUROS, 27, EXEGGUTOR, 28, ARCANINE, 29, CHARIZARD, 30, GYARADOS, 0
 
 ChiefData:
-; none
+; Silph Co. 11F
+	db $FF, 10, LICKITUNG, 10, TAUROS, 12, PORYGON, 0
+	db $FF, 11, LICKITUNG, 11, SNORLAX, 12, TAUROS, 13, PORYGON, 0
 
 ScientistData:
 ; Unused
