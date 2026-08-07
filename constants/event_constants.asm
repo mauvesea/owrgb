@@ -124,7 +124,7 @@
 	const EVENT_GOT_TM48
 	const EVENT_GOT_TM49
 	const EVENT_GOT_TM18
-	const_skip 17
+	const_skip 16
 
 	const EVENT_START_GF_QUEST
 	const EVENT_MORIMOTO_FOUND
@@ -133,6 +133,7 @@
 	const EVENT_NISHIDA_FOUND
 	const EVENT_NISHINO_FOUND
 	const EVENT_DIPLOMA_AVAILABLE
+	const EVENT_MEW_APPEARS
 
 	const EVENT_GOT_TM21
 	const EVENT_BEAT_ERIKA
@@ -714,6 +715,7 @@
 	const_skip 14
 	const EVENT_BEAT_MANSION_4_TRAINER_0
 	const EVENT_BEAT_MANSION_4_TRAINER_1
+	const EVENT_BEAT_MEW
 
 ; Safari Zone events
 	const_next $880

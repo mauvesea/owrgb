@@ -368,6 +368,7 @@ ToggleableObjectStates:
 	toggle_object_state POKEMONMANSION3F_IRON,       ON
 
 	toggleable_objects_for POKEMON_MANSION_B1F
+	toggle_object_state POKEMONMANSIONB1F_MEW,   OFF
 	toggle_object_state POKEMONMANSIONB1F_RARE_CANDY,   ON
 	toggle_object_state POKEMONMANSIONB1F_FULL_RESTORE, ON
 	toggle_object_state POKEMONMANSIONB1F_TM_BLIZZARD,  ON

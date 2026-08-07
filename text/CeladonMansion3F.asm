@@ -165,7 +165,7 @@ _GFRoomDeskNishinoScript2::
 	done
 
 
-_GFRoomScriptMorimoto::
+_GFRoomScriptMorimoto1::
 	text "Hello! I'm the"
 	line "PROGRAMMER!"
 
@@ -174,6 +174,42 @@ _GFRoomScriptMorimoto::
 
 	para "Well, I'm still"
 	line "debugging it!"
+	done
+
+_GFRoomScriptMorimoto2::
+	text "Hello! I'm the"
+	line "PROGRAMMER!"
+
+	para "I'm finally done"
+	line "with debugging!"
+
+	para "I can finally"
+	line "scrap those"
+	cont "debugging tools."
+
+	para "Now there's some"
+	line "more space in the"
+	cont "ROM!"
+
+	para "Oh yeah... Did"
+	line "you hear the"
+	cont "rumor about that"
+	cont "crazy rare #-"
+	cont "MON?"
+
+	para "Seems like it's"
+	line "been spotted"
+	cont "somewhere deep in"
+	cont "#MON MANSION!"
+	done
+
+_GFRoomScriptMorimoto3::
+	text "Hello! I'm the"
+	line "PROGRAMMER!"
+
+	para "So, what do you"
+	line "think about MEW?"
+	cont "Very cool, right?"
 	done
 
 _GFRoomScriptSugimori::

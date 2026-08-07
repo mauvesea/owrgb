@@ -52,7 +52,47 @@ CeladonMansion3F_TextPointers:
 
 
 GFRoomScriptMorimoto:
-	text_far _GFRoomScriptMorimoto
+	text_asm
+	CheckEvent EVENT_BEAT_MEW
+	jr nz, .PostMew
+	CheckEvent EVENT_MEW_APPEARS
+	jr nz, .MewAlreadySet
+	CheckEvent EVENT_BEAT_CHAMPION_RIVAL
+	jr nz, .SetMew
+
+	ld hl, GFRoomScriptMorimoto1
+	call PrintText
+	jr .Finish
+
+.PostMew
+	ld hl, GFRoomScriptMorimoto3
+	call PrintText
+	jr .Finish
+
+.SetMew
+	ld a, TOGGLE_POKEMON_MANSION_B1F_MEW
+	ld [wToggleableObjectIndex], a
+	predef ShowObject
+	SetEvent EVENT_MEW_APPEARS
+
+.MewAlreadySet
+	ld hl, GFRoomScriptMorimoto2
+	call PrintText
+
+.Finish
+	jp TextScriptEnd
+
+
+GFRoomScriptMorimoto1:
+	text_far _GFRoomScriptMorimoto1
+	text_end
+
+GFRoomScriptMorimoto2:
+	text_far _GFRoomScriptMorimoto2
+	text_end
+
+GFRoomScriptMorimoto3:
+	text_far _GFRoomScriptMorimoto3
 	text_end
 
 GFRoomScriptSugimori:
