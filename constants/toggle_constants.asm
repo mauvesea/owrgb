@@ -63,6 +63,7 @@ ENDM
 
 	toggle_consts_for ROUTE_12
 	const TOGGLE_ROUTE_12_SNORLAX              ; 1D
+	const TOGGLE_ROUTE_12_MASUDA
 	const TOGGLE_ROUTE_12_ITEM_1               ; 1E X
 	const TOGGLE_ROUTE_12_ITEM_2               ; 1F X
 
@@ -157,6 +158,7 @@ ENDM
 	toggle_consts_for SILPH_CO_1F
 	const TOGGLE_SILPH_CO_1F_RECEPTIONIST      ; 4C
 	const TOGGLE_SILPH_CO_1F_RECEPTIONIST2
+	const TOGGLE_SILPH_CO_1F_MORIMOTO
 
 	toggle_consts_for POWER_PLANT
 	const TOGGLE_VOLTORB_1                     ; 4D X
@@ -175,7 +177,6 @@ ENDM
 	const TOGGLE_POWER_PLANT_ITEM_5            ; 5A X
 
 	toggle_consts_for VICTORY_ROAD_2F
-	const TOGGLE_MOLTRES                       ; 5B X
 	const TOGGLE_VICTORY_ROAD_2F_ITEM_1        ; 5C X
 	const TOGGLE_VICTORY_ROAD_2F_ITEM_2        ; 5D X
 	const TOGGLE_VICTORY_ROAD_2F_ITEM_3        ; 5E X
@@ -264,7 +265,6 @@ ENDM
 	const TOGGLE_ROCKET_HIDEOUT_B4F_ITEM_5     ; 88
 
 	toggle_consts_for SILPH_CO_2F
-	const TOGGLE_SILPH_CO_2F_1                 ; 89 XXX never (de)activated?
 	const TOGGLE_SILPH_CO_2F_2                 ; 8A
 	const TOGGLE_SILPH_CO_2F_3                 ; 8B
 	const TOGGLE_SILPH_CO_2F_4                 ; 8C
@@ -307,7 +307,6 @@ ENDM
 	const TOGGLE_SILPH_CO_7F_RIVAL             ; A7
 	const TOGGLE_SILPH_CO_7F_ITEM_1            ; A8 X
 	const TOGGLE_SILPH_CO_7F_ITEM_2            ; A9 X
-	const TOGGLE_SILPH_CO_7F_8                 ; AA XXX sprite doesn't exist
 
 	toggle_consts_for SILPH_CO_8F
 	const TOGGLE_SILPH_CO_8F_1                 ; AB
@@ -322,7 +321,6 @@ ENDM
 	toggle_consts_for SILPH_CO_10F
 	const TOGGLE_SILPH_CO_10F_1                ; B1
 	const TOGGLE_SILPH_CO_10F_2                ; B2
-	const TOGGLE_SILPH_CO_10F_3                ; B3 XXX never (de)activated?
 	const TOGGLE_SILPH_CO_10F_ITEM_1           ; B4 X
 	const TOGGLE_SILPH_CO_10F_ITEM_2           ; B5 X
 	const TOGGLE_SILPH_CO_10F_ITEM_3           ; B6 X
@@ -331,9 +329,6 @@ ENDM
 	const TOGGLE_SILPH_CO_11F_1                ; B7
 	const TOGGLE_SILPH_CO_11F_2                ; B8
 	const TOGGLE_SILPH_CO_11F_3                ; B9
-
-	toggle_consts_for UNUSED_MAP_F4
-	const TOGGLE_UNUSED_MAP_F4_1               ; BA XXX sprite doesn't exist
 
 	toggle_consts_for POKEMON_MANSION_2F
 	const TOGGLE_POKEMON_MANSION_2F_ITEM       ; BB X
@@ -418,5 +413,22 @@ ENDM
 	toggle_consts_for MOLTRES_DUNGEON_2
 	const TOGGLE_MOLTRESDUNGEON2_MOLTRES ; E1
 	const TOGGLE_MOLTRESDUNGEON2_TM_FIREBLAST
+
+	toggle_consts_for CELADON_MANSION_3F
+	const TOGGLE_GF_ROOM_MORIMOTO
+	const TOGGLE_GF_ROOM_SUGIMORI
+	const TOGGLE_GF_ROOM_MASUDA
+	const TOGGLE_GF_ROOM_NISHIDA
+	const TOGGLE_GF_ROOM_NISHINO
+
+	toggle_consts_for FUCHSIA_CITY
+	const TOGGLE_FUCHSIA_CITY_NISHINO
+
+	toggle_consts_for CELADON_MART_3F
+	const TOGGLE_CELADON_MART_3F_SUGIMORI
+
+	toggle_consts_for SAFARI_ZONE_CENTER_REST_HOUSE
+	const TOGGLE_SAFARI_ZONE_CENTER_REST_HOUSE_NISHIDA
+
 
 DEF NUM_TOGGLEABLE_OBJECTS EQU const_value

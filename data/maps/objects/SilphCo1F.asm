@@ -1,6 +1,7 @@
 	object_const_def
 	const_export SILPHCO1F_LINK_RECEPTIONIST
 	const_export SILPHCO1F_LINK_RECEPTIONIST2
+	const_export SILPHCO1F_MORIMOTO
 
 SilphCo1F_Object:
 	db $2e ; border block
@@ -17,5 +18,6 @@ SilphCo1F_Object:
 	def_object_events
 	object_event  4,  2, SPRITE_LINK_RECEPTIONIST, STAY, DOWN, TEXT_SILPHCO1F_LINK_RECEPTIONIST
 	object_event  3,  2, SPRITE_LINK_RECEPTIONIST, STAY, DOWN, TEXT_SILPHCO1F_LINK_RECEPTIONIST2
+	object_event  7, 10, SPRITE_BIKE_SHOP_CLERK, STAY, NONE, TEXT_SILPHCO1F_MORIMOTO
 
 	def_warps_to SILPH_CO_1F

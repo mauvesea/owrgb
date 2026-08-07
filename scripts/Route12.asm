@@ -96,6 +96,7 @@ Route12_TextPointers:
 	dw_const Route12Fisher3Text,           TEXT_ROUTE12_FISHER3
 	dw_const Route12Fisher4Text,           TEXT_ROUTE12_FISHER4
 	dw_const Route12Fisher5Text,           TEXT_ROUTE12_FISHER5
+	dw_const Route12MasudaText,            TEXT_ROUTE12_MASUDA
 	dw_const PickUpItemText,               TEXT_ROUTE12_TM_PAY_DAY
 	dw_const PickUpItemText,               TEXT_ROUTE12_IRON
 	dw_const Route12SignText,              TEXT_ROUTE12_SIGN
@@ -120,6 +121,33 @@ Route12TrainerHeader5:
 Route12TrainerHeader6:
 	trainer EVENT_BEAT_ROUTE_12_TRAINER_6, 1, Route12Fisher5BattleText, Route12Fisher5EndBattleText, Route12Fisher5AfterBattleText
 	db -1 ; end
+
+Route12MasudaText:
+	text_asm
+	ld hl, Route12MasudaText1
+	call PrintText
+
+	call GBFadeOutToBlack
+
+	SetEvent EVENT_MASUDA_FOUND
+
+	ld a, TOGGLE_ROUTE_12_MASUDA
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+	ld a, TOGGLE_GF_ROOM_MASUDA
+	ld [wToggleableObjectIndex], a
+	predef ShowObject
+
+	call UpdateSprites
+	call Delay3
+	call GBFadeInFromBlack
+
+	jp TextScriptEnd
+
+Route12MasudaText1:
+	text_far _Route12MasudaText
+	text_end
 
 Route12SnorlaxText:
 	text_far _Route12SnorlaxText

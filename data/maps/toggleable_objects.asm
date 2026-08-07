@@ -90,6 +90,7 @@ ToggleableObjectStates:
 
 	toggleable_objects_for ROUTE_12
 	toggle_object_state ROUTE12_SNORLAX,    ON
+	toggle_object_state ROUTE12_MASUDA,    OFF
 	toggle_object_state ROUTE12_TM_PAY_DAY, ON
 	toggle_object_state ROUTE12_IRON,       ON
 
@@ -184,6 +185,7 @@ ToggleableObjectStates:
 	toggleable_objects_for SILPH_CO_1F
 	toggle_object_state SILPHCO1F_LINK_RECEPTIONIST, OFF
 	toggle_object_state SILPHCO1F_LINK_RECEPTIONIST2, OFF
+	toggle_object_state SILPHCO1F_MORIMOTO, OFF ; Morimoto
 
 	toggleable_objects_for POWER_PLANT
 	toggle_object_state POWERPLANT_VOLTORB1,   ON
@@ -202,7 +204,6 @@ ToggleableObjectStates:
 	toggle_object_state POWERPLANT_TM_REFLECT, ON
 
 	toggleable_objects_for VICTORY_ROAD_2F
-	toggle_object_state VICTORYROAD2F_MOLTRES,       OFF
 	toggle_object_state VICTORYROAD2F_TM_SUBMISSION, ON
 	toggle_object_state VICTORYROAD2F_FULL_HEAL,     ON
 	toggle_object_state VICTORYROAD2F_TM_MEGA_KICK,  ON
@@ -293,7 +294,6 @@ ToggleableObjectStates:
 	toggle_object_state ROCKETHIDEOUTB4F_LIFT_KEY,      OFF
 
 	toggleable_objects_for SILPH_CO_2F
-	toggle_object_state SILPHCO2F_SILPH_WORKER_F, ON
 	toggle_object_state SILPHCO2F_SCIENTIST1,     ON
 	toggle_object_state SILPHCO2F_SCIENTIST2,     ON
 	toggle_object_state SILPHCO2F_ROCKET1,        ON
@@ -336,7 +336,7 @@ ToggleableObjectStates:
 	toggle_object_state SILPHCO7F_RIVAL,           ON
 	toggle_object_state SILPHCO7F_CALCIUM,         ON
 	toggle_object_state SILPHCO7F_TM_SWORDS_DANCE, ON
-	toggle_object_state SILPHCO7F_UNUSED,          ON
+
 
 	toggleable_objects_for SILPH_CO_8F
 	toggle_object_state SILPHCO8F_ROCKET1,   ON
@@ -351,7 +351,6 @@ ToggleableObjectStates:
 	toggleable_objects_for SILPH_CO_10F
 	toggle_object_state SILPHCO10F_ROCKET,         ON
 	toggle_object_state SILPHCO10F_SCIENTIST,      ON
-	toggle_object_state SILPHCO10F_SILPH_WORKER_F, ON
 	toggle_object_state SILPHCO10F_TM_EARTHQUAKE,  ON
 	toggle_object_state SILPHCO10F_RARE_CANDY,     ON
 	toggle_object_state SILPHCO10F_CARBOS,         ON
@@ -360,9 +359,6 @@ ToggleableObjectStates:
 	toggle_object_state SILPHCO11F_GIOVANNI, ON
 	toggle_object_state SILPHCO11F_ROCKET1,  ON
 	toggle_object_state SILPHCO11F_ROCKET2,  ON
-
-	toggleable_objects_for UNUSED_MAP_F4
-	toggle_object_state $02, ON ; unused
 
 	toggleable_objects_for POKEMON_MANSION_2F
 	toggle_object_state POKEMONMANSION2F_CALCIUM, ON
@@ -447,6 +443,22 @@ ToggleableObjectStates:
 	toggleable_objects_for MOLTRES_DUNGEON_2
 	toggle_object_state MOLTRESDUNGEON2_MOLTRES, ON
 	toggle_object_state MOLTRESDUNGEON2_TM_FIREBLAST, ON
+
+	toggleable_objects_for CELADON_MANSION_3F
+	toggle_object_state GFROOM_OBJ_MORIMOTO, OFF
+	toggle_object_state GFROOM_OBJ_SUGIMORI, OFF
+	toggle_object_state GFROOM_OBJ_MASUDA, OFF
+	toggle_object_state GFROOM_OBJ_NISHIDA, OFF
+	toggle_object_state GFROOM_OBJ_NISHINO, OFF
+
+	toggleable_objects_for FUCHSIA_CITY
+	toggle_object_state FUCHSIACITY_ERIK, OFF ; Nishino
+
+	toggleable_objects_for CELADON_MART_3F
+	toggle_object_state CELADONMART3F_SUGIMORI, OFF ; Sugimori
+
+	toggleable_objects_for SAFARI_ZONE_CENTER_REST_HOUSE
+	toggle_object_state SAFARIZONECENTERRESTHOUSE_GIRL, OFF ; Nishida
 
 	assert_table_length NUM_TOGGLEABLE_OBJECTS
 

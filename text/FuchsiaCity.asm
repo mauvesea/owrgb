@@ -16,9 +16,36 @@ _FuchsiaCityGamblerText::
 	done
 
 _FuchsiaCityErikText::
-	text "ERIK: Where's"
-	line "SARA? I said I'd"
-	cont "meet her here."
+	text "Where is she...?"
+
+	para "Yo! You know who I"
+	line "am? I'm the MAP"
+	cont "DESIGNER!"
+
+	para "I was supposed to"
+	line "meet my teammate"
+	cont "here..."
+
+	para "She told me she"
+	line "wanted to capture"
+	cont "#MON."
+
+	para "As the #MON"
+	line "DESIGNER, she"
+	cont "must have meant"
+	cont "capturing #-"
+	cont "MON in their best"
+	cont "moments with a"
+	cont "camera, right?"
+
+	para "Anyway... Guess"
+	line "she isn't showing"
+	cont "up. Bet she's back"
+	cont "already at the"
+	cont "office."
+
+	para "I'm heading there"
+	line "now. See ya!"
 	done
 
 _FuchsiaCityYoungster2Text::

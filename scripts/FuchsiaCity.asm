@@ -37,6 +37,29 @@ FuchsiaCityGamblerText:
 	text_end
 
 FuchsiaCityErikText:
+	text_asm
+	ld hl, FuchsiaCityErikText1
+	call PrintText
+
+	call GBFadeOutToBlack
+
+	SetEvent EVENT_NISHINO_FOUND
+
+	ld a, TOGGLE_FUCHSIA_CITY_NISHINO
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+	ld a, TOGGLE_GF_ROOM_NISHINO
+	ld [wToggleableObjectIndex], a
+	predef ShowObject
+
+	call UpdateSprites
+	call Delay3
+	call GBFadeInFromBlack
+
+	jp TextScriptEnd
+
+FuchsiaCityErikText1:
 	text_far _FuchsiaCityErikText
 	text_end
 

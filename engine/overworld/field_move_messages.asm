@@ -9,8 +9,10 @@ PrintStrengthText:
 UsedStrengthText:
 	text_far _UsedStrengthText
 	text_asm
-	ld a, [wCurPartySpecies]
-	call PlayCry
+	ld a, SFX_PURCHASE
+	call PlaySoundWaitForCurrent
+	call WaitForSoundToFinish
+	call WaitForTextScrollButtonPress
 	call Delay3
 	jp TextScriptEnd
 

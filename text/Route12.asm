@@ -138,3 +138,31 @@ _Route12SignText::
 _Route12SportFishingSignText::
 	text "SPORT FISHING AREA"
 	done
+
+_Route12MasudaText::
+	text "The scenery"
+	line "around here is"
+	cont "great. It feels"
+	cont "so relaxing!"
+
+	para "Me? I'm the"
+	line "MUSICIAN! Were"
+	cont "you looking for"
+	cont "me?"
+
+	para "I see. I under-"
+	line "stand how worried"
+	cont "the GAME DIRECTOR"
+	cont "must be."
+
+	para "We're about to"
+	line "release our game,"
+	cont "after all!"
+
+	para "Don't worry, this"
+	line "is enough inspi-"
+	cont "ration for me."
+
+	para "I'll head back to"
+	line "the office now."
+	done

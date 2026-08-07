@@ -97,3 +97,25 @@ _CeladonMart3FPokemonPosterText::
 	text "Red and Blue!"
 	line "Both are #MON!"
 	done
+
+_CeladonMart3FSugimoriText::
+	text "Oh man..."
+	line "They have no"
+	cont "SEGA SATURN in"
+	cont "stock!"
+
+	para "Me? I'm the CHAR-"
+	line "ACTER DESIGNER!"
+
+	para "What? The DIRECTOR"
+	line "has been looking"
+	cont "for me?"
+
+	para "Guess it's been a"
+	line "while since I"
+	cont "left the office."
+
+	para "Don't worry, I'll"
+	line "head back there"
+	cont "now."
+	done

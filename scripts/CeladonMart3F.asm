@@ -8,6 +8,7 @@ CeladonMart3F_TextPointers:
 	dw_const CeladonMart3FGameBoyKid2Text,      TEXT_CELADONMART3F_GAMEBOY_KID2
 	dw_const CeladonMart3FGameBoyKid3Text,      TEXT_CELADONMART3F_GAMEBOY_KID3
 	dw_const CeladonMart3FLittleBoyText,        TEXT_CELADONMART3F_LITTLE_BOY
+	dw_const CeladonMart3FSugimoriText,         TEXT_CELADONMART3F_SUGIMORI
 	dw_const CeladonMart3FSNESText,             TEXT_CELADONMART3F_SNES1
 	dw_const CeladonMart3FRPGText,              TEXT_CELADONMART3F_RPG
 	dw_const CeladonMart3FSNESText,             TEXT_CELADONMART3F_SNES2
@@ -101,4 +102,32 @@ CeladonMart3FCurrentFloorSignText:
 
 CeladonMart3FPokemonPosterText:
 	text_far _CeladonMart3FPokemonPosterText
+	text_end
+
+CeladonMart3FSugimoriText:
+	text_asm
+	ld hl, CeladonMart3FSugimoriText1
+	call PrintText
+
+	call GBFadeOutToBlack
+
+	SetEvent EVENT_SUGIMORI_FOUND
+
+	ld a, TOGGLE_CELADON_MART_3F_SUGIMORI
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+	ld a, TOGGLE_GF_ROOM_SUGIMORI
+	ld [wToggleableObjectIndex], a
+	predef ShowObject
+
+	call UpdateSprites
+	call Delay3
+	call GBFadeInFromBlack
+
+	jp TextScriptEnd
+
+
+CeladonMart3FSugimoriText1:
+	text_far _CeladonMart3FSugimoriText
 	text_end
