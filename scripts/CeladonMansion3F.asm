@@ -141,33 +141,69 @@ GFRoomPCNishidaScript:
 
 GFRoomDeskMorimotoScript:
 	text_asm
+	CheckEvent EVENT_MORIMOTO_FOUND
+	jr nz, .SugiFound
 	ld hl, GFRoomDeskMorimotoScript1
 	call PrintText
+	jr .FinishScript
+.SugiFound
+	ld hl, GFRoomDeskMorimotoScript2
+	call PrintText
+.FinishScript
 	jp TextScriptEnd
 
 GFRoomDeskSugimoriScript:
 	text_asm
+	CheckEvent EVENT_SUGIMORI_FOUND
+	jr nz, .SugiFound
 	ld hl, GFRoomDeskSugimoriScript1
 	call PrintText
+	jr .FinishScript
+.SugiFound
+	ld hl, GFRoomDeskSugimoriScript2
+	call PrintText
+.FinishScript
 	jp TextScriptEnd
 
 GFRoomDeskMasudaScript:
 	text_asm
+	CheckEvent EVENT_MASUDA_FOUND
+	jr nz, .SugiFound
 	ld hl, GFRoomDeskMasudaScript1
 	call PrintText
+	jr .FinishScript
+.SugiFound
+	ld hl, GFRoomDeskMasudaScript2
+	call PrintText
+.FinishScript
 	jp TextScriptEnd
 
 GFRoomDeskNishinoScript:
 	text_asm
+	CheckEvent EVENT_NISHINO_FOUND
+	jr nz, .SugiFound
 	ld hl, GFRoomDeskNishinoScript1
 	call PrintText
+	jr .FinishScript
+.SugiFound
+	ld hl, GFRoomDeskNishinoScript2
+	call PrintText
+.FinishScript
 	jp TextScriptEnd
 
 GFRoomDeskNishidaScript:
 	text_asm
+	CheckEvent EVENT_NISHIDA_FOUND
+	jr nz, .SugiFound
 	ld hl, GFRoomDeskNishidaScript1
 	call PrintText
+	jr .FinishScript
+.SugiFound
+	ld hl, GFRoomDeskNishidaScript2
+	call PrintText
+.FinishScript
 	jp TextScriptEnd
+
 
 
 TajiriText1:
