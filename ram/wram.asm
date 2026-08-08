@@ -508,7 +508,9 @@ wLowHealthAlarmDisabled:: db
 
 wPlayerMonMinimized:: db
 
-	ds 13
+	ds 11
+
+wCastleMonTemp:: db
 
 UNION
 ; the amount of damage accumulated by the enemy while biding
@@ -2081,7 +2083,7 @@ wPlayerJumpingYScreenCoordsIndex:: db
 
 wRivalStarter:: db
 
-	ds 1
+wCastleMonCount:: db
 
 wPlayerStarter:: db
 

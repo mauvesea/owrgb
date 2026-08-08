@@ -192,8 +192,190 @@ PalletTownOakText:
 	text_end
 
 PalletTownGirlText:
-	text_far _PalletTownGirlText
-	text_end
+	text_asm
+GiveRandomSpecificPokemon:
+	ld a, [wCastleMonCount]
+	cp 7
+	jr c, .loop
+	SetEvent EVENT_CASTLE_COMPLETE
+
+.loop
+	call Random
+
+	cp CHARMANDER
+	jp z, .Charmander
+	cp BULBASAUR
+	jp z, .Bulbasaur
+	cp SQUIRTLE
+	jp z, .Squirtle
+	cp EEVEE
+	jp z, .Eevee
+	cp HITMONCHAN
+	jp z, .Hitmonchan
+	cp HITMONLEE
+	jp z, .Hitmonlee
+	cp OMANYTE
+	jp z, .Omanyte
+	cp KABUTO
+	jp z, .Kabuto
+	jr nz, .loop
+
+.Charmander
+	ld [wCastleMonTemp], a
+
+	CheckEvent EVENT_CASTLE_COMPLETE
+	jp nz, .found
+
+	CheckEvent EVENT_CASTLE_CHARMANDER
+	jp nz, .loop
+
+	ld a, [wPlayerStarter]
+	cp CHARMANDER
+	jp z, .loop
+
+	ld a, [wCastleMonCount]
+	inc a
+	ld [wCastleMonCount], a
+	SetEvent EVENT_CASTLE_CHARMANDER
+	jp .found
+
+.Bulbasaur
+	ld [wCastleMonTemp], a
+
+	CheckEvent EVENT_CASTLE_COMPLETE
+	jp nz, .found
+
+	CheckEvent EVENT_CASTLE_BULBASAUR
+	jp nz, .loop
+
+	ld a, [wPlayerStarter]
+	cp BULBASAUR
+	jp z, .loop
+
+	ld a, [wCastleMonCount]
+	inc a
+	ld [wCastleMonCount], a
+	SetEvent EVENT_CASTLE_BULBASAUR
+	jp .found
+
+.Squirtle
+	ld [wCastleMonTemp], a
+
+	CheckEvent EVENT_CASTLE_COMPLETE
+	jp nz, .found
+
+	CheckEvent EVENT_CASTLE_SQUIRTLE
+	jp nz, .loop
+
+	ld a, [wPlayerStarter]
+	cp SQUIRTLE
+	jp z, .loop
+
+	ld a, [wCastleMonCount]
+	inc a
+	ld [wCastleMonCount], a
+	SetEvent EVENT_CASTLE_SQUIRTLE
+	jp .found
+
+.Eevee
+	ld [wCastleMonTemp], a
+
+	CheckEvent EVENT_CASTLE_COMPLETE
+	jp nz, .found
+
+	CheckEvent EVENT_CASTLE_EEVEE
+	jp nz, .loop
+
+	ld a, [wCastleMonCount]
+	inc a
+	ld [wCastleMonCount], a
+	SetEvent EVENT_CASTLE_EEVEE
+	jp .found
+
+.Kabuto
+	ld [wCastleMonTemp], a
+
+	CheckEvent EVENT_CASTLE_COMPLETE
+	jp nz, .found
+
+	CheckEvent EVENT_CASTLE_KABUTO
+	jp nz, .loop
+
+	ld a, [wCastleMonCount]
+	inc a
+	ld [wCastleMonCount], a
+
+	CheckEvent EVENT_GOT_DOME_FOSSIL
+	jp nz, .loop
+
+	SetEvent EVENT_CASTLE_KABUTO
+	jp .found
+
+.Omanyte
+	ld [wCastleMonTemp], a
+
+	CheckEvent EVENT_CASTLE_COMPLETE
+	jp nz, .found
+
+	CheckEvent EVENT_CASTLE_OMANYTE
+	jp nz, .loop
+
+	ld a, [wCastleMonCount]
+	inc a
+	ld [wCastleMonCount], a
+
+	CheckEvent EVENT_GOT_HELIX_FOSSIL
+	jp nz, .loop
+
+	SetEvent EVENT_CASTLE_OMANYTE
+	jp .found
+
+.Hitmonlee
+	ld [wCastleMonTemp], a
+
+	CheckEvent EVENT_CASTLE_COMPLETE
+	jp nz, .found
+
+	CheckEvent EVENT_CASTLE_HITMONLEE
+	jp nz, .loop
+	ld a, [wCastleMonCount]
+	inc a
+	ld [wCastleMonCount], a
+
+	CheckEvent EVENT_GOT_HITMONLEE
+	jp nz, .loop
+
+	SetEvent EVENT_CASTLE_HITMONLEE
+	jp .found
+
+.Hitmonchan
+	ld [wCastleMonTemp], a
+
+	CheckEvent EVENT_CASTLE_COMPLETE
+	jp nz, .found
+
+	CheckEvent EVENT_CASTLE_HITMONCHAN
+	jp nz, .loop
+
+	ld a, [wCastleMonCount]
+	inc a
+	ld [wCastleMonCount], a
+
+	CheckEvent EVENT_GOT_HITMONCHAN
+	jp nz, .loop
+
+	SetEvent EVENT_CASTLE_HITMONCHAN
+	jp .found
+
+.found
+	ld a, [wCastleMonTemp]
+	ld b, a
+	ld c, 5
+	call GivePokemon
+	jp TextScriptEnd
+
+;	text_far _PalletTownGirlText
+;	text_end
 
 PalletTownFisherText:
 	text_far _PalletTownFisherText
