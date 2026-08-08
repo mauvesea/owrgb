@@ -27,6 +27,11 @@ SafariZoneSecretHouseEndBattleScript:
 	call DisplayTextID
 	call GBFadeOutToBlack
 
+	; Increase Level Scaling
+	ld a, [wLevelScaling]
+	inc a
+	ld [wLevelScaling], a
+
 	ld a, TOGGLE_SAFARI_ZONE_CHIEF
 	ld [wToggleableObjectIndex], a
 	predef HideObject

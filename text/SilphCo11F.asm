@@ -35,6 +35,13 @@ _SilphCo11FSilphPresidentMasterBallDescriptionText::
 	line "prototype MASTER"
 	cont "BALL!"
 
+	para "It was made by a"
+	line "brilliant scien-"
+	cont "tist that unfor-"
+	cont "tunately decided"
+	cont "to join TEAM"
+	cont "ROCKET..."
+
 	para "It will catch any"
 	line "#MON without"
 	cont "fail!"
@@ -103,11 +110,19 @@ _SilphCo11FGiovanniYouRuinedOurPlansText::
 	done
 
 _SilphCo11FRocket1BattleText::
-	text "It's you again!"
+	text "It's you again,"
+	line "insect!"
+
+	para "Once TEAM ROCKET"
+	line "gets rid of that"
+	cont "stupid PRESIDENT,"
+	cont "I shall become"
+	cont "SILPH CO.'s next"
+	cont "president!"
 
 	para "You won't be so"
 	line "lucky this time"
-	cont "around."
+	cont "around, brat."
 
 	para "Prepare yourself!"
 	done

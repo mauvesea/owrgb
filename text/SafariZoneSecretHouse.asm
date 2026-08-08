@@ -55,6 +55,16 @@ _ChiefBeforeWardenText::
 	cont "and make us even"
 	cont "more powerful!"
 
+	para "This machine uses"
+	line "the same tech I"
+	cont "developed for the"
+	cont "MASTER BALL."
+
+	para "Once it's done,"
+	line "I'll be able to"
+	cont "catch all SAFARI"
+	cont "#MON at once!"
+
 	para "Huh? What are you"
 	line "doing eavesdrop-"
 	cont "ping on me?"
@@ -67,6 +77,20 @@ _SafariZoneSecretHouseBeforeBattleText::
 	cont "serve TEAM ROCKET"
 	cont "and make us even"
 	cont "more powerful!"
+
+	para "This machine uses"
+	line "the same tech I"
+	cont "developed for the"
+	cont "MASTER BALL."
+
+	para "Once it's done,"
+	line "I'll be able to"
+	cont "catch all SAFARI"
+	cont "#MON at once!"
+
+	para "Huh? What are you"
+	line "doing eavesdrop-"
+	cont "ping on me?"
 
 	para "...What!? That"
 	line "WARDEN sent you"
@@ -87,7 +111,7 @@ _SafariZoneSecretHouseBeforeBattleText::
 
 	para "I'm SILPH'S CHIEF"
 	line "Researcher, and a"
-	cont "a member of TEAM"
+	cont "member of TEAM"
 	cont "ROCKET."
 
 	para "Get ready to meet"
@@ -111,5 +135,5 @@ _SafariZoneSecretHouseAfterBattleText::
 
 	para "I won't be so"
 	line "forgiving if we"
-	cont "meet again."
+	cont "ever meet again."
 	done

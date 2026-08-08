@@ -69,7 +69,7 @@ Route22DefaultScript:
 	predef HideObject
 .SecondFight
 	ld a, [wLevelScaling]
-	cp 10
+	cp 11
 	jr c, .Continue
 	SetEvents EVENT_2ND_ROUTE22_RIVAL_BATTLE, EVENT_ROUTE22_RIVAL_WANTS_BATTLE
 	ld a, TOGGLE_ROUTE_22_RIVAL_2
