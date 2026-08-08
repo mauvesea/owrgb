@@ -1,5 +1,4 @@
 Route15GateLeftBinoculars::
-	ld b,b
 	ld a, [wSpritePlayerStateData1FacingDirection]
 	cp SPRITE_FACING_UP
 	ret nz

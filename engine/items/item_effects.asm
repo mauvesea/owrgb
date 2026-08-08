@@ -852,7 +852,6 @@ ItemUsePokedex:
 	predef_jump ShowPokedexMenu
 
 ItemUseEvoStone:
-	ld b,b
 	ld a, [wIsInBattle]
 	and a
 	jp nz, ItemUseNotTime
