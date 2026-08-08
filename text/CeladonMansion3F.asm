@@ -241,8 +241,8 @@ _GFRoomScriptMasuda::
 	done
 
 _GFRoomScriptNishida::
-	text "Hi! I'm the #-"
-	line "MON DESIGNER!"
+	text "Hi! I'm the"
+	line "#MON DESIGNER!"
 
 	para "But I did design"
 	line "some characters"

@@ -11,6 +11,17 @@ IF DEF(_DEBUG)
 	call DebugPressedOrHeldB
 	ret nz
 ENDC
+	ld a, [wCurMap]
+	cp SAFARI_ZONE_CENTER
+	jr z, .inSafariZone
+	cp SAFARI_ZONE_EAST
+	jr z, .inSafariZone
+	cp SAFARI_ZONE_NORTH
+	jr z, .inSafariZone
+	cp SAFARI_ZONE_WEST
+	jr z, .inSafariZone
+	ret
+.inSafariZone
 	ld a, [wSafariSteps]
 	ld b, a
 	ld a, [wSafariSteps + 1]
