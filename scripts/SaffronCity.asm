@@ -1,5 +1,37 @@
 SaffronCity_Script:
-	jp EnableAutoTextBoxDrawing
+	call EnableAutoTextBoxDrawing
+
+	CheckEvent EVENT_BEAT_SILPH_CO_GIOVANNI
+	jr nz, .hideBoth
+
+	CheckEvent EVENT_RESCUED_MR_FUJI_2
+	jr z, .done
+
+	CheckEvent EVENT_CHIEF_IN_SECRET_HOUSE
+	jr z, .done
+
+	; Both events are set
+	ld a, TOGGLE_SAFFRON_CITY_E
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+	ld a, TOGGLE_SAFFRON_CITY_F
+	ld [wToggleableObjectIndex], a
+	predef ShowObject
+	jr .done
+
+.hideBoth
+	ld a, TOGGLE_SAFFRON_CITY_E
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+	ld a, TOGGLE_SAFFRON_CITY_F
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+.done
+	ret
+
 
 SaffronCity_TextPointers:
 	def_text_pointers

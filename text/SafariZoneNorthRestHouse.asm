@@ -10,10 +10,18 @@ _SafariZoneNorthRestHouseScientistText::
 	done
 
 _SafariZoneNorthRestHouseSafariZoneWorkerText::
-	text "Go to the deepest"
-	line "part of the"
-	cont "SAFARI ZONE. You"
-	cont "will win a prize!"
+	text "I'm not a great"
+	line "swimmer and on"
+	cont "top of that I"
+	cont "lost my FLOATIES"
+	cont "somewhere around"
+	cont "here."
+
+	para "I couldn't swim"
+	line "even with them,"
+	cont "so you can keep"
+	cont "it if you find"
+	cont "them."
 	done
 
 _SafariZoneNorthRestHouseGentlemanText::

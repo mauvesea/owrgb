@@ -13,83 +13,87 @@ WardensHouseWardenText:
 	text_asm
 	CheckEvent EVENT_GOT_HM04
 	jr nz, .got_item
-	ld b, GOLD_TEETH
-	call IsItemInBag
-	jr nz, .have_gold_teeth
+
 	CheckEvent EVENT_GAVE_GOLD_TEETH
-	jr nz, .gave_gold_teeth
-	ld hl, .Gibberish1Text
+	jr nz, .AcceptedMission
+
+	ld hl, SafariWardenTextIntro
 	call PrintText
 	call YesNoChoice
 	ld a, [wCurrentMenuItem]
 	and a
-	ld hl, .Gibberish3Text
 	jr nz, .refused
-	ld hl, .Gibberish2Text
-.refused
+
+	SetEvent EVENT_GAVE_GOLD_TEETH
+	ld hl, SafariWardenTextAccepted
 	call PrintText
 	jr .done
-.have_gold_teeth
-	ld hl, .GaveTheGoldTeethText
+
+.refused
+	ld hl, SafariWardenTextRefused
 	call PrintText
-	ld a, GOLD_TEETH
-	ldh [hItemToRemoveID], a
-	farcall RemoveItemByID
-	SetEvent EVENT_GAVE_GOLD_TEETH
-.gave_gold_teeth
-	ld hl, .ThanksText
+	jr .done
+
+.AcceptedMission
+
+	CheckEvent EVENT_CHIEF_IN_SECRET_HOUSE
+	jr nz, .defeatedChief
+
+	ld hl, SafariWardenTextCountingOnYou
+	call PrintText
+	jr .done
+
+.defeatedChief
+	ld hl, SafariWardenTextThanks
 	call PrintText
 	lb bc, CROWBAR, 1
 	call GiveItem
 	jr nc, .bag_full
-	ld hl, .ReceivedHM04Text
+	ld hl, ReceivedHM04Text
 	call PrintText
 	SetEvent EVENT_GOT_HM04
 	jr .done
 .got_item
-	ld hl, .HM04ExplanationText
+	ld hl, HM04ExplanationText
 	call PrintText
 	jr .done
 .bag_full
-	ld hl, .HM04NoRoomText
+	ld hl, HM04NoRoomText
 	call PrintText
 .done
 	jp TextScriptEnd
 
-.Gibberish1Text:
-	text_far _WardensHouseWardenGibberish1Text
+SafariWardenTextIntro:
+	text_far _SafariWardenTextIntro
 	text_end
 
-.Gibberish2Text:
-	text_far _WardensHouseWardenGibberish2Text
+SafariWardenTextAccepted:
+	text_far _SafariWardenTextAccepted
 	text_end
 
-.Gibberish3Text:
-	text_far _WardensHouseWardenGibberish3Text
+SafariWardenTextRefused:
+	text_far _SafariWardenTextRefused
 	text_end
 
-.GaveTheGoldTeethText:
-	text_far _WardensHouseWardenGaveTheGoldTeethText
-	sound_get_item_1
-
-.PoppedInHisTeethText: ; unreferenced
-	text_far _WardensHouseWardenTeethPoppedInHisTeethText
+SafariWardenTextCountingOnYou:
+	text_far _SafariWardenTextCountingOnYou
 	text_end
 
-.ThanksText:
-	text_far _WardensHouseWardenThanksText
+SafariWardenTextThanks:
+	text_far _SafariWardenTextThanks
 	text_end
 
-.ReceivedHM04Text:
+
+ReceivedHM04Text:
 	text_far _WardensHouseWardenReceivedHM04Text
 	sound_get_item_1
 	text_end
 
-.HM04ExplanationText:
+HM04ExplanationText:
 	text_far _WardensHouseWardenHM04ExplanationText
 	text_end
 
-.HM04NoRoomText:
+HM04NoRoomText:
 	text_far _WardensHouseWardenHM04NoRoomText
 	text_end
 

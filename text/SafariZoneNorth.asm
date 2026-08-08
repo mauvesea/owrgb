@@ -5,7 +5,7 @@ _SafariZoneNorthRestHouseSignText::
 _SafariZoneNorthTrainerTips1Text::
 	text "TRAINER TIPS"
 
-	para "The SECRET HOUSE"
+	para "The SECRET LAB"
 	line "is still ahead!"
 	done
 

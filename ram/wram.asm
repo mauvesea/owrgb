@@ -2031,7 +2031,7 @@ wSilphCo11FCurScript:: db
 	ds 1
 wFuchsiaGymCurScript:: db
 wSaffronGymCurScript:: db
-	ds 1
+wSafariZoneSecretHouse:: db
 wCinnabarGymCurScript:: db
 wGameCornerCurScript:: db
 wRoute16Gate1FCurScript:: db

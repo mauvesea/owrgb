@@ -1,48 +1,3 @@
-_WardensHouseWardenGibberish1Text::
-	text "WARDEN: Hif fuff"
-	line "hefifoo!"
-
-	para "Ha lof ha feef ee"
-	line "hafahi ho. Heff"
-	cont "hee fwee!"
-	done
-
-_WardensHouseWardenGibberish2Text::
-	text "Ah howhee ho hoo!"
-	line "Eef ee hafahi ho!"
-	done
-
-_WardensHouseWardenGibberish3Text::
-	text "Ha? He ohay heh"
-	line "ha hoo ee haheh!"
-	done
-
-_WardensHouseWardenGaveTheGoldTeethText::
-	text "<PLAYER> gave the"
-	line "GOLD TEETH to the"
-	cont "WARDEN!@"
-	text_end
-
-_WardensHouseWardenTeethPoppedInHisTeethText::
-	text_start
-
-	para "The WARDEN popped"
-	line "in his teeth!"
-	prompt
-
-_WardensHouseWardenThanksText::
-	text "WARDEN: Thanks,"
-	line "kid! No one could"
-	cont "understand a word"
-	cont "that I said."
-
-	para "I couldn't work"
-	line "that way."
-	cont "Let me give you"
-	cont "something for"
-	cont "your trouble."
-	prompt
-
 _WardensHouseWardenReceivedHM04Text::
 	text "<PLAYER> got the"
 	line "@"
@@ -61,14 +16,10 @@ _WardensHouseWardenHM04ExplanationText::
 	cont "them in"
 	cont "dungeons."
 
-	para "Oh yes, did you"
-	line "find the SECRET"
-	cont "HOUSE in SAFARI"
-	cont "ZONE?"
-
-	para "I heard you can"
-	line "get a special"
-	cont "prize there!"
+	para "Why don't you"
+	line "test it in that"
+	cont "boulder over"
+	cont "there?"
 	done
 
 _WardensHouseWardenHM04NoRoomText::
@@ -84,4 +35,59 @@ _WardensHouseDisplayPhotosAndFossilsText::
 _WardensHouseDisplayMerchandiseText::
 	text "Old #MON"
 	line "merchandise."
+	done
+
+
+_SafariWardenTextIntro::
+	text "WARDEN: You! You"
+	line "look like a"
+	cont "capable #MON"
+	cont "trainer."
+
+	para "There's a SILPH CO."
+	line "employee using"
+	cont "the LAB deep in"
+	cont "the SAFARI ZONE."
+
+	para "I believe he's up"
+	line "to no good."
+
+	para "Won't you go there"
+	line "and check on him?"
+	done
+
+_SafariWardenTextAccepted::
+	text "Don't worry, I'll"
+	line "repay you for"
+	cont "your time!"
+	done
+
+_SafariWardenTextRefused::
+	text "Oh... I hoped you"
+	line "would help me"
+	cont "out."
+	done
+
+_SafariWardenTextCountingOnYou::
+	text "He should be in"
+	line "a LAB deep within"
+	cont "the SAFARI ZONE."
+
+	para "Good luck!"
+	done
+
+_SafariWardenTextThanks::
+	text "So, he was up"
+	line "to no good, huh?"
+
+	para "I knew it!"
+
+	para "Thanks to you,"
+	line "I don't have to"
+	cont "worry about his"
+	cont "actions in my"
+	cont "SAFARI ZONE any-"
+	cont "more."
+
+	para "This is for you."
 	done

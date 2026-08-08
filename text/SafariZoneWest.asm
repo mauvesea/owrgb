@@ -3,16 +3,7 @@ _SafariZoneWestRestHouseSignText::
 	done
 
 _SafariZoneWestFindWardensTeethSignText::
-	text "REQUEST NOTICE"
-
-	para "Please find the"
-	line "SAFARI WARDEN's"
-	cont "lost GOLD TEETH."
-	cont "They're around"
-	cont "here somewhere."
-
-	para "Reward offered!"
-	line "Contact: WARDEN"
+	text "SECRET LAB"
 	done
 
 _SafariZoneWestTrainerTipsText::

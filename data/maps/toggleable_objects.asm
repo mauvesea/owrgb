@@ -183,7 +183,6 @@ ToggleableObjectStates:
 	toggle_object_state FIGHTINGDOJO_HITMONCHAN_POKE_BALL, ON
 
 	toggleable_objects_for SILPH_CO_1F
-	toggle_object_state SILPHCO1F_LINK_RECEPTIONIST, OFF
 	toggle_object_state SILPHCO1F_LINK_RECEPTIONIST2, OFF
 	toggle_object_state SILPHCO1F_MORIMOTO, OFF ; Morimoto
 
@@ -460,6 +459,9 @@ ToggleableObjectStates:
 
 	toggleable_objects_for SAFARI_ZONE_CENTER_REST_HOUSE
 	toggle_object_state SAFARIZONECENTERRESTHOUSE_GIRL, OFF ; Nishida
+
+	toggleable_objects_for SAFARI_ZONE_SECRET_HOUSE
+	toggle_object_state SAFARIZONESECRETHOUSE_FISHING_GURU, ON ; Chief
 
 	assert_table_length NUM_TOGGLEABLE_OBJECTS
 

@@ -6,6 +6,20 @@ _SilphCo1FLinkReceptionistText::
 	cont "on 11F!"
 	done
 
+_SilphCo1FLinkReceptionistText2::
+	text "Welcome..."
+
+	para "No! This is no"
+	line "time for formali-"
+	cont "ties!"
+
+	para "TEAM ROCKET took"
+	line "over SILPH CO.!"
+
+	para "Please, someone,"
+	line "save us!"
+	done
+
 _SilphCo1FMorimotoText1::
 	text "TEAM ROCKET took"
 	line "over SILPH CO.!"

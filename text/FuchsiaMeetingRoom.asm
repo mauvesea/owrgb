@@ -18,9 +18,7 @@ _FuchsiaMeetingRoomSafariZoneWorker2::
 
 _FuchsiaMeetingRoomSafariZoneWorker3::
 	text "SLOWPOKE came in,"
-	line "but I couldn't"
-	cont "understand him."
-
-	para "I think he's got"
-	line "a speech problem!"
+	line "he sounded"
+	cont "worried about"
+	cont "something..."
 	done

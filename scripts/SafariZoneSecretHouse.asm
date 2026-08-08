@@ -1,9 +1,87 @@
 SafariZoneSecretHouse_Script:
-	jp EnableAutoTextBoxDrawing
+	call EnableAutoTextBoxDrawing
+	ld hl, SafariZoneSecretHouseTrainerHeaders
+	ld de, SafariZoneSecretHouse_ScriptPointers
+	ld a, [wSafariZoneSecretHouse]
+	call ExecuteCurMapScriptInTable
+	ld [wSafariZoneSecretHouse], a
+	ret
+
+SafariZoneSecretHouse_ScriptPointers:
+	def_script_pointers
+	dw_const SafariZoneSecretHouseNoopScript,       SCRIPT_SAFARIZONESECRETHOUSE_NOOP
+	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_SAFARIZONESECRETHOUSE_START_BATTLE
+	dw_const SafariZoneSecretHouseEndBattleScript,  SCRIPT_SAFARIZONESECRETHOUSE_END_BATTLE
+
+
+SafariZoneSecretHouseNoopScript:
+	ret
+
+SafariZoneSecretHouseEndBattleScript:
+	call EndTrainerBattle
+	ld a, [wIsInBattle]
+	cp $ff
+	jp z, ResetChiefScript
+	ld a, TEXT_SAFARIZONESECRETHOUSE_FISHING_GURU
+	ldh [hTextID], a
+	call DisplayTextID
+	call GBFadeOutToBlack
+
+	ld a, TOGGLE_SAFARI_ZONE_CHIEF
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+	call UpdateSprites
+	call Delay3
+	call GBFadeInFromBlack
+	ret
+
+
+ResetChiefScript:
+	xor a ; SCRIPT_LORELEISROOM_DEFAULT
+	ld [wSafariZoneSecretHouse], a
+	ret
+
+
 
 SafariZoneSecretHouse_TextPointers:
 	def_text_pointers
-	dw_const SafariZoneSecretHouseFishingGuruText, TEXT_SAFARIZONESECRETHOUSE_FISHING_GURU
+	dw_const SafariZoneSecretHouseChiefText, TEXT_SAFARIZONESECRETHOUSE_FISHING_GURU
+
+SafariZoneSecretHouseTrainerHeaders:
+	def_trainers
+SafariZoneSecretHouseHeader0:
+	trainer EVENT_CHIEF_IN_SECRET_HOUSE, 0, SafariZoneSecretHouseBeforeBattleText, SafariZoneSecretHouseiEndBattleText, SafariZoneSecretHouseAfterBattleText
+	db -1 ; end
+
+SafariZoneSecretHouseChiefText:
+	text_asm
+	CheckEvent EVENT_GAVE_GOLD_TEETH
+	jr nz, .Battle
+	ld hl, ChiefBeforeWardenText
+	call PrintText
+	jr z, .Done
+.Battle
+	ld hl, SafariZoneSecretHouseHeader0
+	call TalkToTrainer
+.Done
+	jp TextScriptEnd
+
+ChiefBeforeWardenText:
+	text_far _ChiefBeforeWardenText
+	text_end
+
+SafariZoneSecretHouseBeforeBattleText:
+	text_far _SafariZoneSecretHouseBeforeBattleText
+	text_end
+
+SafariZoneSecretHouseiEndBattleText:
+	text_far _SafariZoneSecretHouseiEndBattleText
+	text_end
+
+SafariZoneSecretHouseAfterBattleText:
+	text_far _SafariZoneSecretHouseAfterBattleText
+	text_end
 
 SafariZoneSecretHouseFishingGuruText:
 	text_asm

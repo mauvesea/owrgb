@@ -11,6 +11,6 @@ SafariZoneSecretHouse_Object:
 	def_bg_events
 
 	def_object_events
-	object_event  3,  3, SPRITE_FISHING_GURU, STAY, DOWN, TEXT_SAFARIZONESECRETHOUSE_FISHING_GURU
+	object_event  4,  3, SPRITE_SCIENTIST, STAY, LEFT, TEXT_SAFARIZONESECRETHOUSE_FISHING_GURU, OPP_CHIEF, 1
 
 	def_warps_to SAFARI_ZONE_SECRET_HOUSE

@@ -4,9 +4,6 @@ SilphCo1F_Script:
 	ret z
 	CheckAndSetEvent EVENT_SILPH_CO_RECEPTIONIST_AT_DESK
 	ret nz
-	ld a, TOGGLE_SILPH_CO_1F_RECEPTIONIST
-	ld [wToggleableObjectIndex], a
-	predef ShowObject
 	ld a, TOGGLE_SILPH_CO_1F_RECEPTIONIST2
 	ld [wToggleableObjectIndex], a
 	predef_jump ShowObject
@@ -18,6 +15,23 @@ SilphCo1F_TextPointers:
 	dw_const SilphCo1FMorimotoText, TEXT_SILPHCO1F_MORIMOTO
 
 SilphCo1FLinkReceptionistText:
+	text_asm
+	CheckEvent EVENT_BEAT_SILPH_CO_GIOVANNI
+	jr nz, .GiovanniBeaten
+	ld hl, SilphReceptionistBeforeGiovanniText
+	jr .Done
+
+.GiovanniBeaten
+	ld hl, SilphReceptionistAfterGiovanniText
+.Done
+	call PrintText
+	jp TextScriptEnd
+
+SilphReceptionistBeforeGiovanniText:
+	text_far _SilphCo1FLinkReceptionistText2
+	text_end
+
+SilphReceptionistAfterGiovanniText:
 	text_far _SilphCo1FLinkReceptionistText
 	text_end
 
