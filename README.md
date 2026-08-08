@@ -26,5 +26,5 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 ## Special Thanks
 - [pret](https://github.com/pret/), which is a community, for the disassembly project, tutorials and bug fixes.
 - [Sylvie](https://github.com/Rangi42), for the font used in the logo. 
-- [FrenchOrange](https://github.com/FrenchOrange/), for the sprite used for the Paraglider.
+- [FrenchOrange](https://github.com/FrenchOrange/), for the following sprites: Paraglider, Brock, Misty, Lt. Surge and Blaine.
 

@@ -76,6 +76,15 @@ RedSwimSprite::          INCBIN "gfx/sprites/red_swim.2bpp"
 SECTION "NPC Sprites 3", ROMX
 
 SeelSprite::             INCBIN "gfx/sprites/seel.2bpp"
-RedFlySprite::           INCBIN "gfx/sprites/red_fly.2bpp"
+RedFlySprite:: INCBIN "gfx/sprites/red_fly.2bpp"
+
+BrockSprite:: INCBIN "gfx/sprites/brock.2bpp"
+MistySprite:: INCBIN "gfx/sprites/misty.2bpp"
+SurgeSprite:: INCBIN "gfx/sprites/surge.2bpp"
+ErikaSprite:: INCBIN "gfx/sprites/erika.2bpp"
+KogaGymSprite:: INCBIN "gfx/sprites/koga_gym.2bpp"
+SabrinaSprite:: INCBIN "gfx/sprites/sabrina.2bpp"
+BlaineSprite:: INCBIN "gfx/sprites/blaine.2bpp"
+ChiefSprite:: INCBIN "gfx/sprites/chief.2bpp"
 
 

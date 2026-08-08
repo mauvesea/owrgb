@@ -64,6 +64,14 @@
 	const SPRITE_SEEL                    ; $3c
 	const SPRITE_RED_SWIM
 	const SPRITE_RED_FLY
+	const SPRITE_BROCK
+	const SPRITE_MISTY
+	const SPRITE_SURGE
+	const SPRITE_ERIKA
+	const SPRITE_KOGA_GYM
+	const SPRITE_SABRINA
+	const SPRITE_BLAINE
+	const SPRITE_CHIEF
 DEF FIRST_STILL_SPRITE EQU const_value
 	const SPRITE_POKE_BALL               ; $3d
 	const SPRITE_FOSSIL                  ; $3e

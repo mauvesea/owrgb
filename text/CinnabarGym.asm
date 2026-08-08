@@ -5,6 +5,20 @@ _CinnabarGymBlainePreBattleText::
 	line "am the LEADER of"
 	cont "CINNABAR GYM!"
 
+	para "So, what did you"
+	line "think about the"
+	cont "mechanical doors"
+	cont "here?"
+
+	para "I'm responsible"
+	line "for them! They"
+	cont "can withstand"
+	cont "even a bomb!"
+
+	para "They were quite"
+	line "useful during"
+	cont "the war."
+
 	para "My fiery #MON"
 	line "will incinerate"
 	cont "all challengers!"

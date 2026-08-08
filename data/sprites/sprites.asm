@@ -69,6 +69,16 @@ SpriteSheetPointerTable:
 	overworld_sprite SeelSprite, 12             ; SPRITE_SEEL
 	overworld_sprite RedSwimSprite, 12          ; SPRITE_RED_SWIM
 	overworld_sprite RedFlySprite, 12           ; SPRITE_RED_FLY
+
+	overworld_sprite BrockSprite, 12
+	overworld_sprite MistySprite, 12
+	overworld_sprite SurgeSprite, 12
+	overworld_sprite ErikaSprite, 12
+	overworld_sprite KogaGymSprite, 12
+	overworld_sprite SabrinaSprite, 12
+	overworld_sprite BlaineSprite, 12
+	overworld_sprite ChiefSprite, 12
+
 	overworld_sprite PokeBallSprite, 4          ; SPRITE_POKE_BALL
 	overworld_sprite FossilSprite, 4            ; SPRITE_FOSSIL
 	overworld_sprite BoulderSprite, 4           ; SPRITE_BOULDER

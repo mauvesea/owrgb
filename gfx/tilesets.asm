@@ -5,10 +5,6 @@ Overworld_Block::   INCBIN "gfx/blocksets/overworld.bst"
 
 House_GFX::         INCBIN "gfx/tilesets/house.2bpp"
 House_Block::       INCBIN "gfx/blocksets/house.bst"
-Mansion_GFX::       INCBIN "gfx/tilesets/mansion.2bpp"
-Mansion_Block::     INCBIN "gfx/blocksets/mansion.bst"
-ShipPort_GFX::      INCBIN "gfx/tilesets/ship_port.2bpp"
-ShipPort_Block::    INCBIN "gfx/blocksets/ship_port.bst"
 Plateau_GFX::       INCBIN "gfx/tilesets/plateau.2bpp"
 Plateau_Block::     INCBIN "gfx/blocksets/plateau.bst"
 
@@ -64,3 +60,11 @@ Interior_GFX::      INCBIN "gfx/tilesets/interior.2bpp"
 Interior_Block::    INCBIN "gfx/blocksets/interior.bst"
 Facility_GFX::      INCBIN "gfx/tilesets/facility.2bpp"
 Facility_Block::    INCBIN "gfx/blocksets/facility.bst"
+
+
+SECTION "Tilesets 5", ROMX
+
+Mansion_GFX::       INCBIN "gfx/tilesets/mansion.2bpp"
+Mansion_Block::     INCBIN "gfx/blocksets/mansion.bst"
+ShipPort_GFX::      INCBIN "gfx/tilesets/ship_port.2bpp"
+ShipPort_Block::    INCBIN "gfx/blocksets/ship_port.bst"
