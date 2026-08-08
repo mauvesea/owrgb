@@ -2,6 +2,7 @@
 	const_export BLUESHOUSE_DAISY1
 	const_export BLUESHOUSE_DAISY2
 	const_export BLUESHOUSE_TOWN_MAP
+	const_export BLUESHOUSE_JUNIOR
 
 BluesHouse_Object:
 	db $a ; border block
@@ -16,5 +17,6 @@ BluesHouse_Object:
 	object_event  2,  3, SPRITE_DAISY, STAY, RIGHT, TEXT_BLUESHOUSE_DAISY_SITTING
 	object_event  6,  4, SPRITE_DAISY, WALK, UP_DOWN, TEXT_BLUESHOUSE_DAISY_WALKING, 0
 	object_event  3,  3, SPRITE_POKEDEX, STAY, NONE, TEXT_BLUESHOUSE_TOWN_MAP, 0
+	object_event  1,  5, SPRITE_JUNIOR, WALK, NONE, TEXT_BLUESHOUSE_JUNIOR, 0
 
 	def_warps_to BLUES_HOUSE

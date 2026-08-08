@@ -1,15 +1,4 @@
 ChoosePlayerName:
-	call OakSpeechSlidePicRight
-	ld de, DefaultNamesPlayer
-	call DisplayIntroNameTextBox
-	ld a, [wCurrentMenuItem]
-	and a
-	jr z, .customName
-	ld hl, DefaultNamesPlayerList
-	call GetDefaultName
-	ld de, wPlayerName
-	call OakSpeechSlidePicLeft
-	jr .done
 .customName
 	ld hl, wPlayerName
 	xor a ; NAME_PLAYER_SCREEN
@@ -32,17 +21,6 @@ YourNameIsText:
 	text_end
 
 ChooseRivalName:
-	call OakSpeechSlidePicRight
-	ld de, DefaultNamesRival
-	call DisplayIntroNameTextBox
-	ld a, [wCurrentMenuItem]
-	and a
-	jr z, .customName
-	ld hl, DefaultNamesRivalList
-	call GetDefaultName
-	ld de, wRivalName
-	call OakSpeechSlidePicLeft
-	jr .done
 .customName
 	ld hl, wRivalName
 	ld a, NAME_RIVAL_SCREEN
@@ -62,6 +40,28 @@ ChooseRivalName:
 
 HisNameIsText:
 	text_far _HisNameIsText
+	text_end
+
+ChooseJuniorName:
+.customName
+	ld hl, wJuniorName
+	ld a, NAME_JUNIOR_SCREEN
+	ld [wNamingScreenType], a
+	call DisplayNamingScreen
+	ld a, [wStringBuffer]
+	cp '@'
+	jr z, .customName
+	call ClearScreen
+	call Delay3
+	ld de, JuniorPic
+	ld b, BANK(JuniorPic)
+	call IntroDisplayPicCenteredOrUpperRight
+.done
+	ld hl, JuniorNameIsText
+	jp PrintText
+
+JuniorNameIsText:
+	text_far _JuniorNameIsText
 	text_end
 
 OakSpeechSlidePicLeft:

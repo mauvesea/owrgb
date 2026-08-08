@@ -361,6 +361,7 @@ LoreleiPic::       INCBIN "gfx/trainers/lorelei.pic"
 ChannelerPic::     INCBIN "gfx/trainers/channeler.pic"
 AgathaPic::        INCBIN "gfx/trainers/agatha.pic"
 LancePic::         INCBIN "gfx/trainers/lance.pic"
+JuniorPic::        INCBIN "gfx/trainers/junior.pic"
 
 
 SECTION "Fossil and Ghost Pics", ROMX

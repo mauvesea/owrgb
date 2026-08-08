@@ -459,6 +459,9 @@ PrintNamingText:
 	ld de, RivalsTextString
 	dec a
 	jr z, .notNickname
+	ld de, JuniorTextString
+	dec a
+	jr z, .notNickname
 	ld a, [wCurPartySpecies]
 	ld [wMonPartySpriteSpecies], a
 	push af
@@ -487,6 +490,9 @@ YourTextString:
 
 RivalsTextString:
 	db "RIVAL's @"
+
+JuniorTextString:
+	db "FRIEND's @"
 
 NameTextString:
 	db "NAME?@"

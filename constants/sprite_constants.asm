@@ -72,6 +72,9 @@
 	const SPRITE_SABRINA
 	const SPRITE_BLAINE
 	const SPRITE_CHIEF
+	const SPRITE_JUNIOR
+	const SPRITE_GAMEBOY_GIRL
+	const SPRITE_FATHER
 DEF FIRST_STILL_SPRITE EQU const_value
 	const SPRITE_POKE_BALL               ; $3d
 	const SPRITE_FOSSIL                  ; $3e

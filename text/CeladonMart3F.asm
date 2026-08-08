@@ -40,7 +40,7 @@ _CeladonMart3FGameBoyKid2Text::
 	text "All right!"
 
 	para "My buddy's going"
-	line "to trade me his"
+	line "to trade me her"
 	cont "KANGASKHAN for my"
 	cont "GRAVELER!"
 	done

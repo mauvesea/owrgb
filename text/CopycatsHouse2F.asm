@@ -78,9 +78,15 @@ _CopycatsHouse2FRareDollText::
 	done
 
 _CopycatsHouse2FSNESText::
-	text "A game with MARIO"
-	line "wearing a bucket"
-	cont "on his head!"
+	text "<PLAYER> is"
+	line "playing the MD!"
+
+	para "An odd-looking boy"
+	line "zips through a"
+	cont "dark city-scape!"
+
+	para "...Okay!"
+	line "It's time to go!"
 	done
 
 _CopycatsHouse2FPCMySecretsText::

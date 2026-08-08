@@ -577,8 +577,13 @@ _IndigoPlateauHQText::
 _RedBedroomSNESText::
 	text "<PLAYER> is"
 	line "playing the SNES!"
-	cont "...Okay!"
-	cont "It's time to go!"
+
+	para "A game with MARIO"
+	line "wearing a bucket"
+	cont "on his head!"
+
+	para "...Okay!"
+	line "It's time to go!"
 	done
 
 _Route15UpstairsBinocularsText::
@@ -1739,6 +1744,18 @@ _IntroduceRivalText::
 	line "his name again?"
 	prompt
 
+_IntroduceJuniorText::
+	text "This is my other"
+	line "grandson. He's"
+	cont "younger than"
+	cont "<RIVAL>, but you're"
+	cont "good friends with"
+	cont "him too, right?"
+
+	para "...Hmm, what is"
+	line "his name again?"
+	prompt
+
 _OakSpeechText3::
 	text "<PLAYER>!"
 
@@ -1769,6 +1786,12 @@ _HisNameIsText::
 	text "That's right! I"
 	line "remember now! His"
 	cont "name is <RIVAL>!"
+	prompt
+
+_JuniorNameIsText::
+	text "How could I for-"
+	line "get? His name is"
+	cont "<JUNIOR>!"
 	prompt
 
 _WillBeTradedText::

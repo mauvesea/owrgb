@@ -1,8 +1,28 @@
 RedsHouse2F_Script:
+	call RedsRoomSetTrophies
 	call EnableAutoTextBoxDrawing
 	ld hl, RedsHouse2F_ScriptPointers
 	ld a, [wRedsHouse2FCurScript]
 	jp CallFunctionInTable
+
+RedsRoomSetTrophies:
+	ld hl, wCurrentMapScriptFlags
+	bit BIT_CUR_MAP_LOADED_1, [hl]
+	res BIT_CUR_MAP_LOADED_1, [hl]
+	ret z
+	CheckEvent EVENT_BEAT_CHAMPION_RIVAL
+	jr z, .NotChampion
+	ld a, $18 ; Trophy 1 Tile ID
+	ld [wNewTileBlockID], a
+	lb bc, 0, 0
+	predef ReplaceTileBlock
+.NotChampion
+	CheckEvent EVENT_BEAT_JUNIOR
+	ret z
+	ld a, $19 ; Trophy 1 Tile ID
+	ld [wNewTileBlockID], a
+	lb bc, 0, 1
+	predef_jump ReplaceTileBlock
 
 RedsHouse2F_ScriptPointers:
 	def_script_pointers

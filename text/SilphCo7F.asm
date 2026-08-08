@@ -1,43 +1,64 @@
 _SilphCo7FSilphWorkerM1HaveThisPokemonText::
-	text "Oh! Hi! You're"
-	line "not a ROCKET! You"
-	cont "came to save us?"
-	cont "Why, thank you!"
+	text "DAD: <PLAYER>!?"
+	line "What are you"
+	cont "doing here?"
 
-	para "I want you to"
-	line "have this #MON"
-	cont "for saving us."
+	para "TEAM ROCKET took"
+	line "over, it's danger-"
+	cont "ous around here."
+
+	para "What!? You think"
+	line "you can beat"
+	cont "them?"
+
+	para "It's true you got"
+	line "this far, but I"
+	cont "can't help but"
+	cont "worry about you."
+
+	para "I know! My LAPRAS"
+	line "can help you out."
 	prompt
 
 _SilphCo7FSilphWorkerM1LaprasDescriptionText::
-	text "It's LAPRAS. It's"
-	line "very intelligent."
+	text "DAD: LAPRAS is a"
+	line "very intelligent"
+	cont "#MON."
 
-	para "We kept it in our"
+	para "I kept it in our"
 	line "lab, but it will"
 	cont "be much better"
 	cont "off with you!"
 
 	para "I think you will"
 	line "be a good trainer"
-	cont "for LAPRAS!"
-
-	para "It's a good"
-	line "swimmer. It'll"
-	cont "give you a lift!"
+	cont "for LAPRAS,"
+	cont "<PLAYER>!"
 	done
 
 _SilphCo7FSilphWorkerM1IsOurPresidentOkText::
-	text "TEAM ROCKET's"
+	text "DAD: TEAM ROCKET's"
 	line "BOSS went to the"
-	cont "boardroom! Is our"
-	cont "PRESIDENT OK?"
+	cont "boardroom! Please"
+	cont "make sure our"
+	cont "PRESIDENT's safe!"
 	done
 
 _SilphCo7FSilphWorkerM1SavedText::
-	text "Saved at last!"
-	line "Thank you!"
+	text "DAD: <PLAYER>, I'm"
+	line "proud of you. You"
+	cont "saved all of us!"
 	done
+
+_SilphCo7FSilphWorkerM1SavedText2::
+	text "DAD: <PLAYER>, I'm"
+	line "proud of you. You"
+	cont "saved all of us!"
+
+	para "Please, accept"
+	cont "this gift."
+	done
+
 
 _SilphCo7FSilphWorkerM2AfterTheMasterBallText::
 	text "TEAM ROCKET was"

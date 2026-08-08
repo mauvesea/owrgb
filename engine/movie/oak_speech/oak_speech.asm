@@ -36,6 +36,10 @@ ENDC
 	ld hl, DebugNewGameRivalName
 	ld de, wRivalName
 	ld bc, NAME_LENGTH
+	call CopyData
+	ld hl, DebugNewGameJuniorName
+	ld de, wJuniorName
+	ld bc, NAME_LENGTH
 	jp CopyData
 
 OakSpeech:
@@ -98,6 +102,17 @@ OakSpeech:
 	ld hl, IntroduceRivalText
 	call PrintText
 	call ChooseRivalName
+
+	call GBFadeOutToWhite
+	call ClearScreen
+	ld de, JuniorPic
+	lb bc, BANK(JuniorPic), $00
+	call IntroDisplayPicCenteredOrUpperRight
+	call FadeInIntroPic
+	ld hl, IntroduceJuniorText
+	call PrintText
+	call ChooseJuniorName
+
 .skipSpeech
 	call GBFadeOutToWhite
 	call ClearScreen
@@ -180,6 +195,10 @@ IntroducePlayerText:
 
 IntroduceRivalText:
 	text_far _IntroduceRivalText
+	text_end
+
+IntroduceJuniorText:
+	text_far _IntroduceJuniorText
 	text_end
 
 OakSpeechText3:

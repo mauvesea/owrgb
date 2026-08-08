@@ -92,7 +92,7 @@ PlaceNextChar::
 	dict '<RIVAL>',   PrintRivalName
 	dict '#',         PlacePOKe
 	dict '<PC>',      PCChar
-	dict '<ROCKET>',  RocketChar
+	dict '<JUNIOR>',  RocketChar
 	dict '<TM>',      TMChar
 	dict '<TRAINER>', TrainerChar
 	dict '<CONT>',    ContText
@@ -139,7 +139,7 @@ PrintRivalName::  print_name wRivalName
 TrainerChar:: print_name TrainerCharText
 TMChar::      print_name TMCharText
 PCChar::      print_name PCCharText
-RocketChar::  print_name RocketCharText
+RocketChar::  print_name wJuniorName
 PlacePOKe::   print_name PlacePOKeText
 SixDotsChar:: print_name SixDotsCharText
 PlacePKMN::   print_name PlacePKMNText

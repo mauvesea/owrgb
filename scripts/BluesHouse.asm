@@ -23,6 +23,70 @@ BluesHouse_TextPointers:
 	dw_const BluesHouseDaisySittingText, TEXT_BLUESHOUSE_DAISY_SITTING
 	dw_const BluesHouseDaisyWalkingText, TEXT_BLUESHOUSE_DAISY_WALKING
 	dw_const BluesHouseTownMapText,      TEXT_BLUESHOUSE_TOWN_MAP
+	dw_const BluesHouseJuniorScriptText, TEXT_BLUESHOUSE_JUNIOR
+
+BluesHouseJuniorScriptText:
+	text_asm
+	CheckEvent EVENT_BEAT_JUNIOR
+	jr nz, .BeatJunior
+	CheckEvent EVENT_BEAT_CHAMPION_RIVAL
+	jr nz, .BecameChampion
+	CheckEvent EVENT_BEAT_SILPH_CO_GIOVANNI
+	jr nz, .EndedRocket
+	CheckEvent EVENT_GOT_POKEDEX
+	jr nz, .GotDex
+	CheckEvent EVENT_GOT_STARTER
+	jr nz, .GotStarter
+	ld hl, JuniorInitialText
+	call PrintText
+	jr .done
+.BeatJunior
+	ld hl, JuniorBeatJuniorText
+	call PrintText
+	jr .done
+.BecameChampion
+	SetEvent EVENT_CASTLE_AVAILABLE
+	ld hl, JuniorBeatChampionText
+	call PrintText
+	jr .done
+.EndedRocket
+	ld hl, JuniorBeatGiovanniText
+	call PrintText
+	jr .done
+.GotDex
+	ld hl, JuniorGotDexText
+	call PrintText
+	jr .done
+.GotStarter
+	ld hl, JuniorGotStartText
+	call PrintText
+	jr .done
+.done
+	jp TextScriptEnd
+
+JuniorBeatJuniorText:
+	text_far _JuniorBeatJuniorText
+	text_end
+
+JuniorBeatChampionText:
+	text_far _JuniorBeatChampionText
+	text_end
+
+JuniorBeatGiovanniText:
+	text_far _JuniorBeatGiovanniText
+	text_end
+
+JuniorGotDexText:
+	text_far _JuniorGotDexText
+	text_end
+
+JuniorGotStartText:
+	text_far _JuniorGotStartText
+	text_end
+
+JuniorInitialText:
+	text_far _JuniorInitialText
+	text_end
 
 BluesHouseDaisySittingText:
 	text_asm

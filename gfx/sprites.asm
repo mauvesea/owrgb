@@ -86,5 +86,8 @@ KogaGymSprite:: INCBIN "gfx/sprites/koga_gym.2bpp"
 SabrinaSprite:: INCBIN "gfx/sprites/sabrina.2bpp"
 BlaineSprite:: INCBIN "gfx/sprites/blaine.2bpp"
 ChiefSprite:: INCBIN "gfx/sprites/chief.2bpp"
+JuniorSprite:: INCBIN "gfx/sprites/junior.2bpp"
+GameboyGirlSprite:: INCBIN "gfx/sprites/gameboy_girl.2bpp"
+FatherSprite:: INCBIN "gfx/sprites/father.2bpp"
 
 

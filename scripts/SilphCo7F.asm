@@ -377,11 +377,12 @@ SilphCo7TrainerHeader3:
 SilphCo7FSilphWorkerM1Text:
 ; lapras guy
 	text_asm
+	CheckEvent EVENT_BEAT_SILPH_CO_GIOVANNI
+	jr z, .BeatGiovanni
 	ld a, [wStatusFlags4]
 	bit BIT_GOT_LAPRAS, a
 	jr z, .give_lapras
-	CheckEvent EVENT_BEAT_SILPH_CO_GIOVANNI
-	jr nz, .saved_silph
+
 	ld hl, .IsOurPresidentOkText
 	call PrintText
 	jr .done
@@ -400,7 +401,27 @@ SilphCo7FSilphWorkerM1Text:
 	ld hl, wStatusFlags4
 	set BIT_GOT_LAPRAS, [hl]
 	jr .done
-.saved_silph
+
+.give_lapras2
+	ld hl, .SavedText2
+	call PrintText
+	lb bc, LAPRAS, 5
+	call GivePokemon
+	jr nc, .done
+	ld a, [wAddedToParty]
+	and a
+	call z, WaitForTextScrollButtonPress
+	call EnableAutoTextBoxDrawing
+	ld hl, .LaprasDescriptionText
+	call PrintText
+	ld hl, wStatusFlags4
+	set BIT_GOT_LAPRAS, [hl]
+	jr .done
+
+.BeatGiovanni
+	ld a, [wStatusFlags4]
+	bit BIT_GOT_LAPRAS, a
+	jr z, .give_lapras2
 	ld hl, .SavedText
 	call PrintText
 .done
@@ -420,6 +441,10 @@ SilphCo7FSilphWorkerM1Text:
 
 .SavedText
 	text_far _SilphCo7FSilphWorkerM1SavedText
+	text_end
+
+.SavedText2
+	text_far _SilphCo7FSilphWorkerM1SavedText2
 	text_end
 
 SilphCo7FSilphWorkerM2Text:

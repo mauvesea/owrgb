@@ -23,7 +23,7 @@
 	charmap "<PC>",      $5b ; "PC"
 	charmap "<TM>",      $5c ; "TM"
 	charmap "<TRAINER>", $5d ; "TRAINER"
-	charmap "<ROCKET>",  $5e ; "ROCKET"
+	charmap "<JUNIOR>",  $5e ; "ROCKET"
 	charmap "<DEXEND>",  $5f
 
 ; Actual characters (from gfx/font/font_extra.png)
