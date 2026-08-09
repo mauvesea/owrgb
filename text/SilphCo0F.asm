@@ -1,6 +1,7 @@
 _SilphCo0FGetRewardText::
 	text "Please get your"
-	line "reward before"
+	line "reward at the"
+	cont "front desk before"
 	cont "proceeding."
 	done
 
