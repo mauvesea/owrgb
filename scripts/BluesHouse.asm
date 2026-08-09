@@ -27,6 +27,7 @@ BluesHouse_TextPointers:
 
 BluesHouseJuniorScriptText:
 	text_asm
+	jr .BecameChampion
 	CheckEvent EVENT_BEAT_JUNIOR
 	jr nz, .BeatJunior
 	CheckEvent EVENT_BEAT_CHAMPION_RIVAL

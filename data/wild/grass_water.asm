@@ -251,6 +251,7 @@ WildDataPointers:
 	dw MoltresDungeon1WildMons
 	dw MoltresDungeon2WildMons
 	dw MoltresDungeon3WildMons
+	dw NothingWildMons
 	assert_table_length NUM_MAPS
 	dw -1 ; end
 

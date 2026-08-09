@@ -251,4 +251,5 @@ MapSongBanks::
 	db MUSIC_DUNGEON2, BANK(Music_Dungeon2) ; MOLTRES_DUNGEON_1
 	db MUSIC_DUNGEON2, BANK(Music_Dungeon2) ; MOLTRES_DUNGEON_2
 	db MUSIC_DUNGEON2, BANK(Music_Dungeon2) ; MOLTRES_DUNGEON_3
+	db MUSIC_SILPH_CO, BANK(Music_SilphCo) ; SILPH_CO_0F
 	assert_table_length NUM_MAPS

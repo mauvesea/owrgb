@@ -401,6 +401,9 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const MOLTRES_DUNGEON_2,             15, 14
 	map_const MOLTRES_DUNGEON_3,             15, 14
 	end_indoor_group MOLTRES_DUNGEON
+
+	map_const SILPHCO_0F,                     7,  9
+	end_indoor_group SILPH_CO_3
 DEF NUM_MAPS EQU const_value
 
 ; Indoor maps, such as houses, use this as the Map ID in their exit warps

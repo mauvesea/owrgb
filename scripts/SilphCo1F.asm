@@ -1,4 +1,5 @@
 SilphCo1F_Script:
+	call ChampCupOpen
 	call EnableAutoTextBoxDrawing
 	CheckEvent EVENT_BEAT_SILPH_CO_GIOVANNI
 	ret z
@@ -13,6 +14,19 @@ SilphCo1F_TextPointers:
 	dw_const SilphCo1FLinkReceptionistText, TEXT_SILPHCO1F_LINK_RECEPTIONIST
 	dw_const SilphCoClerkText,          TEXT_SILPHCO1F_LINK_RECEPTIONIST2
 	dw_const SilphCo1FMorimotoText, TEXT_SILPHCO1F_MORIMOTO
+
+ChampCupOpen:
+	ld hl, wCurrentMapScriptFlags
+	bit BIT_CUR_MAP_LOADED_1, [hl]
+	res BIT_CUR_MAP_LOADED_1, [hl]
+	ret z
+	CheckEvent EVENT_CASTLE_AVAILABLE
+	ret nz
+	ld a, $0e
+	ld [wNewTileBlockID], a
+	lb bc, 5, 8
+	predef_jump ReplaceTileBlock
+
 
 SilphCo1FLinkReceptionistText:
 	text_asm

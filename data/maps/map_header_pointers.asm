@@ -252,4 +252,5 @@ MapHeaderPointers::
 	dw MoltresDungeon1_h
 	dw MoltresDungeon2_h
 	dw MoltresDungeon3_h
+	dw SilphCo0F_h
 	assert_table_length NUM_MAPS

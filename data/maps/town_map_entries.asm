@@ -118,5 +118,6 @@ InternalMapEntries:
 	indoor_map SILPH_CO_2,         10,  5, SilphCoName
 	indoor_map POKEMON_LEAGUE_3,    0,  2, PokemonLeagueName
 	indoor_map MOLTRES_DUNGEON,     5,  4, MoltresDungeonName
+	indoor_map SILPH_CO_3,         10,  5, SilphCoName
 	assert_table_length NUM_INDOOR_MAP_GROUPS
 	db -1 ; end

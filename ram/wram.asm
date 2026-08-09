@@ -2000,7 +2000,7 @@ wRocketHideoutB4FCurScript:: db
 	ds 1
 wRoute6GateCurScript:: db
 wRoute8GateCurScript:: db
-	ds 1
+wSilphCo0FCurScript:: db
 wCinnabarIslandCurScript:: db
 wPokemonMansion1FCurScript:: db
 	ds 1
