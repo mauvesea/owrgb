@@ -32,14 +32,13 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 ## Gameplay Notes & Spoilers
 - Levels increase by 5 after each milestone, those being defeating Gym Leaders, Chief and Giovanni.
 - Team Rocket's storyline is done linearly, it has changed slightly.
-<details>
-  <summary>Spoiler warning</summary>
-It starts by defeating all Rocket Grunts in Mt. Moon. Only after defeating all of them the Game Corner hideout will be available to tackle. To enter Silph Co., it's need both to save Mr. Fuji in Lavender Town, as well as defeating Chief in the Safari Zone. Giovanni's Gym is unlocked right after defeating him in Silph Co. Mewtwo is unlocked after defeating Giovanni in Viridian Gym.
-</details>
 - Game Freak's side quest starts after talking to the Game Director in GF's office.
 <details>
   <summary>Spoiler warning</summary>
-It requires players to find staff members around Kanto. The Programmer is found in Silph Co., the Musician is found in Route 12, the Character Designer is found in Celadon Dept. Store 3F, the Pokémon Designer is found in Safari Zone Center Safe House and the Map Designer is found in Fuchsia City. Completing this quests unlock the diploma after dex completion. Talking to the Programmer again after becoming Champion will also unlock Mew's event.</details>
+Rocket's storyline starts by defeating all Rocket Grunts in Mt. Moon. Only after defeating all of them the Game Corner hideout will be available to tackle. To enter Silph Co., it's need both to save Mr. Fuji in Lavender Town, as well as defeating Chief in the Safari Zone. Giovanni's Gym is unlocked right after defeating him in Silph Co. Mewtwo is unlocked after defeating Giovanni in Viridian Gym.
+As for Game Freak's side quest, it requires players to find staff members around Kanto. The Programmer is found in Silph Co., the Musician is found in Route 12, the Character Designer is found in Celadon Dept. Store 3F, the Pokémon Designer is found in Safari Zone Center Safe House and the Map Designer is found in Fuchsia City. Completing this quests unlock the diploma after dex completion. Talking to the Programmer again after becoming Champion will also unlock Mew's event.
+</details>
+
 
 ## Special Thanks
 - [pret](https://github.com/pret/), which is a community, for the disassembly project, tutorials and bug fixes.
