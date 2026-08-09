@@ -253,4 +253,5 @@ MapHeaderBanks::
 	db BANK(MoltresDungeon2_h)
 	db BANK(MoltresDungeon3_h)
 	db BANK(SilphCo0F_h)
+	db BANK(ChampCup_h)
 	assert_table_length NUM_MAPS

@@ -2003,7 +2003,7 @@ wRoute8GateCurScript:: db
 wSilphCo0FCurScript:: db
 wCinnabarIslandCurScript:: db
 wPokemonMansion1FCurScript:: db
-	ds 1
+wChampCupCurScript:: db
 wPokemonMansion2FCurScript:: db
 wPokemonMansion3FCurScript:: db
 wPokemonMansionB1FCurScript:: db

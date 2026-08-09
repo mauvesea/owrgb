@@ -2029,7 +2029,6 @@ LoadMapHeader::
 	farcall RouteSigns
 	farcall MarkTownVisitedAndLoadToggleableObjects
 	ld a, [wCurMapTileset]
-	ld [wUnusedCurMapTilesetCopy], a
 	ld a, [wCurMap]
 	call SwitchToMapRomBank
 	ld a, [wCurMapTileset]
@@ -2326,7 +2325,6 @@ LoadMapData::
 	ldh [hSCY], a
 	ldh [hSCX], a
 	ld [wWalkCounter], a
-	ld [wUnusedCurMapTilesetCopy], a
 	ld [wWalkBikeSurfStateCopy], a
 	ld [wSpriteSetID], a
 	call LoadTextBoxTilePatterns

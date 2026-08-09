@@ -281,3 +281,4 @@ INCLUDE "data/moves/names.asm"
 SECTION "Text 12", ROMX
 
 INCLUDE "text/SilphCo0F.asm"
+INCLUDE "text/ChampCup.asm"

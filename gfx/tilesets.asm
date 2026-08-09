@@ -68,3 +68,6 @@ Mansion_GFX::       INCBIN "gfx/tilesets/mansion.2bpp"
 Mansion_Block::     INCBIN "gfx/blocksets/mansion.bst"
 ShipPort_GFX::      INCBIN "gfx/tilesets/ship_port.2bpp"
 ShipPort_Block::    INCBIN "gfx/blocksets/ship_port.bst"
+
+ChampCupTileset_GFX::      INCBIN "gfx/tilesets/champ_cup.2bpp"
+ChampCupTileset_Block::    INCBIN "gfx/blocksets/champ_cup.bst"

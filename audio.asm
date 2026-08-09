@@ -170,7 +170,7 @@ INCLUDE "audio/sfx/battle_12.asm"
 INCLUDE "audio/sfx/battle_13.asm"
 INCLUDE "audio/sfx/battle_14.asm"
 INCLUDE "audio/sfx/vine_whip.asm"
-INCLUDE "audio/sfx/battle_16.asm"
+
 INCLUDE "audio/sfx/battle_17.asm"
 INCLUDE "audio/sfx/battle_18.asm"
 INCLUDE "audio/sfx/battle_19.asm"
@@ -419,6 +419,7 @@ INCLUDE "audio/sfx/caught_mon.asm"
 INCLUDE "audio/music/defeatedtrainer.asm"
 INCLUDE "audio/music/defeatedwildmon.asm"
 INCLUDE "audio/music/defeatedgymleader.asm"
+INCLUDE "audio/music/defeatedjunior.asm"
 
 
 SECTION "Music 3", ROMX

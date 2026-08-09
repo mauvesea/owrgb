@@ -68,3 +68,6 @@ Facility_Coll::
 
 Plateau_Coll::
 	coll_tiles $1b, $23, $2c, $2d, $3b, $45, $55, $56
+
+ChampCupTileset_Coll::
+	coll_tiles $10, $19, $1d

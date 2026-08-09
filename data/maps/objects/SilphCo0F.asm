@@ -9,6 +9,7 @@ SilphCo0F_Object:
 
 	def_warp_events
 	warp_event 11, 13, SILPH_CO_1F, 5
+	warp_event  6,  2, CHAMP_CUP, 1
 
 	def_bg_events
 

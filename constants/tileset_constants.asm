@@ -27,4 +27,5 @@ DEF MAP_TILESET_SIZE EQU $79 ; tiles
 	const CLUB         ; 21
 	const FACILITY     ; 22
 	const PLATEAU      ; 23
+	const CHAMP_CUP_TILESET
 DEF NUM_TILESETS EQU const_value

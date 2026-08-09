@@ -403,6 +403,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	end_indoor_group MOLTRES_DUNGEON
 
 	map_const SILPHCO_0F,                     7,  9
+	map_const CHAMP_CUP,                      9,  8
 	end_indoor_group SILPH_CO_3
 DEF NUM_MAPS EQU const_value
 

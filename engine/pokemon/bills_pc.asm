@@ -538,12 +538,5 @@ JustAMomentText::
 	text_far _JustAMomentText
 	text_end
 
-UnusedOpenBillsPC: ; unreferenced
-	ld a, [wSpritePlayerStateData1FacingDirection]
-	cp SPRITE_FACING_UP
-	ret nz
-	call EnableAutoTextBoxDrawing
-	tx_pre_jump OpenBillsPCText
-
 OpenBillsPCText::
 	script_bills_pc

@@ -945,13 +945,21 @@ TrainerBattleVictory:
 	and a
 	jr nz, .gymleader
 	ld b, MUSIC_DEFEATED_TRAINER
+
 .gymleader
+	ld a, [wTrainerClass]
+	cp JUNIOR
+	jr nz, .notjunior
+	ld b, MUSIC_DEFEATED_JUNIOR
+
+.notjunior
 	ld a, [wTrainerClass]
 	cp RIVAL3 ; final battle against rival
 	jr nz, .notrival
 	ld b, MUSIC_DEFEATED_GYM_LEADER
 	ld hl, wStatusFlags7
 	set BIT_NO_MAP_MUSIC, [hl]
+
 .notrival
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
@@ -2206,6 +2214,10 @@ DisplayBattleMenu::
 ; either the bag (normal battle) or bait (safari battle) was selected
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
+	jr nz, .notLinkBattle
+
+	ld a, [wCurMap]
+	cp CHAMP_CUP
 	jr nz, .notLinkBattle
 
 ; can't use items in link battles
