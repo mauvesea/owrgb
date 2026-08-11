@@ -94,8 +94,9 @@ _CeladonMart3FCurrentFloorSignText::
 	done
 
 _CeladonMart3FPokemonPosterText::
-	text "Red and Blue!"
-	line "Both are #MON!"
+	text "A POCKET MONSTERS"
+	line "Poster! Catch'em"
+	cont "if you can!"
 	done
 
 _CeladonMart3FSugimoriText::
