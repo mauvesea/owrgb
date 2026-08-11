@@ -15,36 +15,36 @@ _OaksLabRivalGoAheadAndChooseText::
 
 _OaksLabRivalMyPokemonLooksStrongerText::
 	text "<RIVAL>: My"
-	line "#MON looks a"
+	line "#<BOLD_M><BOLD_O><BOLD_N> looks a"
 	cont "lot stronger."
 	done
 
 _OaksLabThoseArePokeBallsText::
 	text "Those are #"
-	line "BALLs. They"
-	cont "contain #MON!"
+	line "<BOLD_B><BOLD_A><BOLD_L><BOLD_L>s. They"
+	cont "contain #<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _OaksLabYouWantCharmanderText::
 	text "So! You want the"
-	line "fire #MON,"
-	cont "CHARMANDER?"
+	line "fire #<BOLD_M><BOLD_O><BOLD_N>,"
+	cont "<BOLD_C><BOLD_H><BOLD_A><BOLD_R><BOLD_M><BOLD_A><BOLD_N><BOLD_D><BOLD_E><BOLD_R>?"
 	done
 
 _OaksLabYouWantSquirtleText::
 	text "So! You want the"
-	line "water #MON,"
-	cont "SQUIRTLE?"
+	line "water #<BOLD_M><BOLD_O><BOLD_N>,"
+	cont "<BOLD_S><BOLD_Q><BOLD_U><BOLD_I><BOLD_R><BOLD_T><BOLD_L><BOLD_E>?"
 	done
 
 _OaksLabYouWantBulbasaurText::
 	text "So! You want the"
-	line "plant #MON,"
-	cont "BULBASAUR?"
+	line "plant #<BOLD_M><BOLD_O><BOLD_N>,"
+	cont "<BOLD_B><BOLD_U><BOLD_L><BOLD_B><BOLD_A><BOLD_S><BOLD_A><BOLD_U><BOLD_R>?"
 	done
 
 _OaksLabMonEnergeticText::
-	text "This #MON is"
+	text "This #<BOLD_M><BOLD_O><BOLD_N> is"
 	line "really energetic!"
 	prompt
 
@@ -56,110 +56,110 @@ _OaksLabReceivedMonText::
 	text_end
 
 _OaksLabLastMonText::
-	text "That's PROF.OAK's"
-	line "last #MON!"
+	text "That's <BOLD_P><BOLD_R><BOLD_O><BOLD_F>.<BOLD_O><BOLD_A><BOLD_K>'s"
+	line "last #<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _OaksLabOak1WhichPokemonDoYouWantText::
-	text "OAK: Now, <PLAYER>,"
-	line "which #MON do"
+	text "<BOLD_O><BOLD_A><BOLD_K>: Now, <PLAYER>,"
+	line "which #<BOLD_M><BOLD_O><BOLD_N> do"
 	cont "you want?"
 	done
 
 _OaksLabOak1YourPokemonCanFightText::
-	text "OAK: If a wild"
-	line "#MON appears,"
-	cont "your #MON can"
+	text "<BOLD_O><BOLD_A><BOLD_K>: If a wild"
+	line "#<BOLD_M><BOLD_O><BOLD_N> appears,"
+	cont "your #<BOLD_M><BOLD_O><BOLD_N> can"
 	cont "fight against it!"
 	done
 
 _OaksLabOak1RaiseYourYoungPokemonText::
-	text "OAK: <PLAYER>,"
+	text "<BOLD_O><BOLD_A><BOLD_K>: <PLAYER>,"
 	line "raise your young"
-	cont "#MON by making"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> by making"
 	cont "it fight!"
 	done
 
 _OaksLabOak1DeliverParcelText::
-	text "OAK: Oh, <PLAYER>!"
+	text "<BOLD_O><BOLD_A><BOLD_K>: Oh, <PLAYER>!"
 
 	para "How is my old"
-	line "#MON?"
+	line "#<BOLD_M><BOLD_O><BOLD_N>?"
 
 	para "Well, it seems to"
 	line "like you a lot."
 
 	para "You must be"
 	line "talented as a"
-	cont "#MON trainer!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> trainer!"
 
 	para "What? You have"
 	line "something for me?"
 
 	para "<PLAYER> delivered"
-	line "OAK's PARCEL.@"
+	line "<BOLD_O><BOLD_A><BOLD_K><BOLD_s> <BOLD_P><BOLD_A><BOLD_R><BOLD_C><BOLD_E><BOLD_L>.@"
 	text_end
 
 _OaksLabOak1ParcelThanksText::
 	text_start
 	para "Ah! This is the"
-	line "custom # BALL"
+	line "custom # <BOLD_B><BOLD_A><BOLD_L><BOLD_L>"
 	cont "I ordered!"
 	cont "Thank you!"
 	done
 
 _OaksLabOak1PokemonAroundTheWorldText::
-	text "#MON around the"
+	text "#<BOLD_M><BOLD_O><BOLD_N> around the"
 	line "world wait for"
 	cont "you, <PLAYER>!"
 	done
 
 _OaksLabOak1ReceivedPokeballsText::
-	text "OAK: You can't get"
+	text "<BOLD_O><BOLD_A><BOLD_K>: You can't get"
 	line "detailed data on"
-	cont "#MON by just"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> by just"
 	cont "seeing them."
 
 	para "You must catch"
 	line "them! Use these"
 	cont "to capture wild"
-	cont "#MON."
+	cont "#<BOLD_M><BOLD_O><BOLD_N>."
 
 	para "<PLAYER> got 5"
-	line "# BALLs!@"
+	line "# <BOLD_B><BOLD_A><BOLD_L><BOLD_L>s!@"
 	text_end
 
 _OaksLabGivePokeballsExplanationText::
 	text_start
 	para "When a wild"
-	line "#MON appears,"
+	line "#<BOLD_M><BOLD_O><BOLD_N> appears,"
 	cont "it's fair game."
 
 	para "Just throw a #"
-	line "BALL at it and"
+	line "<BOLD_B><BOLD_A><BOLD_L><BOLD_L> at it and"
 	cont "try to catch it!"
 
 	para "This won't always"
 	line "work, though."
 
-	para "A healthy #MON"
+	para "A healthy #<BOLD_M><BOLD_O><BOLD_N>"
 	line "could escape. You"
 	cont "have to be lucky!"
 	done
 
 _OaksLabOak1ComeSeeMeSometimesText::
-	text "OAK: Come see me"
+	text "<BOLD_O><BOLD_A><BOLD_K>: Come see me"
 	line "sometimes."
 
 	para "I want to know how"
-	line "your #DEX is"
+	line "your #<BOLD_D><BOLD_E><BOLD_X> is"
 	cont "coming along."
 	done
 
 _OaksLabOak1HowIsYourPokedexComingText::
-	text "OAK: Good to see "
+	text "<BOLD_O><BOLD_A><BOLD_K>: Good to see "
 	line "you! How is your "
-	cont "#DEX coming? "
+	cont "#<BOLD_D><BOLD_E><BOLD_X> coming? "
 	cont "Here, let me take"
 	cont "a look!"
 	prompt
@@ -175,11 +175,11 @@ _OaksLabOak2Text::
 	done
 
 _OaksLabGirlText::
-	text "PROF.OAK is the"
+	text "<BOLD_P><BOLD_R><BOLD_O><BOLD_F>. <BOLD_O><BOLD_A><BOLD_K> is the"
 	line "authority on"
-	cont "#MON!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N>!"
 
-	para "Many #MON"
+	para "Many #<BOLD_M><BOLD_O><BOLD_N>"
 	line "trainers hold him"
 	cont "in high regard!"
 	done
@@ -191,7 +191,7 @@ _OaksLabRivalFedUpWithWaitingText::
 	done
 
 _OaksLabOakChooseMonText::
-	text "OAK: <RIVAL>?"
+	text "<BOLD_O><BOLD_A><BOLD_K>: <RIVAL>?"
 	line "Let me think..."
 
 	para "Oh, that's right,"
@@ -201,16 +201,16 @@ _OaksLabOakChooseMonText::
 	para "Here, <PLAYER>!"
 
 	para "There are 3"
-	line "#MON here!"
+	line "#<BOLD_M><BOLD_O><BOLD_N> here!"
 
 	para "Haha!"
 
 	para "They are inside"
-	line "the # BALLs."
+	line "the # <BOLD_B><BOLD_A><BOLD_L><BOLD_L>s."
 
 	para "When I was young,"
 	line "I was a serious"
-	cont "#MON trainer!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> trainer!"
 
 	para "In my old age, I"
 	line "have only 3 left,"
@@ -225,13 +225,13 @@ _OaksLabRivalWhatAboutMeText::
 	done
 
 _OaksLabOakBePatientText::
-	text "OAK: Be patient!"
+	text "<BOLD_O><BOLD_A><BOLD_K>: Be patient!"
 	line "<RIVAL>, you can"
 	cont "have one too!"
 	done
 
 _OaksLabOakDontGoAwayYetText::
-	text "OAK: Hey! Don't go"
+	text "<BOLD_O><BOLD_A><BOLD_K>: Hey! Don't go"
 	line "away yet!"
 	done
 
@@ -251,17 +251,17 @@ _OaksLabRivalIllTakeYouOnText::
 	text "<RIVAL>: Wait"
 	line "<PLAYER>!"
 	cont "Let's check out"
-	cont "our #MON!"
+	cont "our #<BOLD_M><BOLD_O><BOLD_N>!"
 
 	para "Come on, I'll take"
 	line "you on!"
 	done
 
 _OaksLabRivalIPickedTheWrongPokemonText::
-	text "WHAT?"
+	text "What!?"
 	line "Unbelievable!"
 	cont "I picked the"
-	cont "wrong #MON!"
+	cont "wrong #<BOLD_M><BOLD_O><BOLD_N>!"
 	prompt
 
 _OaksLabRivalAmIGreatOrWhatText::
@@ -272,7 +272,7 @@ _OaksLabRivalAmIGreatOrWhatText::
 _OaksLabRivalSmellYouLaterText::
 	text "<RIVAL>: Okay!"
 	line "I'll make my"
-	cont "#MON fight to"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> fight to"
 	cont "toughen it up!"
 
 	para "<PLAYER>! Gramps!"
@@ -289,7 +289,7 @@ _OaksLabRivalWhatDidYouCallMeForText::
 	done
 
 _OaksLabOakIHaveARequestText::
-	text "OAK: Oh right! I"
+	text "<BOLD_O><BOLD_A><BOLD_K>: Oh right! I"
 	line "have a request"
 	cont "of you two."
 	done
@@ -297,11 +297,11 @@ _OaksLabOakIHaveARequestText::
 _OaksLabOakMyInventionPokedexText::
 	text "On the desk there"
 	line "is my invention,"
-	cont "#DEX!"
+	cont "#<BOLD_D><BOLD_E><BOLD_X>!"
 
 	para "It automatically"
 	line "records data on"
-	cont "#MON you've"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> you've"
 	cont "seen or caught!"
 
 	para "It's a hi-tech"
@@ -309,18 +309,18 @@ _OaksLabOakMyInventionPokedexText::
 	done
 
 _OaksLabOakGotPokedexText::
-	text "OAK: <PLAYER> and"
+	text "<BOLD_O><BOLD_A><BOLD_K>: <PLAYER> and"
 	line "<RIVAL>! Take"
 	cont "these with you!"
 
 	para "<PLAYER> got"
-	line "#DEX from OAK!@"
+	line "#<BOLD_D><BOLD_E><BOLD_X> from <BOLD_O><BOLD_A><BOLD_K>!@"
 	text_end
 
 _OaksLabOakThatWasMyDreamText::
 	text "To make a complete"
 	line "guide on all the"
-	cont "#MON in the"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> in the"
 	cont "world..."
 
 	para "That was my dream!"
@@ -337,7 +337,7 @@ _OaksLabOakThatWasMyDreamText::
 
 	para "This is a great"
 	line "undertaking in"
-	cont "#MON history!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> history!"
 	done
 
 _OaksLabRivalLeaveItAllToMeText::
@@ -350,7 +350,7 @@ _OaksLabRivalLeaveItAllToMeText::
 	cont "don't need you!"
 
 	para "I know! I'll"
-	line "borrow a TOWN MAP"
+	line "borrow a <BOLD_T><BOLD_O><BOLD_W><BOLD_N> <BOLD_M><BOLD_A><BOLD_P>"
 	cont "from my sis!"
 
 	para "I'll tell her not"
@@ -359,6 +359,6 @@ _OaksLabRivalLeaveItAllToMeText::
 	done
 
 _OaksLabScientistText::
-	text "I study #MON as"
-	line "PROF.OAK's AIDE."
+	text "I study #<BOLD_M><BOLD_O><BOLD_N> as"
+	line "<BOLD_P><BOLD_R><BOLD_O><BOLD_F>. <BOLD_O><BOLD_A><BOLD_K><BOLD_s> <BOLD_A><BOLD_I><BOLD_D><BOLD_E>."
 	done

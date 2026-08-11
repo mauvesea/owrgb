@@ -107,7 +107,7 @@ DisplayNamingScreen:
 	ld [wCurrentMenuItem], a
 	ld a, $ff
 	ld [wMenuWatchedKeys], a
-	ld a, 7
+	ld a, 6
 	ld [wMaxMenuItem], a
 	ld a, '@'
 	ld [wStringBuffer], a
@@ -187,21 +187,11 @@ DisplayNamingScreen:
 	dw .ABStartReturnPoint
 	dw .pressedStart
 	dw .selectReturnPoint
-	dw .pressedSelect
+	dw .selectReturnPoint
 	dw .ABStartReturnPoint
 	dw .pressedB
 	dw .ABStartReturnPoint
 	dw .pressedA
-
-.pressedA_changedCase
-	pop de
-	ld de, .selectReturnPoint
-	push de
-.pressedSelect
-	ld a, [wAlphabetCase]
-	xor $1
-	ld [wAlphabetCase], a
-	ret
 
 .pressedStart
 	ld a, 1
@@ -216,13 +206,6 @@ DisplayNamingScreen:
 	cp $11 ; "ED" column
 	jr z, .pressedStart
 .didNotPressED
-	ld a, [wCurrentMenuItem]
-	cp $6 ; case switch row
-	jr nz, .didNotPressCaseSwitch
-	ld a, [wTopMenuItemX]
-	cp $1 ; case switch column
-	jr z, .pressedA_changedCase
-.didNotPressCaseSwitch
 	ld hl, wMenuCursorLocation
 	ld a, [hli]
 	ld h, [hl]
@@ -273,9 +256,6 @@ DisplayNamingScreen:
 	ld [hl], '@'
 	ret
 .pressedRight
-	ld a, [wCurrentMenuItem]
-	cp $6
-	ret z ; can't scroll right on bottom row
 	ld a, [wTopMenuItemX]
 	cp $11 ; max
 	jp z, .wrapToFirstColumn
@@ -286,9 +266,6 @@ DisplayNamingScreen:
 	ld a, $1
 	jr .done
 .pressedLeft
-	ld a, [wCurrentMenuItem]
-	cp $6
-	ret z ; can't scroll right on bottom row
 	ld a, [wTopMenuItemX]
 	dec a
 	jp z, .wrapToLastColumn
@@ -303,7 +280,7 @@ DisplayNamingScreen:
 	ld [wCurrentMenuItem], a
 	and a
 	ret nz
-	ld a, $6 ; wrap to bottom row
+	ld a, $5 ; wrap to bottom row
 	ld [wCurrentMenuItem], a
 	ld a, $1 ; force left column
 	jr .done
@@ -311,7 +288,7 @@ DisplayNamingScreen:
 	ld a, [wCurrentMenuItem]
 	inc a
 	ld [wCurrentMenuItem], a
-	cp $7
+	cp $6
 	jr nz, .wrapToTopRow
 	ld a, $1
 	ld [wCurrentMenuItem], a
@@ -344,7 +321,7 @@ PrintAlphabet:
 	ld de, UpperCaseAlphabet
 .lowercase
 	hlcoord 2, 5
-	lb bc, 5, 9 ; 5 rows, 9 columns
+	lb bc, 4, 9 ; 5 rows, 9 columns
 .outerLoop
 	push bc
 .innerLoop

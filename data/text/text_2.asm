@@ -576,9 +576,9 @@ _IndigoPlateauHQText::
 
 _RedBedroomSNESText::
 	text "<PLAYER> is"
-	line "playing the SNES!"
+	line "playing the <BOLD_S><BOLD_N><BOLD_E><BOLD_S>!"
 
-	para "A game with MARIO"
+	para "A game with <BOLD_M><BOLD_A><BOLD_R><BOLD_I><BOLD_O>"
 	line "wearing a bucket"
 	cont "on his head!"
 
@@ -596,19 +596,19 @@ _Route15UpstairsBinocularsText::
 	done
 
 _AerodactylFossilText::
-	text "AERODACTYL Fossil"
+	text "<BOLD_A><BOLD_E><BOLD_R><BOLD_O><BOLD_D><BOLD_A><BOLD_C><BOLD_T><BOLD_Y><BOLD_L> Fossil"
 	line "A primitive and"
-	cont "rare #MON."
+	cont "rare #<BOLD_M><BOLD_O><BOLD_N>."
 	done
 
 _KabutopsFossilText::
-	text "KABUTOPS Fossil"
+	text "<BOLD_K><BOLD_A><BOLD_B><BOLD_U><BOLD_T><BOLD_O><BOLD_P><BOLD_S> Fossil"
 	line "A primitive and"
-	cont "rare #MON."
+	cont "rare #<BOLD_M><BOLD_O><BOLD_N>."
 	done
 
 _LinkCableHelpText1::
-	text "TRAINER TIPS"
+	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R><BOLD_ ><BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
 
 	para "Using a Game Link"
 	line "Cable"
@@ -1701,31 +1701,31 @@ _LinkCanceledText::
 _OakSpeechText1::
 	text "Hello there!"
 	line "Welcome to the"
-	cont "world of #MON!"
+	cont "world of #<BOLD_M><BOLD_O><BOLD_N>!"
 
-	para "My name is OAK!"
+	para "My name is <BOLD_O><BOLD_A><BOLD_K>!"
 	line "People call me"
-	cont "the #MON PROF!"
+	cont "the #<BOLD_M><BOLD_O><BOLD_N> Prof.!"
 	prompt
 
 _OakSpeechText2A::
 	text "This world is"
 	line "inhabited by"
 	cont "creatures called"
-	cont "#MON!@"
+	cont "#<BOLD_M><BOLD_O><BOLD_N>!@"
 	text_end
 
 _OakSpeechText2B::
 	text_start
 
 	para "For some people,"
-	line "#MON are"
+	line "#<BOLD_M><BOLD_O><BOLD_N> are"
 	cont "pets. Others use"
 	cont "them for fights."
 
 	para "Myself..."
 
-	para "I study #MON"
+	para "I study #<BOLD_M><BOLD_O><BOLD_N>"
 	line "as a profession."
 	prompt
 
@@ -1760,12 +1760,12 @@ _OakSpeechText3::
 	text "<PLAYER>!"
 
 	para "Your very own"
-	line "#MON legend is"
+	line "#<BOLD_M><BOLD_O><BOLD_N> legend is"
 	cont "about to unfold!"
 
 	para "A world of dreams"
 	line "and adventures"
-	cont "with #MON"
+	cont "with #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "awaits! Let's go!"
 	done
 

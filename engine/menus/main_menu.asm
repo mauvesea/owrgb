@@ -357,11 +357,11 @@ CableClubOptionsText:
 DisplayContinueGameInfo:
 	xor a
 	ldh [hAutoBGTransferEnabled], a
-	hlcoord 4, 7
+	hlcoord 3, 7
 	ld b, 8
-	ld c, 14
+	ld c, 15
 	call TextBoxBorder
-	hlcoord 5, 9
+	hlcoord 4, 9
 	ld de, SaveScreenInfoText
 	call PlaceString
 	hlcoord 12, 9
@@ -381,13 +381,13 @@ DisplayContinueGameInfo:
 PrintSaveScreenText:
 	xor a
 	ldh [hAutoBGTransferEnabled], a
-	hlcoord 4, 0
-	ld b, $8
-	ld c, $e
+	hlcoord 3, 0
+	ld b, 8
+	ld c, 15
 	call TextBoxBorder
 	call LoadTextBoxTilePatterns
 	call UpdateSprites
-	hlcoord 5, 2
+	hlcoord 4, 2
 	ld de, SaveScreenInfoText
 	call PlaceString
 	hlcoord 12, 2
@@ -435,10 +435,10 @@ PrintPlayTime:
 	jp PrintNumber
 
 SaveScreenInfoText:
-	db   "PLAYER"
-	next "BADGES    "
-	next "#DEX    "
-	next "TIME@"
+	db   "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> "
+	next "<BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E><BOLD_S>    "
+	next "#<BOLD_D><BOLD_E><BOLD_X>    "
+	next "<BOLD_T><BOLD_I><BOLD_M><BOLD_E>@"
 
 DisplayOptionMenu:
 	hlcoord 0, 0
