@@ -78,8 +78,14 @@ _SaffronCityRocket8Text::
 	text "I'm a security"
 	line "guard."
 
-	para "Suspicious kids I"
-	line "don't allow in!"
+	para "Suspicious kids"
+	line "are not allowed"
+	cont "in!"
+
+	para "I gotta stand"
+	line "here until BOSS"
+	cont "and that CHIEF"
+	cont "guy come back."
 	done
 
 _SaffronCityRocket9Text::
