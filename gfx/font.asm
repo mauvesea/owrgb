@@ -1,6 +1,7 @@
-PokemonLogoGraphics: INCBIN "gfx/title/pokemon_logo.2bpp"
 FontGraphics:: INCBIN "gfx/font/font.1bpp"
 FontGraphicsEnd::
+
+TitleTiles: INCBIN "gfx/title/title_tiles.2bpp"
 
 ABTiles: INCBIN "gfx/font/AB.2bpp"
 

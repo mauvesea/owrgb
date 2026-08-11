@@ -35,208 +35,71 @@ DisplayTitleScreen:
 	xor a
 	ldh [hTileAnimations], a
 	ldh [hSCX], a
-	ld a, $40
+	xor a
 	ldh [hSCY], a
 	ld a, $90
 	ldh [hWY], a
+
 	call ClearScreen
 	call DisableLCD
-	call LoadFontTilePatterns
-	ld hl, NintendoCopyrightLogoGraphics
-	ld de, vTitleLogo2 tile 16
-	ld bc, 5 tiles
-	ld a, BANK(NintendoCopyrightLogoGraphics)
-	call FarCopyData2
-	ld hl, GameFreakLogoGraphics
-	ld de, vTitleLogo2 tile (16 + 5)
-	ld bc, 9 tiles
-	ld a, BANK(GameFreakLogoGraphics)
-	call FarCopyData2
-	ld hl, PokemonLogoGraphics
-	ld de, vTitleLogo
-	ld bc, $60 tiles
-	ld a, BANK(PokemonLogoGraphics)
+
+	ld hl, TitleTiles
+	ld de, vTileset
+	ld bc, 128 tiles
+	ld a, BANK(TitleTiles)
 	call FarCopyData2          ; first chunk
-	ld hl, PokemonLogoGraphics tile $60
-	ld de, vTitleLogo2
-	ld bc, $10 tiles
-	ld a, BANK(PokemonLogoGraphics)
+	ld hl, TitleTiles tile 128
+	ld de, vTitleLogo
+	ld bc, 124 tiles
+	ld a, BANK(TitleTiles)
 	call FarCopyData2          ; second chunk
-	ld hl, Version_GFX
-	ld de, vChars2 tile $60
-	ld bc, $6 tiles
-	ld a, BANK(Version_GFX)
-	call FarCopyData2
+
 	call ClearBothBGMaps
 
-; place tiles for pokemon logo (except for the last row)
-	hlcoord 2, 1
-	ld a, $80
-	ld de, SCREEN_WIDTH
-	ld c, 6
-.pokemonLogoTileLoop
-	ld b, $10
-	push hl
-.pokemonLogoTileRowLoop ; place tiles for one row
-	ld [hli], a
-	inc a
-	dec b
-	jr nz, .pokemonLogoTileRowLoop
-	pop hl
-	add hl, de
-	dec c
-	jr nz, .pokemonLogoTileLoop
+	ld hl, TitleTiles_Tilemap
+	ld de, vBGMap0
+	ld b, SCREEN_HEIGHT
+.copyRow
+	push bc
 
-; place tiles for the last row of the pokemon logo
-	hlcoord 2, 7
-	ld a, $31
-	ld b, $10
-.pokemonLogoLastTileRowLoop
-	ld [hli], a
-	inc a
-	dec b
-	jr nz, .pokemonLogoLastTileRowLoop
-
-	call DrawPlayerCharacter
-
-; put a pokeball in the player's hand
-	ld hl, wShadowOAMSprite10
-	ld a, $74
-	ld [hl], a
-
-; place tiles for title screen copyright
-	hlcoord 2, 17
-	ld de, .tileScreenCopyrightTiles
-	ld b, .tileScreenCopyrightTilesEnd - .tileScreenCopyrightTiles
-.tileScreenCopyrightTilesLoop
-	ld a, [de]
-	ld [hli], a
+	ld c, SCREEN_WIDTH
+.copyTile
+	ld a, [hli]
+	ld [de], a
 	inc de
+	dec c
+	jr nz, .copyTile
+
+	ld a, e
+	add 12
+	ld e, a
+	jr nc, .noCarry
+	inc d
+.noCarry
+
+	pop bc
 	dec b
-	jr nz, .tileScreenCopyrightTilesLoop
+	jr nz, .copyRow
 
-	jr .next
-
-.tileScreenCopyrightTiles
-	db $41,$42,$43,$42,$44,$42,$45,$46,$47,$48,$49,$4A,$4B,$4C,$4D,$4E ; ©'95.'96.'98 GAME FREAK inc.
-.tileScreenCopyrightTilesEnd
-
-.next
-	call SaveScreenTilesToBuffer2
-	call LoadScreenTilesFromBuffer2
 	call EnableLCD
 
-
-	ld a, NIDORINO ; which Pokemon to show first on the title screen
-	ld [wTitleMonSpecies], a
-	call LoadTitleMonSprite
-
-	ld a, HIGH(vBGMap0 + $300)
-	call TitleScreenCopyTileMapToVRAM
-	call SaveScreenTilesToBuffer1
-	ld a, $40
-	ldh [hWY], a
-	call LoadScreenTilesFromBuffer2
-	ld a, HIGH(vBGMap0)
-	call TitleScreenCopyTileMapToVRAM
 	ld b, SET_PAL_TITLE_SCREEN
 	call RunPaletteCommand
 	call GBPalNormal
-	ld a, %11100100
-	ldh [rOBP0], a
 
-; make pokemon logo bounce up and down
-	ld bc, hSCY ; background scroll Y
-	ld hl, .TitleScreenPokemonLogoYScrolls
-.bouncePokemonLogoLoop
-	ld a, [hli]
-	and a
-	jr z, .finishedBouncingPokemonLogo
-	ld d, a
-	cp -3
-	jr nz, .skipPlayingSound
-	ld a, SFX_INTRO_CRASH
-	call PlaySound
-.skipPlayingSound
-	ld a, [hli]
-	ld e, a
-	call .ScrollTitleScreenPokemonLogo
-	jr .bouncePokemonLogoLoop
-
-.TitleScreenPokemonLogoYScrolls:
-; Controls the bouncing effect of the Pokemon logo on the title screen
-	db -4,16  ; y scroll amount, number of times to scroll
-	db 3,4
-	db -3,4
-	db 2,2
-	db -2,2
-	db 1,2
-	db -1,2
-	db 0      ; terminate list with 0
-
-.ScrollTitleScreenPokemonLogo:
-; Scrolls the Pokemon logo on the title screen to create the bouncing effect
-; Scrolls d pixels e times
-	call DelayFrame
-	ld a, [bc] ; background scroll Y
-	add d
-	ld [bc], a
-	dec e
-	jr nz, .ScrollTitleScreenPokemonLogo
-	ret
-
-.finishedBouncingPokemonLogo
-	call LoadScreenTilesFromBuffer1
-	ld c, 36
-	call DelayFrames
-	ld a, SFX_INTRO_WHOOSH
-	call PlaySound
-
-; scroll game version in from the right
-	call PrintGameVersionOnTitleScreen
-	ld a, SCREEN_HEIGHT_PX
-	ldh [hWY], a
-	ld d, 144
-.scrollTitleScreenGameVersionLoop
-	ld h, d
-	ld l, 64
-	call ScrollTitleScreenGameVersion
-	ld h, 0
-	ld l, 80
-	call ScrollTitleScreenGameVersion
-	ld a, d
-	add 4
-	ld d, a
-	and a
-	jr nz, .scrollTitleScreenGameVersionLoop
-
-	ld a, HIGH(vBGMap1)
-	call TitleScreenCopyTileMapToVRAM
-	call LoadScreenTilesFromBuffer2
-	call PrintGameVersionOnTitleScreen
-	call Delay3
-	call WaitForSoundToFinish
 	ld a, MUSIC_TITLE_SCREEN
 	ld [wNewSoundID], a
 	call PlaySound
-	xor a
-	ld [wUnusedFlag], a
 
-; Keep scrolling in new mons indefinitely until the user performs input.
-.awaitUserInterruptionLoop
+.waitForInput
 	ld c, 200
 	call CheckForUserInterruption
-	jr c, .finishedWaiting
-	call TitleScreenScrollInMon
-	ld c, 1
-	call CheckForUserInterruption
-	jr c, .finishedWaiting
-	farcall TitleScreenAnimateBallIfStarterOut
-	call TitleScreenPickNewMon
-	jr .awaitUserInterruptionLoop
+	jr c, .finished
 
-.finishedWaiting
-	ld a, [wTitleMonSpecies]
+	jr .waitForInput
+
+.finished
+	ld a, NIDORINO
 	call PlayCry
 	call WaitForSoundToFinish
 	call GBPalWhiteOutWithDelay3
@@ -266,34 +129,6 @@ ENDC
 
 .doClearSaveDialogue
 	farjp DoClearSaveDialogue
-
-TitleScreenPickNewMon:
-	ld a, HIGH(vBGMap0)
-	call TitleScreenCopyTileMapToVRAM
-
-.loop
-; Keep looping until a mon different from the current one is picked.
-	call Random
-	and $f
-	ld c, a
-	ld b, 0
-	ld hl, TitleMons
-	add hl, bc
-	ld a, [hl]
-	ld hl, wTitleMonSpecies
-
-; Can't be the same as before.
-	cp [hl]
-	jr z, .loop
-
-	ld [hl], a
-	call LoadTitleMonSprite
-
-	ld a, $90
-	ldh [hWY], a
-	ld d, 1 ; scroll out
-	farcall TitleScroll
-	ret
 
 TitleScreenScrollInMon:
 	ld d, 0 ; scroll in
@@ -412,3 +247,6 @@ DebugNewGameRivalName:
 
 DebugNewGameJuniorName:
 	db "SEGA@"
+
+TitleTiles_Tilemap:
+	INCBIN "gfx/title/title_tiles.tilemap"

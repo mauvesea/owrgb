@@ -13,6 +13,8 @@ PlayIntro:
 	call PlayShootingStar
 	call PlayIntroScene
 	call GBFadeOutToWhite
+	ld c, 100
+	call DelayFrames
 	xor a
 	ldh [hSCX], a
 	ldh [hAutoBGTransferEnabled], a
