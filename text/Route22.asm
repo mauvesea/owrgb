@@ -3,23 +3,24 @@ _Route22RivalBeforeBattleText1::
 	line "<PLAYER>!"
 
 	para "You're going to"
-	line "#MON LEAGUE?"
+	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>?"
 
 	para "Forget it! You"
 	line "probably don't"
-	cont "have any BADGEs!"
+	cont "have any <BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>s!"
 
-	para "The guard won't"
-	line "let you through!"
+	para "That means you're"
+	line "nothing more than"
+	cont "a newbie!"
 
 	para "By the way, did"
-	line "your #MON"
+	line "your #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "get any stronger?"
 	done
 
 _Route22RivalAfterBattleText1::
-	text "I heard #MON"
-	line "LEAGUE has many"
+	text "I heard #<BOLD_M><BOLD_O><BOLD_N>"
+	line "<BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E> has many"
 	cont "tough trainers!"
 
 	para "I have to figure"
@@ -40,7 +41,7 @@ _Route22Rival1DefeatedText::
 _Route22Rival1VictoryText::
 	text "<RIVAL>: What?"
 	line "Why do I have 2"
-	cont "#MON?"
+	cont "#<BOLD_M><BOLD_O><BOLD_N>?"
 
 	para "You should catch"
 	cont "some more too!"
@@ -53,16 +54,16 @@ _Route22RivalBeforeBattleText2::
 	cont "you here!"
 
 	para "So you're going to"
-	line "#MON LEAGUE?"
+	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>?"
 
 	para "You collected all"
-	line "the BADGEs too?"
+	line "the <BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>s too?"
 	cont "That's cool!"
 
 	para "Then I'll whip you"
 	line "<PLAYER> as a"
 	cont "warm up for"
-	cont "#MON LEAGUE!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>!"
 
 	para "Come on!"
 	done
@@ -70,7 +71,7 @@ _Route22RivalBeforeBattleText2::
 _Route22RivalAfterBattleText2::
 	text "That loosened me"
 	line "up! I'm ready for"
-	cont "#MON LEAGUE!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>!"
 
 	para "<PLAYER>, you need"
 	line "more practice!"
@@ -99,7 +100,7 @@ _Route22Rival2VictoryText::
 	prompt
 
 _Route22PokemonLeagueSignText::
-	text "ROUTE 22"
-	line "▲ #MON LEAGUE"
-	cont "▶ VIRIDIAN CITY"
+	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 22"
+	line "▲ #<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>"
+	cont "▶ <BOLD_V><BOLD_I><BOLD_R><BOLD_I><BOLD_D><BOLD_I><BOLD_A><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
 	done

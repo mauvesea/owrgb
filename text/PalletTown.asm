@@ -33,12 +33,12 @@ _PalletTownFisherText::
 	para "You can now store"
 	line "and recall items"
 	cont "and #<BOLD_M><BOLD_O><BOLD_N> as"
-	cont "data via PC!"
+	cont "data via <BOLD_P><BOLD_C>!"
 	done
 
 _PalletTownOaksLabSignText::
-	text "<BOLD_O><BOLD_A><BOLD_K> #<BOLD_M><BOLD_O><BOLD_N>"
-	line "Research Lab"
+	text "<BOLD_O><BOLD_A><BOLD_K><BOLD_s> #<BOLD_M><BOLD_O><BOLD_N>"
+	line "<BOLD_R><BOLD_E><BOLD_S><BOLD_E><BOLD_A><BOLD_R><BOLD_C><BOLD_H> <BOLD_L><BOLD_A><BOLD_B>"
 	done
 
 _PalletTownSignText::

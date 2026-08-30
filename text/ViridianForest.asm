@@ -3,18 +3,18 @@ _ViridianForestYoungster1Text::
 	line "some friends!"
 
 	para "They're out for"
-	line "#MON fights!"
+	line "#<BOLD_M><BOLD_O><BOLD_N> fights!"
 	done
 
 _ViridianForestYoungster2BattleText::
 	text "Hey! You have"
-	line "#MON! Come on!"
+	line "#<BOLD_M><BOLD_O><BOLD_N>! Come on!"
 	cont "Let's battle'em!"
 	done
 
 _ViridianForestYoungster2EndBattleText::
 	text "No!"
-	line "CATERPIE can't"
+	line "<BOLD_C><BOLD_A><BOLD_T><BOLD_E><BOLD_R><BOLD_P><BOLD_I><BOLD_E> can't"
 	cont "cut it!"
 	prompt
 
@@ -26,13 +26,13 @@ _ViridianForestYoungster2AfterBattleText::
 _ViridianForestYoungster3BattleText::
 	text "Yo! You can't jam"
 	line "out if you're a"
-	cont "#MON trainer!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> trainer!"
 	done
 
 _ViridianForestYoungster3EndBattleText::
 	text "Huh?"
 	line "I ran out of"
-	cont "#MON!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N>!"
 	prompt
 
 _ViridianForestYoungster3AfterBattleText::
@@ -64,15 +64,15 @@ _ViridianForestYoungster4AfterBattleText::
 
 _ViridianForestYoungster5Text::
 	text "I ran out of #"
-	line "BALLs to catch"
-	cont "#MON with!"
+	line "<BOLD_B><BOLD_A><BOLD_L><BOLD_L>s to catch"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> with!"
 
 	para "You should carry"
 	line "extras!"
 	done
 
 _ViridianForestTrainerTips1Text::
-	text "TRAINER TIPS"
+	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> <BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
 
 	para "If you want to"
 	line "avoid battles,"
@@ -82,33 +82,33 @@ _ViridianForestTrainerTips1Text::
 
 _ViridianForestUseAntidoteSignText::
 	text "For poison, use"
-	line "ANTIDOTE! Get it"
-	cont "at #MON MARTs!"
+	line "<BOLD_A><BOLD_N><BOLD_T><BOLD_I><BOLD_D><BOLD_O><BOLD_T><BOLD_E>! Get it"
+	cont "at #<BOLD_M><BOLD_O><BOLD_N> <BOLD_M><BOLD_A><BOLD_R><BOLD_T>s!"
 	done
 
 _ViridianForestTrainerTips2Text::
-	text "TRAINER TIPS"
+	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> <BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
 
-	para "Contact PROF.OAK"
-	line "via PC to get"
-	cont "your #DEX"
+	para "Contact <BOLD_P><BOLD_R><BOLD_O><BOLD_F>. <BOLD_O><BOLD_A><BOLD_K>"
+	line "via <BOLD_P><BOLD_C> to get"
+	cont "your #<BOLD_D><BOLD_E><BOLD_X>"
 	cont "evaluated!"
 	done
 
 _ViridianForestTrainerTips3Text::
-	text "TRAINER TIPS"
+	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> <BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
 
 	para "No stealing of"
-	line "#MON from"
+	line "#<BOLD_M><BOLD_O><BOLD_N> from"
 	cont "other trainers!"
 	cont "Catch only wild"
-	cont "#MON!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _ViridianForestTrainerTips4Text::
-	text "TRAINER TIPS"
+	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> <BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
 
-	para "Weaken #MON"
+	para "Weaken #<BOLD_M><BOLD_O><BOLD_N>"
 	line "before attempting"
 	cont "capture!"
 
@@ -117,7 +117,7 @@ _ViridianForestTrainerTips4Text::
 	done
 
 _ViridianForestLeavingSignText::
-	text "LEAVING"
-	line "VIRIDIAN FOREST"
-	cont "PEWTER CITY AHEAD"
+	text "Leaving"
+	line "<BOLD_V><BOLD_I><BOLD_R><BOLD_I><BOLD_D><BOLD_I><BOLD_A><BOLD_N> <BOLD_F><BOLD_O><BOLD_R><BOLD_E><BOLD_S><BOLD_T>"
+	cont "<BOLD_P><BOLD_E><BOLD_W><BOLD_T><BOLD_E><BOLD_R> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y> ahead"
 	done

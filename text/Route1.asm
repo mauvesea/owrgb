@@ -1,11 +1,11 @@
 _Route1Youngster1MartSampleText::
 	text "Hi! I work at a"
-	line "#MON MART."
+	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_M><BOLD_A><BOLD_R><BOLD_T>."
 
 	para "It's a convenient"
 	line "shop, so please"
 	cont "visit us in"
-	cont "VIRIDIAN CITY."
+	cont "<BOLD_V><BOLD_I><BOLD_R><BOLD_I><BOLD_D><BOLD_I><BOLD_A><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>."
 
 	para "I know, I'll give"
 	line "you a sample!"
@@ -21,8 +21,8 @@ _Route1Youngster1GotPotionText::
 
 _Route1Youngster1AlsoGotPokeballsText::
 	text "We also carry"
-	line "# BALLs for"
-	cont "catching #MON!"
+	line "# <BOLD_B><BOLD_A><BOLD_L><BOLD_L>s for"
+	cont "catching #<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _Route1Youngster1NoRoomText::
@@ -39,12 +39,12 @@ _Route1Youngster2Text::
 	cont "from them."
 
 	para "You can get back"
-	line "to PALLET TOWN"
+	line "to <BOLD_P><BOLD_A><BOLD_L><BOLD_L><BOLD_E><BOLD_T> <BOLD_T><BOLD_O><BOLD_W><BOLD_N>"
 	cont "quicker that way."
 	done
 
 _Route1SignText::
-	text "ROUTE 1"
-	line "▲ VIRIDIAN CITY"
-	cont "▼ PALLET TOWN"
+	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 1"
+	line "▲ <BOLD_V><BOLD_I><BOLD_R><BOLD_I><BOLD_D><BOLD_I><BOLD_A><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
+	cont "▼ <BOLD_P><BOLD_A><BOLD_L><BOLD_L><BOLD_E><BOLD_T> <BOLD_T><BOLD_O><BOLD_W><BOLD_N>"
 	done

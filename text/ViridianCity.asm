@@ -1,45 +1,45 @@
 _ViridianCityYoungster1Text::
-	text "Those # BALLs"
+	text "Those # <BOLD_B><BOLD_A><BOLD_L><BOLD_L>s"
 	line "at your waist!"
-	cont "You have #MON!"
+	cont "You have #<BOLD_M><BOLD_O><BOLD_N>!"
 
 	para "It's great that"
 	line "you can carry and"
-	cont "use #MON any"
+	cont "use #<BOLD_M><BOLD_O><BOLD_N> any"
 	cont "time, anywhere!"
 	done
 
 _ViridianCityGambler1GymAlwaysClosedText::
-	text "This #MON GYM"
+	text "This #<BOLD_M><BOLD_O><BOLD_N> <BOLD_G><BOLD_Y><BOLD_M>"
 	line "is always closed."
 
 	para "I wonder who the"
-	line "LEADER is?"
+	line "<BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R> is?"
 	done
 
 _ViridianCityGambler1GymLeaderReturnedText::
-	text "VIRIDIAN GYM's"
-	line "LEADER returned!"
+	text "<BOLD_V><BOLD_I><BOLD_R><BOLD_I><BOLD_D><BOLD_I><BOLD_A><BOLD_N> <BOLD_G><BOLD_Y><BOLD_M><BOLD_s>"
+	line "<BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R> returned!"
 	done
 
 _ViridianCityYoungster2YouWantToKnowAboutText::
 	text "You want to know"
 	line "about the 2 kinds"
 	cont "of caterpillar"
-	cont "#MON?"
+	cont "#<BOLD_M><BOLD_O><BOLD_N>?"
 	done
 
 ViridianCityYoungster2OkThenText::
-	text "Oh, OK then!"
+	text "Oh, okay then!"
 	done
 
 ViridianCityYoungster2CaterpieAndWeedleDescriptionText::
-	text "CATERPIE has no"
+	text "<BOLD_C><BOLD_A><BOLD_T><BOLD_E><BOLD_R><BOLD_P><BOLD_I><BOLD_E> has no"
 	line "poison, but"
-	cont "WEEDLE does."
+	cont "<BOLD_W><BOLD_E><BOLD_E><BOLD_D><BOLD_L><BOLD_E> does."
 
 	para "Watch out for its"
-	line "POISON STING!"
+	line "<BOLD_P><BOLD_O><BOLD_I><BOLD_S><BOLD_O><BOLD_N> <BOLD_S><BOLD_T><BOLD_I><BOLD_N><BOLD_G>!"
 	done
 
 _ViridianCityGirlHasntHadHisCoffeeYetText::
@@ -51,10 +51,10 @@ _ViridianCityGirlHasntHadHisCoffeeYetText::
 
 _ViridianCityGirlWhenIGoShopText::
 	text "When I go shop in"
-	line "PEWTER CITY, I"
+	line "<BOLD_P><BOLD_E><BOLD_W><BOLD_T><BOLD_E><BOLD_R> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>, I"
 	cont "have to take the"
 	cont "winding trail in"
-	cont "VIRIDIAN FOREST."
+	cont "<BOLD_V><BOLD_I><BOLD_R><BOLD_I><BOLD_D><BOLD_I><BOLD_A><BOLD_N> <BOLD_F><BOLD_O><BOLD_R><BOLD_E><BOLD_S><BOLD_T>."
 	done
 
 _ViridianCityOldManSleepyPrivatePropertyText::
@@ -71,25 +71,25 @@ ViridianCityFisherYouCanHaveThisText::
 	cont "off in the sun."
 
 	para "I had this dream"
-	line "about a DROWZEE"
+	line "about a <BOLD_D><BOLD_R><BOLD_O><BOLD_W><BOLD_Z><BOLD_E><BOLD_E>"
 	cont "eating my dream."
 	cont "What's this?"
-	cont "Where did this TM"
+	cont "Where did this <BOLD_T><BOLD_M>"
 	cont "come from?"
 
 	para "This is spooky!"
 	line "Here, you can"
-	cont "have this TM."
+	cont "have this <BOLD_T><BOLD_M>."
 	prompt
 
 _ViridianCityFisherReceivedTM42Text::
 	text "<PLAYER> received"
-	line "TM42!@"
+	line "<BOLD_T><BOLD_M>42!@"
 	text_end
 
 _ViridianCityFisherTM42ExplanationText::
-	text "TM42 contains"
-	line "DREAM EATER..."
+	text "<BOLD_T><BOLD_M>42 contains"
+	line "<BOLD_D><BOLD_R><BOLD_E><BOLD_A><BOLD_M> <BOLD_E><BOLD_A><BOLD_T><BOLD_E><BOLD_R>..."
 	cont "...Snore..."
 	done
 
@@ -112,16 +112,16 @@ _ViridianCityOldManHadMyCoffeeNowText::
 
 _ViridianCityOldManKnowHowToCatchPokemonText::
 	text "I see you're using"
-	line "a #DEX."
+	line "a #<BOLD_D><BOLD_E><BOLD_X>."
 
 	para "When you catch a"
-	line "#MON, #DEX"
+	line "#<BOLD_M><BOLD_O><BOLD_N>, #<BOLD_D><BOLD_E><BOLD_X>"
 	cont "is automatically"
 	cont "updated."
 
 	para "What? Don't you"
 	line "know how to catch"
-	cont "#MON?"
+	cont "#<BOLD_M><BOLD_O><BOLD_N>?"
 
 	para "I'll show you"
 	line "how to then."
@@ -135,19 +135,19 @@ _ViridianCityOldManTimeIsMoneyText::
 _ViridianCityOldManYouNeedToWeakenTheTargetText::
 	text "First, you need"
 	line "to weaken the"
-	cont "target #MON."
+	cont "target #<BOLD_M><BOLD_O><BOLD_N>."
 	done
 
 _ViridianCitySignText::
-	text "VIRIDIAN CITY "
+	text "<BOLD_V><BOLD_I><BOLD_R><BOLD_I><BOLD_D><BOLD_I><BOLD_A><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
 	line "The Eternally"
 	cont "Green Paradise"
 	done
 
 _ViridianCityTrainerTips1Text::
-	text "TRAINER TIPS"
+	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> <BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
 
-	para "Catch #MON"
+	para "Catch #<BOLD_M><BOLD_O><BOLD_N>"
 	line "and expand your"
 	cont "collection!"
 
@@ -157,25 +157,25 @@ _ViridianCityTrainerTips1Text::
 	done
 
 _ViridianCityTrainerTips2Text::
-	text "TRAINER TIPS"
+	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> <BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
 
 	para "The battle moves"
-	line "of #MON are"
+	line "of #<BOLD_M><BOLD_O><BOLD_N> are"
 	cont "limited by their"
-	cont "POWER POINTs, PP."
+	cont "<BOLD_P><BOLD_O><BOLD_W><BOLD_E><BOLD_R> <BOLD_P><BOLD_O><BOLD_I><BOLD_N><BOLD_T>s, <BOLD_P><BOLD_P>."
 
-	para "To replenish PP,"
+	para "To replenish <BOLD_P><BOLD_P>,"
 	line "rest your tired"
-	cont "#MON at a"
-	cont "#MON CENTER!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> at a"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_C><BOLD_E><BOLD_N><BOLD_T><BOLD_E><BOLD_R>!"
 	done
 
 _ViridianCityGymSignText::
-	text "VIRIDIAN CITY"
-	line "#MON GYM"
+	text "<BOLD_V><BOLD_I><BOLD_R><BOLD_I><BOLD_D><BOLD_I><BOLD_A><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
+	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_G><BOLD_Y><BOLD_M>"
 	done
 
 _ViridianCityGymLockedText::
-	text "The GYM's doors"
+	text "The <BOLD_G><BOLD_Y><BOLD_M><BOLD_s> doors"
 	line "are locked..."
 	done
