@@ -84,6 +84,7 @@ ReadTrainer:
 	and a ; have we reached the end of the trainer data?
 	jp z, .FinishUp
 	ld [wCurPartySpecies], a
+	call EvolveScaledTrainerMon
 	ld a, ENEMY_PARTY_DATA
 	ld [wMonDataLocation], a
 	push hl
@@ -130,6 +131,7 @@ ReadTrainer:
 
 	ld a, [hli]
 	ld [wCurPartySpecies], a
+	call EvolveScaledTrainerMon
 	ld a, ENEMY_PARTY_DATA
 	ld [wMonDataLocation], a
 	push hl
@@ -233,4 +235,67 @@ ReadTrainer:
 	predef AddBCDPredef
 
 .OmamoriNotInBag
+	ret
+
+DEF TRAINER_STONE_TRADE_EVOLUTION_LEVEL EQU 40
+
+; Evolve the trainer mon in [wCurPartySpecies] when its scaled level meets an
+; evolution requirement. Restart from the evolved species so three-stage lines
+; can evolve more than once. For branching evolutions, use the first matching
+; entry in the species' evolution data.
+EvolveScaledTrainerMon:
+	ld a, [wLevelScaling]
+	and a
+	ret z
+	push hl
+	push bc
+.checkSpecies
+	ld a, [wCurPartySpecies]
+	dec a
+	ld b, 0
+	add a
+	rl b
+	ld c, a
+	ld hl, EvosMovesPointerTable
+	add hl, bc
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a
+.checkEvolution
+	ld a, [hli]
+	and a
+	jr z, .done
+	cp EVOLVE_LEVEL
+	jr z, .levelEvolution
+	cp EVOLVE_ITEM
+	jr z, .itemEvolution
+	cp EVOLVE_TRADE
+	jr z, .tradeEvolution
+	jr .done ; unknown evolution data
+.levelEvolution
+	ld a, [hli]
+	ld b, a
+	ld a, [wCurEnemyLevel]
+	cp b
+	jr .checkLevel
+.itemEvolution
+	inc hl ; evolution item
+	inc hl ; minimum level
+	jr .checkStoneOrTradeLevel
+.tradeEvolution
+	inc hl ; minimum level
+.checkStoneOrTradeLevel
+	ld a, [wCurEnemyLevel]
+	cp TRAINER_STONE_TRADE_EVOLUTION_LEVEL
+.checkLevel
+	jr c, .nextEvolution
+	ld a, [hl]
+	ld [wCurPartySpecies], a
+	jr .checkSpecies
+.nextEvolution
+	inc hl ; evolved species
+	jr .checkEvolution
+.done
+	pop bc
+	pop hl
 	ret
