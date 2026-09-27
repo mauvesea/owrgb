@@ -2259,6 +2259,18 @@ wBoxMonNicksEnd::
 wBoxDataEnd::
 
 
+SECTION "Experience Scaling", WRAM0
+
+; Scratch space for the Generation V battle experience scaling formula.
+wExpScaleNumerator:: ds 4
+wExpScaleDenominator:: ds 4
+wExpScaleRemainder:: ds 5
+wExpScaleQuotient:: dw
+wExpScaleBase:: dw
+wExpScaleNumeratorQuotient:: db
+wExpParticipants:: db
+
+
 SECTION "Stack", WRAM0
 
 ; the stack grows downward

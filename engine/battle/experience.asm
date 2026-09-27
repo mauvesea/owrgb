@@ -62,10 +62,23 @@ GainExperience:
 	ld a, [wEnemyMonLevel]
 	ldh [hMultiplier], a
 	call Multiply
-	ld a, 7
+	ld a, 5
 	ldh [hDivisor], a
 	ld b, 4
 	call Divide
+	ld a, [wIsInBattle]
+	dec a ; is it a trainer battle?
+	call nz, BoostExp
+	ld a, [wExpParticipants]
+	ldh [hDivisor], a
+	ld b, 4
+	call Divide
+	ld hl, MON_LEVEL - (MON_SPC_EXP + 1)
+	add hl, de
+	ld a, [hl]
+	push de
+	call ScaleExperienceByLevel
+	pop de
 	ld hl, MON_OTID - (MON_DVS - 1)
 	add hl, de
 	ld b, [hl] ; wPartyMon*OTID
@@ -101,9 +114,6 @@ GainExperience:
 	ld a,0
 .next
 	ld [wGainBoostedExp], a
-	ld a, [wIsInBattle]
-	dec a ; is it a trainer battle?
-	call nz, BoostExp ; if so, boost exp
 	inc hl
 	inc hl
 	inc hl
@@ -308,7 +318,219 @@ GainExperience:
 	pop bc
 	predef_jump FlagActionPredef ; set the fought current enemy flag for the mon that is currently out
 
-; divide enemy base stats, catch rate, and base exp by the number of mons gaining exp
+; Applies the Generation V level scaling factor to the base experience in
+; hQuotient + 2. The winner's level is in a. The scaled division is rounded
+; down, then incremented by one.
+;
+; The level-power table contains
+;   round(sqrt(n) * 4096) * n^2
+; so its ratio exactly represents the two rounded square-root terms in the
+; Generation V formula. Long division is evaluated a bit at a time to avoid
+; overflowing the Game Boy's 32-bit math buffer.
+ScaleExperienceByLevel:
+	push af
+	ldh a, [hQuotient + 2]
+	ld [wExpScaleBase], a
+	ldh a, [hQuotient + 3]
+	ld [wExpScaleBase + 1], a
+
+	ld a, [wEnemyMonLevel]
+	add a
+	add 10
+	ld de, wExpScaleNumerator
+	call CopyExperienceLevelPower
+
+	pop af
+	ld c, a
+	ld a, [wEnemyMonLevel]
+	add c
+	add 10
+	ld de, wExpScaleDenominator
+	call CopyExperienceLevelPower
+
+	; Divide the numerator by the denominator. The integer part is at most 4;
+	; leave the remainder in wExpScaleNumerator for the main calculation.
+	xor a
+	ld [wExpScaleRemainder], a
+	ld [wExpScaleNumeratorQuotient], a
+	ld hl, wExpScaleNumerator
+	ld de, wExpScaleRemainder + 1
+	ld bc, 4
+	call CopyData
+.divideNumerator
+	call CompareExpScaleRemainder
+	jr c, .numeratorDivided
+	call SubtractExpScaleDenominator
+	ld hl, wExpScaleNumeratorQuotient
+	inc [hl]
+	jr .divideNumerator
+.numeratorDivided
+	ld hl, wExpScaleRemainder + 1
+	ld de, wExpScaleNumerator
+	ld bc, 4
+	call CopyData
+
+	; Repeatedly double the accumulated value and add the numerator for each
+	; set bit of the 16-bit base experience. At every step, reduce modulo the
+	; denominator and carry the resulting whole units into the quotient.
+	xor a
+	ld [wExpScaleRemainder], a
+	ld [wExpScaleRemainder + 1], a
+	ld [wExpScaleRemainder + 2], a
+	ld [wExpScaleRemainder + 3], a
+	ld [wExpScaleRemainder + 4], a
+	ld [wExpScaleQuotient], a
+	ld [wExpScaleQuotient + 1], a
+	ld b, 16
+.baseBitLoop
+	push bc
+
+	ld hl, wExpScaleQuotient + 1
+	sla [hl]
+	dec hl
+	rl [hl]
+
+	ld hl, wExpScaleBase + 1
+	sla [hl]
+	dec hl
+	rl [hl]
+	push af
+
+	ld hl, wExpScaleRemainder + 4
+	sla [hl]
+	dec hl
+	rl [hl]
+	dec hl
+	rl [hl]
+	dec hl
+	rl [hl]
+	dec hl
+	rl [hl]
+
+	pop af
+	jr nc, .reduceRemainder
+
+	ld a, [wExpScaleNumeratorQuotient]
+	ld hl, wExpScaleQuotient + 1
+	add [hl]
+	ld [hld], a
+	jr nc, .addNumeratorRemainder
+	inc [hl]
+
+.addNumeratorRemainder
+	ld hl, wExpScaleNumerator + 3
+	ld de, wExpScaleRemainder + 4
+	ld b, 4
+	and a
+.addNumeratorRemainderLoop
+	ld a, [hld]
+	ld c, a
+	ld a, [de]
+	adc c
+	ld [de], a
+	dec de
+	dec b
+	jr nz, .addNumeratorRemainderLoop
+	ld a, [de]
+	adc 0
+	ld [de], a
+
+.reduceRemainder
+	call CompareExpScaleRemainder
+	jr c, .nextBaseBit
+	call SubtractExpScaleDenominator
+	ld hl, wExpScaleQuotient + 1
+	inc [hl]
+	jr nz, .reduceRemainder
+	dec hl
+	inc [hl]
+	jr .reduceRemainder
+
+.nextBaseBit
+	pop bc
+	dec b
+	jr nz, .baseBitLoop
+
+	; The scaled formula adds 1 after applying its level factor.
+	ld hl, wExpScaleQuotient + 1
+	inc [hl]
+	jr nz, .storeResult
+	dec hl
+	inc [hl]
+.storeResult
+	ld a, [wExpScaleQuotient]
+	ldh [hQuotient + 2], a
+	ld a, [wExpScaleQuotient + 1]
+	ldh [hQuotient + 3], a
+	ret
+
+; Copies the four-byte, big-endian level-power table entry for a (12..210)
+; to de.
+CopyExperienceLevelPower:
+	sub 12
+	ld l, a
+	ld h, 0
+	add hl, hl
+	add hl, hl
+	ld bc, ExperienceLevelPowerTable
+	add hl, bc
+	ld bc, 4
+	jp CopyData
+
+; Returns carry if the five-byte remainder is less than the four-byte
+; denominator. Zero is set when they are equal.
+CompareExpScaleRemainder:
+	ld a, [wExpScaleRemainder]
+	and a
+	ret nz
+	ld hl, wExpScaleRemainder + 1
+	ld de, wExpScaleDenominator
+	ld b, 4
+.loop
+	ld a, [de]
+	ld c, a
+	ld a, [hli]
+	cp c
+	ret nz
+	inc de
+	dec b
+	jr nz, .loop
+	xor a
+	ret
+
+SubtractExpScaleDenominator:
+	ld hl, wExpScaleRemainder + 4
+	ld de, wExpScaleDenominator + 3
+	ld b, 4
+	and a
+.loop
+	ld a, [de]
+	ld c, a
+	ld a, [hl]
+	sbc c
+	ld [hld], a
+	dec de
+	dec b
+	jr nz, .loop
+	ld a, [hl]
+	sbc 0
+	ld [hl], a
+	ret
+
+ExperienceLevelPowerTable:
+; The square root is rounded to the nearest 1/4096, matching Generation V.
+DEF experience_power_sqrt = 0
+DEF experience_power = 0
+FOR n, 12, 211
+	REDEF experience_power_sqrt = POW(n << 12, 0.5q12, 12)
+	REDEF experience_power = experience_power_sqrt * n * n
+	db (experience_power >>> 24) & $ff, (experience_power >>> 16) & $ff
+	db (experience_power >>> 8) & $ff, experience_power & $ff
+ENDR
+PURGE experience_power_sqrt, experience_power
+
+; Record how many mons gain experience. Divide the stat experience data here;
+; battle experience is divided later, after the b * L / 5 calculation.
 DivideExpDataByNumMonsGainingExp:
 	ld a, [wPartyGainExpFlags]
 	ld b, a
@@ -322,11 +544,12 @@ DivideExpDataByNumMonsGainingExp:
 	ld d, a
 	dec c
 	jr nz, .countSetBitsLoop
+	ld [wExpParticipants], a
 	cp $2
 	ret c ; return if only one mon is gaining exp
 	ld [wTempByteValue], a ; store number of mons gaining exp
 	ld hl, wEnemyMonBaseStats
-	ld c, wEnemyMonBaseExp + 1 - wEnemyMonBaseStats
+	ld c, wEnemyMonBaseExp - wEnemyMonBaseStats
 .divideLoop
 	xor a
 	ldh [hDividend], a
