@@ -3,7 +3,7 @@ _SafariZoneSecretHouseFishingGuruYouHaveWonText::
 
 	para "You're the first"
 	line "person to reach"
-	cont "the SECRET HOUSE!"
+	cont "the <BOLD_S><BOLD_E><BOLD_C><BOLD_R><BOLD_E><BOLD_T> <BOLD_H><BOLD_O><BOLD_U><BOLD_S><BOLD_E>!"
 
 	para "I was getting"
 	line "worried that no"
@@ -30,7 +30,7 @@ _SafariZoneSecretHouseFishingGuruHM03ExplanationText::
 	line "something else?"
 
 	para "Hey, now! Those"
-	line "FLOATIES are"
+	line "<BOLD_F><BOLD_L><BOLD_O><BOLD_A><BOLD_T><BOLD_I><BOLD_E><BOLD_S> are"
 	cont "amazing!"
 
 	para "They'll allow you"
@@ -50,20 +50,20 @@ _SafariZoneSecretHouseFishingGuruHM03NoRoomText::
 
 _ChiefBeforeWardenText::
 	text "Yes... All the"
-	line "#MON here will"
-	cont "serve TEAM ROCKET"
+	line "#<BOLD_M><BOLD_O><BOLD_N> here will"
+	cont "serve <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>"
 	cont "and make us even"
 	cont "more powerful!"
 
 	para "This machine uses"
 	line "the same tech I"
 	cont "developed for the"
-	cont "MASTER BALL."
+	cont "<BOLD_M><BOLD_A><BOLD_S><BOLD_T><BOLD_E><BOLD_R> <BOLD_B><BOLD_A><BOLD_L><BOLD_L>."
 
 	para "Once it's done,"
 	line "I'll be able to"
-	cont "catch all SAFARI"
-	cont "#MON at once!"
+	cont "catch all <BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I>"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> at once!"
 
 	para "Huh? What are you"
 	line "doing eavesdrop-"
@@ -73,27 +73,27 @@ _ChiefBeforeWardenText::
 
 _SafariZoneSecretHouseBeforeBattleText::
 	text "Yes... All the"
-	line "#MON here will"
-	cont "serve TEAM ROCKET"
+	line "#<BOLD_M><BOLD_O><BOLD_N> here will"
+	cont "serve <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>"
 	cont "and make us even"
 	cont "more powerful!"
 
 	para "This machine uses"
 	line "the same tech I"
 	cont "developed for the"
-	cont "MASTER BALL."
+	cont "<BOLD_M><BOLD_A><BOLD_S><BOLD_T><BOLD_E><BOLD_R> <BOLD_B><BOLD_A><BOLD_L><BOLD_L>."
 
 	para "Once it's done,"
 	line "I'll be able to"
-	cont "catch all SAFARI"
-	cont "#MON at once!"
+	cont "catch all <BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I>"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> at once!"
 
 	para "Huh? What are you"
 	line "doing eavesdrop-"
 	cont "ping on me?"
 
 	para "...What!? That"
-	line "WARDEN sent you"
+	line "<BOLD_W><BOLD_A><BOLD_R><BOLD_D><BOLD_E><BOLD_N> sent you"
 	cont "here?"
 
 	para "I knew I should've"
@@ -106,13 +106,13 @@ _SafariZoneSecretHouseBeforeBattleText::
 
 	para "First I'll get rid"
 	line "of you, then I'll"
-	cont "end that WARDEN"
+	cont "end that <BOLD_W><BOLD_A><BOLD_R><BOLD_D><BOLD_E><BOLD_N>"
 	cont "myself."
 
-	para "I'm SILPH'S CHIEF"
+	para "I'm <BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H>'<BOLD_S> <BOLD_C><BOLD_H><BOLD_I><BOLD_E><BOLD_F>"
 	line "Researcher, and a"
-	cont "member of TEAM"
-	cont "ROCKET."
+	cont "member of <BOLD_T><BOLD_E><BOLD_A><BOLD_M>"
+	cont "<BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>."
 
 	para "Get ready to meet"
 	line "your doom!"

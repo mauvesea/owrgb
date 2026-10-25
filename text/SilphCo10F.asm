@@ -10,7 +10,7 @@ _SilphCo10FSilphWorkerFQuietAboutMyCryingText::
 
 _SilphCo10FRocketBattleText::
 	text "Welcome to the"
-	line "10F! So good of"
+	line "10<BOLD_F>! So good of"
 	cont "you to join me!"
 	done
 

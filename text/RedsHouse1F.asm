@@ -2,7 +2,7 @@ _RedsHouse1FMomWakeUpText::
 	text "<BOLD_M><BOLD_O><BOLD_M>: Right."
 	line "All boys leave"
 	cont "home some day."
-	cont "It said so on TV."
+	cont "It said so on <BOLD_T><BOLD_V>."
 
 	para "<BOLD_P><BOLD_R><BOLD_O><BOLD_F>. <BOLD_O><BOLD_A><BOLD_K>, next"
 	line "door, is looking"
@@ -25,7 +25,7 @@ _RedsHouse1FMomLookingGreatText::
 
 _RedsHouse1FTVStandByMeMovieText::
 	text "There's a movie"
-	line "on TV. Four boys"
+	line "on <BOLD_T><BOLD_V>. Four boys"
 	cont "are walking on"
 	cont "railroad tracks."
 

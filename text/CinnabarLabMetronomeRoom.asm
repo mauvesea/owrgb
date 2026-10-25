@@ -1,6 +1,6 @@
 _CinnabarLabMetronomeRoomScientist1Text::
 	text "Tch-tch-tch!"
-	line "I made a cool TM!"
+	line "I made a cool <BOLD_T><BOLD_M>!"
 
 	para "It can cause all"
 	line "kinds of fun!"
@@ -16,10 +16,10 @@ _CinnabarLabMetronomeRoomScientist1ReceivedTM35Text::
 _CinnabarLabMetronomeRoomScientist1TM35ExplanationText::
 	text "Tch-tch-tch!"
 	line "That's the sound"
-	cont "of a METRONOME!"
+	cont "of a <BOLD_M><BOLD_E><BOLD_T><BOLD_R><BOLD_O><BOLD_N><BOLD_O><BOLD_M><BOLD_E>!"
 
 	para "It tweaks your"
-	line "#MON's brain"
+	line "#<BOLD_M><BOLD_O><BOLD_N>'<BOLD_s> brain"
 	cont "into using moves"
 	cont "it doesn't know!"
 	done
@@ -30,9 +30,9 @@ _CinnabarLabMetronomeRoomScientist1TM35NoRoomText::
 	done
 
 _CinnabarLabMetronomeRoomScientist2Text::
-	text "EEVEE can evolve"
+	text "<BOLD_E><BOLD_E><BOLD_V><BOLD_E><BOLD_E> can evolve"
 	line "into 1 of 3 kinds"
-	cont "of #MON."
+	cont "of #<BOLD_M><BOLD_O><BOLD_N>."
 	done
 
 _CinnabarLabMetronomeRoomPCText::
@@ -42,19 +42,19 @@ _CinnabarLabMetronomeRoomPCText::
 	para "..."
 
 	para "The 3 legendary"
-	line "bird #MON are"
-	cont "ARTICUNO, ZAPDOS"
-	cont "and MOLTRES."
+	line "bird #<BOLD_M><BOLD_O><BOLD_N> are"
+	cont "<BOLD_A><BOLD_R><BOLD_T><BOLD_I><BOLD_C><BOLD_U><BOLD_N><BOLD_O>, <BOLD_Z><BOLD_A><BOLD_P><BOLD_D><BOLD_O><BOLD_S>"
+	cont "and <BOLD_M><BOLD_O><BOLD_L><BOLD_T><BOLD_R><BOLD_E><BOLD_S>."
 
 	para "Their whereabouts"
 	line "are unknown."
 
 	para "We plan to explore"
 	line "the cavern close"
-	cont "to CERULEAN."
+	cont "to <BOLD_C><BOLD_E><BOLD_R><BOLD_U><BOLD_L><BOLD_E><BOLD_A><BOLD_N>."
 
-	para "From: #MON"
-	line "RESEARCH TEAM"
+	para "From: #<BOLD_M><BOLD_O><BOLD_N>"
+	line "<BOLD_R><BOLD_E><BOLD_S><BOLD_E><BOLD_A><BOLD_R><BOLD_C><BOLD_H> <BOLD_T><BOLD_E><BOLD_A><BOLD_M>"
 
 	para "..."
 	done

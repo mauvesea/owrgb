@@ -27,7 +27,7 @@ _SaffronGymSabrinaReceivedMarshBadgeText::
 	cont "to win!"
 
 	para "You earned the"
-	line "MARSHBADGE!@"
+	line "<BOLD_M><BOLD_A><BOLD_R><BOLD_S><BOLD_H><BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>!@"
 	text_end
 
 _SaffronGymSabrinaPostBattleAdviceText::
@@ -39,18 +39,18 @@ _SaffronGymSabrinaPostBattleAdviceText::
 
 _SaffronGymSabrinaMarshBadgeInfoText::
 	text "Wait, please take"
-	line "this TM with you!"
+	line "this <BOLD_T><BOLD_M> with you!"
 	done
 
 _SaffronGymSabrinaReceivedTM46Text::
 	text "<PLAYER> received"
-	line "TM46!@"
+	line "<BOLD_T><BOLD_M>46!@"
 	text_end
 
 _TM46ExplanationText::
 	text_start
 
-	para "TM46 is PSYWAVE!"
+	para "<BOLD_T><BOLD_M>46 is <BOLD_P><BOLD_S><BOLD_Y><BOLD_W><BOLD_A><BOLD_V><BOLD_E>!"
 	line "It uses powerful"
 	cont "psychic waves to"
 	cont "inflict damage!"
@@ -65,13 +65,13 @@ _SaffronGymGuideChampInMakingText::
 	text "Yo! Champ in"
 	line "making!"
 
-	para "SABRINA's #MON"
+	para "<BOLD_S><BOLD_A><BOLD_B><BOLD_R><BOLD_I><BOLD_N><BOLD_A>'<BOLD_s> #<BOLD_M><BOLD_O><BOLD_N>"
 	line "use psychic power"
 	cont "instead of force!"
 
-	para "Fighting #MON"
+	para "Fighting #<BOLD_M><BOLD_O><BOLD_N>"
 	line "are weak against"
-	cont "psychic #MON!"
+	cont "psychic #<BOLD_M><BOLD_O><BOLD_N>!"
 
 	para "They get creamed"
 	line "before they can"
@@ -88,7 +88,7 @@ _SaffronGymGuideBeatSabrinaText::
 	done
 
 _SaffronGymChanneler1BattleText::
-	text "SABRINA is younger"
+	text "<BOLD_S><BOLD_A><BOLD_B><BOLD_R><BOLD_I><BOLD_N><BOLD_A> is younger"
 	line "than I, but I"
 	cont "respect her!"
 	done
@@ -105,7 +105,7 @@ _SaffronGymChanneler1AfterBattleText::
 	cont "will wins!"
 
 	para "If you wish"
-	line "to beat SABRINA,"
+	line "to beat <BOLD_S><BOLD_A><BOLD_B><BOLD_R><BOLD_I><BOLD_N><BOLD_A>,"
 	cont "focus on winning!"
 	done
 
@@ -120,17 +120,17 @@ _SaffronGymYoungster1EndBattleText::
 	prompt
 
 _SaffronGymYoungster1AfterBattleText::
-	text "Psychic #MON"
+	text "Psychic #<BOLD_M><BOLD_O><BOLD_N>"
 	line "fear only ghosts"
 	cont "and bugs!"
 	done
 
 _SaffronGymChanneler2BattleText::
-	text "#MON take on"
+	text "#<BOLD_M><BOLD_O><BOLD_N> take on"
 	line "the appearance of"
 	cont "their trainers."
 
-	para "Your #MON must"
+	para "Your #<BOLD_M><BOLD_O><BOLD_N> must"
 	line "be tough, then!"
 	done
 
@@ -142,7 +142,7 @@ _SaffronGymChanneler2EndBattleText::
 _SaffronGymChanneler2AfterBattleText::
 	text "I must teach"
 	line "better techniques"
-	cont "to my #MON!"
+	cont "to my #<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _SaffronGymYoungster2BattleText::
@@ -157,14 +157,14 @@ _SaffronGymYoungster2EndBattleText::
 	prompt
 
 _SaffronGymYoungster2AfterBattleText::
-	text "SABRINA just wiped"
-	line "out the KARATE"
-	cont "MASTER next door!"
+	text "<BOLD_S><BOLD_A><BOLD_B><BOLD_R><BOLD_I><BOLD_N><BOLD_A> just wiped"
+	line "out the <BOLD_K><BOLD_A><BOLD_R><BOLD_A><BOLD_T><BOLD_E>"
+	cont "<BOLD_M><BOLD_A><BOLD_S><BOLD_T><BOLD_E><BOLD_R> next door!"
 	done
 
 _SaffronGymChanneler3BattleText::
 	text "You and I, our"
-	line "#MON shall"
+	line "#<BOLD_M><BOLD_O><BOLD_N> shall"
 	cont "fight!"
 	done
 
@@ -180,9 +180,9 @@ _SaffronGymChanneler3AfterBattleText::
 	done
 
 _SaffronGymYoungster3BattleText::
-	text "SABRINA is young,"
+	text "<BOLD_S><BOLD_A><BOLD_B><BOLD_R><BOLD_I><BOLD_N><BOLD_A> is young,"
 	line "but she's also"
-	cont "our LEADER!"
+	cont "our <BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R>!"
 
 	para "You won't reach"
 	line "her easily!"
@@ -195,23 +195,23 @@ _SaffronGymYoungster3EndBattleText::
 
 _SaffronGymYoungster3AfterBattleText::
 	text "There used to be"
-	line "2 #MON GYMs in"
-	cont "SAFFRON."
+	line "2 #<BOLD_M><BOLD_O><BOLD_N> <BOLD_G><BOLD_Y><BOLD_M>s in"
+	cont "<BOLD_S><BOLD_A><BOLD_F><BOLD_F><BOLD_R><BOLD_O><BOLD_N>."
 
-	para "The FIGHTING DOJO"
+	para "The <BOLD_F><BOLD_I><BOLD_G><BOLD_H><BOLD_T><BOLD_I><BOLD_N><BOLD_G> <BOLD_D><BOLD_O><BOLD_J><BOLD_O>"
 	line "next door lost"
-	cont "its GYM status"
+	cont "its <BOLD_G><BOLD_Y><BOLD_M> status"
 	cont "when we went and"
 	cont "creamed them!"
 	done
 
 _SaffronGymYoungster4BattleText::
-	text "SAFFRON #MON"
-	line "GYM is famous for"
+	text "<BOLD_S><BOLD_A><BOLD_F><BOLD_F><BOLD_R><BOLD_O><BOLD_N> #<BOLD_M><BOLD_O><BOLD_N>"
+	line "<BOLD_G><BOLD_Y><BOLD_M> is famous for"
 	cont "its psychics!"
 
 	para "You want to see"
-	line "SABRINA!"
+	line "<BOLD_S><BOLD_A><BOLD_B><BOLD_R><BOLD_I><BOLD_N><BOLD_A>!"
 	cont "I can tell!"
 	done
 

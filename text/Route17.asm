@@ -11,7 +11,7 @@ _Route17Biker1EndBattleText::
 _Route17Biker1AfterBattleText::
 	text "Good stuff is"
 	line "lying around on"
-	cont "CYCLING ROAD!"
+	cont "<BOLD_C><BOLD_Y><BOLD_C><BOLD_L><BOLD_I><BOLD_N><BOLD_G> <BOLD_R><BOLD_O><BOLD_A><BOLD_D>!"
 	done
 
 _Route17Biker2BattleText::
@@ -31,7 +31,7 @@ _Route17Biker2AfterBattleText::
 
 _Route17Biker3BattleText::
 	text "You heading to"
-	line "FUCHSIA?"
+	line "<BOLD_F><BOLD_U><BOLD_C><BOLD_H><BOLD_S><BOLD_I><BOLD_A>?"
 	done
 
 _Route17Biker3EndBattleText::
@@ -45,7 +45,7 @@ _Route17Biker3AfterBattleText::
 	done
 
 _Route17Biker4BattleText::
-	text "We're BIKERs!"
+	text "We're <BOLD_B><BOLD_I><BOLD_K><BOLD_E><BOLD_R>s!"
 	line "Highway stars!"
 	done
 
@@ -59,7 +59,7 @@ _Route17Biker4AfterBattleText::
 	done
 
 _Route17Biker5BattleText::
-	text "Let VOLTORB"
+	text "Let <BOLD_V><BOLD_O><BOLD_L><BOLD_T><BOLD_O><BOLD_R><BOLD_B>"
 	line "electrify you!"
 	done
 
@@ -69,13 +69,13 @@ _Route17Biker5EndBattleText::
 	prompt
 
 _Route17Biker5AfterBattleText::
-	text "I got my VOLTORB"
+	text "I got my <BOLD_V><BOLD_O><BOLD_L><BOLD_T><BOLD_O><BOLD_R><BOLD_B>"
 	line "at the abandoned"
-	cont "POWER PLANT."
+	cont "<BOLD_P><BOLD_O><BOLD_W><BOLD_E><BOLD_R> <BOLD_P><BOLD_L><BOLD_A><BOLD_N><BOLD_T>."
 	done
 
 _Route17Biker6BattleText::
-	text "My #MON won't"
+	text "My #<BOLD_M><BOLD_O><BOLD_N> won't"
 	line "evolve! Why?"
 	done
 
@@ -85,9 +85,9 @@ _Route17Biker6EndBattleText::
 	prompt
 
 _Route17Biker6AfterBattleText::
-	text "Maybe some #MON"
+	text "Maybe some #<BOLD_M><BOLD_O><BOLD_N>"
 	line "need element"
-	cont "STONEs to evolve."
+	cont "<BOLD_S><BOLD_T><BOLD_O><BOLD_N><BOLD_E>s to evolve."
 	done
 
 _Route17Biker7BattleText::
@@ -119,7 +119,7 @@ _Route17Biker8AfterBattleText::
 	done
 
 _Route17Biker9BattleText::
-	text "Nice BIKE!"
+	text "Nice <BOLD_B><BOLD_I><BOLD_K><BOLD_E>!"
 	line "How's it handle?"
 	done
 
@@ -155,30 +155,30 @@ _Route17NoticeSign1Text::
 	done
 
 _Route17TrainerTips1Text::
-	text "TRAINER TIPS"
+	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> <BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
 
-	para "All #MON are"
+	para "All #<BOLD_M><BOLD_O><BOLD_N> are"
 	line "unique."
 
-	para "Even #MON of"
+	para "Even #<BOLD_M><BOLD_O><BOLD_N> of"
 	line "the same type and"
 	cont "level grow at"
 	cont "different rates."
 	done
 
 _Route17TrainerTips2Text::
-	text "TRAINER TIPS"
+	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> <BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
 
-	para "Press the A or B"
+	para "Press the <BOLD_A> or <BOLD_B>"
 	line "Button to stay in"
 	cont "place while on a"
 	cont "slope."
 	done
 
 _Route17SignText::
-	text "ROUTE 17"
-	line "▲ CELADON CITY"
-	cont "▼ FUCHSIA CITY"
+	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 17"
+	line "▲ <BOLD_C><BOLD_E><BOLD_L><BOLD_A><BOLD_D><BOLD_O><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
+	cont "▼ <BOLD_F><BOLD_U><BOLD_C><BOLD_H><BOLD_S><BOLD_I><BOLD_A> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
 	done
 
 _Route17NoticeSign2Text::
@@ -186,10 +186,10 @@ _Route17NoticeSign2Text::
 
 	para "Don't throw the"
 	line "game, throw #"
-	cont "BALLs instead!"
+	cont "<BOLD_B><BOLD_A><BOLD_L><BOLD_L>s instead!"
 	done
 
 _Route17CyclingRoadEndsSignText::
-	text "CYCLING ROAD"
+	text "<BOLD_C><BOLD_Y><BOLD_C><BOLD_L><BOLD_I><BOLD_N><BOLD_G> <BOLD_R><BOLD_O><BOLD_A><BOLD_D>"
 	line "Slope ends here!"
 	done

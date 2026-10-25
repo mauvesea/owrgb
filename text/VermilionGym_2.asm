@@ -7,7 +7,7 @@ _VermilionGymLTSurgePostBattleAdviceText::
 
 	para "But, it's useless"
 	line "against ground-"
-	cont "type #MON!"
+	cont "type #<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _VermilionGymLTSurgeThunderBadgeInfoText::
@@ -25,11 +25,11 @@ _VermilionGymLTSurgeReceivedTM24Text::
 _TM24ExplanationText::
 	text_start
 
-	para "TM24 contains"
-	line "THUNDERBOLT!"
+	para "<BOLD_T><BOLD_M>24 contains"
+	line "<BOLD_T><BOLD_H><BOLD_U><BOLD_N><BOLD_D><BOLD_E><BOLD_R><BOLD_B><BOLD_O><BOLD_L><BOLD_T>!"
 
 	para "Teach it to an"
-	line "electric #MON!"
+	line "electric #<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _VermilionGymLTSurgeTM24NoRoomText::
@@ -44,13 +44,13 @@ _VermilionGymLTSurgeReceivedThunderBadgeText::
 	line "deal, kid!"
 
 	para "Fine then, take"
-	line "the THUNDERBADGE!"
+	line "the <BOLD_T><BOLD_H><BOLD_U><BOLD_N><BOLD_D><BOLD_E><BOLD_R><BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>!"
 	prompt
 
 _VermilionGymGentlemanBattleText::
 	text "When I was in the"
-	line "Army, LT.SURGE"
-	cont "was my strict CO!"
+	line "Army, <BOLD_L><BOLD_T>.<BOLD_S><BOLD_U><BOLD_R><BOLD_G><BOLD_E>"
+	cont "was my strict <BOLD_C><BOLD_O>!"
 	done
 
 _VermilionGymGentlemanEndBattleText::
@@ -62,7 +62,7 @@ _VermilionGymGentlemanAfterBattleText::
 	text "The door won't"
 	line "open?"
 
-	para "LT.SURGE always"
+	para "<BOLD_L><BOLD_T>.<BOLD_S><BOLD_U><BOLD_R><BOLD_G><BOLD_E> always"
 	line "was cautious!"
 	done
 
@@ -77,9 +77,9 @@ _VermilionGymSuperNerdEndBattleText::
 	prompt
 
 _VermilionGymSuperNerdAfterBattleText::
-	text "OK, I'll talk!"
+	text "<BOLD_O><BOLD_K>, I'll talk!"
 
-	para "LT.SURGE said he"
+	para "<BOLD_L><BOLD_T>.<BOLD_S><BOLD_U><BOLD_R><BOLD_G><BOLD_E> said he"
 	line "hid door switches"
 	cont "inside something!"
 	done
@@ -95,7 +95,7 @@ _VermilionGymSailorEndBattleText::
 	prompt
 
 _VermilionGymSailorAfterBattleText::
-	text "LT.SURGE set up"
+	text "<BOLD_L><BOLD_T>.<BOLD_S><BOLD_U><BOLD_R><BOLD_G><BOLD_E> set up"
 	line "double locks!"
 	cont "Here's a hint!"
 
@@ -109,21 +109,21 @@ _VermilionGymGymGuideChampInMakingText::
 	text "Yo! Champ in"
 	line "making!"
 
-	para "LT.SURGE has a"
+	para "<BOLD_L><BOLD_T>.<BOLD_S><BOLD_U><BOLD_R><BOLD_G><BOLD_E> has a"
 	line "nickname. People"
 	cont "refer to him as"
 	cont "the Lightning"
 	cont "American!"
 
 	para "He's an expert on"
-	line "electric #MON!"
+	line "electric #<BOLD_M><BOLD_O><BOLD_N>!"
 
 	para "Birds and water"
-	line "#MON are at"
+	line "#<BOLD_M><BOLD_O><BOLD_N> are at"
 	cont "risk! Beware of"
 	cont "paralysis too!"
 
-	para "LT.SURGE is very"
+	para "<BOLD_L><BOLD_T>.<BOLD_S><BOLD_U><BOLD_R><BOLD_G><BOLD_E> is very"
 	line "cautious!"
 
 	para "You'll have to"

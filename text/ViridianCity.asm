@@ -18,7 +18,7 @@ _ViridianCityGambler1GymAlwaysClosedText::
 	done
 
 _ViridianCityGambler1GymLeaderReturnedText::
-	text "<BOLD_V><BOLD_I><BOLD_R><BOLD_I><BOLD_D><BOLD_I><BOLD_A><BOLD_N> <BOLD_G><BOLD_Y><BOLD_M><BOLD_s>"
+	text "<BOLD_V><BOLD_I><BOLD_R><BOLD_I><BOLD_D><BOLD_I><BOLD_A><BOLD_N> <BOLD_G><BOLD_Y><BOLD_M>s"
 	line "<BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R> returned!"
 	done
 

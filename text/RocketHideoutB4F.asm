@@ -5,13 +5,13 @@ _RocketHideoutB4FGiovanniImpressedYouGotHereText::
 	done
 
 _RocketHideoutB4FGiovanniWhatCannotBeText::
-	text "WHAT!"
+	text "<BOLD_W><BOLD_H><BOLD_A><BOLD_T>!"
 	line "This cannot be!"
 	prompt
 
 _RocketHideoutB4FGiovanniHopeWeMeetAgainText::
 	text "I see that you"
-	line "raise #MON"
+	line "raise #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "with utmost care."
 
 	para "A child like you"
@@ -29,7 +29,7 @@ _RocketHideoutB4FGiovanniHopeWeMeetAgainText::
 _RocketHideoutB4FRocket1BattleText::
 	text "I know you! You"
 	line "ruined our plans"
-	cont "at MT.MOON!"
+	cont "at <BOLD_M><BOLD_T>.<BOLD_M><BOLD_O><BOLD_O><BOLD_N>!"
 	done
 
 _RocketHideoutB4FRocket1EndBattleText::
@@ -40,7 +40,7 @@ _RocketHideoutB4FRocket1EndBattleText::
 _RocketHideoutB4FRocket1AfterBattleText::
 	text "Do you have"
 	line "something against"
-	cont "TEAM ROCKET?"
+	cont "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>?"
 	done
 
 _RocketHideoutB4FRocket2BattleText::
@@ -54,14 +54,14 @@ _RocketHideoutB4FRocket2EndBattleText::
 	prompt
 
 _RocketHideoutB4FRocket2AfterBattleText::
-	text "BOSS! I'm sorry I"
+	text "<BOLD_B><BOLD_O><BOLD_S><BOLD_S>! I'm sorry I"
 	line "failed you!"
 	done
 
 _RocketHideoutB4FRocket3BattleText::
 	text "The elevator"
 	line "doesn't work? Who"
-	cont "has the LIFT KEY?"
+	cont "has the <BOLD_L><BOLD_I><BOLD_F><BOLD_T> <BOLD_K><BOLD_E><BOLD_Y>?"
 	done
 
 _RocketHideoutB4FRocket3EndBattleText::
@@ -70,5 +70,5 @@ _RocketHideoutB4FRocket3EndBattleText::
 
 _RocketHideoutB4FRocket3AfterBattleText::
 	text "Oh no! I dropped"
-	line "the LIFT KEY!"
+	line "the <BOLD_L><BOLD_I><BOLD_F><BOLD_T> <BOLD_K><BOLD_E><BOLD_Y>!"
 	done

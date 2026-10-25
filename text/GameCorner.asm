@@ -8,8 +8,8 @@ _GameCornerBeauty1Text::
 	done
 
 _GameCornerClerk1DoYouNeedSomeGameCoinsText::
-	text "Welcome to ROCKET"
-	line "GAME CORNER!"
+	text "Welcome to <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>"
+	line "<BOLD_G><BOLD_A><BOLD_M><BOLD_E> <BOLD_C><BOLD_O><BOLD_R><BOLD_N><BOLD_E><BOLD_R>!"
 
 	para "Do you need some"
 	line "game coins?"
@@ -35,13 +35,13 @@ _GameCornerClerk1CantAffordTheCoinsText::
 	done
 
 _GameCornerClerk1CoinCaseIsFullText::
-	text "Oops! Your COIN"
-	line "CASE is full."
+	text "Oops! Your <BOLD_C><BOLD_O><BOLD_I><BOLD_N>"
+	line "<BOLD_C><BOLD_A><BOLD_S><BOLD_E> is full."
 	done
 
 _GameCornerClerk1DontHaveCoinCaseText::
 	text "You don't have a"
-	line "COIN CASE!"
+	line "<BOLD_C><BOLD_O><BOLD_I><BOLD_N> <BOLD_C><BOLD_A><BOLD_S><BOLD_E>!"
 	done
 
 _GameCornerMiddleAgedMan1Text::
@@ -49,7 +49,7 @@ _GameCornerMiddleAgedMan1Text::
 
 	para "It's rumored that"
 	line "this place is run"
-	cont "by TEAM ROCKET."
+	cont "by <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>."
 	done
 
 _GameCornerBeauty2Text::
@@ -90,10 +90,10 @@ _GameCornerGymGuideChampInMakingText::
 	line "things to do,"
 	cont "champ in making!"
 
-	para "CELADON GYM's"
-	line "LEADER is ERIKA!"
+	para "<BOLD_C><BOLD_E><BOLD_L><BOLD_A><BOLD_D><BOLD_O><BOLD_N> <BOLD_G><BOLD_Y><BOLD_M>'<BOLD_s>"
+	line "<BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R> is <BOLD_E><BOLD_R><BOLD_I><BOLD_K><BOLD_A>!"
 	cont "She uses grass-"
-	cont "type #MON!"
+	cont "type #<BOLD_M><BOLD_O><BOLD_N>!"
 
 	para "She might appear"
 	line "docile, but don't"
@@ -102,7 +102,7 @@ _GameCornerGymGuideChampInMakingText::
 
 _GameCornerGymGuideTheyOfferRarePokemonText::
 	text "They offer rare"
-	line "#MON that can"
+	line "#<BOLD_M><BOLD_O><BOLD_N> that can"
 	cont "be exchanged for"
 	cont "your coins."
 
@@ -134,7 +134,7 @@ _GameCornerClerk2YouHaveLotsOfCoinsText::
 _GameCornerClerk2INeedMoreCoinsText::
 	text "Darn! I need more"
 	line "coins for the"
-	cont "#MON I want!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> I want!"
 	done
 
 _GameCornerGentlemanThrowingMeOffText::
@@ -173,7 +173,7 @@ _GameCornerRocketBattleEndText::
 _GameCornerRocketAfterBattleText::
 	text "Our hideout might"
 	line "be discovered! I"
-	cont "better tell BOSS!"
+	cont "better tell <BOLD_B><BOLD_O><BOLD_S><BOLD_S>!"
 	done
 
 _GameCornerRocketMtMoonText::
@@ -183,7 +183,7 @@ _GameCornerRocketMtMoonText::
 	para "They should've"
 	line "brought those"
 	cont "fossils from"
-	cont "MT.MOON already!"
+	cont "<BOLD_M><BOLD_T>.<BOLD_M><BOLD_O><BOLD_O><BOLD_N> already!"
 	done
 
 _GameCornerPosterSwitchBehindPosterText::
@@ -196,7 +196,7 @@ _GameCornerPosterSwitchBehindPosterText::
 
 _GameCornerOopsForgotCoinCaseText::
 	text "Oops! Forgot the"
-	line "COIN CASE!"
+	line "<BOLD_C><BOLD_O><BOLD_I><BOLD_N> <BOLD_C><BOLD_A><BOLD_S><BOLD_E>!"
 	done
 
 _GashaponMachineTextNotEnoughMoney::

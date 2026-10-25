@@ -5,7 +5,7 @@ _SaffronGateGuardGeeImThirstyText::
 
 	para "If only I could"
 	line "go get a drink"
-	cont "at a #MART..."
+	cont "at a #<BOLD_M><BOLD_A><BOLD_R><BOLD_T>..."
 
 	para "Oh wait there,"
 	line "the road's closed."
@@ -28,7 +28,7 @@ _SaffronGateGuardYouCanGoOnThroughText::
 	cont "..."
 	cont "Gulp..."
 	cont "If you want to go"
-	cont "to SAFFRON CITY..."
+	cont "to <BOLD_S><BOLD_A><BOLD_F><BOLD_F><BOLD_R><BOLD_O><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>..."
 	cont "..."
 	cont "You can go on"
 	cont "through. I'll"

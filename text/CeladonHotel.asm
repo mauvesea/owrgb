@@ -1,5 +1,5 @@
 _CeladonHotelGrannyText::
-	text "#MON? No, this"
+	text "#<BOLD_M><BOLD_O><BOLD_N>? No, this"
 	line "is a hotel for"
 	cont "people."
 
@@ -11,7 +11,7 @@ _CeladonHotelBeautyText::
 	line "with my brother"
 	cont "and boy friend."
 
-	para "CELADON is such a"
+	para "<BOLD_C><BOLD_E><BOLD_L><BOLD_A><BOLD_D><BOLD_O><BOLD_N> is such a"
 	line "pretty city!"
 	done
 

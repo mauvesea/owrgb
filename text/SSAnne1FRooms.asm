@@ -1,5 +1,5 @@
 _SSAnne1FRoomsWigglytuffText::
-	text "WIGGLYTUFF: Puup"
+	text "<BOLD_W><BOLD_I><BOLD_G><BOLD_G><BOLD_L><BOLD_Y><BOLD_T><BOLD_U><BOLD_F><BOLD_F>: Puup"
 	line "pupuu!@"
 	text_end
 
@@ -7,7 +7,7 @@ _SSAnne1FRoomsGentleman1BattleText::
 	text "I travel alone"
 	line "on my journeys!"
 
-	para "My #MON are my"
+	para "My #<BOLD_M><BOLD_O><BOLD_N> are my"
 	line "only friends!"
 	done
 
@@ -37,7 +37,7 @@ _SSAnne1FRoomsGentleman2AfterBattleText::
 	done
 
 _SSAnne1FRoomsYoungsterBattleText::
-	text "I love #MON!"
+	text "I love #<BOLD_M><BOLD_O><BOLD_N>!"
 	line "Do you?"
 	done
 
@@ -48,15 +48,15 @@ _SSAnne1FRoomsYoungsterEndBattleText::
 
 _SSAnne1FRoomsYoungsterAfterBattleText::
 	text "Let me be your"
-	line "friend, OK?"
+	line "friend, <BOLD_O><BOLD_K>?"
 
 	para "Then we can trade"
-	line "#MON!"
+	line "#<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _SSAnne1FRoomsCooltrainerFBattleText::
 	text "I collected these"
-	line "#MON from all"
+	line "#<BOLD_M><BOLD_O><BOLD_N> from all"
 	cont "around the world!"
 	done
 
@@ -68,11 +68,11 @@ _SSAnne1FRoomsCooltrainerFEndBattleText::
 
 _SSAnne1FRoomsCooltrainerFAfterBattleText::
 	text "You hurt my poor"
-	line "worldly #MON!"
+	line "worldly #<BOLD_M><BOLD_O><BOLD_N>!"
 
 	para "I demand that you"
 	line "heal them at a"
-	cont "#MON CENTER!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_C><BOLD_E><BOLD_N><BOLD_T><BOLD_E><BOLD_R>!"
 	done
 
 _SSAnne1FRoomsGirl1Text::
@@ -88,7 +88,7 @@ _SSAnne1FRoomsMiddleAgedManText::
 
 _SSAnne1FRoomsLittleGirlText::
 	text "I always travel"
-	line "with WIGGLYTUFF!"
+	line "with <BOLD_W><BOLD_I><BOLD_G><BOLD_G><BOLD_L><BOLD_Y><BOLD_T><BOLD_U><BOLD_F><BOLD_F>!"
 	done
 
 _SSAnne1FRoomsGirl2Text::
@@ -97,9 +97,9 @@ _SSAnne1FRoomsGirl2Text::
 	done
 
 _SSAnne1FRoomsGentleman3Text::
-	text "Ssh! I'm a GLOBAL"
-	line "POLICE agent!"
+	text "Ssh! I'm a <BOLD_G><BOLD_L><BOLD_O><BOLD_B><BOLD_A><BOLD_L>"
+	line "<BOLD_P><BOLD_O><BOLD_L><BOLD_I><BOLD_C><BOLD_E> agent!"
 
 	para "I'm on the trail"
-	line "of TEAM ROCKET!"
+	line "of <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>!"
 	done

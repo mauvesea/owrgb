@@ -26,19 +26,19 @@ _Museum1FScientist1DoYouKnowWhatAmberIsText::
 
 	para "Oh, whatever!"
 	line "Do you know what"
-	cont "AMBER is?"
+	cont "<BOLD_A><BOLD_M><BOLD_B><BOLD_E><BOLD_R> is?"
 	done
 
 _Museum1FScientist1TheresALabSomewhereText::
 	text "There's a lab"
 	line "somewhere trying"
 	cont "to resurrect"
-	cont "ancient #MON"
-	cont "from AMBER."
+	cont "ancient #<BOLD_M><BOLD_O><BOLD_N>"
+	cont "from <BOLD_A><BOLD_M><BOLD_B><BOLD_E><BOLD_R>."
 	done
 
 _Museum1FScientist1AmberIsFossilizedTreeSapText::
-	text "AMBER is fossil-"
+	text "<BOLD_A><BOLD_M><BOLD_B><BOLD_E><BOLD_R> is fossil-"
 	line "ized tree sap."
 	done
 
@@ -61,11 +61,11 @@ _Museum1FGamblerText::
 _Museum1FScientist2TakeThisToAPokemonLabText::
 	text "Ssh! I think that"
 	line "this chunk of"
-	cont "AMBER contains"
-	cont "#MON DNA!"
+	cont "<BOLD_A><BOLD_M><BOLD_B><BOLD_E><BOLD_R> contains"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_D><BOLD_N><BOLD_A>!"
 
 	para "It would be great"
-	line "if #MON could"
+	line "if #<BOLD_M><BOLD_O><BOLD_N> could"
 	cont "be resurrected"
 	cont "from it!"
 
@@ -76,18 +76,18 @@ _Museum1FScientist2TakeThisToAPokemonLabText::
 	line "to ask!"
 
 	para "Take this to a"
-	line "#MON LAB and"
+	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_A><BOLD_B> and"
 	cont "get it examined!"
 	prompt
 
 _Museum1FScientist2ReceivedOldAmberText::
 	text "<PLAYER> received"
-	line "OLD AMBER!@"
+	line "<BOLD_O><BOLD_L><BOLD_D> <BOLD_A><BOLD_M><BOLD_B><BOLD_E><BOLD_R>!@"
 	text_end
 
 _Museum1FScientist2GetTheOldAmberCheckText::
-	text "Ssh! Get the OLD"
-	line "AMBER checked!"
+	text "Ssh! Get the <BOLD_O><BOLD_L><BOLD_D>"
+	line "<BOLD_A><BOLD_M><BOLD_B><BOLD_E><BOLD_R> checked!"
 	done
 
 _Museum1FScientist2YouDontHaveSpaceText::
@@ -99,10 +99,10 @@ _Museum1FScientist3Text::
 	text "We are proud of 2"
 	line "fossils of very"
 	cont "rare, prehistoric"
-	cont "#MON!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _Museum1FOldAmberText::
-	text "The AMBER is"
+	text "The <BOLD_A><BOLD_M><BOLD_B><BOLD_E><BOLD_R> is"
 	line "clear and gold!"
 	done

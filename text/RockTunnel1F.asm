@@ -9,7 +9,7 @@ _RockTunnel1FHiker1EndBattleText::
 	prompt
 
 _RockTunnel1FHiker1AfterBattleText::
-	text "Watch for ONIX!"
+	text "Watch for <BOLD_O><BOLD_N><BOLD_I><BOLD_X>!"
 	line "It can put the"
 	cont "squeeze on you!"
 	done
@@ -27,7 +27,7 @@ _RockTunnel1FHiker2EndBattleText::
 
 _RockTunnel1FHiker2AfterBattleText::
 	text "That sleeping"
-	line "#MON on ROUTE"
+	line "#<BOLD_M><BOLD_O><BOLD_N> on <BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E>"
 	cont "12 forced me to"
 	cont "take this detour."
 	done
@@ -48,7 +48,7 @@ _RockTunnel1FHiker3AfterBattleText::
 	done
 
 _RockTunnel1FSuperNerdBattleText::
-	text "#MON fight!"
+	text "#<BOLD_M><BOLD_O><BOLD_N> fight!"
 	line "Ready, go!"
 	done
 
@@ -59,7 +59,7 @@ _RockTunnel1FSuperNerdEndBattleText::
 
 _RockTunnel1FSuperNerdAfterBattleText::
 	text "Oh well, I'll get"
-	line "a ZUBAT as I go!"
+	line "a <BOLD_Z><BOLD_U><BOLD_B><BOLD_A><BOLD_T> as I go!"
 	done
 
 _RockTunnel1FCooltrainerF1BattleText::
@@ -74,18 +74,18 @@ _RockTunnel1FCooltrainerF1EndBattleText::
 	prompt
 
 _RockTunnel1FCooltrainerF1AfterBattleText::
-	text "I saw a MACHOP"
+	text "I saw a <BOLD_M><BOLD_A><BOLD_C><BOLD_H><BOLD_O><BOLD_P>"
 	line "in this tunnel!"
 	done
 
 _RockTunnel1FCooltrainerF2BattleText::
 	text "I came this far"
-	line "for #MON!"
+	line "for #<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _RockTunnel1FCooltrainerF2EndBattleText::
 	text "I'm"
-	line "out of #MON!"
+	line "out of #<BOLD_M><BOLD_O><BOLD_N>!"
 	prompt
 
 _RockTunnel1FCooltrainerF2AfterBattleText::
@@ -94,7 +94,7 @@ _RockTunnel1FCooltrainerF2AfterBattleText::
 	done
 
 _RockTunnel1FCooltrainerF3BattleText::
-	text "You have #MON!"
+	text "You have #<BOLD_M><BOLD_O><BOLD_N>!"
 	line "Let's start!"
 	done
 
@@ -109,7 +109,7 @@ _RockTunnel1FCooltrainerF3AfterBattleText::
 	done
 
 _RockTunnel1FSignText::
-	text "ROCK TUNNEL"
-	line "CERULEAN CITY -"
-	cont "LAVENDER TOWN"
+	text "<BOLD_R><BOLD_O><BOLD_C><BOLD_K> <BOLD_T><BOLD_U><BOLD_N><BOLD_N><BOLD_E><BOLD_L>"
+	line "<BOLD_C><BOLD_E><BOLD_R><BOLD_U><BOLD_L><BOLD_E><BOLD_A><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y> -"
+	cont "<BOLD_L><BOLD_A><BOLD_V><BOLD_E><BOLD_N><BOLD_D><BOLD_E><BOLD_R> <BOLD_T><BOLD_O><BOLD_W><BOLD_N>"
 	done

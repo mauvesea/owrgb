@@ -11,14 +11,14 @@ _PokemonFaintedText::
 
 _PlayerBlackedOutText::
 	text "<PLAYER> is out of"
-	line "useable #MON!"
+	line "useable #<BOLD_M><BOLD_O><BOLD_N>!"
 
 	para "<PLAYER> blacked"
 	line "out!"
 	prompt
 
 _RepelWoreOffText::
-	text "REPEL's effect"
+	text "<BOLD_R><BOLD_E><BOLD_P><BOLD_E><BOLD_L>'<BOLD_s> effect"
 	line "wore off."
 	done
 
@@ -32,7 +32,7 @@ _PokemartTellBuyPriceText::
 	line "That will be"
 	cont "¥@"
 	text_bcd hMoney, 3 | LEADING_ZEROES | LEFT_ALIGN
-	text ". OK?"
+	text ". <BOLD_O><BOLD_K>?"
 	done
 
 _PokemartBoughtItemText::
@@ -152,32 +152,32 @@ _ForgotAndText::
 	prompt
 
 _HMCantDeleteText::
-	text "HM techniques"
+	text "<BOLD_H><BOLD_M> techniques"
 	line "can't be deleted!"
 	prompt
 
 _PokemonCenterWelcomeText::
 	text "Welcome to our"
-	line "#MON CENTER!"
+	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_C><BOLD_E><BOLD_N><BOLD_T><BOLD_E><BOLD_R>!"
 
 	para "We heal your"
-	line "#MON back to"
+	line "#<BOLD_M><BOLD_O><BOLD_N> back to"
 	cont "perfect health!"
 	prompt
 
 _ShallWeHealYourPokemonText::
 	text "Shall we heal your"
-	line "#MON?"
+	line "#<BOLD_M><BOLD_O><BOLD_N>?"
 	done
 
 _NeedYourPokemonText::
-	text "OK. We'll need"
-	line "your #MON."
+	text "<BOLD_O><BOLD_K>. We'll need"
+	line "your #<BOLD_M><BOLD_O><BOLD_N>."
 	done
 
 _PokemonFightingFitText::
 	text "Thank you!"
-	line "Your #MON are"
+	line "Your #<BOLD_M><BOLD_O><BOLD_N> are"
 	cont "fighting fit!"
 	prompt
 

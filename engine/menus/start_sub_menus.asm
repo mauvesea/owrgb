@@ -421,36 +421,43 @@ DrawTrainerInfo:
 	ld de, vChars2 tile $00
 	ld bc, $1c tiles
 	call CopyData
+
 	ld hl, TrainerInfoTextBoxTileGraphics
 	ld de, vChars2 tile $77
 	ld bc, 8 tiles
 	push bc
+
 	call TrainerInfo_FarCopyData
 	ld hl, BlankLeaderNames
 	ld de, vChars2 tile $60
 	ld bc, $17 tiles
 	call TrainerInfo_FarCopyData
+
 	pop bc
+
 	ld hl, BadgeNumbersTileGraphics
-	ld de, vChars1 tile $58
+	ld de, vChars1 tile $e8
 	call TrainerInfo_FarCopyData
+
 	ld hl, GymLeaderFaceAndBadgeTileGraphics
 	ld de, vChars2 tile $20
 	ld bc, 8 * 8 tiles
 	ld a, BANK(GymLeaderFaceAndBadgeTileGraphics)
 	call FarCopyData2
+
 	ld hl, TextBoxGraphics
 	ld de, 13 tiles
 	add hl, de ; hl = colon tile pattern
-	ld de, vChars1 tile $56
+	ld de, vChars1 tile $e6
 	ld bc, TILE_SIZE
 	ld a, BANK(TextBoxGraphics)
 	push bc
 	call FarCopyData2
 	pop bc
 	ld hl, TrainerInfoTextBoxTileGraphics tile 8  ; background tile pattern
-	ld de, vChars1 tile $57
+	ld de, vChars1 tile $e7
 	call TrainerInfo_FarCopyData
+
 	call EnableLCD
 	ld hl, wTrainerInfoTextBoxWidthPlus1
 	ld a, 18 + 1
@@ -469,7 +476,7 @@ DrawTrainerInfo:
 	hlcoord 1, 10
 	call TrainerInfo_DrawTextBox
 	hlcoord 0, 10
-	ld a, $d7
+	ld a, $67
 	call TrainerInfo_DrawVerticalLine
 	hlcoord 19, 10
 	call TrainerInfo_DrawVerticalLine
@@ -501,13 +508,13 @@ TrainerInfo_FarCopyData:
 	jp FarCopyData2
 
 TrainerInfo_NameMoneyTimeText:
-	db   "NAME/"
-	next "MONEY/"
-	next "TIME/@"
+	db   "<BOLD_N><BOLD_A><BOLD_M><BOLD_E>/"
+	next "<BOLD_M><BOLD_O><BOLD_N><BOLD_E><BOLD_Y>/"
+	next "<BOLD_T><BOLD_I><BOLD_M><BOLD_E>/@"
 
 ; $76 is a circle tile
 TrainerInfo_BadgesText:
-	db $76,"BADGES",$76,"@"
+	db $76,"<BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E><BOLD_S>",$76,"@"
 
 ; draws a text box on the trainer info screen
 ; height is always 6

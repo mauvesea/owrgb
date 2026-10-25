@@ -6,9 +6,9 @@ _WardensHouseWardenReceivedHM04Text::
 	text_end
 
 _WardensHouseWardenHM04ExplanationText::
-	text "WARDEN: that's"
+	text "<BOLD_W><BOLD_A><BOLD_R><BOLD_D><BOLD_E><BOLD_N>: that's"
 	line "my one and only"
-	cont "CROWBAR!"
+	cont "<BOLD_C><BOLD_R><BOLD_O><BOLD_W><BOLD_B><BOLD_A><BOLD_R>!"
 
 	para "It'll help you"
 	line "move boulders"
@@ -28,26 +28,26 @@ _WardensHouseWardenHM04NoRoomText::
 	done
 
 _WardensHouseDisplayPhotosAndFossilsText::
-	text "#MON photos"
+	text "#<BOLD_M><BOLD_O><BOLD_N> photos"
 	line "and fossils."
 	done
 
 _WardensHouseDisplayMerchandiseText::
-	text "Old #MON"
+	text "Old #<BOLD_M><BOLD_O><BOLD_N>"
 	line "merchandise."
 	done
 
 
 _SafariWardenTextIntro::
-	text "WARDEN: You! You"
+	text "<BOLD_W><BOLD_A><BOLD_R><BOLD_D><BOLD_E><BOLD_N>: You! You"
 	line "look like a"
-	cont "capable #MON"
+	cont "capable #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "trainer."
 
-	para "There's a SILPH CO."
+	para "There's a <BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> <BOLD_C><BOLD_O>."
 	line "employee using"
-	cont "the LAB deep in"
-	cont "the SAFARI ZONE."
+	cont "the <BOLD_L><BOLD_A><BOLD_B> deep in"
+	cont "the <BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I> <BOLD_Z><BOLD_O><BOLD_N><BOLD_E>."
 
 	para "I believe he's up"
 	line "to no good."
@@ -70,8 +70,8 @@ _SafariWardenTextRefused::
 
 _SafariWardenTextCountingOnYou::
 	text "He should be in"
-	line "a LAB deep within"
-	cont "the SAFARI ZONE."
+	line "a <BOLD_L><BOLD_A><BOLD_B> deep within"
+	cont "the <BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I> <BOLD_Z><BOLD_O><BOLD_N><BOLD_E>."
 
 	para "Good luck!"
 	done
@@ -86,7 +86,7 @@ _SafariWardenTextThanks::
 	line "I don't have to"
 	cont "worry about his"
 	cont "actions in my"
-	cont "SAFARI ZONE any-"
+	cont "<BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I> <BOLD_Z><BOLD_O><BOLD_N><BOLD_E> any-"
 	cont "more."
 
 	para "This is for you."

@@ -209,7 +209,7 @@ _ViridianGymGuidePreBattleText::
 	line "making!"
 
 	para "Even I don't know"
-	line "<BOLD_V><BOLD_I><BOLD_R><BOLD_I><BOLD_D><BOLD_I><BOLD_A><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R><BOLD_s>"
+	line "<BOLD_V><BOLD_I><BOLD_R><BOLD_I><BOLD_D><BOLD_I><BOLD_A><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R>s"
 	cont "identity!"
 
 	para "This will be the"

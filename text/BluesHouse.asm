@@ -24,7 +24,7 @@ _BluesHouseDaisyBagFullText::
 	done
 
 _BluesHouseDaisyUseMapText::
-	text "Use the <BOLD_T><BOLD_O><BOLD_W><BOLD_N><BOLD_ ><BOLD_M><BOLD_A><BOLD_P>"
+	text "Use the <BOLD_T><BOLD_O><BOLD_W><BOLD_N> <BOLD_M><BOLD_A><BOLD_P>"
 	line "to find out where"
 	cont "you are."
 	done

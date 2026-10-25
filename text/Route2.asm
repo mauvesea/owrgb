@@ -5,5 +5,5 @@ _Route2SignText::
 	done
 
 _Route2DiglettsCaveSignText::
-	text "<BOLD_D><BOLD_I><BOLD_G><BOLD_L><BOLD_E><BOLD_T><BOLD_T><BOLD_s> <BOLD_C><BOLD_A><BOLD_V><BOLD_E>"
+	text "<BOLD_D><BOLD_I><BOLD_G><BOLD_L><BOLD_E><BOLD_T><BOLD_T>s <BOLD_C><BOLD_A><BOLD_V><BOLD_E>"
 	done

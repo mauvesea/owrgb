@@ -5,7 +5,7 @@ _CeladonChiefHouseChiefText::
 	done
 
 _CeladonChiefHouseChiefText2::
-	text "TEAM ROCKET is"
+	text "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> is"
 	line "gone...?"
 
 	para "I don't care!"
@@ -16,17 +16,17 @@ _CeladonChiefHouseChiefText2::
 	done
 
 _CeladonChiefHouseRocketText::
-	text "CHIEF!"
+	text "<BOLD_C><BOLD_H><BOLD_I><BOLD_E><BOLD_F>!"
 
 	para "We just shipped"
-	line "2000 #MON as"
+	line "2000 #<BOLD_M><BOLD_O><BOLD_N> as"
 	cont "slot prizes!"
 	done
 
 _CeladonChiefHouseSailorText::
 	text "Don't touch the"
 	line "poster at the"
-	cont "GAME CORNER!"
+	cont "<BOLD_G><BOLD_A><BOLD_M><BOLD_E> <BOLD_C><BOLD_O><BOLD_R><BOLD_N><BOLD_E><BOLD_R>!"
 
 	para "There's no secret"
 	line "switch behind it!"
@@ -34,7 +34,7 @@ _CeladonChiefHouseSailorText::
 
 _CeladonChiefHouseSailorText2::
 	text "Guess I have the"
-	line "HIDEOUT all to"
+	line "<BOLD_H><BOLD_I><BOLD_D><BOLD_E><BOLD_O><BOLD_U><BOLD_T> all to"
 	cont "myself now!"
 	done
 

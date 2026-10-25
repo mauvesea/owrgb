@@ -1,11 +1,11 @@
 _BillsHouseBillImNotAPokemonText::
 	text "Hiya! I'm a"
-	line "#MON..."
+	line "#<BOLD_M><BOLD_O><BOLD_N>..."
 	cont "...No I'm not!"
 
-	para "Call me BILL!"
+	para "Call me <BOLD_B><BOLD_I><BOLD_L><BOLD_L>!"
 	line "I'm a true blue"
-	cont "#MANIAC! Hey!"
+	cont "#<BOLD_M><BOLD_A><BOLD_N><BOLD_I><BOLD_A><BOLD_C>! Hey!"
 	cont "What's with that"
 	cont "skeptical look?"
 
@@ -13,7 +13,7 @@ _BillsHouseBillImNotAPokemonText::
 	line "you, I screwed up"
 	cont "an experiment and"
 	cont "got combined with"
-	cont "a #MON!"
+	cont "a #<BOLD_M><BOLD_O><BOLD_N>!"
 
 	para "So, how about it?"
 	line "Help me out here!"
@@ -21,8 +21,8 @@ _BillsHouseBillImNotAPokemonText::
 
 _BillsHouseBillUseSeparationSystemText::
 	text "When I'm in the"
-	line "TELEPORTER, go to"
-	cont "my PC and run the"
+	line "<BOLD_T><BOLD_E><BOLD_L><BOLD_E><BOLD_P><BOLD_O><BOLD_R><BOLD_T><BOLD_E><BOLD_R>, go to"
+	cont "my <BOLD_P><BOLD_C> and run the"
 	cont "Cell Separation"
 	cont "System!"
 	done
@@ -34,16 +34,16 @@ _BillsHouseBillNoYouGottaHelpText::
 
 	para "What do you say,"
 	line "chief? Please?"
-	cont "OK? All right!"
+	cont "<BOLD_O><BOLD_K>? All right!"
 	prompt
 
 _BillsHouseBillThankYouText::
-	text "BILL: Yeehah!"
+	text "<BOLD_B><BOLD_I><BOLD_L><BOLD_L>: Yeehah!"
 	line "Thanks, bud! I"
 	cont "owe you one!"
 
 	para "So, did you come"
-	line "to see my #MON"
+	line "to see my #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "collection?"
 	cont "You didn't?"
 	cont "That's a bummer."
@@ -67,8 +67,8 @@ _SSTicketNoRoomText::
 
 _BillsHouseBillWhyDontYouGoInsteadOfMeText::
 	text "That cruise ship,"
-	line "S.S.ANNE, is in"
-	cont "VERMILION CITY."
+	line "<BOLD_S>.<BOLD_S>.<BOLD_A><BOLD_N><BOLD_N><BOLD_E>, is in"
+	cont "<BOLD_V><BOLD_E><BOLD_R><BOLD_M><BOLD_I><BOLD_L><BOLD_I><BOLD_O><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>."
 	cont "Its passengers"
 	cont "are all trainers!"
 
@@ -81,8 +81,8 @@ _BillsHouseBillWhyDontYouGoInsteadOfMeText::
 	done
 
 _BillsHouseBillCheckOutMyRarePokemonText::
-	text "BILL: Look, bud,"
+	text "<BOLD_B><BOLD_I><BOLD_L><BOLD_L>: Look, bud,"
 	line "just check out"
 	cont "some of my rare"
-	cont "#MON on my PC!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> on my <BOLD_P><BOLD_C>!"
 	done

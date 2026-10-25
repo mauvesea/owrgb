@@ -1,17 +1,17 @@
 _Route12SnorlaxText::
-	text "A sleeping #MON"
+	text "A sleeping #<BOLD_M><BOLD_O><BOLD_N>"
 	line "blocks the way!"
 	done
 
 _Route12SnorlaxWokeUpText::
-	text "SNORLAX woke up!"
+	text "<BOLD_S><BOLD_N><BOLD_O><BOLD_R><BOLD_L><BOLD_A><BOLD_X> woke up!"
 
 	para "It attacked in a"
 	line "grumpy rage!"
 	done
 
 _Route12SnorlaxCalmedDownText::
-	text "SNORLAX calmed"
+	text "<BOLD_S><BOLD_N><BOLD_O><BOLD_R><BOLD_L><BOLD_A><BOLD_X> calmed"
 	line "down! With a big"
 	cont "yawn, it returned"
 	cont "to the mountains!"
@@ -44,14 +44,14 @@ _Route12Fisher2EndBattleText::
 	prompt
 
 _Route12Fisher2AfterBattleText::
-	text "With a better ROD,"
+	text "With a better <BOLD_R><BOLD_O><BOLD_D>,"
 	line "I could catch"
-	cont "better #MON!"
+	cont "better #<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _Route12CooltrainerMBattleText::
 	text "Have you found a"
-	line "MOON STONE?"
+	line "<BOLD_M><BOLD_O><BOLD_O><BOLD_N> <BOLD_S><BOLD_T><BOLD_O><BOLD_N><BOLD_E>?"
 	done
 
 _Route12CooltrainerMEndBattleText::
@@ -60,8 +60,8 @@ _Route12CooltrainerMEndBattleText::
 
 _Route12CooltrainerMAfterBattleText::
 	text "I could have made"
-	line "my #MON evolve"
-	cont "with MOON STONE!"
+	line "my #<BOLD_M><BOLD_O><BOLD_N> evolve"
+	cont "with <BOLD_M><BOLD_O><BOLD_O><BOLD_N> <BOLD_S><BOLD_T><BOLD_O><BOLD_N><BOLD_E>!"
 	done
 
 _Route12SuperNerdBattleText::
@@ -77,12 +77,12 @@ _Route12SuperNerdAfterBattleText::
 	text "Water conducts"
 	line "electricity, so"
 	cont "you should zap"
-	cont "sea #MON!"
+	cont "sea #<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _Route12Fisher3BattleText::
-	text "The FISHING FOOL"
-	line "vs. #MON KID!"
+	text "The <BOLD_F><BOLD_I><BOLD_S><BOLD_H><BOLD_I><BOLD_N><BOLD_G> <BOLD_F><BOLD_O><BOLD_O><BOLD_L>"
+	line "vs. #<BOLD_M><BOLD_O><BOLD_N> <BOLD_K><BOLD_I><BOLD_D>!"
 	done
 
 _Route12Fisher3EndBattleText::
@@ -92,7 +92,7 @@ _Route12Fisher3EndBattleText::
 
 _Route12Fisher3AfterBattleText::
 	text "You beat me at"
-	line "#MON, but I'm"
+	line "#<BOLD_M><BOLD_O><BOLD_N>, but I'm"
 	cont "good at fishing!"
 	done
 
@@ -124,19 +124,19 @@ _Route12Fisher5EndBattleText::
 	prompt
 
 _Route12Fisher5AfterBattleText::
-	text "I catch MAGIKARP"
+	text "I catch <BOLD_M><BOLD_A><BOLD_G><BOLD_I><BOLD_K><BOLD_A><BOLD_R><BOLD_P>"
 	line "all the time, but"
 	cont "they're so weak!"
 	done
 
 _Route12SignText::
-	text "ROUTE 12"
-	line "▲ LAVENDER TOWN"
-	cont "▼ SILENCE BRIDGE"
+	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 12"
+	line "▲ <BOLD_L><BOLD_A><BOLD_V><BOLD_E><BOLD_N><BOLD_D><BOLD_E><BOLD_R> <BOLD_T><BOLD_O><BOLD_W><BOLD_N>"
+	cont "▼ <BOLD_S><BOLD_I><BOLD_L><BOLD_E><BOLD_N><BOLD_C><BOLD_E> <BOLD_B><BOLD_R><BOLD_I><BOLD_D><BOLD_G><BOLD_E>"
 	done
 
 _Route12SportFishingSignText::
-	text "SPORT FISHING AREA"
+	text "<BOLD_S><BOLD_P><BOLD_O><BOLD_R><BOLD_T> <BOLD_F><BOLD_I><BOLD_S><BOLD_H><BOLD_I><BOLD_N><BOLD_G> <BOLD_A><BOLD_R><BOLD_E><BOLD_A>"
 	done
 
 _Route12MasudaText::
@@ -146,13 +146,13 @@ _Route12MasudaText::
 	cont "so relaxing!"
 
 	para "Me? I'm the"
-	line "MUSICIAN! Were"
+	line "<BOLD_M><BOLD_U><BOLD_S><BOLD_I><BOLD_C><BOLD_I><BOLD_A><BOLD_N>! Were"
 	cont "you looking for"
 	cont "me?"
 
 	para "I see. I under-"
 	line "stand how worried"
-	cont "the GAME DIRECTOR"
+	cont "the <BOLD_G><BOLD_A><BOLD_M><BOLD_E> <BOLD_D><BOLD_I><BOLD_R><BOLD_E><BOLD_C><BOLD_T><BOLD_O><BOLD_R>"
 	cont "must be."
 
 	para "We're about to"

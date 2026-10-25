@@ -1,5 +1,5 @@
 _SilphCo6FSilphWorkerM1TookOverTheBuildingText::
-	text "The ROCKETs came"
+	text "The <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>s came"
 	line "and took over the"
 	cont "building!"
 	done
@@ -31,33 +31,33 @@ _SilphCo6FSilphWorkerF1HaveToMarryHimText::
 	done
 
 _SilphCo6FSilphWorkerF2TeamRocketConquerWorldText::
-	text "TEAM ROCKET is"
+	text "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> is"
 	line "trying to conquer"
 	cont "the world with"
-	cont "#MON!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _SilphCo6FSilphWorkerF2TeamRocketRanText::
-	text "TEAM ROCKET ran"
+	text "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> ran"
 	line "because of you!"
 	done
 
 _SilphCo6FSilphWorkerM3TargetedSilphText::
 	text "They must have"
-	line "targeted SILPH"
-	cont "for our #MON"
+	line "targeted <BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H>"
+	cont "for our #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "products."
 	done
 
 _SilphCo6FSilphWorkerM3WorkForSilphText::
 	text "Come work for"
-	line "SILPH when you"
+	line "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> when you"
 	cont "get older!"
 	done
 
 _SilphCo6FRocket1BattleText::
 	text "I am one of the 4"
-	line "ROCKET BROTHERS!"
+	line "<BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> <BOLD_B><BOLD_R><BOLD_O><BOLD_T><BOLD_H><BOLD_E><BOLD_R><BOLD_S>!"
 	done
 
 _SilphCo6FRocket1EndBattleText::
@@ -73,11 +73,11 @@ _SilphCo6FRocket1AfterBattleText::
 
 _SilphCo6FScientistBattleText::
 	text "That rotten"
-	line "PRESIDENT!"
+	line "<BOLD_P><BOLD_R><BOLD_E><BOLD_S><BOLD_I><BOLD_D><BOLD_E><BOLD_N><BOLD_T>!"
 
 	para "He shouldn't have"
 	line "sent me to the"
-	cont "TIKSI BRANCH!"
+	cont "<BOLD_T><BOLD_I><BOLD_K><BOLD_S><BOLD_I> <BOLD_B><BOLD_R><BOLD_A><BOLD_N><BOLD_C><BOLD_H>!"
 	done
 
 _SilphCo6FScientistEndBattleText::
@@ -85,14 +85,14 @@ _SilphCo6FScientistEndBattleText::
 	prompt
 
 _SilphCo6FScientistAfterBattleText::
-	text "TIKSI BRANCH?"
+	text "<BOLD_T><BOLD_I><BOLD_K><BOLD_S><BOLD_I> <BOLD_B><BOLD_R><BOLD_A><BOLD_N><BOLD_C><BOLD_H>?"
 	line "It's in Russian"
 	cont "no man's land!"
 	done
 
 _SilphCo6FRocket2BattleText::
 	text "You dare betray"
-	line "TEAM ROCKET?"
+	line "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>?"
 	done
 
 _SilphCo6FRocket2EndBattleText::

@@ -7,13 +7,13 @@ _CeladonGymErikaPreBattleText::
 	line "I must have dozed"
 	cont "off. Welcome."
 
-	para "My name is ERIKA."
-	line "I am the LEADER"
-	cont "of CELADON GYM."
+	para "My name is <BOLD_E><BOLD_R><BOLD_I><BOLD_K><BOLD_A>."
+	line "I am the <BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R>"
+	cont "of <BOLD_C><BOLD_E><BOLD_L><BOLD_A><BOLD_D><BOLD_O><BOLD_N> <BOLD_G><BOLD_Y><BOLD_M>."
 
 	para "I teach the art of"
 	line "flower arranging."
-	cont "My #MON are of"
+	cont "My #<BOLD_M><BOLD_O><BOLD_N> are of"
 	cont "the grass-type."
 
 	para "Oh, I'm sorry, I"
@@ -33,16 +33,16 @@ _CeladonGymErikaReceivedRainbowBadgeText::
 	line "strong."
 
 	para "I must confer you"
-	line "the RAINBOWBADGE."
+	line "the <BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_B><BOLD_O><BOLD_W><BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>."
 	prompt
 
 _CeladonGymErikaPostBattleAdviceText::
 	text "You are cataloging"
-	line "#MON? I must"
+	line "#<BOLD_M><BOLD_O><BOLD_N>? I must"
 	cont "say I'm impressed."
 
 	para "I would never"
-	line "collect #MON"
+	line "collect #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "if they were"
 	cont "unattractive."
 	done
@@ -62,13 +62,13 @@ _CeladonGymReceivedTM21Text::
 _TM21ExplanationText::
 	text_start
 
-	para "TM21 contains"
-	line "MEGA DRAIN."
+	para "<BOLD_T><BOLD_M>21 contains"
+	line "<BOLD_M><BOLD_E><BOLD_G><BOLD_A> <BOLD_D><BOLD_R><BOLD_A><BOLD_I><BOLD_N>."
 
 	para "Half the damage"
 	line "it inflicts is"
 	cont "drained to heal"
-	cont "your #MON!"
+	cont "your #<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _CeladonGymTM21NoRoomText::
@@ -90,7 +90,7 @@ _CeladonGymEndBattleText2::
 
 _CeladonGymAfterBattleText2::
 	text "Bleaah!"
-	line "I hope ERIKA"
+	line "I hope <BOLD_E><BOLD_R><BOLD_I><BOLD_K><BOLD_A>"
 	cont "wipes you out!"
 	done
 
@@ -105,13 +105,13 @@ _CeladonGymEndBattleText3::
 	prompt
 
 _CeladonGymAfterBattleText3::
-	text "Grass-type #MON"
+	text "Grass-type #<BOLD_M><BOLD_O><BOLD_N>"
 	line "are tough against"
 	cont "the water-type!"
 
 	para "They also have an"
 	line "edge on rock and"
-	cont "ground #MON!"
+	cont "ground #<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _CeladonGymBattleText4::
@@ -132,7 +132,7 @@ _CeladonGymAfterBattleText4::
 
 _CeladonGymBattleText5::
 	text "Look at my grass"
-	line "#MON!"
+	line "#<BOLD_M><BOLD_O><BOLD_N>!"
 
 	para "They're so easy"
 	line "to raise!"
@@ -144,8 +144,8 @@ _CeladonGymEndBattleText5::
 
 _CeladonGymAfterBattleText5::
 	text "We only use grass-"
-	line "type #MON at"
-	cont "our GYM!"
+	line "type #<BOLD_M><BOLD_O><BOLD_N> at"
+	cont "our <BOLD_G><BOLD_Y><BOLD_M>!"
 
 	para "We also use them"
 	line "for making flower"
@@ -155,7 +155,7 @@ _CeladonGymAfterBattleText5::
 _CeladonGymBattleText6::
 	text "Don't bring any"
 	line "bugs or fire"
-	cont "#MON in here!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> in here!"
 	done
 
 _CeladonGymEndBattleText6::
@@ -164,7 +164,7 @@ _CeladonGymEndBattleText6::
 	prompt
 
 _CeladonGymAfterBattleText6::
-	text "Our LEADER, ERIKA,"
+	text "Our <BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R>, <BOLD_E><BOLD_R><BOLD_I><BOLD_K><BOLD_A>,"
 	line "might be quiet,"
 	cont "but she's also"
 	cont "very skilled!"
@@ -173,7 +173,7 @@ _CeladonGymAfterBattleText6::
 _CeladonGymBattleText7::
 	text "Pleased to meet"
 	line "you. My hobby is"
-	cont "#MON training."
+	cont "#<BOLD_M><BOLD_O><BOLD_N> training."
 	done
 
 _CeladonGymEndBattleText7::
@@ -190,7 +190,7 @@ _CeladonGymAfterBattleText7::
 
 _CeladonGymBattleText8::
 	text "Welcome to"
-	line "CELADON GYM!"
+	line "<BOLD_C><BOLD_E><BOLD_L><BOLD_A><BOLD_D><BOLD_O><BOLD_N> <BOLD_G><BOLD_Y><BOLD_M>!"
 
 	para "You better not"
 	line "underestimate"
@@ -204,7 +204,7 @@ _CeladonGymEndBattleText8::
 
 _CeladonGymAfterBattleText8::
 	text "I didn't bring my"
-	line "best #MON!"
+	line "best #<BOLD_M><BOLD_O><BOLD_N>!"
 
 	para "Wait 'til next"
 	line "time!"

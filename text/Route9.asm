@@ -1,5 +1,5 @@
 _Route9CooltrainerF1BattleText::
-	text "You have #MON"
+	text "You have #<BOLD_M><BOLD_O><BOLD_N>"
 	line "with you!"
 	cont "You're mine!"
 	done
@@ -18,7 +18,7 @@ _Route9CooltrainerF1AfterBattleText::
 _Route9CooltrainerM1BattleText::
 	text "Who's that walking"
 	line "with those good"
-	cont "looking #MON?"
+	cont "looking #<BOLD_M><BOLD_O><BOLD_N>?"
 	done
 
 _Route9CooltrainerM1EndBattleText::
@@ -31,9 +31,9 @@ _Route9CooltrainerM1AfterBattleText::
 	done
 
 _Route9CooltrainerM2BattleText::
-	text "I'm taking ROCK"
-	line "TUNNEL to go to"
-	cont "LAVENDER..."
+	text "I'm taking <BOLD_R><BOLD_O><BOLD_C><BOLD_K>"
+	line "<BOLD_T><BOLD_U><BOLD_N><BOLD_N><BOLD_E><BOLD_L> to go to"
+	cont "<BOLD_L><BOLD_A><BOLD_V><BOLD_E><BOLD_N><BOLD_D><BOLD_E><BOLD_R>..."
 	done
 
 _Route9CooltrainerM2EndBattleText::
@@ -43,7 +43,7 @@ _Route9CooltrainerM2EndBattleText::
 
 _Route9CooltrainerM2AfterBattleText::
 	text "Are you off to"
-	line "ROCK TUNNEL too?"
+	line "<BOLD_R><BOLD_O><BOLD_C><BOLD_K> <BOLD_T><BOLD_U><BOLD_N><BOLD_N><BOLD_E><BOLD_L> too?"
 	done
 
 _Route9CooltrainerF2BattleText::
@@ -73,7 +73,7 @@ _Route9Hiker1EndBattleText::
 	line "coming, eh!"
 
 	para "Oh wait. I'm out"
-	line "of #MON!"
+	line "of #<BOLD_M><BOLD_O><BOLD_N>!"
 	prompt
 
 _Route9Hiker1AfterBattleText::
@@ -101,12 +101,12 @@ _Route9Hiker2AfterBattleText::
 _Route9Youngster1BattleText::
 	text "I got up early"
 	line "every day to"
-	cont "raise my #MON"
+	cont "raise my #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "from cocoons!"
 	done
 
 _Route9Youngster1EndBattleText::
-	text "WHAT?"
+	text "<BOLD_W><BOLD_H><BOLD_A><BOLD_T>?"
 
 	para "What a total"
 	line "waste of time!"
@@ -136,7 +136,7 @@ _Route9Hiker3AfterBattleText::
 
 _Route9Youngster2BattleText::
 	text "Go, my super bug"
-	line "#MON!"
+	line "#<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _Route9Youngster2EndBattleText::
@@ -146,12 +146,12 @@ _Route9Youngster2EndBattleText::
 
 _Route9Youngster2AfterBattleText::
 	text "If you don't like"
-	line "bug #MON, you"
+	line "bug #<BOLD_M><BOLD_O><BOLD_N>, you"
 	cont "bug me!"
 	done
 
 _Route9SignText::
-	text "ROUTE 9"
-	line "◀ CERULEAN CITY"
-	cont "▶ ROCK TUNNEL"
+	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 9"
+	line "◀ <BOLD_C><BOLD_E><BOLD_R><BOLD_U><BOLD_L><BOLD_E><BOLD_A><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
+	cont "▶ <BOLD_R><BOLD_O><BOLD_C><BOLD_K> <BOLD_T><BOLD_U><BOLD_N><BOLD_N><BOLD_E><BOLD_L>"
 	done

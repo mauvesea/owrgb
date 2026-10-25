@@ -1,7 +1,7 @@
 _SilphCo11FSilphPresidentText::
-	text "PRESIDENT: Thank"
+	text "<BOLD_P><BOLD_R><BOLD_E><BOLD_S><BOLD_I><BOLD_D><BOLD_E><BOLD_N><BOLD_T>: Thank"
 	line "you for saving"
-	cont "SILPH!"
+	cont "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H>!"
 
 	para "I will never"
 	line "forget you saved"
@@ -27,23 +27,23 @@ _SilphCo11FSilphPresidentReceivedMasterBallText::
 	text_end
 
 _SilphCo11FSilphPresidentMasterBallDescriptionText::
-	text "PRESIDENT: You"
+	text "<BOLD_P><BOLD_R><BOLD_E><BOLD_S><BOLD_I><BOLD_D><BOLD_E><BOLD_N><BOLD_T>: You"
 	line "can't buy that"
 	cont "anywhere!"
 
 	para "It's our secret"
-	line "prototype MASTER"
-	cont "BALL!"
+	line "prototype <BOLD_M><BOLD_A><BOLD_S><BOLD_T><BOLD_E><BOLD_R>"
+	cont "<BOLD_B><BOLD_A><BOLD_L><BOLD_L>!"
 
 	para "It was made by a"
 	line "brilliant scien-"
 	cont "tist that unfor-"
 	cont "tunately decided"
-	cont "to join TEAM"
-	cont "ROCKET..."
+	cont "to join <BOLD_T><BOLD_E><BOLD_A><BOLD_M>"
+	cont "<BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>..."
 
 	para "It will catch any"
-	line "#MON without"
+	line "#<BOLD_M><BOLD_O><BOLD_N> without"
 	cont "fail!"
 
 	para "You should be"
@@ -57,7 +57,7 @@ _SilphCo11FSilphPresidentNoRoomText::
 	done
 
 _SilphCo11FBeautyText::
-	text "SECRETARY: Thank"
+	text "<BOLD_S><BOLD_E><BOLD_C><BOLD_R><BOLD_E><BOLD_T><BOLD_A><BOLD_R><BOLD_Y>: Thank"
 	line "you for rescuing"
 	cont "all of us!"
 
@@ -74,7 +74,7 @@ _SilphCo11FGiovanniText::
 	text "Ah <PLAYER>!"
 	line "So we meet again!"
 
-	para "The PRESIDENT and"
+	para "The <BOLD_P><BOLD_R><BOLD_E><BOLD_S><BOLD_I><BOLD_D><BOLD_E><BOLD_N><BOLD_T> and"
 	line "I are discussing"
 	cont "a vital business"
 	cont "proposition."
@@ -95,15 +95,15 @@ _SilphCo10FGiovanniILostAgainText::
 _SilphCo11FGiovanniYouRuinedOurPlansText::
 	text "Blast it all!"
 	line "You ruined our"
-	cont "plans for SILPH!"
+	cont "plans for <BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H>!"
 
-	para "But, TEAM ROCKET"
+	para "But, <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>"
 	line "will never fall!"
 
 	para "<PLAYER>! Never"
 	line "forget that all"
-	cont "#MON exist"
-	cont "for TEAM ROCKET!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> exist"
+	cont "for <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>!"
 
 	para "I must go, but I"
 	line "shall return!"
@@ -113,11 +113,11 @@ _SilphCo11FRocket1BattleText::
 	text "It's you again,"
 	line "insect!"
 
-	para "Once TEAM ROCKET"
+	para "Once <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>"
 	line "gets rid of that"
-	cont "stupid PRESIDENT,"
+	cont "stupid <BOLD_P><BOLD_R><BOLD_E><BOLD_S><BOLD_I><BOLD_D><BOLD_E><BOLD_N><BOLD_T>,"
 	cont "I shall become"
-	cont "SILPH CO.'s next"
+	cont "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> CO.'s next"
 	cont "president!"
 
 	para "You won't be so"
@@ -141,7 +141,7 @@ _SilphCo11FRocket1AfterBattleText::
 _SilphCo11FRocket2BattleText::
 	text "Halt! Do you have"
 	line "an appointment"
-	cont "with my BOSS?"
+	cont "with my <BOLD_B><BOLD_O><BOLD_S><BOLD_S>?"
 	done
 
 _SilphCo11FRocket2EndBattleText::
@@ -151,11 +151,11 @@ _SilphCo11FRocket2EndBattleText::
 
 _SilphCo11FRocket2AfterBattleText::
 	text "Watch your step,"
-	line "my BOSS likes his"
-	cont "#MON tough!"
+	line "my <BOLD_B><BOLD_O><BOLD_S><BOLD_S> likes his"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> tough!"
 	done
 
 _SilphCo10FPorygonText::
 	text "The monitor has"
-	line "#MON on it!"
+	line "#<BOLD_M><BOLD_O><BOLD_N> on it!"
 	done

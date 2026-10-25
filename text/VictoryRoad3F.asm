@@ -9,8 +9,8 @@ _VictoryRoad3FCooltrainerM1EndBattleText::
 	prompt
 
 _VictoryRoad3FCooltrainerM1AfterBattleText::
-	text "You beat GIOVANNI"
-	line "of TEAM ROCKET?"
+	text "You beat <BOLD_G><BOLD_I><BOLD_O><BOLD_V><BOLD_A><BOLD_N><BOLD_N><BOLD_I>"
+	line "of <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>?"
 	done
 
 _VictoryRoad3FCooltrainerF1BattleText::
@@ -41,7 +41,7 @@ _VictoryRoad3FCooltrainerM2EndBattleText::
 _VictoryRoad3FCooltrainerM2AfterBattleText::
 	text "All trainers here"
 	line "are headed to the"
-	cont "#MON LEAGUE!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>!"
 	cont "Be careful!"
 	done
 

@@ -1,18 +1,18 @@
 _PewterNidoranHouseNidoranText::
-	text "NIDORAN: Bowbow!@"
+	text "<BOLD_N><BOLD_I><BOLD_D><BOLD_O><BOLD_R><BOLD_A><BOLD_N>: Bowbow!@"
 	text_end
 
 _PewterNidoranHouseLittleBoyText::
-	text "NIDORAN sit!"
+	text "<BOLD_N><BOLD_I><BOLD_D><BOLD_O><BOLD_R><BOLD_A><BOLD_N> sit!"
 	done
 
 _PewterNidoranHouseMiddleAgedManText::
-	text "Our #MON's an"
+	text "Our #<BOLD_M><BOLD_O><BOLD_N>'<BOLD_s> an"
 	line "outsider, so it's"
 	cont "hard to handle."
 
 	para "An outsider is a"
-	line "#MON that you"
+	line "#<BOLD_M><BOLD_O><BOLD_N> that you"
 	cont "get in a trade."
 
 	para "It grows fast, but"
@@ -21,5 +21,5 @@ _PewterNidoranHouseMiddleAgedManText::
 	cont "in battle!"
 
 	para "If only we had"
-	line "some BADGEs..."
+	line "some <BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>s..."
 	done

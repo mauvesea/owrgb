@@ -1,41 +1,41 @@
 _CeruleanBadgeHouseMiddleAgedManText1::
-	text "#MON BADGEs"
+	text "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>s"
 	line "are owned only by"
 	cont "skilled trainers."
 
-	para "Those BADGEs have"
+	para "Those <BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>s have"
 	line "amazing secrets!"
 
 	para "Did you know that"
-	line "the more BADGEs"
+	line "the more <BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>s"
 	cont "you have, the"
 	cont "stronger your"
-	cont "#MON will be?"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> will be?"
 	done
 
 _CeruleanBadgeHouseMiddleAgedManText2::
 	text "With a single"
-	line "BADGE, their"
-	cont "ATTACK will in-"
+	line "<BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>, their"
+	cont "<BOLD_A><BOLD_T><BOLD_T><BOLD_A><BOLD_C><BOLD_K> will in-"
 	cont "crease a bit!"
 
 	para "Three of them on"
 	line "hand, and their"
-	cont "DEFENSE will"
+	cont "<BOLD_D><BOLD_E><BOLD_F><BOLD_E><BOLD_N><BOLD_S><BOLD_E> will"
 	cont "increase too!"
 
 	para "Five and Seven"
 	line "will increase"
-	cont "SPEED and SPECIAL"
+	cont "<BOLD_S><BOLD_P><BOLD_E><BOLD_E><BOLD_D> and <BOLD_S><BOLD_P><BOLD_E><BOLD_C><BOLD_I><BOLD_A><BOLD_L>"
 	cont "respectively."
 
 	para "..."
 
 	para "Oh, right!"
-	line "The more BADGEs,"
+	line "The more <BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>s,"
 	cont "the easier it'll"
 	cont "be to handle"
-	cont "#MON you got"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> you got"
 	cont "on a trade."
 
 	para "Have you heard of"
@@ -44,33 +44,33 @@ _CeruleanBadgeHouseMiddleAgedManText2::
 
 _CeruleanBadgeHouseMiddleAgedManText3::
 	text "When you have no"
-	line "BADGEs, only"
-	cont "weak #MON up"
-	cont "to L10 will"
+	line "<BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>s, only"
+	cont "weak #<BOLD_M><BOLD_O><BOLD_N> up"
+	cont "to <BOLD_L>10 will"
 	cont "follow what you"
 	cont "say."
 
-	para "#MON up to L30"
+	para "#<BOLD_M><BOLD_O><BOLD_N> up to <BOLD_L>30"
 	line "will obey you"
-	cont "with two BADGEs"
+	cont "with two <BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>s"
 	cont "on hand."
 
-	para "With four BADGEs,"
-	line "#MON as power-"
-	cont "ful as L50 will"
+	para "With four <BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>s,"
+	line "#<BOLD_M><BOLD_O><BOLD_N> as power-"
+	cont "ful as <BOLD_L>50 will"
 	cont "listen to you!"
 
 	para "Six of them and"
-	line "#MON up to"
-	cont "L70 will follow"
+	line "#<BOLD_M><BOLD_O><BOLD_N> up to"
+	cont "<BOLD_L>70 will follow"
 	cont "your commands."
 
 	para "If you have all"
-	line "BADGEs with you,"
+	line "<BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>s with you,"
 	cont "well..."
 
 	para "There won't be a"
-	line "single #MON"
+	line "single #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "too strong for"
 	cont "you to handle!"
 	done
@@ -79,7 +79,7 @@ _CeruleanBadgeHouseMiddleAgedManText4::
 	text "I see..."
 
 	para "You must know a"
-	line "lot about BADGEs!"
+	line "lot about <BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>s!"
 	done
 
 

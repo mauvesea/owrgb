@@ -1,6 +1,6 @@
 _FuchsiaGoodRodHouseFishingGuruText::
-	text "I'm the FISHING"
-	line "GURU's older"
+	text "I'm the <BOLD_F><BOLD_I><BOLD_S><BOLD_H><BOLD_I><BOLD_N><BOLD_G>"
+	line "<BOLD_G><BOLD_U><BOLD_R><BOLD_U>'<BOLD_s> older"
 	cont "brother!"
 
 	para "I simply Looove"

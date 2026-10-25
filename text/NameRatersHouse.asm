@@ -1,15 +1,15 @@
 _NameRatersHouseNameRaterWantMeToRateText::
 	text "Hello, hello!"
 	line "I am the official"
-	cont "NAME RATER!"
+	cont "<BOLD_N><BOLD_A><BOLD_M><BOLD_E> <BOLD_R><BOLD_A><BOLD_T><BOLD_E><BOLD_R>!"
 
 	para "Want me to rate"
 	line "the nicknames of"
-	cont "your #MON?"
+	cont "your #<BOLD_M><BOLD_O><BOLD_N>?"
 	done
 
 _NameRatersHouseNameRaterWhichPokemonText::
-	text "Which #MON"
+	text "Which #<BOLD_M><BOLD_O><BOLD_N>"
 	line "should I look at?"
 	prompt
 
@@ -32,7 +32,7 @@ _NameRatersHouseNameRaterWhatShouldWeNameItText::
 	prompt
 
 _NameRatersHouseNameRaterPokemonHasBeenRenamedText::
-	text "OK! This #MON"
+	text "<BOLD_O><BOLD_K>! This #<BOLD_M><BOLD_O><BOLD_N>"
 	line "has been renamed"
 	cont "@"
 	text_ram wBuffer

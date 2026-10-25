@@ -5,7 +5,7 @@ _FileDataDestroyedText::
 
 _WouldYouLikeToSaveText::
 	text "Would you like to"
-	line "SAVE the game?"
+	line "<BOLD_S><BOLD_A><BOLD_V><BOLD_E> the game?"
 	done
 
 _GameSavedText::
@@ -21,7 +21,7 @@ _OlderFileWillBeErasedText::
 
 _WhenYouChangeBoxText::
 	text "When you change a"
-	line "#MON BOX, data"
+	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_B><BOLD_O><BOLD_X>, data"
 	cont "will be saved."
 
 	para "Is that okay?"
@@ -29,7 +29,7 @@ _WhenYouChangeBoxText::
 
 _ChooseABoxText::
 	text "Choose a"
-	line "<PKMN> BOX.@"
+	line "<PKMN> <BOLD_B><BOLD_O><BOLD_X>.@"
 	text_end
 
 _EvolvedText::
@@ -64,7 +64,7 @@ _FellAsleepText::
 	prompt
 
 _AlreadyAsleepText::
-	text "<TARGET>'s"
+	text "<TARGET><BOLD_s>"
 	line "already asleep!"
 	prompt
 
@@ -74,7 +74,7 @@ _PoisonedText::
 	prompt
 
 _BadlyPoisonedText::
-	text "<TARGET>'s"
+	text "<TARGET><BOLD_s>"
 	line "badly poisoned!"
 	prompt
 
@@ -94,7 +94,7 @@ _FireDefrostedText::
 	prompt
 
 _MonsStatsRoseText::
-	text "<USER>'s"
+	text "<USER><BOLD_s>"
 	line "@"
 	text_ram wStringBuffer
 	text "@"
@@ -109,7 +109,7 @@ _RoseText::
 	prompt
 
 _MonsStatsFellText::
-	text "<TARGET>'s"
+	text "<TARGET><BOLD_s>"
 	line "@"
 	text_ram wStringBuffer
 	text "@"
@@ -186,7 +186,7 @@ _MimicLearnedMoveText::
 	prompt
 
 _MoveWasDisabledText::
-	text "<TARGET>'s"
+	text "<TARGET><BOLD_s>"
 	line "@"
 	text_ram wNameBuffer
 	text " was"
@@ -216,24 +216,24 @@ _IsUnaffectedText::
 	prompt
 
 _ParalyzedMayNotAttackText::
-	text "<TARGET>'s"
+	text "<TARGET><BOLD_s>"
 	line "paralyzed! It may"
 	cont "not attack!"
 	prompt
 
 _SubstituteText::
 	text "It created a"
-	line "SUBSTITUTE!"
+	line "<BOLD_S><BOLD_U><BOLD_B><BOLD_S><BOLD_T><BOLD_I><BOLD_T><BOLD_U><BOLD_T><BOLD_E>!"
 	prompt
 
 _HasSubstituteText::
 	text "<USER>"
-	line "has a SUBSTITUTE!"
+	line "has a <BOLD_S><BOLD_U><BOLD_B><BOLD_S><BOLD_T><BOLD_I><BOLD_T><BOLD_U><BOLD_T><BOLD_E>!"
 	prompt
 
 _TooWeakSubstituteText::
 	text "Too weak to make"
-	line "a SUBSTITUTE!"
+	line "a <BOLD_S><BOLD_U><BOLD_B><BOLD_S><BOLD_T><BOLD_I><BOLD_T><BOLD_U><BOLD_T><BOLD_E>!"
 	prompt
 
 _CoinsScatteredText::
@@ -242,7 +242,7 @@ _CoinsScatteredText::
 	prompt
 
 _GettingPumpedText::
-	text "<USER>'s"
+	text "<USER><BOLD_s>"
 	line "getting pumped!"
 	prompt
 
@@ -257,17 +257,17 @@ _EvadedAttackText::
 	prompt
 
 _HitWithRecoilText::
-	text "<USER>'s"
+	text "<USER><BOLD_s>"
 	line "hit with recoil!"
 	prompt
 
 _ConvertedTypeText::
 	text "Converted type to"
-	line "<TARGET>'s!"
+	line "<TARGET><BOLD_s>!"
 	prompt
 
 _StatusChangesEliminatedText::
-	text "All STATUS changes"
+	text "All <BOLD_S><BOLD_T><BOLD_A><BOLD_T><BOLD_U><BOLD_S> changes"
 	line "are eliminated!"
 	prompt
 
@@ -296,7 +296,7 @@ _TransformedText::
 	prompt
 
 _LightScreenProtectedText::
-	text "<USER>'s"
+	text "<USER><BOLD_s>"
 	line "protected against"
 	cont "special attacks!"
 	prompt
@@ -307,7 +307,7 @@ _ReflectGainedArmorText::
 	prompt
 
 _ShroudedInMistText::
-	text "<USER>'s"
+	text "<USER><BOLD_s>"
 	line "shrouded in mist!"
 	prompt
 
@@ -317,7 +317,7 @@ _SuckedHealthText::
 	prompt
 
 _DreamWasEatenText::
-	text "<TARGET>'s"
+	text "<TARGET><BOLD_s>"
 	line "dream was eaten!"
 	prompt
 

@@ -10,12 +10,12 @@ _CableClubNPCMakingPreparationsText::
 
 _UsedStrengthText::
 	text "<PLAYER> used the"
-	line "CROWBAR!@"
+	line "<BOLD_C><BOLD_R><BOLD_O><BOLD_W><BOLD_B><BOLD_A><BOLD_R>!@"
 	text_end
 
 _UsedFlyText::
 	text "<PLAYER> put on"
-	line "the PARAGLIDER!@"
+	line "the <BOLD_P><BOLD_A><BOLD_R><BOLD_A><BOLD_G><BOLD_L><BOLD_I><BOLD_D><BOLD_E><BOLD_R>!@"
 	text_end
 
 _CanMoveBouldersText::
@@ -39,30 +39,30 @@ _CyclingIsFunText::
 
 _FlashLightsAreaText::
 	text "<PLAYER> turned"
-	line "the FLASHLIGHT"
+	line "the <BOLD_F><BOLD_L><BOLD_A><BOLD_S><BOLD_H><BOLD_L><BOLD_I><BOLD_G><BOLD_H><BOLD_T>"
 	cont "on!"
 	prompt
 
 _WarpToLastPokemonCenterText::
 	text "Warp to the last"
-	line "#MON CENTER."
+	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_C><BOLD_E><BOLD_N><BOLD_T><BOLD_E><BOLD_R>."
 	done
 
 _CannotUseTeleportNowText::
 	text_ram wNameBuffer
 	text " can't"
-	line "use TELEPORT now."
+	line "use <BOLD_T><BOLD_E><BOLD_L><BOLD_E><BOLD_P><BOLD_O><BOLD_R><BOLD_T> now."
 	prompt
 
 _CannotFlyHereText::
 	text "It's dangerous to"
 	line "use the"
-	cont "PARAGLIDER here!"
+	cont "<BOLD_P><BOLD_A><BOLD_R><BOLD_A><BOLD_G><BOLD_L><BOLD_I><BOLD_D><BOLD_E><BOLD_R> here!"
 	prompt
 
 _UsedParagliderText::
 	text "<PLAYER> put on"
-	line "the PARAGLIDER!"
+	line "the <BOLD_P><BOLD_A><BOLD_R><BOLD_A><BOLD_G><BOLD_L><BOLD_I><BOLD_D><BOLD_E><BOLD_R>!"
 	prompt
 
 _NotHealthyEnoughText::
@@ -71,7 +71,7 @@ _NotHealthyEnoughText::
 	prompt
 
 _NewBadgeRequiredText::
-	text "No! A new BADGE"
+	text "No! A new <BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>"
 	line "is required."
 	prompt
 
@@ -94,24 +94,24 @@ _GotMonText::
 
 _SentToBoxText::
 	text "There's no more"
-	line "room for #MON!"
+	line "room for #<BOLD_M><BOLD_O><BOLD_N>!"
 	cont "@"
 	text_ram wBoxMonNicks
 	text " was"
-	cont "sent to #MON"
-	cont "BOX @"
+	cont "sent to #<BOLD_M><BOLD_O><BOLD_N>"
+	cont "<BOLD_B><BOLD_O><BOLD_X> @"
 	text_ram wStringBuffer
-	text " on PC!"
+	text " on <BOLD_P><BOLD_C>!"
 	done
 
 _BoxIsFullText::
 	text "There's no more"
-	line "room for #MON!"
+	line "room for #<BOLD_M><BOLD_O><BOLD_N>!"
 
-	para "The #MON BOX"
+	para "The #<BOLD_M><BOLD_O><BOLD_N> <BOLD_B><BOLD_O><BOLD_X>"
 	line "is full and can't"
 	cont "accept any more!"
 
-	para "Change the BOX at"
-	line "a #MON CENTER!"
+	para "Change the <BOLD_B><BOLD_O><BOLD_X> at"
+	line "a #<BOLD_M><BOLD_O><BOLD_N> <BOLD_C><BOLD_E><BOLD_N><BOLD_T><BOLD_E><BOLD_R>!"
 	done

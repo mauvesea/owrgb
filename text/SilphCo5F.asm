@@ -1,12 +1,12 @@
 _SilphCo5FSilphWorkerMThatsYouRightText::
-	text "TEAM ROCKET is"
+	text "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> is"
 	line "in an uproar over"
 	cont "some intruder."
 	cont "That's you right?"
 	done
 
 _SilphCo5FSilphWorkerMYoureOurHeroText::
-	text "TEAM ROCKET took"
+	text "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> took"
 	line "off! You're our"
 	cont "hero! Thank you!"
 	done
@@ -23,12 +23,12 @@ _SilphCo5FRocket1EndBattleText::
 _SilphCo5FRocket1AfterBattleText::
 	text "It's not smart"
 	line "to pick a fight"
-	cont "with TEAM ROCKET!"
+	cont "with <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>!"
 	done
 
 _SilphCo5FScientistBattleText::
 	text "We study #"
-	line "BALL technology"
+	line "<BOLD_B><BOLD_A><BOLD_L><BOLD_L> technology"
 	cont "on this floor!"
 	done
 
@@ -40,7 +40,7 @@ _SilphCo5FScientistEndBattleText::
 _SilphCo5FScientistAfterBattleText::
 	text "We worked on the"
 	line "ultimate #"
-	cont "BALL which would"
+	cont "<BOLD_B><BOLD_A><BOLD_L><BOLD_L> which would"
 	cont "catch anything!"
 	done
 

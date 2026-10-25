@@ -203,17 +203,17 @@ NamePointers2:
 	dw wDayCareMonName
 
 TypesIDNoOTText:
-	db   "TYPE1/"
-	next "TYPE2/"
+	db   "<BOLD_T><BOLD_Y><BOLD_P><BOLD_E>1/"
+	next "<BOLD_T><BOLD_Y><BOLD_P><BOLD_E>2/"
 	next "<ID>№/"
-	next "OT/"
+	next "<BOLD_O><BOLD_T>/"
 	next "@"
 
 StatusText:
-	db "STATUS/@"
+	db "<BOLD_S><BOLD_T><BOLD_A><BOLD_T><BOLD_U><BOLD_S>/@"
 
 OKText:
-	db "OK@"
+	db "<BOLD_O><BOLD_K>@"
 
 ; Draws a line starting from hl high b and wide c
 DrawLineBox:
@@ -281,10 +281,10 @@ PrintStatsBox:
 	ret
 
 .StatsText:
-	db   "ATTACK"
-	next "DEFENSE"
-	next "SPEED"
-	next "SPECIAL@"
+	db   "<BOLD_A><BOLD_T><BOLD_T><BOLD_A><BOLD_C><BOLD_K>"
+	next "<BOLD_D><BOLD_E><BOLD_F><BOLD_E><BOLD_N><BOLD_S><BOLD_E>"
+	next "<BOLD_S><BOLD_P><BOLD_E><BOLD_E><BOLD_D>"
+	next "<BOLD_S><BOLD_P><BOLD_E><BOLD_C><BOLD_I><BOLD_A><BOLD_L>@"
 
 StatusScreen2:
 	ldh a, [hTileAnimations]
@@ -458,8 +458,8 @@ CalcExpToLevelUp:
 	ret
 
 StatusScreenExpText:
-	db   "EXP POINTS"
-	next "LEVEL UP@"
+	db   "<BOLD_E><BOLD_X><BOLD_P> <BOLD_P><BOLD_O><BOLD_I><BOLD_N><BOLD_T><BOLD_S>"
+	next "<BOLD_L><BOLD_E><BOLD_V><BOLD_E><BOLD_L> <BOLD_U><BOLD_P>@"
 
 StatusScreen_ClearName:
 	ld bc, NAME_LENGTH - 1

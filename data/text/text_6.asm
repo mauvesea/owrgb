@@ -1,18 +1,18 @@
 _ItemUseBallText00::
 	text "It dodged the"
-	line "thrown BALL!"
+	line "thrown <BOLD_B><BOLD_A><BOLD_L><BOLD_L>!"
 
-	para "This #MON"
+	para "This #<BOLD_M><BOLD_O><BOLD_N>"
 	line "can't be caught!"
 	prompt
 
 _ItemUseBallText01::
 	text "You missed the"
-	line "#MON!"
+	line "#<BOLD_M><BOLD_O><BOLD_N>!"
 	prompt
 
 _ItemUseBallText02::
-	text "Darn! The #MON"
+	text "Darn! The #<BOLD_M><BOLD_O><BOLD_N>"
 	line "broke free!"
 	prompt
 
@@ -38,18 +38,18 @@ _ItemUseBallText07::
 	text_ram wBoxMonNicks
 	text " was"
 	line "transferred to"
-	cont "BILL's PC!"
+	cont "<BOLD_B><BOLD_I><BOLD_L><BOLD_L>'<BOLD_s> <BOLD_P><BOLD_C>!"
 	prompt
 
 _ItemUseBallText08::
 	text_ram wBoxMonNicks
 	text " was"
 	line "transferred to"
-	cont "someone's PC!"
+	cont "someone's <BOLD_P><BOLD_C>!"
 	prompt
 
 _ItemUseBallText06::
-	text "New #DEX data"
+	text "New #<BOLD_D><BOLD_E><BOLD_X> data"
 	line "will be added for"
 	cont "@"
 	text_ram wEnemyMonNick
@@ -83,17 +83,17 @@ _VitaminNoEffectText::
 
 _ThrewBaitText::
 	text "<PLAYER> threw"
-	line "some BAIT."
+	line "some <BOLD_B><BOLD_A><BOLD_I><BOLD_T>."
 	done
 
 _ThrewRockText::
 	text "<PLAYER> threw a"
-	line "ROCK."
+	line "<BOLD_R><BOLD_O><BOLD_C><BOLD_K>."
 	done
 
 _PlayedFluteNoEffectText::
 	text "Played the #"
-	line "FLUTE."
+	line "<BOLD_F><BOLD_L><BOLD_U><BOLD_T><BOLD_E>."
 
 	para "Now, that's a"
 	line "catchy tune!"
@@ -101,12 +101,12 @@ _PlayedFluteNoEffectText::
 
 _FluteWokeUpText::
 	text "All sleeping"
-	line "#MON woke up."
+	line "#<BOLD_M><BOLD_O><BOLD_N> woke up."
 	prompt
 
 _PlayedFluteHadEffectText::
 	text "<PLAYER> played the"
-	line "# FLUTE.@"
+	line "# <BOLD_F><BOLD_L><BOLD_U><BOLD_T><BOLD_E>.@"
 	text_end
 
 _CoinCaseNumCoinsText::
@@ -117,48 +117,48 @@ _CoinCaseNumCoinsText::
 	prompt
 
 _ItemfinderFoundItemText::
-	text "Yes! ITEMFINDER"
+	text "Yes! <BOLD_I><BOLD_T><BOLD_E><BOLD_M><BOLD_F><BOLD_I><BOLD_N><BOLD_D><BOLD_E><BOLD_R>"
 	line "indicates there's"
 	cont "an item nearby."
 	prompt
 
 _ItemfinderFoundNothingText::
-	text "Nope! ITEMFINDER"
+	text "Nope! <BOLD_I><BOLD_T><BOLD_E><BOLD_M><BOLD_F><BOLD_I><BOLD_N><BOLD_D><BOLD_E><BOLD_R>"
 	line "isn't responding."
 	prompt
 
 _RaisePPWhichTechniqueText::
-	text "Raise PP of which"
+	text "Raise <BOLD_P><BOLD_P> of which"
 	line "technique?"
 	done
 
 _RestorePPWhichTechniqueText::
-	text "Restore PP of"
+	text "Restore <BOLD_P><BOLD_P> of"
 	line "which technique?"
 	done
 
 _PPMaxedOutText::
 	text_ram wStringBuffer
-	text "'s PP"
+	text "'s <BOLD_P><BOLD_P>"
 	line "is maxed out."
 	prompt
 
 _PPIncreasedText::
 	text_ram wStringBuffer
-	text "'s PP"
+	text "'s <BOLD_P><BOLD_P>"
 	line "increased."
 	prompt
 
 _PPRestoredText::
-	text "PP was restored."
+	text "<BOLD_P><BOLD_P> was restored."
 	prompt
 
 _BootedUpTMText::
-	text "Booted up a TM!"
+	text "Booted up a <BOLD_T><BOLD_M>!"
 	prompt
 
 _BootedUpHMText::
-	text "Booted up an HM!"
+	text "Booted up an <BOLD_H><BOLD_M>!"
 	prompt
 
 _TeachMachineMoveText::
@@ -170,7 +170,7 @@ _TeachMachineMoveText::
 	para "Teach @"
 	text_ram wStringBuffer
 	text_start
-	line "to a #MON?"
+	line "to a #<BOLD_M><BOLD_O><BOLD_N>?"
 	done
 
 _MonCannotLearnMachineMoveText::
@@ -188,7 +188,7 @@ _MonCannotLearnMachineMoveText::
 	prompt
 
 _ItemUseNotTimeText::
-	text "OAK: <PLAYER>!"
+	text "<BOLD_O><BOLD_A><BOLD_K>: <PLAYER>!"
 	line "This isn't the"
 	cont "time to use that! "
 	prompt
@@ -205,7 +205,7 @@ _ItemUseNoEffectText::
 
 _ThrowBallAtTrainerMonText1::
 	text "The trainer"
-	line "blocked the BALL!"
+	line "blocked the <BOLD_B><BOLD_A><BOLD_L><BOLD_L>!"
 	prompt
 
 _ThrowBallAtTrainerMonText2::
@@ -223,7 +223,7 @@ _NoSurfingHereText::
 	prompt
 
 _BoxFullCannotThrowBallText::
-	text "The #MON BOX"
+	text "The #<BOLD_M><BOLD_O><BOLD_N> <BOLD_B><BOLD_O><BOLD_X>"
 	line "is full! Can't"
 	cont "use that item!"
 	prompt

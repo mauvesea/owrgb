@@ -56,7 +56,7 @@ _OaksLabReceivedMonText::
 	text_end
 
 _OaksLabLastMonText::
-	text "That's <BOLD_P><BOLD_R><BOLD_O><BOLD_F>.<BOLD_O><BOLD_A><BOLD_K>'s"
+	text "That's <BOLD_P><BOLD_R><BOLD_O><BOLD_F>.<BOLD_O><BOLD_A><BOLD_K>'<BOLD_s>"
 	line "last #<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 

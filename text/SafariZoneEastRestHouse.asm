@@ -6,7 +6,7 @@ _SafariZoneEastRestHouseScientistText::
 
 _SafariZoneEastRestHouseRockerText::
 	text "I caught a"
-	line "CHANSEY!"
+	line "<BOLD_C><BOLD_H><BOLD_A><BOLD_N><BOLD_S><BOLD_E><BOLD_Y>!"
 
 	para "That makes this"
 	line "all worthwhile!"

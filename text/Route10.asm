@@ -1,6 +1,6 @@
 _Route10SuperNerd1BattleText::
 	text "Wow, are you a"
-	line "#MANIAC too?"
+	line "#<BOLD_M><BOLD_A><BOLD_N><BOLD_I><BOLD_A><BOLD_C> too?"
 	cont "Want to see my"
 	cont "collection?"
 	done
@@ -12,7 +12,7 @@ _Route10SuperNerd1EndBattleText::
 
 _Route10SuperNerd1AfterBattleText::
 	text "I have more rare"
-	line "#MON at home!"
+	line "#<BOLD_M><BOLD_O><BOLD_N> at home!"
 	done
 
 _Route10Hiker1BattleText::
@@ -34,12 +34,12 @@ _Route10Hiker1AfterBattleText::
 
 _Route10SuperNerd2BattleText::
 	text "Hi kid, want to"
-	line "see my #MON?"
+	line "see my #<BOLD_M><BOLD_O><BOLD_N>?"
 	done
 
 _Route10SuperNerd2EndBattleText::
 	text "Oh no!"
-	line "My #MON!"
+	line "My #<BOLD_M><BOLD_O><BOLD_N>!"
 	prompt
 
 _Route10SuperNerd2AfterBattleText::
@@ -49,7 +49,7 @@ _Route10SuperNerd2AfterBattleText::
 
 _Route10CooltrainerF1BattleText::
 	text "I've been to a"
-	line "#MON GYM a few"
+	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_G><BOLD_Y><BOLD_M> a few"
 	cont "times. But, I"
 	cont "lost each time."
 	done
@@ -61,7 +61,7 @@ _Route10CooltrainerF1EndBattleText::
 
 _Route10CooltrainerF1AfterBattleText::
 	text "I noticed some"
-	line "#MANIACs"
+	line "#<BOLD_M><BOLD_A><BOLD_N><BOLD_I><BOLD_A><BOLD_C>s"
 	cont "prowling around."
 	done
 
@@ -92,7 +92,7 @@ _Route10CooltrainerF2EndBattleText::
 	prompt
 
 _Route10CooltrainerF2AfterBattleText::
-	text "The #MON here"
+	text "The #<BOLD_M><BOLD_O><BOLD_N> here"
 	line "are so chunky!"
 	cont "There should be a"
 	cont "pink one with a"
@@ -100,15 +100,15 @@ _Route10CooltrainerF2AfterBattleText::
 	done
 
 _Route10RockTunnelSignText::
-	text "ROCK TUNNEL"
+	text "<BOLD_R><BOLD_O><BOLD_C><BOLD_K> <BOLD_T><BOLD_U><BOLD_N><BOLD_N><BOLD_E><BOLD_L>"
 	done
 
 _Route10PowerPlantSignText::
-	text "POWER PLANT"
+	text "<BOLD_P><BOLD_O><BOLD_W><BOLD_E><BOLD_R> <BOLD_P><BOLD_L><BOLD_A><BOLD_N><BOLD_T>"
 	done
 
 _Route10SignText::
-	text "ROUTE 10"
-	line "▲ ROCK TUNNEL"
-	cont "▼ LAVENDER TOWN"
+	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 10"
+	line "▲ <BOLD_R><BOLD_O><BOLD_C><BOLD_K> <BOLD_T><BOLD_U><BOLD_N><BOLD_N><BOLD_E><BOLD_L>"
+	cont "▼ <BOLD_L><BOLD_A><BOLD_V><BOLD_E><BOLD_N><BOLD_D><BOLD_E><BOLD_R> <BOLD_T><BOLD_O><BOLD_W><BOLD_N>"
 	done

@@ -39,7 +39,7 @@ DrawBadges:
 
 ; Draw two rows of badges.
 	ld hl, wBadgeNumberTile
-	ld a, $d8 ; [1]
+	ld a, $68 ; [1]
 	ld [hli], a
 	ld [hl], $60 ; First name
 
@@ -69,7 +69,7 @@ DrawBadges:
 	ld a, [de]
 	and a
 	ld a, [wBadgeNameTile]
-	jr nz, .SkipName
+	jr .SkipName
 	call .PlaceTiles
 	jr .PlaceBadge
 

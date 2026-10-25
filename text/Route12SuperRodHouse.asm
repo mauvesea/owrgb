@@ -1,6 +1,6 @@
 _Route12SuperRodHouseFishingGuruDoYouLikeToFishText::
-	text "I'm the FISHING"
-	line "GURU's brother!"
+	text "I'm the <BOLD_F><BOLD_I><BOLD_S><BOLD_H><BOLD_I><BOLD_N><BOLD_G>"
+	line "<BOLD_G><BOLD_U><BOLD_R><BOLD_U>'<BOLD_s> brother!"
 
 	para "I simply Looove"
 	line "fishing!"
@@ -43,11 +43,11 @@ _Route12SuperRodHouseFishingGuruTryFishingText::
 	text "Hello there,"
 	line "<PLAYER>!"
 
-	para "Use the SUPER ROD"
+	para "Use the <BOLD_S><BOLD_U><BOLD_P><BOLD_E><BOLD_R> <BOLD_R><BOLD_O><BOLD_D>"
 	line "in any water!"
 	cont "You can catch"
 	cont "different kinds"
-	cont "of #MON."
+	cont "of #<BOLD_M><BOLD_O><BOLD_N>."
 
 	para "Try fishing"
 	line "wherever you can!"

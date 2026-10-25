@@ -341,18 +341,18 @@ SpecialEnterMap::
 	jp EnterMap
 
 ContinueText:
-	db "CONTINUE"
+	db "<BOLD_C><BOLD_O><BOLD_N><BOLD_T><BOLD_I><BOLD_N><BOLD_U><BOLD_E>"
 	next ""
 	; fallthrough
 
 NewGameText:
-	db   "NEW GAME"
-	next "OPTION@"
+	db   "<BOLD_N><BOLD_E><BOLD_W> <BOLD_G><BOLD_A><BOLD_M><BOLD_E>"
+	next "<BOLD_O><BOLD_P><BOLD_T><BOLD_I><BOLD_O><BOLD_N>@"
 
 CableClubOptionsText:
-	db   "TRADE CENTER"
-	next "COLOSSEUM"
-	next "CANCEL@"
+	db   "<BOLD_T><BOLD_R><BOLD_A><BOLD_D><BOLD_E> <BOLD_C><BOLD_E><BOLD_N><BOLD_T><BOLD_E><BOLD_R>"
+	next "<BOLD_C><BOLD_O><BOLD_L><BOLD_O><BOLD_S><BOLD_S><BOLD_E><BOLD_U><BOLD_M>"
+	next "<BOLD_C><BOLD_A><BOLD_N><BOLD_C><BOLD_E><BOLD_L>@"
 
 DisplayContinueGameInfo:
 	xor a

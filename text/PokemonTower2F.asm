@@ -2,7 +2,7 @@ _PokemonTower2FRivalWhatBringsYouHereText::
 	text "<RIVAL>: Hey,"
 	line "<PLAYER>! What"
 	cont "brings you here?"
-	cont "Your #MON"
+	cont "Your #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "don't look dead!"
 
 	para "I can at least"
@@ -21,20 +21,20 @@ _PokemonTower2FRivalDefeatedText::
 _PokemonTower2FRivalVictoryText::
 	text "<RIVAL>: Well,"
 	line "look at all your"
-	cont "wimpy #MON!"
+	cont "wimpy #<BOLD_M><BOLD_O><BOLD_N>!"
 
 	para "Toughen them up a"
 	line "bit more!"
 	prompt
 
 _PokemonTower2FRivalHowsYourDexText::
-	text "How's your #DEX"
+	text "How's your #<BOLD_D><BOLD_E><BOLD_X>"
 	line "coming, pal?"
 	cont "I just caught a"
-	cont "CUBONE!"
+	cont "<BOLD_C><BOLD_U><BOLD_B><BOLD_O><BOLD_N><BOLD_E>!"
 
 	para "I can't find the"
-	line "grown-up MAROWAK"
+	line "grown-up <BOLD_M><BOLD_A><BOLD_R><BOLD_O><BOLD_W><BOLD_A><BOLD_K>"
 	cont "yet!"
 
 	para "I doubt there are"
@@ -49,9 +49,9 @@ _PokemonTower2FRivalHowsYourDexText::
 _PokemonTower2FChannelerText::
 	text "Even we could not"
 	line "identify the"
-	cont "wayward GHOSTs!"
+	cont "wayward <BOLD_G><BOLD_H><BOLD_O><BOLD_S><BOLD_T>s!"
 
-	para "A SILPH SCOPE"
+	para "A <BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> <BOLD_S><BOLD_C><BOLD_O><BOLD_P><BOLD_E>"
 	line "might be able to"
 	cont "unmask them."
 	done

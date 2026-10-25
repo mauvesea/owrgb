@@ -8,20 +8,20 @@ _SaffronPidgeyHouseBrunetteGirlText::
 	done
 
 _SaffronPidgeyHousePidgeyText::
-	text "PIDGEY: Kurukkoo!@"
+	text "<BOLD_P><BOLD_I><BOLD_D><BOLD_G><BOLD_E><BOLD_Y>: Kurukkoo!@"
 	text_end
 
 _SaffronPidgeyHouseYoungsterText::
-	text "The COPYCAT is"
+	text "The <BOLD_C><BOLD_O><BOLD_P><BOLD_Y><BOLD_C><BOLD_A><BOLD_T> is"
 	line "cute! I'm getting"
-	cont "her a # DOLL!"
+	cont "her a # <BOLD_D><BOLD_O><BOLD_L><BOLD_L>!"
 	done
 
 _SaffronPidgeyHousePaperText::
-	text "I was given a PP"
-	line "UP as a gift."
+	text "I was given a <BOLD_P><BOLD_P>"
+	line "<BOLD_U><BOLD_P> as a gift."
 
 	para "It's used for"
-	line "increasing the PP"
+	line "increasing the <BOLD_P><BOLD_P>"
 	cont "of techniques!"
 	done

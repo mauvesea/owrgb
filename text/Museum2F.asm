@@ -1,5 +1,5 @@
 _Museum2FYoungsterText::
-	text "MOON STONE?"
+	text "<BOLD_M><BOLD_O><BOLD_O><BOLD_N> <BOLD_S><BOLD_T><BOLD_O><BOLD_N><BOLD_E>?"
 
 	para "What's so special"
 	line "about it?"
@@ -12,7 +12,7 @@ _Museum2FGrampsText::
 	line "landing!"
 
 	para "I bought a color"
-	line "TV to watch it!"
+	line "<BOLD_T><BOLD_V> to watch it!"
 	done
 
 _Museum2FScientistText::
@@ -21,7 +21,7 @@ _Museum2FScientistText::
 	done
 
 _Museum2FBrunetteGirlText::
-	text "I want a PIKACHU!"
+	text "I want a <BOLD_P><BOLD_I><BOLD_K><BOLD_A><BOLD_C><BOLD_H><BOLD_U>!"
 	line "It's so cute!"
 
 	para "I asked my Daddy"
@@ -29,17 +29,17 @@ _Museum2FBrunetteGirlText::
 	done
 
 _Museum2FHikerText::
-	text "Yeah, a PIKACHU"
+	text "Yeah, a <BOLD_P><BOLD_I><BOLD_K><BOLD_A><BOLD_C><BOLD_H><BOLD_U>"
 	line "soon, I promise!"
 	done
 
 _Museum2FSpaceShuttleSignText::
-	text "SPACE SHUTTLE"
-	line "COLUMBIA"
+	text "<BOLD_S><BOLD_P><BOLD_A><BOLD_C><BOLD_E> <BOLD_S><BOLD_H><BOLD_U><BOLD_T><BOLD_T><BOLD_L><BOLD_E>"
+	line "<BOLD_C><BOLD_O><BOLD_L><BOLD_U><BOLD_M><BOLD_B><BOLD_I><BOLD_A>"
 	done
 
 _Museum2FMoonStoneSignText::
 	text "Meteorite that"
-	line "fell on MT.MOON."
-	cont "(MOON STONE?)"
+	line "fell on <BOLD_M><BOLD_T>.<BOLD_M><BOLD_O><BOLD_O><BOLD_N>."
+	cont "(<BOLD_M><BOLD_O><BOLD_O><BOLD_N> <BOLD_S><BOLD_T><BOLD_O><BOLD_N><BOLD_E>?)"
 	done

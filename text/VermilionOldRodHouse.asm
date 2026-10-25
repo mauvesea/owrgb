@@ -1,6 +1,6 @@
 _VermilionOldRodHouseFishingGuruDoYouLikeToFishText::
-	text "I'm the FISHING"
-	line "GURU!"
+	text "I'm the <BOLD_F><BOLD_I><BOLD_S><BOLD_H><BOLD_I><BOLD_N><BOLD_G>"
+	line "<BOLD_G><BOLD_U><BOLD_R><BOLD_U>!"
 
 	para "I simply Looove"
 	line "fishing!"

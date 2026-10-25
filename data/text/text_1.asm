@@ -4,13 +4,13 @@ _CardKeySuccessText1::
 
 _CardKeySuccessText2::
 	text_start
-	line "The CARD KEY"
+	line "The <BOLD_C><BOLD_A><BOLD_R><BOLD_D> <BOLD_K><BOLD_E><BOLD_Y>"
 	cont "opened the door!"
 	done
 
 _CardKeyFailText::
 	text "Darn! It needs a"
-	line "CARD KEY!"
+	line "<BOLD_C><BOLD_A><BOLD_R><BOLD_D> <BOLD_K><BOLD_E><BOLD_Y>!"
 	done
 
 _TrainerNameText::
@@ -43,18 +43,18 @@ _GroundRoseText::
 
 _BoulderText::
 	text "This requires a"
-	line "CROWBAR to move!"
+	line "<BOLD_C><BOLD_R><BOLD_O><BOLD_W><BOLD_B><BOLD_A><BOLD_R> to move!"
 	done
 
 _MartSignText::
 	text "All your item"
 	line "needs fulfilled!"
-	cont "#MON MART"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_M><BOLD_A><BOLD_R><BOLD_T>"
 	done
 
 _PokeCenterSignText::
-	text "Heal Your #MON!"
-	line "#MON CENTER"
+	text "Heal Your #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_C><BOLD_E><BOLD_N><BOLD_T><BOLD_E><BOLD_R>"
 	done
 
 _FoundItemText::
@@ -71,13 +71,13 @@ _NoMoreRoomForItemText::
 
 _OaksAideHiText::
 	text "Hi! Remember me?"
-	line "I'm PROF.OAK's"
-	cont "AIDE!"
+	line "I'm <BOLD_P><BOLD_R><BOLD_O><BOLD_F>.<BOLD_O><BOLD_A><BOLD_K>'<BOLD_s>"
+	cont "<BOLD_A><BOLD_I><BOLD_D><BOLD_E>!"
 
 	para "If you caught @"
 	text_decimal hOaksAideRequirement, 1, 3
 	text_start
-	line "kinds of #MON,"
+	line "kinds of #<BOLD_M><BOLD_O><BOLD_N>,"
 	cont "I'm supposed to"
 	cont "give you an"
 	cont "@"
@@ -89,7 +89,7 @@ _OaksAideHiText::
 	cont "least @"
 	text_decimal hOaksAideRequirement, 1, 3
 	text " kinds of"
-	cont "#MON?"
+	cont "#<BOLD_M><BOLD_O><BOLD_N>?"
 	done
 
 _OaksAideUhOhText::
@@ -98,7 +98,7 @@ _OaksAideUhOhText::
 	cont "caught only @"
 	text_decimal hOaksAideNumMonsOwned, 1, 3
 	text_start
-	cont "kinds of #MON!"
+	cont "kinds of #<BOLD_M><BOLD_O><BOLD_N>!"
 
 	para "You need @"
 	text_decimal hOaksAideRequirement, 1, 3
@@ -126,7 +126,7 @@ _OaksAideHereYouGoText::
 	line "caught @"
 	text_decimal hOaksAideNumMonsOwned, 1, 3
 	text " kinds "
-	cont "of #MON!"
+	cont "of #<BOLD_M><BOLD_O><BOLD_N>!"
 	cont "Congratulations!"
 
 	para "Here you go!"

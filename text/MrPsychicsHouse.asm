@@ -13,10 +13,10 @@ _MrPsychicsHouseMrPsychicReceivedTM29Text::
 	text_end
 
 _MrPsychicsHouseMrPsychicTM29ExplanationText::
-	text "TM29 is PSYCHIC!"
+	text "<BOLD_T><BOLD_M>29 is <BOLD_P><BOLD_S><BOLD_Y><BOLD_C><BOLD_H><BOLD_I><BOLD_C>!"
 
 	para "It can lower the"
-	line "target's SPECIAL"
+	line "target's <BOLD_S><BOLD_P><BOLD_E><BOLD_C><BOLD_I><BOLD_A><BOLD_L>"
 	cont "abilities."
 	done
 

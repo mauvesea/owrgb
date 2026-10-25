@@ -66,6 +66,6 @@ _PokemonTower5FPurifiedZoneText::
 	text "Entered purified,"
 	line "protected zone!"
 
-	para "<PLAYER>'s #MON"
+	para "<PLAYER>'s #<BOLD_M><BOLD_O><BOLD_N>"
 	line "are fully healed!"
 	done

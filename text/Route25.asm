@@ -10,7 +10,7 @@ _Route25Youngster1EndBattleText::
 	prompt
 
 _Route25Youngster1AfterBattleText::
-	text "All #MON have"
+	text "All #<BOLD_M><BOLD_O><BOLD_N> have"
 	line "weaknesses. It's"
 	cont "best to raise"
 	cont "different kinds."
@@ -19,8 +19,8 @@ _Route25Youngster1AfterBattleText::
 _Route25Youngster2BattleText::
 	text "Dad took me to a"
 	line "great party on"
-	cont "S.S.ANNE at"
-	cont "VERMILION CITY!"
+	cont "<BOLD_S>.<BOLD_S>.<BOLD_A><BOLD_N><BOLD_N><BOLD_E> at"
+	cont "<BOLD_V><BOLD_E><BOLD_R><BOLD_M><BOLD_I><BOLD_L><BOLD_I><BOLD_O><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>!"
 	done
 
 _Route25Youngster2EndBattleText::
@@ -29,7 +29,7 @@ _Route25Youngster2EndBattleText::
 	prompt
 
 _Route25Youngster2AfterBattleText::
-	text "On S.S.ANNE, I"
+	text "On <BOLD_S>.<BOLD_S>.<BOLD_A><BOLD_N><BOLD_N><BOLD_E>, I"
 	line "saw trainers from"
 	cont "around the world."
 	done
@@ -76,7 +76,7 @@ _Route25Youngster3EndBattleText::
 	prompt
 
 _Route25Youngster3AfterBattleText::
-	text "If your #MON"
+	text "If your #<BOLD_M><BOLD_O><BOLD_N>"
 	line "gets confused or"
 	cont "falls asleep,"
 	cont "switch it!"
@@ -84,7 +84,7 @@ _Route25Youngster3AfterBattleText::
 
 _Route25CooltrainerF2BattleText::
 	text "My friend has a"
-	line "cute #MON."
+	line "cute #<BOLD_M><BOLD_O><BOLD_N>."
 	cont "I'm so jealous!"
 	done
 
@@ -94,14 +94,14 @@ _Route25CooltrainerF2EndBattleText::
 	prompt
 
 _Route25CooltrainerF2AfterBattleText::
-	text "You came from MT."
-	line "MOON? May I have"
-	cont "a CLEFAIRY?"
+	text "You came from <BOLD_M><BOLD_T>."
+	line "<BOLD_M><BOLD_O><BOLD_O><BOLD_N>? May I have"
+	cont "a <BOLD_C><BOLD_L><BOLD_E><BOLD_F><BOLD_A><BOLD_I><BOLD_R><BOLD_Y>?"
 	done
 
 _Route25Hiker1BattleText::
 	text "I just got down"
-	line "from MT.MOON,"
+	line "from <BOLD_M><BOLD_T>.<BOLD_M><BOLD_O><BOLD_O><BOLD_N>,"
 	cont "but I'm ready!"
 	done
 
@@ -112,13 +112,13 @@ _Route25Hiker1EndBattleText::
 
 _Route25Hiker1AfterBattleText::
 	text "Drat!"
-	line "A ZUBAT bit me"
+	line "A <BOLD_Z><BOLD_U><BOLD_B><BOLD_A><BOLD_T> bit me"
 	cont "back in there."
 	done
 
 _Route25Hiker2BattleText::
 	text "I'm off to see a"
-	line "#MON collector"
+	line "#<BOLD_M><BOLD_O><BOLD_N> collector"
 	cont "at the cape!"
 	done
 
@@ -130,12 +130,12 @@ _Route25Hiker2EndBattleText::
 _Route25Hiker2AfterBattleText::
 	text "The collector has"
 	line "many rare kinds"
-	cont "of #MON."
+	cont "of #<BOLD_M><BOLD_O><BOLD_N>."
 	done
 
 _Route25Hiker3BattleText::
 	text "You're going to"
-	line "see BILL? First,"
+	line "see <BOLD_B><BOLD_I><BOLD_L><BOLD_L>? First,"
 	cont "let's fight!"
 	done
 
@@ -147,15 +147,15 @@ _Route25Hiker3EndBattleText::
 _Route25Hiker3AfterBattleText::
 	text "The trail below"
 	line "is a shortcut to"
-	cont "CERULEAN CITY."
+	cont "<BOLD_C><BOLD_E><BOLD_R><BOLD_U><BOLD_L><BOLD_E><BOLD_A><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>."
 	done
 
 _Route25BillSignText::
-	text "SEA COTTAGE"
-	line "BILL lives here!"
+	text "<BOLD_S><BOLD_E><BOLD_A> <BOLD_C><BOLD_O><BOLD_T><BOLD_T><BOLD_A><BOLD_G><BOLD_E>"
+	line "<BOLD_B><BOLD_I><BOLD_L><BOLD_L> lives here!"
 	done
 
 _Route25SignText::
-	text "ROUTE 25"
-	line "◀ CERULEAN CITY"
+	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 25"
+	line "◀ <BOLD_C><BOLD_E><BOLD_R><BOLD_U><BOLD_L><BOLD_E><BOLD_A><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
 	done

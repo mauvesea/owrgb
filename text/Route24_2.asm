@@ -10,7 +10,7 @@ _Route24CooltrainerM2AfterBattleText::
 	done
 
 _Route24CooltrainerM3BattleText::
-	text "OK! I'm No. 5!"
+	text "<BOLD_O><BOLD_K>! I'm No. 5!"
 	line "I'll stomp you!"
 	done
 
@@ -70,8 +70,8 @@ _Route24CooltrainerF2AfterBattleText::
 	done
 
 _Route24Youngster2BattleText::
-	text "This is NUGGET"
-	line "BRIDGE! Beat us 5"
+	text "This is <BOLD_N><BOLD_U><BOLD_G><BOLD_G><BOLD_E><BOLD_T>"
+	line "<BOLD_B><BOLD_R><BOLD_I><BOLD_D><BOLD_G><BOLD_E>! Beat us 5"
 	cont "trainers and win"
 	cont "a fabulous prize!"
 
@@ -90,6 +90,6 @@ _Route24Youngster2AfterBattleText::
 	done
 
 _Route24SignText::
-	text "ROUTE 24"
-	line "▼ CERULEAN CITY"
+	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 24"
+	line "▼ <BOLD_C><BOLD_E><BOLD_R><BOLD_U><BOLD_L><BOLD_E><BOLD_A><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
 	done

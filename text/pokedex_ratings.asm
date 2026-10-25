@@ -1,35 +1,35 @@
 _DexCompletionText::
-	text "#DEX comp-"
+	text "#<BOLD_D><BOLD_E><BOLD_X> comp-"
 	line "letion is:"
 
 	para "@"
 	text_decimal hDexRatingNumMonsSeen, 1, 3
-	text " #MON seen"
+	text " #<BOLD_M><BOLD_O><BOLD_N> seen"
 	line "@"
 	text_decimal hDexRatingNumMonsOwned, 1, 3
-	text " #MON owned"
+	text " #<BOLD_M><BOLD_O><BOLD_N> owned"
 
-	para "PROF.OAK's"
+	para "<BOLD_P><BOLD_R><BOLD_O><BOLD_F>.<BOLD_O><BOLD_A><BOLD_K>'<BOLD_s>"
 	line "Rating:"
 	prompt
 
 _DexRatingText_Own0To9::
 	text "You still have"
 	line "lots to do."
-	cont "Look for #MON"
+	cont "Look for #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "in grassy areas!"
 	done
 
 _DexRatingText_Own10To19::
 	text "You're on the"
 	line "right track! "
-	cont "Get a FLASHLIGHT"
-	cont "from my AIDE!"
+	cont "Get a <BOLD_F><BOLD_L><BOLD_A><BOLD_S><BOLD_H><BOLD_L><BOLD_I><BOLD_G><BOLD_H><BOLD_T>"
+	cont "from my <BOLD_A><BOLD_I><BOLD_D><BOLD_E>!"
 	done
 
 _DexRatingText_Own20To29::
 	text "You still need"
-	line "more #MON!"
+	line "more #<BOLD_M><BOLD_O><BOLD_N>!"
 	cont "Try to catch"
 	cont "other species!"
 	done
@@ -37,13 +37,13 @@ _DexRatingText_Own20To29::
 _DexRatingText_Own30To39::
 	text "Good, you're"
 	line "trying hard!"
-	cont "Get an ITEMFINDER"
-	cont "from my AIDE!"
+	cont "Get an <BOLD_I><BOLD_T><BOLD_E><BOLD_M><BOLD_F><BOLD_I><BOLD_N><BOLD_D><BOLD_E><BOLD_R>"
+	cont "from my <BOLD_A><BOLD_I><BOLD_D><BOLD_E>!"
 	done
 
 _DexRatingText_Own40To49::
 	text "Looking good!"
-	line "Go find my AIDE"
+	line "Go find my <BOLD_A><BOLD_I><BOLD_D><BOLD_E>"
 	cont "when you get 50!"
 	done
 
@@ -51,8 +51,8 @@ _DexRatingText_Own50To59::
 	text "You finally got at"
 	line "least 50 species!"
 	cont "Be sure to get"
-	cont "EXP.ALL from my"
-	cont "AIDE!"
+	cont "<BOLD_E><BOLD_X><BOLD_P>.<BOLD_A><BOLD_L><BOLD_L> from my"
+	cont "<BOLD_A><BOLD_I><BOLD_D><BOLD_E>!"
 	done
 
 _DexRatingText_Own60To69::
@@ -64,9 +64,9 @@ _DexRatingText_Own70To79::
 	text "You got 70"
 	line "species already?"
 	cont "Impressive!"
-	cont "Look for my AIDE"
+	cont "Look for my <BOLD_A><BOLD_I><BOLD_D><BOLD_E>"
 	cont "to claim an"
-	cont "OMAMORI!"
+	cont "<BOLD_O><BOLD_M><BOLD_A><BOLD_M><BOLD_O><BOLD_R><BOLD_I>!"
 	done
 
 _DexRatingText_Own80To89::
@@ -91,7 +91,7 @@ _DexRatingText_Own100To109::
 _DexRatingText_Own110To119::
 	text "You even have the"
 	line "evolved forms of"
-	cont "#MON! Super!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N>! Super!"
 	done
 
 _DexRatingText_Own120To129::
@@ -114,7 +114,7 @@ _DexRatingText_Own140To149::
 	done
 
 _DexRatingText_Own150To151::
-	text "Your #DEX is"
+	text "Your #<BOLD_D><BOLD_E><BOLD_X> is"
 	line "entirely complete!"
 	cont "Congratulations!"
 	done
@@ -144,7 +144,7 @@ _OakPreBattleText1::
 _OakPreBattleText2::
 	text "Alright!"
 	line "Bring it on,"
-	cont "CHAMPION!"
+	cont "<BOLD_C><BOLD_H><BOLD_A><BOLD_M><BOLD_P><BOLD_I><BOLD_O><BOLD_N>!"
 	done
 
 _OakRefusedBattleText::
@@ -164,5 +164,5 @@ _OakPostBattleText::
 	cont "now!"
 
 	para "Congratulations,"
-	line "CHAMPION <PLAYER>!"
+	line "<BOLD_C><BOLD_H><BOLD_A><BOLD_M><BOLD_P><BOLD_I><BOLD_O><BOLD_N> <PLAYER>!"
 	prompt

@@ -4,13 +4,13 @@ _Route3Text1::
 	cont "Groan..."
 
 	para "That tunnel from"
-	line "CERULEAN takes a"
+	line "<BOLD_C><BOLD_E><BOLD_R><BOLD_U><BOLD_L><BOLD_E><BOLD_A><BOLD_N> takes a"
 	cont "lot out of you!"
 	done
 
 _Route3Youngster1BattleText::
 	text "Hey! I met you in"
-	line "VIRIDIAN FOREST!"
+	line "<BOLD_V><BOLD_I><BOLD_R><BOLD_I><BOLD_D><BOLD_I><BOLD_A><BOLD_N> <BOLD_F><BOLD_O><BOLD_R><BOLD_E><BOLD_S><BOLD_T>!"
 	done
 
 _Route3Youngster1EndBattleText::
@@ -20,7 +20,7 @@ _Route3Youngster1EndBattleText::
 
 _Route3Youngster1AfterBattleText::
 	text "There are other"
-	line "kinds of #MON"
+	line "kinds of #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "than those found"
 	cont "in the forest!"
 	done
@@ -38,9 +38,9 @@ _Route3Youngster2EndBattleText::
 
 _Route3Youngster2AfterBattleText::
 	text "Are you storing"
-	line "your #MON on"
-	cont "PC? Each BOX can"
-	cont "hold 20 #MON!"
+	line "your #<BOLD_M><BOLD_O><BOLD_N> on"
+	cont "<BOLD_P><BOLD_C>? Each <BOLD_B><BOLD_O><BOLD_X> can"
+	cont "hold 20 #<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _Route3CooltrainerF1BattleText::
@@ -66,15 +66,15 @@ _Route3Youngster3BattleText::
 
 _Route3Youngster3EndBattleText::
 	text "If I"
-	line "had new #MON I"
+	line "had new #<BOLD_M><BOLD_O><BOLD_N> I"
 	cont "would've won!"
 	prompt
 
 _Route3Youngster3AfterBattleText::
-	text "If a #MON BOX"
-	line "on the PC gets"
+	text "If a #<BOLD_M><BOLD_O><BOLD_N> <BOLD_B><BOLD_O><BOLD_X>"
+	line "on the <BOLD_P><BOLD_C> gets"
 	cont "full, just switch"
-	cont "to another BOX!"
+	cont "to another <BOLD_B><BOLD_O><BOLD_X>!"
 	done
 
 _Route3CooltrainerF2BattleText::
@@ -111,7 +111,7 @@ _Route3Youngster4AfterBattleText::
 
 _Route3Youngster5BattleText::
 	text "You can fight my"
-	line "new #MON!"
+	line "new #<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _Route3Youngster5EndBattleText::
@@ -120,7 +120,7 @@ _Route3Youngster5EndBattleText::
 	prompt
 
 _Route3Youngster5AfterBattleText::
-	text "Trained #MON"
+	text "Trained #<BOLD_M><BOLD_O><BOLD_N>"
 	line "are stronger than"
 	cont "the wild ones!"
 	done
@@ -135,12 +135,12 @@ _Route3CooltrainerF3EndBattleText::
 	prompt
 
 _Route3CooltrainerF3AfterBattleText::
-	text "ROUTE 4 is at the"
-	line "foot of MT.MOON."
+	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 4 is at the"
+	line "foot of <BOLD_M><BOLD_T>.<BOLD_M><BOLD_O><BOLD_O><BOLD_N>."
 	done
 
 _Route3SignText::
-	text "ROUTE 3"
-	line "▲ MT.MOON"
-	cont "◀ PEWTER CITY"
+	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 3"
+	line "▲ <BOLD_M><BOLD_T>.<BOLD_M><BOLD_O><BOLD_O><BOLD_N>"
+	cont "◀ <BOLD_P><BOLD_E><BOLD_W><BOLD_T><BOLD_E><BOLD_R> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
 	done

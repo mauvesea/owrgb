@@ -1,5 +1,5 @@
 _ViridianForestNorthGateSuperNerdText::
-	text "Many #MON live"
+	text "Many #<BOLD_M><BOLD_O><BOLD_N> live"
 	line "only in forests "
 	cont "and caves."
 
@@ -16,5 +16,5 @@ _ViridianForestNorthGateGrampsText::
 	para "They can be cut"
 	line "down by using"
 	cont "specialized"
-	cont "SHEARS."
+	cont "<BOLD_S><BOLD_H><BOLD_E><BOLD_A><BOLD_R><BOLD_S>."
 	done

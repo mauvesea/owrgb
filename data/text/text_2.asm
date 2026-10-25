@@ -119,7 +119,7 @@ _YeahText::
 	text_end
 
 _DexSeenOwnedText::
-	text "#DEX   Seen:@"
+	text "#<BOLD_D><BOLD_E><BOLD_X>   Seen:@"
 	text_decimal wDexRatingNumMonsSeen, 1, 3
 	text_start
 	line "         Owned:@"
@@ -127,46 +127,46 @@ _DexSeenOwnedText::
 	text_end
 
 _DexRatingText::
-	text "#DEX Rating<COLON>"
+	text "#<BOLD_D><BOLD_E><BOLD_X> Rating<COLON>"
 	done
 
 _GymStatueText1::
 	text_ram wGymCityName
 	text_start
-	line "#MON GYM"
-	cont "LEADER: @"
+	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_G><BOLD_Y><BOLD_M>"
+	cont "<BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R>: @"
 	text_ram wGymLeaderName
 	text_start
 
-	para "WINNING TRAINERS:"
+	para "<BOLD_W><BOLD_I><BOLD_N><BOLD_N><BOLD_I><BOLD_N><BOLD_G> <BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R><BOLD_S>:"
 	line "<RIVAL>"
 	done
 
 _GymStatueText2::
 	text_ram wGymCityName
 	text_start
-	line "#MON GYM"
-	cont "LEADER: @"
+	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_G><BOLD_Y><BOLD_M>"
+	cont "<BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R>: @"
 	text_ram wGymLeaderName
 	text_start
 
-	para "WINNING TRAINERS:"
+	para "<BOLD_W><BOLD_I><BOLD_N><BOLD_N><BOLD_I><BOLD_N><BOLD_G> <BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R><BOLD_S>:"
 	line "<RIVAL>"
 	cont "<PLAYER>"
 	done
 
 _ViridianCityPokecenterGuyText::
-	text "#MON CENTERs"
+	text "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_C><BOLD_E><BOLD_N><BOLD_T><BOLD_E><BOLD_R>s"
 	line "heal your tired,"
 	cont "hurt or fainted"
-	cont "#MON!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _PewterCityPokecenterGuyText::
 	text "Yawn!"
 
-	para "When JIGGLYPUFF"
-	line "sings, #MON"
+	para "When <BOLD_J><BOLD_I><BOLD_G><BOLD_G><BOLD_L><BOLD_Y><BOLD_P><BOLD_U><BOLD_F><BOLD_F>"
+	line "sings, #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "get drowsy..."
 
 	para "...Me too..."
@@ -174,15 +174,15 @@ _PewterCityPokecenterGuyText::
 	done
 
 _CeruleanPokecenterGuyText::
-	text "BILL has lots of"
-	line "#MON!"
+	text "<BOLD_B><BOLD_I><BOLD_L><BOLD_L> has lots of"
+	line "#<BOLD_M><BOLD_O><BOLD_N>!"
 
 	para "He collects rare"
 	line "ones too!"
 	done
 
 _LavenderPokecenterGuyText::
-	text "CUBONEs wear"
+	text "<BOLD_C><BOLD_U><BOLD_B><BOLD_O><BOLD_N><BOLD_E>s wear"
 	line "skulls, right?"
 
 	para "People will pay a"
@@ -191,20 +191,20 @@ _LavenderPokecenterGuyText::
 
 _MtMoonPokecenterBenchGuyText::
 	text "If you have too"
-	line "many #MON, you"
+	line "many #<BOLD_M><BOLD_O><BOLD_N>, you"
 	cont "should store them"
-	cont "via PC!"
+	cont "via <BOLD_P><BOLD_C>!"
 	done
 
 _RockTunnelPokecenterGuyText::
 	text "I heard that"
-	line "GHOSTs haunt"
-	cont "LAVENDER TOWN!"
+	line "<BOLD_G><BOLD_H><BOLD_O><BOLD_S><BOLD_T>s haunt"
+	cont "<BOLD_L><BOLD_A><BOLD_V><BOLD_E><BOLD_N><BOLD_D><BOLD_E><BOLD_R> <BOLD_T><BOLD_O><BOLD_W><BOLD_N>!"
 	done
 
 _UnusedBenchGuyText1::
 	text "I wish I could"
-	line "catch #MON."
+	line "catch #<BOLD_M><BOLD_O><BOLD_N>."
 	done
 
 _UnusedBenchGuyText2::
@@ -213,44 +213,44 @@ _UnusedBenchGuyText2::
 	done
 
 _UnusedBenchGuyText3::
-	text "SILPH's manager"
+	text "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H>'<BOLD_s> manager"
 	line "is hiding in the"
-	cont "SAFARI ZONE."
+	cont "<BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I> <BOLD_Z><BOLD_O><BOLD_N><BOLD_E>."
 	done
 
 _VermilionPokecenterGuyText::
 	text "It is true that a"
 	line "higher level"
-	cont "#MON will be"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> will be"
 	cont "more powerful..."
 
-	para "But, all #MON"
+	para "But, all #<BOLD_M><BOLD_O><BOLD_N>"
 	line "will have weak"
 	cont "points against"
 	cont "specific types."
 
 	para "So, there is no"
 	line "universally"
-	cont "strong #MON."
+	cont "strong #<BOLD_M><BOLD_O><BOLD_N>."
 	done
 
 _CeladonCityPokecenterGuyText::
-	text "If I had a BIKE,"
+	text "If I had a <BOLD_B><BOLD_I><BOLD_K><BOLD_E>,"
 	line "I would go to"
-	cont "CYCLING ROAD!"
+	cont "<BOLD_C><BOLD_Y><BOLD_C><BOLD_L><BOLD_I><BOLD_N><BOLD_G> <BOLD_R><BOLD_O><BOLD_A><BOLD_D>!"
 	done
 
 _FuchsiaCityPokecenterGuyText::
 	text "If you're studying "
-	line "#MON, visit"
-	cont "the SAFARI ZONE."
+	line "#<BOLD_M><BOLD_O><BOLD_N>, visit"
+	cont "the <BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I> <BOLD_Z><BOLD_O><BOLD_N><BOLD_E>."
 
 	para "It has all sorts"
-	line "of rare #MON."
+	line "of rare #<BOLD_M><BOLD_O><BOLD_N>."
 	done
 
 _CinnabarPokecenterGuyText::
-	text "#MON can still"
+	text "#<BOLD_M><BOLD_O><BOLD_N> can still"
 	line "learn techniques"
 	cont "after canceling"
 	cont "evolution."
@@ -262,13 +262,13 @@ _CinnabarPokecenterGuyText::
 
 _SaffronCityPokecenterGuyText1::
 	text "It would be great"
-	line "if the ELITE FOUR"
+	line "if the <BOLD_E><BOLD_L><BOLD_I><BOLD_T><BOLD_E> <BOLD_F><BOLD_O><BOLD_U><BOLD_R>"
 	cont "came and stomped"
-	cont "TEAM ROCKET!"
+	cont "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>!"
 	done
 
 _SaffronCityPokecenterGuyText2::
-	text "TEAM ROCKET took"
+	text "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> took"
 	line "off! We can go"
 	cont "out safely again!"
 	cont "That's great!"
@@ -281,45 +281,45 @@ _CeladonCityHotelText::
 
 _BookcaseText::
 	text "Crammed full of"
-	line "#MON books!"
+	line "#<BOLD_M><BOLD_O><BOLD_N> books!"
 	done
 
 _NewBicycleText::
 	text "A shiny new"
-	line "BICYCLE!"
+	line "<BOLD_B><BOLD_I><BOLD_C><BOLD_Y><BOLD_C><BOLD_L><BOLD_E>!"
 	done
 
 _PushStartText::
-	text "Push START to"
-	line "open the MENU!"
+	text "Push <BOLD_S><BOLD_T><BOLD_A><BOLD_R><BOLD_T> to"
+	line "open the <BOLD_M><BOLD_E><BOLD_N><BOLD_U>!"
 	done
 
 _SaveOptionText::
-	text "The SAVE option is"
-	line "on the MENU"
+	text "The <BOLD_S><BOLD_A><BOLD_V><BOLD_E> option is"
+	line "on the <BOLD_M><BOLD_E><BOLD_N><BOLD_U>"
 	cont "screen."
 	done
 
 _StrengthsAndWeaknessesText::
-	text "All #MON types"
+	text "All #<BOLD_M><BOLD_O><BOLD_N> types"
 	line "have strong and"
 	cont "weak points"
 	cont "against others."
 	done
 
 _TimesUpText::
-	text "PA: Ding-dong!"
+	text "<BOLD_P><BOLD_A>: Ding-dong!"
 
 	para "Time's up!"
 	prompt
 
 _GameOverText::
-	text "PA: Your SAFARI"
-	line "GAME is over!"
+	text "<BOLD_P><BOLD_A>: Your <BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I>"
+	line "<BOLD_G><BOLD_A><BOLD_M><BOLD_E> is over!"
 	done
 
 _CinnabarGymQuizIntroText::
-	text "#MON Quiz!"
+	text "#<BOLD_M><BOLD_O><BOLD_N> Quiz!"
 
 	para "Get it right and"
 	line "the door opens to"
@@ -330,26 +330,26 @@ _CinnabarGymQuizIntroText::
 
 	para "If you want to"
 	line "conserve your"
-	cont "#MON for the"
-	cont "GYM LEADER..."
+	cont "#<BOLD_M><BOLD_O><BOLD_N> for the"
+	cont "<BOLD_G><BOLD_Y><BOLD_M> <BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R>..."
 
 	para "Then get it right!"
 	line "Here we go!"
 	prompt
 
 _CinnabarQuizQuestionsText1::
-	text "CATERPIE evolves"
-	line "into BUTTERFREE?"
+	text "<BOLD_C><BOLD_A><BOLD_T><BOLD_E><BOLD_R><BOLD_P><BOLD_I><BOLD_E> evolves"
+	line "into <BOLD_B><BOLD_U><BOLD_T><BOLD_T><BOLD_E><BOLD_R><BOLD_F><BOLD_R><BOLD_E><BOLD_E>?"
 	done
 
 _CinnabarQuizQuestionsText2::
 	text "There are 9"
-	line "certified #MON"
-	cont "LEAGUE BADGEs?"
+	line "certified #<BOLD_M><BOLD_O><BOLD_N>"
+	cont "<BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E> <BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>s?"
 	done
 
 _CinnabarQuizQuestionsText3::
-	text "POLIWAG evolves 3"
+	text "<BOLD_P><BOLD_O><BOLD_L><BOLD_I><BOLD_W><BOLD_A><BOLD_G> evolves 3"
 	line "times?"
 	done
 
@@ -357,19 +357,19 @@ _CinnabarQuizQuestionsText4::
 	text "Are thunder moves"
 	line "effective against"
 	cont "ground element-"
-	cont "type #MON?"
+	cont "type #<BOLD_M><BOLD_O><BOLD_N>?"
 	done
 
 _CinnabarQuizQuestionsText5::
-	text "#MON of the"
+	text "#<BOLD_M><BOLD_O><BOLD_N> of the"
 	line "same kind and"
 	cont "level are not"
 	cont "identical?"
 	done
 
 _CinnabarQuizQuestionsText6::
-	text "TM28 contains"
-	line "TOMBSTONER?"
+	text "<BOLD_T><BOLD_M>28 contains"
+	line "<BOLD_T><BOLD_O><BOLD_M><BOLD_B><BOLD_S><BOLD_T><BOLD_O><BOLD_N><BOLD_E><BOLD_R>?"
 	done
 
 _CinnabarGymQuizCorrectText::
@@ -384,32 +384,32 @@ _CinnabarGymQuizIncorrectText::
 	prompt
 
 _MagazinesText::
-	text "#MON magazines!"
+	text "#<BOLD_M><BOLD_O><BOLD_N> magazines!"
 
-	para "#MON notebooks!"
+	para "#<BOLD_M><BOLD_O><BOLD_N> notebooks!"
 
-	para "#MON graphs!"
+	para "#<BOLD_M><BOLD_O><BOLD_N> graphs!"
 	done
 
 _BillsHouseMonitorText::
-	text "TELEPORTER is"
+	text "<BOLD_T><BOLD_E><BOLD_L><BOLD_E><BOLD_P><BOLD_O><BOLD_R><BOLD_T><BOLD_E><BOLD_R> is"
 	line "displayed on the"
-	cont "PC monitor."
+	cont "<BOLD_P><BOLD_C> monitor."
 	done
 
 _BillsHouseInitiatedText::
 	text "<PLAYER> initiated"
-	line "TELEPORTER's Cell"
+	line "<BOLD_T><BOLD_E><BOLD_L><BOLD_E><BOLD_P><BOLD_O><BOLD_R><BOLD_T><BOLD_E><BOLD_R>'<BOLD_s> Cell"
 	cont "Separator!@"
 	text_end
 
 _BillsHousePokemonListText1::
-	text "BILL's favorite"
-	line "#MON list!"
+	text "<BOLD_B><BOLD_I><BOLD_L><BOLD_L>'<BOLD_s> favorite"
+	line "#<BOLD_M><BOLD_O><BOLD_N> list!"
 	prompt
 
 _BillsHousePokemonListText2::
-	text "Which #MON do"
+	text "Which #<BOLD_M><BOLD_O><BOLD_N> do"
 	line "you want to see?"
 	done
 
@@ -420,28 +420,28 @@ _OakLabEmailText::
 	para "..."
 
 	para "Calling all"
-	line "#MON trainers!"
+	line "#<BOLD_M><BOLD_O><BOLD_N> trainers!"
 
 	para "The elite trainers"
-	line "of #MON LEAGUE"
+	line "of #<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>"
 	cont "are ready to take"
 	cont "on all comers!"
 
 	para "Bring your best"
-	line "#MON and see"
+	line "#<BOLD_M><BOLD_O><BOLD_N> and see"
 	cont "how you rate as a"
 	cont "trainer!"
 
-	para "#MON LEAGUE HQ"
-	line "INDIGO PLATEAU"
+	para "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E> <BOLD_H><BOLD_Q>"
+	line "<BOLD_I><BOLD_N><BOLD_D><BOLD_I><BOLD_G><BOLD_O> <BOLD_P><BOLD_L><BOLD_A><BOLD_T><BOLD_E><BOLD_A><BOLD_U>"
 
-	para "PS: PROF.OAK,"
+	para "<BOLD_P><BOLD_S>: <BOLD_P><BOLD_R><BOLD_O><BOLD_F>.<BOLD_O><BOLD_A><BOLD_K>,"
 	line "please visit us!"
 	cont "..."
 	done
 
 _GameCornerCoinCaseText::
-	text "A COIN CASE is"
+	text "A <BOLD_C><BOLD_O><BOLD_I><BOLD_N> <BOLD_C><BOLD_A><BOLD_S><BOLD_E> is"
 	line "required!"
 	done
 
@@ -451,12 +451,12 @@ _GameCornerNoCoinsText::
 	done
 
 _GameCornerOutOfOrderText::
-	text "OUT OF ORDER"
+	text "<BOLD_O><BOLD_U><BOLD_T> <BOLD_O><BOLD_F> <BOLD_O><BOLD_R><BOLD_D><BOLD_E><BOLD_R>"
 	line "This is broken."
 	done
 
 _GameCornerOutToLunchText::
-	text "OUT TO LUNCH"
+	text "<BOLD_O><BOLD_U><BOLD_T> <BOLD_T><BOLD_O> <BOLD_L><BOLD_U><BOLD_N><BOLD_C><BOLD_H>"
 	line "This is reserved."
 	done
 
@@ -471,18 +471,18 @@ _JustAMomentText::
 
 TMNotebookText::
 	text "It's a pamphlet"
-	line "on TMs."
+	line "on <BOLD_T><BOLD_M>s."
 
 	para "..."
 
-	para "There are 50 TMs"
+	para "There are 50 <BOLD_T><BOLD_M>s"
 	line "in all."
 
 	para "There are also 5"
-	line "HMs that can be"
+	line "<BOLD_H><BOLD_M>s that can be"
 	cont "used repeatedly."
 
-	para "SILPH CO.@"
+	para "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> <BOLD_C><BOLD_O>.@"
 	text_end
 
 _TurnPageText::
@@ -490,7 +490,7 @@ _TurnPageText::
 	done
 
 _ViridianSchoolNotebookText5::
-	text "GIRL: Hey! Don't"
+	text "<BOLD_G><BOLD_I><BOLD_R><BOLD_L>: Hey! Don't"
 	line "look at my notes!@"
 	text_end
 
@@ -500,23 +500,23 @@ _ViridianSchoolNotebookText1::
 
 	para "First page..."
 
-	para "# BALLs are"
+	para "# <BOLD_B><BOLD_A><BOLD_L><BOLD_L>s are"
 	line "used to catch"
-	cont "#MON."
+	cont "#<BOLD_M><BOLD_O><BOLD_N>."
 
-	para "Up to 6 #MON"
+	para "Up to 6 #<BOLD_M><BOLD_O><BOLD_N>"
 	line "can be carried."
 
 	para "People who raise"
-	line "and make #MON"
+	line "and make #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "fight are called"
-	cont "#MON trainers."
+	cont "#<BOLD_M><BOLD_O><BOLD_N> trainers."
 	prompt
 
 _ViridianSchoolNotebookText2::
 	text "Second page..."
 
-	para "A healthy #MON"
+	para "A healthy #<BOLD_M><BOLD_O><BOLD_N>"
 	line "may be hard to"
 	cont "catch, so weaken"
 	cont "it first!"
@@ -529,30 +529,30 @@ _ViridianSchoolNotebookText2::
 _ViridianSchoolNotebookText3::
 	text "Third page..."
 
-	para "#MON trainers"
+	para "#<BOLD_M><BOLD_O><BOLD_N> trainers"
 	line "seek others to"
-	cont "engage in #MON"
+	cont "engage in #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "fights."
 
 	para "Battles are"
 	line "constantly fought"
-	cont "at #MON GYMs."
+	cont "at #<BOLD_M><BOLD_O><BOLD_N> <BOLD_G><BOLD_Y><BOLD_M>s."
 	prompt
 
 _ViridianSchoolNotebookText4::
 	text "Fourth page..."
 
 	para "The goal for"
-	line "#MON trainers"
+	line "#<BOLD_M><BOLD_O><BOLD_N> trainers"
 	cont "is to beat the "
-	cont "top 8 #MON"
-	cont "GYM LEADERs."
+	cont "top 8 #<BOLD_M><BOLD_O><BOLD_N>"
+	cont "<BOLD_G><BOLD_Y><BOLD_M> <BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R>s."
 
 	para "Do so to earn the"
 	line "right to face..."
 
-	para "The ELITE FOUR of"
-	line "#MON LEAGUE!"
+	para "The <BOLD_E><BOLD_L><BOLD_I><BOLD_T><BOLD_E> <BOLD_F><BOLD_O><BOLD_U><BOLD_R> of"
+	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>!"
 	prompt
 
 _EnemiesOnEverySideText::
@@ -566,12 +566,12 @@ _WhatGoesAroundComesAroundText::
 	done
 
 _FightingDojoText::
-	text "FIGHTING DOJO"
+	text "<BOLD_F><BOLD_I><BOLD_G><BOLD_H><BOLD_T><BOLD_I><BOLD_N><BOLD_G> <BOLD_D><BOLD_O><BOLD_J><BOLD_O>"
 	done
 
 _IndigoPlateauHQText::
-	text "INDIGO PLATEAU"
-	line "#MON LEAGUE HQ"
+	text "<BOLD_I><BOLD_N><BOLD_D><BOLD_I><BOLD_G><BOLD_O> <BOLD_P><BOLD_L><BOLD_A><BOLD_T><BOLD_E><BOLD_A><BOLD_U>"
+	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E> <BOLD_H><BOLD_Q>"
 	done
 
 _RedBedroomSNESText::
@@ -608,7 +608,7 @@ _KabutopsFossilText::
 	done
 
 _LinkCableHelpText1::
-	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R><BOLD_ ><BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
+	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> <BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
 
 	para "Using a Game Link"
 	line "Cable"
@@ -621,30 +621,30 @@ _LinkCableHelpText2::
 
 _LinkCableInfoText1::
 	text "When you have"
-	line "linked your GAME"
-	cont "BOY with another"
-	cont "GAME BOY, talk to"
+	line "linked your <BOLD_G><BOLD_A><BOLD_M><BOLD_E>"
+	cont "<BOLD_B><BOLD_O><BOLD_Y> with another"
+	cont "<BOLD_G><BOLD_A><BOLD_M><BOLD_E> <BOLD_B><BOLD_O><BOLD_Y>, talk to"
 	cont "the attendant on"
 	cont "the right in any"
-	cont "#MON CENTER."
+	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_C><BOLD_E><BOLD_N><BOLD_T><BOLD_E><BOLD_R>."
 	prompt
 
 _LinkCableInfoText2::
-	text "COLOSSEUM lets"
+	text "<BOLD_C><BOLD_O><BOLD_L><BOLD_O><BOLD_S><BOLD_S><BOLD_E><BOLD_U><BOLD_M> lets"
 	line "you play against"
 	cont "a friend."
 	prompt
 
 _LinkCableInfoText3::
-	text "TRADE CENTER is"
+	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_D><BOLD_E> <BOLD_C><BOLD_E><BOLD_N><BOLD_T><BOLD_E><BOLD_R> is"
 	line "used for trading"
-	cont "#MON."
+	cont "#<BOLD_M><BOLD_O><BOLD_N>."
 	prompt
 
 _ViridianSchoolBlackboardText1::
 	text "The blackboard"
-	line "describes #MON"
-	cont "STATUS changes"
+	line "describes #<BOLD_M><BOLD_O><BOLD_N>"
+	cont "<BOLD_S><BOLD_T><BOLD_A><BOLD_T><BOLD_U><BOLD_S> changes"
 	cont "during battles."
 	prompt
 
@@ -654,39 +654,39 @@ _ViridianSchoolBlackboardText2::
 	done
 
 _ViridianBlackboardSleepText::
-	text "A #MON can't"
+	text "A #<BOLD_M><BOLD_O><BOLD_N> can't"
 	line "attack if it's"
 	cont "asleep!"
 
-	para "#MON will stay"
+	para "#<BOLD_M><BOLD_O><BOLD_N> will stay"
 	line "asleep even after"
 	cont "battles."
 
-	para "Use AWAKENING to"
+	para "Use <BOLD_A><BOLD_W><BOLD_A><BOLD_K><BOLD_E><BOLD_N><BOLD_I><BOLD_N><BOLD_G> to"
 	line "wake them up!"
 	prompt
 
 _ViridianBlackboardPoisonText::
 	text "When poisoned, a"
-	line "#MON's health"
+	line "#<BOLD_M><BOLD_O><BOLD_N>'<BOLD_s> health"
 	cont "steadily drops."
 
 	para "Poison lingers"
 	line "after battles."
 
-	para "Use an ANTIDOTE"
+	para "Use an <BOLD_A><BOLD_N><BOLD_T><BOLD_I><BOLD_D><BOLD_O><BOLD_T><BOLD_E>"
 	line "to cure poison!"
 	prompt
 
 _ViridianBlackboardPrlzText::
 	text "Paralysis could"
-	line "make #MON"
+	line "make #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "moves misfire!"
 
 	para "Paralysis remains"
 	line "after battles."
 
-	para "Use PARLYZ HEAL"
+	para "Use <BOLD_P><BOLD_A><BOLD_R><BOLD_L><BOLD_Y><BOLD_Z> <BOLD_H><BOLD_E><BOLD_A><BOLD_L>"
 	line "for treatment!"
 	prompt
 
@@ -699,21 +699,21 @@ _ViridianBlackboardBurnText::
 	para "Burns remain"
 	line "after battles."
 
-	para "Use BURN HEAL to"
+	para "Use <BOLD_B><BOLD_U><BOLD_R><BOLD_N> <BOLD_H><BOLD_E><BOLD_A><BOLD_L> to"
 	line "cure a burn!"
 	prompt
 
 _ViridianBlackboardFrozenText::
 	text "If frozen, a"
-	line "#MON becomes"
+	line "#<BOLD_M><BOLD_O><BOLD_N> becomes"
 	cont "totally immobile!"
 
 	para "It stays frozen"
 	line "even after the"
 	cont "battle ends."
 
-	para "Use ICE HEAL to"
-	line "thaw out #MON!"
+	para "Use <BOLD_I><BOLD_C><BOLD_E> <BOLD_H><BOLD_E><BOLD_A><BOLD_L> to"
+	line "thaw out #<BOLD_M><BOLD_O><BOLD_N>!"
 	prompt
 
 _VermilionGymTrashText::
@@ -787,29 +787,29 @@ _DroppedHiddenCoinsText::
 	done
 
 _IndigoPlateauStatuesText1::
-	text "INDIGO PLATEAU"
+	text "<BOLD_I><BOLD_N><BOLD_D><BOLD_I><BOLD_G><BOLD_O> <BOLD_P><BOLD_L><BOLD_A><BOLD_T><BOLD_E><BOLD_A><BOLD_U>"
 	prompt
 
 _IndigoPlateauStatuesText2::
 	text "The ultimate goal"
 	line "of trainers!"
-	cont "#MON LEAGUE HQ"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E> <BOLD_H><BOLD_Q>"
 	done
 
 _IndigoPlateauStatuesText3::
 	text "The highest"
-	line "#MON authority"
-	cont "#MON LEAGUE HQ"
+	line "#<BOLD_M><BOLD_O><BOLD_N> authority"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E> <BOLD_H><BOLD_Q>"
 	done
 
 _PokemonBooksText::
 	text "Crammed full of"
-	line "#MON books!"
+	line "#<BOLD_M><BOLD_O><BOLD_N> books!"
 	done
 
 _DiglettSculptureText::
 	text "It's a sculpture"
-	line "of DIGLETT."
+	line "of <BOLD_D><BOLD_I><BOLD_G><BOLD_L><BOLD_E><BOLD_T><BOLD_T>."
 	done
 
 _ElevatorText::
@@ -818,19 +818,19 @@ _ElevatorText::
 	done
 
 _TownMapText::
-	text "A TOWN MAP.@"
+	text "A <BOLD_T><BOLD_O><BOLD_W><BOLD_N> <BOLD_M><BOLD_A><BOLD_P>.@"
 	text_end
 
 _PokemonStuffText::
 	text "Wow! Tons of"
-	line "#MON stuff!"
+	line "#<BOLD_M><BOLD_O><BOLD_N> stuff!"
 	done
 
 _OutOfSafariBallsText::
-	text "PA: Ding-dong!"
+	text "<BOLD_P><BOLD_A>: Ding-dong!"
 
 	para "You are out of"
-	line "SAFARI BALLs!"
+	line "<BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I> <BOLD_B><BOLD_A><BOLD_L><BOLD_L>s!"
 	prompt
 
 _WildRanText::
@@ -858,7 +858,7 @@ _HurtByBurnText::
 	prompt
 
 _HurtByLeechSeedText::
-	text "LEECH SEED saps"
+	text "<BOLD_L><BOLD_E><BOLD_E><BOLD_C><BOLD_H> <BOLD_S><BOLD_E><BOLD_E><BOLD_D> saps"
 	line "<USER>!"
 	prompt
 
@@ -890,7 +890,7 @@ _PlayerMonFaintedText::
 	prompt
 
 _UseNextMonText::
-	text "Use next #MON?"
+	text "Use next #<BOLD_M><BOLD_O><BOLD_N>?"
 	done
 
 _Rival1WinText::
@@ -900,7 +900,7 @@ _Rival1WinText::
 
 _PlayerBlackedOutText2::
 	text "<PLAYER> is out of"
-	line "useable #MON!"
+	line "useable #<BOLD_M><BOLD_O><BOLD_N>!"
 
 	para "<PLAYER> blacked"
 	line "out!"
@@ -922,7 +922,7 @@ _TrainerAboutToUseText::
 	text "!"
 
 	para "Will <PLAYER>"
-	line "change #MON?"
+	line "change #<BOLD_M><BOLD_O><BOLD_N>?"
 	done
 
 _TrainerSentOutText::
@@ -964,7 +964,7 @@ _AlreadyOutText::
 	prompt
 
 _MoveNoPPText::
-	text "No PP left for"
+	text "No <BOLD_P><BOLD_P> left for"
 	line "this move!"
 	prompt
 
@@ -993,7 +993,7 @@ _ScaredText::
 	prompt
 
 _GetOutText::
-	text "GHOST: Get out..."
+	text "<BOLD_G><BOLD_H><BOLD_O><BOLD_S><BOLD_T>: Get out..."
 	line "Get out..."
 	prompt
 
@@ -1149,7 +1149,7 @@ _CriticalHitText::
 	prompt
 
 _OHKOText::
-	text "One-hit KO!"
+	text "One-hit <BOLD_K><BOLD_O>!"
 	prompt
 
 _LoafingAroundText::
@@ -1183,23 +1183,23 @@ _IgnoredOrdersText::
 	prompt
 
 _SubstituteTookDamageText::
-	text "The SUBSTITUTE"
+	text "The <BOLD_S><BOLD_U><BOLD_B><BOLD_S><BOLD_T><BOLD_I><BOLD_T><BOLD_U><BOLD_T><BOLD_E>"
 	line "took damage for"
 	cont "<TARGET>!"
 	prompt
 
 _SubstituteBrokeText::
 	text "<TARGET>'s"
-	line "SUBSTITUTE broke!"
+	line "<BOLD_S><BOLD_U><BOLD_B><BOLD_S><BOLD_T><BOLD_I><BOLD_T><BOLD_U><BOLD_T><BOLD_E> broke!"
 	prompt
 
 _BuildingRageText::
 	text "<USER>'s"
-	line "RAGE is building!"
+	line "<BOLD_R><BOLD_A><BOLD_G><BOLD_E> is building!"
 	prompt
 
 _MirrorMoveFailedText::
-	text "The MIRROR MOVE"
+	text "The <BOLD_M><BOLD_I><BOLD_R><BOLD_R><BOLD_O><BOLD_R> <BOLD_M><BOLD_O><BOLD_V><BOLD_E>"
 	next "failed!"
 	prompt
 
@@ -1216,7 +1216,7 @@ _GainedText::
 	text_end
 
 _WithExpAllText::
-	text "with EXP.ALL,"
+	text "with <BOLD_E><BOLD_X><BOLD_P>.<BOLD_A><BOLD_L><BOLD_L>,"
 	cont "@"
 	text_end
 
@@ -1227,7 +1227,7 @@ _BoostedText::
 
 _ExpPointsText::
 	text_decimal wExpAmountGained, 2, 4
-	text " EXP. Points!"
+	text " <BOLD_E><BOLD_X><BOLD_P>. Points!"
 	prompt
 
 _GrewLevelText::
@@ -1266,13 +1266,13 @@ _TrainerWantsToFightText::
 	prompt
 
 _UnveiledGhostText::
-	text "SILPH SCOPE"
+	text "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> <BOLD_S><BOLD_C><BOLD_O><BOLD_P><BOLD_E>"
 	line "unveiled the"
-	cont "GHOST's identity!"
+	cont "<BOLD_G><BOLD_H><BOLD_O><BOLD_S><BOLD_T>'<BOLD_s> identity!"
 	prompt
 
 _GhostCantBeIDdText::
-	text "Darn! The GHOST"
+	text "Darn! The <BOLD_G><BOLD_H><BOLD_O><BOLD_S><BOLD_T>"
 	line "can't be ID'd!"
 	prompt
 
@@ -1308,7 +1308,7 @@ _EnoughText::
 	text_end
 
 _OKExclamationText::
-	text "OK!@"
+	text "<BOLD_O><BOLD_K>!@"
 	text_end
 
 _GoodText::
@@ -1363,26 +1363,26 @@ _WhichFloorText::
 	done
 
 _PartyMenuNormalText::
-	text "Choose a #MON."
+	text "Choose a #<BOLD_M><BOLD_O><BOLD_N>."
 	done
 
 _PartyMenuItemUseText::
 	text "Use item on which"
-	line "#MON?"
+	line "#<BOLD_M><BOLD_O><BOLD_N>?"
 	done
 
 _PartyMenuBattleText::
 	text "Bring out which"
-	line "#MON?"
+	line "#<BOLD_M><BOLD_O><BOLD_N>?"
 	done
 
 _PartyMenuUseTMText::
-	text "Use TM on which"
-	line "#MON?"
+	text "Use <BOLD_T><BOLD_M> on which"
+	line "#<BOLD_M><BOLD_O><BOLD_N>?"
 	done
 
 _PartyMenuSwapMonText::
-	text "Move #MON"
+	text "Move #<BOLD_M><BOLD_O><BOLD_N>"
 	line "where?"
 	done
 
@@ -1446,27 +1446,27 @@ _RareCandyText::
 
 _TurnedOnPC1Text::
 	text "<PLAYER> turned on"
-	line "the PC."
+	line "the <BOLD_P><BOLD_C>."
 	prompt
 
 _AccessedBillsPCText::
-	text "Accessed BILL's"
-	line "PC."
+	text "Accessed <BOLD_B><BOLD_I><BOLD_L><BOLD_L>'<BOLD_s>"
+	line "<BOLD_P><BOLD_C>."
 
-	para "Accessed #MON"
+	para "Accessed #<BOLD_M><BOLD_O><BOLD_N>"
 	line "Storage System."
 	prompt
 
 _AccessedSomeonesPCText::
 	text "Accessed someone's"
-	line "PC."
+	line "<BOLD_P><BOLD_C>."
 
-	para "Accessed #MON"
+	para "Accessed #<BOLD_M><BOLD_O><BOLD_N>"
 	line "Storage System."
 	prompt
 
 _AccessedMyPCText::
-	text "Accessed my PC."
+	text "Accessed my <BOLD_P><BOLD_C>."
 
 	para "Accessed Item"
 	line "Storage System."
@@ -1474,7 +1474,7 @@ _AccessedMyPCText::
 
 _TurnedOnPC2Text::
 	text "<PLAYER> turned on"
-	line "the PC."
+	line "the <BOLD_P><BOLD_C>."
 	prompt
 
 _WhatDoYouWantText::
@@ -1494,7 +1494,7 @@ _DepositHowManyText::
 _ItemWasStoredText::
 	text_ram wNameBuffer
 	text " was"
-	line "stored via PC."
+	line "stored via <BOLD_P><BOLD_C>."
 	prompt
 
 _NothingToDepositText::
@@ -1543,11 +1543,11 @@ _TossHowManyText::
 	done
 
 _AccessedHoFPCText::
-	text "Accessed #MON"
-	line "LEAGUE's site."
+	text "Accessed #<BOLD_M><BOLD_O><BOLD_N>"
+	line "<BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>'<BOLD_s> site."
 
-	para "Accessed the HALL"
-	line "OF FAME List."
+	para "Accessed the <BOLD_H><BOLD_A><BOLD_L><BOLD_L>"
+	line "<BOLD_O><BOLD_F> <BOLD_F><BOLD_A><BOLD_M><BOLD_E> List."
 	prompt
 
 _SwitchOnText::
@@ -1560,7 +1560,7 @@ _WhatText::
 
 _DepositWhichMonText::
 	text "Deposit which"
-	line "#MON?"
+	line "#<BOLD_M><BOLD_O><BOLD_N>?"
 	done
 
 _MonWasStoredText::
@@ -1573,12 +1573,12 @@ _MonWasStoredText::
 
 _CantDepositLastMonText::
 	text "You can't deposit"
-	line "the last #MON!"
+	line "the last #<BOLD_M><BOLD_O><BOLD_N>!"
 	prompt
 
 _BoxFullText::
 	text "Oops! This Box is"
-	line "full of #MON."
+	line "full of #<BOLD_M><BOLD_O><BOLD_N>."
 	prompt
 
 _MonIsTakenOutText::
@@ -1592,20 +1592,20 @@ _MonIsTakenOutText::
 
 _NoMonText::
 	text "What? There are"
-	line "no #MON here!"
+	line "no #<BOLD_M><BOLD_O><BOLD_N> here!"
 	prompt
 
 _CantTakeMonText::
 	text "You can't take"
-	line "any more #MON."
+	line "any more #<BOLD_M><BOLD_O><BOLD_N>."
 
-	para "Deposit #MON"
+	para "Deposit #<BOLD_M><BOLD_O><BOLD_N>"
 	line "first."
 	prompt
 
 _ReleaseWhichMonText::
 	text "Release which"
-	line "#MON?"
+	line "#<BOLD_M><BOLD_O><BOLD_N>?"
 	done
 
 _OnceReleasedText::
@@ -1613,7 +1613,7 @@ _OnceReleasedText::
 	line "@"
 	text_ram wStringBuffer
 	text " is"
-	cont "gone forever. OK?"
+	cont "gone forever. <BOLD_O><BOLD_K>?"
 	done
 
 _MonWasReleasedText::
@@ -1626,7 +1626,7 @@ _MonWasReleasedText::
 	prompt
 
 _RequireCoinCaseText::
-	text "A COIN CASE is"
+	text "A <BOLD_C><BOLD_O><BOLD_I><BOLD_N> <BOLD_C><BOLD_A><BOLD_S><BOLD_E> is"
 	line "required!@"
 	text_end
 
@@ -1667,19 +1667,19 @@ _OhFineThenText::
 
 _GetDexRatedText::
 	text "Want to get your"
-	line "#DEX rated?"
+	line "#<BOLD_D><BOLD_E><BOLD_X> rated?"
 	done
 
 _ClosedOaksPCText::
 	text "Closed link to"
-	line "PROF.OAK's PC.@"
+	line "<BOLD_P><BOLD_R><BOLD_O><BOLD_F>.<BOLD_O><BOLD_A><BOLD_K>'<BOLD_s> <BOLD_P><BOLD_C>.@"
 	text_end
 
 _AccessedOaksPCText::
-	text "Accessed PROF."
-	line "OAK's PC."
+	text "Accessed <BOLD_P><BOLD_R><BOLD_O><BOLD_F>."
+	line "<BOLD_O><BOLD_A><BOLD_K>'<BOLD_s> <BOLD_P><BOLD_C>."
 
-	para "Accessed #DEX"
+	para "Accessed #<BOLD_D><BOLD_E><BOLD_X>"
 	line "Rating System."
 	prompt
 
@@ -1689,7 +1689,7 @@ _WhereWouldYouLikeText::
 	done
 
 _PleaseWaitText::
-	text "OK, please wait"
+	text "<BOLD_O><BOLD_K>, please wait"
 	line "just a moment."
 	done
 
@@ -1805,7 +1805,7 @@ _WillBeTradedText::
 
 _TextIDErrorText::
 	text_decimal hTextID, 1, 2
-	text " ERROR."
+	text " <BOLD_E><BOLD_R><BOLD_R><BOLD_O><BOLD_R>."
 	done
 
 _ContCharText::

@@ -513,21 +513,21 @@ ChooseABoxText:
 	text_end
 
 BoxNames:
-	db   "BOX 1"
-	next "BOX 2"
-	next "BOX 3"
-	next "BOX 4"
-	next "BOX 5"
-	next "BOX 6"
-	next "BOX 7"
-	next "BOX 8"
-	next "BOX 9"
-	next "BOX10"
-	next "BOX11"
-	next "BOX12@"
+	db   "<BOLD_B><BOLD_O><BOLD_X> 1"
+	next "<BOLD_B><BOLD_O><BOLD_X> 2"
+	next "<BOLD_B><BOLD_O><BOLD_X> 3"
+	next "<BOLD_B><BOLD_O><BOLD_X> 4"
+	next "<BOLD_B><BOLD_O><BOLD_X> 5"
+	next "<BOLD_B><BOLD_O><BOLD_X> 6"
+	next "<BOLD_B><BOLD_O><BOLD_X> 7"
+	next "<BOLD_B><BOLD_O><BOLD_X> 8"
+	next "<BOLD_B><BOLD_O><BOLD_X> 9"
+	next "<BOLD_B><BOLD_O><BOLD_X>10"
+	next "<BOLD_B><BOLD_O><BOLD_X>11"
+	next "<BOLD_B><BOLD_O><BOLD_X>12@"
 
 BoxNoText:
-	db "BOX No.@"
+	db "<BOLD_B><BOLD_O><BOLD_X> No.@"
 
 EmptyAllSRAMBoxes:
 ; marks all boxes in SRAM as empty (initialisation for the first time the

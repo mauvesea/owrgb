@@ -1,10 +1,10 @@
 _Route5UndergroundPathSignText::
-	text "UNDERGROUND PATH"
-	para "ROUTE 5 - ROUTE 6"
+	text "<BOLD_U><BOLD_N><BOLD_D><BOLD_E><BOLD_R><BOLD_G><BOLD_R><BOLD_O><BOLD_U><BOLD_N><BOLD_D> <BOLD_P><BOLD_A><BOLD_T><BOLD_H>"
+	para "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 5 - <BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 6"
 	done
 
 _Route5SignText::
-	text "ROUTE 5"
-	line "▲ CERULEAN CITY"
-	cont "▼ SAFFRON CITY"
+	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 5"
+	line "▲ <BOLD_C><BOLD_E><BOLD_R><BOLD_U><BOLD_L><BOLD_E><BOLD_A><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
+	cont "▼ <BOLD_S><BOLD_A><BOLD_F><BOLD_F><BOLD_R><BOLD_O><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
 	done

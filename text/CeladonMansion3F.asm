@@ -1,12 +1,12 @@
 _CeladonMansion3FGameDesignerCompletedDexText::
 	text "It's me, the"
-	line "GAME DIRECTOR!"
+	line "<BOLD_G><BOLD_A><BOLD_M><BOLD_E> <BOLD_D><BOLD_I><BOLD_R><BOLD_E><BOLD_C><BOLD_T><BOLD_O><BOLD_R>!"
 
 	para "..."
 
 	para "Wow! Excellent!"
 	line "You completed"
-	cont "your #DEX!"
+	cont "your #<BOLD_D><BOLD_E><BOLD_X>!"
 	cont "Congratulations!"
 
 	para "Here, you should"
@@ -27,17 +27,17 @@ _GFRoomPCSugimoriScript::
 	done
 
 _GFRoomPCNishinoScript::
-	text "There's a #MON"
+	text "There's a #<BOLD_M><BOLD_O><BOLD_N>"
 	line "statistics file"
 	cont "is on screen."
-	para "Wow! MEWTWO is"
+	para "Wow! <BOLD_M><BOLD_E><BOLD_W><BOLD_T><BOLD_W><BOLD_O> is"
 	line "the strongest"
-	cont "#MON!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _GFRoomPCNishidaScript1::
 	text "A very cute"
-	line "#MON is on"
+	line "#<BOLD_M><BOLD_O><BOLD_N> is on"
 	cont "the screen!"
 	done
 
@@ -48,13 +48,13 @@ _GFRoomPCMasudaScript1::
 	done
 
 _CeladonMansion3FDevRoomSignText::
-	text "GAME FREAK"
+	text "<BOLD_G><BOLD_A><BOLD_M><BOLD_E> <BOLD_F><BOLD_R><BOLD_E><BOLD_A><BOLD_K>"
 	line "Development Room"
 	done
 
 _GFRoomDeskMorimotoScript1::
-	text "This is the PRO-"
-	line "GRAMMER's desk!"
+	text "This is the <BOLD_P><BOLD_R><BOLD_O>-"
+	line "<BOLD_G><BOLD_R><BOLD_A><BOLD_M><BOLD_M><BOLD_E><BOLD_R>'<BOLD_s> desk!"
 
 	para "It seems like he"
 	line "needed to discuss"
@@ -63,18 +63,18 @@ _GFRoomDeskMorimotoScript1::
 	cont "the game..."
 
 	para "Huh? Isn't that a"
-	line "SILPH CO."
+	line "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> <BOLD_C><BOLD_O>."
 	cont "business card?"
 	done
 
 _GFRoomDeskMorimotoScript2::
-	text "This is the PRO-"
-	line "GRAMMER's desk!"
+	text "This is the <BOLD_P><BOLD_R><BOLD_O>-"
+	line "<BOLD_G><BOLD_R><BOLD_A><BOLD_M><BOLD_M><BOLD_E><BOLD_R>'<BOLD_s> desk!"
 	done
 
 _GFRoomDeskSugimoriScript1::
-	text "This is the CHAR-"
-	line "ACTER DESIGNER's"
+	text "This is the <BOLD_C><BOLD_H><BOLD_A><BOLD_R>-"
+	line "<BOLD_A><BOLD_C><BOLD_T><BOLD_E><BOLD_R> <BOLD_D><BOLD_E><BOLD_S><BOLD_I><BOLD_G><BOLD_N><BOLD_E><BOLD_R>'<BOLD_s>"
 	cont "desk!"
 
 	para "There's a bunch of"
@@ -87,14 +87,14 @@ _GFRoomDeskSugimoriScript1::
 	done
 
 _GFRoomDeskSugimoriScript2::
-	text "This is the CHAR-"
-	line "ACTER DESIGNER's"
+	text "This is the <BOLD_C><BOLD_H><BOLD_A><BOLD_R>-"
+	line "<BOLD_A><BOLD_C><BOLD_T><BOLD_E><BOLD_R> <BOLD_D><BOLD_E><BOLD_S><BOLD_I><BOLD_G><BOLD_N><BOLD_E><BOLD_R>'<BOLD_s>"
 	cont "desk!"
 	done
 
 _GFRoomDeskMasudaScript1::
-	text "This is the MUSI-"
-	line "CIAN's desk!"
+	text "This is the <BOLD_M><BOLD_U><BOLD_S><BOLD_I>-"
+	line "<BOLD_C><BOLD_I><BOLD_A><BOLD_N>'<BOLD_s> desk!"
 
 	para "There are pictures"
 	line "of a bridge and"
@@ -108,17 +108,17 @@ _GFRoomDeskMasudaScript1::
 	done
 
 _GFRoomDeskMasudaScript2::
-	text "This is the MUSI-"
-	line "CIAN's desk!"
+	text "This is the <BOLD_M><BOLD_U><BOLD_S><BOLD_I>-"
+	line "<BOLD_C><BOLD_I><BOLD_A><BOLD_N>'<BOLD_s> desk!"
 	done
 
 _GFRoomDeskNishidaScript1::
 	text "This is the #-"
-	line "MON DESIGNER's"
+	line "<BOLD_M><BOLD_O><BOLD_N> <BOLD_D><BOLD_E><BOLD_S><BOLD_I><BOLD_G><BOLD_N><BOLD_E><BOLD_R>'<BOLD_s>"
 	cont "desk!"
 
 	para "There are many"
-	line "cute #MON"
+	line "cute #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "drawings all over"
 	cont "the place."
 
@@ -126,48 +126,48 @@ _GFRoomDeskNishidaScript1::
 	line "email on screen."
 
 	para "Looks like she"
-	line "invited the MAP"
-	line "DESIGNER to a"
+	line "invited the <BOLD_M><BOLD_A><BOLD_P>"
+	line "<BOLD_D><BOLD_E><BOLD_S><BOLD_I><BOLD_G><BOLD_N><BOLD_E><BOLD_R> to a"
 	cont "place where they"
 	cont "could catch a"
-	cont "lot of #MON."
+	cont "lot of #<BOLD_M><BOLD_O><BOLD_N>."
 	done
 
 _GFRoomDeskNishidaScript2::
 	text "This is the #-"
-	line "MON DESIGNER's"
+	line "<BOLD_M><BOLD_O><BOLD_N> <BOLD_D><BOLD_E><BOLD_S><BOLD_I><BOLD_G><BOLD_N><BOLD_E><BOLD_R>'<BOLD_s>"
 	cont "desk!"
 	done
 
 _GFRoomDeskNishinoScript1::
-	text "This is the MAP"
-	line "DESIGNER's desk!"
+	text "This is the <BOLD_M><BOLD_A><BOLD_P>"
+	line "<BOLD_D><BOLD_E><BOLD_S><BOLD_I><BOLD_G><BOLD_N><BOLD_E><BOLD_R>'<BOLD_s> desk!"
 
 	para "There are also a"
 	line "lot of spread-"
 	cont "sheets about"
-	cont "#MON stat-"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> stat-"
 	cont "istics too..."
 
 	para "There's an empty"
-	line "CAMERA CASE on his"
+	line "<BOLD_C><BOLD_A><BOLD_M><BOLD_E><BOLD_R><BOLD_A> <BOLD_C><BOLD_A><BOLD_S><BOLD_E> on his"
 	cont "desk... He must"
 	cont "have gone some-"
 	cont "where to take"
 	cont "pictures of many"
 	cont "different kinds"
-	cont "of #MON!"
+	cont "of #<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _GFRoomDeskNishinoScript2::
-	text "This is the MAP"
-	line "DESIGNER's desk!"
+	text "This is the <BOLD_M><BOLD_A><BOLD_P>"
+	line "<BOLD_D><BOLD_E><BOLD_S><BOLD_I><BOLD_G><BOLD_N><BOLD_E><BOLD_R>'<BOLD_s> desk!"
 	done
 
 
 _GFRoomScriptMorimoto1::
 	text "Hello! I'm the"
-	line "PROGRAMMER!"
+	line "<BOLD_P><BOLD_R><BOLD_O><BOLD_G><BOLD_R><BOLD_A><BOLD_M><BOLD_M><BOLD_E><BOLD_R>!"
 
 	para "The game isn't that"
 	line "buggy, is it?"
@@ -178,7 +178,7 @@ _GFRoomScriptMorimoto1::
 
 _GFRoomScriptMorimoto2::
 	text "Hello! I'm the"
-	line "PROGRAMMER!"
+	line "<BOLD_P><BOLD_R><BOLD_O><BOLD_G><BOLD_R><BOLD_A><BOLD_M><BOLD_M><BOLD_E><BOLD_R>!"
 
 	para "I'm finally done"
 	line "with debugging!"
@@ -189,47 +189,47 @@ _GFRoomScriptMorimoto2::
 
 	para "Now there's some"
 	line "more space in the"
-	cont "ROM!"
+	cont "<BOLD_R><BOLD_O><BOLD_M>!"
 
 	para "Oh yeah... Did"
 	line "you hear the"
 	cont "rumor about that"
 	cont "crazy rare #-"
-	cont "MON?"
+	cont "<BOLD_M><BOLD_O><BOLD_N>?"
 
 	para "Seems like it's"
 	line "been spotted"
 	cont "somewhere deep in"
-	cont "#MON MANSION!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_M><BOLD_A><BOLD_N><BOLD_S><BOLD_I><BOLD_O><BOLD_N>!"
 	done
 
 _GFRoomScriptMorimoto3::
 	text "Hello! I'm the"
-	line "PROGRAMMER!"
+	line "<BOLD_P><BOLD_R><BOLD_O><BOLD_G><BOLD_R><BOLD_A><BOLD_M><BOLD_M><BOLD_E><BOLD_R>!"
 
 	para "So, what do you"
-	line "think about MEW?"
+	line "think about <BOLD_M><BOLD_E><BOLD_W>?"
 	cont "Very cool, right?"
 	done
 
 _GFRoomScriptSugimori::
-	text "Hey! I'm the CHAR-"
-	line "ACTER DESIGNER!"
+	text "Hey! I'm the <BOLD_C><BOLD_H><BOLD_A><BOLD_R>-"
+	line "<BOLD_A><BOLD_C><BOLD_T><BOLD_E><BOLD_R> <BOLD_D><BOLD_E><BOLD_S><BOLD_I><BOLD_G><BOLD_N><BOLD_E><BOLD_R>!"
 
 	para "But I do design"
-	line "#MON too."
+	line "#<BOLD_M><BOLD_O><BOLD_N> too."
 
 	para "What's your favor-"
-	line "ite #MON?"
+	line "ite #<BOLD_M><BOLD_O><BOLD_N>?"
 
 	para "I'm torn between"
-	line "GENGAR and"
-	cont "VENUSAUR!"
+	line "<BOLD_G><BOLD_E><BOLD_N><BOLD_G><BOLD_A><BOLD_R> and"
+	cont "<BOLD_V><BOLD_E><BOLD_N><BOLD_U><BOLD_S><BOLD_A><BOLD_U><BOLD_R>!"
 	done
 
 _GFRoomScriptMasuda::
 	text "What's up? I'm"
-	line "the MUSICIAN!"
+	line "the <BOLD_M><BOLD_U><BOLD_S><BOLD_I><BOLD_C><BOLD_I><BOLD_A><BOLD_N>!"
 
 	para "Are you enjoying"
 	line "the tunes I made?"
@@ -237,25 +237,25 @@ _GFRoomScriptMasuda::
 	para "I can write some"
 	line "code too, so you"
 	cont "could say I'm a"
-	cont "PROGRAMMER too!"
+	cont "<BOLD_P><BOLD_R><BOLD_O><BOLD_G><BOLD_R><BOLD_A><BOLD_M><BOLD_M><BOLD_E><BOLD_R> too!"
 	done
 
 _GFRoomScriptNishida::
 	text "Hi! I'm the"
-	line "#MON DESIGNER!"
+	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_D><BOLD_E><BOLD_S><BOLD_I><BOLD_G><BOLD_N><BOLD_E><BOLD_R>!"
 
 	para "But I did design"
 	line "some characters"
 	cont "too!"
 
 	para "Do you like"
-	line "PIKACHU? I"
+	line "<BOLD_P><BOLD_I><BOLD_K><BOLD_A><BOLD_C><BOLD_H><BOLD_U>? I"
 	cont "designed it!"
 	done
 
 _GFRoomScriptNishino::
-	text "Yo! I'm the MAP"
-	line "DESIGNER!"
+	text "Yo! I'm the <BOLD_M><BOLD_A><BOLD_P>"
+	line "<BOLD_D><BOLD_E><BOLD_S><BOLD_I><BOLD_G><BOLD_N><BOLD_E><BOLD_R>!"
 
 	para "I made the very"
 	line "map you're stand-"
@@ -263,17 +263,17 @@ _GFRoomScriptNishino::
 
 	para "I also fine-tune"
 	line "how powerful each"
-	cont "#MON is."
+	cont "#<BOLD_M><BOLD_O><BOLD_N> is."
 
 	para "People say I look"
-	line "like SNORLAX."
+	line "like <BOLD_S><BOLD_N><BOLD_O><BOLD_R><BOLD_L><BOLD_A><BOLD_X>."
 	cont "What do ya think?"
 	done
 
 
 _TajiriText1::
 	text "It's me, the"
-	line "GAME DIRECTOR!"
+	line "<BOLD_G><BOLD_A><BOLD_M><BOLD_E> <BOLD_D><BOLD_I><BOLD_R><BOLD_E><BOLD_C><BOLD_T><BOLD_O><BOLD_R>!"
 
 	para "And I'm in real"
 	line "trouble!"
@@ -312,14 +312,14 @@ _TajiriText4::
 
 _TajiriText5::
 	text "It's me, the"
-	line "GAME DIRECTOR!"
+	line "<BOLD_G><BOLD_A><BOLD_M><BOLD_E> <BOLD_D><BOLD_I><BOLD_R><BOLD_E><BOLD_C><BOLD_T><BOLD_O><BOLD_R>!"
 
 	para "All my team mem-"
 	line "bers are back."
 	cont "Thank you!"
 
 	para "Say, filling up"
-	line "your #DEX is"
+	line "your #<BOLD_D><BOLD_E><BOLD_X> is"
 	cont "tough, right?"
 	cont "But don't quit!"
 

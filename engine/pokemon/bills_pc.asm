@@ -85,12 +85,12 @@ DisplayPCMainMenu::
 	ldh [hAutoBGTransferEnabled], a
 	ret
 
-SomeonesPCText:   db "SOMEONE's PC@"
-BillsPCText:      db "BILL's PC@"
-PlayersPCText:    db "'s PC@"
-OaksPCText:       db "PROF.OAK's PC@"
-PKMNLeaguePCText: db "<PKMN>LEAGUE@"
-LogOffPCText:     db "LOG OFF@"
+SomeonesPCText:   db "<BOLD_S><BOLD_O><BOLD_M><BOLD_E><BOLD_O><BOLD_N><BOLD_E><BOLD_s> <BOLD_P><BOLD_C>@"
+BillsPCText:      db "<BOLD_B><BOLD_I><BOLD_L><BOLD_L><BOLD_s> <BOLD_P><BOLD_C>@"
+PlayersPCText:    db "<BOLD_s> <BOLD_P><BOLD_C>@"
+OaksPCText:       db "<BOLD_P><BOLD_R><BOLD_O><BOLD_F>.<BOLD_O><BOLD_A><BOLD_K><BOLD_s> <BOLD_P><BOLD_C>@"
+PKMNLeaguePCText: db "<PKMN><BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>@"
+LogOffPCText:     db "<BOLD_L><BOLD_O><BOLD_G> <BOLD_O><BOLD_F><BOLD_F>@"
 
 BillsPC_::
 	ld hl, wStatusFlags5
@@ -339,15 +339,15 @@ DisplayMonListMenu:
 	ret
 
 BillsPCMenuText:
-	db   "WITHDRAW <PKMN>"
-	next "DEPOSIT <PKMN>"
-	next "RELEASE <PKMN>"
-	next "CHANGE BOX"
-	next "SEE YA!"
+	db   "<BOLD_W><BOLD_I><BOLD_T><BOLD_H><BOLD_D><BOLD_R><BOLD_A><BOLD_W> <PKMN>"
+	next "<BOLD_D><BOLD_E><BOLD_P><BOLD_O><BOLD_S><BOLD_I><BOLD_T> <PKMN>"
+	next "<BOLD_R><BOLD_E><BOLD_L><BOLD_E><BOLD_A><BOLD_S><BOLD_E> <PKMN>"
+	next "<BOLD_C><BOLD_H><BOLD_A><BOLD_N><BOLD_G><BOLD_E> <BOLD_B><BOLD_O><BOLD_X>"
+	next "<BOLD_S><BOLD_E><BOLD_E> <BOLD_Y><BOLD_A>!"
 	db "@"
 
 BoxNoPCText:
-	db "BOX No.@"
+	db "<BOLD_B><BOLD_O><BOLD_X> No.@"
 
 KnowsHMMove::
 ; returns whether mon with party index [wWhichPokemon] knows an HM move
@@ -446,11 +446,11 @@ DisplayDepositWithdrawMenu:
 	call LoadGBPal
 	jr .loop
 
-DepositPCText:  db "DEPOSIT@"
-WithdrawPCText: db "WITHDRAW@"
+DepositPCText:  db "<BOLD_D><BOLD_E><BOLD_P><BOLD_O><BOLD_S><BOLD_I><BOLD_T>@"
+WithdrawPCText: db "<BOLD_W><BOLD_I><BOLD_T><BOLD_H><BOLD_D><BOLD_R><BOLD_A><BOLD_W>@"
 StatsCancelPCText:
-	db   "STATS"
-	next "CANCEL@"
+	db   "<BOLD_S><BOLD_T><BOLD_A><BOLD_T><BOLD_S>"
+	next "<BOLD_C><BOLD_A><BOLD_N><BOLD_C><BOLD_E><BOLD_L>@"
 
 SwitchOnText:
 	text_far _SwitchOnText

@@ -1,47 +1,47 @@
 _MrFujisHouseSuperNerdMrFujiIsntHereText::
-	text "That's odd, MR.FUJI"
+	text "That's odd, <BOLD_M><BOLD_R>.<BOLD_F><BOLD_U><BOLD_J><BOLD_I>"
 	line "isn't here."
 	cont "Where'd he go?"
 	done
 
 _MrFujisHouseSuperNerdMrFujiHadBeenPrayingText::
-	text "MR.FUJI had been"
+	text "<BOLD_M><BOLD_R>.<BOLD_F><BOLD_U><BOLD_J><BOLD_I> had been"
 	line "praying alone for"
-	cont "CUBONE's mother."
+	cont "<BOLD_C><BOLD_U><BOLD_B><BOLD_O><BOLD_N><BOLD_E>'<BOLD_s> mother."
 	done
 
 _MrFujisHouseLittleGirlThisIsMrFujisHouseText::
 	text "This is really"
-	line "MR.FUJI's house."
+	line "<BOLD_M><BOLD_R>.<BOLD_F><BOLD_U><BOLD_J><BOLD_I>'<BOLD_s> house."
 
 	para "He's really kind!"
 
 	para "He looks after"
 	line "abandoned and"
-	cont "orphaned #MON!"
+	cont "orphaned #<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _MrFujisHouseLittleGirlPokemonAreNiceToHugText::
 	text "It's so warm!"
-	line "#MON are so"
+	line "#<BOLD_M><BOLD_O><BOLD_N> are so"
 	cont "nice to hug!"
 	done
 
 _MrFujisHousePsyduckText::
-	text "PSYDUCK: Gwappa!@"
+	text "<BOLD_P><BOLD_S><BOLD_Y><BOLD_D><BOLD_U><BOLD_C><BOLD_K>: Gwappa!@"
 	text_end
 
 _MrFujisHouseNidorinoText::
-	text "NIDORINO: Gaoo!@"
+	text "<BOLD_N><BOLD_I><BOLD_D><BOLD_O><BOLD_R><BOLD_I><BOLD_N><BOLD_O>: Gaoo!@"
 	text_end
 
 _MrFujisHouseMrFujiIThinkThisMayHelpYourQuestText::
-	text "MR.FUJI: <PLAYER>."
+	text "<BOLD_M><BOLD_R>.<BOLD_F><BOLD_U><BOLD_J><BOLD_I>: <PLAYER>."
 
-	para "Your #DEX quest"
+	para "Your #<BOLD_D><BOLD_E><BOLD_X> quest"
 	line "may fail without"
 	cont "love for your"
-	cont "#MON."
+	cont "#<BOLD_M><BOLD_O><BOLD_N>."
 
 	para "I think this may"
 	line "help your quest."
@@ -58,12 +58,12 @@ _MrFujisHouseMrFujiPokeFluteExplanationText::
 	text_start
 
 	para "Upon hearing #"
-	line "FLUTE, sleeping"
-	cont "#MON will"
+	line "<BOLD_F><BOLD_L><BOLD_U><BOLD_T><BOLD_E>, sleeping"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> will"
 	cont "spring awake."
 
 	para "It works on all"
-	line "sleeping #MON."
+	line "sleeping #<BOLD_M><BOLD_O><BOLD_N>."
 	done
 
 _MrFujisHouseMrFujiPokeFluteNoRoomText::
@@ -72,12 +72,12 @@ _MrFujisHouseMrFujiPokeFluteNoRoomText::
 	done
 
 _MrFujisHouseMrFujiHasMyFluteHelpedYouText::
-	text "MR.FUJI: Has my"
-	line "FLUTE helped you?"
+	text "<BOLD_M><BOLD_R>.<BOLD_F><BOLD_U><BOLD_J><BOLD_I>: Has my"
+	line "<BOLD_F><BOLD_L><BOLD_U><BOLD_T><BOLD_E> helped you?"
 	done
 
 _MrFujisHouseMrFujiPokedexText::
-	text "#MON Monthly"
+	text "#<BOLD_M><BOLD_O><BOLD_N> Monthly"
 	line "Grand Prize"
 	cont "Drawing!"
 

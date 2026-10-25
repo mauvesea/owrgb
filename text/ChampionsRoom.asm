@@ -10,19 +10,19 @@ _ChampionsRoomRivalIntroText::
 	cont "me sharp!"
 
 	para "While working on"
-	line "#DEX, I looked"
+	line "#<BOLD_D><BOLD_E><BOLD_X>, I looked"
 	cont "all over for"
-	cont "powerful #MON!"
+	cont "powerful #<BOLD_M><BOLD_O><BOLD_N>!"
 
 	para "Not only that, I"
 	line "assembled teams"
 	cont "that would beat"
-	cont "any #MON type!"
+	cont "any #<BOLD_M><BOLD_O><BOLD_N> type!"
 
 	para "And now!"
 
-	para "I'm the #MON"
-	line "LEAGUE champion!"
+	para "I'm the #<BOLD_M><BOLD_O><BOLD_N>"
+	line "<BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E> champion!"
 
 	para "<PLAYER>! Do you"
 	line "know what that"
@@ -36,13 +36,13 @@ _ChampionsRoomRivalIntroText::
 	done
 
 _RivalDefeatedText::
-	text "NO!"
+	text "<BOLD_N><BOLD_O>!"
 	line "That can't be!"
 	cont "You beat my best!"
 
 	para "After all that"
 	line "work to become"
-	cont "LEAGUE champ?"
+	cont "<BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E> champ?"
 
 	para "My reign is over"
 	line "already?"
@@ -59,7 +59,7 @@ _RivalVictoryText::
 	para "You did well to"
 	line "even reach me,"
 	cont "<RIVAL>, the"
-	cont "#MON genius!"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> genius!"
 
 	para "Nice try, loser!"
 	line "Hahaha!"
@@ -71,25 +71,25 @@ _ChampionsRoomRivalAfterBattleText::
 
 	para "I never made any"
 	line "mistakes raising"
-	cont "my #MON..."
+	cont "my #<BOLD_M><BOLD_O><BOLD_N>..."
 
 	para "Darn it! You're"
-	line "the new #MON"
-	cont "LEAGUE champion!"
+	line "the new #<BOLD_M><BOLD_O><BOLD_N>"
+	cont "<BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E> champion!"
 
 	para "Although I don't"
 	line "like to admit it."
 	done
 
 _ChampionsRoomOakText::
-	text "OAK: <PLAYER>!"
+	text "<BOLD_O><BOLD_A><BOLD_K>: <PLAYER>!"
 	done
 
 _ChampionsRoomOakCongratulatesPlayerText::
-	text "OAK: So, you won!"
+	text "<BOLD_O><BOLD_A><BOLD_K>: So, you won!"
 	line "Congratulations!"
 	cont "You're the new"
-	cont "#MON LEAGUE"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>"
 	cont "champion!"
 
 	para "You've grown up so"
@@ -104,12 +104,12 @@ _ChampionsRoomOakCongratulatesPlayerText::
 	done
 
 _ChampionsRoomOakDisappointedWithRivalText::
-	text "OAK: <RIVAL>! I'm"
+	text "<BOLD_O><BOLD_A><BOLD_K>: <RIVAL>! I'm"
 	line "disappointed!"
 
 	para "I came when I"
 	line "heard you beat"
-	cont "the ELITE FOUR!"
+	cont "the <BOLD_E><BOLD_L><BOLD_I><BOLD_T><BOLD_E> <BOLD_F><BOLD_O><BOLD_U><BOLD_R>!"
 
 	para "But, when I got"
 	line "here, you had"
@@ -121,7 +121,7 @@ _ChampionsRoomOakDisappointedWithRivalText::
 
 	para "You have forgotten"
 	line "to treat your"
-	cont "#MON with"
+	cont "#<BOLD_M><BOLD_O><BOLD_N> with"
 	cont "trust and love!"
 
 	para "Without them, you"
@@ -130,7 +130,7 @@ _ChampionsRoomOakDisappointedWithRivalText::
 	done
 
 _ChampionsRoomOakComeWithMeText::
-	text "OAK: <PLAYER>!"
+	text "<BOLD_O><BOLD_A><BOLD_K>: <PLAYER>!"
 
 	para "You understand"
 	line "that your victory"
@@ -138,7 +138,7 @@ _ChampionsRoomOakComeWithMeText::
 	cont "own doing!"
 
 	para "The bond you share"
-	line "with your #MON"
+	line "with your #<BOLD_M><BOLD_O><BOLD_N>"
 	cont "is marvelous!"
 
 	para "<PLAYER>!"

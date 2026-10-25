@@ -11,11 +11,11 @@ _CopycatsHouse1FMiddleAgedManText::
 
 	para "Her mimicry has"
 	line "earned her the"
-	cont "nickname COPYCAT"
+	cont "nickname <BOLD_C><BOLD_O><BOLD_P><BOLD_Y><BOLD_C><BOLD_A><BOLD_T>"
 	cont "around here!"
 	done
 
 _CopycatsHouse1FChanseyText::
-	text "CHANSEY: Chaan!"
+	text "<BOLD_C><BOLD_H><BOLD_A><BOLD_N><BOLD_S><BOLD_E><BOLD_Y>: Chaan!"
 	line "Sii!@"
 	text_end
