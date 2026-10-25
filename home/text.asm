@@ -77,6 +77,7 @@ PlaceNextChar::
 	jr nz, .NotLine
 	pop hl
 	hlcoord 1, 16
+	call OffsetDialogueText
 	push hl
 	jp NextChar
 
@@ -233,13 +234,12 @@ Paragraph::
 	ldcoord_a 18, 16
 	call ProtectedDelay3
 	call ManualTextScroll
-	hlcoord 1, 13
-	lb bc, 4, 18
-	call ClearScreenArea
+	farcall ClearDialogueText
 	ld c, 20
 	call DelayFrames
 	pop de
 	hlcoord 1, 14
+	call OffsetDialogueText
 	jp NextChar
 
 PageChar::
@@ -273,6 +273,7 @@ _ContTextNoPause::
 	call ScrollTextUpOneLine
 	call ScrollTextUpOneLine
 	hlcoord 1, 16
+	call OffsetDialogueText
 	pop de
 	jp NextChar
 
@@ -281,29 +282,19 @@ _ContTextNoPause::
 ; first time, copy the two rows of text to the "in between" rows that are usually empty
 ; second time, copy the bottom row of text into the top row of text
 ScrollTextUpOneLine::
-	hlcoord 0, 14 ; top row of text
-	decoord 0, 13 ; empty line above text
-	ld b, SCREEN_WIDTH * 3
-.copyText
-	ld a, [hli]
-	ld [de], a
-	inc de
-	dec b
-	jr nz, .copyText
-	hlcoord 1, 16
-	ld a, ' '
-	ld b, SCREEN_WIDTH - 2
-.clearText
-	ld [hli], a
-	dec b
-	jr nz, .clearText
+	farjp ScrollDialogueText
 
-	ld b, 5
-.WaitFrame
-	call DelayFrame
-	dec b
-	jr nz, .WaitFrame
-
+; Offset a normal dialogue cursor by the portrait and its one-column gutter.
+; Preserve DE (the string pointer) and BC.
+OffsetDialogueText::
+	ld a, [wDialogueFace]
+	and a
+	ret z
+	ld a, FACE_TEXT_OFFSET
+	add l
+	ld l, a
+	ret nc
+	inc h
 	ret
 
 ProtectedDelay3::
@@ -335,6 +326,8 @@ NextTextCommand::
 
 .TextCommand:
 	push hl
+	cp TX_FACE
+	jp z, TextCommand_FACE
 	cp TX_FAR
 	jp z, TextCommand_FAR
 	cp TX_SOUND_POKEDEX_RATING
@@ -428,7 +421,7 @@ TextCommand_MOVE::
 TextCommand_LOW::
 ; write text at (1,16)
 	pop hl
-	bccoord 1, 16 ; second line of dialogue text box
+	call DialogueBottomCursor
 	jp NextTextCommand
 
 TextCommand_PROMPT_BUTTON::
@@ -454,7 +447,7 @@ TextCommand_SCROLL::
 	call ScrollTextUpOneLine
 	call ScrollTextUpOneLine
 	pop hl
-	bccoord 1, 16 ; second line of dialogue text box
+	call DialogueBottomCursor
 	jp NextTextCommand
 
 TextCommand_START_ASM::
@@ -626,11 +619,7 @@ TextCommandJumpTable::
 	dw TextCommand_BOX           ; TX_BOX
 	dw TextCommand_LOW           ; TX_LOW
 	dw TextCommand_PROMPT_BUTTON ; TX_PROMPT_BUTTON
-IF DEF(_DEBUG)
-	dw _ContTextNoPause          ; TX_SCROLL
-ELSE
 	dw TextCommand_SCROLL        ; TX_SCROLL
-ENDC
 	dw TextCommand_START_ASM     ; TX_START_ASM
 	dw TextCommand_NUM           ; TX_NUM
 	dw TextCommand_PAUSE         ; TX_PAUSE
@@ -638,3 +627,28 @@ ENDC
 	dw TextCommand_DOTS          ; TX_DOTS
 	dw TextCommand_WAIT_BUTTON   ; TX_WAIT_BUTTON
 	; greater TX_* constants are handled directly by NextTextCommand
+
+TextCommand_FACE::
+	pop hl
+	ld a, [hli]
+	ld e, a
+	push hl
+	farcall SetDialogueFace
+	call DialogueTopCursor
+	pop hl
+	jp NextTextCommand
+
+DialogueTopCursor::
+	push hl
+	hlcoord 1, 14
+	jr DialogueCursor
+
+DialogueBottomCursor::
+	push hl
+	hlcoord 1, 16
+DialogueCursor::
+	call OffsetDialogueText
+	ld b, h
+	ld c, l
+	pop hl
+	ret

@@ -179,6 +179,15 @@ SetPal_Overworld:
 	xor a
 	jr .town
 
+SetPal_DialogueFace:
+; Keep the current map in palette 0 and use palette 1 only for the portrait.
+	call SetPal_Overworld
+	ld a, PAL_MEWMON
+	ld [wPalPacket + 3], a
+	ld hl, wPalPacket
+	ld de, BlkPacket_DialogueFace
+	ret
+
 ; used when a Pokemon is the only thing on the screen
 ; such as evolution, trading and the Hall of Fame
 SetPal_PokemonWholeScreen:
@@ -256,6 +265,7 @@ SetPalFunctions:
 	dw SetPal_PokemonWholeScreen
 	dw SetPal_GameFreakIntro
 	dw SetPal_TrainerCard
+	dw SetPal_DialogueFace
 
 ; The length of the blk data of each badge on the Trainer Card.
 ; The Rainbow Badge has 3 entries because of its many colors.

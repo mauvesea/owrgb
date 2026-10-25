@@ -104,6 +104,7 @@ HoldTextDisplayOpen::
 	jr nz, HoldTextDisplayOpen
 
 CloseTextDisplay::
+	farcall PrepareDialogueFaceClose
 	ld a, [wCurMap]
 	call SwitchToMapRomBank
 	ld a, $90

@@ -286,9 +286,10 @@ PrintText::
 	ld a, MESSAGE_BOX
 	ld [wTextBoxID], a
 	call DisplayTextBoxID
+	farcall DrawDialogueFace
 	call UpdateSprites
 	call Delay3
 	pop hl
 PrintText_NoCreatingTextBox::
-	bccoord 1, 14
+	call DialogueTopCursor
 	jp TextCommandProcessor

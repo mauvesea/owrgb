@@ -362,3 +362,8 @@ INCLUDE "data/battle_anims/frame_blocks.asm"
 INCLUDE "engine/movie/evolution.asm"
 INCLUDE "engine/overworld/elevator.asm"
 INCLUDE "engine/items/tm_prices.asm"
+
+
+SECTION "Dialogue Faces", ROMX
+INCLUDE "engine/menus/dialogue_faces.asm"
+INCLUDE "engine/menus/print_letter_delay.asm"

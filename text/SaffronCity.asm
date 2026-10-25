@@ -4,6 +4,7 @@ _SaffronCityRocket1Text::
 	done
 
 _SaffronCityRocket2Text::
+	face FACE_MISTY
 	text "<BOLD_B><BOLD_O><BOLD_S><BOLD_S> said he'll"
 	line "take this town!"
 	done

@@ -79,6 +79,12 @@ BlkPacket_Battle:
 	db $03, 11,00, 19,07, $03
 	db $00
 
+; Screen tile coordinates, inclusive: the 4x4 portrait inside the textbox.
+BlkPacket_DialogueFace:
+	ATTR_BLK 1
+	ATTR_BLK_DATA %111, 1,1,0, 01,13, 04,16
+	ds 8, 0
+
 BlkPacket_StatusScreen:
 	ATTR_BLK 1
 	ATTR_BLK_DATA %111, 1,1,0, 01,00, 07,06 ; mon: pal 1, HP bar: pal 0

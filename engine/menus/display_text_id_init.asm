@@ -2,6 +2,7 @@
 DisplayTextIDInit::
 	xor a
 	ld [wListMenuID], a
+	ld [wDialogueFace], a
 	ld a, [wAutoTextBoxDrawingControl]
 	bit BIT_NO_AUTO_TEXT_BOX, a
 	jr nz, .skipDrawingTextBoxBorder

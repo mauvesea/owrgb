@@ -174,6 +174,16 @@ MACRO text_far
 ENDM
 
 
+	const TX_FACE ; $18
+; Use face FACE_MISTY; face NONE and face FACE_NONE both remove the portrait.
+MACRO face
+	IF STRCMP("\1", "NONE") == 0
+		db TX_FACE, FACE_NONE
+	ELSE
+		db TX_FACE, \1
+	ENDC
+ENDM
+
 	const_next $50
 
 	const TX_END ; $50

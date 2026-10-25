@@ -269,7 +269,8 @@ wMenuWatchMovingOutOfBounds:: db
 
 wTradeCenterPointerTableIndex:: db
 
-	ds 1
+; Active dialogue portrait, or FACE_NONE.
+wDialogueFace:: db
 
 ; destination pointer for text output
 ; this variable is written to, but is never read from

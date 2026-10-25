@@ -1,20 +1,27 @@
 _CeruleanGymMistyPreBattleText::
-	text "Hi, you're a new"
-	line "face!"
+	face FACE_MISTY
+	text "Hi, you're a"
+	line "new face!"
 
-	para "Trainers who want"
-	line "to turn pro have"
-	cont "to have a policy"
-	cont "about #<BOLD_M><BOLD_O><BOLD_N>!"
+	para "Trainers who"
+	line "want to turn"
+	cont "pro have to"
+	cont "have a"
+	cont "policy"
+	cont "about"
+	cont "#<BOLD_M><BOLD_O><BOLD_N>!"
 
 	para "What is your"
-	line "approach when you"
-	cont "catch #<BOLD_M><BOLD_O><BOLD_N>?"
+	line "approach"
+	cont "when"
+	cont "you catch"
+	cont "#<BOLD_M><BOLD_O><BOLD_N>?"
 
-	para "My policy is an"
-	line "all-out offensive"
-	cont "with water-type"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>!"
+	para "My policy is"
+	line "an all-out"
+	cont "offensive"
+	cont "with water-"
+	cont "type #<BOLD_M><BOLD_O><BOLD_N>!"
 	done
 
 _CeruleanGymMistyTM11ExplanationText::
