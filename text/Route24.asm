@@ -25,23 +25,23 @@ _Route24CooltrainerM1NoRoomText::
 
 _Route24RocketDoneText::
 	text "I used to work for"
-	line "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>..."
+	line "<b>TEAM ROCKET</b>..."
 
 	para "Not anymore!"
 
 	para "I wonder where"
-	line "<BOLD_G><BOLD_I><BOLD_O><BOLD_V><BOLD_A><BOLD_N><BOLD_N><BOLD_I> went to"
+	line "<b>GIOVANNI</b> went to"
 	cont "though..."
 	done
 
 _Route24CooltrainerM1JoinTeamRocketText::
 	text "By the way, would"
 	line "you like to join"
-	cont "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>?"
+	cont "<b>TEAM ROCKET</b>?"
 
 	para "We're a group"
 	line "dedicated to evil"
-	cont "using #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "using #<b>MON</b>!"
 
 	para "Want to join?"
 
@@ -52,7 +52,7 @@ _Route24CooltrainerM1JoinTeamRocketText::
 	para "I'm telling you"
 	line "to join!"
 
-	para "<BOLD_O><BOLD_K>, you need"
+	para "<b>OK</b>, you need"
 	line "convincing!"
 
 	para "I'll make you an"
@@ -69,7 +69,7 @@ _Route24CooltrainerM1YouCouldBecomeATopLeaderText::
 	text "With your ability,"
 	line "you could become"
 	cont "a top leader in"
-	cont "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>!"
+	cont "<b>TEAM ROCKET</b>!"
 	done
 
 _Route24CooltrainerM2BattleText::

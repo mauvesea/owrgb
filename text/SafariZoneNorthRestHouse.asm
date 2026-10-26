@@ -13,7 +13,7 @@ _SafariZoneNorthRestHouseSafariZoneWorkerText::
 	text "I'm not a great"
 	line "swimmer and on"
 	cont "top of that I"
-	cont "lost my <BOLD_F><BOLD_L><BOLD_O><BOLD_A><BOLD_T><BOLD_I><BOLD_E><BOLD_S>"
+	cont "lost my <b>FLOATIES</b>"
 	cont "somewhere around"
 	cont "here."
 
@@ -25,11 +25,11 @@ _SafariZoneNorthRestHouseSafariZoneWorkerText::
 	done
 
 _SafariZoneNorthRestHouseGentlemanText::
-	text "My <BOLD_E><BOLD_E><BOLD_V><BOLD_E><BOLD_E> evolved"
-	line "into <BOLD_F><BOLD_L><BOLD_A><BOLD_R><BOLD_E><BOLD_O><BOLD_N>!"
+	text "My <b>EEVEE</b> evolved"
+	line "into <b>FLAREON</b>!"
 
 	para "But, a friend's"
-	line "<BOLD_E><BOLD_E><BOLD_V><BOLD_E><BOLD_E> turned into"
-	cont "a <BOLD_V><BOLD_A><BOLD_P><BOLD_O><BOLD_R><BOLD_E><BOLD_O><BOLD_N>!"
+	line "<b>EEVEE</b> turned into"
+	cont "a <b>VAPOREON</b>!"
 	cont "I wonder why?"
 	done

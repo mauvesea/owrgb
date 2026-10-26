@@ -1,7 +1,7 @@
 _SSAnne2FRoomsGentleman3Text::
 	text "In all my travels"
 	line "I've never seen"
-	cont "any #<BOLD_M><BOLD_O><BOLD_N> sleep"
+	cont "any #<b>MON</b> sleep"
 	cont "like this one!"
 
 	para "It was something"
@@ -10,39 +10,39 @@ _SSAnne2FRoomsGentleman3Text::
 
 _SSAnne2FRoomsGentleman4Text::
 	text "Ah yes, I have"
-	line "seen some #<BOLD_M><BOLD_O><BOLD_N>"
+	line "seen some #<b>MON</b>"
 	cont "ferry people"
 	cont "across the water!"
 	done
 
 _SSAnne2FRoomsGrampsText::
-	text "The <BOLD_C><BOLD_A><BOLD_P><BOLD_T><BOLD_A><BOLD_I><BOLD_N> used"
-	line "to be an <BOLD_I><BOLD_K><BOLD_E><BOLD_B><BOLD_A><BOLD_N><BOLD_A>"
+	text "The <b>CAPTAIN</b> used"
+	line "to be an <b>IKEBANA</b>"
 	cont "master."
 
 	para "Once I saw him"
-	line "using his <BOLD_S><BOLD_H><BOLD_E><BOLD_A><BOLD_R><BOLD_S>"
+	line "using his <b>SHEARS</b>"
 	cont "to cut down small"
 	cont "bushes."
 	done
 
 _SSAnne2FRoomsGentleman5Text::
 	text "Have you gone to"
-	line "the <BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I> <BOLD_Z><BOLD_O><BOLD_N><BOLD_E>"
-	cont "in <BOLD_F><BOLD_U><BOLD_C><BOLD_H><BOLD_S><BOLD_I><BOLD_A> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>?"
+	line "the <b>SAFARI ZONE</b>"
+	cont "in <b>FUCHSIA CITY</b>?"
 
 	para "It had many rare"
-	line "kinds of #<BOLD_M><BOLD_O><BOLD_N>!!"
+	line "kinds of #<b>MON</b>!!"
 	done
 
 _SSAnne2FRoomsLittleBoyText::
 	text "Me and my Daddy"
-	line "think the <BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I>"
-	cont "<BOLD_Z><BOLD_O><BOLD_N><BOLD_E> is awesome!"
+	line "think the <b>SAFARI</b>"
+	cont "<b>ZONE</b> is awesome!"
 	done
 
 _SSAnne2FRoomsBrunetteGirlText::
-	text "The <BOLD_C><BOLD_A><BOLD_P><BOLD_T><BOLD_A><BOLD_I><BOLD_N> looked"
+	text "The <b>CAPTAIN</b> looked"
 	line "really sick and"
 	cont "pale!"
 	done
@@ -90,7 +90,7 @@ _SSAnne2FRoomsFisherAfterBattleText::
 _SSAnne2FRoomsGentleman2BattleText::
 	text "Which do you like,"
 	line "a strong or a"
-	cont "rare #<BOLD_M><BOLD_O><BOLD_N>?"
+	cont "rare #<b>MON</b>?"
 	done
 
 _SSAnne2FRoomsGentleman2EndBattleText::
@@ -100,7 +100,7 @@ _SSAnne2FRoomsGentleman2EndBattleText::
 
 _SSAnne2FRoomsGentleman2AfterBattleText::
 	text "I prefer strong"
-	line "and rare #<BOLD_M><BOLD_O><BOLD_N>."
+	line "and rare #<b>MON</b>."
 	done
 
 _SSAnne2FRoomsCooltrainerFBattleText::
@@ -115,5 +115,5 @@ _SSAnne2FRoomsCooltrainerFEndBattleText::
 
 _SSAnne2FRoomsCooltrainerFAfterBattleText::
 	text "Oh, I adore your"
-	line "strong #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "strong #<b>MON</b>!"
 	done

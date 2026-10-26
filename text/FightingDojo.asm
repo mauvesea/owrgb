@@ -1,9 +1,9 @@
 _FightingDojoKarateMasterText::
 	text "Grunt!"
 
-	para "I am the <BOLD_K><BOLD_A><BOLD_R><BOLD_A><BOLD_T><BOLD_E>"
-	line "<BOLD_M><BOLD_A><BOLD_S><BOLD_T><BOLD_E><BOLD_R>! I am the"
-	cont "<BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R> here!"
+	para "I am the <b>KARATE</b>"
+	line "<b>MASTER</b>! I am the"
+	cont "<b>LEADER</b> here!"
 
 	para "You wish to"
 	line "challenge us?"
@@ -28,7 +28,7 @@ _FightingDojoKarateMasterIWillGiveYouAPokemonText::
 
 	para "In return, I will"
 	line "give you a prized"
-	cont "fighting #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "fighting #<b>MON</b>!"
 
 	para "Choose whichever"
 	line "one you like!"
@@ -97,8 +97,8 @@ _FightingDojoBlackbelt4BattleText::
 	text "Hoohah!"
 
 	para "You're trespassing"
-	line "in our <BOLD_F><BOLD_I><BOLD_G><BOLD_H><BOLD_T><BOLD_I><BOLD_N><BOLD_G>"
-	cont "<BOLD_D><BOLD_O><BOLD_J><BOLD_O>!"
+	line "in our <b>FIGHTING</b>"
+	cont "<b>DOJO</b>!"
 	done
 
 _FightingDojoBlackbelt4EndBattleText::
@@ -115,13 +115,13 @@ _FightingDojoBlackbelt4AfterBattleText::
 _FightingDojoHitmonleePokeBallText::
 	text "You want the"
 	line "hard kicking"
-	cont "<BOLD_H><BOLD_I><BOLD_T><BOLD_M><BOLD_O><BOLD_N><BOLD_L><BOLD_E><BOLD_E>?"
+	cont "<b>HITMONLEE</b>?"
 	done
 
 _FightingDojoHitmonchanPokeBallText::
 	text "You want the"
 	line "piston punching"
-	cont "<BOLD_H><BOLD_I><BOLD_T><BOLD_M><BOLD_O><BOLD_N><BOLD_C><BOLD_H><BOLD_A><BOLD_N>?"
+	cont "<b>HITMONCHAN</b>?"
 	done
 
 _FightingDojoBetterNotGetGreedyText::

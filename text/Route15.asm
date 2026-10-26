@@ -1,6 +1,6 @@
 _Route15CooltrainerF1BattleText::
 	text "Let me try out the"
-	line "#<BOLD_M><BOLD_O><BOLD_N> I just"
+	line "#<b>MON</b> I just"
 	cont "got in a trade!"
 	done
 
@@ -12,7 +12,7 @@ _Route15CooltrainerF1EndBattleText::
 _Route15CooltrainerF1AfterBattleText::
 	text "You can't change"
 	line "the nickname of"
-	cont "any #<BOLD_M><BOLD_O><BOLD_N> you"
+	cont "any #<b>MON</b> you"
 	cont "get in a trade."
 
 	para "Only the Original"
@@ -32,14 +32,14 @@ _Route15CooltrainerF2EndBattleText::
 
 _Route15CooltrainerF2AfterBattleText::
 	text "I'm afraid of"
-	line "<BOLD_B><BOLD_I><BOLD_K><BOLD_E><BOLD_R>s, they look"
+	line "<b>BIKER</b>s, they look"
 	cont "so ugly and mean!"
 	done
 
 _Route15CooltrainerM1BattleText::
 	text "When I whistle, I"
 	line "can summon bird"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "#<b>MON</b>!"
 	done
 
 _Route15CooltrainerM1EndBattleText::
@@ -65,7 +65,7 @@ _Route15CooltrainerM2EndBattleText::
 
 _Route15CooltrainerM2AfterBattleText::
 	text "Did you know moves"
-	line "like <BOLD_E><BOLD_A><BOLD_R><BOLD_T><BOLD_H><BOLD_Q><BOLD_U><BOLD_A><BOLD_K><BOLD_E>"
+	line "like <b>EARTHQUAKE</b>"
 	cont "don't have any"
 	cont "effect on birds?"
 	done
@@ -86,7 +86,7 @@ _Route15Beauty1AfterBattleText::
 	done
 
 _Route15Beauty2BattleText::
-	text "I raise #<BOLD_M><BOLD_O><BOLD_N>"
+	text "I raise #<b>MON</b>"
 	line "because I live"
 	cont "alone!"
 	done
@@ -99,7 +99,7 @@ _Route15Beauty2EndBattleText::
 _Route15Beauty2AfterBattleText::
 	text "I just like going"
 	line "home to be with"
-	cont "my #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "my #<b>MON</b>!"
 	done
 
 _Route15Biker1BattleText::
@@ -116,7 +116,7 @@ _Route15Biker1AfterBattleText::
 	text "You only live"
 	line "once, so I live"
 	cont "as an outlaw!"
-	cont "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> <BOLD_R><BOLD_U><BOLD_L><BOLD_E><BOLD_S>!"
+	cont "<b>TEAM ROCKET RULES</b>!"
 	done
 
 _Route15Biker2BattleText::
@@ -137,7 +137,7 @@ _Route15Biker2AfterBattleText::
 
 _Route15CooltrainerF3BattleText::
 	text "What's cool?"
-	line "Trading #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "Trading #<b>MON</b>!"
 	done
 
 _Route15CooltrainerF3EndBattleText::
@@ -146,13 +146,13 @@ _Route15CooltrainerF3EndBattleText::
 	prompt
 
 _Route15CooltrainerF3AfterBattleText::
-	text "I trade #<BOLD_M><BOLD_O><BOLD_N>"
+	text "I trade #<b>MON</b>"
 	line "with my friends!"
 	done
 
 _Route15CooltrainerF4BattleText::
 	text "Want to play with"
-	line "my #<BOLD_M><BOLD_O><BOLD_N>?"
+	line "my #<b>MON</b>?"
 	done
 
 _Route15CooltrainerF4EndBattleText::
@@ -166,7 +166,7 @@ _Route15CooltrainerF4AfterBattleText::
 	text_end
 
 _Route15SignText::
-	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 15"
-	line "▲ <BOLD_S><BOLD_I><BOLD_L><BOLD_E><BOLD_N><BOLD_C><BOLD_E> <BOLD_B><BOLD_R><BOLD_I><BOLD_D><BOLD_G><BOLD_E>"
-	cont "◀ <BOLD_F><BOLD_U><BOLD_C><BOLD_H><BOLD_S><BOLD_I><BOLD_A> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
+	text "<b>ROUTE</b> 15"
+	line "▲ <b>SILENCE BRIDGE</b>"
+	cont "◀ <b>FUCHSIA CITY</b>"
 	done

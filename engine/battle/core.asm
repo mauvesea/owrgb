@@ -2965,7 +2965,7 @@ DisabledText:
 	db "disabled!@"
 
 TypeText:
-	db "<BOLD_T><BOLD_Y><BOLD_P><BOLD_E>@"
+	db_text "<b>TYPE</b>@"
 
 SelectEnemyMove:
 	ld a, [wLinkState]

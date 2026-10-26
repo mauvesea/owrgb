@@ -1,18 +1,18 @@
 _Route15Gate2FOaksAideExpAllText::
-	text "<BOLD_E><BOLD_X><BOLD_P>.<BOLD_A><BOLD_L><BOLD_L> gives"
-	line "<BOLD_E><BOLD_X><BOLD_P> points to all"
-	cont "the #<BOLD_M><BOLD_O><BOLD_N> with"
+	text "<b>EXP.ALL</b> gives"
+	line "<b>EXP</b> points to all"
+	cont "the #<b>MON</b> with"
 	cont "you, even if they"
 	cont "don't fight."
 
 	para "It does, however,"
 	line "reduce the amount"
-	cont "of <BOLD_E><BOLD_X><BOLD_P> for each"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>."
+	cont "of <b>EXP</b> for each"
+	cont "#<b>MON</b>."
 
 	para "If you don't need"
 	line "it, you should "
-	cont "store it via <BOLD_P><BOLD_C>."
+	cont "store it via <b>PC</b>."
 	done
 
 _Route15Gate2FBinocularsText::

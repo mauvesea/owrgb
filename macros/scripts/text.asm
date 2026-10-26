@@ -1,21 +1,26 @@
 MACRO text
-	db TX_START, \# ; Start writing text
+	db TX_START ; Start writing text
+	db_text \#
 ENDM
 
 MACRO next
-	db "<NEXT>", \# ; Move a line down
+	db "<NEXT>" ; Move a line down
+	db_text \#
 ENDM
 
 MACRO line
-	db "<LINE>", \# ; Start writing at the bottom line
+	db "<LINE>" ; Start writing at the bottom line
+	db_text \#
 ENDM
 
 MACRO para
-	db "<PARA>", \# ; Start a new paragraph
+	db "<PARA>" ; Start a new paragraph
+	db_text \#
 ENDM
 
 MACRO cont
-	db "<CONT>", \# ; Scroll to the next line
+	db "<CONT>" ; Scroll to the next line
+	db_text \#
 ENDM
 
 MACRO done
@@ -27,7 +32,8 @@ MACRO prompt
 ENDM
 
 MACRO page
-	db "<PAGE>", \# ; Start a new Pokédex page
+	db "<PAGE>" ; Start a new Pokédex page
+	db_text \#
 ENDM
 
 MACRO dex
@@ -182,6 +188,16 @@ MACRO face
 	ELSE
 		db TX_FACE, \1
 	ENDC
+ENDM
+
+; Keep the current portrait and textbox open across subsequent messages.
+MACRO keepface
+	db TX_FACE, $ff
+ENDM
+
+; Also ends keepface mode and restores the full text width.
+MACRO clearface
+	db TX_FACE, FACE_NONE
 ENDM
 
 	const_next $50

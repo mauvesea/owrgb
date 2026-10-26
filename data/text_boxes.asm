@@ -37,15 +37,15 @@ TextBoxTextAndCoordTable:
 	text_box_text JP_POKEDEX_MENU_TEMPLATE,          11,  8, 19, 17, JapanesePokedexMenu,     12, 10
 
 BuySellQuitText:
-	db   "<BOLD_B><BOLD_U><BOLD_Y>"
-	next "<BOLD_S><BOLD_E><BOLD_L><BOLD_L>"
-	next "<BOLD_Q><BOLD_U><BOLD_I><BOLD_T>@"
+	db_text   "<b>BUY</b>"
+	next "<b>SELL</b>"
+	next "<b>QUIT</b>@"
 
 	db "@" ; unused
 
 UseTossText:
-	db   "<BOLD_U><BOLD_S><BOLD_E>"
-	next "<BOLD_T><BOLD_O><BOLD_S><BOLD_S>@"
+	db_text   "<b>USE</b>"
+	next "<b>TOSS</b>@"
 
 JapaneseSaveMessageText:
 	db   "きろく"
@@ -56,7 +56,7 @@ JapaneseSpeedOptionsText:
 	next "おそい@"
 
 MoneyText:
-	db "<BOLD_M><BOLD_O><BOLD_N><BOLD_E><BOLD_Y>@"
+	db_text "<b>MONEY</b>@"
 
 JapaneseMochimonoText:
 	db "もちもの@"
@@ -66,17 +66,17 @@ JapaneseMainMenuText:
 	next "さいしょから@"
 
 BattleMenuText:
-	db   "<BOLD_F><BOLD_I><BOLD_G><BOLD_H><BOLD_T> <PK><MN>"
-	next "<BOLD_I><BOLD_T><BOLD_E><BOLD_M>  <BOLD_R><BOLD_U><BOLD_N>@"
+	db_text   "<b>FIGHT</b> <PK><MN>"
+	next "<b>ITEM  RUN</b>@"
 
 SafariZoneBattleMenuText:
-	db   "<BOLD_B><BOLD_A><BOLD_L><BOLD_L>×       <BOLD_B><BOLD_A><BOLD_I><BOLD_T>"
-	next "<BOLD_T><BOLD_H><BOLD_R><BOLD_O><BOLD_W> <BOLD_R><BOLD_O><BOLD_C><BOLD_K>  <BOLD_R><BOLD_U><BOLD_N>@"
+	db_text   "<b>BALL</b>×       <b>BAIT</b>"
+	next "<b>THROW ROCK  RUN</b>@"
 
 SwitchStatsCancelText:
-	db   "<BOLD_S><BOLD_W><BOLD_I><BOLD_T><BOLD_C><BOLD_H>"
-	next "<BOLD_S><BOLD_T><BOLD_A><BOLD_T><BOLD_S>"
-	next "<BOLD_C><BOLD_A><BOLD_N><BOLD_C><BOLD_E><BOLD_L>@"
+	db_text   "<b>SWITCH</b>"
+	next "<b>STATS</b>"
+	next "<b>CANCEL</b>@"
 
 JapaneseAhText:
 	db "アッ！@"

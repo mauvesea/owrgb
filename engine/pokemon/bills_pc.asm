@@ -85,12 +85,12 @@ DisplayPCMainMenu::
 	ldh [hAutoBGTransferEnabled], a
 	ret
 
-SomeonesPCText:   db "<BOLD_S><BOLD_O><BOLD_M><BOLD_E><BOLD_O><BOLD_N><BOLD_E><BOLD_s> <BOLD_P><BOLD_C>@"
-BillsPCText:      db "<BOLD_B><BOLD_I><BOLD_L><BOLD_L><BOLD_s> <BOLD_P><BOLD_C>@"
-PlayersPCText:    db "<BOLD_s> <BOLD_P><BOLD_C>@"
-OaksPCText:       db "<BOLD_P><BOLD_R><BOLD_O><BOLD_F>.<BOLD_O><BOLD_A><BOLD_K><BOLD_s> <BOLD_P><BOLD_C>@"
-PKMNLeaguePCText: db "<PKMN><BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>@"
-LogOffPCText:     db "<BOLD_L><BOLD_O><BOLD_G> <BOLD_O><BOLD_F><BOLD_F>@"
+SomeonesPCText:   db_text "<b>SOMEONEs PC</b>@"
+BillsPCText:      db_text "<b>BILLs PC</b>@"
+PlayersPCText:    db_text "<b>s PC</b>@"
+OaksPCText:       db_text "<b>PROF.OAKs PC</b>@"
+PKMNLeaguePCText: db_text "<PKMN><b>LEAGUE</b>@"
+LogOffPCText:     db_text "<b>LOG OFF</b>@"
 
 BillsPC_::
 	ld hl, wStatusFlags5
@@ -339,15 +339,15 @@ DisplayMonListMenu:
 	ret
 
 BillsPCMenuText:
-	db   "<BOLD_W><BOLD_I><BOLD_T><BOLD_H><BOLD_D><BOLD_R><BOLD_A><BOLD_W> <PKMN>"
-	next "<BOLD_D><BOLD_E><BOLD_P><BOLD_O><BOLD_S><BOLD_I><BOLD_T> <PKMN>"
-	next "<BOLD_R><BOLD_E><BOLD_L><BOLD_E><BOLD_A><BOLD_S><BOLD_E> <PKMN>"
-	next "<BOLD_C><BOLD_H><BOLD_A><BOLD_N><BOLD_G><BOLD_E> <BOLD_B><BOLD_O><BOLD_X>"
-	next "<BOLD_S><BOLD_E><BOLD_E> <BOLD_Y><BOLD_A>!"
+	db_text   "<b>WITHDRAW</b> <PKMN>"
+	next "<b>DEPOSIT</b> <PKMN>"
+	next "<b>RELEASE</b> <PKMN>"
+	next "<b>CHANGE BOX</b>"
+	next "<b>SEE YA</b>!"
 	db "@"
 
 BoxNoPCText:
-	db "<BOLD_B><BOLD_O><BOLD_X> No.@"
+	db_text "<b>BOX</b> No.@"
 
 KnowsHMMove::
 ; returns whether mon with party index [wWhichPokemon] knows an HM move
@@ -446,11 +446,11 @@ DisplayDepositWithdrawMenu:
 	call LoadGBPal
 	jr .loop
 
-DepositPCText:  db "<BOLD_D><BOLD_E><BOLD_P><BOLD_O><BOLD_S><BOLD_I><BOLD_T>@"
-WithdrawPCText: db "<BOLD_W><BOLD_I><BOLD_T><BOLD_H><BOLD_D><BOLD_R><BOLD_A><BOLD_W>@"
+DepositPCText:  db_text "<b>DEPOSIT</b>@"
+WithdrawPCText: db_text "<b>WITHDRAW</b>@"
 StatsCancelPCText:
-	db   "<BOLD_S><BOLD_T><BOLD_A><BOLD_T><BOLD_S>"
-	next "<BOLD_C><BOLD_A><BOLD_N><BOLD_C><BOLD_E><BOLD_L>@"
+	db_text   "<b>STATS</b>"
+	next "<b>CANCEL</b>@"
 
 SwitchOnText:
 	text_far _SwitchOnText

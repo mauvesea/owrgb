@@ -20,12 +20,12 @@ _Route21Fisher2BattleText::
 
 _Route21Fisher2EndBattleText::
 	text "Darn"
-	line "<BOLD_M><BOLD_A><BOLD_G><BOLD_I><BOLD_K><BOLD_A><BOLD_R><BOLD_P>!"
+	line "<b>MAGIKARP</b>!"
 	prompt
 
 _Route21Fisher2AfterBattleText::
 	text "I seem to only"
-	line "catch <BOLD_M><BOLD_A><BOLD_G><BOLD_I><BOLD_K><BOLD_A><BOLD_R><BOLD_P>!"
+	line "catch <b>MAGIKARP</b>!"
 	done
 
 _Route21Swimmer1BattleText::
@@ -60,7 +60,7 @@ _Route21Swimmer2AfterBattleText::
 
 _Route21Swimmer3BattleText::
 	text "I caught all my"
-	line "#<BOLD_M><BOLD_O><BOLD_N> at sea!"
+	line "#<b>MON</b> at sea!"
 	done
 
 _Route21Swimmer3EndBattleText::
@@ -70,7 +70,7 @@ _Route21Swimmer3EndBattleText::
 
 _Route21Swimmer3AfterBattleText::
 	text "Where'd you catch"
-	line "your #<BOLD_M><BOLD_O><BOLD_N>?"
+	line "your #<b>MON</b>?"
 	done
 
 _Route21Swimmer4BattleText::
@@ -137,7 +137,7 @@ _Route21Fisher4AfterBattleText::
 	done
 
 _Route21SignText::
-	text "<BOLD_S><BOLD_E><BOLD_A> <BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 21"
-	line "▲ <BOLD_P><BOLD_A><BOLD_L><BOLD_L><BOLD_E><BOLD_T> <BOLD_T><BOLD_O><BOLD_W><BOLD_N>"
-	cont "▼ <BOLD_C><BOLD_I><BOLD_N><BOLD_N><BOLD_A><BOLD_B><BOLD_A><BOLD_R> <BOLD_I><BOLD_S><BOLD_L><BOLD_A><BOLD_N><BOLD_D>"
+	text "<b>SEA ROUTE</b> 21"
+	line "▲ <b>PALLET TOWN</b>"
+	cont "▼ <b>CINNABAR ISLAND</b>"
 	done

@@ -1,5 +1,5 @@
 _FuchsiaGymKogaBeforeBattleText::
-	text "<BOLD_K><BOLD_O><BOLD_G><BOLD_A>: Fwahahaha!"
+	text "<b>KOGA</b>: Fwahahaha!"
 
 	para "A mere child like"
 	line "you dares to"
@@ -22,5 +22,5 @@ _FuchsiaGymKogaReceivedSoulBadgeText::
 	cont "your worth!"
 
 	para "Here! Take the"
-	line "<BOLD_S><BOLD_O><BOLD_U><BOLD_L><BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>!"
+	line "<b>SOULBADGE</b>!"
 	prompt

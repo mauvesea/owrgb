@@ -1,12 +1,12 @@
 _SafariZoneGateSafariZoneWorker1Text::
 	text "Welcome to the"
-	line "<BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I> <BOLD_Z><BOLD_O><BOLD_N><BOLD_E>!"
+	line "<b>SAFARI ZONE</b>!"
 	done
 
 _SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText::
 	text "For just ¥500,"
 	line "you can catch all"
-	cont "the #<BOLD_M><BOLD_O><BOLD_N> you"
+	cont "the #<b>MON</b> you"
 	cont "want in the park!"
 
 	para "Would you like to"
@@ -18,24 +18,24 @@ _SafariZoneGateSafariZoneWorker1ThatllBe500PleaseText::
 	line "please!"
 
 	para "We only use a"
-	line "special # <BOLD_B><BOLD_A><BOLD_L><BOLD_L>"
+	line "special # <b>BALL</b>"
 	cont "here."
 
 	para "<PLAYER> received"
-	line "30 <BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I> <BOLD_B><BOLD_A><BOLD_L><BOLD_L>s!@"
+	line "30 <b>SAFARI BALL</b>s!@"
 	text_end
 
 _SafariZoneGateSafariZoneWorker1CallYouOnThePAText::
 	text_start
 
 	para "We'll call you on"
-	line "the <BOLD_P><BOLD_A> when you"
+	line "the <b>PA</b> when you"
 	cont "run out of time"
-	cont "or <BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I> <BOLD_B><BOLD_A><BOLD_L><BOLD_L>s!"
+	cont "or <b>SAFARI BALL</b>s!"
 	done
 
 _SafariZoneGateSafariZoneWorker1PleaseComeAgainText::
-	text "<BOLD_O><BOLD_K>! Please come"
+	text "<b>OK</b>! Please come"
 	line "again!"
 	done
 
@@ -50,7 +50,7 @@ _SafariZoneGateSafariZoneWorker1LeavingEarlyText::
 
 _SafariZoneGateSafariZoneWorker1ReturnSafariBallsText::
 	text "Please return any"
-	line "<BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I> <BOLD_B><BOLD_A><BOLD_L><BOLD_L>s you"
+	line "<b>SAFARI BALL</b>s you"
 	cont "have left."
 	done
 
@@ -70,25 +70,25 @@ _SafariZoneGateSafariZoneWorker2FirstTimeHereText::
 	done
 
 _SafariZoneGateSafariZoneWorker2SafariZoneExplanationText::
-	text "<BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I> <BOLD_Z><BOLD_O><BOLD_N><BOLD_E> has 4"
+	text "<b>SAFARI ZONE</b> has 4"
 	line "zones in it."
 
 	para "Each zone has"
 	line "different kinds"
-	cont "of #<BOLD_M><BOLD_O><BOLD_N>. Use"
-	cont "<BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I> <BOLD_B><BOLD_A><BOLD_L><BOLD_L>s to"
+	cont "of #<b>MON</b>. Use"
+	cont "<b>SAFARI BALL</b>s to"
 	cont "catch them!"
 
 	para "When you run out"
-	line "of time or <BOLD_S><BOLD_A><BOLD_F><BOLD_A><BOLD_R><BOLD_I>"
-	cont "<BOLD_B><BOLD_A><BOLD_L><BOLD_L>s, it's game"
+	line "of time or <b>SAFARI</b>"
+	cont "<b>BALL</b>s, it's game"
 	cont "over for you!"
 
 	para "Before you go,"
 	line "open an unused"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_B><BOLD_O><BOLD_X> so"
+	cont "#<b>MON BOX</b> so"
 	cont "there's room for"
-	cont "new #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "new #<b>MON</b>!"
 	done
 
 _SafariZoneGateSafariZoneWorker2YoureARegularHereText::

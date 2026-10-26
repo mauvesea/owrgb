@@ -1,11 +1,11 @@
 _BillsHouseBillImNotAPokemonText::
 	text "Hiya! I'm a"
-	line "#<BOLD_M><BOLD_O><BOLD_N>..."
+	line "#<b>MON</b>..."
 	cont "...No I'm not!"
 
-	para "Call me <BOLD_B><BOLD_I><BOLD_L><BOLD_L>!"
+	para "Call me <b>BILL</b>!"
 	line "I'm a true blue"
-	cont "#<BOLD_M><BOLD_A><BOLD_N><BOLD_I><BOLD_A><BOLD_C>! Hey!"
+	cont "#<b>MANIAC</b>! Hey!"
 	cont "What's with that"
 	cont "skeptical look?"
 
@@ -13,7 +13,7 @@ _BillsHouseBillImNotAPokemonText::
 	line "you, I screwed up"
 	cont "an experiment and"
 	cont "got combined with"
-	cont "a #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "a #<b>MON</b>!"
 
 	para "So, how about it?"
 	line "Help me out here!"
@@ -21,8 +21,8 @@ _BillsHouseBillImNotAPokemonText::
 
 _BillsHouseBillUseSeparationSystemText::
 	text "When I'm in the"
-	line "<BOLD_T><BOLD_E><BOLD_L><BOLD_E><BOLD_P><BOLD_O><BOLD_R><BOLD_T><BOLD_E><BOLD_R>, go to"
-	cont "my <BOLD_P><BOLD_C> and run the"
+	line "<b>TELEPORTER</b>, go to"
+	cont "my <b>PC</b> and run the"
 	cont "Cell Separation"
 	cont "System!"
 	done
@@ -34,16 +34,16 @@ _BillsHouseBillNoYouGottaHelpText::
 
 	para "What do you say,"
 	line "chief? Please?"
-	cont "<BOLD_O><BOLD_K>? All right!"
+	cont "<b>OK</b>? All right!"
 	prompt
 
 _BillsHouseBillThankYouText::
-	text "<BOLD_B><BOLD_I><BOLD_L><BOLD_L>: Yeehah!"
+	text "<b>BILL</b>: Yeehah!"
 	line "Thanks, bud! I"
 	cont "owe you one!"
 
 	para "So, did you come"
-	line "to see my #<BOLD_M><BOLD_O><BOLD_N>"
+	line "to see my #<b>MON</b>"
 	cont "collection?"
 	cont "You didn't?"
 	cont "That's a bummer."
@@ -67,8 +67,8 @@ _SSTicketNoRoomText::
 
 _BillsHouseBillWhyDontYouGoInsteadOfMeText::
 	text "That cruise ship,"
-	line "<BOLD_S>.<BOLD_S>.<BOLD_A><BOLD_N><BOLD_N><BOLD_E>, is in"
-	cont "<BOLD_V><BOLD_E><BOLD_R><BOLD_M><BOLD_I><BOLD_L><BOLD_I><BOLD_O><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>."
+	line "<b>S.S.ANNE</b>, is in"
+	cont "<b>VERMILION CITY</b>."
 	cont "Its passengers"
 	cont "are all trainers!"
 
@@ -81,8 +81,8 @@ _BillsHouseBillWhyDontYouGoInsteadOfMeText::
 	done
 
 _BillsHouseBillCheckOutMyRarePokemonText::
-	text "<BOLD_B><BOLD_I><BOLD_L><BOLD_L>: Look, bud,"
+	text "<b>BILL</b>: Look, bud,"
 	line "just check out"
 	cont "some of my rare"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> on my <BOLD_P><BOLD_C>!"
+	cont "#<b>MON</b> on my <b>PC</b>!"
 	done

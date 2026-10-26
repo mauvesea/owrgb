@@ -1,5 +1,5 @@
 _SilphCo8FSilphWorkerMSilphIsFinishedText::
-	text "I wonder if <BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H>"
+	text "I wonder if <b>SILPH</b>"
 	line "is finished..."
 	done
 
@@ -36,13 +36,13 @@ _SilphCo8FScientistEndBattleText::
 
 _SilphCo8FScientistAfterBattleText::
 	text "So, what do you"
-	line "think of <BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H>"
-	cont "<BOLD_B><BOLD_U><BOLD_I><BOLD_L><BOLD_D><BOLD_I><BOLD_N><BOLD_G>'<BOLD_s> maze?"
+	line "think of <b>SILPH</b>"
+	cont "<b>BUILDING's</b> maze?"
 	done
 
 _SilphCo8FRocket2BattleText::
 	text "I am one of the 4"
-	line "<BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> <BOLD_B><BOLD_R><BOLD_O><BOLD_T><BOLD_H><BOLD_E><BOLD_R><BOLD_S>!"
+	line "<b>ROCKET BROTHERS</b>!"
 	done
 
 _SilphCo8FRocket2EndBattleText::

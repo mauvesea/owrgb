@@ -4,13 +4,13 @@ _CardKeySuccessText1::
 
 _CardKeySuccessText2::
 	text_start
-	line "The <BOLD_C><BOLD_A><BOLD_R><BOLD_D> <BOLD_K><BOLD_E><BOLD_Y>"
+	line "The <b>CARD KEY</b>"
 	cont "opened the door!"
 	done
 
 _CardKeyFailText::
 	text "Darn! It needs a"
-	line "<BOLD_C><BOLD_A><BOLD_R><BOLD_D> <BOLD_K><BOLD_E><BOLD_Y>!"
+	line "<b>CARD KEY</b>!"
 	done
 
 _TrainerNameText::
@@ -43,18 +43,18 @@ _GroundRoseText::
 
 _BoulderText::
 	text "This requires a"
-	line "<BOLD_C><BOLD_R><BOLD_O><BOLD_W><BOLD_B><BOLD_A><BOLD_R> to move!"
+	line "<b>CROWBAR</b> to move!"
 	done
 
 _MartSignText::
 	text "All your item"
 	line "needs fulfilled!"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_M><BOLD_A><BOLD_R><BOLD_T>"
+	cont "#<b>MON MART</b>"
 	done
 
 _PokeCenterSignText::
-	text "Heal Your #<BOLD_M><BOLD_O><BOLD_N>!"
-	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_C><BOLD_E><BOLD_N><BOLD_T><BOLD_E><BOLD_R>"
+	text "Heal Your #<b>MON</b>!"
+	line "#<b>MON CENTER</b>"
 	done
 
 _FoundItemText::
@@ -71,13 +71,13 @@ _NoMoreRoomForItemText::
 
 _OaksAideHiText::
 	text "Hi! Remember me?"
-	line "I'm <BOLD_P><BOLD_R><BOLD_O><BOLD_F>.<BOLD_O><BOLD_A><BOLD_K>'<BOLD_s>"
-	cont "<BOLD_A><BOLD_I><BOLD_D><BOLD_E>!"
+	line "I'm <b>PROF.OAK's</b>"
+	cont "<b>AIDE</b>!"
 
 	para "If you caught @"
 	text_decimal hOaksAideRequirement, 1, 3
 	text_start
-	line "kinds of #<BOLD_M><BOLD_O><BOLD_N>,"
+	line "kinds of #<b>MON</b>,"
 	cont "I'm supposed to"
 	cont "give you an"
 	cont "@"
@@ -89,7 +89,7 @@ _OaksAideHiText::
 	cont "least @"
 	text_decimal hOaksAideRequirement, 1, 3
 	text " kinds of"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>?"
+	cont "#<b>MON</b>?"
 	done
 
 _OaksAideUhOhText::
@@ -98,7 +98,7 @@ _OaksAideUhOhText::
 	cont "caught only @"
 	text_decimal hOaksAideNumMonsOwned, 1, 3
 	text_start
-	cont "kinds of #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "kinds of #<b>MON</b>!"
 
 	para "You need @"
 	text_decimal hOaksAideRequirement, 1, 3
@@ -126,7 +126,7 @@ _OaksAideHereYouGoText::
 	line "caught @"
 	text_decimal hOaksAideNumMonsOwned, 1, 3
 	text " kinds "
-	cont "of #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "of #<b>MON</b>!"
 	cont "Congratulations!"
 
 	para "Here you go!"

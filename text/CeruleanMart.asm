@@ -1,19 +1,19 @@
 _CeruleanMartCooltrainerMText::
-	text "Use <BOLD_R><BOLD_E><BOLD_P><BOLD_E><BOLD_L> to keep"
+	text "Use <b>REPEL</b> to keep"
 	line "bugs and weak"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> away."
+	cont "#<b>MON</b> away."
 
 	para "Put your strongest"
-	line "#<BOLD_M><BOLD_O><BOLD_N> at the"
+	line "#<b>MON</b> at the"
 	cont "top of the list"
 	cont "for best results!"
 	done
 
 _CeruleanMartCooltrainerFText::
 	text "Have you seen any"
-	line "<BOLD_R><BOLD_A><BOLD_R><BOLD_E> <BOLD_C><BOLD_A><BOLD_N><BOLD_D><BOLD_Y>?"
+	line "<b>RARE CANDY</b>?"
 
 	para "It's supposed to"
-	line "make #<BOLD_M><BOLD_O><BOLD_N> go"
+	line "make #<b>MON</b> go"
 	cont "up one level!"
 	done

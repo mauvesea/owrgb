@@ -2,7 +2,7 @@ _CinnabarPokecenterCooltrainerFText::
 	text "You can cancel"
 	line "evolution."
 
-	para "When a #<BOLD_M><BOLD_O><BOLD_N> is"
+	para "When a #<b>MON</b> is"
 	line "evolving, you can"
 	cont "stop it and leave"
 	cont "it the way it is."
@@ -12,7 +12,7 @@ _CinnabarPokecenterGentlemanText::
 	text "Do you have any"
 	line "friends?"
 
-	para "#<BOLD_M><BOLD_O><BOLD_N> you get"
+	para "#<b>MON</b> you get"
 	line "in trades grow"
 	cont "very quickly."
 

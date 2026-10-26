@@ -9,11 +9,11 @@ _Route20Swimmer1EndBattleText::
 
 _Route20Swimmer1AfterBattleText::
 	text "I wish I could"
-	line "ride my #<BOLD_M><BOLD_O><BOLD_N>."
+	line "ride my #<b>MON</b>."
 	done
 
 _Route20Swimmer2BattleText::
-	text "<BOLD_S><BOLD_E><BOLD_A><BOLD_F><BOLD_O><BOLD_A><BOLD_M> is a"
+	text "<b>SEAFOAM</b> is a"
 	line "quiet getaway!"
 	done
 
@@ -52,7 +52,7 @@ _Route20Swimmer4EndBattleText::
 	prompt
 
 _Route20Swimmer4AfterBattleText::
-	text "<BOLD_S><BOLD_E><BOLD_A><BOLD_F><BOLD_O><BOLD_A><BOLD_M> used to"
+	text "<b>SEAFOAM</b> used to"
 	line "be one island!"
 	done
 
@@ -68,12 +68,12 @@ _Route20Swimmer5EndBattleText::
 _Route20Swimmer5AfterBattleText::
 	text "I should've been"
 	line "buffing up my"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>, not me!"
+	cont "#<b>MON</b>, not me!"
 	done
 
 _Route20Swimmer6BattleText::
 	text "Why are you"
-	line "riding a #<BOLD_M><BOLD_O><BOLD_N>?"
+	line "riding a #<b>MON</b>?"
 	cont "Can't you swim?"
 	done
 
@@ -83,13 +83,13 @@ _Route20Swimmer6EndBattleText::
 	prompt
 
 _Route20Swimmer6AfterBattleText::
-	text "Riding a #<BOLD_M><BOLD_O><BOLD_N>"
+	text "Riding a #<b>MON</b>"
 	line "sure looks fun!"
 	done
 
 _Route20CooltrainerMBattleText::
 	text "I rode my bird"
-	line "#<BOLD_M><BOLD_O><BOLD_N> here!"
+	line "#<b>MON</b> here!"
 	done
 
 _Route20CooltrainerMEndBattleText::
@@ -115,12 +115,12 @@ _Route20Swimmer7EndBattleText::
 _Route20Swimmer7AfterBattleText::
 	text "Will my pearls"
 	line "grow bigger"
-	cont "inside <BOLD_C><BOLD_L><BOLD_O><BOLD_Y><BOLD_S><BOLD_T><BOLD_E><BOLD_R>?"
+	cont "inside <b>CLOYSTER</b>?"
 	done
 
 _Route20Swimmer8BattleText::
 	text "I swam here from"
-	line "<BOLD_C><BOLD_I><BOLD_N><BOLD_N><BOLD_A><BOLD_B><BOLD_A><BOLD_R> <BOLD_I><BOLD_S><BOLD_L><BOLD_A><BOLD_N><BOLD_D>!"
+	line "<b>CINNABAR ISLAND</b>!"
 	done
 
 _Route20Swimmer8EndBattleText::
@@ -129,16 +129,16 @@ _Route20Swimmer8EndBattleText::
 	prompt
 
 _Route20Swimmer8AfterBattleText::
-	text "#<BOLD_M><BOLD_O><BOLD_N> have"
+	text "#<b>MON</b> have"
 	line "taken over an"
 	cont "abandoned mansion"
-	cont "on <BOLD_C><BOLD_I><BOLD_N><BOLD_N><BOLD_A><BOLD_B><BOLD_A><BOLD_R>!"
+	cont "on <b>CINNABAR</b>!"
 	done
 
 _Route20Swimmer9BattleText::
-	text "<BOLD_C><BOLD_I><BOLD_N><BOLD_N><BOLD_A><BOLD_B><BOLD_A><BOLD_R>, in the"
-	line "west, has a <BOLD_L><BOLD_A><BOLD_B>"
-	cont "for #<BOLD_M><BOLD_O><BOLD_N>."
+	text "<b>CINNABAR</b>, in the"
+	line "west, has a <b>LAB</b>"
+	cont "for #<b>MON</b>."
 	done
 
 _Route20Swimmer9EndBattleText::
@@ -146,17 +146,17 @@ _Route20Swimmer9EndBattleText::
 	prompt
 
 _Route20Swimmer9AfterBattleText::
-	text "<BOLD_C><BOLD_I><BOLD_N><BOLD_N><BOLD_A><BOLD_B><BOLD_A><BOLD_R> is a "
+	text "<b>CINNABAR</b> is a "
 	line "volcanic island!"
 	done
 
 _Route20SeafoamIslandsSignText::
-	text "<BOLD_S><BOLD_E><BOLD_A><BOLD_F><BOLD_O><BOLD_A><BOLD_M> <BOLD_I><BOLD_S><BOLD_L><BOLD_A><BOLD_N><BOLD_D><BOLD_S>"
+	text "<b>SEAFOAM ISLANDS</b>"
 	done
 
 _Route20SignText::
-	text "<BOLD_S><BOLD_E><BOLD_A> <BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 20"
-	line "▶ <BOLD_S><BOLD_E><BOLD_A><BOLD_F><BOLD_O><BOLD_A><BOLD_M> <BOLD_I><BOLD_S><BOLD_L><BOLD_A><BOLD_N><BOLD_D><BOLD_S>"
-	cont "◀ <BOLD_C><BOLD_I><BOLD_N><BOLD_N><BOLD_A><BOLD_B><BOLD_A><BOLD_R> <BOLD_I><BOLD_S><BOLD_L><BOLD_A><BOLD_N><BOLD_D>"
+	text "<b>SEA ROUTE</b> 20"
+	line "▶ <b>SEAFOAM ISLANDS</b>"
+	cont "◀ <b>CINNABAR ISLAND</b>"
 	done
 

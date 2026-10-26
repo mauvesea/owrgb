@@ -21,6 +21,7 @@ UncompressSpriteFromDE::
 	jp UncompressSpriteData
 
 SaveScreenTilesToBuffer2::
+	farcall SaveDialogueScreen2
 	hlcoord 0, 0
 	ld de, wTileMapBackup2
 	ld bc, SCREEN_AREA
@@ -35,6 +36,7 @@ LoadScreenTilesFromBuffer2::
 
 ; loads screen tiles stored in wTileMapBackup2 but leaves hAutoBGTransferEnabled disabled
 LoadScreenTilesFromBuffer2DisableBGTransfer::
+	farcall LoadDialogueScreen2
 	xor a
 	ldh [hAutoBGTransferEnabled], a
 	ld hl, wTileMapBackup2
@@ -44,12 +46,14 @@ LoadScreenTilesFromBuffer2DisableBGTransfer::
 	ret
 
 SaveScreenTilesToBuffer1::
+	farcall SaveDialogueScreen1
 	hlcoord 0, 0
 	ld de, wTileMapBackup
 	ld bc, SCREEN_AREA
 	jp CopyData
 
 LoadScreenTilesFromBuffer1::
+	farcall LoadDialogueScreen1
 	xor a
 	ldh [hAutoBGTransferEnabled], a
 	ld hl, wTileMapBackup

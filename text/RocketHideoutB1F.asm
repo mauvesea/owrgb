@@ -14,7 +14,7 @@ _RocketHideoutB1FRocket1EndBattleText::
 
 _RocketHideoutB1FRocket1AfterBattleText::
 	text "Are you dissing"
-	line "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>?"
+	line "<b>TEAM ROCKET</b>?"
 	done
 
 _RocketHideoutB1FRocket2BattleText::
@@ -42,7 +42,7 @@ _RocketHideoutB1FRocket3EndBattleText::
 	prompt
 
 _RocketHideoutB1FRocket3AfterBattleText::
-	text "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> <BOLD_S><BOLD_C><BOLD_O><BOLD_P><BOLD_E>?"
+	text "<b>SILPH SCOPE</b>?"
 	line "I don't know"
 	cont "where it is!"
 	done
@@ -58,9 +58,9 @@ _RocketHideoutB1FRocket4EndBattleText::
 	prompt
 
 _RocketHideoutB1FRocket4AfterBattleText::
-	text "<BOLD_O><BOLD_K>, I'll talk!"
+	text "<b>OK</b>, I'll talk!"
 	line "Take the elevator"
-	cont "to see my <BOLD_B><BOLD_O><BOLD_S><BOLD_S>!"
+	cont "to see my <b>BOSS</b>!"
 	done
 
 _RocketHideoutB1FRocket5BattleText::

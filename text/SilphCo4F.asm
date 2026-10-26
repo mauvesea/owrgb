@@ -4,14 +4,14 @@ _SilphCo4FSilphWorkerMImHidingText::
 	done
 
 _SilphCo4FSilphWorkerMTeamRocketIsGoneText::
-	text "Huh? <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>"
+	text "Huh? <b>TEAM ROCKET</b>"
 	line "is gone?"
 	done
 
 _SilphCo4FRocket1BattleText::
-	text "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> has"
+	text "<b>TEAM ROCKET</b> has"
 	line "taken command of"
-	cont "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> <BOLD_C><BOLD_O>.!"
+	cont "<b>SILPH CO</b>.!"
 	done
 
 _SilphCo4FRocket1EndBattleText::
@@ -20,25 +20,25 @@ _SilphCo4FRocket1EndBattleText::
 
 _SilphCo4FRocket1AfterBattleText::
 	text "Fwahahaha!"
-	line "My <BOLD_B><BOLD_O><BOLD_S><BOLD_S> has been"
+	line "My <b>BOSS</b> has been"
 	cont "after this place!"
 	done
 
 _SilphCo4FScientistBattleText::
-	text "My #<BOLD_M><BOLD_O><BOLD_N> are my"
+	text "My #<b>MON</b> are my"
 	line "loyal soldiers!"
 	done
 
 _SilphCo4FScientistEndBattleText::
 	text "Darn!"
-	line "You weak #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "You weak #<b>MON</b>!"
 	prompt
 
 _SilphCo4FScientistAfterBattleText::
 	text "The doors are"
 	line "electronically"
-	cont "locked! A <BOLD_C><BOLD_A><BOLD_R><BOLD_D>"
-	cont "<BOLD_K><BOLD_E><BOLD_Y> opens them!"
+	cont "locked! A <b>CARD</b>"
+	cont "<b>KEY</b> opens them!"
 	done
 
 _SilphCo4FRocket2BattleText::
@@ -52,5 +52,5 @@ _SilphCo4FRocket2EndBattleText::
 
 _SilphCo4FRocket2AfterBattleText::
 	text "I better tell the"
-	line "<BOLD_B><BOLD_O><BOLD_S><BOLD_S> on 11<BOLD_F>!"
+	line "<b>BOSS</b> on 11<b>F</b>!"
 	done

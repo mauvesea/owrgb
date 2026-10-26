@@ -508,13 +508,15 @@ TrainerInfo_FarCopyData:
 	jp FarCopyData2
 
 TrainerInfo_NameMoneyTimeText:
-	db   "<BOLD_N><BOLD_A><BOLD_M><BOLD_E>/"
-	next "<BOLD_M><BOLD_O><BOLD_N><BOLD_E><BOLD_Y>/"
-	next "<BOLD_T><BOLD_I><BOLD_M><BOLD_E>/@"
+	db_text   "<b>NAME</b>/"
+	next "<b>MONEY</b>/"
+	next "<b>TIME</b>/@"
 
 ; $76 is a circle tile
 TrainerInfo_BadgesText:
-	db $76,"<BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E><BOLD_S>",$76,"@"
+	db $76
+	db_text "<b>BADGES</b>"
+	db $76, "@"
 
 ; draws a text box on the trainer info screen
 ; height is always 6

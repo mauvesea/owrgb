@@ -1,13 +1,13 @@
 _BikeShopClerkWelcomeText::
 	text "Hi! Welcome to"
-	line "our <BOLD_B><BOLD_I><BOLD_K><BOLD_E> <BOLD_S><BOLD_H><BOLD_O><BOLD_P>."
+	line "our <b>BIKE SHOP</b>."
 
 	para "Have we got just"
-	line "the <BOLD_B><BOLD_I><BOLD_K><BOLD_E> for you!"
+	line "the <b>BIKE</b> for you!"
 	prompt
 
 _BikeShopClerkDoYouLikeItText::
-	text "It's a cool <BOLD_B><BOLD_I><BOLD_K><BOLD_E>!"
+	text "It's a cool <b>BIKE</b>!"
 	line "Do you want it?"
 	done
 
@@ -19,15 +19,15 @@ _BikeShopCantAffordText::
 _BikeShopClerkOhThatsAVoucherText::
 	text "Oh, that's..."
 
-	para "A <BOLD_B><BOLD_I><BOLD_K><BOLD_E> <BOLD_V><BOLD_O><BOLD_U><BOLD_C><BOLD_H><BOLD_E><BOLD_R>!"
+	para "A <b>BIKE VOUCHER</b>!"
 
-	para "<BOLD_O><BOLD_K>! Here you go!"
+	para "<b>OK</b>! Here you go!"
 	prompt
 
 _BikeShopExchangedVoucherText::
 	text "<PLAYER> exchanged"
-	line "the <BOLD_B><BOLD_I><BOLD_K><BOLD_E> <BOLD_V><BOLD_O><BOLD_U><BOLD_C><BOLD_H><BOLD_E><BOLD_R>"
-	cont "for a <BOLD_B><BOLD_I><BOLD_C><BOLD_Y><BOLD_C><BOLD_L><BOLD_E>.@"
+	line "the <b>BIKE VOUCHER</b>"
+	cont "for a <b>BICYCLE</b>.@"
 	text_end
 
 _BikeShopComeAgainText::
@@ -37,10 +37,10 @@ _BikeShopComeAgainText::
 
 _BikeShopClerkHowDoYouLikeYourBicycleText::
 	text "How do you like"
-	line "your new <BOLD_B><BOLD_I><BOLD_C><BOLD_Y><BOLD_C><BOLD_L><BOLD_E>?"
+	line "your new <b>BICYCLE</b>?"
 
 	para "You can take it"
-	line "on <BOLD_C><BOLD_Y><BOLD_C><BOLD_L><BOLD_I><BOLD_N><BOLD_G> <BOLD_R><BOLD_O><BOLD_A><BOLD_D>"
+	line "on <b>CYCLING ROAD</b>"
 	cont "and in caves!"
 	done
 
@@ -50,22 +50,22 @@ _BikeShopBagFullText::
 	done
 
 _BikeShopMiddleAgedWomanText::
-	text "A plain city <BOLD_B><BOLD_I><BOLD_K><BOLD_E>"
+	text "A plain city <b>BIKE</b>"
 	line "is good enough"
 	cont "for me!"
 
 	para "You can't put a"
 	line "shopping basket"
-	cont "on an <BOLD_M><BOLD_T><BOLD_B>!"
+	cont "on an <b>MTB</b>!"
 	done
 
 _BikeShopYoungsterTheseBikesAreExpensiveText::
-	text "These <BOLD_B><BOLD_I><BOLD_K><BOLD_E>s are"
+	text "These <b>BIKE</b>s are"
 	line "cool, but they're"
 	cont "way expensive!"
 	done
 
 _BikeShopYoungsterCoolBikeText::
-	text "Wow. Your <BOLD_B><BOLD_I><BOLD_K><BOLD_E> is"
+	text "Wow. Your <b>BIKE</b> is"
 	line "really cool!"
 	done

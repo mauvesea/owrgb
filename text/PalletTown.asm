@@ -1,25 +1,29 @@
 _PalletTownOakHeyWaitDontGoOutText::
-	text "<BOLD_O><BOLD_A><BOLD_K>: Hey! Wait!"
+	text "Hey! Wait!"
 	line "Don't go out!@"
 	text_end
 
 _PalletTownOakItsUnsafeText::
-	text "<BOLD_O><BOLD_A><BOLD_K>: It's unsafe!"
-	line "Wild #<BOLD_M><BOLD_O><BOLD_N> live"
-	cont "in tall grass!"
+	face FACE_OAK_1
+	text "It's unsafe!"
+	line "Wild #<b>MON</b>"
+	cont "live in tall"
+	cont "grass!"
 
-	para "You need your own"
-	line "#<BOLD_M><BOLD_O><BOLD_N> for your"
+	para "You need your"
+	line "own #<b>MON</b>"
+	cont "for your"
 	cont "protection."
-	cont "I know!"
 
-	para "Here, come with"
-	line "me!"
+	para "I know!"
+
+	para "Here, come"
+	line "with me!"
 	done
 
 _PalletTownGirlText::
 	text "I'm raising"
-	line "#<BOLD_M><BOLD_O><BOLD_N> too!"
+	line "#<b>MON</b> too!"
 
 	para "When they get"
 	line "strong, they can"
@@ -32,25 +36,25 @@ _PalletTownFisherText::
 
 	para "You can now store"
 	line "and recall items"
-	cont "and #<BOLD_M><BOLD_O><BOLD_N> as"
-	cont "data via <BOLD_P><BOLD_C>!"
+	cont "and #<b>MON</b> as"
+	cont "data via <b>PC</b>!"
 	done
 
 _PalletTownOaksLabSignText::
-	text "<BOLD_O><BOLD_A><BOLD_K><BOLD_s> #<BOLD_M><BOLD_O><BOLD_N>"
-	line "<BOLD_R><BOLD_E><BOLD_S><BOLD_E><BOLD_A><BOLD_R><BOLD_C><BOLD_H> <BOLD_L><BOLD_A><BOLD_B>"
+	text "<b>OAKs</b> #<b>MON</b>"
+	line "<b>RESEARCH LAB</b>"
 	done
 
 _PalletTownSignText::
-	text "<BOLD_P><BOLD_A><BOLD_L><BOLD_L><BOLD_E><BOLD_T> <BOLD_T><BOLD_O><BOLD_W><BOLD_N>"
+	text "<b>PALLET TOWN</b>"
 	line "Shades of your"
 	cont "journey await!"
 	done
 
 _PalletTownPlayersHouseSignText::
-	text "<PLAYER><BOLD_s> house "
+	text "<PLAYER><b>s</b> house "
 	done
 
 _PalletTownRivalsHouseSignText::
-	text "<RIVAL><BOLD_s> house "
+	text "<RIVAL><b>s</b> house "
 	done

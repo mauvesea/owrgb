@@ -1,6 +1,6 @@
 _Route8SuperNerd1BattleText::
 	text "You look good at"
-	line "#<BOLD_M><BOLD_O><BOLD_N>, but"
+	line "#<b>MON</b>, but"
 	cont "how's your chem?"
 	done
 
@@ -40,13 +40,13 @@ _Route8SuperNerd2EndBattleText::
 	prompt
 
 _Route8SuperNerd2AfterBattleText::
-	text "Go with <BOLD_G><BOLD_R><BOLD_I><BOLD_M><BOLD_E><BOLD_R>"
+	text "Go with <b>GRIMER</b>"
 	line "first...and..."
 	cont "...and...then..."
 	done
 
 _Route8CooltrainerF1BattleText::
-	text "I like <BOLD_N><BOLD_I><BOLD_D><BOLD_O><BOLD_R><BOLD_A><BOLD_N>, so"
+	text "I like <b>NIDORAN</b>, so"
 	line "I collect them!"
 	done
 
@@ -55,7 +55,7 @@ _Route8CooltrainerF1EndBattleText::
 	prompt
 
 _Route8CooltrainerF1AfterBattleText::
-	text "When #<BOLD_M><BOLD_O><BOLD_N> grow"
+	text "When #<b>MON</b> grow"
 	line "up they get ugly!"
 	cont "They shouldn't"
 	cont "evolve!"
@@ -63,7 +63,7 @@ _Route8CooltrainerF1AfterBattleText::
 
 _Route8SuperNerd3BattleText::
 	text "School is fun, but"
-	line "so are #<BOLD_M><BOLD_O><BOLD_N>."
+	line "so are #<b>MON</b>."
 	done
 
 _Route8SuperNerd3EndBattleText::
@@ -74,11 +74,11 @@ _Route8SuperNerd3EndBattleText::
 _Route8SuperNerd3AfterBattleText::
 	text "We're stuck here"
 	line "because of the"
-	cont "gates at <BOLD_S><BOLD_A><BOLD_F><BOLD_F><BOLD_R><BOLD_O><BOLD_N>."
+	cont "gates at <b>SAFFRON</b>."
 	done
 
 _Route8CooltrainerF2BattleText::
-	text "<BOLD_M><BOLD_E><BOLD_O><BOLD_W><BOLD_T><BOLD_H> is so cute,"
+	text "<b>MEOWTH</b> is so cute,"
 	line "meow, meow, meow!"
 	done
 
@@ -87,8 +87,8 @@ _Route8CooltrainerF2EndBattleText::
 	prompt
 
 _Route8CooltrainerF2AfterBattleText::
-	text "I think <BOLD_P><BOLD_I><BOLD_D><BOLD_G><BOLD_E><BOLD_Y>"
-	line "and <BOLD_R><BOLD_A><BOLD_T><BOLD_T><BOLD_A><BOLD_T><BOLD_A>"
+	text "I think <b>PIDGEY</b>"
+	line "and <b>RATTATA</b>"
 	cont "are cute too!"
 	done
 
@@ -104,7 +104,7 @@ _Route8CooltrainerF3EndBattleText::
 	prompt
 
 _Route8CooltrainerF3AfterBattleText::
-	text "<BOLD_S><BOLD_A><BOLD_F><BOLD_F><BOLD_R><BOLD_O><BOLD_N>'<BOLD_s> gate"
+	text "<b>SAFFRON's</b> gate"
 	line "keeper won't let"
 	cont "us through."
 	cont "He's so mean!"
@@ -122,7 +122,7 @@ _Route8Gambler2EndBattleText::
 
 _Route8Gambler2AfterBattleText::
 	text "Gambling and"
-	line "#<BOLD_M><BOLD_O><BOLD_N> are like"
+	line "#<b>MON</b> are like"
 	cont "eating peanuts!"
 	cont "Just can't stop!"
 	done
@@ -130,30 +130,30 @@ _Route8Gambler2AfterBattleText::
 _Route8CooltrainerF4BattleText::
 	text "What's a cute,"
 	line "round and fluffy"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>?"
+	cont "#<b>MON</b>?"
 	done
 
 _Route8CooltrainerF4EndBattleText::
 	text "Stop!"
 
 	para "Don't be so mean"
-	line "to my <BOLD_C><BOLD_L><BOLD_E><BOLD_F><BOLD_A><BOLD_I><BOLD_R><BOLD_Y>!"
+	line "to my <b>CLEFAIRY</b>!"
 	prompt
 
 _Route8CooltrainerF4AfterBattleText::
 	text "I heard that"
-	line "<BOLD_C><BOLD_L><BOLD_E><BOLD_F><BOLD_A><BOLD_I><BOLD_R><BOLD_Y> evolves"
+	line "<b>CLEFAIRY</b> evolves"
 	cont "when it's exposed"
-	cont "to a <BOLD_M><BOLD_O><BOLD_O><BOLD_N> <BOLD_S><BOLD_T><BOLD_O><BOLD_N><BOLD_E>."
+	cont "to a <b>MOON STONE</b>."
 	done
 
 _Route8UndergroundSignText::
-	text "<BOLD_U><BOLD_N><BOLD_D><BOLD_E><BOLD_R><BOLD_G><BOLD_R><BOLD_O><BOLD_U><BOLD_N><BOLD_D> <BOLD_P><BOLD_A><BOLD_T><BOLD_H>"
-	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 8 - <BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 7"
+	text "<b>UNDERGROUND PATH</b>"
+	line "<b>ROUTE</b> 8 - <b>ROUTE</b> 7"
 	done
 
 _Route8SignText::
-	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 8"
-	line "◀ <BOLD_S><BOLD_A><BOLD_F><BOLD_F><BOLD_R><BOLD_O><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
-	cont "▶ <BOLD_L><BOLD_A><BOLD_V><BOLD_E><BOLD_N><BOLD_D><BOLD_E><BOLD_R> <BOLD_T><BOLD_O><BOLD_W><BOLD_N>"
+	text "<b>ROUTE</b> 8"
+	line "◀ <b>SAFFRON CITY</b>"
+	cont "▶ <b>LAVENDER TOWN</b>"
 	done

@@ -1,9 +1,9 @@
 _SafariZoneEastRestHouseSignText::
-	text "<BOLD_R><BOLD_E><BOLD_S><BOLD_T> <BOLD_H><BOLD_O><BOLD_U><BOLD_S><BOLD_E>"
+	text "<b>REST HOUSE</b>"
 	done
 
 _SafariZoneEastTrainerTipsText::
-	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> <BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
+	text "<b>TRAINER TIPS</b>"
 
 	para "The remaining time"
 	line "declines only"
@@ -11,6 +11,6 @@ _SafariZoneEastTrainerTipsText::
 	done
 
 _SafariZoneEastSignText::
-	text "<BOLD_C><BOLD_E><BOLD_N><BOLD_T><BOLD_E><BOLD_R> <BOLD_A><BOLD_R><BOLD_E><BOLD_A>"
-	line "<BOLD_N><BOLD_O><BOLD_R><BOLD_T><BOLD_H>: <BOLD_A><BOLD_R><BOLD_E><BOLD_A> 2"
+	text "<b>CENTER AREA</b>"
+	line "<b>NORTH</b>: <b>AREA</b> 2"
 	done

@@ -105,6 +105,7 @@ HoldTextDisplayOpen::
 
 CloseTextDisplay::
 	farcall PrepareDialogueFaceClose
+	jr c, .retained
 	ld a, [wCurMap]
 	call SwitchToMapRomBank
 	ld a, $90
@@ -135,6 +136,7 @@ CloseTextDisplay::
 	bit BIT_FLY_WARP, a
 	call z, LoadPlayerSpriteGraphics
 	call LoadCurrentMapView
+.retained
 	pop af
 	ldh [hLoadedROMBank], a
 	ld [rROMB], a

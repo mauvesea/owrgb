@@ -1,5 +1,5 @@
 _SSAnne1FRoomsWigglytuffText::
-	text "<BOLD_W><BOLD_I><BOLD_G><BOLD_G><BOLD_L><BOLD_Y><BOLD_T><BOLD_U><BOLD_F><BOLD_F>: Puup"
+	text "<b>WIGGLYTUFF</b>: Puup"
 	line "pupuu!@"
 	text_end
 
@@ -7,7 +7,7 @@ _SSAnne1FRoomsGentleman1BattleText::
 	text "I travel alone"
 	line "on my journeys!"
 
-	para "My #<BOLD_M><BOLD_O><BOLD_N> are my"
+	para "My #<b>MON</b> are my"
 	line "only friends!"
 	done
 
@@ -37,7 +37,7 @@ _SSAnne1FRoomsGentleman2AfterBattleText::
 	done
 
 _SSAnne1FRoomsYoungsterBattleText::
-	text "I love #<BOLD_M><BOLD_O><BOLD_N>!"
+	text "I love #<b>MON</b>!"
 	line "Do you?"
 	done
 
@@ -48,15 +48,15 @@ _SSAnne1FRoomsYoungsterEndBattleText::
 
 _SSAnne1FRoomsYoungsterAfterBattleText::
 	text "Let me be your"
-	line "friend, <BOLD_O><BOLD_K>?"
+	line "friend, <b>OK</b>?"
 
 	para "Then we can trade"
-	line "#<BOLD_M><BOLD_O><BOLD_N>!"
+	line "#<b>MON</b>!"
 	done
 
 _SSAnne1FRoomsCooltrainerFBattleText::
 	text "I collected these"
-	line "#<BOLD_M><BOLD_O><BOLD_N> from all"
+	line "#<b>MON</b> from all"
 	cont "around the world!"
 	done
 
@@ -68,11 +68,11 @@ _SSAnne1FRoomsCooltrainerFEndBattleText::
 
 _SSAnne1FRoomsCooltrainerFAfterBattleText::
 	text "You hurt my poor"
-	line "worldly #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "worldly #<b>MON</b>!"
 
 	para "I demand that you"
 	line "heal them at a"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_C><BOLD_E><BOLD_N><BOLD_T><BOLD_E><BOLD_R>!"
+	cont "#<b>MON CENTER</b>!"
 	done
 
 _SSAnne1FRoomsGirl1Text::
@@ -88,7 +88,7 @@ _SSAnne1FRoomsMiddleAgedManText::
 
 _SSAnne1FRoomsLittleGirlText::
 	text "I always travel"
-	line "with <BOLD_W><BOLD_I><BOLD_G><BOLD_G><BOLD_L><BOLD_Y><BOLD_T><BOLD_U><BOLD_F><BOLD_F>!"
+	line "with <b>WIGGLYTUFF</b>!"
 	done
 
 _SSAnne1FRoomsGirl2Text::
@@ -97,9 +97,9 @@ _SSAnne1FRoomsGirl2Text::
 	done
 
 _SSAnne1FRoomsGentleman3Text::
-	text "Ssh! I'm a <BOLD_G><BOLD_L><BOLD_O><BOLD_B><BOLD_A><BOLD_L>"
-	line "<BOLD_P><BOLD_O><BOLD_L><BOLD_I><BOLD_C><BOLD_E> agent!"
+	text "Ssh! I'm a <b>GLOBAL</b>"
+	line "<b>POLICE</b> agent!"
 
 	para "I'm on the trail"
-	line "of <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>!"
+	line "of <b>TEAM ROCKET</b>!"
 	done

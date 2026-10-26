@@ -5,7 +5,7 @@ _PewterGymBrockPostBattleAdviceText::
 
 	para "You appear to be"
 	line "very gifted as a"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> trainer!"
+	cont "#<b>MON</b> trainer!"
 
 	para "Keep challenging"
 	line "yourself to test"
@@ -19,28 +19,28 @@ _PewterGymBrockWaitTakeThisText::
 
 _PewterGymReceivedTM34Text::
 	text "<PLAYER> received"
-	line "<BOLD_T><BOLD_M>34!@"
+	line "<b>TM</b>34!@"
 	text_end
 
 _TM34ExplanationText::
 	text_start
 
-	para "A <BOLD_T><BOLD_M> contains a"
+	para "A <b>TM</b> contains a"
 	line "technique that"
 	cont "can be taught to"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "#<b>MON</b>!"
 
-	para "A <BOLD_T><BOLD_M> is good only"
+	para "A <b>TM</b> is good only"
 	line "once! So when you"
 	cont "use one to teach"
 	cont "a new technique,"
-	cont "pick the #<BOLD_M><BOLD_O><BOLD_N>"
+	cont "pick the #<b>MON</b>"
 	cont "carefully!"
 
-	para "<BOLD_T><BOLD_M>34 contains"
-	line "<BOLD_B><BOLD_I><BOLD_D><BOLD_E>!"
+	para "<b>TM</b>34 contains"
+	line "<b>BIDE</b>!"
 
-	para "Your #<BOLD_M><BOLD_O><BOLD_N> will"
+	para "Your #<b>MON</b> will"
 	line "absorb damage in"
 	cont "battle then pay"
 	cont "it back double!"
@@ -57,18 +57,18 @@ _PewterGymBrockReceivedBoulderBadgeText::
 
 	para "As proof of your"
 	line "victory, here's"
-	cont "the <BOLD_B><BOLD_O><BOLD_U><BOLD_L><BOLD_D><BOLD_E><BOLD_R><BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>!"
+	cont "the <b>BOULDERBADGE</b>!"
 
 	para "<PLAYER> received"
-	line "the <BOLD_B><BOLD_O><BOLD_U><BOLD_L><BOLD_D><BOLD_E><BOLD_R><BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>!@"
+	line "the <b>BOULDERBADGE</b>!@"
 	text_end
 
 _PewterGymBrockBoulderBadgeInfoText::
 	text_start
 
 	para "That's an official"
-	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>"
-	cont "<BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>!"
+	line "#<b>MON LEAGUE</b>"
+	cont "<b>BADGE</b>!"
 	prompt
 
 _PewterGymCooltrainerMBattleText::
@@ -77,7 +77,7 @@ _PewterGymCooltrainerMBattleText::
 
 	para "You're still light"
 	line "years from facing"
-	cont "<BOLD_B><BOLD_R><BOLD_O><BOLD_C><BOLD_K>!"
+	cont "<b>BROCK</b>!"
 	done
 
 _PewterGymCooltrainerMEndBattleText::
@@ -91,14 +91,14 @@ _PewterGymCooltrainerMEndBattleText::
 _PewterGymCooltrainerMAfterBattleText::
 	text "You're pretty hot,"
 	line "but not as hot"
-	cont "as <BOLD_B><BOLD_R><BOLD_O><BOLD_C><BOLD_K>!"
+	cont "as <b>BROCK</b>!"
 	done
 
 _PewterGymGuidePreAdviceText::
 	text "Hiya! I can tell"
 	line "you have what it"
 	cont "takes to become a"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> champ!"
+	cont "#<b>MON</b> champ!"
 
 	para "I'm no trainer,"
 	line "but I can tell"
@@ -114,13 +114,13 @@ _PewterGymGuideBeginAdviceText::
 	prompt
 
 _PewterGymGuideAdviceText::
-	text "The 1st #<BOLD_M><BOLD_O><BOLD_N>"
+	text "The 1st #<b>MON</b>"
 	line "out in a match is"
 	cont "at the top of the"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_I><BOLD_S><BOLD_T>!"
+	cont "#<b>MON LIST</b>!"
 
 	para "By changing the"
-	line "order of #<BOLD_M><BOLD_O><BOLD_N>,"
+	line "order of #<b>MON</b>,"
 	cont "matches could be"
 	cont "made easier!"
 	done
@@ -133,6 +133,6 @@ _PewterGymGuideFreeServiceText::
 
 _PewterGymGuidePostBattleText::
 	text "Just as I thought!"
-	line "You're #<BOLD_M><BOLD_O><BOLD_N>"
+	line "You're #<b>MON</b>"
 	cont "champ material!"
 	done

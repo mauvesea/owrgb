@@ -1,5 +1,5 @@
 _SSAnneB1FRoomsMachokeText::
-	text "<BOLD_M><BOLD_A><BOLD_C><BOLD_H><BOLD_O><BOLD_K><BOLD_E>: Gwoh!"
+	text "<b>MACHOKE</b>: Gwoh!"
 	line "Goggoh!@"
 	text_end
 
@@ -31,23 +31,23 @@ _SSAnneB1FRoomsSailor2EndBattleText::
 
 _SSAnneB1FRoomsSailor2AfterBattleText::
 	text "Did you see the"
-	line "<BOLD_F><BOLD_I><BOLD_S><BOLD_H><BOLD_I><BOLD_N><BOLD_G> <BOLD_G><BOLD_U><BOLD_R><BOLD_U> in"
-	cont "<BOLD_V><BOLD_E><BOLD_R><BOLD_M><BOLD_I><BOLD_L><BOLD_I><BOLD_O><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>?"
+	line "<b>FISHING GURU</b> in"
+	cont "<b>VERMILION CITY</b>?"
 	done
 
 _SSAnneB1FRoomsSailor3BattleText::
 	text "Us sailors have"
-	line "#<BOLD_M><BOLD_O><BOLD_N> too!"
+	line "#<b>MON</b> too!"
 	done
 
 _SSAnneB1FRoomsSailor3EndBattleText::
-	text "<BOLD_O><BOLD_K>, "
+	text "<b>OK</b>, "
 	line "you're not bad."
 	prompt
 
 _SSAnneB1FRoomsSailor3AfterBattleText::
 	text "We caught all our"
-	line "#<BOLD_M><BOLD_O><BOLD_N> while"
+	line "#<b>MON</b> while"
 	cont "out at sea!"
 	done
 
@@ -62,9 +62,9 @@ _SSAnneB1FRoomsSailor4EndBattleText::
 	prompt
 
 _SSAnneB1FRoomsSailor4AfterBattleText::
-	text "Sea #<BOLD_M><BOLD_O><BOLD_N> live"
+	text "Sea #<b>MON</b> live"
 	line "in deep water."
-	cont "You'll need a <BOLD_R><BOLD_O><BOLD_D>!"
+	cont "You'll need a <b>ROD</b>!"
 	done
 
 _SSAnneB1FRoomsSailor5BattleText::
@@ -88,7 +88,7 @@ _SSAnneB1FRoomsFisherBattleText::
 	text "Hello stranger!"
 	line "Stop and chat!"
 
-	para "All my #<BOLD_M><BOLD_O><BOLD_N>"
+	para "All my #<b>MON</b>"
 	line "are from the sea!"
 	done
 
@@ -105,11 +105,11 @@ _SSAnneB1FRoomsFisherAfterBattleText::
 	done
 
 _SSAnneB1FRoomsSuperNerdText::
-	text "My buddy, <BOLD_M><BOLD_A><BOLD_C><BOLD_H><BOLD_O><BOLD_K><BOLD_E>,"
+	text "My buddy, <b>MACHOKE</b>,"
 	line "is super strong!"
 
 	para "However, I still"
 	line "use my good old"
-	cont "<BOLD_C><BOLD_R><BOLD_O><BOLD_W><BOLD_B><BOLD_A><BOLD_R> to move"
+	cont "<b>CROWBAR</b> to move"
 	cont "big rocks!"
 	done

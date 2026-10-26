@@ -241,10 +241,10 @@ PlayerPCToss:
 	jp .loop
 
 PlayersPCMenuEntries:
-	db   "<BOLD_W><BOLD_I><BOLD_T><BOLD_H><BOLD_D><BOLD_R><BOLD_A><BOLD_W> <BOLD_I><BOLD_T><BOLD_E><BOLD_M>"
-	next "<BOLD_D><BOLD_E><BOLD_P><BOLD_O><BOLD_S><BOLD_I><BOLD_T> <BOLD_I><BOLD_T><BOLD_E><BOLD_M>"
-	next "<BOLD_T><BOLD_O><BOLD_S><BOLD_S> <BOLD_I><BOLD_T><BOLD_E><BOLD_M>"
-	next "<BOLD_L><BOLD_O><BOLD_G> <BOLD_O><BOLD_F><BOLD_F>@"
+	db_text   "<b>WITHDRAW ITEM</b>"
+	next "<b>DEPOSIT ITEM</b>"
+	next "<b>TOSS ITEM</b>"
+	next "<b>LOG OFF</b>@"
 
 TurnedOnPC2Text:
 	text_far _TurnedOnPC2Text

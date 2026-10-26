@@ -14,7 +14,7 @@ _Route16Biker1AfterBattleText::
 	done
 
 _Route16Biker2BattleText::
-	text "Nice <BOLD_B><BOLD_I><BOLD_K><BOLD_E>!"
+	text "Nice <b>BIKE</b>!"
 	line "Hand it over!"
 	done
 
@@ -25,7 +25,7 @@ _Route16Biker2EndBattleText::
 
 _Route16Biker2AfterBattleText::
 	text "Forget it, who"
-	line "needs your <BOLD_B><BOLD_I><BOLD_K><BOLD_E>!"
+	line "needs your <b>BIKE</b>!"
 	done
 
 _Route16Biker3BattleText::
@@ -54,8 +54,8 @@ _Route16Biker4EndBattleText::
 
 _Route16Biker4AfterBattleText::
 	text "You can also get"
-	line "to <BOLD_F><BOLD_U><BOLD_C><BOLD_H><BOLD_S><BOLD_I><BOLD_A> from"
-	cont "<BOLD_V><BOLD_E><BOLD_R><BOLD_M><BOLD_I><BOLD_L><BOLD_I><BOLD_O><BOLD_N> using a"
+	line "to <b>FUCHSIA</b> from"
+	cont "<b>VERMILION</b> using a"
 	cont "coastal road."
 	done
 
@@ -70,7 +70,7 @@ _Route16Biker5EndBattleText::
 	prompt
 
 _Route16Biker5AfterBattleText::
-	text "I like my #<BOLD_M><BOLD_O><BOLD_N>"
+	text "I like my #<b>MON</b>"
 	line "ferocious! They"
 	cont "tear up enemies!"
 	done
@@ -87,16 +87,16 @@ _Route16Biker6EndBattleText::
 _Route16Biker6AfterBattleText::
 	text "I like harassing"
 	line "people with my"
-	cont "vicious #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "vicious #<b>MON</b>!"
 	done
 
 _Route16Text7::
-	text "A sleeping #<BOLD_M><BOLD_O><BOLD_N>"
+	text "A sleeping #<b>MON</b>"
 	line "blocks the way!"
 	done
 
 _Route16SnorlaxWokeUpText::
-	text "<BOLD_S><BOLD_N><BOLD_O><BOLD_R><BOLD_L><BOLD_A><BOLD_X> woke up!"
+	text "<b>SNORLAX</b> woke up!"
 
 	para "It attacked in a"
 	line "grumpy rage!"
@@ -104,21 +104,21 @@ _Route16SnorlaxWokeUpText::
 
 _Route16SnorlaxReturnedToMountainsText::
 	text "With a big yawn,"
-	line "<BOLD_S><BOLD_N><BOLD_O><BOLD_R><BOLD_L><BOLD_A><BOLD_X> returned"
+	line "<b>SNORLAX</b> returned"
 	cont "to the mountains!"
 	done
 
 _Route16CyclingRoadSignText::
 	text "Enjoy the slope!"
-	line "<BOLD_C><BOLD_Y><BOLD_C><BOLD_L><BOLD_I><BOLD_N><BOLD_G> <BOLD_R><BOLD_O><BOLD_A><BOLD_D>"
+	line "<b>CYCLING ROAD</b>"
 	done
 
 _Route16SignText::
-	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 16"
-	line "▶ <BOLD_C><BOLD_E><BOLD_L><BOLD_A><BOLD_D><BOLD_O><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
-	cont "▼ <BOLD_F><BOLD_U><BOLD_C><BOLD_H><BOLD_S><BOLD_I><BOLD_A> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
+	text "<b>ROUTE</b> 16"
+	line "▶ <b>CELADON CITY</b>"
+	cont "▼ <b>FUCHSIA CITY</b>"
 	done
 
 _MoltresDungeon3SignText::
-	text "<BOLD_D><BOLD_A><BOLD_N><BOLD_G><BOLD_E><BOLD_R> <BOLD_A><BOLD_H><BOLD_E><BOLD_A><BOLD_D>"
+	text "<b>DANGER AHEAD</b>"
 	done

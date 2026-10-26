@@ -30,8 +30,8 @@ _PokemonMansion3FScientistAfterBattleText::
 
 _PokemonMansion3FDiaryText::
 	text "Diary: Feb. 6"
-	line "<BOLD_M><BOLD_E><BOLD_W> gave birth."
+	line "<b>MEW</b> gave birth."
 
 	para "We named the"
-	line "newborn <BOLD_M><BOLD_E><BOLD_W><BOLD_T><BOLD_W><BOLD_O>."
+	line "newborn <b>MEWTWO</b>."
 	done

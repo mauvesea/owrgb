@@ -26,19 +26,19 @@ _Museum1FScientist1DoYouKnowWhatAmberIsText::
 
 	para "Oh, whatever!"
 	line "Do you know what"
-	cont "<BOLD_A><BOLD_M><BOLD_B><BOLD_E><BOLD_R> is?"
+	cont "<b>AMBER</b> is?"
 	done
 
 _Museum1FScientist1TheresALabSomewhereText::
 	text "There's a lab"
 	line "somewhere trying"
 	cont "to resurrect"
-	cont "ancient #<BOLD_M><BOLD_O><BOLD_N>"
-	cont "from <BOLD_A><BOLD_M><BOLD_B><BOLD_E><BOLD_R>."
+	cont "ancient #<b>MON</b>"
+	cont "from <b>AMBER</b>."
 	done
 
 _Museum1FScientist1AmberIsFossilizedTreeSapText::
-	text "<BOLD_A><BOLD_M><BOLD_B><BOLD_E><BOLD_R> is fossil-"
+	text "<b>AMBER</b> is fossil-"
 	line "ized tree sap."
 	done
 
@@ -61,11 +61,11 @@ _Museum1FGamblerText::
 _Museum1FScientist2TakeThisToAPokemonLabText::
 	text "Ssh! I think that"
 	line "this chunk of"
-	cont "<BOLD_A><BOLD_M><BOLD_B><BOLD_E><BOLD_R> contains"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_D><BOLD_N><BOLD_A>!"
+	cont "<b>AMBER</b> contains"
+	cont "#<b>MON DNA</b>!"
 
 	para "It would be great"
-	line "if #<BOLD_M><BOLD_O><BOLD_N> could"
+	line "if #<b>MON</b> could"
 	cont "be resurrected"
 	cont "from it!"
 
@@ -76,18 +76,18 @@ _Museum1FScientist2TakeThisToAPokemonLabText::
 	line "to ask!"
 
 	para "Take this to a"
-	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_A><BOLD_B> and"
+	line "#<b>MON LAB</b> and"
 	cont "get it examined!"
 	prompt
 
 _Museum1FScientist2ReceivedOldAmberText::
 	text "<PLAYER> received"
-	line "<BOLD_O><BOLD_L><BOLD_D> <BOLD_A><BOLD_M><BOLD_B><BOLD_E><BOLD_R>!@"
+	line "<b>OLD AMBER</b>!@"
 	text_end
 
 _Museum1FScientist2GetTheOldAmberCheckText::
-	text "Ssh! Get the <BOLD_O><BOLD_L><BOLD_D>"
-	line "<BOLD_A><BOLD_M><BOLD_B><BOLD_E><BOLD_R> checked!"
+	text "Ssh! Get the <b>OLD</b>"
+	line "<b>AMBER</b> checked!"
 	done
 
 _Museum1FScientist2YouDontHaveSpaceText::
@@ -99,10 +99,10 @@ _Museum1FScientist3Text::
 	text "We are proud of 2"
 	line "fossils of very"
 	cont "rare, prehistoric"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "#<b>MON</b>!"
 	done
 
 _Museum1FOldAmberText::
-	text "The <BOLD_A><BOLD_M><BOLD_B><BOLD_E><BOLD_R> is"
+	text "The <b>AMBER</b> is"
 	line "clear and gold!"
 	done

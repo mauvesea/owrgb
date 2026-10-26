@@ -1,7 +1,7 @@
 _FuchsiaPokecenterRockerText::
 	text "You can't win"
 	line "with just one"
-	cont "strong #<BOLD_M><BOLD_O><BOLD_N>."
+	cont "strong #<b>MON</b>."
 
 	para "It's tough, but"
 	line "you have to raise"
@@ -11,10 +11,10 @@ _FuchsiaPokecenterRockerText::
 _FuchsiaPokecenterCooltrainerFText::
 	text "There's a narrow"
 	line "trail west of"
-	cont "<BOLD_V><BOLD_I><BOLD_R><BOLD_I><BOLD_D><BOLD_I><BOLD_A><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>."
+	cont "<b>VIRIDIAN CITY</b>."
 
-	para "It goes to #<BOLD_M><BOLD_O><BOLD_N>"
-	line "<BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E> <BOLD_H><BOLD_Q>."
-	cont "The <BOLD_H><BOLD_Q> governs"
+	para "It goes to #<b>MON</b>"
+	line "<b>LEAGUE HQ</b>."
+	cont "The <b>HQ</b> governs"
 	cont "all trainers."
 	done

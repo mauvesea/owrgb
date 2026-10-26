@@ -9,7 +9,7 @@ _Route11SuperNerd2AfterBattleText::
 	done
 
 _Route11Youngster4BattleText::
-	text "My #<BOLD_M><BOLD_O><BOLD_N> should"
+	text "My #<b>MON</b> should"
 	line "be ready by now!"
 	done
 
@@ -24,11 +24,11 @@ _Route11Youngster4AfterBattleText::
 	done
 
 _Route11DiglettsCaveSignText::
-	text "<BOLD_D><BOLD_I><BOLD_G><BOLD_L><BOLD_E><BOLD_T><BOLD_T>'<BOLD_s> <BOLD_C><BOLD_A><BOLD_V><BOLD_E>"
+	text "<b>DIGLETT's CAVE</b>"
 	done
 
 _Route11SignText::
-	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 11"
-	line "◀ <BOLD_V><BOLD_E><BOLD_R><BOLD_M><BOLD_I><BOLD_L><BOLD_L><BOLD_I><BOLD_O><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
-	cont "▶ <BOLD_S><BOLD_I><BOLD_L><BOLD_E><BOLD_N><BOLD_C><BOLD_E> <BOLD_B><BOLD_R><BOLD_I><BOLD_D><BOLD_G><BOLD_E>"
+	text "<b>ROUTE</b> 11"
+	line "◀ <b>VERMILLION CITY</b>"
+	cont "▶ <b>SILENCE BRIDGE</b>"
 	done

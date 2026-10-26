@@ -1,24 +1,24 @@
 _CeruleanPokecenterSuperNerdText::
-	text "That <BOLD_B><BOLD_I><BOLD_L><BOLD_L>!"
+	text "That <b>BILL</b>!"
 
 	para "I heard that"
 	line "he'll do whatever"
 	cont "it takes to get"
-	cont "rare #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "rare #<b>MON</b>!"
 	done
 
 _CeruleanPokecenterGentlemanText::
 	text "Have you heard"
-	line "about <BOLD_B><BOLD_I><BOLD_L><BOLD_L>?"
+	line "about <b>BILL</b>?"
 
 	para "Everyone calls"
-	line "him a #<BOLD_M><BOLD_A><BOLD_N><BOLD_I><BOLD_A><BOLD_C>!"
+	line "him a #<b>MANIAC</b>!"
 
 	para "I think people"
 	line "are just jealous"
-	cont "of <BOLD_B><BOLD_I><BOLD_L><BOLD_L>, though."
+	cont "of <b>BILL</b>, though."
 
 	para "Who wouldn't want"
 	line "to boast about"
-	cont "their #<BOLD_M><BOLD_O><BOLD_N>?"
+	cont "their #<b>MON</b>?"
 	done

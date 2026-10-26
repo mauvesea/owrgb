@@ -2,14 +2,14 @@ _LancesRoomLanceBeforeBattleText::
 	text "Ah! I heard about"
 	line "you <PLAYER>!"
 
-	para "I lead the <BOLD_E><BOLD_L><BOLD_I><BOLD_T><BOLD_E>"
-	line "<BOLD_F><BOLD_O><BOLD_U><BOLD_R>! You can"
-	cont "call me <BOLD_L><BOLD_A><BOLD_N><BOLD_C><BOLD_E> the"
+	para "I lead the <b>ELITE</b>"
+	line "<b>FOUR</b>! You can"
+	cont "call me <b>LANCE</b> the"
 	cont "dragon trainer!"
 
 	para "You know that"
 	line "dragons are"
-	cont "mythical #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "mythical #<b>MON</b>!"
 
 	para "They're hard to"
 	line "catch and raise,"
@@ -22,7 +22,7 @@ _LancesRoomLanceBeforeBattleText::
 	para "Well, are you"
 	line "ready to lose?"
 
-	para "Your <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>"
+	para "Your <b>LEAGUE</b>"
 	line "challenge ends"
 	cont "with me, <PLAYER>!"
 	done
@@ -32,7 +32,7 @@ _LancesRoomLanceEndBattleText::
 
 	para "I hate to admit"
 	line "it, but you are a"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> master!"
+	cont "#<b>MON</b> master!"
 	prompt
 
 _LancesRoomLanceAfterBattleText::
@@ -42,7 +42,7 @@ _LancesRoomLanceAfterBattleText::
 	cont "you, <PLAYER>!"
 
 	para "You are now the"
-	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>"
+	line "#<b>MON LEAGUE</b>"
 	cont "champion!"
 
 	para "...Or, you would"
@@ -55,10 +55,10 @@ _LancesRoomLanceAfterBattleText::
 	cont "His name is..."
 
 	para "<RIVAL>!"
-	line "He beat the <BOLD_E><BOLD_L><BOLD_I><BOLD_T><BOLD_E>"
-	cont "<BOLD_F><BOLD_O><BOLD_U><BOLD_R> before you!"
+	line "He beat the <b>ELITE</b>"
+	cont "<b>FOUR</b> before you!"
 
 	para "He is the real"
-	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>"
+	line "#<b>MON LEAGUE</b>"
 	cont "champion!@"
 	text_end

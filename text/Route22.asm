@@ -3,24 +3,24 @@ _Route22RivalBeforeBattleText1::
 	line "<PLAYER>!"
 
 	para "You're going to"
-	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>?"
+	line "#<b>MON LEAGUE</b>?"
 
 	para "Forget it! You"
 	line "probably don't"
-	cont "have any <BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>s!"
+	cont "have any <b>BADGE</b>s!"
 
 	para "That means you're"
 	line "nothing more than"
 	cont "a newbie!"
 
 	para "By the way, did"
-	line "your #<BOLD_M><BOLD_O><BOLD_N>"
+	line "your #<b>MON</b>"
 	cont "get any stronger?"
 	done
 
 _Route22RivalAfterBattleText1::
-	text "I heard #<BOLD_M><BOLD_O><BOLD_N>"
-	line "<BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E> has many"
+	text "I heard #<b>MON</b>"
+	line "<b>LEAGUE</b> has many"
 	cont "tough trainers!"
 
 	para "I have to figure"
@@ -41,7 +41,7 @@ _Route22Rival1DefeatedText::
 _Route22Rival1VictoryText::
 	text "<RIVAL>: What?"
 	line "Why do I have 2"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>?"
+	cont "#<b>MON</b>?"
 
 	para "You should catch"
 	cont "some more too!"
@@ -54,16 +54,16 @@ _Route22RivalBeforeBattleText2::
 	cont "you here!"
 
 	para "So you're going to"
-	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>?"
+	line "#<b>MON LEAGUE</b>?"
 
 	para "You collected all"
-	line "the <BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>s too?"
+	line "the <b>BADGE</b>s too?"
 	cont "That's cool!"
 
 	para "Then I'll whip you"
 	line "<PLAYER> as a"
 	cont "warm up for"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>!"
+	cont "#<b>MON LEAGUE</b>!"
 
 	para "Come on!"
 	done
@@ -71,7 +71,7 @@ _Route22RivalBeforeBattleText2::
 _Route22RivalAfterBattleText2::
 	text "That loosened me"
 	line "up! I'm ready for"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>!"
+	cont "#<b>MON LEAGUE</b>!"
 
 	para "<PLAYER>, you need"
 	line "more practice!"
@@ -100,7 +100,7 @@ _Route22Rival2VictoryText::
 	prompt
 
 _Route22PokemonLeagueSignText::
-	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 22"
-	line "▲ #<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>"
-	cont "▶ <BOLD_V><BOLD_I><BOLD_R><BOLD_I><BOLD_D><BOLD_I><BOLD_A><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
+	text "<b>ROUTE</b> 22"
+	line "▲ #<b>MON LEAGUE</b>"
+	cont "▶ <b>VIRIDIAN CITY</b>"
 	done

@@ -20,7 +20,10 @@ PrintBCDNumber::
 	jr z, .loop
 	bit BIT_LEADING_ZEROES, b
 	jr nz, .loop
-	ld [hl], '¥'
+	push af
+	ld a, '¥'
+	call PutTextGlyph
+	pop af
 	inc hl
 .loop
 	ld a, [de]
@@ -40,10 +43,14 @@ PrintBCDNumber::
 .skipRightAlignmentAdjustment
 	bit BIT_MONEY_SIGN, b
 	jr z, .skipCurrencySymbol
-	ld [hl], '¥'
+	push af
+	ld a, '¥'
+	call PutTextGlyph
+	pop af
 	inc hl
 .skipCurrencySymbol
-	ld [hl], '0'
+	ld a, '0'
+	call PutTextGlyph
 	call PrintLetterDelay
 	inc hl
 .done
@@ -59,14 +66,18 @@ PrintBCDDigit::
 ; if bit 7 is set, then no numbers have been printed yet
 	bit BIT_MONEY_SIGN, b
 	jr z, .skipCurrencySymbol
-	ld [hl], '¥'
+	push af
+	ld a, '¥'
+	call PutTextGlyph
+	pop af
 	inc hl
 	res BIT_MONEY_SIGN, b
 .skipCurrencySymbol
 	res BIT_LEADING_ZEROES, b
 .outputDigit
 	add '0'
-	ld [hli], a
+	call PutTextGlyph
+	inc hl
 	jp PrintLetterDelay
 .zeroDigit
 	bit BIT_LEADING_ZEROES, b

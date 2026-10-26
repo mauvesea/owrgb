@@ -18,29 +18,29 @@ TwoOptionMenuStrings:
 	assert_table_length NUM_TWO_OPTION_MENUS
 
 .NoYesMenu:
-	db   "<BOLD_N><BOLD_O>"
-	next "<BOLD_Y><BOLD_E><BOLD_S>@"
+	db_text   "<b>NO</b>"
+	next "<b>YES</b>@"
 
 .YesNoMenu:
-	db   "<BOLD_Y><BOLD_E><BOLD_S>"
-	next "<BOLD_N><BOLD_O>@"
+	db_text   "<b>YES</b>"
+	next "<b>NO</b>@"
 
 .NorthWestMenu:
-	db   "<BOLD_N><BOLD_O><BOLD_R><BOLD_T><BOLD_H>"
-	next "<BOLD_W><BOLD_E><BOLD_S><BOLD_T>@"
+	db_text   "<b>NORTH</b>"
+	next "<b>WEST</b>@"
 
 .SouthEastMenu:
-	db   "<BOLD_S><BOLD_O><BOLD_U><BOLD_T><BOLD_H>"
-	next "<BOLD_E><BOLD_A><BOLD_S><BOLD_T>@"
+	db_text   "<b>SOUTH</b>"
+	next "<b>EAST</b>@"
 
 .NorthEastMenu:
-	db   "<BOLD_N><BOLD_O><BOLD_R><BOLD_T><BOLD_H>"
-	next "<BOLD_E><BOLD_A><BOLD_S><BOLD_T>@"
+	db_text   "<b>NORTH</b>"
+	next "<b>EAST</b>@"
 
 .TradeCancelMenu:
-	db   "<BOLD_T><BOLD_R><BOLD_A><BOLD_D><BOLD_E>"
-	next "<BOLD_C><BOLD_A><BOLD_N><BOLD_C><BOLD_E><BOLD_L>@"
+	db_text   "<b>TRADE</b>"
+	next "<b>CANCEL</b>@"
 
 .HealCancelMenu:
-	db   "<BOLD_H><BOLD_E><BOLD_A><BOLD_L>"
-	next "<BOLD_C><BOLD_A><BOLD_N><BOLD_C><BOLD_E><BOLD_L>@"
+	db_text   "<b>HEAL</b>"
+	next "<b>CANCEL</b>@"

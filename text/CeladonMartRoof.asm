@@ -6,7 +6,7 @@ _CeladonMartRoofLittleGirlGiveHerWhichDrinkText::
 _CeladonMartRoofLittleGirlYayFreshWaterText::
 	text "Yay!"
 
-	para "<BOLD_F><BOLD_R><BOLD_E><BOLD_S><BOLD_H> <BOLD_W><BOLD_A><BOLD_T><BOLD_E><BOLD_R>!"
+	para "<b>FRESH WATER</b>!"
 
 	para "Thank you!"
 
@@ -27,7 +27,7 @@ _CeladonMartRoofLittleGirlTM13ExplanationText::
 	para "@"
 	text_ram wStringBuffer
 	text " contains"
-	line "<BOLD_I><BOLD_C><BOLD_E> <BOLD_B><BOLD_E><BOLD_A><BOLD_M>!"
+	line "<b>ICE BEAM</b>!"
 
 	para "It can freeze the"
 	line "target sometimes!@"
@@ -36,7 +36,7 @@ _CeladonMartRoofLittleGirlTM13ExplanationText::
 _CeladonMartRoofLittleGirlYaySodaPopText::
 	text "Yay!"
 
-	para "<BOLD_S><BOLD_O><BOLD_D><BOLD_A> <BOLD_P><BOLD_O><BOLD_P>!"
+	para "<b>SODA POP</b>!"
 
 	para "Thank you!"
 
@@ -57,7 +57,7 @@ _CeladonMartRoofLittleGirlTM48ExplanationText::
 	para "@"
 	text_ram wStringBuffer
 	text " contains"
-	line "<BOLD_R><BOLD_O><BOLD_C><BOLD_K> <BOLD_S><BOLD_L><BOLD_I><BOLD_D><BOLD_E>!"
+	line "<b>ROCK SLIDE</b>!"
 
 	para "It can spook the"
 	line "target sometimes!@"
@@ -66,7 +66,7 @@ _CeladonMartRoofLittleGirlTM48ExplanationText::
 _CeladonMartRoofLittleGirlYayLemonadeText::
 	text "Yay!"
 
-	para "<BOLD_L><BOLD_E><BOLD_M><BOLD_O><BOLD_N><BOLD_A><BOLD_D><BOLD_E>!"
+	para "<b>LEMONADE</b>!"
 
 	para "Thank you!"
 
@@ -76,14 +76,14 @@ _CeladonMartRoofLittleGirlYayLemonadeText::
 
 _CeladonMartRoofLittleGirlReceivedTM49Text::
 	text "<PLAYER> received"
-	line "<BOLD_T><BOLD_M>49!@"
+	line "<b>TM</b>49!@"
 	text_end
 
 _CeladonMartRoofLittleGirlTM49ExplanationText::
 	text_start
 
-	para "<BOLD_T><BOLD_M>49 contains"
-	line "<BOLD_T><BOLD_R><BOLD_I> <BOLD_A><BOLD_T><BOLD_T><BOLD_A><BOLD_C><BOLD_K>!@"
+	para "<b>TM</b>49 contains"
+	line "<b>TRI ATTACK</b>!@"
 	text_end
 
 _CeladonMartRoofLittleGirlNoRoomText::
@@ -122,8 +122,8 @@ _CeladonMartRoofLittleGirlGiveHerADrinkText::
 	done
 
 _CeladonMartRoofCurrentFloorSignText::
-	text "<BOLD_R><BOLD_O><BOLD_O><BOLD_F><BOLD_T><BOLD_O><BOLD_P> <BOLD_S><BOLD_Q><BOLD_U><BOLD_A><BOLD_R><BOLD_E>:"
-	line "<BOLD_V><BOLD_E><BOLD_N><BOLD_D><BOLD_I><BOLD_N><BOLD_G> <BOLD_M><BOLD_A><BOLD_C><BOLD_H><BOLD_I><BOLD_N><BOLD_E><BOLD_S>"
+	text "<b>ROOFTOP SQUARE</b>:"
+	line "<b>VENDING MACHINES</b>"
 	done
 
 _VendingMachineText1::

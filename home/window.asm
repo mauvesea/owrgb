@@ -283,10 +283,7 @@ AutoTextBoxDrawingCommon::
 PrintText::
 ; Print text hl at (1, 14).
 	push hl
-	ld a, MESSAGE_BOX
-	ld [wTextBoxID], a
-	call DisplayTextBoxID
-	farcall DrawDialogueFace
+	farcall PrepareDialogueTextBox
 	call UpdateSprites
 	call Delay3
 	pop hl

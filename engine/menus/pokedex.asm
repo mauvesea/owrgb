@@ -590,8 +590,8 @@ ShowPokedexDataInternal:
 	ret
 
 HeightWeightText:
-	db   "<BOLD_H><BOLD_T>  ?′??″"
-	next "<BOLD_W><BOLD_T>   ???lb@"
+	db_text   "<b>HT</b>  ?′??″"
+	next "<b>WT</b>   ???lb@"
 
 ; leftover from JPN Pokedex, where species have the suffix "Pokemon"
 PokeText: ; unreferenced

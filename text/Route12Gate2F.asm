@@ -1,21 +1,21 @@
 _Route12Gate2FBrunetteGirlYouCanHaveThisText::
-	text "My #<BOLD_M><BOLD_O><BOLD_N>'<BOLD_s>"
+	text "My #<b>MON's</b>"
 	line "ashes are stored"
-	cont "in #<BOLD_M><BOLD_O><BOLD_N> <BOLD_T><BOLD_O><BOLD_W><BOLD_E><BOLD_R>."
+	cont "in #<b>MON TOWER</b>."
 
 	para "You can have this"
-	line "<BOLD_T><BOLD_M>. I don't need"
+	line "<b>TM</b>. I don't need"
 	cont "it any more..."
 	prompt
 
 _Route12Gate2FBrunetteGirlReceivedTM39Text::
 	text "<PLAYER> received"
-	line "<BOLD_T><BOLD_M>39!@"
+	line "<b>TM</b>39!@"
 	text_end
 
 _Route12Gate2FBrunetteGirlTM39ExplanationText::
-	text "<BOLD_T><BOLD_M>39 is a move"
-	line "called <BOLD_S><BOLD_W><BOLD_I><BOLD_F><BOLD_T>."
+	text "<b>TM</b>39 is a move"
+	line "called <b>SWIFT</b>."
 
 	para "It's very accurate,"
 	line "so use it during"
@@ -39,5 +39,5 @@ _Route12Gate2FRightBinocularsText::
 	text "Looked into the"
 	line "binoculars."
 
-	para "It's #<BOLD_M><BOLD_O><BOLD_N> <BOLD_T><BOLD_O><BOLD_W><BOLD_E><BOLD_R>!"
+	para "It's #<b>MON TOWER</b>!"
 	done

@@ -1,8 +1,8 @@
 _AgathaBeforeBattleText::
-	text "I am <BOLD_A><BOLD_G><BOLD_A><BOLD_T><BOLD_H><BOLD_A> of"
-	line "the <BOLD_E><BOLD_L><BOLD_I><BOLD_T><BOLD_E> <BOLD_F><BOLD_O><BOLD_U><BOLD_R>!"
+	text "I am <b>AGATHA</b> of"
+	line "the <b>ELITE FOUR</b>!"
 
-	para "<BOLD_O><BOLD_A><BOLD_K>'<BOLD_s> taken a lot"
+	para "<b>OAK's</b> taken a lot"
 	line "of interest in"
 	cont "you, child!"
 
@@ -13,8 +13,8 @@ _AgathaBeforeBattleText::
 
 	para "Now he just wants"
 	line "to fiddle with"
-	cont "his #<BOLD_D><BOLD_E><BOLD_X>! He's"
-	cont "wrong! #<BOLD_M><BOLD_O><BOLD_N>"
+	cont "his #<b>DEX</b>! He's"
+	cont "wrong! #<b>MON</b>"
 	cont "are for fighting!"
 
 	para "<PLAYER>! I'll show"

@@ -1,9 +1,9 @@
 _CinnabarGymBlainePreBattleText::
 	text "Hah!"
 
-	para "I am <BOLD_B><BOLD_L><BOLD_A><BOLD_I><BOLD_N><BOLD_E>! I"
-	line "am the <BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R> of"
-	cont "<BOLD_C><BOLD_I><BOLD_N><BOLD_N><BOLD_A><BOLD_B><BOLD_A><BOLD_R> <BOLD_G><BOLD_Y><BOLD_M>!"
+	para "I am <b>BLAINE</b>! I"
+	line "am the <b>LEADER</b> of"
+	cont "<b>CINNABAR GYM</b>!"
 
 	para "So, what did you"
 	line "think about the"
@@ -19,12 +19,12 @@ _CinnabarGymBlainePreBattleText::
 	line "useful during"
 	cont "the war."
 
-	para "My fiery #<BOLD_M><BOLD_O><BOLD_N>"
+	para "My fiery #<b>MON</b>"
 	line "will incinerate"
 	cont "all challengers!"
 
 	para "Hah! You better"
-	line "have <BOLD_B><BOLD_U><BOLD_R><BOLD_N> <BOLD_H><BOLD_E><BOLD_A><BOLD_L>!"
+	line "have <b>BURN HEAL</b>!"
 	done
 
 _CinnabarGymBlaineReceivedVolcanoBadgeText::
@@ -32,16 +32,16 @@ _CinnabarGymBlaineReceivedVolcanoBadgeText::
 	line "burnt out!"
 
 	para "You have earned"
-	line "the <BOLD_V><BOLD_O><BOLD_L><BOLD_C><BOLD_A><BOLD_N><BOLD_O><BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>!@"
+	line "the <b>VOLCANOBADGE</b>!@"
 	text_end
 
 _CinnabarGymBlainePostBattleAdviceText::
-	text "<BOLD_F><BOLD_I><BOLD_R><BOLD_E> <BOLD_B><BOLD_L><BOLD_A><BOLD_S><BOLD_T> is the"
+	text "<b>FIRE BLAST</b> is the"
 	line "ultimate fire"
 	cont "technique!"
 
 	para "Don't waste it on"
-	line "water #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "water #<b>MON</b>!"
 	done
 
 _CinnabarGymBlaineVolcanoBadgeInfoText::
@@ -61,14 +61,14 @@ _CinnabarGymBlaineReceivedTM38Text::
 _CinnabarGymBlaineTM38ExplanationText::
 	text_start
 
-	para "<BOLD_T><BOLD_M>38 contains"
-	line "<BOLD_F><BOLD_I><BOLD_R><BOLD_E> <BOLD_B><BOLD_L><BOLD_A><BOLD_S><BOLD_T>!"
+	para "<b>TM</b>38 contains"
+	line "<b>FIRE BLAST</b>!"
 
 	para "Teach it to fire-"
-	line "type #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "type #<b>MON</b>!"
 
-	para "<BOLD_C><BOLD_H><BOLD_A><BOLD_R><BOLD_M><BOLD_E><BOLD_L><BOLD_E><BOLD_O><BOLD_N> or"
-	line "<BOLD_P><BOLD_O><BOLD_N><BOLD_Y><BOLD_T><BOLD_A> would be"
+	para "<b>CHARMELEON</b> or"
+	line "<b>PONYTA</b> would be"
 	cont "good bets!"
 	done
 
@@ -79,7 +79,7 @@ _CinnabarGymBlaineTM38NoRoomText::
 
 _CinnabarGymSuperNerd1BattleText::
 	text "Do you know how"
-	line "hot #<BOLD_M><BOLD_O><BOLD_N> fire"
+	line "hot #<b>MON</b> fire"
 	cont "breath can get?"
 	done
 
@@ -111,13 +111,13 @@ _CinnabarGymSuperNerd2EndBattleText::
 _CinnabarGymSuperNerd2AfterBattleText::
 	text "I can't help"
 	line "stealing other"
-	cont "people's #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "people's #<b>MON</b>!"
 	done
 
 _CinnabarGymSuperNerd3BattleText::
 	text "You can't win!"
 	line "I have studied"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> totally!"
+	cont "#<b>MON</b> totally!"
 	done
 
 _CinnabarGymSuperNerd3EndBattleText::
@@ -133,7 +133,7 @@ _CinnabarGymSuperNerd3AfterBattleText::
 
 _CinnabarGymSuperNerd4BattleText::
 	text "I just like using"
-	line "fire #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "fire #<b>MON</b>!"
 	done
 
 _CinnabarGymSuperNerd4EndBattleText::
@@ -143,12 +143,12 @@ _CinnabarGymSuperNerd4EndBattleText::
 
 _CinnabarGymSuperNerd4AfterBattleText::
 	text "I wish there was"
-	line "a thief #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "a thief #<b>MON</b>!"
 	cont "I'd use that!"
 	done
 
 _CinnabarGymSuperNerd5BattleText::
-	text "I know why <BOLD_B><BOLD_L><BOLD_A><BOLD_I><BOLD_N><BOLD_E>"
+	text "I know why <b>BLAINE</b>"
 	line "became a trainer!"
 	done
 
@@ -157,19 +157,19 @@ _CinnabarGymSuperNerd5EndBattleText::
 	prompt
 
 _CinnabarGymSuperNerd5AfterBattleText::
-	text "<BOLD_B><BOLD_L><BOLD_A><BOLD_I><BOLD_N><BOLD_E> was lost"
+	text "<b>BLAINE</b> was lost"
 	line "in the mountains"
 	cont "when a fiery bird"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> appeared."
+	cont "#<b>MON</b> appeared."
 
 	para "Its light enabled"
-	line "<BOLD_B><BOLD_L><BOLD_A><BOLD_I><BOLD_N><BOLD_E> to find"
+	line "<b>BLAINE</b> to find"
 	cont "his way down!"
 	done
 
 _CinnabarGymSuperNerd6BattleText::
 	text "I've been to many"
-	line "<BOLD_G><BOLD_Y><BOLD_M>s, but this is"
+	line "<b>GYM</b>s, but this is"
 	cont "my favorite!"
 	done
 
@@ -179,14 +179,14 @@ _CinnabarGymSuperNerd6EndBattleText::
 	prompt
 
 _CinnabarGymSuperNerd6AfterBattleText::
-	text "Us fire #<BOLD_M><BOLD_O><BOLD_N>"
-	line "fans like <BOLD_P><BOLD_O><BOLD_N><BOLD_Y><BOLD_T><BOLD_A>"
-	cont "and <BOLD_N><BOLD_I><BOLD_N><BOLD_E><BOLD_T><BOLD_A><BOLD_L><BOLD_E><BOLD_S>!"
+	text "Us fire #<b>MON</b>"
+	line "fans like <b>PONYTA</b>"
+	cont "and <b>NINETALES</b>!"
 	done
 
 _CinnabarGymSuperNerd7BattleText::
 	text "Fire is weak"
-	line "against <BOLD_H>2<BOLD_O>!"
+	line "against <b>H</b>2<b>O</b>!"
 	done
 
 _CinnabarGymSuperNerd7EndBattleText::
@@ -197,7 +197,7 @@ _CinnabarGymSuperNerd7EndBattleText::
 _CinnabarGymSuperNerd7AfterBattleText::
 	text "Water beats fire!"
 	line "But, fire melts"
-	cont "ice #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "ice #<b>MON</b>!"
 	done
 
 _CinnabarGymGymGuideChampInMakingText::
@@ -205,14 +205,14 @@ _CinnabarGymGymGuideChampInMakingText::
 	line "making!"
 
 	para "The hot-headed"
-	line "<BOLD_B><BOLD_L><BOLD_A><BOLD_I><BOLD_N><BOLD_E> is a fire"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> pro!"
+	line "<b>BLAINE</b> is a fire"
+	cont "#<b>MON</b> pro!"
 
 	para "Douse his spirits"
 	line "with water!"
 
 	para "You better take"
-	line "some <BOLD_B><BOLD_U><BOLD_R><BOLD_N> <BOLD_H><BOLD_E><BOLD_A><BOLD_L>s!"
+	line "some <b>BURN HEAL</b>s!"
 	done
 
 _CinnabarGymGymGuideBeatBlaineText::

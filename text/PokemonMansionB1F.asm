@@ -34,7 +34,7 @@ _PokemonMansionB1FScientistAfterBattleText::
 
 _PokemonMansionB1FDiaryText::
 	text "Diary; Sept. 1"
-	line "<BOLD_M><BOLD_E><BOLD_W><BOLD_T><BOLD_W><BOLD_O> is far too"
+	line "<b>MEWTWO</b> is far too"
 	cont "powerful."
 
 	para "We have failed to"

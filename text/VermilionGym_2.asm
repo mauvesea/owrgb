@@ -7,7 +7,7 @@ _VermilionGymLTSurgePostBattleAdviceText::
 
 	para "But, it's useless"
 	line "against ground-"
-	cont "type #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "type #<b>MON</b>!"
 	done
 
 _VermilionGymLTSurgeThunderBadgeInfoText::
@@ -25,11 +25,11 @@ _VermilionGymLTSurgeReceivedTM24Text::
 _TM24ExplanationText::
 	text_start
 
-	para "<BOLD_T><BOLD_M>24 contains"
-	line "<BOLD_T><BOLD_H><BOLD_U><BOLD_N><BOLD_D><BOLD_E><BOLD_R><BOLD_B><BOLD_O><BOLD_L><BOLD_T>!"
+	para "<b>TM</b>24 contains"
+	line "<b>THUNDERBOLT</b>!"
 
 	para "Teach it to an"
-	line "electric #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "electric #<b>MON</b>!"
 	done
 
 _VermilionGymLTSurgeTM24NoRoomText::
@@ -44,13 +44,13 @@ _VermilionGymLTSurgeReceivedThunderBadgeText::
 	line "deal, kid!"
 
 	para "Fine then, take"
-	line "the <BOLD_T><BOLD_H><BOLD_U><BOLD_N><BOLD_D><BOLD_E><BOLD_R><BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>!"
+	line "the <b>THUNDERBADGE</b>!"
 	prompt
 
 _VermilionGymGentlemanBattleText::
 	text "When I was in the"
-	line "Army, <BOLD_L><BOLD_T>.<BOLD_S><BOLD_U><BOLD_R><BOLD_G><BOLD_E>"
-	cont "was my strict <BOLD_C><BOLD_O>!"
+	line "Army, <b>LT.SURGE</b>"
+	cont "was my strict <b>CO</b>!"
 	done
 
 _VermilionGymGentlemanEndBattleText::
@@ -62,7 +62,7 @@ _VermilionGymGentlemanAfterBattleText::
 	text "The door won't"
 	line "open?"
 
-	para "<BOLD_L><BOLD_T>.<BOLD_S><BOLD_U><BOLD_R><BOLD_G><BOLD_E> always"
+	para "<b>LT.SURGE</b> always"
 	line "was cautious!"
 	done
 
@@ -77,9 +77,9 @@ _VermilionGymSuperNerdEndBattleText::
 	prompt
 
 _VermilionGymSuperNerdAfterBattleText::
-	text "<BOLD_O><BOLD_K>, I'll talk!"
+	text "<b>OK</b>, I'll talk!"
 
-	para "<BOLD_L><BOLD_T>.<BOLD_S><BOLD_U><BOLD_R><BOLD_G><BOLD_E> said he"
+	para "<b>LT.SURGE</b> said he"
 	line "hid door switches"
 	cont "inside something!"
 	done
@@ -95,7 +95,7 @@ _VermilionGymSailorEndBattleText::
 	prompt
 
 _VermilionGymSailorAfterBattleText::
-	text "<BOLD_L><BOLD_T>.<BOLD_S><BOLD_U><BOLD_R><BOLD_G><BOLD_E> set up"
+	text "<b>LT.SURGE</b> set up"
 	line "double locks!"
 	cont "Here's a hint!"
 
@@ -109,21 +109,21 @@ _VermilionGymGymGuideChampInMakingText::
 	text "Yo! Champ in"
 	line "making!"
 
-	para "<BOLD_L><BOLD_T>.<BOLD_S><BOLD_U><BOLD_R><BOLD_G><BOLD_E> has a"
+	para "<b>LT.SURGE</b> has a"
 	line "nickname. People"
 	cont "refer to him as"
 	cont "the Lightning"
 	cont "American!"
 
 	para "He's an expert on"
-	line "electric #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "electric #<b>MON</b>!"
 
 	para "Birds and water"
-	line "#<BOLD_M><BOLD_O><BOLD_N> are at"
+	line "#<b>MON</b> are at"
 	cont "risk! Beware of"
 	cont "paralysis too!"
 
-	para "<BOLD_L><BOLD_T>.<BOLD_S><BOLD_U><BOLD_R><BOLD_G><BOLD_E> is very"
+	para "<b>LT.SURGE</b> is very"
 	line "cautious!"
 
 	para "You'll have to"

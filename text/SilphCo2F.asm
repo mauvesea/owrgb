@@ -3,7 +3,7 @@ SilphCo2FSilphWorkerFPleaseTakeThisText::
 	line "No! Stop! Help!"
 
 	para "Oh, you're not"
-	line "with <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>."
+	line "with <b>TEAM ROCKET</b>."
 	cont "I thought..."
 	cont "I'm sorry. Here,"
 	cont "please take this!"
@@ -17,11 +17,11 @@ _SilphCo2FSilphWorkerFReceivedTM36Text::
 	text_end
 
 _SilphCo2FSilphWorkerFTM36ExplanationText::
-	text "<BOLD_T><BOLD_M>36 is"
-	line "<BOLD_S><BOLD_E><BOLD_L><BOLD_F><BOLD_D><BOLD_E><BOLD_S><BOLD_T><BOLD_R><BOLD_U><BOLD_C><BOLD_T>!"
+	text "<b>TM</b>36 is"
+	line "<b>SELFDESTRUCT</b>!"
 
 	para "It's powerful, but"
-	line "the #<BOLD_M><BOLD_O><BOLD_N> that"
+	line "the #<b>MON</b> that"
 	cont "uses it faints!"
 	cont "Be careful."
 	done
@@ -32,20 +32,20 @@ _SilphCo2FSilphWorkerFTM36NoRoomText::
 	done
 
 _SilphCo2FScientist1BattleText::
-	text "Help! I'm a <BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H>"
+	text "Help! I'm a <b>SILPH</b>"
 	line "employee."
 	done
 
 _SilphCo2FScientist1EndBattleText::
 	text "How"
 	line "did you know I"
-	cont "was a <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>?"
+	cont "was a <b>ROCKET</b>?"
 	prompt
 
 _SilphCo2FScientist1AfterBattleText::
 	text "I work for both"
-	line "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> and <BOLD_T><BOLD_E><BOLD_A><BOLD_M>"
-	cont "<BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>!"
+	line "<b>SILPH</b> and <b>TEAM</b>"
+	cont "<b>ROCKET</b>!"
 	done
 
 _SilphCo2FScientist2BattleText::
@@ -91,7 +91,7 @@ _SilphCo2FRocket2EndBattleText::
 	prompt
 
 _SilphCo2FRocket2AfterBattleText::
-	text "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> <BOLD_C><BOLD_O>. will"
+	text "<b>SILPH CO</b>. will"
 	line "be merged with"
-	cont "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>!"
+	cont "<b>TEAM ROCKET</b>!"
 	done

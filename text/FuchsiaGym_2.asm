@@ -1,6 +1,6 @@
 _FuchsiaGymKogaPostBattleAdviceText::
 	text "When afflicted by"
-	line "<BOLD_T><BOLD_O><BOLD_X><BOLD_I><BOLD_C>, #<BOLD_M><BOLD_O><BOLD_N>"
+	line "<b>TOXIC</b>, #<b>MON</b>"
 	cont "suffer more and"
 	cont "more as battle"
 	cont "progresses!"
@@ -22,8 +22,8 @@ _FuchsiaGymKogaReceivedTM06Text::
 
 _FuchsiaGymKogaTM06ExplanationText::
 	text_start
-	para "<BOLD_T><BOLD_M>06 contains"
-	line "<BOLD_T><BOLD_O><BOLD_X><BOLD_I><BOLD_C>!"
+	para "<b>TM</b>06 contains"
+	line "<b>TOXIC</b>!"
 
 	para "It is a secret"
 	line "technique over"
@@ -38,7 +38,7 @@ _FuchsiaGymKogaTM06NoRoomText::
 _FuchsiaGymRocker1BattleText::
 	text "Strength isn't"
 	line "the key for"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "#<b>MON</b>!"
 
 	para "It's strategy!"
 
@@ -61,7 +61,7 @@ _FuchsiaGymRocker1AfterBattleText::
 _FuchsiaGymRocker2BattleText::
 	text "I wanted to become"
 	line "a ninja, so I"
-	cont "joined this <BOLD_G><BOLD_Y><BOLD_M>!"
+	cont "joined this <b>GYM</b>!"
 	done
 
 _FuchsiaGymRocker2EndBattleText::
@@ -72,7 +72,7 @@ _FuchsiaGymRocker2EndBattleText::
 _FuchsiaGymRocker2AfterBattleText::
 	text "I will keep on"
 	line "training under"
-	cont "<BOLD_K><BOLD_O><BOLD_G><BOLD_A>, my ninja"
+	cont "<b>KOGA</b>, my ninja"
 	cont "master!"
 	done
 
@@ -119,7 +119,7 @@ _FuchsiaGymRocker4AfterBattleText::
 _FuchsiaGymRocker5BattleText::
 	text "I also study the"
 	line "way of the ninja"
-	cont "with master <BOLD_K><BOLD_O><BOLD_G><BOLD_A>!"
+	cont "with master <b>KOGA</b>!"
 
 	para "Ninja have a long"
 	line "history of using"
@@ -136,7 +136,7 @@ _FuchsiaGymRocker5AfterBattleText::
 	done
 
 _FuchsiaGymRocker6BattleText::
-	text "Master <BOLD_K><BOLD_O><BOLD_G><BOLD_A> comes"
+	text "Master <b>KOGA</b> comes"
 	line "from a long line"
 	cont "of ninjas!"
 
@@ -163,11 +163,11 @@ _FuchsiaGymGymGuideChampInMakingText::
 	text "Yo! Champ in"
 	line "making!"
 
-	para "<BOLD_F><BOLD_U><BOLD_C><BOLD_H><BOLD_S><BOLD_I><BOLD_A> <BOLD_G><BOLD_Y><BOLD_M> is"
+	para "<b>FUCHSIA GYM</b> is"
 	line "riddled with"
 	cont "invisible walls!"
 
-	para "<BOLD_K><BOLD_O><BOLD_G><BOLD_A> might appear"
+	para "<b>KOGA</b> might appear"
 	line "close, but he's"
 	cont "blocked off!"
 

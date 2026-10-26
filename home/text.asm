@@ -1,49 +1,5 @@
 TextBoxBorder::
-; Draw a c×b text box at hl.
-
-	; top row
-	push hl
-	ld a, '┌'
-	ld [hli], a
-	inc a ; "─"
-	call .PlaceChars
-	inc a ; "┐"
-	ld [hl], a
-	pop hl
-
-	ld de, SCREEN_WIDTH
-	add hl, de
-
-	; middle rows
-.next
-	push hl
-	ld a, '│'
-	ld [hli], a
-	ld a, ' '
-	call .PlaceChars
-	ld [hl], '│'
-	pop hl
-
-	ld de, SCREEN_WIDTH
-	add hl, de
-	dec b
-	jr nz, .next
-
-	; bottom row
-	ld a, '└'
-	ld [hli], a
-	ld a, '─'
-	call .PlaceChars
-	ld [hl], '┘'
-	ret
-
-.PlaceChars::
-; Place char a c times.
-	ld d, c
-.loop
-	ld [hli], a
-	dec d
-	jr nz, .loop
+	homecall TextBoxBorder_
 	ret
 
 PlaceString::
@@ -105,7 +61,8 @@ PlaceNextChar::
 	dict '<TARGET>',  PlaceMoveTargetsName
 	dict '<USER>',    PlaceMoveUsersName
 
-	ld [hli], a
+	call PutTextGlyph
+	inc hl
 	call PrintLetterDelay
 
 NextChar::
@@ -177,11 +134,11 @@ PlaceCommandCharacter::
 	inc de
 	jp PlaceNextChar
 
-TMCharText::      db "<BOLD_T><BOLD_M>@"
+TMCharText::      db_text "<b>TM</b>@"
 TrainerCharText:: db "TRAINER@"
 PCCharText::      db "PC@"
 RocketCharText::  db "ROCKET@"
-PlacePOKeText::   db "<BOLD_P><BOLD_O><BOLD_K><BOLD_é>@"
+PlacePOKeText::   db_text "<b>POKé</b>@"
 SixDotsCharText:: db "..@"
 EnemyText::       db "Enemy @"
 PlacePKMNText::   db "<PK><MN>@"
@@ -558,7 +515,8 @@ TextCommand_DOTS::
 
 .loop
 	ld a, '.'
-	ld [hli], a
+	call PutTextGlyph
+	inc hl
 	push de
 	call Joypad
 	pop de

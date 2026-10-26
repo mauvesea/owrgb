@@ -3,8 +3,22 @@
 SetDialogueFace::
 ; E = face ID (Bankswitch uses A).
 	ld a, e
+	cp $ff ; keepface
+	jr z, .keep
 	cp NUM_FACES
 	ret nc
+	and a
+	jr nz, .checkRetained
+	ld [wKeepDialogueFace], a
+.checkRetained
+	ld a, [wKeepDialogueFace]
+	and a
+	jr z, .set
+	ld a, [wDialogueFace]
+	cp e
+	jp z, ClearDialogueText
+.set
+	ld a, e
 	ld [wDialogueFace], a
 	push af
 	hlcoord 1, 13
@@ -33,10 +47,36 @@ SetDialogueFace::
 	jp Delay3
 .restoreFont
 	call RestoreDialogueMapPalette
+	ld a, [wDynamicDialogue]
+	and a
+	ret nz
 	ld de, FontGraphics + (FACE_TILE - $80) * TILE_1BPP_SIZE
 	ld hl, vFont tile (FACE_TILE - $80)
 	lb bc, BANK(FontGraphics), FACE_TILES
 	jp CopyVideoDataDouble
+
+.keep
+; With no portrait there is nothing to retain.
+	ld a, [wDialogueFace]
+	ld [wKeepDialogueFace], a
+	ret
+
+; Carry means the existing textbox is retained; never clear its portrait tiles.
+ContinueDialogueFace::
+	ld a, [wKeepDialogueFace]
+	and a
+	ret z
+	call ClearDialogueText
+	scf
+	ret
+
+PrepareDialogueTextBox::
+	call ContinueDialogueFace
+	ret c
+	ld a, MESSAGE_BOX
+	ld [wTextBoxID], a
+	call DisplayTextBoxID
+	jp DrawDialogueFace
 
 DrawDialogueFace::
 	ld a, [wDialogueFace]
@@ -125,15 +165,6 @@ ScrollDialogueText::
 	ld c, 5
 	jp DelayFrames
 
-; Entries correspond to FACE_* constants, excluding FACE_NONE.
-DialogueFaceGraphics:
-	dab MistyFaceGraphics
-	assert (@ - DialogueFaceGraphics) / 3 == NUM_FACES - 1
-
-MistyFaceGraphics:
-	INCBIN "gfx/faces/misty.2bpp"
-	assert @ - MistyFaceGraphics == FACE_TILES * TILE_SIZE
-
 ; Only the SGB has screen-region palettes; leave DMG/CGB behavior unchanged.
 RunDialoguePaletteCommand:
 	ld a, [wOnCGB]
@@ -154,6 +185,18 @@ RestoreDialogueMapPalette:
 	jp RunPaletteCommand
 
 PrepareDialogueFaceClose::
+	ld a, [wKeepDialogueFace]
+	and a
+	jr z, .close
+	scf
+	ret
+.close
+	call CloseDialogueFace
+	and a ; carry clear: proceed with normal textbox dismissal
+	ret
+
+CloseDialogueFace:
+	call ResetDynamicDialogue
 	ld a, [wDialogueFace]
 	ld e, a
 	xor a

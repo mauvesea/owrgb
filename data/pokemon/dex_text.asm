@@ -53,7 +53,7 @@ _VoltorbDexEntry::
 	next "power plants."
 	next "Easily mistaken"
 
-	page "for a # <BOLD_B><BOLD_A><BOLD_L><BOLD_L>,"
+	page "for a # <b>BALL</b>,"
 	next "they have zapped"
 	next "many people"
 	dex
@@ -69,9 +69,9 @@ _NidokingDexEntry::
 	dex
 
 _SlowbroDexEntry::
-	text "The <BOLD_S><BOLD_H><BOLD_E><BOLD_L><BOLD_L><BOLD_D><BOLD_E><BOLD_R> that"
+	text "The <b>SHELLDER</b> that"
 	next "is latched onto"
-	next "<BOLD_S><BOLD_L><BOLD_O><BOLD_W><BOLD_P><BOLD_O><BOLD_K><BOLD_E>'<BOLD_s> tail"
+	next "<b>SLOWPOKE's</b> tail"
 
 	page "is said to feed"
 	next "on the host's left"
@@ -95,7 +95,7 @@ _ExeggutorDexEntry::
 
 	page "will drop off and"
 	next "continue on as an"
-	next "<BOLD_E><BOLD_X><BOLD_E><BOLD_G><BOLD_G><BOLD_C><BOLD_U><BOLD_T><BOLD_E>"
+	next "<b>EXEGGCUTE</b>"
 	dex
 
 _LickitungDexEntry::
@@ -130,7 +130,7 @@ _GrimerDexEntry::
 
 _GengarDexEntry::
 	text "Under a full moon,"
-	next "this #<BOLD_M><BOLD_O><BOLD_N>"
+	next "this #<b>MON</b>"
 	next "likes to mimic"
 
 	page "the shadows of"
@@ -143,7 +143,7 @@ _NidoranFDexEntry::
 	next "its venomous"
 	next "barbs render this"
 
-	page "#<BOLD_M><BOLD_O><BOLD_N> dangerous."
+	page "#<b>MON</b> dangerous."
 	next "The female has"
 	next "smaller horns"
 	dex
@@ -164,7 +164,7 @@ _CuboneDexEntry::
 	next "helmet, no one"
 
 	page "has ever seen"
-	next "this #<BOLD_M><BOLD_O><BOLD_N>'<BOLD_s>"
+	next "this #<b>MON's</b>"
 	next "real face"
 	dex
 
@@ -179,7 +179,7 @@ _RhyhornDexEntry::
 	dex
 
 _LaprasDexEntry::
-	text "A #<BOLD_M><BOLD_O><BOLD_N> that"
+	text "A #<b>MON</b> that"
 	next "has been over-"
 	next "hunted almost to"
 
@@ -189,7 +189,7 @@ _LaprasDexEntry::
 	dex
 
 _ArcanineDexEntry::
-	text "A #<BOLD_M><BOLD_O><BOLD_N> that"
+	text "A #<b>MON</b> that"
 	next "has been admired"
 	next "since the past"
 
@@ -241,7 +241,7 @@ _TentacoolDexEntry::
 _GastlyDexEntry::
 	text "Almost invisible,"
 	next "this gaseous"
-	next "#<BOLD_M><BOLD_O><BOLD_N> cloaks"
+	next "#<b>MON</b> cloaks"
 
 	page "the target and"
 	next "puts it to sleep"
@@ -260,7 +260,7 @@ _ScytherDexEntry::
 
 _StaryuDexEntry::
 	text "An enigmatic"
-	next "#<BOLD_M><BOLD_O><BOLD_N> that can"
+	next "#<b>MON</b> that can"
 	next "effortlessly"
 
 	page "regenerate any"
@@ -269,7 +269,7 @@ _StaryuDexEntry::
 	dex
 
 _BlastoiseDexEntry::
-	text "A brutal #<BOLD_M><BOLD_O><BOLD_N>"
+	text "A brutal #<b>MON</b>"
 	next "with pressurized"
 	next "water jets on its"
 
@@ -370,7 +370,7 @@ _GravelerDexEntry::
 
 _ChanseyDexEntry::
 	text "A rare and elusive"
-	next "#<BOLD_M><BOLD_O><BOLD_N> that is"
+	next "#<b>MON</b> that is"
 	next "said to bring"
 
 	page "happiness to those"
@@ -443,7 +443,7 @@ _PsyduckDexEntry::
 	next "enemies with its"
 	next "vacant look, this"
 
-	page "wily #<BOLD_M><BOLD_O><BOLD_N> will"
+	page "wily #<b>MON</b> will"
 	next "use psychokinetic"
 	next "powers"
 	dex
@@ -490,7 +490,7 @@ _ElectabuzzDexEntry::
 
 _MagnetonDexEntry::
 	text "Formed by several"
-	next "<BOLD_M><BOLD_A><BOLD_G><BOLD_N><BOLD_E><BOLD_M><BOLD_I><BOLD_T><BOLD_E>s linked"
+	next "<b>MAGNEMITE</b>s linked"
 	next "together. They"
 
 	page "frequently appear"
@@ -571,7 +571,7 @@ _VenonatDexEntry::
 _DragoniteDexEntry::
 	text "An extremely"
 	next "rarely seen"
-	next "marine #<BOLD_M><BOLD_O><BOLD_N>."
+	next "marine #<b>MON</b>."
 
 	page "Its intelligence"
 	next "is said to match"
@@ -620,7 +620,7 @@ _MoltresDexEntry::
 
 _ArticunoDexEntry::
 	text "A legendary bird"
-	next "#<BOLD_M><BOLD_O><BOLD_N> that is"
+	next "#<b>MON</b> that is"
 	next "said to appear to"
 
 	page "doomed people who"
@@ -630,7 +630,7 @@ _ArticunoDexEntry::
 
 _ZapdosDexEntry::
 	text "A legendary bird"
-	next "#<BOLD_M><BOLD_O><BOLD_N> that is"
+	next "#<b>MON</b> that is"
 	next "said to appear"
 
 	page "from clouds while"
@@ -690,7 +690,7 @@ _NinetalesDexEntry::
 
 _PikachuDexEntry::
 	text "When several of"
-	next "these #<BOLD_M><BOLD_O><BOLD_N>"
+	next "these #<b>MON</b>"
 	next "gather, their"
 
 	page "electricity could"
@@ -710,7 +710,7 @@ _RaichuDexEntry::
 
 _DratiniDexEntry::
 	text "Long considered a"
-	next "mythical #<BOLD_M><BOLD_O><BOLD_N>"
+	next "mythical #<b>MON</b>"
 	next "until recently"
 
 	page "when a small"
@@ -719,7 +719,7 @@ _DratiniDexEntry::
 	dex
 
 _DragonairDexEntry::
-	text "A mystical #<BOLD_M><BOLD_O><BOLD_N>"
+	text "A mystical #<b>MON</b>"
 	next "that exudes a"
 	next "gentle aura."
 
@@ -729,7 +729,7 @@ _DragonairDexEntry::
 	dex
 
 _KabutoDexEntry::
-	text "A #<BOLD_M><BOLD_O><BOLD_N> that"
+	text "A #<b>MON</b> that"
 	next "was resurrected"
 	next "from a fossil"
 
@@ -800,7 +800,7 @@ _OmanyteDexEntry::
 
 _OmastarDexEntry::
 	text "A prehistoric"
-	next "#<BOLD_M><BOLD_O><BOLD_N> that died"
+	next "#<b>MON</b> that died"
 	next "out when its"
 
 	page "heavy shell made"
@@ -835,7 +835,7 @@ _EeveeDexEntry::
 
 	page "it is exposed to"
 	next "radiation from"
-	next "element <BOLD_S><BOLD_T><BOLD_O><BOLD_N><BOLD_E>s"
+	next "element <b>STONE</b>s"
 	dex
 
 _FlareonDexEntry::
@@ -894,8 +894,8 @@ _EkansDexEntry::
 	next "Eats the eggs of"
 
 	page "birds, such as"
-	next "<BOLD_P><BOLD_I><BOLD_D><BOLD_G><BOLD_E><BOLD_Y> and"
-	next "<BOLD_S><BOLD_P><BOLD_E><BOLD_A><BOLD_R><BOLD_O><BOLD_W>, whole"
+	next "<b>PIDGEY</b> and"
+	next "<b>SPEAROW</b>, whole"
 	dex
 
 _ParasDexEntry::
@@ -941,7 +941,7 @@ _WeedleDexEntry::
 _KakunaDexEntry::
 	text "Almost incapable"
 	next "of moving, this"
-	next "#<BOLD_M><BOLD_O><BOLD_N> can only"
+	next "#<b>MON</b> can only"
 
 	page "harden its shell"
 	next "to protect itself"
@@ -979,7 +979,7 @@ _PrimeapeDexEntry::
 	dex
 
 _DugtrioDexEntry::
-	text "A team of <BOLD_D><BOLD_I><BOLD_G><BOLD_L><BOLD_E><BOLD_T><BOLD_T>"
+	text "A team of <b>DIGLETT</b>"
 	next "triplets."
 	next "It triggers huge"
 
@@ -1019,7 +1019,7 @@ _CaterpieDexEntry::
 	dex
 
 _MetapodDexEntry::
-	text "This #<BOLD_M><BOLD_O><BOLD_N> is"
+	text "This #<b>MON</b> is"
 	next "vulnerable to"
 	next "attack while its"
 
@@ -1063,9 +1063,9 @@ _HypnoDexEntry::
 	next "with an enemy, it"
 	next "will use a mix of"
 
-	page "<BOLD_P><BOLD_S><BOLD_I> moves such as"
-	next "<BOLD_H><BOLD_Y><BOLD_P><BOLD_N><BOLD_O><BOLD_S><BOLD_I><BOLD_S> and"
-	next "<BOLD_C><BOLD_O><BOLD_N><BOLD_F><BOLD_U><BOLD_S><BOLD_I><BOLD_O><BOLD_N>"
+	page "<b>PSI</b> moves such as"
+	next "<b>HYPNOSIS</b> and"
+	next "<b>CONFUSION</b>"
 	dex
 
 _GolbatDexEntry::
@@ -1084,7 +1084,7 @@ _MewtwoDexEntry::
 	next "years of horrific"
 
 	page "gene splicing and"
-	next "<BOLD_D><BOLD_N><BOLD_A> engineering"
+	next "<b>DNA</b> engineering"
 	next "experiments"
 	dex
 
@@ -1150,7 +1150,7 @@ _ElectrodeDexEntry::
 
 _ClefableDexEntry::
 	text "A timid fairy"
-	next "#<BOLD_M><BOLD_O><BOLD_N> that is"
+	next "#<b>MON</b> that is"
 	next "rarely seen. It"
 
 	page "will run and hide"
@@ -1161,10 +1161,10 @@ _ClefableDexEntry::
 _WeezingDexEntry::
 	text "Where two kinds"
 	next "of poison gases"
-	next "meet, 2 <BOLD_K><BOLD_O><BOLD_F><BOLD_F><BOLD_I><BOLD_N><BOLD_G>s"
+	next "meet, 2 <b>KOFFING</b>s"
 
 	page "can fuse into a"
-	next "<BOLD_W><BOLD_E><BOLD_E><BOLD_Z><BOLD_I><BOLD_N><BOLD_G> over many"
+	next "<b>WEEZING</b> over many"
 	next "years"
 	dex
 
@@ -1185,7 +1185,7 @@ _MarowakDexEntry::
 
 	page "bone skillfully"
 	next "like a boomerang"
-	next "to <BOLD_K><BOLD_O> targets"
+	next "to <b>KO</b> targets"
 	dex
 
 _HaunterDexEntry::
@@ -1204,7 +1204,7 @@ _AbraDexEntry::
 	next "will identify"
 
 	page "impending danger"
-	next "and <BOLD_T><BOLD_E><BOLD_L><BOLD_E><BOLD_P><BOLD_O><BOLD_R><BOLD_T> to"
+	next "and <b>TELEPORT</b> to"
 	next "safety"
 	dex
 
@@ -1223,7 +1223,7 @@ _PidgeottoDexEntry::
 	next "of its sprawling"
 	next "territorial area,"
 
-	page "this #<BOLD_M><BOLD_O><BOLD_N> will"
+	page "this #<b>MON</b> will"
 	next "fiercely peck at"
 	next "any intruder"
 	dex
@@ -1235,7 +1235,7 @@ _PidgeotDexEntry::
 
 	page "speed to pick off"
 	next "unwary prey such"
-	next "as <BOLD_M><BOLD_A><BOLD_G><BOLD_I><BOLD_K><BOLD_A><BOLD_R><BOLD_P>"
+	next "as <b>MAGIKARP</b>"
 	dex
 
 _StarmieDexEntry::
@@ -1255,7 +1255,7 @@ _BulbasaurDexEntry::
 
 	page "The plant sprouts"
 	next "and grows with"
-	next "this #<BOLD_M><BOLD_O><BOLD_N>"
+	next "this #<b>MON</b>"
 	dex
 
 _VenusaurDexEntry::
@@ -1310,7 +1310,7 @@ _PonytaDexEntry::
 
 _RapidashDexEntry::
 	text "Very competitive,"
-	next "this #<BOLD_M><BOLD_O><BOLD_N> will"
+	next "this #<b>MON</b> will"
 	next "chase anything"
 
 	page "that moves fast"
@@ -1340,7 +1340,7 @@ _RaticateDexEntry::
 
 _NidorinoDexEntry::
 	text "An aggressive"
-	next "#<BOLD_M><BOLD_O><BOLD_N> that is"
+	next "#<b>MON</b> that is"
 	next "quick to attack."
 
 	page "The horn on its"
@@ -1369,7 +1369,7 @@ _GeodudeDexEntry::
 	dex
 
 _PorygonDexEntry::
-	text "A #<BOLD_M><BOLD_O><BOLD_N> that"
+	text "A #<b>MON</b> that"
 	next "consists entirely"
 	next "of programming"
 
@@ -1380,7 +1380,7 @@ _PorygonDexEntry::
 
 _AerodactylDexEntry::
 	text "A ferocious, pre-"
-	next "historic #<BOLD_M><BOLD_O><BOLD_N>"
+	next "historic #<b>MON</b>"
 	next "that goes for the"
 
 	page "enemy's throat"
@@ -1394,7 +1394,7 @@ _MagnemiteDexEntry::
 	next "Appears without"
 
 	page "warning and uses"
-	next "<BOLD_T><BOLD_H><BOLD_U><BOLD_N><BOLD_D><BOLD_E><BOLD_R> <BOLD_W><BOLD_A><BOLD_V><BOLD_E> and"
+	next "<b>THUNDER WAVE</b> and"
 	next "similar moves"
 	dex
 
@@ -1480,7 +1480,7 @@ _VileplumeDexEntry::
 
 _BellsproutDexEntry::
 	text "A carnivorous"
-	next "#<BOLD_M><BOLD_O><BOLD_N> that traps"
+	next "#<b>MON</b> that traps"
 	next "and eats bugs."
 
 	page "It uses its root"
@@ -1490,12 +1490,12 @@ _BellsproutDexEntry::
 
 _WeepinbellDexEntry::
 	text "It spits out"
-	next "<BOLD_P><BOLD_O><BOLD_I><BOLD_S><BOLD_O><BOLD_N><BOLD_P><BOLD_O><BOLD_W><BOLD_D><BOLD_E><BOLD_R> to"
+	next "<b>POISONPOWDER</b> to"
 	next "immobilize the"
 
 	page "enemy and then"
 	next "finishes it with"
-	next "a spray of <BOLD_A><BOLD_C><BOLD_I><BOLD_D>"
+	next "a spray of <b>ACID</b>"
 	dex
 
 _VictreebelDexEntry::

@@ -1,12 +1,12 @@
 _ChampCup_Brock_BattleText::
-	text "<BOLD_B><BOLD_R><BOLD_O><BOLD_C><BOLD_K>: <PLAYER>!"
+	text "<b>BROCK</b>: <PLAYER>!"
 	line "I knew you'd come"
 	cont "here to challenge"
 	cont "yourself."
 	para "The moment I laid"
 	line "eyes on you, I"
 	cont "knew you'd become"
-	cont "a great <BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R>!"
+	cont "a great <b>TRAINER</b>!"
 	para "However, it's me"
 	line "who's going to"
 	cont "win today!"
@@ -19,14 +19,14 @@ _ChampCup_Brock_EndBattleText::
 	prompt
 
 _ChampCup_Brock_AfterBattleText::
-	text "<BOLD_B><BOLD_R><BOLD_O><BOLD_C><BOLD_K>: We were"
+	text "<b>BROCK</b>: We were"
 	line "called here by"
-	cont "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> CO.'s"
+	cont "<b>SILPH</b> CO.'s"
 	cont "president."
 	done
 
 _ChampCup_Misty_BattleText::
-	text "<BOLD_M><BOLD_I><BOLD_S><BOLD_T><BOLD_Y>: Hi! You're a"
+	text "<b>MISTY</b>: Hi! You're a"
 	line "new face... Just"
 	cont "kidding!"
 	para "I knew you'd come,"
@@ -41,15 +41,15 @@ _ChampCup_Misty_EndBattleText::
 	prompt
 
 _ChampCup_Misty_AfterBattleText::
-	text "<BOLD_M><BOLD_I><BOLD_S><BOLD_T><BOLD_Y>: The presi-"
+	text "<b>MISTY</b>: The presi-"
 	line "dent invited us"
 	cont "to train together"
-	cont "so <BOLD_K><BOLD_A><BOLD_N><BOLD_T><BOLD_O> can be"
+	cont "so <b>KANTO</b> can be"
 	cont "a safer place."
 	done
 
 _ChampCup_Surge_BattleText::
-	text "<BOLD_L><BOLD_T>.<BOLD_S><BOLD_U><BOLD_R><BOLD_G><BOLD_E>: Kid! You"
+	text "<b>LT.SURGE</b>: Kid! You"
 	line "know well what"
 	cont "you're doing here,"
 	cont "right?"
@@ -63,7 +63,7 @@ _ChampCup_Surge_EndBattleText::
 	prompt
 
 _ChampCup_Surge_AfterBattleText::
-	text "<BOLD_L><BOLD_T>.<BOLD_S><BOLD_U><BOLD_R><BOLD_G><BOLD_E>: If we"
+	text "<b>LT.SURGE</b>: If we"
 	line "had you during"
 	cont "the war, there"
 	cont "would've been way"
@@ -71,7 +71,7 @@ _ChampCup_Surge_AfterBattleText::
 	done
 
 _ChampCup_Erika_BattleText::
-	text "<BOLD_E><BOLD_R><BOLD_I><BOLD_K><BOLD_A>: The air"
+	text "<b>ERIKA</b>: The air"
 	line "around here feels"
 	cont "tense... This is"
 	cont "no place to doze"
@@ -83,7 +83,7 @@ _ChampCup_Erika_EndBattleText::
 	prompt
 
 _ChampCup_Erika_AfterBattleText::
-	text "<BOLD_E><BOLD_R><BOLD_I><BOLD_K><BOLD_A>: Oh, I must"
+	text "<b>ERIKA</b>: Oh, I must"
 	line "have dozed off..."
 	para "..."
 	para "No, that's not"
@@ -92,15 +92,15 @@ _ChampCup_Erika_AfterBattleText::
 	cont "still managed to"
 	cont "win."
 	para "No wonder you"
-	line "became <BOLD_C><BOLD_H><BOLD_A><BOLD_M><BOLD_P><BOLD_I><BOLD_O><BOLD_N>!"
+	line "became <b>CHAMPION</b>!"
 	done
 
 _ChampCup_Koga_BattleText::
-	text "<BOLD_K><BOLD_O><BOLD_G><BOLD_A>: Fwahahaha!"
+	text "<b>KOGA</b>: Fwahahaha!"
 	line "You've grown a"
 	cont "lot, kid!"
-	para "Thought only <BOLD_G><BOLD_Y><BOLD_M>"
-	line "<BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R>s would"
+	para "Thought only <b>GYM</b>"
+	line "<b>LEADER</b>s would"
 	cont "show up, but I"
 	cont "should've sus-"
 	cont "pected you'd come"
@@ -118,22 +118,22 @@ _ChampCup_Koga_EndBattleText::
 	prompt
 
 _ChampCup_Koga_AfterBattleText::
-	text "<BOLD_K><BOLD_O><BOLD_G><BOLD_A>: They said"
+	text "<b>KOGA</b>: They said"
 	line "the last man"
 	cont "standing will get"
-	cont "the title of <BOLD_T><BOLD_O><BOLD_P>"
-	cont "<BOLD_C><BOLD_H><BOLD_A><BOLD_M><BOLD_P>."
+	cont "the title of <b>TOP</b>"
+	cont "<b>CHAMP</b>."
 	done
 
 _ChampCup_Sabrina_BattleText::
-	text "<BOLD_S><BOLD_A><BOLD_B><BOLD_R><BOLD_I><BOLD_N><BOLD_A>: I fore-"
+	text "<b>SABRINA</b>: I fore-"
 	line "saw you joining"
 	cont "us. No, even one"
-	cont "without <BOLD_P><BOLD_S><BOLD_Y><BOLD_C><BOLD_H><BOLD_I><BOLD_C>"
+	cont "without <b>PSYCHIC</b>"
 	cont "powers could see"
 	cont "it. I am thankful"
 	cont "to you for saving"
-	cont "<BOLD_S><BOLD_A><BOLD_F><BOLD_F><BOLD_R><BOLD_O><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>, but"
+	cont "<b>SAFFRON CITY</b>, but"
 	cont "that doesn't mean"
 	cont "I'll go easy on"
 	cont "you!"
@@ -145,16 +145,16 @@ _ChampCup_Sabrina_EndBattleText::
 	prompt
 
 _ChampCup_Sabrina_AfterBattleText::
-	text "<BOLD_S><BOLD_A><BOLD_B><BOLD_R><BOLD_I><BOLD_N><BOLD_A>: Among all"
+	text "<b>SABRINA</b>: Among all"
 	line "of us, it is you"
 	cont "I see holding the"
-	cont "title of <BOLD_T><BOLD_O><BOLD_P>"
-	cont "<BOLD_C><BOLD_H><BOLD_A><BOLD_M><BOLD_P>."
+	cont "title of <b>TOP</b>"
+	cont "<b>CHAMP</b>."
 	done
 
 
 _ChampCup_Blaine_BattleText::
-	text "<BOLD_B><BOLD_L><BOLD_A><BOLD_I><BOLD_N><BOLD_E>: Hah! It's"
+	text "<b>BLAINE</b>: Hah! It's"
 	line "you, <PLAYER>!"
 	para "Everyone here is"
 	line "so strong... My"
@@ -167,7 +167,7 @@ _ChampCup_Blaine_EndBattleText::
 	prompt
 
 _ChampCup_Blaine_AfterBattleText::
-	text "<BOLD_B><BOLD_L><BOLD_A><BOLD_I><BOLD_N><BOLD_E>: Keep your"
+	text "<b>BLAINE</b>: Keep your"
 	line "head up, always!"
 	cont "Never give up on"
 	cont "your dreams."
@@ -183,8 +183,8 @@ _ChampCup_Junior_BattleText::
 
 	para "Tee hee!"
 
-	para "I'm actually <BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H>'<BOLD_s>"
-	line "<BOLD_T><BOLD_O><BOLD_P> <BOLD_C><BOLD_H><BOLD_A><BOLD_M><BOLD_P>!"
+	para "I'm actually <b>SILPH's</b>"
+	line "<b>TOP CHAMP</b>!"
 
 	para "I won't go easy on"
 	line "ya just because"
@@ -201,7 +201,7 @@ _ChampCup_Junior_EndBattleText::
 
 	para "I knew it the"
 	line "second ya left"
-	cont "<BOLD_P><BOLD_A><BOLD_L><BOLD_L><BOLD_E><BOLD_T> <BOLD_T><BOLD_O><BOLD_W><BOLD_N>."
+	cont "<b>PALLET TOWN</b>."
 
 	para "I could tell ya"
 	line "were gonna be"
@@ -214,9 +214,9 @@ _ChampCup_Junior_EndBattleText::
 
 	para "And now look at"
 	line "ya! You're the"
-	cont "strongest #<BOLD_M><BOLD_O><BOLD_N>"
-	cont "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> in all"
-	cont "of <BOLD_K><BOLD_A><BOLD_N><BOLD_T><BOLD_O>!"
+	cont "strongest #<b>MON</b>"
+	cont "<b>TRAINER</b> in all"
+	cont "of <b>KANTO</b>!"
 
 	para "That's crazy... For"
 	line "a kid like ya!"
@@ -226,9 +226,9 @@ _ChampCup_Junior_AfterBattleText::
 	text "Ya got me good!"
 	line "So that makes ya"
 	cont "not only the"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>"
-	cont "<BOLD_C><BOLD_H><BOLD_A><BOLD_M><BOLD_P><BOLD_I><BOLD_O><BOLD_N> but"
-	cont "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H>'<BOLD_s> <BOLD_T><BOLD_O><BOLD_P> <BOLD_C><BOLD_H><BOLD_A><BOLD_M><BOLD_P>"
+	cont "#<b>MON LEAGUE</b>"
+	cont "<b>CHAMPION</b> but"
+	cont "<b>SILPH's TOP CHAMP</b>"
 	cont "too!"
 
 	para "Pretty big deal!"

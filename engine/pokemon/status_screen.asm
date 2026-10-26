@@ -203,17 +203,17 @@ NamePointers2:
 	dw wDayCareMonName
 
 TypesIDNoOTText:
-	db   "<BOLD_T><BOLD_Y><BOLD_P><BOLD_E>1/"
-	next "<BOLD_T><BOLD_Y><BOLD_P><BOLD_E>2/"
+	db_text   "<b>TYPE</b>1/"
+	next "<b>TYPE</b>2/"
 	next "<ID>№/"
-	next "<BOLD_O><BOLD_T>/"
+	next "<b>OT</b>/"
 	next "@"
 
 StatusText:
-	db "<BOLD_S><BOLD_T><BOLD_A><BOLD_T><BOLD_U><BOLD_S>/@"
+	db_text "<b>STATUS</b>/@"
 
 OKText:
-	db "<BOLD_O><BOLD_K>@"
+	db_text "<b>OK</b>@"
 
 ; Draws a line starting from hl high b and wide c
 DrawLineBox:
@@ -281,10 +281,10 @@ PrintStatsBox:
 	ret
 
 .StatsText:
-	db   "<BOLD_A><BOLD_T><BOLD_T><BOLD_A><BOLD_C><BOLD_K>"
-	next "<BOLD_D><BOLD_E><BOLD_F><BOLD_E><BOLD_N><BOLD_S><BOLD_E>"
-	next "<BOLD_S><BOLD_P><BOLD_E><BOLD_E><BOLD_D>"
-	next "<BOLD_S><BOLD_P><BOLD_E><BOLD_C><BOLD_I><BOLD_A><BOLD_L>@"
+	db_text   "<b>ATTACK</b>"
+	next "<b>DEFENSE</b>"
+	next "<b>SPEED</b>"
+	next "<b>SPECIAL</b>@"
 
 StatusScreen2:
 	ldh a, [hTileAnimations]
@@ -320,7 +320,7 @@ StatusScreen2:
 	ld b, a ; number of blank moves
 	hlcoord 11, 10
 	ld de, SCREEN_WIDTH * 2
-	ld a, '<BOLD_P>'
+	ld a, $cf ; bold P
 	call StatusScreen_PrintPP ; Print "PP"
 	ld a, b
 	and a
@@ -458,8 +458,8 @@ CalcExpToLevelUp:
 	ret
 
 StatusScreenExpText:
-	db   "<BOLD_E><BOLD_X><BOLD_P> <BOLD_P><BOLD_O><BOLD_I><BOLD_N><BOLD_T><BOLD_S>"
-	next "<BOLD_L><BOLD_E><BOLD_V><BOLD_E><BOLD_L> <BOLD_U><BOLD_P>@"
+	db_text   "<b>EXP POINTS</b>"
+	next "<b>LEVEL UP</b>@"
 
 StatusScreen_ClearName:
 	ld bc, NAME_LENGTH - 1

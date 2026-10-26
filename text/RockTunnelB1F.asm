@@ -31,7 +31,7 @@ _RockTunnelB1FHiker1AfterBattleText::
 
 _RockTunnelB1FSuperNerd1BattleText::
 	text "You have a"
-	line "#<BOLD_D><BOLD_E><BOLD_X>?"
+	line "#<b>DEX</b>?"
 	cont "I want one too!"
 	done
 
@@ -42,7 +42,7 @@ _RockTunnelB1FSuperNerd1EndBattleText::
 
 _RockTunnelB1FSuperNerd1AfterBattleText::
 	text "When you finish"
-	line "your #<BOLD_D><BOLD_E><BOLD_X>, can"
+	line "your #<b>DEX</b>, can"
 	cont "I have it?"
 	done
 
@@ -59,11 +59,11 @@ _RockTunnelB1FSuperNerd2EndBattleText::
 _RockTunnelB1FSuperNerd2AfterBattleText::
 	text "Costume players"
 	line "dress up as"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> for fun."
+	cont "#<b>MON</b> for fun."
 	done
 
 _RockTunnelB1FHiker2BattleText::
-	text "My #<BOLD_M><BOLD_O><BOLD_N>"
+	text "My #<b>MON</b>"
 	line "techniques will"
 	cont "leave you crying!"
 	done
@@ -77,7 +77,7 @@ _RockTunnelB1FHiker2EndBattleText::
 _RockTunnelB1FHiker2AfterBattleText::
 	text "In mountains,"
 	line "you'll often find"
-	cont "rock-type #<BOLD_M><BOLD_O><BOLD_N>."
+	cont "rock-type #<b>MON</b>."
 	done
 
 _RockTunnelB1FCooltrainerF2BattleText::
@@ -93,7 +93,7 @@ _RockTunnelB1FCooltrainerF2EndBattleText::
 
 _RockTunnelB1FCooltrainerF2AfterBattleText::
 	text "I like tiny"
-	line "#<BOLD_M><BOLD_O><BOLD_N>, big ones"
+	line "#<b>MON</b>, big ones"
 	cont "are too scary!"
 	done
 

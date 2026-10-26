@@ -83,13 +83,14 @@ MACRO? dab ; dwb address, bank
 ENDM
 
 MACRO? dname
+	_format_text \1
 	IF _NARG == 2
 		DEF n = \2
 	ELSE
 		DEF n = NAME_LENGTH - 1
 	ENDC
 	ASSERT STRFIND(\1, "@") == -1, "String terminator \"@\" in name: \1"
-	ASSERT CHARLEN(\1) <= n, "Name longer than {d:n} characters: \1"
-	db \1
-	ds n - CHARLEN(\1), '@'
+	ASSERT CHARLEN("{_formatted_text}") <= n, "Name longer than {d:n} characters: \1"
+	db "{_formatted_text}"
+	ds n - CHARLEN("{_formatted_text}"), '@'
 ENDM

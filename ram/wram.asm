@@ -176,6 +176,14 @@ ENDR
 wShadowOAMBackupEnd::
 
 NEXTU
+; Glyph metadata uses the unused tail of the menu's 360-byte screen backup.
+; Surrounding map tiles are rebuilt after dialogue closes.
+	ds SCREEN_AREA
+wDialogueGlyphs:: ds DIALOGUE_TILE_COUNT
+wDialogueGlyphData:: ds TILE_1BPP_SIZE
+	assert SCREEN_AREA + DIALOGUE_TILE_COUNT + TILE_1BPP_SIZE <= SURROUNDING_WIDTH * SURROUNDING_HEIGHT
+
+NEXTU
 ; list of indexes to patch with SERIAL_NO_DATA_BYTE after transfer
 wSerialPartyMonsPatchList:: ds 200
 
@@ -249,7 +257,9 @@ wPlayerMonNumber:: db
 ; the address of the menu cursor's current location within wTileMap
 wMenuCursorLocation:: dw
 
-	ds 2
+wDynamicDialogue:: db
+; Bits 0/1 protect saved screens 1/2; bit 2 protects the two-option popup.
+wDialogueSavedScreens:: db
 
 ; how many times should HandleMenuInput poll the joypad state before it returns?
 wMenuJoypadPollCount:: db
@@ -2271,6 +2281,11 @@ wExpScaleBase:: dw
 wExpScaleNumeratorQuotient:: db
 wExpParticipants:: db
 
+
+SECTION "Dialogue Face State", WRAM0
+
+; Nonzero keeps the active portrait/textbox until an explicit FACE_NONE.
+wKeepDialogueFace:: db
 
 SECTION "Stack", WRAM0
 

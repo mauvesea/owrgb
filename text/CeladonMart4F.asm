@@ -1,6 +1,6 @@
 _CeladonMart4FSuperNerdText::
 	text "I'm getting a"
-	line "# <BOLD_D><BOLD_O><BOLD_L><BOLD_L> for my"
+	line "# <b>DOLL</b> for my"
 	cont "girl friend!"
 	done
 
@@ -9,18 +9,18 @@ _CeladonMart4FYoungsterText::
 	line "useful."
 
 	para "You can run from"
-	line "wild #<BOLD_M><BOLD_O><BOLD_N> by"
+	line "wild #<b>MON</b> by"
 	cont "distracting them"
-	cont "with a # <BOLD_D><BOLD_O><BOLD_L><BOLD_L>!"
+	cont "with a # <b>DOLL</b>!"
 	done
 
 _CeladonMart4FCurrentFloorSignText::
 	text "Express yourself"
 	line "with gifts!"
 
-	para "4<BOLD_F>: <BOLD_W><BOLD_I><BOLD_S><BOLD_E><BOLD_M><BOLD_A><BOLD_N> <BOLD_G><BOLD_I><BOLD_F><BOLD_T><BOLD_S>"
+	para "4<b>F</b>: <b>WISEMAN GIFTS</b>"
 
 	para "Evolution Special!"
-	line "Element <BOLD_S><BOLD_T><BOLD_O><BOLD_N><BOLD_E>s on"
+	line "Element <b>STONE</b>s on"
 	cont "sale now!"
 	done

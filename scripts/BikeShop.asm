@@ -80,8 +80,8 @@ BikeShopClerkText:
 	jp TextScriptEnd
 
 BikeShopMenuText:
-	db   "<BOLD_B><BOLD_I><BOLD_C><BOLD_Y><BOLD_C><BOLD_L><BOLD_E>"
-	next "<BOLD_C><BOLD_A><BOLD_N><BOLD_C><BOLD_E><BOLD_L>@"
+	db_text   "<b>BICYCLE</b>"
+	next "<b>CANCEL</b>@"
 
 BikeShopMenuPrice:
 	db "¥1000000@"

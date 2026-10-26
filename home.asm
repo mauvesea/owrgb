@@ -9,6 +9,7 @@ SECTION "High Home", ROM0
 INCLUDE "home/lcd.asm"
 INCLUDE "home/clear_sprites.asm"
 INCLUDE "home/copy.asm"
+INCLUDE "home/dynamic_text.asm"
 
 
 SECTION "Home", ROM0

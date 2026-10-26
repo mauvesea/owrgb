@@ -1,17 +1,17 @@
 _Route4CooltrainerF1Text::
 	text "Ouch! I tripped"
 	line "over a rocky"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>, <BOLD_G><BOLD_E><BOLD_O><BOLD_D><BOLD_U><BOLD_D><BOLD_E>!"
+	cont "#<b>MON</b>, <b>GEODUDE</b>!"
 	done
 
 _Route4CooltrainerF2BattleText::
 	text "I came to get my"
-	line "mushroom #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "mushroom #<b>MON</b>!"
 	done
 
 _Route4CooltrainerF2EndBattleText::
 	text "Oh! My cute"
-	line "mushroom #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "mushroom #<b>MON</b>!"
 	prompt
 
 _Route4CooltrainerF2AfterBattleText::
@@ -24,12 +24,12 @@ _Route4CooltrainerF2AfterBattleText::
 	done
 
 _Route4MtMoonSignText::
-	text "<BOLD_M><BOLD_T>.<BOLD_M><BOLD_O><BOLD_O><BOLD_N>"
+	text "<b>MT.MOON</b>"
 	line "Tunnel Entrance"
 	done
 
 _Route4SignText::
-	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 4"
-	line "◀ <BOLD_M><BOLD_T>.<BOLD_M><BOLD_O><BOLD_O><BOLD_N>"
-	cont "▶ <BOLD_C><BOLD_E><BOLD_R><BOLD_U><BOLD_L><BOLD_E><BOLD_A><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
+	text "<b>ROUTE</b> 4"
+	line "◀ <b>MT.MOON</b>"
+	cont "▶ <b>CERULEAN CITY</b>"
 	done

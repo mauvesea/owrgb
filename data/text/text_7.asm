@@ -34,7 +34,7 @@ _ThrewAwayItemText::
 	prompt
 
 _IsItOKToTossItemText::
-	text "Is it <BOLD_O><BOLD_K> to toss"
+	text "Is it <b>OK</b> to toss"
 	line "@"
 	text_ram wStringBuffer
 	text "?"
@@ -195,5 +195,5 @@ _NothingToCutText::
 
 _UsedCutText::
 	text "<PLAYER> cut away"
-	line "using <BOLD_S><BOLD_H><BOLD_E><BOLD_A><BOLD_R><BOLD_S>!"
+	line "using <b>SHEARS</b>!"
 	prompt

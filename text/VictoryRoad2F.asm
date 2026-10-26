@@ -3,7 +3,7 @@ _VictoryRoad2FMoltresBattleText::
 	text_end
 
 _VictoryRoad2FHikerBattleText::
-	text "<BOLD_V><BOLD_I><BOLD_C><BOLD_T><BOLD_O><BOLD_R><BOLD_Y> <BOLD_R><BOLD_O><BOLD_A><BOLD_D> is"
+	text "<b>VICTORY ROAD</b> is"
 	line "the final test"
 	cont "for trainers!"
 	done
@@ -21,7 +21,7 @@ _VictoryRoad2FHikerAfterBattleText::
 _VictoryRoad2FSuperNerd1BattleText::
 	text "Ah, so you wish"
 	line "to challenge the"
-	cont "<BOLD_E><BOLD_L><BOLD_I><BOLD_T><BOLD_E> <BOLD_F><BOLD_O><BOLD_U><BOLD_R>?"
+	cont "<b>ELITE FOUR</b>?"
 	done
 
 _VictoryRoad2FSuperNerd1EndBattleText::
@@ -47,14 +47,14 @@ _VictoryRoad2FCooltrainerMEndBattleText::
 _VictoryRoad2FCooltrainerMAfterBattleText::
 	text "You earned the"
 	line "right to be on"
-	cont "<BOLD_V><BOLD_I><BOLD_C><BOLD_T><BOLD_O><BOLD_R><BOLD_Y> <BOLD_R><BOLD_O><BOLD_A><BOLD_D>!"
+	cont "<b>VICTORY ROAD</b>!"
 	done
 
 _VictoryRoad2FSuperNerd2BattleText::
 	text "If you can get"
 	line "through here, you"
 	cont "can go meet the"
-	cont "<BOLD_E><BOLD_L><BOLD_I><BOLD_T><BOLD_E> <BOLD_F><BOLD_O><BOLD_U><BOLD_R>!"
+	cont "<b>ELITE FOUR</b>!"
 	done
 
 _VictoryRoad2FSuperNerd2EndBattleText::
@@ -66,11 +66,11 @@ _VictoryRoad2FSuperNerd2AfterBattleText::
 	text "I can beat you"
 	line "when it comes to"
 	cont "knowledge about"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "#<b>MON</b>!"
 	done
 
 _VictoryRoad2FSuperNerd3BattleText::
-	text "Is <BOLD_V><BOLD_I><BOLD_C><BOLD_T><BOLD_O><BOLD_R><BOLD_Y> <BOLD_R><BOLD_O><BOLD_A><BOLD_D>"
+	text "Is <b>VICTORY ROAD</b>"
 	line "too tough?"
 	done
 

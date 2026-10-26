@@ -1,6 +1,6 @@
 _GameCornerPrizeRoomBaldingGuyText::
 	text "I sure do fancy"
-	line "that <BOLD_P><BOLD_O><BOLD_R><BOLD_Y><BOLD_G><BOLD_O><BOLD_N>!"
+	line "that <b>PORYGON</b>!"
 
 	para "But, it's hard to"
 	line "win at slots!"

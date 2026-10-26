@@ -1,5 +1,7 @@
 ; function that performs initialization for DisplayTextID
 DisplayTextIDInit::
+	farcall ContinueDialogueFace
+	ret c
 	xor a
 	ld [wListMenuID], a
 	ld [wDialogueFace], a
@@ -78,4 +80,5 @@ DisplayTextIDInit::
 	call LoadFontTilePatterns
 	ld a, $01
 	ldh [hAutoBGTransferEnabled], a ; enable continuous WRAM to VRAM transfer each V-blank
+	farcall InitDynamicDialogue
 	ret

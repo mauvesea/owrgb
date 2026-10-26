@@ -1,29 +1,29 @@
 _CinnabarLabFishingGuruText::
-	text "We study #<BOLD_M><BOLD_O><BOLD_N>"
+	text "We study #<b>MON</b>"
 	line "extensively here."
 
 	para "People often bring"
-	line "us rare #<BOLD_M><BOLD_O><BOLD_N>"
+	line "us rare #<b>MON</b>"
 	cont "for examination."
 	done
 
 _CinnabarLabPhotoText::
 	text "A photo of the"
-	line "<BOLD_L><BOLD_A><BOLD_B>'<BOLD_s> founder,"
-	cont "<BOLD_D><BOLD_R>.<BOLD_F><BOLD_U><BOLD_J><BOLD_I>!"
+	line "<b>LAB's</b> founder,"
+	cont "<b>DR.FUJI</b>!"
 	done
 
 _CinnabarLabMeetingRoomSignText::
-	text "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_A><BOLD_B>"
+	text "#<b>MON LAB</b>"
 	line "Meeting Room"
 	done
 
 _CinnabarLabRAndDSignText::
-	text "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_A><BOLD_B>"
+	text "#<b>MON LAB</b>"
 	line "R-and-D Room"
 	done
 
 _CinnabarLabTestingRoomSignText::
-	text "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_A><BOLD_B>"
+	text "#<b>MON LAB</b>"
 	line "Testing Room"
 	done

@@ -1,11 +1,11 @@
 _RockTunnelB1FHiker3AfterBattleText::
 	text "I'll raise my"
-	line "#<BOLD_M><BOLD_O><BOLD_N> to beat"
+	line "#<b>MON</b> to beat"
 	cont "yours, kid!"
 	done
 
 _RockTunnelB1FSuperNerd3BattleText::
-	text "I draw #<BOLD_M><BOLD_O><BOLD_N>"
+	text "I draw #<b>MON</b>"
 	line "when I'm home."
 	done
 

@@ -4,8 +4,8 @@ _CinnabarIslandDoorIsLockedText::
 	done
 
 _CinnabarIslandGirlText::
-	text "<BOLD_C><BOLD_I><BOLD_N><BOLD_N><BOLD_A><BOLD_B><BOLD_A><BOLD_R> <BOLD_G><BOLD_Y><BOLD_M>'<BOLD_s>"
-	line "<BOLD_B><BOLD_L><BOLD_A><BOLD_I><BOLD_N><BOLD_E> is an odd"
+	text "<b>CINNABAR GYM's</b>"
+	line "<b>BLAINE</b> is an odd"
 	cont "man who has lived"
 	cont "here for decades."
 	done
@@ -18,19 +18,19 @@ _CinnabarIslandGamblerText::
 	done
 
 _CinnabarIslandSignText::
-	text "<BOLD_C><BOLD_I><BOLD_N><BOLD_N><BOLD_A><BOLD_B><BOLD_A><BOLD_R> <BOLD_I><BOLD_S><BOLD_L><BOLD_A><BOLD_N><BOLD_D>"
+	text "<b>CINNABAR ISLAND</b>"
 	line "The Fiery Town of"
 	cont "Burning Desire"
 	done
 
 _CinnabarIslandPokemonLabSignText::
-	text "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_A><BOLD_B>"
+	text "#<b>MON LAB</b>"
 	done
 
 _CinnabarIslandGymSignText::
-	text "<BOLD_C><BOLD_I><BOLD_N><BOLD_N><BOLD_A><BOLD_B><BOLD_A><BOLD_R> <BOLD_I><BOLD_S><BOLD_L><BOLD_A><BOLD_N><BOLD_D>"
-	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_G><BOLD_Y><BOLD_M>"
-	cont "<BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R>: <BOLD_B><BOLD_L><BOLD_A><BOLD_I><BOLD_N><BOLD_E>"
+	text "<b>CINNABAR ISLAND</b>"
+	line "#<b>MON GYM</b>"
+	cont "<b>LEADER</b>: <b>BLAINE</b>"
 
 	para "The Hot-Headed"
 	line "Quiz Master!"

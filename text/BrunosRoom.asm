@@ -1,15 +1,15 @@
 _BrunoBeforeBattleText::
-	text "I am <BOLD_B><BOLD_R><BOLD_U><BOLD_N><BOLD_O> of"
-	line "the <BOLD_E><BOLD_L><BOLD_I><BOLD_T><BOLD_E> <BOLD_F><BOLD_O><BOLD_U><BOLD_R>!"
+	text "I am <b>BRUNO</b> of"
+	line "the <b>ELITE FOUR</b>!"
 
 	para "Through rigorous"
 	line "training, people"
-	cont "and #<BOLD_M><BOLD_O><BOLD_N> can"
+	cont "and #<b>MON</b> can"
 	cont "become stronger!"
 
 	para "I've weight"
 	line "trained with"
-	cont "my #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "my #<b>MON</b>!"
 
 	para "<PLAYER>!"
 

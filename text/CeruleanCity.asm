@@ -9,7 +9,7 @@ _CeruleanCityRivalPreBattleText::
 	para "I'm doing great!"
 	line "I caught a bunch"
 	cont "of strong and"
-	cont "smart #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "smart #<b>MON</b>!"
 
 	para "Here, let me see"
 	line "what you caught,"
@@ -32,22 +32,22 @@ _CeruleanCityRivalIWentToBillsText::
 	text "<RIVAL>: Hey,"
 	line "guess what?"
 
-	para "I went to <BOLD_B><BOLD_I><BOLD_L><BOLD_L>'<BOLD_s>"
+	para "I went to <b>BILL's</b>"
 	line "and got him to"
 	cont "show me his rare"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "#<b>MON</b>!"
 
 	para "That added a lot"
 	line "of pages to my"
-	cont "#<BOLD_D><BOLD_E><BOLD_X>!"
+	cont "#<b>DEX</b>!"
 
-	para "After all, <BOLD_B><BOLD_I><BOLD_L><BOLD_L>'<BOLD_s>"
+	para "After all, <b>BILL's</b>"
 	line "world famous as a"
-	cont "#<BOLD_M><BOLD_A><BOLD_N><BOLD_I><BOLD_A><BOLD_C>!"
+	cont "#<b>MANIAC</b>!"
 
 	para "He invented the"
-	line "#<BOLD_M><BOLD_O><BOLD_N> Storage"
-	cont "System on <BOLD_P><BOLD_C>!"
+	line "#<b>MON</b> Storage"
+	cont "System on <b>PC</b>!"
 
 	para "Since you're using"
 	line "his system, go"
@@ -70,7 +70,7 @@ _CeruleanCityRocketText::
 
 _CeruleanCityRocketReceivedTM28Text::
 	text "<PLAYER> recovered"
-	line "<BOLD_T><BOLD_M>28!@"
+	line "<b>TM</b>28!@"
 	text_end
 
 _CeruleanCityRocketIBetterGetMovingText::
@@ -95,8 +95,8 @@ _CeruleanCityRocketIGiveUpText::
 	prompt
 
 _CeruleanCityRocketIllReturnTheTMText::
-	text "<BOLD_O><BOLD_K>! I'll return"
-	line "the <BOLD_T><BOLD_M> I stole!"
+	text "<b>OK</b>! I'll return"
+	line "the <b>TM</b> I stole!"
 	done
 
 _CeruleanCityCooltrainerMText::
@@ -118,7 +118,7 @@ _CeruleanCitySuperNerd1Text::
 _CeruleanCitySuperNerd2Text::
 	text "You're making an"
 	line "encyclopedia on"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>? That"
+	cont "#<b>MON</b>? That"
 	cont "sounds amusing."
 	done
 
@@ -127,64 +127,64 @@ _CeruleanCityGuardText::
 	line "were robbed."
 
 	para "It's obvious that"
-	line "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> is"
+	line "<b>TEAM ROCKET</b> is"
 	cont "behind this most"
 	cont "heinous crime!"
 
-	para "Even our <BOLD_P><BOLD_O><BOLD_L><BOLD_I><BOLD_C><BOLD_E>"
+	para "Even our <b>POLICE</b>"
 	line "force has trouble"
-	cont "with the <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>s!"
+	cont "with the <b>ROCKET</b>s!"
 	done
 
 _CeruleanCityCooltrainerF1SlowbroUseSonicboomText::
-	text "<BOLD_O><BOLD_K>! <BOLD_S><BOLD_L><BOLD_O><BOLD_W><BOLD_B><BOLD_R><BOLD_O>!"
-	line "Use <BOLD_S><BOLD_O><BOLD_N><BOLD_I><BOLD_C><BOLD_B><BOLD_O><BOLD_O><BOLD_M>!"
-	cont "Come on, <BOLD_S><BOLD_L><BOLD_O><BOLD_W><BOLD_B><BOLD_R><BOLD_O>"
+	text "<b>OK</b>! <b>SLOWBRO</b>!"
+	line "Use <b>SONICBOOM</b>!"
+	cont "Come on, <b>SLOWBRO</b>"
 	cont "pay attention!"
 	done
 
 _CeruleanCityCooltrainerF1SlowbroPunchText::
-	text "<BOLD_S><BOLD_L><BOLD_O><BOLD_W><BOLD_B><BOLD_R><BOLD_O> punch!"
+	text "<b>SLOWBRO</b> punch!"
 	line "No! You blew it"
 	cont "again!"
 	done
 
 _CeruleanCityCooltrainerF1SlowbroWithdrawText::
-	text "<BOLD_S><BOLD_L><BOLD_O><BOLD_W><BOLD_B><BOLD_R><BOLD_O>, <BOLD_W><BOLD_I><BOLD_T><BOLD_H><BOLD_D><BOLD_R><BOLD_A><BOLD_W>!"
+	text "<b>SLOWBRO</b>, <b>WITHDRAW</b>!"
 	line "No! That's wrong!"
 
 	para "It's so hard to"
-	line "control #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "control #<b>MON</b>!"
 
-	para "Your #<BOLD_M><BOLD_O><BOLD_N>'<BOLD_s>"
+	para "Your #<b>MON's</b>"
 	line "obedience depends"
 	cont "on your abilities"
 	cont "as a trainer!"
 	done
 
 _CeruleanCitySlowbroTookASnoozeText::
-	text "<BOLD_S><BOLD_L><BOLD_O><BOLD_W><BOLD_B><BOLD_R><BOLD_O> took a"
+	text "<b>SLOWBRO</b> took a"
 	line "snooze..."
 	done
 
 _CeruleanCitySlowbroIsLoafingAroundText::
-	text "<BOLD_S><BOLD_L><BOLD_O><BOLD_W><BOLD_B><BOLD_R><BOLD_O> is"
+	text "<b>SLOWBRO</b> is"
 	line "loafing around..."
 	done
 
 _CeruleanCitySlowbroTurnedAwayText::
-	text "<BOLD_S><BOLD_L><BOLD_O><BOLD_W><BOLD_B><BOLD_R><BOLD_O> turned"
+	text "<b>SLOWBRO</b> turned"
 	line "away..."
 	done
 
 _CeruleanCitySlowbroIgnoredOrdersText::
-	text "<BOLD_S><BOLD_L><BOLD_O><BOLD_W><BOLD_B><BOLD_R><BOLD_O>"
+	text "<b>SLOWBRO</b>"
 	line "ignored orders..."
 	done
 
 _CeruleanCityCooltrainerF2Text::
 	text "I want a bright"
-	line "red <BOLD_B><BOLD_I><BOLD_C><BOLD_Y><BOLD_C><BOLD_L><BOLD_E>!"
+	line "red <b>BICYCLE</b>!"
 
 	para "I'll keep it at"
 	line "home, so it won't"
@@ -194,29 +194,29 @@ _CeruleanCityCooltrainerF2Text::
 _CeruleanCitySuperNerd3Text::
 	text "We got intel"
 	line "about a horribly"
-	cont "strong #<BOLD_M><BOLD_O><BOLD_N>"
+	cont "strong #<b>MON</b>"
 	cont "living here!"
 
 	para "Go away! I won't"
 	line "move, no matter"
 	cont "what!"
 
-	para "This #<BOLD_M><BOLD_O><BOLD_N>"
-	line "belongs to <BOLD_T><BOLD_E><BOLD_A><BOLD_M>"
-	cont "<BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>!"
+	para "This #<b>MON</b>"
+	line "belongs to <b>TEAM</b>"
+	cont "<b>ROCKET</b>!"
 	done
 
 _CeruleanCitySignText::
-	text "<BOLD_C><BOLD_E><BOLD_R><BOLD_U><BOLD_L><BOLD_E><BOLD_A><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
+	text "<b>CERULEAN CITY</b>"
 	line "A Mysterious,"
 	cont "Blue Aura"
 	cont "Surrounds It"
 	done
 
 _CeruleanCityTrainerTipsText::
-	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> <BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
+	text "<b>TRAINER TIPS</b>"
 
-	para "Pressing <BOLD_B> Button"
+	para "Pressing <b>B</b> Button"
 	line "during evolution"
 	cont "cancels the whole"
 	cont "process."
@@ -225,13 +225,13 @@ _CeruleanCityTrainerTipsText::
 _CeruleanCityBikeShopSign::
 	text "Grass and caves"
 	line "handled easily!"
-	cont "<BOLD_B><BOLD_I><BOLD_K><BOLD_E> <BOLD_S><BOLD_H><BOLD_O><BOLD_P>"
+	cont "<b>BIKE SHOP</b>"
 	done
 
 _CeruleanCityGymSign::
-	text "<BOLD_C><BOLD_E><BOLD_R><BOLD_U><BOLD_L><BOLD_E><BOLD_A><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
-	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_G><BOLD_Y><BOLD_M>"
-	cont "<BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R>: <BOLD_M><BOLD_I><BOLD_S><BOLD_T><BOLD_Y>"
+	text "<b>CERULEAN CITY</b>"
+	line "#<b>MON GYM</b>"
+	cont "<b>LEADER</b>: <b>MISTY</b>"
 
 	para "The Tomboyish"
 	line "Mermaid!"

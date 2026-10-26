@@ -1,11 +1,11 @@
 _MtMoonB2FDomeFossilYouWantText::
 	text "You want the"
-	line "<BOLD_D><BOLD_O><BOLD_M><BOLD_E> <BOLD_F><BOLD_O><BOLD_S><BOLD_S><BOLD_I><BOLD_L>?"
+	line "<b>DOME FOSSIL</b>?"
 	done
 
 _MtMoonB2FHelixFossilYouWantText::
 	text "You want the"
-	line "<BOLD_H><BOLD_E><BOLD_L><BOLD_I><BOLD_X> <BOLD_F><BOLD_O><BOLD_S><BOLD_S><BOLD_I><BOLD_L>?"
+	line "<b>HELIX FOSSIL</b>?"
 	done
 
 _MtMoonB2FReceivedFossilText::
@@ -29,7 +29,7 @@ _MtMoonB2FSuperNerdTheyreBothMineText::
 	done
 
 _MtMoonB2FSuperNerdOkIllShareText::
-	text "<BOLD_O><BOLD_K>!"
+	text "<b>OK</b>!"
 	line "I'll share!"
 	prompt
 
@@ -41,9 +41,9 @@ _MtMoonB2fSuperNerdEachTakeOneText::
 
 _MtMoonB2FSuperNerdTheresAPokemonLabText::
 	text "Far away, on"
-	line "<BOLD_C><BOLD_I><BOLD_N><BOLD_N><BOLD_A><BOLD_B><BOLD_A><BOLD_R> <BOLD_I><BOLD_S><BOLD_L><BOLD_A><BOLD_N><BOLD_D>,"
-	cont "there's a #<BOLD_M><BOLD_O><BOLD_N>"
-	cont "<BOLD_L><BOLD_A><BOLD_B>."
+	line "<b>CINNABAR ISLAND</b>,"
+	cont "there's a #<b>MON</b>"
+	cont "<b>LAB</b>."
 
 	para "They do research"
 	line "on regenerating"
@@ -56,7 +56,7 @@ _MtMoonB2FSuperNerdThenThisIsMineText::
 	text_end
 
 _MtMoonB2FRocket1BattleText::
-	text "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> will"
+	text "<b>TEAM ROCKET</b> will"
 	line "find the fossils,"
 	cont "revive and sell"
 	cont "them for cash!"
@@ -69,13 +69,13 @@ _MtMoonB2FRocket1EndBattleText::
 
 _MtMoonB2FRocket1AfterBattleText::
 	text "You made me mad!"
-	line "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> will"
+	line "<b>TEAM ROCKET</b> will"
 	cont "blacklist you!"
 	done
 
 _MtMoonB2FRocket2BattleText::
-	text "We, <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>,"
-	line "are #<BOLD_M><BOLD_O><BOLD_N>"
+	text "We, <b>TEAM ROCKET</b>,"
+	line "are #<b>MON</b>"
 	cont "gangsters!"
 	done
 
@@ -119,12 +119,12 @@ _MtMoonB2FRocket4EndBattleText::
 	prompt
 
 _MtMoonB2FRocket4AfterBattleText::
-	text "#<BOLD_M><BOLD_O><BOLD_N> lived"
+	text "#<b>MON</b> lived"
 	line "here long before"
 	cont "people came."
 	done
 
 _MtMoonRocketsHaveLeftText::
-	text "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>"
+	text "<b>TEAM ROCKET</b>"
 	line "scattered away!"
 	done

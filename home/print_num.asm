@@ -114,14 +114,15 @@ ENDM
 .past
 	ld a, '0'
 	add c
-	ld [hl], a
+	call PutTextGlyph
 .next
 
 	call .NextDigit
 ; ones
 	ld a, '0'
 	add b
-	ld [hli], a
+	call PutTextGlyph
+	inc hl
 	pop de
 	dec de
 	pop bc
@@ -198,14 +199,15 @@ ENDM
 
 	ld a, '0'
 	add c
-	ld [hl], a
+	call PutTextGlyph
 	ldh [hPastLeadingZeros], a
 	ret
 
 .PrintLeadingZero:
 	bit BIT_LEADING_ZEROES, d
 	ret z
-	ld [hl], '0'
+	ld a, '0'
+	call PutTextGlyph
 	ret
 
 .NextDigit:

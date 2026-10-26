@@ -5,7 +5,7 @@ _SaffronCityRocket1Text::
 
 _SaffronCityRocket2Text::
 	face FACE_MISTY
-	text "<BOLD_B><BOLD_O><BOLD_S><BOLD_S> said he'll"
+	text "<b>BOSS</b> said he'll"
 	line "take this town!"
 	done
 
@@ -15,8 +15,8 @@ _SaffronCityRocket3Text::
 	done
 
 _SaffronCityRocket4Text::
-	text "<BOLD_S><BOLD_A><BOLD_F><BOLD_F><BOLD_R><BOLD_O><BOLD_N> belongs"
-	line "to <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>!"
+	text "<b>SAFFRON</b> belongs"
+	line "to <b>TEAM ROCKET</b>!"
 	done
 
 _SaffronCityRocket5Text::
@@ -30,20 +30,20 @@ _SaffronCityRocket6Text::
 	done
 
 _SaffronCityRocket7Text::
-	text "With <BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> under"
+	text "With <b>SILPH</b> under"
 	line "control, we can"
-	cont "exploit #<BOLD_M><BOLD_O><BOLD_N>"
+	cont "exploit #<b>MON</b>"
 	cont "around the world!"
 	done
 
 _SaffronCityScientistText::
-	text "You beat <BOLD_T><BOLD_E><BOLD_A><BOLD_M>"
-	line "<BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> all alone?"
+	text "You beat <b>TEAM</b>"
+	line "<b>ROCKET</b> all alone?"
 	cont "That's amazing!"
 	done
 
 _SaffronCitySilphWorkerMText::
-	text "Yeah! <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>"
+	text "Yeah! <b>TEAM ROCKET</b>"
 	line "is gone!"
 	cont "It's safe to go"
 	cont "out again!"
@@ -52,13 +52,13 @@ _SaffronCitySilphWorkerMText::
 _SaffronCitySilphWorkerFText::
 	text "People should be"
 	line "flocking back to"
-	cont "<BOLD_S><BOLD_A><BOLD_F><BOLD_F><BOLD_R><BOLD_O><BOLD_N> now."
+	cont "<b>SAFFRON</b> now."
 	done
 
 _SaffronCityGentlemanText::
 	text "I flew here on my"
-	line "<BOLD_P><BOLD_I><BOLD_D><BOLD_G><BOLD_E><BOLD_O><BOLD_T> when I"
-	cont "read about <BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H>."
+	line "<b>PIDGEOT</b> when I"
+	cont "read about <b>SILPH</b>."
 
 	para "It's already over?"
 	line "I missed the"
@@ -66,13 +66,13 @@ _SaffronCityGentlemanText::
 	done
 
 _SaffronCityPidgeotText::
-	text "<BOLD_P><BOLD_I><BOLD_D><BOLD_G><BOLD_E><BOLD_O><BOLD_T>: Bi bibii!@"
+	text "<b>PIDGEOT</b>: Bi bibii!@"
 	text_end
 
 _SaffronCityRockerText::
-	text "I saw <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>"
-	line "<BOLD_B><BOLD_O><BOLD_S><BOLD_S> escaping"
-	cont "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H>'<BOLD_s> building."
+	text "I saw <b>ROCKET</b>"
+	line "<b>BOSS</b> escaping"
+	cont "<b>SILPH's</b> building."
 	done
 
 _SaffronCityRocket8Text::
@@ -84,8 +84,8 @@ _SaffronCityRocket8Text::
 	cont "in!"
 
 	para "I gotta stand"
-	line "here until <BOLD_B><BOLD_O><BOLD_S><BOLD_S>"
-	cont "and that <BOLD_C><BOLD_H><BOLD_I><BOLD_E><BOLD_F>"
+	line "here until <b>BOSS</b>"
+	cont "and that <b>CHIEF</b>"
 	cont "guy come back."
 	done
 
@@ -98,28 +98,28 @@ _SaffronCityRocket9Text::
 	done
 
 _SaffronCitySignText::
-	text "<BOLD_S><BOLD_A><BOLD_F><BOLD_F><BOLD_R><BOLD_O><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
+	text "<b>SAFFRON CITY</b>"
 	line "Shining, Golden"
 	cont "Land of Commerce"
 	done
 
 _SaffronCityFightingDojoSignText::
-	text "<BOLD_F><BOLD_I><BOLD_G><BOLD_H><BOLD_T><BOLD_I><BOLD_N><BOLD_G> <BOLD_D><BOLD_O><BOLD_J><BOLD_O>"
+	text "<b>FIGHTING DOJO</b>"
 	done
 
 _SaffronCityGymSignText::
-	text "<BOLD_S><BOLD_A><BOLD_F><BOLD_F><BOLD_R><BOLD_O><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
-	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_G><BOLD_Y><BOLD_M>"
-	cont "<BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R>: <BOLD_S><BOLD_A><BOLD_B><BOLD_R><BOLD_I><BOLD_N><BOLD_A>"
+	text "<b>SAFFRON CITY</b>"
+	line "#<b>MON GYM</b>"
+	cont "<b>LEADER</b>: <b>SABRINA</b>"
 
 	para "The Master of"
-	line "Psychic #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "Psychic #<b>MON</b>!"
 	done
 
 _SaffronCityTrainerTips1Text::
-	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> <BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
+	text "<b>TRAINER TIPS</b>"
 
-	para "<BOLD_F><BOLD_U><BOLD_L><BOLD_L> <BOLD_H><BOLD_E><BOLD_A><BOLD_L> cures"
+	para "<b>FULL HEAL</b> cures"
 	line "all ailments like"
 	cont "sleep and burns."
 
@@ -129,29 +129,29 @@ _SaffronCityTrainerTips1Text::
 	done
 
 _SaffronCityTrainerTips2Text::
-	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> <BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
+	text "<b>TRAINER TIPS</b>"
 
-	para "New <BOLD_G><BOLD_R><BOLD_E><BOLD_A><BOLD_T> <BOLD_B><BOLD_A><BOLD_L><BOLD_L>"
+	para "New <b>GREAT BALL</b>"
 	line "offers improved"
 	cont "capture rates."
 
 	para "Try it on those"
 	line "hard-to-catch"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>."
+	cont "#<b>MON</b>."
 	done
 
 _SaffronCitySilphCoSignText::
-	text "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> <BOLD_C><BOLD_O>."
-	line "<BOLD_O><BOLD_F><BOLD_F><BOLD_I><BOLD_C><BOLD_E> <BOLD_B><BOLD_U><BOLD_I><BOLD_L><BOLD_D><BOLD_I><BOLD_N><BOLD_G>"
+	text "<b>SILPH CO</b>."
+	line "<b>OFFICE BUILDING</b>"
 	done
 
 _SaffronCityMrPsychicsHouseSignText::
-	text "<BOLD_M><BOLD_R>.<BOLD_P><BOLD_S><BOLD_Y><BOLD_C><BOLD_H><BOLD_I><BOLD_C>'<BOLD_s>"
-	line "<BOLD_H><BOLD_O><BOLD_U><BOLD_S><BOLD_E>"
+	text "<b>MR.PSYCHIC's</b>"
+	line "<b>HOUSE</b>"
 	done
 
 _SaffronCitySilphCoLatestProductSignText::
-	text "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H>'<BOLD_s> latest"
+	text "<b>SILPH's</b> latest"
 	line "product!"
 
 	para "Release to be"

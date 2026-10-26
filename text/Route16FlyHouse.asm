@@ -10,15 +10,15 @@ _Route16FlyHouseBrunetteGirlText::
 
 _Route16FlyHouseBrunetteGirlReceivedHM02Text::
 	text "<PLAYER> got the"
-	line "<BOLD_P><BOLD_A><BOLD_R><BOLD_A><BOLD_G><BOLD_L><BOLD_I><BOLD_D><BOLD_E><BOLD_R>!@"
+	line "<b>PARAGLIDER</b>!@"
 	text_end
 
 _Route16FlyHouseBrunetteGirlHM02ExplanationText::
 	text "You can use that"
-	line "<BOLD_P><BOLD_A><BOLD_R><BOLD_A><BOLD_G><BOLD_L><BOLD_I><BOLD_D><BOLD_E><BOLD_R> to"
+	line "<b>PARAGLIDER</b> to"
 	cont "fly in the sky"
 	cont "just like a"
-	cont "<BOLD_F><BOLD_E><BOLD_A><BOLD_R><BOLD_O><BOLD_W>!"
+	cont "<b>FEAROW</b>!"
 
 	para "I bet you could"
 	line "easily find your"
@@ -36,5 +36,5 @@ _Route16FlyHouseBrunetteGirlHM02NoRoomText::
 	done
 
 _Route16FlyHouseFearowText::
-	text "<BOLD_F><BOLD_E><BOLD_A><BOLD_R><BOLD_O><BOLD_W>: Kyueen!"
+	text "<b>FEAROW</b>: Kyueen!"
 	done

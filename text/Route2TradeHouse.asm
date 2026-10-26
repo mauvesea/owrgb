@@ -1,6 +1,6 @@
 _Route2TradeHouseScientistText::
-	text "A fainted #<BOLD_M><BOLD_O><BOLD_N>"
+	text "A fainted #<b>MON</b>"
 	line "can't fight. But, "
 	cont "it can still use "
-	cont "moves like <BOLD_D><BOLD_I><BOLD_G>!"
+	cont "moves like <b>DIG</b>!"
 	done

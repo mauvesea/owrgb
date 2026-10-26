@@ -30,7 +30,7 @@ _SSAnneBowSailor2EndBattleText::
 
 _SSAnneBowSailor2AfterBattleText::
 	text "How many kinds of"
-	line "#<BOLD_M><BOLD_O><BOLD_N> do you"
+	line "#<b>MON</b> do you"
 	cont "think there are?"
 	done
 
@@ -47,6 +47,6 @@ _SSAnneBowSailor3EndBattleText::
 _SSAnneBowSailor3AfterBattleText::
 	text "My Pa said there"
 	line "are 100 kinds of"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>. I think"
+	cont "#<b>MON</b>. I think"
 	cont "there are more."
 	done

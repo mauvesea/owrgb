@@ -25,7 +25,7 @@ _SSAnneKitchenCook4Text::
 
 _SSAnneKitchenCook5Text::
 	text "Did you hear about"
-	line "<BOLD_S><BOLD_N><BOLD_O><BOLD_R><BOLD_L><BOLD_A><BOLD_X>?"
+	line "<b>SNORLAX</b>?"
 
 	para "All it does is"
 	line "eat and sleep!"
@@ -41,7 +41,7 @@ _SSAnneKitchenCook6Text::
 
 _SSAnneKitchenCook7MainCourseIsText::
 	text "Er-hem! Indeed I"
-	line "am le <BOLD_C><BOLD_H><BOLD_E><BOLD_F>!"
+	line "am le <b>CHEF</b>!"
 
 	para "Le main course is"
 	prompt

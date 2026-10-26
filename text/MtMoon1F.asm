@@ -1,5 +1,5 @@
 _MtMoon1FHikerBattleText::
-	text "<BOLD_W><BOLD_H><BOLD_O><BOLD_A>! You shocked"
+	text "<b>WHOA</b>! You shocked"
 	line "me! Oh, you're"
 	cont "just a kid!"
 	done
@@ -54,12 +54,12 @@ _MtMoon1FSuperNerdBattleText::
 
 _MtMoon1FSuperNerdEndBattleText::
 	text "My"
-	line "#<BOLD_M><BOLD_O><BOLD_N> won't do!"
+	line "#<b>MON</b> won't do!"
 	prompt
 
 _MtMoon1FSuperNerdAfterBattleText::
 	text "I have to find"
-	line "stronger #<BOLD_M><BOLD_O><BOLD_N>."
+	line "stronger #<b>MON</b>."
 	done
 
 _MtMoon1FCooltrainerF2BattleText::
@@ -92,13 +92,13 @@ _MtMoon1FYoungster2EndBattleText::
 _MtMoon1FYoungster2AfterBattleText::
 	text "I saw them! I'm"
 	line "sure they're from"
-	cont "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>!"
+	cont "<b>TEAM ROCKET</b>!"
 	done
 
 _MtMoon1FYoungster3BattleText::
 	text "Go through this"
 	line "cave to get to"
-	cont "<BOLD_C><BOLD_E><BOLD_R><BOLD_U><BOLD_L><BOLD_E><BOLD_A><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>!"
+	cont "<b>CERULEAN CITY</b>!"
 	done
 
 _MtMoon1FYoungster3EndBattleText::
@@ -107,13 +107,13 @@ _MtMoon1FYoungster3EndBattleText::
 	prompt
 
 _MtMoon1FYoungster3AfterBattleText::
-	text "<BOLD_Z><BOLD_U><BOLD_B><BOLD_A><BOLD_T> is tough!"
+	text "<b>ZUBAT</b> is tough!"
 	line "But, it can be"
 	cont "useful if you"
 	cont "catch one."
 	done
 
 _MtMoon1FBewareZubatSign::
-	text "Beware! <BOLD_Z><BOLD_U><BOLD_B><BOLD_A><BOLD_T> is"
+	text "Beware! <b>ZUBAT</b> is"
 	line "a blood sucker!"
 	done

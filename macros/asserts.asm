@@ -50,12 +50,13 @@ MACRO? list_start
 ENDM
 
 MACRO? li
+	_format_text \1
 	ASSERT STRFIND(\1, "@") == -1, "String terminator \"@\" in list entry: \1"
 	IF list_item_length
-		ASSERT CHARLEN(\1) <= list_item_length, \
+		ASSERT CHARLEN("{_formatted_text}") <= list_item_length, \
 			"List entry longer than {d:list_item_length} characters: \1"
 	ENDC
-	db \1, "@"
+	db "{_formatted_text}", "@"
 	DEF list_index += 1
 ENDM
 

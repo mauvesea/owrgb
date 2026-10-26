@@ -341,18 +341,18 @@ SpecialEnterMap::
 	jp EnterMap
 
 ContinueText:
-	db "<BOLD_C><BOLD_O><BOLD_N><BOLD_T><BOLD_I><BOLD_N><BOLD_U><BOLD_E>"
+	db_text "<b>CONTINUE</b>"
 	next ""
 	; fallthrough
 
 NewGameText:
-	db   "<BOLD_N><BOLD_E><BOLD_W> <BOLD_G><BOLD_A><BOLD_M><BOLD_E>"
-	next "<BOLD_O><BOLD_P><BOLD_T><BOLD_I><BOLD_O><BOLD_N>@"
+	db_text   "<b>NEW GAME</b>"
+	next "<b>OPTION</b>@"
 
 CableClubOptionsText:
-	db   "<BOLD_T><BOLD_R><BOLD_A><BOLD_D><BOLD_E> <BOLD_C><BOLD_E><BOLD_N><BOLD_T><BOLD_E><BOLD_R>"
-	next "<BOLD_C><BOLD_O><BOLD_L><BOLD_O><BOLD_S><BOLD_S><BOLD_E><BOLD_U><BOLD_M>"
-	next "<BOLD_C><BOLD_A><BOLD_N><BOLD_C><BOLD_E><BOLD_L>@"
+	db_text   "<b>TRADE CENTER</b>"
+	next "<b>COLOSSEUM</b>"
+	next "<b>CANCEL</b>@"
 
 DisplayContinueGameInfo:
 	xor a
@@ -435,10 +435,10 @@ PrintPlayTime:
 	jp PrintNumber
 
 SaveScreenInfoText:
-	db   "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> "
-	next "<BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E><BOLD_S>    "
-	next "#<BOLD_D><BOLD_E><BOLD_X>    "
-	next "<BOLD_T><BOLD_I><BOLD_M><BOLD_E>@"
+	db_text   "<b>TRAINER</b> "
+	next "<b>BADGES</b>    "
+	next "#<b>DEX</b>    "
+	next "<b>TIME</b>@"
 
 DisplayOptionMenu:
 	hlcoord 0, 0

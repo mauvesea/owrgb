@@ -1,9 +1,9 @@
 _SilphCo1FLinkReceptionistText::
 	text "Welcome!"
 
-	para "The <BOLD_P><BOLD_R><BOLD_E><BOLD_S><BOLD_I><BOLD_D><BOLD_E><BOLD_N><BOLD_T> is"
+	para "The <b>PRESIDENT</b> is"
 	line "in the boardroom"
-	cont "on 11<BOLD_F>!"
+	cont "on 11<b>F</b>!"
 	done
 
 _SilphCo1FLinkReceptionistText2::
@@ -13,16 +13,16 @@ _SilphCo1FLinkReceptionistText2::
 	line "time for formali-"
 	cont "ties!"
 
-	para "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> took"
-	line "over <BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> <BOLD_C><BOLD_O>.!"
+	para "<b>TEAM ROCKET</b> took"
+	line "over <b>SILPH CO</b>.!"
 
 	para "Please, someone,"
 	line "save us!"
 	done
 
 _SilphCo1FMorimotoText1::
-	text "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> took"
-	line "over <BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> <BOLD_C><BOLD_O>.!"
+	text "<b>TEAM ROCKET</b> took"
+	line "over <b>SILPH CO</b>.!"
 
 	para "That's no situa-"
 	line "tion to discuss"

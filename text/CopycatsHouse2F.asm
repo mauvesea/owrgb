@@ -1,6 +1,6 @@
 _CopycatsHouse2FCopycatDoYouLikePokemonText::
 	text "<PLAYER>: Hi! Do"
-	line "you like #<BOLD_M><BOLD_O><BOLD_N>?"
+	line "you like #<b>MON</b>?"
 
 	para "<PLAYER>: Uh no, I"
 	line "just asked you."
@@ -8,7 +8,7 @@ _CopycatsHouse2FCopycatDoYouLikePokemonText::
 	para "<PLAYER>: Huh?"
 	line "You're strange!"
 
-	para "<BOLD_C><BOLD_O><BOLD_P><BOLD_Y><BOLD_C><BOLD_A><BOLD_T>: Hmm?"
+	para "<b>COPYCAT</b>: Hmm?"
 	line "Quit mimicking?"
 
 	para "But, that's my"
@@ -17,7 +17,7 @@ _CopycatsHouse2FCopycatDoYouLikePokemonText::
 
 _CopycatsHouse2FCopycatTM31PreReceiveText::
 	text "Oh wow!"
-	line "A # <BOLD_D><BOLD_O><BOLD_L><BOLD_L>!"
+	line "A # <b>DOLL</b>!"
 
 	para "For me?"
 	line "Thank you!"
@@ -36,16 +36,16 @@ _CopycatsHouse2FCopycatReceivedTM31Text::
 _CopycatsHouse2FCopycatTM31Explanation1Text::
 	text_start
 
-	para "<BOLD_T><BOLD_M>31 contains my"
-	line "favorite, <BOLD_M><BOLD_I><BOLD_M><BOLD_I><BOLD_C>!"
+	para "<b>TM</b>31 contains my"
+	line "favorite, <b>MIMIC</b>!"
 
 	para "Use it on a good"
-	line "#<BOLD_M><BOLD_O><BOLD_N>!@"
+	line "#<b>MON</b>!@"
 	text_end
 
 _CopycatsHouse2FCopycatTM31Explanation2Text::
 	text "<PLAYER>: Hi!"
-	line "Thanks for <BOLD_T><BOLD_M>31!"
+	line "Thanks for <b>TM</b>31!"
 
 	para "<PLAYER>: Pardon?"
 
@@ -53,7 +53,7 @@ _CopycatsHouse2FCopycatTM31Explanation2Text::
 	line "that fun to mimic"
 	cont "my every move?"
 
-	para "<BOLD_C><BOLD_O><BOLD_P><BOLD_Y><BOLD_C><BOLD_A><BOLD_T>: You bet!"
+	para "<b>COPYCAT</b>: You bet!"
 	line "It's a scream!"
 	done
 
@@ -63,23 +63,23 @@ _CopycatsHouse2FCopycatTM31NoRoomText::
 	text_end
 
 _CopycatsHouse2FDoduoText::
-	text "<BOLD_D><BOLD_O><BOLD_D><BOLD_U><BOLD_O>: Giiih!"
+	text "<b>DODUO</b>: Giiih!"
 
-	para "<BOLD_M><BOLD_I><BOLD_R><BOLD_R><BOLD_O><BOLD_R> <BOLD_M><BOLD_I><BOLD_R><BOLD_R><BOLD_O><BOLD_R> <BOLD_O><BOLD_N>"
-	line "<BOLD_T><BOLD_H><BOLD_E> <BOLD_W><BOLD_A><BOLD_L><BOLD_L>, <BOLD_W><BOLD_H><BOLD_O> <BOLD_I><BOLD_S>"
-	cont "<BOLD_T><BOLD_H><BOLD_E> <BOLD_F><BOLD_A><BOLD_I><BOLD_R><BOLD_E><BOLD_S><BOLD_T> <BOLD_O><BOLD_N><BOLD_E>"
-	cont "<BOLD_O><BOLD_F> <BOLD_A><BOLD_L><BOLD_L>?"
+	para "<b>MIRROR MIRROR ON</b>"
+	line "<b>THE WALL</b>, <b>WHO IS</b>"
+	cont "<b>THE FAIREST ONE</b>"
+	cont "<b>OF ALL</b>?"
 	done
 
 _CopycatsHouse2FRareDollText::
 	text "This is a rare"
-	line "#<BOLD_M><BOLD_O><BOLD_N>! Huh?"
+	line "#<b>MON</b>! Huh?"
 	cont "It's only a doll!"
 	done
 
 _CopycatsHouse2FSNESText::
 	text "<PLAYER> is"
-	line "playing the <BOLD_M><BOLD_D>!"
+	line "playing the <b>MD</b>!"
 
 	para "An odd-looking boy"
 	line "zips through a"
@@ -97,8 +97,8 @@ _CopycatsHouse2FPCMySecretsText::
 	para "Skill: Mimicry!"
 	line "Hobby: Collecting"
 	cont "dolls!"
-	cont "Favorite #<BOLD_M><BOLD_O><BOLD_N>:"
-	cont "<BOLD_C><BOLD_L><BOLD_E><BOLD_F><BOLD_A><BOLD_I><BOLD_R><BOLD_Y>!"
+	cont "Favorite #<b>MON</b>:"
+	cont "<b>CLEFAIRY</b>!"
 	done
 
 _CopycatsHouse2FPCCantSeeText::

@@ -20,7 +20,7 @@ _PokemonMansion2FDiary1Text::
 	line "Guyana,"
 	cont "South America"
 
-	para "A new #<BOLD_M><BOLD_O><BOLD_N> was"
+	para "A new #<b>MON</b> was"
 	line "discovered deep"
 	cont "in the jungle."
 	done
@@ -29,7 +29,7 @@ _PokemonMansion2FDiary2Text::
 	text "Diary: July 10"
 	line "We christened the"
 	cont "newly discovered"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>, <BOLD_M><BOLD_E><BOLD_W>."
+	cont "#<b>MON</b>, <b>MEW</b>."
 	done
 
 _PokemonMansion2FSwitchText::

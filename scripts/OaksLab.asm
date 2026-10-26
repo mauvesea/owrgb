@@ -918,7 +918,7 @@ OaksLabMonChoiceMenu:
 	call YesNoChoice ; yes/no menu
 	ld a, [wCurrentMenuItem]
 	and a
-	jr nz, OaksLabMonChoiceEnd
+	jr nz, OaksLabMonChoiceDeclined
 	ld a, [wCurPartySpecies]
 	ld [wPlayerStarter], a
 	ld [wNamedObjectIndex], a
@@ -959,6 +959,14 @@ OaksLabMonChoiceMenu:
 	ld [wOaksLabCurScript], a
 OaksLabMonChoiceEnd:
 	jp TextScriptEnd
+
+; Resume the text interpreter so declining also ends portrait persistence.
+OaksLabMonChoiceDeclined:
+	ld hl, .Text
+	ret
+.Text:
+	clearface
+	text_end
 
 OaksLabMonEnergeticText:
 	text_far _OaksLabMonEnergeticText

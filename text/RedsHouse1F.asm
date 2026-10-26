@@ -1,31 +1,31 @@
 _RedsHouse1FMomWakeUpText::
-	text "<BOLD_M><BOLD_O><BOLD_M>: Right."
+	text "<b>MOM</b>: Right."
 	line "All boys leave"
 	cont "home some day."
-	cont "It said so on <BOLD_T><BOLD_V>."
+	cont "It said so on <b>TV</b>."
 
-	para "<BOLD_P><BOLD_R><BOLD_O><BOLD_F>. <BOLD_O><BOLD_A><BOLD_K>, next"
+	para "<b>PROF. OAK</b>, next"
 	line "door, is looking"
 	cont "for you."
 	done
 
 _RedsHouse1FMomYouShouldRestText::
-	text "<BOLD_M><BOLD_O><BOLD_M>: <PLAYER>!"
+	text "<b>MOM</b>: <PLAYER>!"
 	line "You should take a"
 	cont "quick rest."
 	prompt
 
 _RedsHouse1FMomLookingGreatText::
-	text "<BOLD_M><BOLD_O><BOLD_M>: Oh good!"
+	text "<b>MOM</b>: Oh good!"
 	line "You and your"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> are"
+	cont "#<b>MON</b> are"
 	cont "looking great!"
 	cont "Take care now!"
 	done
 
 _RedsHouse1FTVStandByMeMovieText::
 	text "There's a movie"
-	line "on <BOLD_T><BOLD_V>. Four boys"
+	line "on <b>TV</b>. Four boys"
 	cont "are walking on"
 	cont "railroad tracks."
 

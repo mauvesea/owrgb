@@ -450,7 +450,7 @@ PrintNamingText:
 	call PlaceString
 	ld hl, 0
 	add hl, bc
-	ld [hl], "<BOLD_s>"
+	ld [hl], $de ; bold s
 	hlcoord 1, 3
 	ld de, NicknameTextString
 	jr .placeString
@@ -463,16 +463,16 @@ PrintNamingText:
 	jp PlaceString
 
 YourTextString:
-	db "<BOLD_Y><BOLD_O><BOLD_U><BOLD_R> @"
+	db_text "<b>YOUR</b> @"
 
 RivalsTextString:
-	db "<BOLD_R><BOLD_I><BOLD_V><BOLD_A><BOLD_L><BOLD_s> @"
+	db_text "<b>RIVALs</b> @"
 
 JuniorTextString:
-	db "<BOLD_F><BOLD_R><BOLD_I><BOLD_E><BOLD_N><BOLD_D><BOLD_s> @"
+	db_text "<b>FRIENDs</b> @"
 
 NameTextString:
-	db "<BOLD_N><BOLD_A><BOLD_M><BOLD_E>?@"
+	db_text "<b>NAME</b>?@"
 
 NicknameTextString:
-	db "<BOLD_N><BOLD_I><BOLD_C><BOLD_K><BOLD_N><BOLD_A><BOLD_M><BOLD_E>?@"
+	db_text "<b>NICKNAME</b>?@"

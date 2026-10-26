@@ -9,27 +9,27 @@ _CeruleanGymMistyPreBattleText::
 	cont "have a"
 	cont "policy"
 	cont "about"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "#<b>MON</b>!"
 
 	para "What is your"
 	line "approach"
 	cont "when"
 	cont "you catch"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>?"
+	cont "#<b>MON</b>?"
 
 	para "My policy is"
 	line "an all-out"
 	cont "offensive"
 	cont "with water-"
-	cont "type #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "type #<b>MON</b>!"
 	done
 
 _CeruleanGymMistyTM11ExplanationText::
-	text "<BOLD_T><BOLD_M>11 teaches"
-	line "<BOLD_B><BOLD_U><BOLD_B><BOLD_B><BOLD_L><BOLD_E><BOLD_B><BOLD_E><BOLD_A><BOLD_M>!"
+	text "<b>TM</b>11 teaches"
+	line "<b>BUBBLEBEAM</b>!"
 
 	para "Use it on an"
-	line "aquatic #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "aquatic #<b>MON</b>!"
 	done
 
 _CeruleanGymMistyCascadeBadgeInfoText::
@@ -37,12 +37,12 @@ _CeruleanGymMistyCascadeBadgeInfoText::
 	line "great!"
 
 	para "You can have my"
-	line "favorite <BOLD_T><BOLD_M>!"
+	line "favorite <b>TM</b>!"
 	done
 
 _CeruleanGymMistyReceivedTM11Text::
 	text "<PLAYER> received"
-	line "<BOLD_T><BOLD_M>11!@"
+	line "<b>TM</b>11!@"
 	text_end
 
 _CeruleanGymMistyTM11NoRoomText::
@@ -57,7 +57,7 @@ _CeruleanGymMistyReceivedCascadeBadgeText::
 	para "All right!"
 
 	para "You can have the"
-	line "<BOLD_C><BOLD_A><BOLD_S><BOLD_C><BOLD_A><BOLD_D><BOLD_E><BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E> to"
+	line "<b>CASCADEBADGE</b> to"
 	cont "show you beat me!@"
 	text_end
 
@@ -65,7 +65,7 @@ _CeruleanGymBattleText1::
 	text "I'm more than good"
 	line "enough for you!"
 
-	para "<BOLD_M><BOLD_I><BOLD_S><BOLD_T><BOLD_Y> can wait!"
+	para "<b>MISTY</b> can wait!"
 	done
 
 _CeruleanGymEndBattleText1::
@@ -93,7 +93,7 @@ _CeruleanGymEndBattleText2::
 	prompt
 
 _CeruleanGymAfterBattleText2::
-	text "<BOLD_M><BOLD_I><BOLD_S><BOLD_T><BOLD_Y> is going to"
+	text "<b>MISTY</b> is going to"
 	line "keep improving!"
 
 	para "She won't lose to"
@@ -106,20 +106,20 @@ _CeruleanGymGymGuideChampInMakingText::
 
 	para "Here's my advice!"
 
-	para "The <BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R>, <BOLD_M><BOLD_I><BOLD_S><BOLD_T><BOLD_Y>,"
+	para "The <b>LEADER</b>, <b>MISTY</b>,"
 	line "is a pro who uses"
-	cont "water #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "water #<b>MON</b>!"
 
 	para "You can drain all"
 	line "their water with"
-	cont "plant #<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "plant #<b>MON</b>!"
 
 	para "Or, zap them with"
 	line "electricity!"
 	done
 
 _CeruleanGymGymGuideBeatMistyText::
-	text "You beat <BOLD_M><BOLD_I><BOLD_S><BOLD_T><BOLD_Y>!"
+	text "You beat <b>MISTY</b>!"
 	line "What'd I tell ya?"
 
 	para "You and me kid,"

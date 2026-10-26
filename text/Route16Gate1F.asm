@@ -1,11 +1,11 @@
 _Route16Gate1FGuardNoPedestriansAllowedText::
 	text "No pedestrians"
 	line "are allowed on"
-	cont "<BOLD_C><BOLD_Y><BOLD_C><BOLD_L><BOLD_I><BOLD_N><BOLD_G> <BOLD_R><BOLD_O><BOLD_A><BOLD_D>!"
+	cont "<b>CYCLING ROAD</b>!"
 	done
 
 _Route16Gate1FGuardCyclingRoadExplanationText::
-	text "<BOLD_C><BOLD_Y><BOLD_C><BOLD_L><BOLD_I><BOLD_N><BOLD_G> <BOLD_R><BOLD_O><BOLD_A><BOLD_D> is a"
+	text "<b>CYCLING ROAD</b> is a"
 	line "downhill course"
 	cont "by the sea. It's"
 	cont "a great ride."

@@ -341,6 +341,9 @@ DisplayTwoOptionMenu:
 ; The bottom and right edges of the menu may remain after the function returns.
 
 TwoOptionMenu_SaveScreenTiles:
+	push hl
+	farcall SaveDialoguePopup
+	pop hl
 	ld de, wBuffer
 	lb bc, 5, 6
 .loop
@@ -359,6 +362,9 @@ TwoOptionMenu_SaveScreenTiles:
 	ret
 
 TwoOptionMenu_RestoreScreenTiles:
+	push hl
+	farcall LoadDialoguePopup
+	pop hl
 	ld de, wBuffer
 	lb bc, 5, 6
 .loop
@@ -502,9 +508,9 @@ DisplayFieldMoveMonMenu:
 INCLUDE "data/moves/field_move_names.asm"
 
 PokemonMenuEntries:
-	db   "<BOLD_S><BOLD_T><BOLD_A><BOLD_T><BOLD_S>"
-	next "<BOLD_S><BOLD_W><BOLD_I><BOLD_T><BOLD_C><BOLD_H>"
-	next "<BOLD_C><BOLD_A><BOLD_N><BOLD_C><BOLD_E><BOLD_L>@"
+	db_text   "<b>STATS</b>"
+	next "<b>SWITCH</b>"
+	next "<b>CANCEL</b>@"
 
 GetMonFieldMoves:
 	ld a, [wWhichPokemon]

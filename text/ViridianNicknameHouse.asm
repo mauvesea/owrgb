@@ -10,14 +10,14 @@ _ViridianNicknameHouseBaldingGuyText::
 
 _ViridianNicknameHouseLittleGirlText::
 	text "My Daddy loves"
-	line "#<BOLD_M><BOLD_O><BOLD_N> too."
+	line "#<b>MON</b> too."
 	done
 
 _ViridianNicknameHouseSpearowText::
-	text "<BOLD_S><BOLD_P><BOLD_E><BOLD_A><BOLD_R><BOLD_Y>: Tetweet!"
+	text "<b>SPEARY</b>: Tetweet!"
 	done
 
 _ViridianNicknameHouseSpearySignText::
-	text "<BOLD_S><BOLD_P><BOLD_E><BOLD_A><BOLD_R><BOLD_O><BOLD_W>"
-	line "Name: <BOLD_S><BOLD_P><BOLD_E><BOLD_A><BOLD_R><BOLD_Y>"
+	text "<b>SPEAROW</b>"
+	line "Name: <b>SPEARY</b>"
 	done

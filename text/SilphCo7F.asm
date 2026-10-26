@@ -1,9 +1,9 @@
 _SilphCo7FSilphWorkerM1HaveThisPokemonText::
-	text "<BOLD_D><BOLD_A><BOLD_D>: <PLAYER>!?"
+	text "<b>DAD</b>: <PLAYER>!?"
 	line "What are you"
 	cont "doing here?"
 
-	para "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> took"
+	para "<b>TEAM ROCKET</b> took"
 	line "over, it's danger-"
 	cont "ous around here."
 
@@ -16,14 +16,14 @@ _SilphCo7FSilphWorkerM1HaveThisPokemonText::
 	cont "can't help but"
 	cont "worry about you."
 
-	para "I know! My <BOLD_L><BOLD_A><BOLD_P><BOLD_R><BOLD_A><BOLD_S>"
+	para "I know! My <b>LAPRAS</b>"
 	line "can help you out."
 	prompt
 
 _SilphCo7FSilphWorkerM1LaprasDescriptionText::
-	text "<BOLD_D><BOLD_A><BOLD_D>: <BOLD_L><BOLD_A><BOLD_P><BOLD_R><BOLD_A><BOLD_S> is a"
+	text "<b>DAD</b>: <b>LAPRAS</b> is a"
 	line "very intelligent"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>."
+	cont "#<b>MON</b>."
 
 	para "I kept it in our"
 	line "lab, but it will"
@@ -32,26 +32,26 @@ _SilphCo7FSilphWorkerM1LaprasDescriptionText::
 
 	para "I think you will"
 	line "be a good trainer"
-	cont "for <BOLD_L><BOLD_A><BOLD_P><BOLD_R><BOLD_A><BOLD_S>,"
+	cont "for <b>LAPRAS</b>,"
 	cont "<PLAYER>!"
 	done
 
 _SilphCo7FSilphWorkerM1IsOurPresidentOkText::
-	text "<BOLD_D><BOLD_A><BOLD_D>: <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>'<BOLD_s>"
-	line "<BOLD_B><BOLD_O><BOLD_S><BOLD_S> went to the"
+	text "<b>DAD</b>: <b>TEAM ROCKET's</b>"
+	line "<b>BOSS</b> went to the"
 	cont "boardroom! Please"
 	cont "make sure our"
-	cont "<BOLD_P><BOLD_R><BOLD_E><BOLD_S><BOLD_I><BOLD_D><BOLD_E><BOLD_N><BOLD_T>'<BOLD_s> safe!"
+	cont "<b>PRESIDENT's</b> safe!"
 	done
 
 _SilphCo7FSilphWorkerM1SavedText::
-	text "<BOLD_D><BOLD_A><BOLD_D>: <PLAYER>, I'm"
+	text "<b>DAD</b>: <PLAYER>, I'm"
 	line "proud of you. You"
 	cont "saved all of us!"
 	done
 
 _SilphCo7FSilphWorkerM1SavedText2::
-	text "<BOLD_D><BOLD_A><BOLD_D>: <PLAYER>, I'm"
+	text "<b>DAD</b>: <PLAYER>, I'm"
 	line "proud of you. You"
 	cont "saved all of us!"
 
@@ -61,29 +61,29 @@ _SilphCo7FSilphWorkerM1SavedText2::
 
 
 _SilphCo7FSilphWorkerM2AfterTheMasterBallText::
-	text "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> was"
-	line "after the <BOLD_M><BOLD_A><BOLD_S><BOLD_T><BOLD_E><BOLD_R>"
-	cont "<BOLD_B><BOLD_A><BOLD_L><BOLD_L> which will"
-	cont "catch any #<BOLD_M><BOLD_O><BOLD_N>!"
+	text "<b>TEAM ROCKET</b> was"
+	line "after the <b>MASTER</b>"
+	cont "<b>BALL</b> which will"
+	cont "catch any #<b>MON</b>!"
 	done
 
 _SilphCo7FSilphWorkerM2CancelledMasterBallText::
 	text "We canceled the"
-	line "<BOLD_M><BOLD_A><BOLD_S><BOLD_T><BOLD_E><BOLD_R> <BOLD_B><BOLD_A><BOLD_L><BOLD_L>"
+	line "<b>MASTER BALL</b>"
 	cont "project because"
-	cont "of <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>."
+	cont "of <b>TEAM ROCKET</b>."
 	done
 
 _SilphCo7FSilphWorkerM3ItWouldBeBadText::
 	text "It would be bad"
-	line "if <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>"
-	cont "took over <BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H>"
-	cont "or our #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "if <b>TEAM ROCKET</b>"
+	cont "took over <b>SILPH</b>"
+	cont "or our #<b>MON</b>!"
 	done
 
 _SilphCo7FSilphWorkerM3YouChasedOffTeamRocketText::
 	text "Wow! You chased"
-	line "off <BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>"
+	line "off <b>TEAM ROCKET</b>"
 	cont "all by yourself?"
 	done
 
@@ -111,7 +111,7 @@ _SilphCo7FRocket1EndBattleText::
 
 _SilphCo7FRocket1AfterBattleText::
 	text "You won't find my"
-	line "<BOLD_B><BOLD_O><BOLD_S><BOLD_S> by just"
+	line "<b>BOSS</b> by just"
 	cont "scurrying around!"
 	done
 
@@ -119,7 +119,7 @@ _SilphCo7FScientistBattleText::
 	text "Heheh!"
 
 	para "You mistook me for"
-	line "a <BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> worker?"
+	line "a <b>SILPH</b> worker?"
 	done
 
 _SilphCo7FScientistEndBattleText::
@@ -135,7 +135,7 @@ _SilphCo7FScientistAfterBattleText::
 
 _SilphCo7FRocket2BattleText::
 	text "I am one of the 4"
-	line "<BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> <BOLD_B><BOLD_R><BOLD_O><BOLD_T><BOLD_H><BOLD_E><BOLD_R><BOLD_S>!"
+	line "<b>ROCKET BROTHERS</b>!"
 	done
 
 _SilphCo7FRocket2EndBattleText::
@@ -161,7 +161,7 @@ _SilphCo7FRocket3EndBattleText::
 
 _SilphCo7FRocket3AfterBattleText::
 	text "Go on home"
-	line "before my <BOLD_B><BOLD_O><BOLD_S><BOLD_S>"
+	line "before my <b>BOSS</b>"
 	cont "gets ticked off!"
 	done
 
@@ -176,13 +176,13 @@ _SilphCo7FRivalWaitedHereText::
 	cont "turn up if I"
 	cont "waited here!"
 
-	para "I guess <BOLD_T><BOLD_E><BOLD_A><BOLD_M>"
-	line "<BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> slowed you"
+	para "I guess <b>TEAM</b>"
+	line "<b>ROCKET</b> slowed you"
 	cont "down! Not that I"
 	cont "care!"
 
 	para "I saw you in"
-	line "<BOLD_S><BOLD_A><BOLD_F><BOLD_F><BOLD_R><BOLD_O><BOLD_N>, so I"
+	line "<b>SAFFRON</b>, so I"
 	cont "decided to see if"
 	cont "you got better!"
 	done
@@ -190,7 +190,7 @@ _SilphCo7FRivalWaitedHereText::
 _SilphCo7FRivalDefeatedText::
 	text "Oh ho!"
 	line "So, you are ready"
-	cont "for <BOLD_B><BOLD_O><BOLD_S><BOLD_S> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>!"
+	cont "for <b>BOSS ROCKET</b>!"
 	prompt
 
 _SilphCo7FRivalVictoryText::
@@ -209,15 +209,15 @@ _SilphCo7FRivalGoodLuckToYouText::
 	line "and ahead!"
 
 	para "By checking my"
-	line "#<BOLD_D><BOLD_E><BOLD_X>, I'm"
+	line "#<b>DEX</b>, I'm"
 	cont "starting to see"
 	cont "what's strong and"
 	cont "how they evolve!"
 
 	para "I'm going to the"
-	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_L><BOLD_E><BOLD_A><BOLD_G><BOLD_U><BOLD_E>"
+	line "#<b>MON LEAGUE</b>"
 	cont "to boot out the"
-	cont "<BOLD_E><BOLD_L><BOLD_I><BOLD_T><BOLD_E> <BOLD_F><BOLD_O><BOLD_U><BOLD_R>!"
+	cont "<b>ELITE FOUR</b>!"
 
 	para "I'll become the"
 	line "world's most"

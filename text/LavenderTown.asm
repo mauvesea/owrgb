@@ -1,6 +1,6 @@
 _LavenderTownLittleGirlDoYouBelieveInGhostsText::
 	text "Do you believe in"
-	line "<BOLD_G><BOLD_H><BOLD_O><BOLD_S><BOLD_T>s?"
+	line "<b>GHOST</b>s?"
 	done
 
 _LavenderTownLittleGirlSoThereAreBelieversText::
@@ -20,45 +20,45 @@ _LavenderTownLittleGirlHaHaGuessNotText::
 _LavenderTownCooltrainerMText::
 	text "This town is known"
 	line "as the grave site"
-	cont "of #<BOLD_M><BOLD_O><BOLD_N>."
+	cont "of #<b>MON</b>."
 
 	para "Memorial services"
 	line "are held in"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_T><BOLD_O><BOLD_W><BOLD_E><BOLD_R>."
+	cont "#<b>MON TOWER</b>."
 	done
 
 _LavenderTownSuperNerdText::
-	text "<BOLD_G><BOLD_H><BOLD_O><BOLD_S><BOLD_T>s appeared"
-	line "in #<BOLD_M><BOLD_O><BOLD_N> <BOLD_T><BOLD_O><BOLD_W><BOLD_E><BOLD_R>."
+	text "<b>GHOST</b>s appeared"
+	line "in #<b>MON TOWER</b>."
 
 	para "I think they're"
 	line "the spirits of"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> that the"
-	cont "<BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>s killed."
+	cont "#<b>MON</b> that the"
+	cont "<b>ROCKET</b>s killed."
 	done
 
 _LavenderTownSignText::
-	text "<BOLD_L><BOLD_A><BOLD_V><BOLD_E><BOLD_N><BOLD_D><BOLD_E><BOLD_R> <BOLD_T><BOLD_O><BOLD_W><BOLD_N>"
+	text "<b>LAVENDER TOWN</b>"
 	line "The Noble Purple"
 	cont "Town"
 	done
 
 _LavenderTownSilphScopeSignText::
-	text "New <BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> <BOLD_S><BOLD_C><BOLD_O><BOLD_P><BOLD_E>!"
+	text "New <b>SILPH SCOPE</b>!"
 
 	para "Make the Invisible"
 	line "Plain to See!"
 
-	para "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> <BOLD_C><BOLD_O>."
+	para "<b>SILPH CO</b>."
 	done
 
 _LavenderTownPokemonHouseSignText::
-	text "<BOLD_L><BOLD_A><BOLD_V><BOLD_E><BOLD_N><BOLD_D><BOLD_E><BOLD_R> <BOLD_V><BOLD_O><BOLD_L><BOLD_U><BOLD_N><BOLD_T><BOLD_E><BOLD_E><BOLD_R>"
-	line "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_H><BOLD_O><BOLD_U><BOLD_S><BOLD_E>"
+	text "<b>LAVENDER VOLUNTEER</b>"
+	line "#<b>MON HOUSE</b>"
 	done
 
 _LavenderTownPokemonTowerSignText::
 	text "May the Souls of"
-	line "#<BOLD_M><BOLD_O><BOLD_N> Rest Easy"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> <BOLD_T><BOLD_O><BOLD_W><BOLD_E><BOLD_R>"
+	line "#<b>MON</b> Rest Easy"
+	cont "#<b>MON TOWER</b>"
 	done

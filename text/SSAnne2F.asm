@@ -19,7 +19,7 @@ _SSAnne2FRivalText::
 	line "really invited?"
 
 	para "So how's your"
-	line "#<BOLD_D><BOLD_E><BOLD_X> coming?"
+	line "#<b>DEX</b> coming?"
 
 	para "I already caught"
 	line "40 kinds, pal!"
@@ -36,7 +36,7 @@ _SSAnne2FRivalDefeatedText::
 
 	para "At least you're"
 	line "raising your"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>!"
+	cont "#<b>MON</b>!"
 	prompt
 
 _SSAnne2FRivalVictoryText::
@@ -50,14 +50,14 @@ _SSAnne2FRivalVictoryText::
 _SSAnne2FRivalCutMasterText::
 	text "<RIVAL>: I heard"
 	line "there was a"
-	cont "<BOLD_I><BOLD_K><BOLD_E><BOLD_B><BOLD_A><BOLD_N><BOLD_A> master on"
+	cont "<b>IKEBANA</b> master on"
 	cont "board."
 
 	para "But, he was just a"
 	line "seasick, old man!"
 
 	para "Well, at least"
-	line "having <BOLD_S><BOLD_H><BOLD_E><BOLD_A><BOLD_R><BOLD_S>"
+	line "having <b>SHEARS</b>"
 	cont "like that could"
 	cont "be really useful!"
 

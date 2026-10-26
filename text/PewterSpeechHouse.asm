@@ -1,5 +1,5 @@
 _PewterSpeechHouseGamblerText::
-	text "#<BOLD_M><BOLD_O><BOLD_N> learn new"
+	text "#<b>MON</b> learn new"
 	line "techniques as"
 	cont "they grow!"
 
@@ -9,7 +9,7 @@ _PewterSpeechHouseGamblerText::
 	done
 
 _PewterSpeechHouseYoungsterText::
-	text "#<BOLD_M><BOLD_O><BOLD_N> become"
+	text "#<b>MON</b> become"
 	line "easier to catch"
 	cont "when they are"
 	cont "hurt or asleep!"

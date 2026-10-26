@@ -1,6 +1,6 @@
 _CinnabarMartSilphWorkerFText::
-	text "Don't they have <BOLD_X>"
-	line "<BOLD_A><BOLD_T><BOLD_T><BOLD_A><BOLD_C><BOLD_K>? It's good"
+	text "Don't they have <b>X</b>"
+	line "<b>ATTACK</b>? It's good"
 	cont "for battles!"
 	done
 

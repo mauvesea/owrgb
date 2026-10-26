@@ -4,7 +4,7 @@ _Route22GateGuardNoBoulderbadgeText::
 	cont "allowed through."
 
 	para "You don't have the"
-	line "<BOLD_B><BOLD_O><BOLD_U><BOLD_L><BOLD_D><BOLD_E><BOLD_R><BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E> yet!@"
+	line "<b>BOULDERBADGE</b> yet!@"
 	text_end
 
 _Route22GateGuardICantLetYouPassText::
@@ -17,6 +17,6 @@ _Route22GateGuardICantLetYouPassText::
 
 _Route22GateGuardGoRightAheadText::
 	text "Oh! That is the"
-	line "<BOLD_B><BOLD_O><BOLD_U><BOLD_L><BOLD_D><BOLD_E><BOLD_R><BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>!"
+	line "<b>BOULDERBADGE</b>!"
 	cont "Go right ahead!@"
 	text_end

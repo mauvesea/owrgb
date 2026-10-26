@@ -66,7 +66,6 @@
 	charmap "″",         $61 ; gfx/pokedex/pokedex.png
 
 	; needed for StatusScreen (see engine/pokemon/status_screen.asm)
-	charmap "<BOLD_P>",  $72 ; gfx/font/P.1bpp
 
 	; needed for LoadTownMap_Fly (see engine/items/town_map.asm)
 	charmap "▲",         $ed ; gfx/town_map/up_arrow.1bpp
@@ -144,38 +143,38 @@
 	charmap "'t",        $be
 	charmap "'v",        $bf
 
-	charmap "<BOLD_A>",  $c0
-	charmap "<BOLD_B>",  $c1
-	charmap "<BOLD_C>",  $c2
-	charmap "<BOLD_D>",  $c3
-	charmap "<BOLD_E>",  $c4
-	charmap "<BOLD_F>",  $c5
-	charmap "<BOLD_G>",  $c6
-	charmap "<BOLD_H>",  $c7
-	charmap "<BOLD_I>",  $c8
-	charmap "<BOLD_J>",  $c9
-	charmap "<BOLD_K>",  $ca
-	charmap "<BOLD_L>",  $cb
-	charmap "<BOLD_M>",  $cc
+	charmap "<bold:A>",  $c0
+	charmap "<bold:B>",  $c1
+	charmap "<bold:C>",  $c2
+	charmap "<bold:D>",  $c3
+	charmap "<bold:E>",  $c4
+	charmap "<bold:F>",  $c5
+	charmap "<bold:G>",  $c6
+	charmap "<bold:H>",  $c7
+	charmap "<bold:I>",  $c8
+	charmap "<bold:J>",  $c9
+	charmap "<bold:K>",  $ca
+	charmap "<bold:L>",  $cb
+	charmap "<bold:M>",  $cc
 
-	charmap "<BOLD_N>",  $cd
-	charmap "<BOLD_O>",  $ce
-	charmap "<BOLD_P>",  $cf
-	charmap "<BOLD_Q>",  $d0
-	charmap "<BOLD_R>",  $d1
-	charmap "<BOLD_S>",  $d2
-	charmap "<BOLD_T>",  $d3
-	charmap "<BOLD_U>",  $d4
-	charmap "<BOLD_V>",  $d5
-	charmap "<BOLD_W>",  $d6
-	charmap "<BOLD_X>",  $d7
-	charmap "<BOLD_Y>",  $d8
-	charmap "<BOLD_Z>",  $d9
+	charmap "<bold:N>",  $cd
+	charmap "<bold:O>",  $ce
+	charmap "<bold:P>",  $cf
+	charmap "<bold:Q>",  $d0
+	charmap "<bold:R>",  $d1
+	charmap "<bold:S>",  $d2
+	charmap "<bold:T>",  $d3
+	charmap "<bold:U>",  $d4
+	charmap "<bold:V>",  $d5
+	charmap "<bold:W>",  $d6
+	charmap "<bold:X>",  $d7
+	charmap "<bold:Y>",  $d8
+	charmap "<bold:Z>",  $d9
 	charmap "©",         $da
 	charmap "▲",         $db
 	charmap "◀",         $dc
-	charmap "<BOLD_é>",  $dd
-	charmap "<BOLD_s>",  $de
+	charmap "<bold:é>",  $dd
+	charmap "<bold:s>",  $de
 
 	charmap "'",         $e0
 	charmap "<PK>",      $e1

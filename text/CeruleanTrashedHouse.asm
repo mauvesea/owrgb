@@ -1,14 +1,14 @@
 _CeruleanTrashedHouseFishingGuruTheyStoleATMText::
 	text "Those miserable"
-	line "<BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T>s!"
+	line "<b>ROCKET</b>s!"
 
 	para "Look what they"
 	line "did here!"
 
-	para "They stole a <BOLD_T><BOLD_M>"
+	para "They stole a <b>TM</b>"
 	line "for teaching"
-	cont "#<BOLD_M><BOLD_O><BOLD_N> how to"
-	cont "<BOLD_D><BOLD_I><BOLD_G> holes!"
+	cont "#<b>MON</b> how to"
+	cont "<b>DIG</b> holes!"
 
 	para "That cost me a"
 	line "bundle, it did!"
@@ -19,18 +19,18 @@ _CeruleanTrashedHouseFishingGuruWhatsLostIsLostText::
 	line "lost is lost!"
 
 	para "I decided to teach"
-	line "<BOLD_D><BOLD_I><BOLD_G><BOLD_L><BOLD_E><BOLD_T><BOLD_T> how to"
-	cont "<BOLD_D><BOLD_I><BOLD_G> without a <BOLD_T><BOLD_M>!"
+	line "<b>DIGLETT</b> how to"
+	cont "<b>DIG</b> without a <b>TM</b>!"
 	done
 
 _CeruleanTrashedHouseGirlText::
-	text "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> must"
-	line "be trying to <BOLD_D><BOLD_I><BOLD_G>"
+	text "<b>TEAM ROCKET</b> must"
+	line "be trying to <b>DIG</b>"
 	cont "their way into no"
 	cont "good!"
 	done
 
 _CeruleanTrashedHouseWallHoleText::
-	text "<BOLD_T><BOLD_E><BOLD_A><BOLD_M> <BOLD_R><BOLD_O><BOLD_C><BOLD_K><BOLD_E><BOLD_T> left"
+	text "<b>TEAM ROCKET</b> left"
 	line "a way out!"
 	done

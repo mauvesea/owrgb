@@ -1,10 +1,10 @@
 _Route7UndergroundPathSignText::
-	text "<BOLD_U><BOLD_N><BOLD_D><BOLD_E><BOLD_R><BOLD_G><BOLD_R><BOLD_O><BOLD_U><BOLD_N><BOLD_D> <BOLD_P><BOLD_A><BOLD_T><BOLD_H>"
-	line "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 7 - <BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 8"
+	text "<b>UNDERGROUND PATH</b>"
+	line "<b>ROUTE</b> 7 - <b>ROUTE</b> 8"
 	done
 
 _Route7SignText::
-	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 7"
-	line "◀ <BOLD_C><BOLD_E><BOLD_L><BOLD_A><BOLD_D><BOLD_O><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
-	cont "▶ <BOLD_S><BOLD_A><BOLD_F><BOLD_F><BOLD_R><BOLD_O><BOLD_N> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
+	text "<b>ROUTE</b> 7"
+	line "◀ <b>CELADON CITY</b>"
+	cont "▶ <b>SAFFRON CITY</b>"
 	done

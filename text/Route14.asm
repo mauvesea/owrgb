@@ -1,7 +1,7 @@
 _Route14CooltrainerM1BattleText::
 	text "You need to use"
-	line "<BOLD_T><BOLD_M>s to teach good"
-	cont "moves to #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "<b>TM</b>s to teach good"
+	cont "moves to #<b>MON</b>!"
 	done
 
 _Route14CooltrainerM1EndBattleText::
@@ -10,14 +10,14 @@ _Route14CooltrainerM1EndBattleText::
 	prompt
 
 _Route14CooltrainerM1AfterBattleText::
-	text "You have some <BOLD_H><BOLD_M>s"
-	line "right? #<BOLD_M><BOLD_O><BOLD_N>"
+	text "You have some <b>HM</b>s"
+	line "right? #<b>MON</b>"
 	cont "can't ever forget"
 	cont "those moves."
 	done
 
 _Route14CooltrainerM2BattleText::
-	text "My bird #<BOLD_M><BOLD_O><BOLD_N>"
+	text "My bird #<b>MON</b>"
 	line "should be ready"
 	cont "for battle."
 	done
@@ -33,10 +33,10 @@ _Route14CooltrainerM2AfterBattleText::
 	done
 
 _Route14CooltrainerM3BattleText::
-	text "<BOLD_T><BOLD_M>s are on sale"
-	line "in <BOLD_C><BOLD_E><BOLD_L><BOLD_A><BOLD_D><BOLD_O><BOLD_N>!"
+	text "<b>TM</b>s are on sale"
+	line "in <b>CELADON</b>!"
 	cont "But, only a few"
-	cont "people have <BOLD_H><BOLD_M>s!"
+	cont "people have <b>HM</b>s!"
 	done
 
 _Route14CooltrainerM3EndBattleText::
@@ -45,7 +45,7 @@ _Route14CooltrainerM3EndBattleText::
 	prompt
 
 _Route14CooltrainerM3AfterBattleText::
-	text "Teach #<BOLD_M><BOLD_O><BOLD_N>"
+	text "Teach #<b>MON</b>"
 	line "moves of the same"
 	cont "element type for"
 	cont "more power."
@@ -54,9 +54,9 @@ _Route14CooltrainerM3AfterBattleText::
 _Route14CooltrainerM4BattleText::
 	text "Did you know that"
 	line "by using a"
-	cont "<BOLD_P><BOLD_A><BOLD_R><BOLD_A><BOLD_G><BOLD_L><BOLD_I><BOLD_D><BOLD_E><BOLD_R>, you"
+	cont "<b>PARAGLIDER</b>, you"
 	cont "can fly just like"
-	cont "a #<BOLD_M><BOLD_O><BOLD_N>?"
+	cont "a #<b>MON</b>?"
 	done
 
 _Route14CooltrainerM4EndBattleText::
@@ -65,14 +65,14 @@ _Route14CooltrainerM4EndBattleText::
 	prompt
 
 _Route14CooltrainerM4AfterBattleText::
-	text "Bird #<BOLD_M><BOLD_O><BOLD_N> are"
+	text "Bird #<b>MON</b> are"
 	line "my true love!"
 	done
 
 _Route14CooltrainerM5BattleText::
 	text "Have you heard of"
 	line "the legendary"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>?"
+	cont "#<b>MON</b>?"
 	done
 
 _Route14CooltrainerM5EndBattleText::
@@ -82,13 +82,13 @@ _Route14CooltrainerM5EndBattleText::
 
 _Route14CooltrainerM5AfterBattleText::
 	text "The 3 legendary"
-	line "#<BOLD_M><BOLD_O><BOLD_N> are all"
+	line "#<b>MON</b> are all"
 	cont "birds of prey."
 	done
 
 _Route14CooltrainerM6BattleText::
 	text "I'm not into it,"
-	line "but <BOLD_O><BOLD_K>! Let's go!"
+	line "but <b>OK</b>! Let's go!"
 	done
 
 _Route14CooltrainerM6EndBattleText::
@@ -129,7 +129,7 @@ _Route14Biker2EndBattleText::
 	prompt
 
 _Route14Biker2AfterBattleText::
-	text "Raising #<BOLD_M><BOLD_O><BOLD_N>"
+	text "Raising #<b>MON</b>"
 	line "is a drag, man."
 	done
 
@@ -145,7 +145,7 @@ _Route14Biker3EndBattleText::
 
 _Route14Biker3AfterBattleText::
 	text "It's cool you"
-	line "made your #<BOLD_M><BOLD_O><BOLD_N>"
+	line "made your #<b>MON</b>"
 	cont "so strong!"
 
 	para "Might is right!"
@@ -153,7 +153,7 @@ _Route14Biker3AfterBattleText::
 	done
 
 _Route14Biker4BattleText::
-	text "#<BOLD_M><BOLD_O><BOLD_N> fight?"
+	text "#<b>MON</b> fight?"
 	line "Cool! Rumble!"
 	done
 
@@ -169,7 +169,7 @@ _Route14Biker4AfterBattleText::
 	done
 
 _Route14SignText::
-	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 14"
-	line "▶ <BOLD_S><BOLD_I><BOLD_L><BOLD_E><BOLD_N><BOLD_C><BOLD_E> <BOLD_B><BOLD_R><BOLD_I><BOLD_D><BOLD_G><BOLD_E>"
-	cont "▼ <BOLD_F><BOLD_U><BOLD_C><BOLD_H><BOLD_S><BOLD_I><BOLD_A> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
+	text "<b>ROUTE</b> 14"
+	line "▶ <b>SILENCE BRIDGE</b>"
+	cont "▼ <b>FUCHSIA CITY</b>"
 	done

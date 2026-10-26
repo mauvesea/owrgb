@@ -1,5 +1,5 @@
 _Route13CooltrainerM1BattleText::
-	text "My bird #<BOLD_M><BOLD_O><BOLD_N>"
+	text "My bird #<b>MON</b>"
 	line "want to scrap!"
 	done
 
@@ -9,7 +9,7 @@ _Route13CooltrainerM1EndBattleText::
 	prompt
 
 _Route13CooltrainerM1AfterBattleText::
-	text "My #<BOLD_M><BOLD_O><BOLD_N> look"
+	text "My #<b>MON</b> look"
 	line "happy even though"
 	cont "they lost."
 	done
@@ -31,7 +31,7 @@ _Route13CooltrainerF1AfterBattleText::
 	done
 
 _Route13CooltrainerF2BattleText::
-	text "Wow! Your <BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>s"
+	text "Wow! Your <b>BADGE</b>s"
 	line "are too cool!"
 	done
 
@@ -42,12 +42,12 @@ _Route13CooltrainerF2EndBattleText::
 
 _Route13CooltrainerF2AfterBattleText::
 	text "You got those"
-	line "<BOLD_B><BOLD_A><BOLD_D><BOLD_G><BOLD_E>s from <BOLD_G><BOLD_Y><BOLD_M>"
-	cont "<BOLD_L><BOLD_E><BOLD_A><BOLD_D><BOLD_E><BOLD_R>s. I know!"
+	line "<b>BADGE</b>s from <b>GYM</b>"
+	cont "<b>LEADER</b>s. I know!"
 	done
 
 _Route13CooltrainerF3BattleText::
-	text "My cute #<BOLD_M><BOLD_O><BOLD_N>"
+	text "My cute #<b>MON</b>"
 	line "wish to make your"
 	cont "acquaintance."
 	done
@@ -59,12 +59,12 @@ _Route13CooltrainerF3EndBattleText::
 
 _Route13CooltrainerF3AfterBattleText::
 	text "You have to make"
-	line "#<BOLD_M><BOLD_O><BOLD_N> fight to"
+	line "#<b>MON</b> fight to"
 	cont "toughen them up!"
 	done
 
 _Route13CooltrainerF4BattleText::
-	text "I found <BOLD_C><BOLD_A><BOLD_R><BOLD_B><BOLD_O><BOLD_S> in"
+	text "I found <b>CARBOS</b> in"
 	line "a cave once."
 	done
 
@@ -74,9 +74,9 @@ _Route13CooltrainerF4EndBattleText::
 	prompt
 
 _Route13CooltrainerF4AfterBattleText::
-	text "<BOLD_C><BOLD_A><BOLD_R><BOLD_B><BOLD_O><BOLD_S> boosted"
-	line "the <BOLD_S><BOLD_P><BOLD_E><BOLD_E><BOLD_D> of my"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>."
+	text "<b>CARBOS</b> boosted"
+	line "the <b>SPEED</b> of my"
+	cont "#<b>MON</b>."
 	done
 
 _Route13CooltrainerM2BattleText::
@@ -107,12 +107,12 @@ _Route13Beauty1EndBattleText::
 _Route13Beauty1AfterBattleText::
 	text "I wonder which is"
 	line "stronger, male or"
-	cont "female #<BOLD_M><BOLD_O><BOLD_N>?"
+	cont "female #<b>MON</b>?"
 	done
 
 _Route13Beauty2BattleText::
 	text "Do you want to"
-	line "#<BOLD_M><BOLD_O><BOLD_N> with me?"
+	line "#<b>MON</b> with me?"
 	done
 
 _Route13Beauty2EndBattleText::
@@ -123,7 +123,7 @@ _Route13Beauty2EndBattleText::
 _Route13Beauty2AfterBattleText::
 	text "I don't know"
 	line "anything about"
-	cont "#<BOLD_M><BOLD_O><BOLD_N>. I just"
+	cont "#<b>MON</b>. I just"
 	cont "like cool ones!"
 	done
 
@@ -143,7 +143,7 @@ _Route13BikerAfterBattleText::
 
 _Route13CooltrainerM3BattleText::
 	text "I always go with"
-	line "bird #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "bird #<b>MON</b>!"
 	done
 
 _Route13CooltrainerM3EndBattleText::
@@ -153,27 +153,27 @@ _Route13CooltrainerM3EndBattleText::
 
 _Route13CooltrainerM3AfterBattleText::
 	text "I wish I could"
-	line "fly like <BOLD_P><BOLD_I><BOLD_D><BOLD_G><BOLD_E><BOLD_Y>"
-	cont "and <BOLD_P><BOLD_I><BOLD_D><BOLD_G><BOLD_E><BOLD_O><BOLD_T><BOLD_T><BOLD_O>..."
+	line "fly like <b>PIDGEY</b>"
+	cont "and <b>PIDGEOTTO</b>..."
 	done
 
 _Route13TrainerTips1Text::
-	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> <BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
+	text "<b>TRAINER TIPS</b>"
 
 	para "Look to the left"
 	line "of that post!"
 	done
 
 _Route13TrainerTips2Text::
-	text "<BOLD_T><BOLD_R><BOLD_A><BOLD_I><BOLD_N><BOLD_E><BOLD_R> <BOLD_T><BOLD_I><BOLD_P><BOLD_S>"
+	text "<b>TRAINER TIPS</b>"
 
-	para "Use <BOLD_S><BOLD_E><BOLD_L><BOLD_E><BOLD_C><BOLD_T> to"
+	para "Use <b>SELECT</b> to"
 	line "switch items in"
-	cont "the <BOLD_I><BOLD_T><BOLD_E><BOLD_M> window!"
+	cont "the <b>ITEM</b> window!"
 	done
 
 _Route13SignText::
-	text "<BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 13"
-	line "▶ <BOLD_S><BOLD_I><BOLD_L><BOLD_E><BOLD_N><BOLD_C><BOLD_E> <BOLD_B><BOLD_R><BOLD_I><BOLD_D><BOLD_G><BOLD_E>"
-	cont "▼ <BOLD_F><BOLD_U><BOLD_C><BOLD_H><BOLD_S><BOLD_I><BOLD_A> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
+	text "<b>ROUTE</b> 13"
+	line "▶ <b>SILENCE BRIDGE</b>"
+	cont "▼ <b>FUCHSIA CITY</b>"
 	done

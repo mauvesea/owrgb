@@ -11,11 +11,12 @@ ENDM
 ; Design patterns
 
 MACRO ld_hli_a_string
-	FOR n, CHARLEN(\1) - 1
-		ld a, CHARVAL(STRCHAR(\1, n))
+	_format_text \1
+	FOR n, CHARLEN("{_formatted_text}") - 1
+		ld a, CHARVAL(STRCHAR("{_formatted_text}", n))
 		ld [hli], a
 	ENDR
-	ld [hl], CHARVAL(STRCHAR(\1, CHARLEN(\1) - 1))
+	ld [hl], CHARVAL(STRCHAR("{_formatted_text}", CHARLEN("{_formatted_text}") - 1))
 ENDM
 
 MACRO dict

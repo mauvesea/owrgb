@@ -25,7 +25,7 @@ _Route19CooltrainerM2EndBattleText::
 
 _Route19CooltrainerM2AfterBattleText::
 	text "Watch out for"
-	line "<BOLD_T><BOLD_E><BOLD_N><BOLD_T><BOLD_A><BOLD_C><BOLD_O><BOLD_O><BOLD_L>!"
+	line "<b>TENTACOOL</b>!"
 	done
 
 _Route19Swimmer1BattleText::
@@ -39,7 +39,7 @@ _Route19Swimmer1EndBattleText::
 	prompt
 
 _Route19Swimmer1AfterBattleText::
-	text "I can beat #<BOLD_M><BOLD_O><BOLD_N>"
+	text "I can beat #<b>MON</b>"
 	line "at swimming!"
 	done
 
@@ -59,7 +59,7 @@ _Route19Swimmer2AfterBattleText::
 
 _Route19Swimmer3BattleText::
 	text "I tried diving"
-	line "for #<BOLD_M><BOLD_O><BOLD_N>, but"
+	line "for #<b>MON</b>, but"
 	cont "it was a no go!"
 	done
 
@@ -69,7 +69,7 @@ _Route19Swimmer3EndBattleText::
 
 _Route19Swimmer3AfterBattleText::
 	text "You have to fish"
-	line "for sea #<BOLD_M><BOLD_O><BOLD_N>!"
+	line "for sea #<b>MON</b>!"
 	done
 
 _Route19Swimmer4BattleText::
@@ -101,7 +101,7 @@ _Route19Swimmer5EndBattleText::
 _Route19Swimmer5AfterBattleText::
 	text "It's still a long"
 	line "way to go to"
-	cont "<BOLD_S><BOLD_E><BOLD_A><BOLD_F><BOLD_O><BOLD_A><BOLD_M> <BOLD_I><BOLD_S><BOLD_L><BOLD_A><BOLD_N><BOLD_D><BOLD_S>."
+	cont "<b>SEAFOAM ISLANDS</b>."
 	done
 
 _Route19Swimmer6BattleText::
@@ -116,7 +116,7 @@ _Route19Swimmer6EndBattleText::
 _Route19Swimmer6AfterBattleText::
 	text "My boy friend"
 	line "wanted to swim to"
-	cont "<BOLD_S><BOLD_E><BOLD_A><BOLD_F><BOLD_O><BOLD_A><BOLD_M> <BOLD_I><BOLD_S><BOLD_L><BOLD_A><BOLD_N><BOLD_D><BOLD_S>."
+	cont "<b>SEAFOAM ISLANDS</b>."
 	done
 
 _Route19Swimmer7BattleText::
@@ -145,13 +145,13 @@ _Route19Swimmer8EndBattleText::
 	prompt
 
 _Route19Swimmer8AfterBattleText::
-	text "<BOLD_L><BOLD_A><BOLD_P><BOLD_R><BOLD_A><BOLD_S> is so big,"
+	text "<b>LAPRAS</b> is so big,"
 	line "it must keep you"
 	cont "dry on water."
 	done
 
 _Route19SignText::
-	text "<BOLD_S><BOLD_E><BOLD_A> <BOLD_R><BOLD_O><BOLD_U><BOLD_T><BOLD_E> 19"
-	line "▲ <BOLD_F><BOLD_U><BOLD_C><BOLD_H><BOLD_S><BOLD_I><BOLD_A> <BOLD_C><BOLD_I><BOLD_T><BOLD_Y>"
-	cont "◀ <BOLD_S><BOLD_E><BOLD_A><BOLD_F><BOLD_O><BOLD_A><BOLD_M> <BOLD_I><BOLD_S><BOLD_L><BOLD_A><BOLD_N><BOLD_D><BOLD_S>"
+	text "<b>SEA ROUTE</b> 19"
+	line "▲ <b>FUCHSIA CITY</b>"
+	cont "◀ <b>SEAFOAM ISLANDS</b>"
 	done

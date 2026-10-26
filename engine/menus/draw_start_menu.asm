@@ -60,25 +60,25 @@ DrawStartMenu::
 	ret
 
 StartMenuPokedexText:
-	db "<BOLD_P><BOLD_O><BOLD_K><BOLD_é><BOLD_D><BOLD_E><BOLD_X>@"
+	db_text "<b>POKéDEX</b>@"
 
 StartMenuPokemonText:
-	db "<BOLD_P><BOLD_O><BOLD_K><BOLD_é><BOLD_M><BOLD_O><BOLD_N>@"
+	db_text "<b>POKéMON</b>@"
 
 StartMenuItemText:
-	db "<BOLD_I><BOLD_T><BOLD_E><BOLD_M>@"
+	db_text "<b>ITEM</b>@"
 
 StartMenuSaveText:
-	db "<BOLD_S><BOLD_A><BOLD_V><BOLD_E>@"
+	db_text "<b>SAVE</b>@"
 
 StartMenuResetText:
-	db "<BOLD_R><BOLD_E><BOLD_S><BOLD_E><BOLD_T>@"
+	db_text "<b>RESET</b>@"
 
 StartMenuExitText:
-	db "<BOLD_E><BOLD_X><BOLD_I><BOLD_T>@"
+	db_text "<b>EXIT</b>@"
 
 StartMenuOptionText:
-	db "<BOLD_O><BOLD_P><BOLD_T><BOLD_I><BOLD_O><BOLD_N>@"
+	db_text "<b>OPTION</b>@"
 
 PrintStartMenuItem:
 	push hl

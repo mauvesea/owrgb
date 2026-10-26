@@ -9,9 +9,9 @@ _PokemonTower3FChanneler1EndBattleText::
 	prompt
 
 _PokemonTower3FChanneler1AfterBattleText::
-	text "The <BOLD_G><BOLD_H><BOLD_O><BOLD_S><BOLD_T>s can be"
+	text "The <b>GHOST</b>s can be"
 	line "identified by the"
-	cont "<BOLD_S><BOLD_I><BOLD_L><BOLD_P><BOLD_H> <BOLD_S><BOLD_C><BOLD_O><BOLD_P><BOLD_E>."
+	cont "<b>SILPH SCOPE</b>."
 	done
 
 _PokemonTower3FChanneler2BattleText::
