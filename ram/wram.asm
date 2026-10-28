@@ -2287,6 +2287,9 @@ SECTION "Dialogue Face State", WRAM0
 ; Nonzero keeps the active portrait/textbox until an explicit FACE_NONE.
 wKeepDialogueFace:: db
 
+; Pokédex entries use the original single-tile continuation arrow.
+wPokedexTextArrow:: db
+
 SECTION "Stack", WRAM0
 
 ; the stack grows downward

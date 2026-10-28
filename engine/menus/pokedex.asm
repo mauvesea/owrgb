@@ -399,6 +399,8 @@ ShowPokedexData:
 
 ; function to display pokedex data from inside the pokedex
 ShowPokedexDataInternal:
+	ld a, 1
+	ld [wPokedexTextArrow], a
 	ld hl, wStatusFlags2
 	set BIT_NO_AUDIO_FADE_OUT, [hl]
 	ld a, $33 ; 3/7 volume
@@ -580,6 +582,8 @@ ShowPokedexDataInternal:
 	jr z, .waitForButtonPress
 	pop af
 	ldh [hTileAnimations], a
+	xor a
+	ld [wPokedexTextArrow], a
 	call GBPalWhiteOut
 	call ClearScreen
 	call RunDefaultPaletteCommand

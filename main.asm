@@ -366,6 +366,7 @@ INCLUDE "engine/items/tm_prices.asm"
 
 SECTION "Dialogue Faces", ROMX
 INCLUDE "engine/menus/dialogue_faces.asm"
+INCLUDE "engine/menus/dialogue_arrow.asm"
 INCLUDE "engine/menus/print_letter_delay.asm"
 INCLUDE "engine/menus/text_box_border.asm"
 INCLUDE "engine/menus/dynamic_text.asm"

@@ -68,8 +68,7 @@ WaitForTextScrollButtonPress::
 	jr z, .skipAnimation
 	call TownMapSpriteBlinkingAnimation
 .skipAnimation
-	hlcoord 18, 16
-	call HandleDownArrowBlinkTiming
+	farcall HandleDialogueArrowBlinkTiming
 	pop hl
 	call JoypadLowSensitivity
 	predef CableClub_Run

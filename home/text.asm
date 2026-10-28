@@ -168,13 +168,11 @@ PromptText::
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
 	jp z, .ok
-	ld a, '▼'
-	ldcoord_a 18, 16
+	call ShowDialogueArrow
 .ok
 	call ProtectedDelay3
 	call ManualTextScroll
-	ld a, ' '
-	ldcoord_a 18, 16
+	call HideDialogueArrow
 
 DoneText::
 	pop hl
@@ -187,10 +185,10 @@ DoneText::
 
 Paragraph::
 	push de
-	ld a, '▼'
-	ldcoord_a 18, 16
+	call ShowDialogueArrow
 	call ProtectedDelay3
 	call ManualTextScroll
+	call HideDialogueArrow
 	farcall ClearDialogueText
 	ld c, 20
 	call DelayFrames
@@ -201,10 +199,10 @@ Paragraph::
 
 PageChar::
 	push de
-	ld a, '▼'
-	ldcoord_a 18, 16
+	call ShowDialogueArrow
 	call ProtectedDelay3
 	call ManualTextScroll
+	call HideDialogueArrow
 	hlcoord 1, 10
 	lb bc, 7, 18
 	call ClearScreenArea
@@ -217,14 +215,12 @@ PageChar::
 	jp NextChar
 
 _ContText::
-	ld a, '▼'
-	ldcoord_a 18, 16
+	call ShowDialogueArrow
 	call ProtectedDelay3
 	push de
 	call ManualTextScroll
 	pop de
-	ld a, ' '
-	ldcoord_a 18, 16
+	call HideDialogueArrow
 _ContTextNoPause::
 	push de
 	call ScrollTextUpOneLine
@@ -386,21 +382,18 @@ TextCommand_PROMPT_BUTTON::
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
 	jp z, TextCommand_WAIT_BUTTON
-	ld a, '▼'
-	ldcoord_a 18, 16 ; place down arrow in lower right corner of dialogue text box
+	call ShowDialogueArrow
 	push bc
 	call ManualTextScroll ; blink arrow and wait for A or B to be pressed
 	pop bc
-	ld a, ' '
-	ldcoord_a 18, 16 ; overwrite down arrow with blank space
+	call HideDialogueArrow
 	pop hl
 	jp NextTextCommand
 
 TextCommand_SCROLL::
 ; pushes text up two lines and sets the BC cursor to the border tile
 ; below the first character column of the text box.
-	ld a, ' '
-	ldcoord_a 18, 16 ; place blank space in lower right corner of dialogue text box
+	call HideDialogueArrow
 	call ScrollTextUpOneLine
 	call ScrollTextUpOneLine
 	pop hl
@@ -608,5 +601,21 @@ DialogueCursor::
 	call OffsetDialogueText
 	ld b, h
 	ld c, l
+	pop hl
+	ret
+
+ShowDialogueArrow::
+	push hl
+	push bc
+	farcall ShowDialogueArrow_
+	pop bc
+	pop hl
+	ret
+
+HideDialogueArrow::
+	push hl
+	push bc
+	farcall HideDialogueArrow_
+	pop bc
 	pop hl
 	ret

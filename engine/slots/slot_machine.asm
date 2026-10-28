@@ -632,9 +632,7 @@ SlotMachine_PrintWinningSymbol:
 	ld [hli], a
 	inc a
 	ld [hl], a
-	hlcoord 18, 16
-	ld [hl], '▼'
-	ret
+	jp ShowDialogueArrow
 
 SlotMachine_SubtractBetFromPlayerCoins:
 	ld hl, wTempCoins2 + 1
