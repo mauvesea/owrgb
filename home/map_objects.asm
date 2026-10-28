@@ -27,12 +27,16 @@ DecodeArrowMovementRLE::
 	jr DecodeArrowMovementRLE
 
 TextScript_ItemStoragePC::
+; PC menus use the full static font, including their saved screen buffers.
+	call LoadFontTilePatterns
 	call SaveScreenTilesToBuffer2
 	ld b, BANK(PlayerPC)
 	ld hl, PlayerPC
 	jr BankswitchAndContinue
 
 TextScript_BillsPC::
+; PC menus use the full static font, including their saved screen buffers.
+	call LoadFontTilePatterns
 	call SaveScreenTilesToBuffer2
 	ld b, BANK(BillsPC_)
 	ld hl, BillsPC_
@@ -46,6 +50,8 @@ BankswitchAndContinue::
 	jp HoldTextDisplayOpen        ; continue to main text-engine function
 
 TextScript_PokemonCenterPC::
+; PC menus use the full static font, including their saved screen buffers.
+	call LoadFontTilePatterns
 	ld b, BANK(ActivatePC)
 	ld hl, ActivatePC
 	jr BankswitchAndContinue

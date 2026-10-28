@@ -175,6 +175,7 @@
 	charmap "◀",         $dc
 	charmap "<bold:é>",  $dd
 	charmap "<bold:s>",  $de
+	charmap "<...>",     $df
 
 	charmap "'",         $e0
 	charmap "<PK>",      $e1
@@ -188,8 +189,8 @@
 	charmap "!",         $e7
 	charmap ".",         $e8
 
-	charmap "ァ",         $e9 ; katakana small a, unused
-	charmap "ゥ",         $ea ; katakana small u, unused
+	charmap "<D_ARROW1>",         $e9 ; katakana small a, unused
+	charmap "<D_ARROW2>",         $ea ; katakana small u, unused
 	charmap "ェ",         $eb ; katakana small e, unused
 
 	charmap "▷",         $ec

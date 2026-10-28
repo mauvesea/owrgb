@@ -881,6 +881,8 @@ OaksLabShowPokeBallPokemonScript:
 	ld hl, wStatusFlags5
 	res BIT_NO_TEXT_DELAY, [hl]
 	call ReloadMapData
+; The Pokédex uses the static font; resume caching only after returning.
+	farcall InitDynamicDialogue
 	ld c, 10
 	call DelayFrames
 	ld a, [wSpriteIndex]

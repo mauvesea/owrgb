@@ -205,9 +205,6 @@ DoBuySellQuitMenu:
 ; hl = address where the text box border should be drawn
 DisplayTwoOptionMenu:
 	push hl
-	ld a, [wStatusFlags5]
-	set BIT_NO_TEXT_DELAY, a
-	ld [wStatusFlags5], a
 
 ; pointless because both values are overwritten before they are read
 	xor a
@@ -276,9 +273,7 @@ DisplayTwoOptionMenu:
 	ld d, a
 	pop hl
 	add hl, bc
-	call PlaceString
-	ld hl, wStatusFlags5
-	res BIT_NO_TEXT_DELAY, [hl]
+	call PlaceTwoOptionMenuText
 	ld a, [wTwoOptionMenuID]
 	cp NO_YES_MENU
 	jr nz, .notNoYesMenu
@@ -565,3 +560,21 @@ GetMonFieldMoves:
 	ret
 
 INCLUDE "data/moves/field_moves.asm"
+
+; Publish both labels together, even when loading uncached dialogue glyphs.
+; Preserve the caller's transfer and text-speed settings.
+PlaceTwoOptionMenuText:
+	ld a, [wStatusFlags5]
+	push af
+	set BIT_NO_TEXT_DELAY, a
+	ld [wStatusFlags5], a
+	ldh a, [hAutoBGTransferEnabled]
+	push af
+	xor a
+	ldh [hAutoBGTransferEnabled], a
+	call PlaceString
+	pop af
+	ldh [hAutoBGTransferEnabled], a
+	pop af
+	ld [wStatusFlags5], a
+	ret

@@ -392,6 +392,8 @@ IsPokemonBitSet:
 ShowPokedexData:
 	call GBPalWhiteOutWithDelay3
 	call ClearScreen
+; External callers can arrive with the overworld glyph cache active.
+	call LoadFontTilePatterns
 	call UpdateSprites
 	callfar LoadPokedexTilePatterns ; load pokedex tiles
 
